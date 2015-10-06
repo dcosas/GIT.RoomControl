@@ -41,75 +41,6 @@ __error__(char *pcFilename, uint32_t ui32Line)
 
 //*****************************************************************************
 //
-// The interrupt handler for the first timer interrupt.
-//
-//*****************************************************************************
-#if 0
-void
-Timer0IntHandler(void)
-{
-    char cOne, cTwo;
-
-    //
-    // Clear the timer interrupt.
-    //
-    ROM_TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
-
-    //
-    // Toggle the flag for the first timer.
-    //
-    HWREGBITW(&g_ui32Flags, 0) ^= 1;
-
-    //
-    // Use the flags to Toggle the LED for this timer
-    //
-    GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, g_ui32Flags << 1);
-
-    //
-    // Update the interrupt status on the display.
-    //
-    ROM_IntMasterDisable();
-    cOne = HWREGBITW(&g_ui32Flags, 0) ? '1' : '0';
-    cTwo = HWREGBITW(&g_ui32Flags, 1) ? '1' : '0';
-    UARTprintf("\rT1: %c  T2: %c", cOne, cTwo);
-    ROM_IntMasterEnable();
-}
-#endif
-//*****************************************************************************
-//
-// The interrupt handler for the second timer interrupt.
-//
-//*****************************************************************************
-void
-Timer1IntHandler(void)
-{
-	//
-    // Clear the timer interrupt.
-    //
-
-
-
-    //
-    // Toggle the flag for the second timer.
-    //
-    //HWREGBITW(&g_ui32Flags, 1) ^= 1;
-
-    //
-    // Use the flags to Toggle the LED for this timer
-    //
-//    GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, g_ui32Flags << 1);
-
-    //
-    // Update the interrupt status on the display.
-    //
-    //ROM_IntMasterDisable();
-    //cOne = HWREGBITW(&g_ui32Flags, 0) ? '1' : '0';
-    //cTwo = HWREGBITW(&g_ui32Flags, 1) ? '1' : '0';
-    //ROM_IntMasterEnable();
-}
-
-//*****************************************************************************
-//
 // Configure the UART and its pins.  This must be called before UARTprintf().
 //
 //*****************************************************************************
@@ -144,66 +75,7 @@ ConfigureUART(void)
     UARTStdioConfig(0, 115200, 16000000);
 }
 
-// reverses a string 'str' of length 'len'
-void reverse(char *str, int len)
-{
-    int i=0, j=len-1, temp;
-    while (i<j)
-    {
-        temp = str[i];
-        str[i] = str[j];
-        str[j] = temp;
-        i++; j--;
-    }
-}
 
- // Converts a given integer x to string str[].  d is the number
- // of digits required in output. If d is more than the number
- // of digits in x, then 0s are added at the beginning.
-int intToStr(int x, char str[], int d)
-{
-    int i = 0;
-    while (x)
-    {
-        str[i++] = (x%10) + '0';
-        x = x/10;
-    }
-
-    // If number of digits required is more, then
-    // add 0s at the beginning
-    while (i < d)
-        str[i++] = '0';
-
-    reverse(str, i);
-    str[i] = '\0';
-    return i;
-}
-
-// Converts a floating point number to string.
-void ftoa(float n, char *res, int afterpoint)
-{
-    // Extract integer part
-    int ipart = (int)n;
-
-    // Extract floating part
-    float fpart = n - (float)ipart;
-
-    // convert integer part to string
-    int i = intToStr(ipart, res, 0);
-
-    // check for display option after point
-    if (afterpoint != 0)
-    {
-        res[i] = '.';  // add dot
-
-        // Get the value of fraction part upto given no.
-        // of points after dot. The third parameter is needed
-        // to handle cases like 233.007
-        fpart = fpart * pow(10, afterpoint);
-
-        intToStr((int)fpart, res + i + 1, afterpoint);
-    }
-}
 
 
 void check_sensors()
@@ -286,7 +158,7 @@ int main(void)
     //
     ConfigureUART();
 
-    UARTprintf("\033[2JTimers example\n");
+    UARTprintf("\033[2JLaunchPad starting...\n");
 
 
     //
@@ -300,39 +172,12 @@ int main(void)
     ROM_GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_2 | GPIO_PIN_1);
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, GPIO_PIN_1);
 
-    //
-    // Enable the peripherals used by this example.
-    //
- //   ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER0);
-    //ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER1);
+
 
     //
     // Enable processor interrupts.
     //
     ROM_IntMasterEnable();
-
-    //
-    // Configure the two 32-bit periodic timers.
-    //
-   // ROM_TimerConfigure(TIMER0_BASE, TIMER_CFG_PERIODIC);
-    //ROM_TimerConfigure(TIMER1_BASE, TIMER_CFG_PERIODIC);
- //   ROM_TimerLoadSet(TIMER0_BASE, TIMER_A, ROM_SysCtlClockGet());
-    //ROM_TimerLoadSet(TIMER1_BASE, TIMER_A, ROM_SysCtlClockGet() / 2);
-   // ROM_TimerLoadSet(TIMER1_BASE, TIMER_A, 500);
-    //
-    // Setup the interrupts for the timer timeouts.
-    //
-  //  ROM_IntEnable(INT_TIMER0A);
-   // ROM_IntEnable(INT_TIMER1A);
-   // ROM_TimerIntEnable(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
-   // ROM_TimerIntEnable(TIMER1_BASE, TIMER_TIMA_TIMEOUT);
-
-    //
-    // Enable the timers.
-    //
-   // ROM_TimerEnable(TIMER0_BASE, TIMER_A);
-    //ROM_TimerEnable(TIMER1_BASE, TIMER_A);
-
 
     nokiaLCDinit();
 //    init_RTC();

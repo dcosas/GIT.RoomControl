@@ -8,6 +8,6 @@
 	<isElfFormat value="true"/>
 	<rts value="libc.a"/>
 	<createSlaveProjects value=""/>
-	<isTargetManual value="false"/>
+	<isTargetManual value="true"/>
 	<connection value="common/targetdb/connections/Stellaris_ICDI_Connection.xml"/>
 </projectOptions>

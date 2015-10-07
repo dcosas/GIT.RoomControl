@@ -23,6 +23,7 @@ timers.obj: E:/Dev/Ti/TivaWare/driverlib/sysctl.h
 timers.obj: E:/Dev/Ti/TivaWare/driverlib/systick.h
 timers.obj: E:/Dev/Ti/TivaWare/driverlib/timer.h
 timers.obj: E:/Dev/Ti/TivaWare/driverlib/uart.h
+timers.obj: E:/Dev/Ti/TivaWare/driverlib/watchdog.h
 timers.obj: E:/Dev/Ti/TivaWare/utils/uartstdio.h
 timers.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h
 timers.obj: ../sensors.h
@@ -55,6 +56,7 @@ E:/Dev/Ti/TivaWare/driverlib/sysctl.h:
 E:/Dev/Ti/TivaWare/driverlib/systick.h: 
 E:/Dev/Ti/TivaWare/driverlib/timer.h: 
 E:/Dev/Ti/TivaWare/driverlib/uart.h: 
+E:/Dev/Ti/TivaWare/driverlib/watchdog.h: 
 E:/Dev/Ti/TivaWare/utils/uartstdio.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h: 
 ../sensors.h: 

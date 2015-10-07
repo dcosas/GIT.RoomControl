@@ -39,6 +39,7 @@ extern void PortEIntHandler(void);
 extern void PortFIntHandler(void);
 extern void Timer0IntHandler(void);
 extern void SysTickIntHandler(void);
+extern void WatchdogIntHandler(void);
 //*****************************************************************************
 //
 // External declaration for the reset handler that is to be called when the
@@ -106,7 +107,7 @@ void (* const g_pfnVectors[])(void) =
     IntDefaultHandler,                      // ADC Sequence 1
     IntDefaultHandler,                      // ADC Sequence 2
     IntDefaultHandler,                      // ADC Sequence 3
-    IntDefaultHandler,                      // Watchdog timer
+	WatchdogIntHandler,                      // Watchdog timer
     Timer0IntHandler,                       // Timer 0 subtimer A
     IntDefaultHandler,                      // Timer 0 subtimer B
 	IntDefaultHandler,                       // Timer 1 subtimer A

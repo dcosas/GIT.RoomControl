@@ -183,6 +183,11 @@ void kick_watchdog()
 	g_bFeedWatchdog = true;
 }
 
+void debug(uint8_t data)
+{
+	UARTprintf("%c", data);
+}
+
 int main(void)
 {	//
     // Enable lazy stacking for interrupt handlers.  This allows floating-point
@@ -215,7 +220,9 @@ int main(void)
 
     ROM_IntMasterEnable();
 
-   // init_system();
+    init_system();
+    init_esp8266();
+    test_conn_esp8266();
 
 
     while(1)

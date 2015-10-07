@@ -13,6 +13,12 @@
 
 
 uint8_t init_esp8266();
-uint8_t send_esp8266(uint32_t humidity_data, uint32_t temperature_data);
+uint8_t send_esp8266(	uint32_t humidity_data,//field1
+						uint32_t temperature_data_1, //field2
+						uint32_t temperature_data_2,  //field3
+						uint32_t temperature_data_3, //field4
+						uint32_t temperature_data_4,  //field5
+						uint32_t water_relay, //field6
+						uint32_t fan_relay);//field7
 
 #endif /* ESP8266_H_ */

@@ -10,5 +10,8 @@
 
 void init_ds1820();
 uint16_t read_ds1820();
+uint8_t read_ds1820_1();
+uint8_t read_ds1820_2();
+uint8_t read_ds1820_3();
 
 #endif /* DS1820_H_ */

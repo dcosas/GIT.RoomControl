@@ -84,13 +84,13 @@ void check_sensors()
 
 	if(true)//add condition to check if time to check sensors
 	{
-		f_data_sensor1 = check_sensor1();
-		f_data_sensor2 = check_sensor2();
+		f_data_sensor1 = check_sensor1();//humidity
+		f_data_sensor2 = check_sensor2();//temperature1
 		UARTprintf("H:%d  T:%d\n",(uint32_t)f_data_sensor1, (uint32_t)f_data_sensor2);
-		send_esp8266((uint32_t)f_data_sensor1, (uint32_t)f_data_sensor2);
-		//ftoa(f_data_sensor1, str,4);
-		//lcd_puts(str);
-		check_sensor3();
+		check_sensor3();//temperature 2
+		check_sensor4();//temperature 3
+		update_values();
+		//check_sensor5();//temperature 4
 	}
 	else
 	{
@@ -140,7 +140,7 @@ void delay_seconds(uint32_t seconds)
 int main(void)
 {
 	uint32_t timing_counter = 0;
-	uint16_t temperature;
+
 	//
     // Enable lazy stacking for interrupt handlers.  This allows floating-point
     // instructions to be used within interrupt handlers, but at the expense of
@@ -182,12 +182,14 @@ int main(void)
     nokiaLCDinit();
 //    init_RTC();
     init_sensors();
-    //init_esp8266();
-    init_ds1820();
+    init_esp8266();
+
     while(1)
     {
-    	temperature = read_ds1820();
-    	 UARTprintf("T:%d \n",temperature);
+    	check_sensors();
+    	//UARTprintf("T1: %d ", read_ds1820_1());
+    	//UARTprintf("T2: %d \n", read_ds1820_2());
+
     	delay_seconds(1);
     	if(timing_counter)
     	{

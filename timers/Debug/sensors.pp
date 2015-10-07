@@ -20,6 +20,8 @@ sensors.obj: E:/Dev/Ti/TivaWare/driverlib/sysctl.h
 sensors.obj: ../dht22.h
 sensors.obj: ../actuators.h
 sensors.obj: ../lcd_nokia5510.h
+sensors.obj: ../ds1820.h
+sensors.obj: ../esp8266.h
 
 ../sensors.c: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdbool.h: 
@@ -41,3 +43,5 @@ E:/Dev/Ti/TivaWare/driverlib/sysctl.h:
 ../dht22.h: 
 ../actuators.h: 
 ../lcd_nokia5510.h: 
+../ds1820.h: 
+../esp8266.h: 

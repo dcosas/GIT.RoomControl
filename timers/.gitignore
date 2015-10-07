@@ -8,6 +8,8 @@
 *.pp
 *.map
 
+#xml from Debug folder
+Debug/*.xml
 
 # Executables
 *.exe

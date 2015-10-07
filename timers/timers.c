@@ -210,15 +210,17 @@ int main(void)
     ROM_IntEnable(INT_WATCHDOG);
     ROM_WatchdogReloadSet(WATCHDOG0_BASE, g_ui32SysClock*15);//15 seconds
     ROM_WatchdogResetEnable(WATCHDOG0_BASE);
-    ROM_WatchdogEnable(WATCHDOG0_BASE);
+    //ToDo: enable after testing
+    //ROM_WatchdogEnable(WATCHDOG0_BASE);
 
     ROM_IntMasterEnable();
 
    // init_system();
 
+
     while(1)
     {
-    	check_sensors();
+    	//check_sensors();
     	//UARTprintf("T1: %d ", read_ds1820_1());
     	//UARTprintf("T2: %d \n", read_ds1820_2());
 

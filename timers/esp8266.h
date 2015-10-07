@@ -21,4 +21,7 @@ uint8_t send_esp8266(	uint32_t humidity_data,//field1
 						uint32_t water_relay, //field6
 						uint32_t fan_relay);//field7
 
+uint8_t test_conn_esp8266();
+
+
 #endif /* ESP8266_H_ */

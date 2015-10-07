@@ -18,7 +18,7 @@
 
 #define CLIENT_MODE_CMD "AT+CWMODE=1"
 #define CONNECT_TO_AP "AT+CWJAP=\"dlink\",\"aspire1000\""
-//#define CONNECT_TO_AP "AT+CWJAP=\"Guests STI2\",\"H311oFriend\""
+
 #define CONNECT_TO_THINGSPEAK "AT+CIPSTART=\"TCP\",\"184.106.153.149\",80"
 #define SEND_CMD_LENGTH "AT+CIPSEND=104"
 #define SEND_DATA "GET /update?key=VW5223XR8EZEL6A3&field1="//size 40 +2(data)+2(cr+lf)
@@ -127,4 +127,8 @@ uint8_t init_esp8266()
 	return 1;
 }
 
+void test_conn_esp8266()
+{
+
+}
 

@@ -4,3 +4,5 @@
 /subdir_rules.mk
 /subdir_vars.mk
 /utils/
+/thirdparty/
+/third_party/

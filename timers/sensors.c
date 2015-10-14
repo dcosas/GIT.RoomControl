@@ -30,8 +30,8 @@ static char str_line1[12]={'M','x',' ','H',':','x','x',' ','T',':','x','x'};
 static char str_line2[12]={'H',':','x','x',' ','T','1',':','x','x',' ',' '};
 static char str_line3[12]={'T','2',':','x','x',' ','T','3',':','x','x',' '};
 
-int32_t threshold_humidity[3] = {85, 90, 85};
-int32_t threshold_temperature[3] = {20, 90, 30};
+int32_t threshold_humidity[3] = {85, 85, 85};
+int32_t threshold_temperature[3] = {18, 17, 16};
 int32_t threshold_co2[3] = {0, 1, 2};
 uint8_t operating_mode;
 
@@ -81,7 +81,7 @@ void init_sensors()
 	init_dht22();
 	init_actuators();
 	init_ds1820();
-	change_mode(0);
+	//change_mode(0);
 }
 //HUMIDITY sensor check - actuates water pump relay if humidity level falls below threshold
 float check_sensor1()

@@ -16,7 +16,8 @@
 #include "driverlib/uart.h"
 #include "driverlib/watchdog.h"
 #include "utils/uartstdio.h"
-
+#include "fatfs/src/ff.h"
+#include "fatfs/src/diskio.h"
 
 #include "sensors.h"
 #include "rtc.h"
@@ -24,6 +25,8 @@
 #include "esp8266.h"
 #include "dht22.h"
 #include "ds1820.h"
+#include "sdcard.h"
+
 
 uint32_t g_ui32Flags;
 
@@ -124,22 +127,8 @@ void check_sensors()
 
 void SysTickIntHandler(void)
 {
-	static uint8_t led_state = 0;
 	sys_tick_counter++;
-	if(!(sys_tick_counter % 1000))
-	{
-		if(led_state)
-		{
-			ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0);
-			led_state = 0;
-		}
-
-		else
-		{
-			ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, GPIO_PIN_1);
-			led_state = 1;
-		}
-	}
+	disk_timerproc();
 }
 
 void delay_us(uint32_t microseconds)
@@ -175,7 +164,11 @@ void init_system()
 	nokiaLCDinit();
 	//    init_RTC();
 	init_sensors();
-	init_esp8266();
+	//init_esp8266();
+	if(!init_sdcard())
+	{
+		UARTprintf("Failed to mount sd card\n");
+	}
 }
 
 void kick_watchdog()
@@ -193,13 +186,13 @@ int main(void)
     // Enable lazy stacking for interrupt handlers.  This allows floating-point
     // instructions to be used within interrupt handlers, but at the expense of
     // extra stack usage.
-    //
+
     ROM_FPULazyStackingEnable();
 
     //System clock:
     SysCtlClockSet(SYSCTL_SYSDIV_4|SYSCTL_USE_PLL|SYSCTL_XTAL_16MHZ|SYSCTL_OSC_MAIN);
     //SysTick
-    SysTickPeriodSet(SysCtlClockGet()/1000);
+    SysTickPeriodSet(SysCtlClockGet()/100);
     SysTickIntEnable();
     SysTickEnable();
     //Uart
@@ -221,16 +214,17 @@ int main(void)
     ROM_IntMasterEnable();
 
     init_system();
-    init_esp8266();
-    test_conn_esp8266();
 
 
+    write_sdcard();
+    //init_esp8266();
     while(1)
     {
     	//check_sensors();
     	//UARTprintf("T1: %d ", read_ds1820_1());
     	//UARTprintf("T2: %d \n", read_ds1820_2());
-
+    	//esp8266_test();
+    	SysCtlDelay(SysCtlClockGet());
     	kick_watchdog();
 #if 0
     	delay_seconds(1);

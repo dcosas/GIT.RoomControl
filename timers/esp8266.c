@@ -18,17 +18,17 @@
 #include "driverlib/interrupt.h"
 #include "timers.h"
 
-#ifdef DEBUG
 #define ESP8266_BAUDRATE 9600
-#else
-#define ESP8266_BAUDRATE 115200
-#endif
+
+#define CONNECT_TO_AP "AT+CWJAP=\"wrtr\",\"\""
+#define SEND_TEST_DATA  "GET /update?key=DJGH4273J29TEUBH&field1=22"
+#define SEND_TEST_CMD_LENGTH "AT+CIPSEND=44"
 
 
 //ESP specific
 #define CLIENT_MODE_CMD "AT+CWMODE=1"
 //#define CONNECT_TO_AP "AT+CWJAP=\"dlink\",\"aspire1000\""
-#define CONNECT_TO_AP "AT+CWJAP=\"Guests STI2\",\"H311oFriend\""
+//#define CONNECT_TO_AP "AT+CWJAP=\"Guests STI2\",\"H311oFriend\""
 #define RESET_ESP8266 "AT+RST"
 #define LIST_AP "AT+CWLAP"
 #define LIST_AP_CONFIRMATION "Guests STI2"
@@ -36,6 +36,7 @@
 #define AT_OK "OK"
 //ThingSpeak specific
 #define CONNECT_TO_THINGSPEAK "AT+CIPSTART=\"TCP\",\"184.106.153.149\",80"
+#define CONNECT_TO_THINGSPEAK_CONFIRMATION "Linked"
 #define SEND_CMD_LENGTH "AT+CIPSEND=104"
 #define SEND_DATA "GET /update?key=VW5223XR8EZEL6A3&field1="//size 40 +2(data)+2(cr+lf)
 #define SEND_DATA_FIELD2 "&field2="//size 8+2(data)
@@ -48,55 +49,21 @@
 #define SEND_DATA_HUMIDITY "GET /update?key=VW5223XR8EZEL6A3&field1="
 #define SEND_DATA_TEMPERATURE "GET /update?key=VW5223XR8EZEL6A3&field1="
 
+volatile char uart_data[255], uart_data_counter;
 
 
-char uart_data[255], uart_data_counter;
-volatile bool data_received;
-
-void
-UART5IntHandler(void)
+void UART5IntHandler(void)
 {
     uint32_t ui32Status;
-
-    //
-    // Get the interrrupt status.
-    //
     ui32Status = UARTIntStatus(UART5_BASE, true);
-
-    //
-    // Clear the asserted interrupts.
-    //
     UARTIntClear(UART5_BASE, ui32Status);
-
-    //
-    // Loop while there are characters in the receive FIFO.
-    //
     while(UARTCharsAvail(UART5_BASE))
     {
-        //
-        // Read the next character from the UART and write it back to the UART.
-        //
-    	data_received = false;
-    	uart_data[uart_data_counter] = UARTCharGet(UART5_BASE);//UARTCharGetNonBlocking(UART5_BASE);
-    	if(uart_data[uart_data_counter] == 10)
-    	{
-    		data_received = true;
-    	}
-
+    	uart_data[uart_data_counter++] = UARTCharGetNonBlocking(UART5_BASE);
     	if(uart_data_counter == 255)
-		{
     		uart_data_counter = 0;
-    		memset (uart_data,0,255);
-		}
-    	else
-    		uart_data_counter++;
-
-#ifdef DEBUG
-    	//debug((uint8_t)UARTCharGetNonBlocking(UART5_BASE));
-#endif
     }
 }
-
 
 void uart_send(char* str)
 {
@@ -110,32 +77,31 @@ void uart_send(char* str)
 
 uint8_t esp8266_send(char* str, char* confirmation)
 {
-	uint32_t timeout;
-	uint8_t result;
+	uint32_t timeout,delay_counter;
+	uint8_t result = 0;
+	char temp_uart_data[255];
 	char* ret;
+	IntDisable(INT_UART5);
+	memset ((void*)uart_data,'\0',255);
+	memset ((void*)temp_uart_data,'\0',255);
+	uart_data_counter = 0;
 	uart_send(str);
 
-	while(!data_received)
+	IntEnable(INT_UART5);
+	while(!result)
 	{
-		delay_us(50);
+		for(delay_counter = 0; delay_counter < 2000000; delay_counter++);
+		strcpy(temp_uart_data,(const char*)uart_data);
+		ret = strstr(temp_uart_data, confirmation);
+		if(ret)
+			return 1;
 		timeout++;
-		if(timeout>200000)
+		if(timeout>10)
 			return 0;
-	}
-
-	if(data_received)
-	{
-		if((ret = strstr(uart_data, confirmation)))
-		{
-			result = 1;
-		}
-		else
-		{
-			result = 0;
-		}
 	}
 	return result;
 }
+
 
 
 uint8_t send_esp8266(	uint32_t humidity_data,//field1
@@ -206,6 +172,8 @@ void list_ap()
 void esp8266_reset()
 {
 	uart_send(RESET_ESP8266);
+	SysCtlDelay(SysCtlClockGet());
+	SysCtlDelay(SysCtlClockGet());
 }
 uint8_t init_esp8266()
 {
@@ -220,28 +188,27 @@ uint8_t init_esp8266()
                              UART_CONFIG_PAR_NONE));
     IntEnable(INT_UART5);
     UARTIntEnable(UART5_BASE, UART_INT_RX | UART_INT_RT);
-    //uart_send(CLIENT_MODE_CMD);
-	//while((uart_data[uart_data_counter++] = UARTCharGet(UART5_BASE)) != 13);
-	//SysCtlDelay(SysCtlClockGet());
-	//SysCtlDelay(SysCtlClockGet());
-	list_ap();
-    //esp8266_send(AT,AT_OK);
-    SysCtlDelay(SysCtlClockGet());
+   // uart_send(CLIENT_MODE_CMD);
 
-	//uart_send(CONNECT_TO_AP);
-
-	SysCtlDelay(SysCtlClockGet()/3);
-	SysCtlDelay(SysCtlClockGet()/3);
-	SysCtlDelay(SysCtlClockGet()/3);
-	SysCtlDelay(SysCtlClockGet()/3);
+	SysCtlDelay(SysCtlClockGet());
+	//SysCtlDelay(SysCtlClockGet());
+    result = esp8266_send(AT,AT_OK);
+    result = esp8266_send(CONNECT_TO_AP, AT_OK);
 
 	return result;
 }
 
-
-
-void test_conn_esp8266()
+void esp8266_test()
 {
-
+	uint8_t result;
+    result = esp8266_send(CONNECT_TO_THINGSPEAK, CONNECT_TO_THINGSPEAK_CONFIRMATION);
+    if(!result)
+    {
+       	esp8266_reset();
+       	return;
+    }
+    uart_send(SEND_TEST_CMD_LENGTH);
+    SysCtlDelay(SysCtlClockGet());
+    uart_send(SEND_TEST_DATA);
+    SysCtlDelay(SysCtlClockGet());
 }
-

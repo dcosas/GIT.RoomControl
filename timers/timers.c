@@ -19,20 +19,18 @@
 #include "fatfs/src/ff.h"
 #include "fatfs/src/diskio.h"
 
+#include "config.h"
 #include "sensors.h"
 #include "rtc.h"
 #include "lcd_nokia5510.h"
 #include "esp8266.h"
 #include "dht22.h"
 #include "ds1820.h"
-#include "sdcard.h"
+//#include "sdcard.h"
 
+volatile uint32_t g_ui32SysTickCounter;
+volatile uint32_t g_ui32SecondsCounter;
 
-uint32_t g_ui32Flags;
-
-volatile uint32_t sys_tick_counter;
-
-uint32_t g_ui32SysClock;
 volatile bool g_bFeedWatchdog = false, g_bWatchdogTimeoutMsgSent = false;
 
 void
@@ -43,7 +41,7 @@ WatchdogIntHandler(void)
     	if(!g_bWatchdogTimeoutMsgSent)
     	{
     		IntMasterDisable();
-    		UARTprintf("Watchdog timeout occured.Wdt-tick=%d\n",sys_tick_counter);
+    		UARTprintf("Watchdog timeout occured.Wdt-tick=%d\n",g_ui32SysTickCounter);
     		g_bWatchdogTimeoutMsgSent = true;
     		IntMasterEnable();
     	}
@@ -53,12 +51,6 @@ WatchdogIntHandler(void)
     ROM_WatchdogIntClear(WATCHDOG0_BASE);
 }
 
-
-//*****************************************************************************
-//
-// The error routine that is called if the driver library encounters an error.
-//
-//*****************************************************************************
 #ifdef DEBUG
 void
 __error__(char *pcFilename, uint32_t ui32Line)
@@ -66,69 +58,41 @@ __error__(char *pcFilename, uint32_t ui32Line)
 }
 #endif
 
-//*****************************************************************************
-//
-// Configure the UART and its pins.  This must be called before UARTprintf().
-//
-//*****************************************************************************
 void
 ConfigureUART(void)
 {
-    //
-    // Enable the GPIO Peripheral used by the UART.
-    //
-    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
-
-    //
-    // Enable UART0
-    //
+	ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
     ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_UART0);
-
-    //
-    // Configure GPIO Pins for UART mode.
-    //
-   // ROM_GPIOPinConfigure(GPIO_PA0_U0RX);
-    //ROM_GPIOPinConfigure(GPIO_PA1_U0TX);
     ROM_GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
-
-    //
-    // Use the internal 16MHz oscillator as the UART clock source.
-    //
     UARTClockSourceSet(UART0_BASE, UART_CLOCK_PIOSC);
-
-    //
-    // Initialize the UART for console I/O.
-    //
     UARTStdioConfig(0, 115200, 16000000);
 }
 
-
-
-
 void check_sensors()
 {
-	float f_data_sensor1,f_data_sensor2;
+	static uint32_t lastUpdateCounter = 0;
 
-	if(true)//add condition to check if time to check sensors
+	check_sensor1();//humidity 			- fructification dht22
+	check_sensor2();//temperature 1 	- fructification dht22
+	check_sensor3();//temperature 2 	- incubation ds1820
+	check_sensor4();//temperature 3 	- outside ds1820
+	check_fan_timer(g_ui32SecondsCounter);//Fan actuation 	- fructification
+	update_lcd();
+	if((g_ui32SecondsCounter - lastUpdateCounter) > 60)
 	{
-		f_data_sensor1 = check_sensor1();//humidity
-		f_data_sensor2 = check_sensor2();//temperature1
-		UARTprintf("H:%d  T:%d\n",(uint32_t)f_data_sensor1, (uint32_t)f_data_sensor2);
-		check_sensor3();//temperature 2
-		check_sensor4();//temperature 3
-		update_values();
-		//check_sensor5();//temperature 4
-	}
-	else
-	{
-
+		update_thingspeak();//Update ESP8266 at every minute
+		lastUpdateCounter = g_ui32SecondsCounter;
 	}
 }
 
 void SysTickIntHandler(void)
 {
-	sys_tick_counter++;
-	disk_timerproc();
+	g_ui32SysTickCounter++;
+	if(!(g_ui32SysTickCounter % SYSTICKS_PER_SECOND))
+	{
+		g_ui32SecondsCounter++;
+	}
+	//disk_timerproc();
 }
 
 void delay_us(uint32_t microseconds)
@@ -146,8 +110,8 @@ void delay_ms(uint32_t miliseconds)
 	uint32_t start_ms = 0;
 	if(miliseconds < 1)
 		return;
-	start_ms = sys_tick_counter;
-	while((sys_tick_counter - start_ms) < miliseconds);
+	start_ms = g_ui32SysTickCounter;
+	while((g_ui32SysTickCounter - start_ms) < miliseconds);
 }
 
 void delay_seconds(uint32_t seconds)
@@ -164,11 +128,7 @@ void init_system()
 	nokiaLCDinit();
 	//    init_RTC();
 	init_sensors();
-	//init_esp8266();
-	if(!init_sdcard())
-	{
-		UARTprintf("Failed to mount sd card\n");
-	}
+	init_esp8266();
 }
 
 void kick_watchdog()
@@ -176,23 +136,17 @@ void kick_watchdog()
 	g_bFeedWatchdog = true;
 }
 
-void debug(uint8_t data)
-{
-	UARTprintf("%c", data);
-}
-
 int main(void)
 {	//
     // Enable lazy stacking for interrupt handlers.  This allows floating-point
     // instructions to be used within interrupt handlers, but at the expense of
     // extra stack usage.
-
+	uint8_t mainLoopDelay = 0;
     ROM_FPULazyStackingEnable();
-
     //System clock:
     SysCtlClockSet(SYSCTL_SYSDIV_4|SYSCTL_USE_PLL|SYSCTL_XTAL_16MHZ|SYSCTL_OSC_MAIN);
     //SysTick
-    SysTickPeriodSet(SysCtlClockGet()/100);
+    SysTickPeriodSet(SysCtlClockGet()/100);//10ms tick for sd card
     SysTickIntEnable();
     SysTickEnable();
     //Uart
@@ -203,10 +157,9 @@ int main(void)
     ROM_GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_2 | GPIO_PIN_1);
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, GPIO_PIN_1);
     //Watchdog
-    g_ui32SysClock = SysCtlClockGet();
     ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_WDOG0);
     ROM_IntEnable(INT_WATCHDOG);
-    ROM_WatchdogReloadSet(WATCHDOG0_BASE, g_ui32SysClock*15);//15 seconds
+    ROM_WatchdogReloadSet(WATCHDOG0_BASE, SysCtlClockGet() * WATCHDOG_TIMER_SECONDS);
     ROM_WatchdogResetEnable(WATCHDOG0_BASE);
     //ToDo: enable after testing
     //ROM_WatchdogEnable(WATCHDOG0_BASE);
@@ -215,30 +168,16 @@ int main(void)
 
     init_system();
 
-
-    write_sdcard();
-    //init_esp8266();
     while(1)
     {
-    	//check_sensors();
-    	//UARTprintf("T1: %d ", read_ds1820_1());
-    	//UARTprintf("T2: %d \n", read_ds1820_2());
-    	//esp8266_test();
-    	SysCtlDelay(SysCtlClockGet());
-    	kick_watchdog();
-#if 0
-    	delay_seconds(1);
-    	if(timing_counter)
+    	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, GPIO_PIN_1);
+    	check_sensors();
+    	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0);
+    	for(mainLoopDelay=0; mainLoopDelay<5; mainLoopDelay++)
     	{
-    	  	ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0);
-    	   	timing_counter = 0;
+    		SysCtlDelay(SysCtlClockGet());
+    		kick_watchdog();
     	}
-    	else
-    	{
-    	  	ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
-    	   	timing_counter = 1;
-    	}
-#endif
     }
 }
 

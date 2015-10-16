@@ -26,11 +26,17 @@
 #define ON 1
 #define OFF 0
 
+#define SEC_PER_MINUTE 60
+#define SEC_PER_HOUR 3600
+
+#define FAN_SECONDS_ON 30 * SEC_PER_MINUTE
+#define FAN_SECONDS_OFF 7000 * SEC_PER_HOUR
+
 static char str_line1[12]={'M','x',' ','H',':','x','x',' ','T',':','x','x'};
 static char str_line2[12]={'H',':','x','x',' ','T','1',':','x','x',' ',' '};
 static char str_line3[12]={'T','2',':','x','x',' ','T','3',':','x','x',' '};
 
-int32_t threshold_humidity[3] = {85, 85, 85};
+int32_t threshold_humidity[3] = {90, 90, 90};
 int32_t threshold_temperature[3] = {18, 17, 16};
 int32_t threshold_co2[3] = {0, 1, 2};
 uint8_t operating_mode;
@@ -57,7 +63,8 @@ void change_mode(uint8_t umode)
 	lcd_puts_line1(str_line1);
 }
 
-void PortFIntHandler(){
+void PortFIntHandler()
+{
 	uint32_t status=0;
 	uint8_t value=0;
 	status = GPIOIntStatus(GPIO_PORTF_BASE,true);
@@ -72,16 +79,16 @@ void PortFIntHandler(){
 void init_sensors()
 {
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
-	    GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, GPIO_PIN_4);
-	    GPIOPadConfigSet(GPIO_PORTF_BASE,GPIO_PIN_4,GPIO_STRENGTH_2MA,GPIO_PIN_TYPE_STD_WPU);
-	    GPIOIntTypeSet(GPIO_PORTF_BASE,GPIO_PIN_4,GPIO_BOTH_EDGES );
-	    GPIOIntRegister(GPIO_PORTF_BASE,PortFIntHandler);
-	    GPIOIntEnable(GPIO_PORTF_BASE, GPIO_INT_PIN_4);
+	GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, GPIO_PIN_4);
+	GPIOPadConfigSet(GPIO_PORTF_BASE,GPIO_PIN_4,GPIO_STRENGTH_2MA,GPIO_PIN_TYPE_STD_WPU);
+	GPIOIntTypeSet(GPIO_PORTF_BASE,GPIO_PIN_4,GPIO_BOTH_EDGES );
+	GPIOIntRegister(GPIO_PORTF_BASE,PortFIntHandler);
+	GPIOIntEnable(GPIO_PORTF_BASE, GPIO_INT_PIN_4);
 
 	init_dht22();
 	init_actuators();
 	init_ds1820();
-	//change_mode(0);
+	change_mode(0);
 }
 //HUMIDITY sensor check - actuates water pump relay if humidity level falls below threshold
 float check_sensor1()
@@ -98,7 +105,6 @@ float check_sensor1()
 		set_actuator1(OFF);
 	}
 
-
 	str_line2[2] = (char)(f_data / 10 )+ '0';
 	str_line2[3] =(char)((int)f_data % 10) + '0';
 	esp8266_data[0] = (uint32_t) f_data;
@@ -108,20 +114,6 @@ float check_sensor1()
 float check_sensor2()
 {
 	float f_data = dht22_readtemp();
-
-	if(f_data < threshold_temperature[operating_mode])
-	{
-		esp8266_data[6] = 1;
-		set_actuator2(ON);
-	}
-	else
-	{
-		esp8266_data[6] = 0;
-		set_actuator2(OFF);
-	}
-
-	//str_line2[2] = (char)(f_data / 10 )+ '0';
-	//str_line2[3] =(char)((int)f_data % 10) + '0';
 	str_line2[8] =(char)(f_data / 10)+ '0';
 	str_line2[9] =(char)((int)f_data % 10)+ '0';
 	esp8266_data[1] = (uint32_t) f_data;
@@ -144,11 +136,38 @@ void check_sensor4()
 	esp8266_data[3] = data;
 }
 
-void update_values()
+void check_fan_timer(uint32_t current_seconds)
+{
+	static uint32_t start_seconds = 0;
+	static uint32_t fanTimerDuration = FAN_SECONDS_OFF;
+	static uint8_t fanState = OFF;
+
+	if((current_seconds - start_seconds) > fanTimerDuration) // Time to switch the fan
+	{
+		if(fanState == ON)
+		{
+			esp8266_data[6] = 0;
+			set_actuator2(OFF);
+			fanTimerDuration = FAN_SECONDS_OFF;
+		}
+		else
+		{
+			esp8266_data[6] = 1;
+			set_actuator2(ON);
+			fanTimerDuration = FAN_SECONDS_ON;
+		}
+		start_seconds = current_seconds;//reset start_seconds to current seconds
+	}
+}
+void update_lcd()
 {
 	lcd_puts_line1(str_line1);
 	lcd_puts_line2(str_line2);
 	lcd_puts_line3(str_line3);
+}
+
+void update_thingspeak()
+{
 	send_esp8266(	esp8266_data[0],//humidity
 					esp8266_data[1],//temp1
 					esp8266_data[2],//temp2

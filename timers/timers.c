@@ -15,7 +15,7 @@
 #include "driverlib/timer.h"
 #include "driverlib/uart.h"
 #include "driverlib/watchdog.h"
-#include "utils/uartstdio.h"
+//#include "utils/uartstdio.h"
 #include "fatfs/src/ff.h"
 #include "fatfs/src/diskio.h"
 
@@ -41,7 +41,6 @@ WatchdogIntHandler(void)
     	if(!g_bWatchdogTimeoutMsgSent)
     	{
     		IntMasterDisable();
-    		UARTprintf("Watchdog timeout occured.Wdt-tick=%d\n",g_ui32SysTickCounter);
     		g_bWatchdogTimeoutMsgSent = true;
     		IntMasterEnable();
     	}
@@ -65,30 +64,35 @@ ConfigureUART(void)
     ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_UART0);
     ROM_GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
     UARTClockSourceSet(UART0_BASE, UART_CLOCK_PIOSC);
-    UARTStdioConfig(0, 115200, 16000000);
+    //UARTStdioConfig(0, 115200, 16000000);
 }
 
 void check_sensors()
 {
-	static uint32_t lastUpdateCounter = 0;
-
+	static uint32_t lastUpdateCounter = 0, temp_secondsCounter;
+	ROM_IntMasterDisable();
+	temp_secondsCounter = g_ui32SecondsCounter;
+	ROM_IntMasterEnable();
 	check_sensor1();//humidity 			- fructification dht22
 	check_sensor2();//temperature 1 	- fructification dht22
 	check_sensor3();//temperature 2 	- incubation ds1820
 	check_sensor4();//temperature 3 	- outside ds1820
-	check_fan_timer(g_ui32SecondsCounter);//Fan actuation 	- fructification
+	check_fan_timer(temp_secondsCounter);//Fan actuation 	- fructification
 	update_lcd();
-	if((g_ui32SecondsCounter - lastUpdateCounter) > 60)
+
+	if((temp_secondsCounter - lastUpdateCounter) > 60)
 	{
 		update_thingspeak();//Update ESP8266 at every minute
-		lastUpdateCounter = g_ui32SecondsCounter;
+		lastUpdateCounter = temp_secondsCounter;
 	}
 }
 
 void SysTickIntHandler(void)
 {
+	static uint32_t sysTickTemp = 0;
 	g_ui32SysTickCounter++;
-	if(!(g_ui32SysTickCounter % SYSTICKS_PER_SECOND))
+	sysTickTemp = g_ui32SysTickCounter;
+	if(!(sysTickTemp % SYSTICKS_PER_SECOND))
 	{
 		g_ui32SecondsCounter++;
 	}
@@ -150,8 +154,8 @@ int main(void)
     SysTickIntEnable();
     SysTickEnable();
     //Uart
-    ConfigureUART();
-    UARTprintf("\033[2JLaunchPad starting...\n");
+   // ConfigureUART();
+
     //OnBoard LEDs
     ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
     ROM_GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_2 | GPIO_PIN_1);
@@ -162,7 +166,7 @@ int main(void)
     ROM_WatchdogReloadSet(WATCHDOG0_BASE, SysCtlClockGet() * WATCHDOG_TIMER_SECONDS);
     ROM_WatchdogResetEnable(WATCHDOG0_BASE);
     //ToDo: enable after testing
-    //ROM_WatchdogEnable(WATCHDOG0_BASE);
+    ROM_WatchdogEnable(WATCHDOG0_BASE);
 
     ROM_IntMasterEnable();
 
@@ -173,7 +177,7 @@ int main(void)
     	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, GPIO_PIN_1);
     	check_sensors();
     	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0);
-    	for(mainLoopDelay=0; mainLoopDelay<5; mainLoopDelay++)
+    	for(mainLoopDelay=0; mainLoopDelay<2; mainLoopDelay++)
     	{
     		SysCtlDelay(SysCtlClockGet());
     		kick_watchdog();

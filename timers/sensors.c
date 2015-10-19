@@ -29,8 +29,10 @@
 #define SEC_PER_MINUTE 60
 #define SEC_PER_HOUR 3600
 
-#define FAN_SECONDS_ON 30 * SEC_PER_MINUTE
-#define FAN_SECONDS_OFF 7000 * SEC_PER_HOUR
+//#define FAN_SECONDS_ON 30 * SEC_PER_MINUTE
+//#define FAN_SECONDS_OFF 7000 * SEC_PER_HOUR
+#define FAN_SECONDS_ON 2700
+#define FAN_SECONDS_OFF 25200
 
 static char str_line1[12]={'M','x',' ','H',':','x','x',' ','T',':','x','x'};
 static char str_line2[12]={'H',':','x','x',' ','T','1',':','x','x',' ',' '};
@@ -148,13 +150,17 @@ void check_fan_timer(uint32_t current_seconds)
 		{
 			esp8266_data[6] = 0;
 			set_actuator2(OFF);
+			GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0);
 			fanTimerDuration = FAN_SECONDS_OFF;
+			fanState = OFF;
 		}
 		else
 		{
 			esp8266_data[6] = 1;
 			set_actuator2(ON);
+			GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
 			fanTimerDuration = FAN_SECONDS_ON;
+			fanState = ON;
 		}
 		start_seconds = current_seconds;//reset start_seconds to current seconds
 	}
@@ -168,6 +174,7 @@ void update_lcd()
 
 void update_thingspeak()
 {
+//	esp8266_test();
 	send_esp8266(	esp8266_data[0],//humidity
 					esp8266_data[1],//temp1
 					esp8266_data[2],//temp2
@@ -175,4 +182,5 @@ void update_thingspeak()
 					esp8266_data[4],//temp4
 					esp8266_data[5],//water relay
 					esp8266_data[6]);//fan relay
+
 }

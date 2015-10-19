@@ -21,6 +21,7 @@ void set_dateandtime(uint8_t year,uint8_t month,uint8_t date,uint8_t hour,uint8_
 
 void read_dateandtime()
 {
+#if 0
 	uint8_t i2c_data = 0;
 	uint8_t address = 104;
 	uint8_t lowNibble, highNibble;
@@ -55,4 +56,5 @@ void read_dateandtime()
     lowNibble = i2c_data & 0x0f;
     highNibble = (i2c_data & 0x10)>>4;
     year = lowNibble+highNibble*10;
+#endif
 }

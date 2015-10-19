@@ -24,8 +24,11 @@ timers.obj: E:/Dev/Ti/TivaWare/driverlib/systick.h
 timers.obj: E:/Dev/Ti/TivaWare/driverlib/timer.h
 timers.obj: E:/Dev/Ti/TivaWare/driverlib/uart.h
 timers.obj: E:/Dev/Ti/TivaWare/driverlib/watchdog.h
-timers.obj: E:/Dev/Ti/TivaWare/utils/uartstdio.h
-timers.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h
+timers.obj: E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h
+timers.obj: E:/Dev/Ti/TivaWare/third_party/fatfs/src/integer.h
+timers.obj: E:/Dev/Ti/TivaWare/third_party/fatfs/src/ffconf.h
+timers.obj: E:/Dev/Ti/TivaWare/third_party/fatfs/src/diskio.h
+timers.obj: ../config.h
 timers.obj: ../sensors.h
 timers.obj: ../rtc.h
 timers.obj: ../lcd_nokia5510.h
@@ -57,8 +60,11 @@ E:/Dev/Ti/TivaWare/driverlib/systick.h:
 E:/Dev/Ti/TivaWare/driverlib/timer.h: 
 E:/Dev/Ti/TivaWare/driverlib/uart.h: 
 E:/Dev/Ti/TivaWare/driverlib/watchdog.h: 
-E:/Dev/Ti/TivaWare/utils/uartstdio.h: 
-C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h: 
+E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h: 
+E:/Dev/Ti/TivaWare/third_party/fatfs/src/integer.h: 
+E:/Dev/Ti/TivaWare/third_party/fatfs/src/ffconf.h: 
+E:/Dev/Ti/TivaWare/third_party/fatfs/src/diskio.h: 
+../config.h: 
 ../sensors.h: 
 ../rtc.h: 
 ../lcd_nokia5510.h: 

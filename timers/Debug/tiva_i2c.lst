@@ -1,0 +1,1368 @@
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE    1
+
+       1                    ;******************************************************************************
+       2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
+       3                    ;* Date/Time created: Sun Oct 18 09:37:12 2015                                *
+       4                    ;******************************************************************************
+       5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
+       6 00000000                   .thumb
+       7                    
+       8                    $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                            .dwattr $C$DW$CU, DW_AT_name("../tiva_i2c.c")
+      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.5 Copyright (c) 1996-2015 Te
+      11                            .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("E:\Dev\Ti\Code\GIT\LaunchpadRoomControl\LaunchpadRoomControl
+      13                    
+      14                    $C$DW$1 .dwtag  DW_TAG_subprogram, DW_AT_name("I2CMasterBusy")
+      15                            .dwattr $C$DW$1, DW_AT_TI_symbol_name("I2CMasterBusy")
+      16                            .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$26)
+      17                            .dwattr $C$DW$1, DW_AT_declaration
+      18                            .dwattr $C$DW$1, DW_AT_external
+      19                            .dwattr $C$DW$1, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/i2c.h")
+      20                            .dwattr $C$DW$1, DW_AT_decl_line(0x131)
+      21                            .dwattr $C$DW$1, DW_AT_decl_column(0x0d)
+      22                    $C$DW$2 .dwtag  DW_TAG_formal_parameter
+      23                            .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$20)
+      24                            .dwendtag $C$DW$1
+      25                    
+      26                    
+      27                    $C$DW$3 .dwtag  DW_TAG_subprogram, DW_AT_name("I2CMasterControl")
+      28                            .dwattr $C$DW$3, DW_AT_TI_symbol_name("I2CMasterControl")
+      29                            .dwattr $C$DW$3, DW_AT_declaration
+      30                            .dwattr $C$DW$3, DW_AT_external
+      31                            .dwattr $C$DW$3, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/i2c.h")
+      32                            .dwattr $C$DW$3, DW_AT_decl_line(0x132)
+      33                            .dwattr $C$DW$3, DW_AT_decl_column(0x0d)
+      34                    $C$DW$4 .dwtag  DW_TAG_formal_parameter
+      35                            .dwattr $C$DW$4, DW_AT_type(*$C$DW$T$20)
+      36                    $C$DW$5 .dwtag  DW_TAG_formal_parameter
+      37                            .dwattr $C$DW$5, DW_AT_type(*$C$DW$T$20)
+      38                            .dwendtag $C$DW$3
+      39                    
+      40                    
+      41                    $C$DW$6 .dwtag  DW_TAG_subprogram, DW_AT_name("I2CMasterDataGet")
+      42                            .dwattr $C$DW$6, DW_AT_TI_symbol_name("I2CMasterDataGet")
+      43                            .dwattr $C$DW$6, DW_AT_type(*$C$DW$T$20)
+      44                            .dwattr $C$DW$6, DW_AT_declaration
+      45                            .dwattr $C$DW$6, DW_AT_external
+      46                            .dwattr $C$DW$6, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/i2c.h")
+      47                            .dwattr $C$DW$6, DW_AT_decl_line(0x133)
+      48                            .dwattr $C$DW$6, DW_AT_decl_column(0x11)
+      49                    $C$DW$7 .dwtag  DW_TAG_formal_parameter
+      50                            .dwattr $C$DW$7, DW_AT_type(*$C$DW$T$20)
+      51                            .dwendtag $C$DW$6
+      52                    
+      53                    
+      54                    $C$DW$8 .dwtag  DW_TAG_subprogram, DW_AT_name("I2CMasterDataPut")
+      55                            .dwattr $C$DW$8, DW_AT_TI_symbol_name("I2CMasterDataPut")
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE    2
+
+      56                            .dwattr $C$DW$8, DW_AT_declaration
+      57                            .dwattr $C$DW$8, DW_AT_external
+      58                            .dwattr $C$DW$8, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/i2c.h")
+      59                            .dwattr $C$DW$8, DW_AT_decl_line(0x134)
+      60                            .dwattr $C$DW$8, DW_AT_decl_column(0x0d)
+      61                    $C$DW$9 .dwtag  DW_TAG_formal_parameter
+      62                            .dwattr $C$DW$9, DW_AT_type(*$C$DW$T$20)
+      63                    $C$DW$10        .dwtag  DW_TAG_formal_parameter
+      64                            .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$23)
+      65                            .dwendtag $C$DW$8
+      66                    
+      67                    
+      68                    $C$DW$11        .dwtag  DW_TAG_subprogram, DW_AT_name("I2CMasterInitExpClk")
+      69                            .dwattr $C$DW$11, DW_AT_TI_symbol_name("I2CMasterInitExpClk")
+      70                            .dwattr $C$DW$11, DW_AT_declaration
+      71                            .dwattr $C$DW$11, DW_AT_external
+      72                            .dwattr $C$DW$11, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/i2c.h")
+      73                            .dwattr $C$DW$11, DW_AT_decl_line(0x138)
+      74                            .dwattr $C$DW$11, DW_AT_decl_column(0x0d)
+      75                    $C$DW$12        .dwtag  DW_TAG_formal_parameter
+      76                            .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$20)
+      77                    $C$DW$13        .dwtag  DW_TAG_formal_parameter
+      78                            .dwattr $C$DW$13, DW_AT_type(*$C$DW$T$20)
+      79                    $C$DW$14        .dwtag  DW_TAG_formal_parameter
+      80                            .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$26)
+      81                            .dwendtag $C$DW$11
+      82                    
+      83                    
+      84                    $C$DW$15        .dwtag  DW_TAG_subprogram, DW_AT_name("I2CMasterSlaveAddrSet")
+      85                            .dwattr $C$DW$15, DW_AT_TI_symbol_name("I2CMasterSlaveAddrSet")
+      86                            .dwattr $C$DW$15, DW_AT_declaration
+      87                            .dwattr $C$DW$15, DW_AT_external
+      88                            .dwattr $C$DW$15, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/i2c.h")
+      89                            .dwattr $C$DW$15, DW_AT_decl_line(0x14a)
+      90                            .dwattr $C$DW$15, DW_AT_decl_column(0x0d)
+      91                    $C$DW$16        .dwtag  DW_TAG_formal_parameter
+      92                            .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$20)
+      93                    $C$DW$17        .dwtag  DW_TAG_formal_parameter
+      94                            .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$23)
+      95                    $C$DW$18        .dwtag  DW_TAG_formal_parameter
+      96                            .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$26)
+      97                            .dwendtag $C$DW$15
+      98                    
+      99                    
+     100                    $C$DW$19        .dwtag  DW_TAG_subprogram, DW_AT_name("SysCtlPeripheralReset")
+     101                            .dwattr $C$DW$19, DW_AT_TI_symbol_name("SysCtlPeripheralReset")
+     102                            .dwattr $C$DW$19, DW_AT_declaration
+     103                            .dwattr $C$DW$19, DW_AT_external
+     104                            .dwattr $C$DW$19, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/sysctl.h")
+     105                            .dwattr $C$DW$19, DW_AT_decl_line(0x24d)
+     106                            .dwattr $C$DW$19, DW_AT_decl_column(0x0d)
+     107                    $C$DW$20        .dwtag  DW_TAG_formal_parameter
+     108                            .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$20)
+     109                            .dwendtag $C$DW$19
+     110                    
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE    3
+
+     111                    
+     112                    $C$DW$21        .dwtag  DW_TAG_subprogram, DW_AT_name("SysCtlPeripheralEnable")
+     113                            .dwattr $C$DW$21, DW_AT_TI_symbol_name("SysCtlPeripheralEnable")
+     114                            .dwattr $C$DW$21, DW_AT_declaration
+     115                            .dwattr $C$DW$21, DW_AT_external
+     116                            .dwattr $C$DW$21, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/sysctl.h")
+     117                            .dwattr $C$DW$21, DW_AT_decl_line(0x24e)
+     118                            .dwattr $C$DW$21, DW_AT_decl_column(0x0d)
+     119                    $C$DW$22        .dwtag  DW_TAG_formal_parameter
+     120                            .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$20)
+     121                            .dwendtag $C$DW$21
+     122                    
+     123                    
+     124                    $C$DW$23        .dwtag  DW_TAG_subprogram, DW_AT_name("SysCtlClockGet")
+     125                            .dwattr $C$DW$23, DW_AT_TI_symbol_name("SysCtlClockGet")
+     126                            .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$20)
+     127                            .dwattr $C$DW$23, DW_AT_declaration
+     128                            .dwattr $C$DW$23, DW_AT_external
+     129                            .dwattr $C$DW$23, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/sysctl.h")
+     130                            .dwattr $C$DW$23, DW_AT_decl_line(0x26c)
+     131                            .dwattr $C$DW$23, DW_AT_decl_column(0x11)
+     132                    
+     133                    $C$DW$24        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIOPinConfigure")
+     134                            .dwattr $C$DW$24, DW_AT_TI_symbol_name("GPIOPinConfigure")
+     135                            .dwattr $C$DW$24, DW_AT_declaration
+     136                            .dwattr $C$DW$24, DW_AT_external
+     137                            .dwattr $C$DW$24, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     138                            .dwattr $C$DW$24, DW_AT_decl_line(0x9f)
+     139                            .dwattr $C$DW$24, DW_AT_decl_column(0x0d)
+     140                    $C$DW$25        .dwtag  DW_TAG_formal_parameter
+     141                            .dwattr $C$DW$25, DW_AT_type(*$C$DW$T$20)
+     142                            .dwendtag $C$DW$24
+     143                    
+     144                    
+     145                    $C$DW$26        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIOPinTypeI2C")
+     146                            .dwattr $C$DW$26, DW_AT_TI_symbol_name("GPIOPinTypeI2C")
+     147                            .dwattr $C$DW$26, DW_AT_declaration
+     148                            .dwattr $C$DW$26, DW_AT_external
+     149                            .dwattr $C$DW$26, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     150                            .dwattr $C$DW$26, DW_AT_decl_line(0xaa)
+     151                            .dwattr $C$DW$26, DW_AT_decl_column(0x0d)
+     152                    $C$DW$27        .dwtag  DW_TAG_formal_parameter
+     153                            .dwattr $C$DW$27, DW_AT_type(*$C$DW$T$20)
+     154                    $C$DW$28        .dwtag  DW_TAG_formal_parameter
+     155                            .dwattr $C$DW$28, DW_AT_type(*$C$DW$T$23)
+     156                            .dwendtag $C$DW$26
+     157                    
+     158                    
+     159                    $C$DW$29        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIOPinTypeI2CSCL")
+     160                            .dwattr $C$DW$29, DW_AT_TI_symbol_name("GPIOPinTypeI2CSCL")
+     161                            .dwattr $C$DW$29, DW_AT_declaration
+     162                            .dwattr $C$DW$29, DW_AT_external
+     163                            .dwattr $C$DW$29, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     164                            .dwattr $C$DW$29, DW_AT_decl_line(0xab)
+     165                            .dwattr $C$DW$29, DW_AT_decl_column(0x0d)
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE    4
+
+     166                    $C$DW$30        .dwtag  DW_TAG_formal_parameter
+     167                            .dwattr $C$DW$30, DW_AT_type(*$C$DW$T$20)
+     168                    $C$DW$31        .dwtag  DW_TAG_formal_parameter
+     169                            .dwattr $C$DW$31, DW_AT_type(*$C$DW$T$23)
+     170                            .dwendtag $C$DW$29
+     171                    
+     172                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppDat
+     173 00000000                   .sect   ".text:initI2C0"
+     174                            .clink
+     175                            .thumbfunc initI2C0
+     176 00000000                   .thumb
+     177                            .global initI2C0
+     178                    
+     179                    $C$DW$32        .dwtag  DW_TAG_subprogram, DW_AT_name("initI2C0")
+     180                            .dwattr $C$DW$32, DW_AT_low_pc(initI2C0)
+     181                            .dwattr $C$DW$32, DW_AT_high_pc(0x00)
+     182                            .dwattr $C$DW$32, DW_AT_TI_symbol_name("initI2C0")
+     183                            .dwattr $C$DW$32, DW_AT_external
+     184                            .dwattr $C$DW$32, DW_AT_TI_begin_file("../tiva_i2c.c")
+     185                            .dwattr $C$DW$32, DW_AT_TI_begin_line(0x16)
+     186                            .dwattr $C$DW$32, DW_AT_TI_begin_column(0x06)
+     187                            .dwattr $C$DW$32, DW_AT_decl_file("../tiva_i2c.c")
+     188                            .dwattr $C$DW$32, DW_AT_decl_line(0x16)
+     189                            .dwattr $C$DW$32, DW_AT_decl_column(0x06)
+     190                            .dwattr $C$DW$32, DW_AT_TI_max_frame_size(0x08)
+     191                            .dwpsn  file "../tiva_i2c.c",line 23,column 1,is_stmt,address initI2C0,isa 1
+     192                    
+     193                            .dwfde $C$DW$CIE, initI2C0
+     194                    ;----------------------------------------------------------------------
+     195                    ;  22 | void initI2C0(void)                                                    
+     196                    ;  24 | //This function is for eewiki and is to be updated to handle any port  
+     197                    ;  26 | //enable I2C module                                                    
+     198                    ;----------------------------------------------------------------------
+     199                    
+     200                    ;*****************************************************************************
+     201                    ;* FUNCTION NAME: initI2C0                                                   *
+     202                    ;*                                                                           *
+     203                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     204                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     205                    ;*                           FPEXC,FPSCR                                     *
+     206                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     207                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     208                    ;*                           FPEXC,FPSCR                                     *
+     209                    ;*   Local Frame Size  : 0 Args + 0 Auto + 4 Save = 4 byte                   *
+     210                    ;*****************************************************************************
+     211 00000000           initI2C0:
+     212                    ;* --------------------------------------------------------------------------*
+     213                            .dwcfi  cfa_offset, 0
+     214 00000000 B508              PUSH      {A4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     215                            .dwcfi  cfa_offset, 8
+     216                            .dwcfi  save_reg_to_mem, 14, -4
+     217                            .dwcfi  save_reg_to_mem, 3, -8
+     218                            .dwpsn  file "../tiva_i2c.c",line 27,column 2,is_stmt,isa 1
+     219                    ;----------------------------------------------------------------------
+     220                    ;  27 | SysCtlPeripheralEnable(SYSCTL_PERIPH_I2C0);                            
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE    5
+
+     221                    ;  29 | //reset I2C module                                                     
+     222                    ;----------------------------------------------------------------------
+     223 00000002 4811              LDR       A1, $C$CON1           ; [DPU_3_PIPE] |27|  ; [ORIG 16-BIT INS]
+     224                    $C$DW$33        .dwtag  DW_TAG_TI_branch
+     225                            .dwattr $C$DW$33, DW_AT_low_pc(0x00)
+     226                            .dwattr $C$DW$33, DW_AT_name("SysCtlPeripheralEnable")
+     227                            .dwattr $C$DW$33, DW_AT_TI_call
+     228 00000004 FFFEF7FF!         BL        SysCtlPeripheralEnable ; [DPU_3_PIPE] |27|  ; [KEEP 32-BIT INS]
+     229                            ; CALL OCCURS {SysCtlPeripheralEnable }  ; [] |27| 
+     230                            .dwpsn  file "../tiva_i2c.c",line 30,column 2,is_stmt,isa 1
+     231                    ;----------------------------------------------------------------------
+     232                    ;  30 | SysCtlPeripheralReset(SYSCTL_PERIPH_I2C0);                             
+     233                    ;  32 | //enable GPIO peripheral that contains I2C                             
+     234                    ;----------------------------------------------------------------------
+     235 00000008 480F              LDR       A1, $C$CON1           ; [DPU_3_PIPE] |30|  ; [ORIG 16-BIT INS]
+     236                    $C$DW$34        .dwtag  DW_TAG_TI_branch
+     237                            .dwattr $C$DW$34, DW_AT_low_pc(0x00)
+     238                            .dwattr $C$DW$34, DW_AT_name("SysCtlPeripheralReset")
+     239                            .dwattr $C$DW$34, DW_AT_TI_call
+     240 0000000a FFFEF7FF!         BL        SysCtlPeripheralReset ; [DPU_3_PIPE] |30|  ; [KEEP 32-BIT INS]
+     241                            ; CALL OCCURS {SysCtlPeripheralReset }  ; [] |30| 
+     242                            .dwpsn  file "../tiva_i2c.c",line 33,column 2,is_stmt,isa 1
+     243                    ;----------------------------------------------------------------------
+     244                    ;  33 | SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);                           
+     245                    ;  35 | // Configure the pin muxing for I2C0 functions on port B2 and B3.      
+     246                    ;----------------------------------------------------------------------
+     247 0000000e 480F              LDR       A1, $C$CON2           ; [DPU_3_PIPE] |33|  ; [ORIG 16-BIT INS]
+     248                    $C$DW$35        .dwtag  DW_TAG_TI_branch
+     249                            .dwattr $C$DW$35, DW_AT_low_pc(0x00)
+     250                            .dwattr $C$DW$35, DW_AT_name("SysCtlPeripheralEnable")
+     251                            .dwattr $C$DW$35, DW_AT_TI_call
+     252 00000010 FFFEF7FF!         BL        SysCtlPeripheralEnable ; [DPU_3_PIPE] |33|  ; [KEEP 32-BIT INS]
+     253                            ; CALL OCCURS {SysCtlPeripheralEnable }  ; [] |33| 
+     254                            .dwpsn  file "../tiva_i2c.c",line 36,column 5,is_stmt,isa 1
+     255                    ;----------------------------------------------------------------------
+     256                    ;  36 | GPIOPinConfigure(GPIO_PB2_I2C0SCL);                                    
+     257                    ;----------------------------------------------------------------------
+     258 00000014 480E              LDR       A1, $C$CON3           ; [DPU_3_PIPE] |36|  ; [ORIG 16-BIT INS]
+     259                    $C$DW$36        .dwtag  DW_TAG_TI_branch
+     260                            .dwattr $C$DW$36, DW_AT_low_pc(0x00)
+     261                            .dwattr $C$DW$36, DW_AT_name("GPIOPinConfigure")
+     262                            .dwattr $C$DW$36, DW_AT_TI_call
+     263 00000016 FFFEF7FF!         BL        GPIOPinConfigure      ; [DPU_3_PIPE] |36|  ; [KEEP 32-BIT INS]
+     264                            ; CALL OCCURS {GPIOPinConfigure }  ; [] |36| 
+     265                            .dwpsn  file "../tiva_i2c.c",line 37,column 2,is_stmt,isa 1
+     266                    ;----------------------------------------------------------------------
+     267                    ;  37 | GPIOPinConfigure(GPIO_PB3_I2C0SDA);                                    
+     268                    ;  39 | // Select the I2C function for these pins.                             
+     269                    ;----------------------------------------------------------------------
+     270 0000001a 480E              LDR       A1, $C$CON4           ; [DPU_3_PIPE] |37|  ; [ORIG 16-BIT INS]
+     271                    $C$DW$37        .dwtag  DW_TAG_TI_branch
+     272                            .dwattr $C$DW$37, DW_AT_low_pc(0x00)
+     273                            .dwattr $C$DW$37, DW_AT_name("GPIOPinConfigure")
+     274                            .dwattr $C$DW$37, DW_AT_TI_call
+     275 0000001c FFFEF7FF!         BL        GPIOPinConfigure      ; [DPU_3_PIPE] |37|  ; [KEEP 32-BIT INS]
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE    6
+
+     276                            ; CALL OCCURS {GPIOPinConfigure }  ; [] |37| 
+     277                            .dwpsn  file "../tiva_i2c.c",line 40,column 2,is_stmt,isa 1
+     278                    ;----------------------------------------------------------------------
+     279                    ;  40 | GPIOPinTypeI2CSCL(GPIO_PORTB_BASE, GPIO_PIN_2);                        
+     280                    ;----------------------------------------------------------------------
+     281 00000020 480D              LDR       A1, $C$CON5           ; [DPU_3_PIPE] |40|  ; [ORIG 16-BIT INS]
+     282 00000022 2104              MOVS      A2, #4                ; [DPU_3_PIPE] |40|  ; [ORIG 16-BIT INS]
+     283                    $C$DW$38        .dwtag  DW_TAG_TI_branch
+     284                            .dwattr $C$DW$38, DW_AT_low_pc(0x00)
+     285                            .dwattr $C$DW$38, DW_AT_name("GPIOPinTypeI2CSCL")
+     286                            .dwattr $C$DW$38, DW_AT_TI_call
+     287 00000024 FFFEF7FF!         BL        GPIOPinTypeI2CSCL     ; [DPU_3_PIPE] |40|  ; [KEEP 32-BIT INS]
+     288                            ; CALL OCCURS {GPIOPinTypeI2CSCL }  ; [] |40| 
+     289                            .dwpsn  file "../tiva_i2c.c",line 41,column 2,is_stmt,isa 1
+     290                    ;----------------------------------------------------------------------
+     291                    ;  41 | GPIOPinTypeI2C(GPIO_PORTB_BASE, GPIO_PIN_3);                           
+     292                    ;  43 | // Enable and initialize the I2C0 master module.  Use the system clock
+     293                    ;     | for                                                                    
+     294                    ;  44 | // the I2C0 module.  The last parameter sets the I2C data transfer rate
+     295                    ;     | .                                                                      
+     296                    ;  45 | // If false the data rate is set to 100kbps and if true the data rate w
+     297                    ;     | ill                                                                    
+     298                    ;  46 | // be set to 400kbps.                                                  
+     299                    ;----------------------------------------------------------------------
+     300 00000028 480B              LDR       A1, $C$CON5           ; [DPU_3_PIPE] |41|  ; [ORIG 16-BIT INS]
+     301 0000002a 2108              MOVS      A2, #8                ; [DPU_3_PIPE] |41|  ; [ORIG 16-BIT INS]
+     302                    $C$DW$39        .dwtag  DW_TAG_TI_branch
+     303                            .dwattr $C$DW$39, DW_AT_low_pc(0x00)
+     304                            .dwattr $C$DW$39, DW_AT_name("GPIOPinTypeI2C")
+     305                            .dwattr $C$DW$39, DW_AT_TI_call
+     306 0000002c FFFEF7FF!         BL        GPIOPinTypeI2C        ; [DPU_3_PIPE] |41|  ; [KEEP 32-BIT INS]
+     307                            ; CALL OCCURS {GPIOPinTypeI2C }  ; [] |41| 
+     308                            .dwpsn  file "../tiva_i2c.c",line 47,column 2,is_stmt,isa 1
+     309                    ;----------------------------------------------------------------------
+     310                    ;  47 | I2CMasterInitExpClk(I2C0_BASE, SysCtlClockGet(), false);               
+     311                    ;  49 | //clear I2C FIFOs                                                      
+     312                    ;----------------------------------------------------------------------
+     313                    $C$DW$40        .dwtag  DW_TAG_TI_branch
+     314                            .dwattr $C$DW$40, DW_AT_low_pc(0x00)
+     315                            .dwattr $C$DW$40, DW_AT_name("SysCtlClockGet")
+     316                            .dwattr $C$DW$40, DW_AT_TI_call
+     317 00000030 FFFEF7FF!         BL        SysCtlClockGet        ; [DPU_3_PIPE] |47|  ; [KEEP 32-BIT INS]
+     318                            ; CALL OCCURS {SysCtlClockGet }  ; [] |47| 
+     319 00000034 4601              MOV       A2, A1                ; [DPU_3_PIPE] |47|  ; [ORIG 16-BIT INS]
+     320 00000036 4809              LDR       A1, $C$CON6           ; [DPU_3_PIPE] |47|  ; [ORIG 16-BIT INS]
+     321 00000038 2200              MOVS      A3, #0                ; [DPU_3_PIPE] |47|  ; [ORIG 16-BIT INS]
+     322                    $C$DW$41        .dwtag  DW_TAG_TI_branch
+     323                            .dwattr $C$DW$41, DW_AT_low_pc(0x00)
+     324                            .dwattr $C$DW$41, DW_AT_name("I2CMasterInitExpClk")
+     325                            .dwattr $C$DW$41, DW_AT_TI_call
+     326 0000003a FFFEF7FF!         BL        I2CMasterInitExpClk   ; [DPU_3_PIPE] |47|  ; [KEEP 32-BIT INS]
+     327                            ; CALL OCCURS {I2CMasterInitExpClk }  ; [] |47| 
+     328                            .dwpsn  file "../tiva_i2c.c",line 50,column 2,is_stmt,isa 1
+     329                    ;----------------------------------------------------------------------
+     330                    ;  50 | HWREG(I2C0_BASE + I2C_O_FIFOCTL) = 80008000;                           
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE    7
+
+     331                    ;----------------------------------------------------------------------
+     332 0000003e 4809              LDR       A1, $C$CON8           ; [DPU_3_PIPE] |50|  ; [ORIG 16-BIT INS]
+     333 00000040 4907              LDR       A2, $C$CON7           ; [DPU_3_PIPE] |50|  ; [ORIG 16-BIT INS]
+     334 00000042 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |50|  ; [ORIG 16-BIT INS]
+     335                            .dwpsn  file "../tiva_i2c.c",line 51,column 1,is_stmt,isa 1
+     336                    $C$DW$42        .dwtag  DW_TAG_TI_branch
+     337                            .dwattr $C$DW$42, DW_AT_low_pc(0x00)
+     338                            .dwattr $C$DW$42, DW_AT_TI_return
+     339 00000044 BD08              POP       {A4, PC}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     340                            .dwcfi  cfa_offset, 0
+     341                            ; BRANCH OCCURS                  ; [] 
+     342                            .dwattr $C$DW$32, DW_AT_TI_end_file("../tiva_i2c.c")
+     343                            .dwattr $C$DW$32, DW_AT_TI_end_line(0x33)
+     344                            .dwattr $C$DW$32, DW_AT_TI_end_column(0x01)
+     345                            .dwendentry
+     346                            .dwendtag $C$DW$32
+     347                    
+     348 00000000                   .sect   ".text:readI2C0"
+     349                            .clink
+     350                            .thumbfunc readI2C0
+     351 00000000                   .thumb
+     352                            .global readI2C0
+     353                    
+     354                    $C$DW$43        .dwtag  DW_TAG_subprogram, DW_AT_name("readI2C0")
+     355                            .dwattr $C$DW$43, DW_AT_low_pc(readI2C0)
+     356                            .dwattr $C$DW$43, DW_AT_high_pc(0x00)
+     357                            .dwattr $C$DW$43, DW_AT_TI_symbol_name("readI2C0")
+     358                            .dwattr $C$DW$43, DW_AT_external
+     359                            .dwattr $C$DW$43, DW_AT_type(*$C$DW$T$23)
+     360                            .dwattr $C$DW$43, DW_AT_TI_begin_file("../tiva_i2c.c")
+     361                            .dwattr $C$DW$43, DW_AT_TI_begin_line(0x35)
+     362                            .dwattr $C$DW$43, DW_AT_TI_begin_column(0x09)
+     363                            .dwattr $C$DW$43, DW_AT_decl_file("../tiva_i2c.c")
+     364                            .dwattr $C$DW$43, DW_AT_decl_line(0x35)
+     365                            .dwattr $C$DW$43, DW_AT_decl_column(0x09)
+     366                            .dwattr $C$DW$43, DW_AT_TI_max_frame_size(0x08)
+     367                            .dwpsn  file "../tiva_i2c.c",line 54,column 1,is_stmt,address readI2C0,isa 1
+     368                    
+     369                            .dwfde $C$DW$CIE, readI2C0
+     370                    $C$DW$44        .dwtag  DW_TAG_formal_parameter, DW_AT_name("device_address")
+     371                            .dwattr $C$DW$44, DW_AT_TI_symbol_name("device_address")
+     372                            .dwattr $C$DW$44, DW_AT_type(*$C$DW$T$34)
+     373                            .dwattr $C$DW$44, DW_AT_location[DW_OP_reg0]
+     374                    $C$DW$45        .dwtag  DW_TAG_formal_parameter, DW_AT_name("device_register")
+     375                            .dwattr $C$DW$45, DW_AT_TI_symbol_name("device_register")
+     376                            .dwattr $C$DW$45, DW_AT_type(*$C$DW$T$34)
+     377                            .dwattr $C$DW$45, DW_AT_location[DW_OP_reg1]
+     378                    ;----------------------------------------------------------------------
+     379                    ;  53 | uint8_t readI2C0(uint16_t device_address, uint16_t device_register)    
+     380                    ;----------------------------------------------------------------------
+     381                    
+     382                    ;*****************************************************************************
+     383                    ;* FUNCTION NAME: readI2C0                                                   *
+     384                    ;*                                                                           *
+     385                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE    8
+
+     386                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     387                    ;*                           FPEXC,FPSCR                                     *
+     388                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     389                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     390                    ;*                           FPEXC,FPSCR                                     *
+     391                    ;*   Local Frame Size  : 0 Args + 4 Auto + 4 Save = 8 byte                   *
+     392                    ;*****************************************************************************
+     393 00000000           readI2C0:
+     394                    ;* --------------------------------------------------------------------------*
+     395                            .dwcfi  cfa_offset, 0
+     396 00000000 B508              PUSH      {A4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     397                            .dwcfi  cfa_offset, 8
+     398                            .dwcfi  save_reg_to_mem, 14, -4
+     399                            .dwcfi  save_reg_to_mem, 3, -8
+     400                    $C$DW$46        .dwtag  DW_TAG_variable, DW_AT_name("device_address")
+     401                            .dwattr $C$DW$46, DW_AT_TI_symbol_name("device_address")
+     402                            .dwattr $C$DW$46, DW_AT_type(*$C$DW$T$34)
+     403                            .dwattr $C$DW$46, DW_AT_location[DW_OP_breg13 0]
+     404                    $C$DW$47        .dwtag  DW_TAG_variable, DW_AT_name("device_register")
+     405                            .dwattr $C$DW$47, DW_AT_TI_symbol_name("device_register")
+     406                            .dwattr $C$DW$47, DW_AT_type(*$C$DW$T$34)
+     407                            .dwattr $C$DW$47, DW_AT_location[DW_OP_breg13 2]
+     408                    ;----------------------------------------------------------------------
+     409                    ;  55 | //specify that we want to communicate to device address with an intende
+     410                    ;     | d write to bus                                                         
+     411                    ;----------------------------------------------------------------------
+     412 00000002 1002F8AD          STRH      A2, [SP, #2]          ; [DPU_3_PIPE] |54|  ; [KEEP 32-BIT INS]
+     413 00000006 0000F8AD          STRH      A1, [SP, #0]          ; [DPU_3_PIPE] |54|  ; [KEEP 32-BIT INS]
+     414                            .dwpsn  file "../tiva_i2c.c",line 56,column 2,is_stmt,isa 1
+     415                    ;----------------------------------------------------------------------
+     416                    ;  56 | I2CMasterSlaveAddrSet(I2C0_BASE, device_address, false);               
+     417                    ;  58 | //the register to be read                                              
+     418                    ;----------------------------------------------------------------------
+     419 0000000a 4814              LDR       A1, $C$CON9           ; [DPU_3_PIPE] |56|  ; [ORIG 16-BIT INS]
+     420 0000000c 1000F89D          LDRB      A2, [SP, #0]          ; [DPU_3_PIPE] |56|  ; [KEEP 32-BIT INS]
+     421 00000010 2200              MOVS      A3, #0                ; [DPU_3_PIPE] |56|  ; [ORIG 16-BIT INS]
+     422                    $C$DW$48        .dwtag  DW_TAG_TI_branch
+     423                            .dwattr $C$DW$48, DW_AT_low_pc(0x00)
+     424                            .dwattr $C$DW$48, DW_AT_name("I2CMasterSlaveAddrSet")
+     425                            .dwattr $C$DW$48, DW_AT_TI_call
+     426 00000012 FFFEF7FF!         BL        I2CMasterSlaveAddrSet ; [DPU_3_PIPE] |56|  ; [KEEP 32-BIT INS]
+     427                            ; CALL OCCURS {I2CMasterSlaveAddrSet }  ; [] |56| 
+     428                            .dwpsn  file "../tiva_i2c.c",line 59,column 2,is_stmt,isa 1
+     429                    ;----------------------------------------------------------------------
+     430                    ;  59 | I2CMasterDataPut(I2C0_BASE, device_register);                          
+     431                    ;  61 | //send control byte and register address byte to slave device          
+     432                    ;----------------------------------------------------------------------
+     433 00000016 4811              LDR       A1, $C$CON9           ; [DPU_3_PIPE] |59|  ; [ORIG 16-BIT INS]
+     434 00000018 1002F89D          LDRB      A2, [SP, #2]          ; [DPU_3_PIPE] |59|  ; [KEEP 32-BIT INS]
+     435                    $C$DW$49        .dwtag  DW_TAG_TI_branch
+     436                            .dwattr $C$DW$49, DW_AT_low_pc(0x00)
+     437                            .dwattr $C$DW$49, DW_AT_name("I2CMasterDataPut")
+     438                            .dwattr $C$DW$49, DW_AT_TI_call
+     439 0000001c FFFEF7FF!         BL        I2CMasterDataPut      ; [DPU_3_PIPE] |59|  ; [KEEP 32-BIT INS]
+     440                            ; CALL OCCURS {I2CMasterDataPut }  ; [] |59| 
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE    9
+
+     441                            .dwpsn  file "../tiva_i2c.c",line 62,column 2,is_stmt,isa 1
+     442                    ;----------------------------------------------------------------------
+     443                    ;  62 | I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_SINGLE_SEND);               
+     444                    ;  64 | //wait for MCU to complete send transaction                            
+     445                    ;----------------------------------------------------------------------
+     446 00000020 480E              LDR       A1, $C$CON9           ; [DPU_3_PIPE] |62|  ; [ORIG 16-BIT INS]
+     447 00000022 2107              MOVS      A2, #7                ; [DPU_3_PIPE] |62|  ; [ORIG 16-BIT INS]
+     448                    $C$DW$50        .dwtag  DW_TAG_TI_branch
+     449                            .dwattr $C$DW$50, DW_AT_low_pc(0x00)
+     450                            .dwattr $C$DW$50, DW_AT_name("I2CMasterControl")
+     451                            .dwattr $C$DW$50, DW_AT_TI_call
+     452 00000024 FFFEF7FF!         BL        I2CMasterControl      ; [DPU_3_PIPE] |62|  ; [KEEP 32-BIT INS]
+     453                            ; CALL OCCURS {I2CMasterControl }  ; [] |62| 
+     454                            .dwpsn  file "../tiva_i2c.c",line 65,column 2,is_stmt,isa 1
+     455                    ;----------------------------------------------------------------------
+     456                    ;  65 | while(I2CMasterBusy(I2C0_BASE));                                       
+     457                    ;  67 | //read from the specified slave device                                 
+     458                    ;----------------------------------------------------------------------
+     459                    ;* --------------------------------------------------------------------------*
+     460                    ;*   BEGIN LOOP ||$C$L1||
+     461                    ;*
+     462                    ;*   Loop source line                : 65
+     463                    ;*   Loop closing brace source line  : 65
+     464                    ;*   Known Minimum Trip Count        : 1
+     465                    ;*   Known Maximum Trip Count        : 4294967295
+     466                    ;*   Known Max Trip Count Factor     : 1
+     467                    ;* --------------------------------------------------------------------------*
+     468 00000028           ||$C$L1||:    
+     469 00000028 480C              LDR       A1, $C$CON9           ; [DPU_3_PIPE] |65|  ; [ORIG 16-BIT INS]
+     470                    $C$DW$51        .dwtag  DW_TAG_TI_branch
+     471                            .dwattr $C$DW$51, DW_AT_low_pc(0x00)
+     472                            .dwattr $C$DW$51, DW_AT_name("I2CMasterBusy")
+     473                            .dwattr $C$DW$51, DW_AT_TI_call
+     474 0000002a FFFEF7FF!         BL        I2CMasterBusy         ; [DPU_3_PIPE] |65|  ; [KEEP 32-BIT INS]
+     475                            ; CALL OCCURS {I2CMasterBusy }   ; [] |65| 
+     476 0000002e 2800              CMP       A1, #0                ; [DPU_3_PIPE] |65|  ; [ORIG 16-BIT INS]
+     477 00000030 D1FA              BNE       ||$C$L1||             ; [DPU_3_PIPE] |65|  ; [ORIG 16-BIT INS]
+     478                            ; BRANCHCC OCCURS {||$C$L1||}    ; [] |65| 
+     479                    ;* --------------------------------------------------------------------------*
+     480                            .dwpsn  file "../tiva_i2c.c",line 68,column 2,is_stmt,isa 1
+     481                    ;----------------------------------------------------------------------
+     482                    ;  68 | I2CMasterSlaveAddrSet(I2C0_BASE, device_address, true);                
+     483                    ;  70 | //send control byte and read from the register from the MCU            
+     484                    ;----------------------------------------------------------------------
+     485 00000032 1000F89D          LDRB      A2, [SP, #0]          ; [DPU_3_PIPE] |68|  ; [KEEP 32-BIT INS]
+     486 00000036 4809              LDR       A1, $C$CON9           ; [DPU_3_PIPE] |68|  ; [ORIG 16-BIT INS]
+     487 00000038 2201              MOVS      A3, #1                ; [DPU_3_PIPE] |68|  ; [ORIG 16-BIT INS]
+     488                    $C$DW$52        .dwtag  DW_TAG_TI_branch
+     489                            .dwattr $C$DW$52, DW_AT_low_pc(0x00)
+     490                            .dwattr $C$DW$52, DW_AT_name("I2CMasterSlaveAddrSet")
+     491                            .dwattr $C$DW$52, DW_AT_TI_call
+     492 0000003a FFFEF7FF!         BL        I2CMasterSlaveAddrSet ; [DPU_3_PIPE] |68|  ; [KEEP 32-BIT INS]
+     493                            ; CALL OCCURS {I2CMasterSlaveAddrSet }  ; [] |68| 
+     494                            .dwpsn  file "../tiva_i2c.c",line 71,column 2,is_stmt,isa 1
+     495                    ;----------------------------------------------------------------------
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   10
+
+     496                    ;  71 | I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_SINGLE_RECEIVE);            
+     497                    ;  73 | //wait while checking for MCU to complete the transaction              
+     498                    ;----------------------------------------------------------------------
+     499 0000003e 4807              LDR       A1, $C$CON9           ; [DPU_3_PIPE] |71|  ; [ORIG 16-BIT INS]
+     500 00000040 2107              MOVS      A2, #7                ; [DPU_3_PIPE] |71|  ; [ORIG 16-BIT INS]
+     501                    $C$DW$53        .dwtag  DW_TAG_TI_branch
+     502                            .dwattr $C$DW$53, DW_AT_low_pc(0x00)
+     503                            .dwattr $C$DW$53, DW_AT_name("I2CMasterControl")
+     504                            .dwattr $C$DW$53, DW_AT_TI_call
+     505 00000042 FFFEF7FF!         BL        I2CMasterControl      ; [DPU_3_PIPE] |71|  ; [KEEP 32-BIT INS]
+     506                            ; CALL OCCURS {I2CMasterControl }  ; [] |71| 
+     507                            .dwpsn  file "../tiva_i2c.c",line 74,column 2,is_stmt,isa 1
+     508                    ;----------------------------------------------------------------------
+     509                    ;  74 | while(I2CMasterBusy(I2C0_BASE));                                       
+     510                    ;  76 | //Get the data from the MCU register and return to caller              
+     511                    ;----------------------------------------------------------------------
+     512                    ;* --------------------------------------------------------------------------*
+     513                    ;*   BEGIN LOOP ||$C$L2||
+     514                    ;*
+     515                    ;*   Loop source line                : 74
+     516                    ;*   Loop closing brace source line  : 74
+     517                    ;*   Known Minimum Trip Count        : 1
+     518                    ;*   Known Maximum Trip Count        : 4294967295
+     519                    ;*   Known Max Trip Count Factor     : 1
+     520                    ;* --------------------------------------------------------------------------*
+     521 00000046           ||$C$L2||:    
+     522 00000046 4805              LDR       A1, $C$CON9           ; [DPU_3_PIPE] |74|  ; [ORIG 16-BIT INS]
+     523                    $C$DW$54        .dwtag  DW_TAG_TI_branch
+     524                            .dwattr $C$DW$54, DW_AT_low_pc(0x00)
+     525                            .dwattr $C$DW$54, DW_AT_name("I2CMasterBusy")
+     526                            .dwattr $C$DW$54, DW_AT_TI_call
+     527 00000048 FFFEF7FF!         BL        I2CMasterBusy         ; [DPU_3_PIPE] |74|  ; [KEEP 32-BIT INS]
+     528                            ; CALL OCCURS {I2CMasterBusy }   ; [] |74| 
+     529 0000004c 2800              CMP       A1, #0                ; [DPU_3_PIPE] |74|  ; [ORIG 16-BIT INS]
+     530 0000004e D1FA              BNE       ||$C$L2||             ; [DPU_3_PIPE] |74|  ; [ORIG 16-BIT INS]
+     531                            ; BRANCHCC OCCURS {||$C$L2||}    ; [] |74| 
+     532                    ;* --------------------------------------------------------------------------*
+     533                            .dwpsn  file "../tiva_i2c.c",line 77,column 2,is_stmt,isa 1
+     534                    ;----------------------------------------------------------------------
+     535                    ;  77 | return( I2CMasterDataGet(I2C0_BASE));                                  
+     536                    ;----------------------------------------------------------------------
+     537 00000050 4802              LDR       A1, $C$CON9           ; [DPU_3_PIPE] |77|  ; [ORIG 16-BIT INS]
+     538                    $C$DW$55        .dwtag  DW_TAG_TI_branch
+     539                            .dwattr $C$DW$55, DW_AT_low_pc(0x00)
+     540                            .dwattr $C$DW$55, DW_AT_name("I2CMasterDataGet")
+     541                            .dwattr $C$DW$55, DW_AT_TI_call
+     542 00000052 FFFEF7FF!         BL        I2CMasterDataGet      ; [DPU_3_PIPE] |77|  ; [KEEP 32-BIT INS]
+     543                            ; CALL OCCURS {I2CMasterDataGet }  ; [] |77| 
+     544 00000056 B2C0              UXTB      A1, A1                ; [DPU_3_PIPE] |77|  ; [ORIG 16-BIT INS]
+     545                            .dwpsn  file "../tiva_i2c.c",line 78,column 1,is_stmt,isa 1
+     546                    $C$DW$56        .dwtag  DW_TAG_TI_branch
+     547                            .dwattr $C$DW$56, DW_AT_low_pc(0x00)
+     548                            .dwattr $C$DW$56, DW_AT_TI_return
+     549 00000058 BD08              POP       {A4, PC}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     550                            .dwcfi  cfa_offset, 0
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   11
+
+     551                            ; BRANCH OCCURS                  ; [] 
+     552                            .dwattr $C$DW$43, DW_AT_TI_end_file("../tiva_i2c.c")
+     553                            .dwattr $C$DW$43, DW_AT_TI_end_line(0x4e)
+     554                            .dwattr $C$DW$43, DW_AT_TI_end_column(0x01)
+     555                            .dwendentry
+     556                            .dwendtag $C$DW$43
+     557                    
+     558 00000000                   .sect   ".text:writeI2C0"
+     559                            .clink
+     560                            .thumbfunc writeI2C0
+     561 00000000                   .thumb
+     562                            .global writeI2C0
+     563                    
+     564                    $C$DW$57        .dwtag  DW_TAG_subprogram, DW_AT_name("writeI2C0")
+     565                            .dwattr $C$DW$57, DW_AT_low_pc(writeI2C0)
+     566                            .dwattr $C$DW$57, DW_AT_high_pc(0x00)
+     567                            .dwattr $C$DW$57, DW_AT_TI_symbol_name("writeI2C0")
+     568                            .dwattr $C$DW$57, DW_AT_external
+     569                            .dwattr $C$DW$57, DW_AT_TI_begin_file("../tiva_i2c.c")
+     570                            .dwattr $C$DW$57, DW_AT_TI_begin_line(0x50)
+     571                            .dwattr $C$DW$57, DW_AT_TI_begin_column(0x06)
+     572                            .dwattr $C$DW$57, DW_AT_decl_file("../tiva_i2c.c")
+     573                            .dwattr $C$DW$57, DW_AT_decl_line(0x50)
+     574                            .dwattr $C$DW$57, DW_AT_decl_column(0x06)
+     575                            .dwattr $C$DW$57, DW_AT_TI_max_frame_size(0x10)
+     576                            .dwpsn  file "../tiva_i2c.c",line 81,column 1,is_stmt,address writeI2C0,isa 1
+     577                    
+     578                            .dwfde $C$DW$CIE, writeI2C0
+     579                    $C$DW$58        .dwtag  DW_TAG_formal_parameter, DW_AT_name("device_address")
+     580                            .dwattr $C$DW$58, DW_AT_TI_symbol_name("device_address")
+     581                            .dwattr $C$DW$58, DW_AT_type(*$C$DW$T$34)
+     582                            .dwattr $C$DW$58, DW_AT_location[DW_OP_reg0]
+     583                    $C$DW$59        .dwtag  DW_TAG_formal_parameter, DW_AT_name("device_register")
+     584                            .dwattr $C$DW$59, DW_AT_TI_symbol_name("device_register")
+     585                            .dwattr $C$DW$59, DW_AT_type(*$C$DW$T$34)
+     586                            .dwattr $C$DW$59, DW_AT_location[DW_OP_reg1]
+     587                    $C$DW$60        .dwtag  DW_TAG_formal_parameter, DW_AT_name("device_data")
+     588                            .dwattr $C$DW$60, DW_AT_TI_symbol_name("device_data")
+     589                            .dwattr $C$DW$60, DW_AT_type(*$C$DW$T$23)
+     590                            .dwattr $C$DW$60, DW_AT_location[DW_OP_reg2]
+     591                    ;----------------------------------------------------------------------
+     592                    ;  80 | void writeI2C0(uint16_t device_address, uint16_t device_register, uint8
+     593                    ;     | _t device_data)                                                        
+     594                    ;----------------------------------------------------------------------
+     595                    
+     596                    ;*****************************************************************************
+     597                    ;* FUNCTION NAME: writeI2C0                                                  *
+     598                    ;*                                                                           *
+     599                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     600                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     601                    ;*                           FPEXC,FPSCR                                     *
+     602                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     603                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     604                    ;*                           FPEXC,FPSCR                                     *
+     605                    ;*   Local Frame Size  : 0 Args + 8 Auto + 4 Save = 12 byte                  *
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   12
+
+     606                    ;*****************************************************************************
+     607 00000000           writeI2C0:
+     608                    ;* --------------------------------------------------------------------------*
+     609                            .dwcfi  cfa_offset, 0
+     610 00000000 B50E              PUSH      {A2, A3, A4, LR}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     611                            .dwcfi  cfa_offset, 16
+     612                            .dwcfi  save_reg_to_mem, 14, -4
+     613                            .dwcfi  save_reg_to_mem, 3, -8
+     614                            .dwcfi  save_reg_to_mem, 2, -12
+     615                            .dwcfi  save_reg_to_mem, 1, -16
+     616                    $C$DW$61        .dwtag  DW_TAG_variable, DW_AT_name("device_address")
+     617                            .dwattr $C$DW$61, DW_AT_TI_symbol_name("device_address")
+     618                            .dwattr $C$DW$61, DW_AT_type(*$C$DW$T$34)
+     619                            .dwattr $C$DW$61, DW_AT_location[DW_OP_breg13 0]
+     620                    $C$DW$62        .dwtag  DW_TAG_variable, DW_AT_name("device_register")
+     621                            .dwattr $C$DW$62, DW_AT_TI_symbol_name("device_register")
+     622                            .dwattr $C$DW$62, DW_AT_type(*$C$DW$T$34)
+     623                            .dwattr $C$DW$62, DW_AT_location[DW_OP_breg13 2]
+     624                    $C$DW$63        .dwtag  DW_TAG_variable, DW_AT_name("device_data")
+     625                            .dwattr $C$DW$63, DW_AT_TI_symbol_name("device_data")
+     626                            .dwattr $C$DW$63, DW_AT_type(*$C$DW$T$23)
+     627                            .dwattr $C$DW$63, DW_AT_location[DW_OP_breg13 4]
+     628                    ;----------------------------------------------------------------------
+     629                    ;  82 | //specify that we want to communicate to device address with an intende
+     630                    ;     | d write to bus                                                         
+     631                    ;----------------------------------------------------------------------
+     632 00000002 2004F88D          STRB      A3, [SP, #4]          ; [DPU_3_PIPE] |81|  ; [KEEP 32-BIT INS]
+     633 00000006 1002F8AD          STRH      A2, [SP, #2]          ; [DPU_3_PIPE] |81|  ; [KEEP 32-BIT INS]
+     634 0000000a 0000F8AD          STRH      A1, [SP, #0]          ; [DPU_3_PIPE] |81|  ; [KEEP 32-BIT INS]
+     635                            .dwpsn  file "../tiva_i2c.c",line 83,column 2,is_stmt,isa 1
+     636                    ;----------------------------------------------------------------------
+     637                    ;  83 | I2CMasterSlaveAddrSet(I2C0_BASE, device_address, false);               
+     638                    ;  85 | //register to be read                                                  
+     639                    ;----------------------------------------------------------------------
+     640 0000000e 4814              LDR       A1, $C$CON10          ; [DPU_3_PIPE] |83|  ; [ORIG 16-BIT INS]
+     641 00000010 1000F89D          LDRB      A2, [SP, #0]          ; [DPU_3_PIPE] |83|  ; [KEEP 32-BIT INS]
+     642 00000014 2200              MOVS      A3, #0                ; [DPU_3_PIPE] |83|  ; [ORIG 16-BIT INS]
+     643                    $C$DW$64        .dwtag  DW_TAG_TI_branch
+     644                            .dwattr $C$DW$64, DW_AT_low_pc(0x00)
+     645                            .dwattr $C$DW$64, DW_AT_name("I2CMasterSlaveAddrSet")
+     646                            .dwattr $C$DW$64, DW_AT_TI_call
+     647 00000016 FFFEF7FF!         BL        I2CMasterSlaveAddrSet ; [DPU_3_PIPE] |83|  ; [KEEP 32-BIT INS]
+     648                            ; CALL OCCURS {I2CMasterSlaveAddrSet }  ; [] |83| 
+     649                            .dwpsn  file "../tiva_i2c.c",line 86,column 2,is_stmt,isa 1
+     650                    ;----------------------------------------------------------------------
+     651                    ;  86 | I2CMasterDataPut(I2C0_BASE, device_register);                          
+     652                    ;  88 | //send control byte and register address byte to slave device          
+     653                    ;----------------------------------------------------------------------
+     654 0000001a 4811              LDR       A1, $C$CON10          ; [DPU_3_PIPE] |86|  ; [ORIG 16-BIT INS]
+     655 0000001c 1002F89D          LDRB      A2, [SP, #2]          ; [DPU_3_PIPE] |86|  ; [KEEP 32-BIT INS]
+     656                    $C$DW$65        .dwtag  DW_TAG_TI_branch
+     657                            .dwattr $C$DW$65, DW_AT_low_pc(0x00)
+     658                            .dwattr $C$DW$65, DW_AT_name("I2CMasterDataPut")
+     659                            .dwattr $C$DW$65, DW_AT_TI_call
+     660 00000020 FFFEF7FF!         BL        I2CMasterDataPut      ; [DPU_3_PIPE] |86|  ; [KEEP 32-BIT INS]
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   13
+
+     661                            ; CALL OCCURS {I2CMasterDataPut }  ; [] |86| 
+     662                            .dwpsn  file "../tiva_i2c.c",line 89,column 2,is_stmt,isa 1
+     663                    ;----------------------------------------------------------------------
+     664                    ;  89 | I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_START);          
+     665                    ;  91 | //wait for MCU to finish transaction                                   
+     666                    ;----------------------------------------------------------------------
+     667 00000024 480E              LDR       A1, $C$CON10          ; [DPU_3_PIPE] |89|  ; [ORIG 16-BIT INS]
+     668 00000026 2103              MOVS      A2, #3                ; [DPU_3_PIPE] |89|  ; [ORIG 16-BIT INS]
+     669                    $C$DW$66        .dwtag  DW_TAG_TI_branch
+     670                            .dwattr $C$DW$66, DW_AT_low_pc(0x00)
+     671                            .dwattr $C$DW$66, DW_AT_name("I2CMasterControl")
+     672                            .dwattr $C$DW$66, DW_AT_TI_call
+     673 00000028 FFFEF7FF!         BL        I2CMasterControl      ; [DPU_3_PIPE] |89|  ; [KEEP 32-BIT INS]
+     674                            ; CALL OCCURS {I2CMasterControl }  ; [] |89| 
+     675                            .dwpsn  file "../tiva_i2c.c",line 92,column 2,is_stmt,isa 1
+     676                    ;----------------------------------------------------------------------
+     677                    ;  92 | while(I2CMasterBusy(I2C0_BASE));                                       
+     678                    ;----------------------------------------------------------------------
+     679                    ;* --------------------------------------------------------------------------*
+     680                    ;*   BEGIN LOOP ||$C$L3||
+     681                    ;*
+     682                    ;*   Loop source line                : 92
+     683                    ;*   Loop closing brace source line  : 92
+     684                    ;*   Known Minimum Trip Count        : 1
+     685                    ;*   Known Maximum Trip Count        : 4294967295
+     686                    ;*   Known Max Trip Count Factor     : 1
+     687                    ;* --------------------------------------------------------------------------*
+     688 0000002c           ||$C$L3||:    
+     689 0000002c 480C              LDR       A1, $C$CON10          ; [DPU_3_PIPE] |92|  ; [ORIG 16-BIT INS]
+     690                    $C$DW$67        .dwtag  DW_TAG_TI_branch
+     691                            .dwattr $C$DW$67, DW_AT_low_pc(0x00)
+     692                            .dwattr $C$DW$67, DW_AT_name("I2CMasterBusy")
+     693                            .dwattr $C$DW$67, DW_AT_TI_call
+     694 0000002e FFFEF7FF!         BL        I2CMasterBusy         ; [DPU_3_PIPE] |92|  ; [KEEP 32-BIT INS]
+     695                            ; CALL OCCURS {I2CMasterBusy }   ; [] |92| 
+     696 00000032 2800              CMP       A1, #0                ; [DPU_3_PIPE] |92|  ; [ORIG 16-BIT INS]
+     697 00000034 D1FA              BNE       ||$C$L3||             ; [DPU_3_PIPE] |92|  ; [ORIG 16-BIT INS]
+     698                            ; BRANCHCC OCCURS {||$C$L3||}    ; [] |92| 
+     699                    ;* --------------------------------------------------------------------------*
+     700                            .dwpsn  file "../tiva_i2c.c",line 94,column 2,is_stmt,isa 1
+     701                    ;----------------------------------------------------------------------
+     702                    ;  94 | I2CMasterSlaveAddrSet(I2C0_BASE, device_address, false);               
+     703                    ;  96 | //specify data to be written to the above mentioned device_register    
+     704                    ;----------------------------------------------------------------------
+     705 00000036 1000F89D          LDRB      A2, [SP, #0]          ; [DPU_3_PIPE] |94|  ; [KEEP 32-BIT INS]
+     706 0000003a 4809              LDR       A1, $C$CON10          ; [DPU_3_PIPE] |94|  ; [ORIG 16-BIT INS]
+     707 0000003c 2200              MOVS      A3, #0                ; [DPU_3_PIPE] |94|  ; [ORIG 16-BIT INS]
+     708                    $C$DW$68        .dwtag  DW_TAG_TI_branch
+     709                            .dwattr $C$DW$68, DW_AT_low_pc(0x00)
+     710                            .dwattr $C$DW$68, DW_AT_name("I2CMasterSlaveAddrSet")
+     711                            .dwattr $C$DW$68, DW_AT_TI_call
+     712 0000003e FFFEF7FF!         BL        I2CMasterSlaveAddrSet ; [DPU_3_PIPE] |94|  ; [KEEP 32-BIT INS]
+     713                            ; CALL OCCURS {I2CMasterSlaveAddrSet }  ; [] |94| 
+     714                            .dwpsn  file "../tiva_i2c.c",line 97,column 2,is_stmt,isa 1
+     715                    ;----------------------------------------------------------------------
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   14
+
+     716                    ;  97 | I2CMasterDataPut(I2C0_BASE, device_data);                              
+     717                    ;  99 | //wait while checking for MCU to complete the transaction              
+     718                    ;----------------------------------------------------------------------
+     719 00000042 1004F89D          LDRB      A2, [SP, #4]          ; [DPU_3_PIPE] |97|  ; [KEEP 32-BIT INS]
+     720 00000046 4806              LDR       A1, $C$CON10          ; [DPU_3_PIPE] |97|  ; [ORIG 16-BIT INS]
+     721                    $C$DW$69        .dwtag  DW_TAG_TI_branch
+     722                            .dwattr $C$DW$69, DW_AT_low_pc(0x00)
+     723                            .dwattr $C$DW$69, DW_AT_name("I2CMasterDataPut")
+     724                            .dwattr $C$DW$69, DW_AT_TI_call
+     725 00000048 FFFEF7FF!         BL        I2CMasterDataPut      ; [DPU_3_PIPE] |97|  ; [KEEP 32-BIT INS]
+     726                            ; CALL OCCURS {I2CMasterDataPut }  ; [] |97| 
+     727                            .dwpsn  file "../tiva_i2c.c",line 100,column 2,is_stmt,isa 1
+     728                    ;----------------------------------------------------------------------
+     729                    ; 100 | I2CMasterControl(I2C0_BASE, I2C_MASTER_CMD_BURST_RECEIVE_FINISH);      
+     730                    ; 102 | //wait for MCU & device to complete transaction                        
+     731                    ;----------------------------------------------------------------------
+     732 0000004c 4804              LDR       A1, $C$CON10          ; [DPU_3_PIPE] |100|  ; [ORIG 16-BIT INS]
+     733 0000004e 2105              MOVS      A2, #5                ; [DPU_3_PIPE] |100|  ; [ORIG 16-BIT INS]
+     734                    $C$DW$70        .dwtag  DW_TAG_TI_branch
+     735                            .dwattr $C$DW$70, DW_AT_low_pc(0x00)
+     736                            .dwattr $C$DW$70, DW_AT_name("I2CMasterControl")
+     737                            .dwattr $C$DW$70, DW_AT_TI_call
+     738 00000050 FFFEF7FF!         BL        I2CMasterControl      ; [DPU_3_PIPE] |100|  ; [KEEP 32-BIT INS]
+     739                            ; CALL OCCURS {I2CMasterControl }  ; [] |100| 
+     740                            .dwpsn  file "../tiva_i2c.c",line 103,column 2,is_stmt,isa 1
+     741                    ;----------------------------------------------------------------------
+     742                    ; 103 | while(I2CMasterBusy(I2C0_BASE));                                       
+     743                    ;----------------------------------------------------------------------
+     744                    ;* --------------------------------------------------------------------------*
+     745                    ;*   BEGIN LOOP ||$C$L4||
+     746                    ;*
+     747                    ;*   Loop source line                : 103
+     748                    ;*   Loop closing brace source line  : 103
+     749                    ;*   Known Minimum Trip Count        : 1
+     750                    ;*   Known Maximum Trip Count        : 4294967295
+     751                    ;*   Known Max Trip Count Factor     : 1
+     752                    ;* --------------------------------------------------------------------------*
+     753 00000054           ||$C$L4||:    
+     754 00000054 4802              LDR       A1, $C$CON10          ; [DPU_3_PIPE] |103|  ; [ORIG 16-BIT INS]
+     755                    $C$DW$71        .dwtag  DW_TAG_TI_branch
+     756                            .dwattr $C$DW$71, DW_AT_low_pc(0x00)
+     757                            .dwattr $C$DW$71, DW_AT_name("I2CMasterBusy")
+     758                            .dwattr $C$DW$71, DW_AT_TI_call
+     759 00000056 FFFEF7FF!         BL        I2CMasterBusy         ; [DPU_3_PIPE] |103|  ; [KEEP 32-BIT INS]
+     760                            ; CALL OCCURS {I2CMasterBusy }   ; [] |103| 
+     761 0000005a 2800              CMP       A1, #0                ; [DPU_3_PIPE] |103|  ; [ORIG 16-BIT INS]
+     762 0000005c D1FA              BNE       ||$C$L4||             ; [DPU_3_PIPE] |103|  ; [ORIG 16-BIT INS]
+     763                            ; BRANCHCC OCCURS {||$C$L4||}    ; [] |103| 
+     764                    ;* --------------------------------------------------------------------------*
+     765                            .dwpsn  file "../tiva_i2c.c",line 104,column 1,is_stmt,isa 1
+     766                    $C$DW$72        .dwtag  DW_TAG_TI_branch
+     767                            .dwattr $C$DW$72, DW_AT_low_pc(0x00)
+     768                            .dwattr $C$DW$72, DW_AT_TI_return
+     769 0000005e BD0E              POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     770                            .dwcfi  cfa_offset, 0
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   15
+
+     771                            ; BRANCH OCCURS                  ; [] 
+     772                            .dwattr $C$DW$57, DW_AT_TI_end_file("../tiva_i2c.c")
+     773                            .dwattr $C$DW$57, DW_AT_TI_end_line(0x68)
+     774                            .dwattr $C$DW$57, DW_AT_TI_end_column(0x01)
+     775                            .dwendentry
+     776                            .dwendtag $C$DW$57
+     777                    
+     778                    ;******************************************************************************
+     779                    ;* CONSTANT TABLE                                                             *
+     780                    ;******************************************************************************
+     781 00000046                   .sect   ".text:initI2C0"
+     782                            .align  4
+     783 00000046 200046C0  ||$C$CON1||:    .bits   -268427264,32
+         0000004a 0000F000 
+     784                            .align  4
+     785 0000004a 0801F000  ||$C$CON2||:    .bits   -268433407,32
+         0000004e 0000F000 
+     786                            .align  4
+     787 0000004e 0803F000  ||$C$CON3||:    .bits   67587,32
+         00000052 00000001 
+     788                            .align  4
+     789 00000052 0C030001  ||$C$CON4||:    .bits   68611,32
+         00000056 00000001 
+     790                            .align  4
+     791 00000056 50000001  ||$C$CON5||:    .bits   1073762304,32
+         0000005a 00004000 
+     792                            .align  4
+     793 0000005a 00004000  ||$C$CON6||:    .bits   1073872896,32
+         0000005e 00004002 
+     794                            .align  4
+     795 0000005e 0F044002  ||$C$CON7||:    .bits   1073876740,32
+         00000062 00004002 
+     796                            .align  4
+     797 00000062 D3404002  ||$C$CON8||:    .bits   80008000,32
+         00000066 000004C4 
+     798                    ;******************************************************************************
+     799                    ;* CONSTANT TABLE                                                             *
+     800                    ;******************************************************************************
+     801 0000005a                   .sect   ".text:readI2C0"
+     802                            .align  4
+     803 0000005a 000046C0  ||$C$CON9||:    .bits   1073872896,32
+         0000005e 00004002 
+     804                    ;******************************************************************************
+     805                    ;* CONSTANT TABLE                                                             *
+     806                    ;******************************************************************************
+     807 00000060                   .sect   ".text:writeI2C0"
+     808                            .align  4
+     809 00000060 40020000  ||$C$CON10||:   .bits   1073872896,32
+     810                    ;*****************************************************************************
+     811                    ;* UNDEFINED EXTERNAL REFERENCES                                             *
+     812                    ;*****************************************************************************
+     813                            .global I2CMasterBusy
+     814                            .global I2CMasterControl
+     815                            .global I2CMasterDataGet
+     816                            .global I2CMasterDataPut
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   16
+
+     817                            .global I2CMasterInitExpClk
+     818                            .global I2CMasterSlaveAddrSet
+     819                            .global SysCtlPeripheralReset
+     820                            .global SysCtlPeripheralEnable
+     821                            .global SysCtlClockGet
+     822                            .global GPIOPinConfigure
+     823                            .global GPIOPinTypeI2C
+     824                            .global GPIOPinTypeI2CSCL
+     825                    
+     826                    ;******************************************************************************
+     827                    ;* BUILD ATTRIBUTES                                                           *
+     828                    ;******************************************************************************
+     829                            .battr "aeabi", Tag_File, 1, Tag_ABI_PCS_wchar_t(2)
+     830                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_rounding(0)
+     831                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_denormal(0)
+     832                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_exceptions(0)
+     833                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_number_model(1)
+     834                            .battr "aeabi", Tag_File, 1, Tag_ABI_enum_size(0)
+     835                            .battr "aeabi", Tag_File, 1, Tag_ABI_optimization_goals(5)
+     836                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_optimization_goals(0)
+     837                            .battr "TI", Tag_File, 1, Tag_Bitfield_layout(2)
+     838                            .battr "TI", Tag_File, 1, Tag_FP_interface(1)
+     839                    
+     840                    ;******************************************************************************
+     841                    ;* TYPE INFORMATION                                                           *
+     842                    ;******************************************************************************
+     843                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+     844                            .dwattr $C$DW$T$2, DW_AT_name("void")
+     845                    $C$DW$T$3       .dwtag  DW_TAG_pointer_type
+     846                            .dwattr $C$DW$T$3, DW_AT_type(*$C$DW$T$2)
+     847                            .dwattr $C$DW$T$3, DW_AT_address_class(0x20)
+     848                    $C$DW$T$4       .dwtag  DW_TAG_base_type
+     849                            .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+     850                            .dwattr $C$DW$T$4, DW_AT_name("bool")
+     851                            .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+     852                    $C$DW$T$5       .dwtag  DW_TAG_base_type
+     853                            .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+     854                            .dwattr $C$DW$T$5, DW_AT_name("signed char")
+     855                            .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+     856                    $C$DW$T$36      .dwtag  DW_TAG_typedef, DW_AT_name("int8_t")
+     857                            .dwattr $C$DW$T$36, DW_AT_type(*$C$DW$T$5)
+     858                            .dwattr $C$DW$T$36, DW_AT_language(DW_LANG_C)
+     859                            .dwattr $C$DW$T$36, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     860                            .dwattr $C$DW$T$36, DW_AT_decl_line(0x2a)
+     861                            .dwattr $C$DW$T$36, DW_AT_decl_column(0x1d)
+     862                    $C$DW$T$37      .dwtag  DW_TAG_typedef, DW_AT_name("int_least8_t")
+     863                            .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$36)
+     864                            .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
+     865                            .dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     866                            .dwattr $C$DW$T$37, DW_AT_decl_line(0x37)
+     867                            .dwattr $C$DW$T$37, DW_AT_decl_column(0x17)
+     868                    $C$DW$T$6       .dwtag  DW_TAG_base_type
+     869                            .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+     870                            .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+     871                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   17
+
+     872                    $C$DW$T$23      .dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
+     873                            .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$6)
+     874                            .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
+     875                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     876                            .dwattr $C$DW$T$23, DW_AT_decl_line(0x2b)
+     877                            .dwattr $C$DW$T$23, DW_AT_decl_column(0x1c)
+     878                    $C$DW$T$39      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
+     879                            .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$23)
+     880                            .dwattr $C$DW$T$39, DW_AT_language(DW_LANG_C)
+     881                            .dwattr $C$DW$T$39, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     882                            .dwattr $C$DW$T$39, DW_AT_decl_line(0x38)
+     883                            .dwattr $C$DW$T$39, DW_AT_decl_column(0x16)
+     884                    $C$DW$T$7       .dwtag  DW_TAG_base_type
+     885                            .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+     886                            .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+     887                            .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+     888                    $C$DW$T$8       .dwtag  DW_TAG_base_type
+     889                            .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+     890                            .dwattr $C$DW$T$8, DW_AT_name("short")
+     891                            .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+     892                    $C$DW$T$40      .dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
+     893                            .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$8)
+     894                            .dwattr $C$DW$T$40, DW_AT_language(DW_LANG_C)
+     895                            .dwattr $C$DW$T$40, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     896                            .dwattr $C$DW$T$40, DW_AT_decl_line(0x2c)
+     897                            .dwattr $C$DW$T$40, DW_AT_decl_column(0x1d)
+     898                    $C$DW$T$41      .dwtag  DW_TAG_typedef, DW_AT_name("int_least16_t")
+     899                            .dwattr $C$DW$T$41, DW_AT_type(*$C$DW$T$40)
+     900                            .dwattr $C$DW$T$41, DW_AT_language(DW_LANG_C)
+     901                            .dwattr $C$DW$T$41, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     902                            .dwattr $C$DW$T$41, DW_AT_decl_line(0x3a)
+     903                            .dwattr $C$DW$T$41, DW_AT_decl_column(0x17)
+     904                    $C$DW$T$9       .dwtag  DW_TAG_base_type
+     905                            .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+     906                            .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+     907                            .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+     908                    $C$DW$T$42      .dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
+     909                            .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$9)
+     910                            .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
+     911                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     912                            .dwattr $C$DW$T$42, DW_AT_decl_line(0x1e5)
+     913                            .dwattr $C$DW$T$42, DW_AT_decl_column(0x21)
+     914                    $C$DW$T$43      .dwtag  DW_TAG_typedef, DW_AT_name("_Wintt")
+     915                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$9)
+     916                            .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
+     917                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     918                            .dwattr $C$DW$T$43, DW_AT_decl_line(0x1e6)
+     919                            .dwattr $C$DW$T$43, DW_AT_decl_column(0x21)
+     920                    $C$DW$T$34      .dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
+     921                            .dwattr $C$DW$T$34, DW_AT_type(*$C$DW$T$9)
+     922                            .dwattr $C$DW$T$34, DW_AT_language(DW_LANG_C)
+     923                            .dwattr $C$DW$T$34, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     924                            .dwattr $C$DW$T$34, DW_AT_decl_line(0x2d)
+     925                            .dwattr $C$DW$T$34, DW_AT_decl_column(0x1c)
+     926                    $C$DW$T$44      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   18
+
+     927                            .dwattr $C$DW$T$44, DW_AT_type(*$C$DW$T$34)
+     928                            .dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
+     929                            .dwattr $C$DW$T$44, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     930                            .dwattr $C$DW$T$44, DW_AT_decl_line(0x3b)
+     931                            .dwattr $C$DW$T$44, DW_AT_decl_column(0x16)
+     932                    $C$DW$T$10      .dwtag  DW_TAG_base_type
+     933                            .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+     934                            .dwattr $C$DW$T$10, DW_AT_name("int")
+     935                            .dwattr $C$DW$T$10, DW_AT_byte_size(0x04)
+     936                    $C$DW$T$45      .dwtag  DW_TAG_typedef, DW_AT_name("_Ptrdifft")
+     937                            .dwattr $C$DW$T$45, DW_AT_type(*$C$DW$T$10)
+     938                            .dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
+     939                            .dwattr $C$DW$T$45, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     940                            .dwattr $C$DW$T$45, DW_AT_decl_line(0xa9)
+     941                            .dwattr $C$DW$T$45, DW_AT_decl_column(0x1e)
+     942                    $C$DW$T$46      .dwtag  DW_TAG_typedef, DW_AT_name("int32_t")
+     943                            .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$10)
+     944                            .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
+     945                            .dwattr $C$DW$T$46, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     946                            .dwattr $C$DW$T$46, DW_AT_decl_line(0x2e)
+     947                            .dwattr $C$DW$T$46, DW_AT_decl_column(0x1d)
+     948                    $C$DW$T$47      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast16_t")
+     949                            .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$46)
+     950                            .dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
+     951                            .dwattr $C$DW$T$47, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     952                            .dwattr $C$DW$T$47, DW_AT_decl_line(0x47)
+     953                            .dwattr $C$DW$T$47, DW_AT_decl_column(0x17)
+     954                    $C$DW$T$48      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast32_t")
+     955                            .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$46)
+     956                            .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
+     957                            .dwattr $C$DW$T$48, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     958                            .dwattr $C$DW$T$48, DW_AT_decl_line(0x4a)
+     959                            .dwattr $C$DW$T$48, DW_AT_decl_column(0x17)
+     960                    $C$DW$T$49      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast8_t")
+     961                            .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$46)
+     962                            .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
+     963                            .dwattr $C$DW$T$49, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     964                            .dwattr $C$DW$T$49, DW_AT_decl_line(0x45)
+     965                            .dwattr $C$DW$T$49, DW_AT_decl_column(0x17)
+     966                    $C$DW$T$50      .dwtag  DW_TAG_typedef, DW_AT_name("int_least32_t")
+     967                            .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$46)
+     968                            .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
+     969                            .dwattr $C$DW$T$50, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     970                            .dwattr $C$DW$T$50, DW_AT_decl_line(0x3c)
+     971                            .dwattr $C$DW$T$50, DW_AT_decl_column(0x17)
+     972                    $C$DW$T$51      .dwtag  DW_TAG_typedef, DW_AT_name("intptr_t")
+     973                            .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$10)
+     974                            .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
+     975                            .dwattr $C$DW$T$51, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     976                            .dwattr $C$DW$T$51, DW_AT_decl_line(0x52)
+     977                            .dwattr $C$DW$T$51, DW_AT_decl_column(0x1a)
+     978                    $C$DW$T$11      .dwtag  DW_TAG_base_type
+     979                            .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+     980                            .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+     981                            .dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   19
+
+     982                    $C$DW$T$52      .dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
+     983                            .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$11)
+     984                            .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
+     985                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     986                            .dwattr $C$DW$T$52, DW_AT_decl_line(0xab)
+     987                            .dwattr $C$DW$T$52, DW_AT_decl_column(0x1a)
+     988                    $C$DW$T$20      .dwtag  DW_TAG_typedef, DW_AT_name("uint32_t")
+     989                            .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$T$11)
+     990                            .dwattr $C$DW$T$20, DW_AT_language(DW_LANG_C)
+     991                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     992                            .dwattr $C$DW$T$20, DW_AT_decl_line(0x2f)
+     993                            .dwattr $C$DW$T$20, DW_AT_decl_column(0x1c)
+     994                    $C$DW$T$59      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast16_t")
+     995                            .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$20)
+     996                            .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
+     997                            .dwattr $C$DW$T$59, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     998                            .dwattr $C$DW$T$59, DW_AT_decl_line(0x48)
+     999                            .dwattr $C$DW$T$59, DW_AT_decl_column(0x16)
+    1000                    $C$DW$T$60      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast32_t")
+    1001                            .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$20)
+    1002                            .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
+    1003                            .dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    1004                            .dwattr $C$DW$T$60, DW_AT_decl_line(0x4b)
+    1005                            .dwattr $C$DW$T$60, DW_AT_decl_column(0x16)
+    1006                    $C$DW$T$61      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
+    1007                            .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$20)
+    1008                            .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
+    1009                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    1010                            .dwattr $C$DW$T$61, DW_AT_decl_line(0x46)
+    1011                            .dwattr $C$DW$T$61, DW_AT_decl_column(0x16)
+    1012                    $C$DW$T$62      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least32_t")
+    1013                            .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$20)
+    1014                            .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
+    1015                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    1016                            .dwattr $C$DW$T$62, DW_AT_decl_line(0x3d)
+    1017                            .dwattr $C$DW$T$62, DW_AT_decl_column(0x16)
+    1018                    $C$DW$T$63      .dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
+    1019                            .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$11)
+    1020                            .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
+    1021                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    1022                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x53)
+    1023                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x1a)
+    1024                    $C$DW$T$12      .dwtag  DW_TAG_base_type
+    1025                            .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    1026                            .dwattr $C$DW$T$12, DW_AT_name("long")
+    1027                            .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+    1028                    $C$DW$T$64      .dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
+    1029                            .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$12)
+    1030                            .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
+    1031                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    1032                            .dwattr $C$DW$T$64, DW_AT_decl_line(0xa6)
+    1033                            .dwattr $C$DW$T$64, DW_AT_decl_column(0x0e)
+    1034                    $C$DW$T$13      .dwtag  DW_TAG_base_type
+    1035                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    1036                            .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   20
+
+    1037                            .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+    1038                    $C$DW$T$65      .dwtag  DW_TAG_typedef, DW_AT_name("_Uint32t")
+    1039                            .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$13)
+    1040                            .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+    1041                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    1042                            .dwattr $C$DW$T$65, DW_AT_decl_line(0xa7)
+    1043                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x17)
+    1044                    $C$DW$T$14      .dwtag  DW_TAG_base_type
+    1045                            .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    1046                            .dwattr $C$DW$T$14, DW_AT_name("long long")
+    1047                            .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+    1048                    $C$DW$T$66      .dwtag  DW_TAG_typedef, DW_AT_name("_Longlong")
+    1049                            .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$14)
+    1050                            .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+    1051                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    1052                            .dwattr $C$DW$T$66, DW_AT_decl_line(0x1b5)
+    1053                            .dwattr $C$DW$T$66, DW_AT_decl_column(0x13)
+    1054                    $C$DW$T$67      .dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
+    1055                            .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$14)
+    1056                            .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
+    1057                            .dwattr $C$DW$T$67, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    1058                            .dwattr $C$DW$T$67, DW_AT_decl_line(0x32)
+    1059                            .dwattr $C$DW$T$67, DW_AT_decl_column(0x21)
+    1060                    $C$DW$T$68      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
+    1061                            .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$67)
+    1062                            .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
+    1063                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    1064                            .dwattr $C$DW$T$68, DW_AT_decl_line(0x4e)
+    1065                            .dwattr $C$DW$T$68, DW_AT_decl_column(0x17)
+    1066                    $C$DW$T$69      .dwtag  DW_TAG_typedef, DW_AT_name("int_least64_t")
+    1067                            .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$67)
+    1068                            .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
+    1069                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    1070                            .dwattr $C$DW$T$69, DW_AT_decl_line(0x40)
+    1071                            .dwattr $C$DW$T$69, DW_AT_decl_column(0x17)
+    1072                    $C$DW$T$70      .dwtag  DW_TAG_typedef, DW_AT_name("intmax_t")
+    1073                            .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$14)
+    1074                            .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
+    1075                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    1076                            .dwattr $C$DW$T$70, DW_AT_decl_line(0x56)
+    1077                            .dwattr $C$DW$T$70, DW_AT_decl_column(0x20)
+    1078                    $C$DW$T$15      .dwtag  DW_TAG_base_type
+    1079                            .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    1080                            .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    1081                            .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+    1082                    $C$DW$T$71      .dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
+    1083                            .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$15)
+    1084                            .dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
+    1085                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    1086                            .dwattr $C$DW$T$71, DW_AT_decl_line(0x1b6)
+    1087                            .dwattr $C$DW$T$71, DW_AT_decl_column(0x14)
+    1088                    $C$DW$T$72      .dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
+    1089                            .dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$15)
+    1090                            .dwattr $C$DW$T$72, DW_AT_language(DW_LANG_C)
+    1091                            .dwattr $C$DW$T$72, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   21
+
+    1092                            .dwattr $C$DW$T$72, DW_AT_decl_line(0x33)
+    1093                            .dwattr $C$DW$T$72, DW_AT_decl_column(0x20)
+    1094                    $C$DW$T$73      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast64_t")
+    1095                            .dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$72)
+    1096                            .dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
+    1097                            .dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    1098                            .dwattr $C$DW$T$73, DW_AT_decl_line(0x4f)
+    1099                            .dwattr $C$DW$T$73, DW_AT_decl_column(0x16)
+    1100                    $C$DW$T$74      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least64_t")
+    1101                            .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$72)
+    1102                            .dwattr $C$DW$T$74, DW_AT_language(DW_LANG_C)
+    1103                            .dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    1104                            .dwattr $C$DW$T$74, DW_AT_decl_line(0x41)
+    1105                            .dwattr $C$DW$T$74, DW_AT_decl_column(0x16)
+    1106                    $C$DW$T$75      .dwtag  DW_TAG_typedef, DW_AT_name("uintmax_t")
+    1107                            .dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$15)
+    1108                            .dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
+    1109                            .dwattr $C$DW$T$75, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    1110                            .dwattr $C$DW$T$75, DW_AT_decl_line(0x57)
+    1111                            .dwattr $C$DW$T$75, DW_AT_decl_column(0x20)
+    1112                    $C$DW$T$16      .dwtag  DW_TAG_base_type
+    1113                            .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    1114                            .dwattr $C$DW$T$16, DW_AT_name("float")
+    1115                            .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+    1116                    $C$DW$T$17      .dwtag  DW_TAG_base_type
+    1117                            .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    1118                            .dwattr $C$DW$T$17, DW_AT_name("double")
+    1119                            .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+    1120                    $C$DW$T$18      .dwtag  DW_TAG_base_type
+    1121                            .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    1122                            .dwattr $C$DW$T$18, DW_AT_name("long double")
+    1123                            .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+    1124                    $C$DW$T$26      .dwtag  DW_TAG_base_type
+    1125                            .dwattr $C$DW$T$26, DW_AT_encoding(DW_ATE_unsigned_char)
+    1126                            .dwattr $C$DW$T$26, DW_AT_name("unsigned char")
+    1127                            .dwattr $C$DW$T$26, DW_AT_byte_size(0x01)
+    1128                    $C$DW$T$79      .dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
+    1129                            .dwattr $C$DW$T$79, DW_AT_type(*$C$DW$T$6)
+    1130                            .dwattr $C$DW$T$79, DW_AT_language(DW_LANG_C)
+    1131                            .dwattr $C$DW$T$79, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    1132                            .dwattr $C$DW$T$79, DW_AT_decl_line(0x218)
+    1133                            .dwattr $C$DW$T$79, DW_AT_decl_column(0x0e)
+    1134                    $C$DW$T$80      .dwtag  DW_TAG_pointer_type
+    1135                            .dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$6)
+    1136                            .dwattr $C$DW$T$80, DW_AT_address_class(0x20)
+    1137                    $C$DW$T$81      .dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
+    1138                            .dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$80)
+    1139                            .dwattr $C$DW$T$81, DW_AT_language(DW_LANG_C)
+    1140                            .dwattr $C$DW$T$81, DW_AT_decl_file("../tiva_i2c.c")
+    1141                            .dwattr $C$DW$T$81, DW_AT_decl_line(0x68)
+    1142                            .dwattr $C$DW$T$81, DW_AT_decl_column(0x01)
+    1143                    
+    1144                    $C$DW$T$19      .dwtag  DW_TAG_structure_type
+    1145                            .dwattr $C$DW$T$19, DW_AT_name("__va_list")
+    1146                            .dwattr $C$DW$T$19, DW_AT_byte_size(0x04)
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   22
+
+    1147                    $C$DW$73        .dwtag  DW_TAG_member
+    1148                            .dwattr $C$DW$73, DW_AT_type(*$C$DW$T$3)
+    1149                            .dwattr $C$DW$73, DW_AT_name("__ap")
+    1150                            .dwattr $C$DW$73, DW_AT_TI_symbol_name("__ap")
+    1151                            .dwattr $C$DW$73, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    1152                            .dwattr $C$DW$73, DW_AT_accessibility(DW_ACCESS_public)
+    1153                            .dwattr $C$DW$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.
+    1154                            .dwattr $C$DW$73, DW_AT_decl_line(0x36)
+    1155                            .dwattr $C$DW$73, DW_AT_decl_column(0x0c)
+    1156                            .dwendtag $C$DW$T$19
+    1157                    
+    1158                            .dwattr $C$DW$T$19, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    1159                            .dwattr $C$DW$T$19, DW_AT_decl_line(0x35)
+    1160                            .dwattr $C$DW$T$19, DW_AT_decl_column(0x10)
+    1161                    $C$DW$T$82      .dwtag  DW_TAG_typedef, DW_AT_name("va_list")
+    1162                            .dwattr $C$DW$T$82, DW_AT_type(*$C$DW$T$19)
+    1163                            .dwattr $C$DW$T$82, DW_AT_language(DW_LANG_C)
+    1164                            .dwattr $C$DW$T$82, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    1165                            .dwattr $C$DW$T$82, DW_AT_decl_line(0x37)
+    1166                            .dwattr $C$DW$T$82, DW_AT_decl_column(0x03)
+    1167                    $C$DW$T$83      .dwtag  DW_TAG_typedef, DW_AT_name("_Va_list")
+    1168                            .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$82)
+    1169                            .dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
+    1170                            .dwattr $C$DW$T$83, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    1171                            .dwattr $C$DW$T$83, DW_AT_decl_line(0x1f6)
+    1172                            .dwattr $C$DW$T$83, DW_AT_decl_column(0x17)
+    1173                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    1174                    
+    1175                    ;***************************************************************
+    1176                    ;* DWARF CIE ENTRIES                                           *
+    1177                    ;***************************************************************
+    1178                    
+    1179                    $C$DW$CIE       .dwcie 14
+    1180                            .dwcfi  cfa_register, 13
+    1181                            .dwcfi  cfa_offset, 0
+    1182                            .dwcfi  undefined, 0
+    1183                            .dwcfi  undefined, 1
+    1184                            .dwcfi  undefined, 2
+    1185                            .dwcfi  undefined, 3
+    1186                            .dwcfi  same_value, 4
+    1187                            .dwcfi  same_value, 5
+    1188                            .dwcfi  same_value, 6
+    1189                            .dwcfi  same_value, 7
+    1190                            .dwcfi  same_value, 8
+    1191                            .dwcfi  same_value, 9
+    1192                            .dwcfi  same_value, 10
+    1193                            .dwcfi  same_value, 11
+    1194                            .dwcfi  undefined, 12
+    1195                            .dwcfi  undefined, 13
+    1196                            .dwcfi  undefined, 14
+    1197                            .dwcfi  undefined, 14
+    1198                            .dwcfi  undefined, 7
+    1199                            .dwcfi  undefined, 64
+    1200                            .dwcfi  undefined, 65
+    1201                            .dwcfi  undefined, 66
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:12 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+tiva_i2c.asm                                                         PAGE   23
+
+    1202                            .dwcfi  undefined, 67
+    1203                            .dwcfi  undefined, 68
+    1204                            .dwcfi  undefined, 69
+    1205                            .dwcfi  undefined, 70
+    1206                            .dwcfi  undefined, 71
+    1207                            .dwcfi  undefined, 72
+    1208                            .dwcfi  undefined, 73
+    1209                            .dwcfi  undefined, 74
+    1210                            .dwcfi  undefined, 75
+    1211                            .dwcfi  undefined, 76
+    1212                            .dwcfi  undefined, 77
+    1213                            .dwcfi  undefined, 78
+    1214                            .dwcfi  undefined, 79
+    1215                            .dwcfi  same_value, 80
+    1216                            .dwcfi  same_value, 81
+    1217                            .dwcfi  same_value, 82
+    1218                            .dwcfi  same_value, 83
+    1219                            .dwcfi  same_value, 84
+    1220                            .dwcfi  same_value, 85
+    1221                            .dwcfi  same_value, 86
+    1222                            .dwcfi  same_value, 87
+    1223                            .dwcfi  same_value, 88
+    1224                            .dwcfi  same_value, 89
+    1225                            .dwcfi  same_value, 90
+    1226                            .dwcfi  same_value, 91
+    1227                            .dwcfi  same_value, 92
+    1228                            .dwcfi  same_value, 93
+    1229                            .dwcfi  same_value, 94
+    1230                            .dwcfi  same_value, 95
+    1231                            .dwendentry
+    1232                            .dwendtag $C$DW$CU
+    1233                    
+
+--------------------------
+Thumb2 Statistics
+--------------------------
+Number of Thumb2 ins converted to Thumb = 0 (0%)
+Number of Thumb ins in input = 66 (64%)
+Number of Thumb2 ins encoded as Thumb2 = 37 (100%)
+Number of Thumb2 ins converted to 2 OPND Thumb = 15
+
+
+No Assembly Errors, No Assembly Warnings

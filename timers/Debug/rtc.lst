@@ -1,0 +1,780 @@
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE    1
+
+       1                    ;******************************************************************************
+       2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
+       3                    ;* Date/Time created: Sun Oct 18 09:37:10 2015                                *
+       4                    ;******************************************************************************
+       5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
+       6 00000000                   .thumb
+       7                    
+       8                    $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                            .dwattr $C$DW$CU, DW_AT_name("../rtc.c")
+      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.5 Copyright (c) 1996-2015 Te
+      11                            .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("E:\Dev\Ti\Code\GIT\LaunchpadRoomControl\LaunchpadRoomControl
+      13                    
+      14                    $C$DW$1 .dwtag  DW_TAG_subprogram, DW_AT_name("initI2C0")
+      15                            .dwattr $C$DW$1, DW_AT_TI_symbol_name("initI2C0")
+      16                            .dwattr $C$DW$1, DW_AT_declaration
+      17                            .dwattr $C$DW$1, DW_AT_external
+      18                            .dwattr $C$DW$1, DW_AT_decl_file("..\tiva_i2c.h")
+      19                            .dwattr $C$DW$1, DW_AT_decl_line(0x0b)
+      20                            .dwattr $C$DW$1, DW_AT_decl_column(0x06)
+      21                    
+      22                    $C$DW$2 .dwtag  DW_TAG_subprogram, DW_AT_name("writeI2C0")
+      23                            .dwattr $C$DW$2, DW_AT_TI_symbol_name("writeI2C0")
+      24                            .dwattr $C$DW$2, DW_AT_declaration
+      25                            .dwattr $C$DW$2, DW_AT_external
+      26                            .dwattr $C$DW$2, DW_AT_decl_file("..\tiva_i2c.h")
+      27                            .dwattr $C$DW$2, DW_AT_decl_line(0x0d)
+      28                            .dwattr $C$DW$2, DW_AT_decl_column(0x06)
+      29                    $C$DW$3 .dwtag  DW_TAG_formal_parameter
+      30                            .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$22)
+      31                    $C$DW$4 .dwtag  DW_TAG_formal_parameter
+      32                            .dwattr $C$DW$4, DW_AT_type(*$C$DW$T$22)
+      33                    $C$DW$5 .dwtag  DW_TAG_formal_parameter
+      34                            .dwattr $C$DW$5, DW_AT_type(*$C$DW$T$23)
+      35                            .dwendtag $C$DW$2
+      36                    
+      37                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppDat
+      38 00000000                   .sect   ".text:init_RTC"
+      39                            .clink
+      40                            .thumbfunc init_RTC
+      41 00000000                   .thumb
+      42                            .global init_RTC
+      43                    
+      44                    $C$DW$6 .dwtag  DW_TAG_subprogram, DW_AT_name("init_RTC")
+      45                            .dwattr $C$DW$6, DW_AT_low_pc(init_RTC)
+      46                            .dwattr $C$DW$6, DW_AT_high_pc(0x00)
+      47                            .dwattr $C$DW$6, DW_AT_TI_symbol_name("init_RTC")
+      48                            .dwattr $C$DW$6, DW_AT_external
+      49                            .dwattr $C$DW$6, DW_AT_TI_begin_file("../rtc.c")
+      50                            .dwattr $C$DW$6, DW_AT_TI_begin_line(0x0c)
+      51                            .dwattr $C$DW$6, DW_AT_TI_begin_column(0x06)
+      52                            .dwattr $C$DW$6, DW_AT_decl_file("../rtc.c")
+      53                            .dwattr $C$DW$6, DW_AT_decl_line(0x0c)
+      54                            .dwattr $C$DW$6, DW_AT_decl_column(0x06)
+      55                            .dwattr $C$DW$6, DW_AT_TI_max_frame_size(0x08)
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE    2
+
+      56                            .dwpsn  file "../rtc.c",line 13,column 1,is_stmt,address init_RTC,isa 1
+      57                    
+      58                            .dwfde $C$DW$CIE, init_RTC
+      59                    ;----------------------------------------------------------------------
+      60                    ;  12 | void init_RTC()                                                        
+      61                    ;----------------------------------------------------------------------
+      62                    
+      63                    ;*****************************************************************************
+      64                    ;* FUNCTION NAME: init_RTC                                                   *
+      65                    ;*                                                                           *
+      66                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+      67                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+      68                    ;*                           FPEXC,FPSCR                                     *
+      69                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+      70                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+      71                    ;*                           FPEXC,FPSCR                                     *
+      72                    ;*   Local Frame Size  : 0 Args + 0 Auto + 4 Save = 4 byte                   *
+      73                    ;*****************************************************************************
+      74 00000000           init_RTC:
+      75                    ;* --------------------------------------------------------------------------*
+      76                            .dwcfi  cfa_offset, 0
+      77 00000000 B508              PUSH      {A4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+      78                            .dwcfi  cfa_offset, 8
+      79                            .dwcfi  save_reg_to_mem, 14, -4
+      80                            .dwcfi  save_reg_to_mem, 3, -8
+      81                            .dwpsn  file "../rtc.c",line 14,column 5,is_stmt,isa 1
+      82                    ;----------------------------------------------------------------------
+      83                    ;  14 | initI2C0();                                                            
+      84                    ;----------------------------------------------------------------------
+      85                    $C$DW$7 .dwtag  DW_TAG_TI_branch
+      86                            .dwattr $C$DW$7, DW_AT_low_pc(0x00)
+      87                            .dwattr $C$DW$7, DW_AT_name("initI2C0")
+      88                            .dwattr $C$DW$7, DW_AT_TI_call
+      89 00000002 FFFEF7FF!         BL        initI2C0              ; [DPU_3_PIPE] |14|  ; [KEEP 32-BIT INS]
+      90                            ; CALL OCCURS {initI2C0 }        ; [] |14| 
+      91                            .dwpsn  file "../rtc.c",line 15,column 1,is_stmt,isa 1
+      92                    $C$DW$8 .dwtag  DW_TAG_TI_branch
+      93                            .dwattr $C$DW$8, DW_AT_low_pc(0x00)
+      94                            .dwattr $C$DW$8, DW_AT_TI_return
+      95 00000006 BD08              POP       {A4, PC}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+      96                            .dwcfi  cfa_offset, 0
+      97                            ; BRANCH OCCURS                  ; [] 
+      98                            .dwattr $C$DW$6, DW_AT_TI_end_file("../rtc.c")
+      99                            .dwattr $C$DW$6, DW_AT_TI_end_line(0x0f)
+     100                            .dwattr $C$DW$6, DW_AT_TI_end_column(0x01)
+     101                            .dwendentry
+     102                            .dwendtag $C$DW$6
+     103                    
+     104 00000000                   .sect   ".text:set_dateandtime"
+     105                            .clink
+     106                            .thumbfunc set_dateandtime
+     107 00000000                   .thumb
+     108                            .global set_dateandtime
+     109                    
+     110                    $C$DW$9 .dwtag  DW_TAG_subprogram, DW_AT_name("set_dateandtime")
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE    3
+
+     111                            .dwattr $C$DW$9, DW_AT_low_pc(set_dateandtime)
+     112                            .dwattr $C$DW$9, DW_AT_high_pc(0x00)
+     113                            .dwattr $C$DW$9, DW_AT_TI_symbol_name("set_dateandtime")
+     114                            .dwattr $C$DW$9, DW_AT_external
+     115                            .dwattr $C$DW$9, DW_AT_TI_begin_file("../rtc.c")
+     116                            .dwattr $C$DW$9, DW_AT_TI_begin_line(0x11)
+     117                            .dwattr $C$DW$9, DW_AT_TI_begin_column(0x06)
+     118                            .dwattr $C$DW$9, DW_AT_decl_file("../rtc.c")
+     119                            .dwattr $C$DW$9, DW_AT_decl_line(0x11)
+     120                            .dwattr $C$DW$9, DW_AT_decl_column(0x06)
+     121                            .dwattr $C$DW$9, DW_AT_TI_max_frame_size(0x08)
+     122                            .dwpsn  file "../rtc.c",line 18,column 1,is_stmt,address set_dateandtime,isa 1
+     123                    
+     124                            .dwfde $C$DW$CIE, set_dateandtime
+     125                    $C$DW$10        .dwtag  DW_TAG_formal_parameter, DW_AT_name("year")
+     126                            .dwattr $C$DW$10, DW_AT_TI_symbol_name("year")
+     127                            .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$23)
+     128                            .dwattr $C$DW$10, DW_AT_location[DW_OP_reg0]
+     129                    $C$DW$11        .dwtag  DW_TAG_formal_parameter, DW_AT_name("month")
+     130                            .dwattr $C$DW$11, DW_AT_TI_symbol_name("month")
+     131                            .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$23)
+     132                            .dwattr $C$DW$11, DW_AT_location[DW_OP_reg1]
+     133                    $C$DW$12        .dwtag  DW_TAG_formal_parameter, DW_AT_name("date")
+     134                            .dwattr $C$DW$12, DW_AT_TI_symbol_name("date")
+     135                            .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$23)
+     136                            .dwattr $C$DW$12, DW_AT_location[DW_OP_reg2]
+     137                    $C$DW$13        .dwtag  DW_TAG_formal_parameter, DW_AT_name("hour")
+     138                            .dwattr $C$DW$13, DW_AT_TI_symbol_name("hour")
+     139                            .dwattr $C$DW$13, DW_AT_type(*$C$DW$T$23)
+     140                            .dwattr $C$DW$13, DW_AT_location[DW_OP_reg3]
+     141                    $C$DW$14        .dwtag  DW_TAG_formal_parameter, DW_AT_name("minute")
+     142                            .dwattr $C$DW$14, DW_AT_TI_symbol_name("minute")
+     143                            .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$23)
+     144                            .dwattr $C$DW$14, DW_AT_location[DW_OP_breg13 8]
+     145                    $C$DW$15        .dwtag  DW_TAG_formal_parameter, DW_AT_name("second")
+     146                            .dwattr $C$DW$15, DW_AT_TI_symbol_name("second")
+     147                            .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$23)
+     148                            .dwattr $C$DW$15, DW_AT_location[DW_OP_breg13 12]
+     149                    ;----------------------------------------------------------------------
+     150                    ;  17 | void set_dateandtime(uint8_t year,uint8_t month,uint8_t date,uint8_t ho
+     151                    ;     | ur,uint8_t minute,uint8_t second)                                      
+     152                    ;----------------------------------------------------------------------
+     153                    
+     154                    ;*****************************************************************************
+     155                    ;* FUNCTION NAME: set_dateandtime                                            *
+     156                    ;*                                                                           *
+     157                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     158                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     159                    ;*                           FPEXC,FPSCR                                     *
+     160                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     161                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     162                    ;*                           FPEXC,FPSCR                                     *
+     163                    ;*   Local Frame Size  : 0 Args + 4 Auto + 4 Save = 8 byte                   *
+     164                    ;*****************************************************************************
+     165 00000000           set_dateandtime:
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE    4
+
+     166                    ;* --------------------------------------------------------------------------*
+     167                            .dwcfi  cfa_offset, 0
+     168 00000000 B508              PUSH      {A4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     169                            .dwcfi  cfa_offset, 8
+     170                            .dwcfi  save_reg_to_mem, 14, -4
+     171                            .dwcfi  save_reg_to_mem, 3, -8
+     172                    $C$DW$16        .dwtag  DW_TAG_variable, DW_AT_name("year")
+     173                            .dwattr $C$DW$16, DW_AT_TI_symbol_name("year")
+     174                            .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$23)
+     175                            .dwattr $C$DW$16, DW_AT_location[DW_OP_breg13 0]
+     176                    $C$DW$17        .dwtag  DW_TAG_variable, DW_AT_name("month")
+     177                            .dwattr $C$DW$17, DW_AT_TI_symbol_name("month")
+     178                            .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$23)
+     179                            .dwattr $C$DW$17, DW_AT_location[DW_OP_breg13 1]
+     180                    $C$DW$18        .dwtag  DW_TAG_variable, DW_AT_name("date")
+     181                            .dwattr $C$DW$18, DW_AT_TI_symbol_name("date")
+     182                            .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$23)
+     183                            .dwattr $C$DW$18, DW_AT_location[DW_OP_breg13 2]
+     184                    $C$DW$19        .dwtag  DW_TAG_variable, DW_AT_name("hour")
+     185                            .dwattr $C$DW$19, DW_AT_TI_symbol_name("hour")
+     186                            .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$23)
+     187                            .dwattr $C$DW$19, DW_AT_location[DW_OP_breg13 3]
+     188 00000002 3003F88D          STRB      A4, [SP, #3]          ; [DPU_3_PIPE] |18|  ; [KEEP 32-BIT INS]
+     189 00000006 2002F88D          STRB      A3, [SP, #2]          ; [DPU_3_PIPE] |18|  ; [KEEP 32-BIT INS]
+     190 0000000a 1001F88D          STRB      A2, [SP, #1]          ; [DPU_3_PIPE] |18|  ; [KEEP 32-BIT INS]
+     191 0000000e 0000F88D          STRB      A1, [SP, #0]          ; [DPU_3_PIPE] |18|  ; [KEEP 32-BIT INS]
+     192                            .dwpsn  file "../rtc.c",line 19,column 2,is_stmt,isa 1
+     193                    ;----------------------------------------------------------------------
+     194                    ;  19 | writeI2C0(104, 0x00, 5);                                               
+     195                    ;----------------------------------------------------------------------
+     196 00000012 2068              MOVS      A1, #104              ; [DPU_3_PIPE] |19|  ; [ORIG 16-BIT INS]
+     197 00000014 2100              MOVS      A2, #0                ; [DPU_3_PIPE] |19|  ; [ORIG 16-BIT INS]
+     198 00000016 2205              MOVS      A3, #5                ; [DPU_3_PIPE] |19|  ; [ORIG 16-BIT INS]
+     199                    $C$DW$20        .dwtag  DW_TAG_TI_branch
+     200                            .dwattr $C$DW$20, DW_AT_low_pc(0x00)
+     201                            .dwattr $C$DW$20, DW_AT_name("writeI2C0")
+     202                            .dwattr $C$DW$20, DW_AT_TI_call
+     203 00000018 FFFEF7FF!         BL        writeI2C0             ; [DPU_3_PIPE] |19|  ; [KEEP 32-BIT INS]
+     204                            ; CALL OCCURS {writeI2C0 }       ; [] |19| 
+     205                            .dwpsn  file "../rtc.c",line 20,column 1,is_stmt,isa 1
+     206                    $C$DW$21        .dwtag  DW_TAG_TI_branch
+     207                            .dwattr $C$DW$21, DW_AT_low_pc(0x00)
+     208                            .dwattr $C$DW$21, DW_AT_TI_return
+     209 0000001c BD08              POP       {A4, PC}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     210                            .dwcfi  cfa_offset, 0
+     211                            ; BRANCH OCCURS                  ; [] 
+     212                            .dwattr $C$DW$9, DW_AT_TI_end_file("../rtc.c")
+     213                            .dwattr $C$DW$9, DW_AT_TI_end_line(0x14)
+     214                            .dwattr $C$DW$9, DW_AT_TI_end_column(0x01)
+     215                            .dwendentry
+     216                            .dwendtag $C$DW$9
+     217                    
+     218 00000000                   .sect   ".text:read_dateandtime"
+     219                            .clink
+     220                            .thumbfunc read_dateandtime
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE    5
+
+     221 00000000                   .thumb
+     222                            .global read_dateandtime
+     223                    
+     224                    $C$DW$22        .dwtag  DW_TAG_subprogram, DW_AT_name("read_dateandtime")
+     225                            .dwattr $C$DW$22, DW_AT_low_pc(read_dateandtime)
+     226                            .dwattr $C$DW$22, DW_AT_high_pc(0x00)
+     227                            .dwattr $C$DW$22, DW_AT_TI_symbol_name("read_dateandtime")
+     228                            .dwattr $C$DW$22, DW_AT_external
+     229                            .dwattr $C$DW$22, DW_AT_TI_begin_file("../rtc.c")
+     230                            .dwattr $C$DW$22, DW_AT_TI_begin_line(0x16)
+     231                            .dwattr $C$DW$22, DW_AT_TI_begin_column(0x06)
+     232                            .dwattr $C$DW$22, DW_AT_decl_file("../rtc.c")
+     233                            .dwattr $C$DW$22, DW_AT_decl_line(0x16)
+     234                            .dwattr $C$DW$22, DW_AT_decl_column(0x06)
+     235                            .dwattr $C$DW$22, DW_AT_TI_max_frame_size(0x00)
+     236                            .dwpsn  file "../rtc.c",line 23,column 1,is_stmt,address read_dateandtime,isa 1
+     237                    
+     238                            .dwfde $C$DW$CIE, read_dateandtime
+     239                    ;----------------------------------------------------------------------
+     240                    ;  22 | void read_dateandtime()                                                
+     241                    ;  24 | #if 0                                                                  
+     242                    ;  25 | uint8_t i2c_data = 0;                                                  
+     243                    ;  26 | uint8_t address = 104;                                                 
+     244                    ;  27 | uint8_t lowNibble, highNibble;                                         
+     245                    ;  28 | uint8_t sec, minute, hour, date, month, year;                          
+     246                    ;  30 | i2c_data = readI2C0(address,0x00);                                     
+     247                    ;  31 | lowNibble = i2c_data & 0x0f;                                           
+     248                    ;  32 | highNibble = (i2c_data & 0xf0)>>4;                                     
+     249                    ;  33 | sec = lowNibble+highNibble*10;                                         
+     250                    ;  35 | i2c_data = readI2C0(address,0x01);                                     
+     251                    ;  36 | lowNibble = i2c_data & 0x0f;                                           
+     252                    ;  37 | highNibble = (i2c_data & 0xf0)>>4;                                     
+     253                    ;  38 | minute = lowNibble+highNibble*10;                                      
+     254                    ;  40 | i2c_data = readI2C0(address,0x02);                                     
+     255                    ;  41 | lowNibble = i2c_data & 0x0f;                                           
+     256                    ;  42 | highNibble = (i2c_data & 0x10)>>4;                                     
+     257                    ;  43 | hour = lowNibble+highNibble*10;                                        
+     258                    ;  45 | i2c_data = readI2C0(address,0x04);                                     
+     259                    ;  46 | lowNibble = i2c_data & 0x0f;                                           
+     260                    ;  47 | highNibble = (i2c_data & 0x20)>>4;                                     
+     261                    ;  48 | date = lowNibble+highNibble*10;                                        
+     262                    ;  50 | i2c_data = readI2C0(address,0x05);                                     
+     263                    ;  51 | lowNibble = i2c_data & 0x0f;                                           
+     264                    ;  52 | highNibble = (i2c_data & 0x10)>>4;                                     
+     265                    ;  53 | month = lowNibble+highNibble*10;                                       
+     266                    ;  55 | i2c_data = readI2C0(address,0x06);                                     
+     267                    ;  56 | lowNibble = i2c_data & 0x0f;                                           
+     268                    ;  57 | highNibble = (i2c_data & 0x10)>>4;                                     
+     269                    ;  58 | year = lowNibble+highNibble*10;                                        
+     270                    ;  59 | #endif                                                                 
+     271                    ;----------------------------------------------------------------------
+     272                    
+     273                    ;*****************************************************************************
+     274                    ;* FUNCTION NAME: read_dateandtime                                           *
+     275                    ;*                                                                           *
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE    6
+
+     276                    ;*   Regs Modified     :                                                     *
+     277                    ;*   Regs Used         : LR                                                  *
+     278                    ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     279                    ;*****************************************************************************
+     280 00000000           read_dateandtime:
+     281                    ;* --------------------------------------------------------------------------*
+     282                            .dwcfi  cfa_offset, 0
+     283                            .dwpsn  file "../rtc.c",line 60,column 1,is_stmt,isa 1
+     284                    $C$DW$23        .dwtag  DW_TAG_TI_branch
+     285                            .dwattr $C$DW$23, DW_AT_low_pc(0x00)
+     286                            .dwattr $C$DW$23, DW_AT_TI_return
+     287 00000000 4770              BX        LR                    ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     288                            ; BRANCH OCCURS                  ; [] 
+     289                            .dwattr $C$DW$22, DW_AT_TI_end_file("../rtc.c")
+     290                            .dwattr $C$DW$22, DW_AT_TI_end_line(0x3c)
+     291                            .dwattr $C$DW$22, DW_AT_TI_end_column(0x01)
+     292                            .dwendentry
+     293                            .dwendtag $C$DW$22
+     294                    
+     295                    ;*****************************************************************************
+     296                    ;* UNDEFINED EXTERNAL REFERENCES                                             *
+     297                    ;*****************************************************************************
+     298                            .global initI2C0
+     299                            .global writeI2C0
+     300                    
+     301                    ;******************************************************************************
+     302                    ;* BUILD ATTRIBUTES                                                           *
+     303                    ;******************************************************************************
+     304                            .battr "aeabi", Tag_File, 1, Tag_ABI_PCS_wchar_t(2)
+     305                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_rounding(0)
+     306                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_denormal(0)
+     307                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_exceptions(0)
+     308                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_number_model(1)
+     309                            .battr "aeabi", Tag_File, 1, Tag_ABI_enum_size(0)
+     310                            .battr "aeabi", Tag_File, 1, Tag_ABI_optimization_goals(5)
+     311                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_optimization_goals(0)
+     312                            .battr "TI", Tag_File, 1, Tag_Bitfield_layout(2)
+     313                            .battr "TI", Tag_File, 1, Tag_FP_interface(1)
+     314                    
+     315                    ;******************************************************************************
+     316                    ;* TYPE INFORMATION                                                           *
+     317                    ;******************************************************************************
+     318                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+     319                            .dwattr $C$DW$T$2, DW_AT_name("void")
+     320                    $C$DW$T$3       .dwtag  DW_TAG_pointer_type
+     321                            .dwattr $C$DW$T$3, DW_AT_type(*$C$DW$T$2)
+     322                            .dwattr $C$DW$T$3, DW_AT_address_class(0x20)
+     323                    $C$DW$T$4       .dwtag  DW_TAG_base_type
+     324                            .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+     325                            .dwattr $C$DW$T$4, DW_AT_name("bool")
+     326                            .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+     327                    $C$DW$T$5       .dwtag  DW_TAG_base_type
+     328                            .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+     329                            .dwattr $C$DW$T$5, DW_AT_name("signed char")
+     330                            .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE    7
+
+     331                    $C$DW$T$28      .dwtag  DW_TAG_typedef, DW_AT_name("int8_t")
+     332                            .dwattr $C$DW$T$28, DW_AT_type(*$C$DW$T$5)
+     333                            .dwattr $C$DW$T$28, DW_AT_language(DW_LANG_C)
+     334                            .dwattr $C$DW$T$28, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     335                            .dwattr $C$DW$T$28, DW_AT_decl_line(0x2a)
+     336                            .dwattr $C$DW$T$28, DW_AT_decl_column(0x1d)
+     337                    $C$DW$T$29      .dwtag  DW_TAG_typedef, DW_AT_name("int_least8_t")
+     338                            .dwattr $C$DW$T$29, DW_AT_type(*$C$DW$T$28)
+     339                            .dwattr $C$DW$T$29, DW_AT_language(DW_LANG_C)
+     340                            .dwattr $C$DW$T$29, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     341                            .dwattr $C$DW$T$29, DW_AT_decl_line(0x37)
+     342                            .dwattr $C$DW$T$29, DW_AT_decl_column(0x17)
+     343                    $C$DW$T$6       .dwtag  DW_TAG_base_type
+     344                            .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+     345                            .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+     346                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+     347                    $C$DW$T$23      .dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
+     348                            .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$6)
+     349                            .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
+     350                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     351                            .dwattr $C$DW$T$23, DW_AT_decl_line(0x2b)
+     352                            .dwattr $C$DW$T$23, DW_AT_decl_column(0x1c)
+     353                    $C$DW$T$30      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
+     354                            .dwattr $C$DW$T$30, DW_AT_type(*$C$DW$T$23)
+     355                            .dwattr $C$DW$T$30, DW_AT_language(DW_LANG_C)
+     356                            .dwattr $C$DW$T$30, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     357                            .dwattr $C$DW$T$30, DW_AT_decl_line(0x38)
+     358                            .dwattr $C$DW$T$30, DW_AT_decl_column(0x16)
+     359                    $C$DW$T$7       .dwtag  DW_TAG_base_type
+     360                            .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+     361                            .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+     362                            .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+     363                    $C$DW$T$8       .dwtag  DW_TAG_base_type
+     364                            .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+     365                            .dwattr $C$DW$T$8, DW_AT_name("short")
+     366                            .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+     367                    $C$DW$T$31      .dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
+     368                            .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$8)
+     369                            .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
+     370                            .dwattr $C$DW$T$31, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     371                            .dwattr $C$DW$T$31, DW_AT_decl_line(0x2c)
+     372                            .dwattr $C$DW$T$31, DW_AT_decl_column(0x1d)
+     373                    $C$DW$T$32      .dwtag  DW_TAG_typedef, DW_AT_name("int_least16_t")
+     374                            .dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$31)
+     375                            .dwattr $C$DW$T$32, DW_AT_language(DW_LANG_C)
+     376                            .dwattr $C$DW$T$32, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     377                            .dwattr $C$DW$T$32, DW_AT_decl_line(0x3a)
+     378                            .dwattr $C$DW$T$32, DW_AT_decl_column(0x17)
+     379                    $C$DW$T$9       .dwtag  DW_TAG_base_type
+     380                            .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+     381                            .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+     382                            .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+     383                    $C$DW$T$33      .dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
+     384                            .dwattr $C$DW$T$33, DW_AT_type(*$C$DW$T$9)
+     385                            .dwattr $C$DW$T$33, DW_AT_language(DW_LANG_C)
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE    8
+
+     386                            .dwattr $C$DW$T$33, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     387                            .dwattr $C$DW$T$33, DW_AT_decl_line(0x1e5)
+     388                            .dwattr $C$DW$T$33, DW_AT_decl_column(0x21)
+     389                    $C$DW$T$34      .dwtag  DW_TAG_typedef, DW_AT_name("_Wintt")
+     390                            .dwattr $C$DW$T$34, DW_AT_type(*$C$DW$T$9)
+     391                            .dwattr $C$DW$T$34, DW_AT_language(DW_LANG_C)
+     392                            .dwattr $C$DW$T$34, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     393                            .dwattr $C$DW$T$34, DW_AT_decl_line(0x1e6)
+     394                            .dwattr $C$DW$T$34, DW_AT_decl_column(0x21)
+     395                    $C$DW$T$22      .dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
+     396                            .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$9)
+     397                            .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
+     398                            .dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     399                            .dwattr $C$DW$T$22, DW_AT_decl_line(0x2d)
+     400                            .dwattr $C$DW$T$22, DW_AT_decl_column(0x1c)
+     401                    $C$DW$T$35      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
+     402                            .dwattr $C$DW$T$35, DW_AT_type(*$C$DW$T$22)
+     403                            .dwattr $C$DW$T$35, DW_AT_language(DW_LANG_C)
+     404                            .dwattr $C$DW$T$35, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     405                            .dwattr $C$DW$T$35, DW_AT_decl_line(0x3b)
+     406                            .dwattr $C$DW$T$35, DW_AT_decl_column(0x16)
+     407                    $C$DW$T$10      .dwtag  DW_TAG_base_type
+     408                            .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+     409                            .dwattr $C$DW$T$10, DW_AT_name("int")
+     410                            .dwattr $C$DW$T$10, DW_AT_byte_size(0x04)
+     411                    $C$DW$T$36      .dwtag  DW_TAG_typedef, DW_AT_name("_Ptrdifft")
+     412                            .dwattr $C$DW$T$36, DW_AT_type(*$C$DW$T$10)
+     413                            .dwattr $C$DW$T$36, DW_AT_language(DW_LANG_C)
+     414                            .dwattr $C$DW$T$36, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     415                            .dwattr $C$DW$T$36, DW_AT_decl_line(0xa9)
+     416                            .dwattr $C$DW$T$36, DW_AT_decl_column(0x1e)
+     417                    $C$DW$T$37      .dwtag  DW_TAG_typedef, DW_AT_name("int32_t")
+     418                            .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$10)
+     419                            .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
+     420                            .dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     421                            .dwattr $C$DW$T$37, DW_AT_decl_line(0x2e)
+     422                            .dwattr $C$DW$T$37, DW_AT_decl_column(0x1d)
+     423                    $C$DW$T$38      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast16_t")
+     424                            .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$37)
+     425                            .dwattr $C$DW$T$38, DW_AT_language(DW_LANG_C)
+     426                            .dwattr $C$DW$T$38, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     427                            .dwattr $C$DW$T$38, DW_AT_decl_line(0x47)
+     428                            .dwattr $C$DW$T$38, DW_AT_decl_column(0x17)
+     429                    $C$DW$T$39      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast32_t")
+     430                            .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$37)
+     431                            .dwattr $C$DW$T$39, DW_AT_language(DW_LANG_C)
+     432                            .dwattr $C$DW$T$39, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     433                            .dwattr $C$DW$T$39, DW_AT_decl_line(0x4a)
+     434                            .dwattr $C$DW$T$39, DW_AT_decl_column(0x17)
+     435                    $C$DW$T$40      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast8_t")
+     436                            .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$37)
+     437                            .dwattr $C$DW$T$40, DW_AT_language(DW_LANG_C)
+     438                            .dwattr $C$DW$T$40, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     439                            .dwattr $C$DW$T$40, DW_AT_decl_line(0x45)
+     440                            .dwattr $C$DW$T$40, DW_AT_decl_column(0x17)
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE    9
+
+     441                    $C$DW$T$41      .dwtag  DW_TAG_typedef, DW_AT_name("int_least32_t")
+     442                            .dwattr $C$DW$T$41, DW_AT_type(*$C$DW$T$37)
+     443                            .dwattr $C$DW$T$41, DW_AT_language(DW_LANG_C)
+     444                            .dwattr $C$DW$T$41, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     445                            .dwattr $C$DW$T$41, DW_AT_decl_line(0x3c)
+     446                            .dwattr $C$DW$T$41, DW_AT_decl_column(0x17)
+     447                    $C$DW$T$42      .dwtag  DW_TAG_typedef, DW_AT_name("intptr_t")
+     448                            .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$10)
+     449                            .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
+     450                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     451                            .dwattr $C$DW$T$42, DW_AT_decl_line(0x52)
+     452                            .dwattr $C$DW$T$42, DW_AT_decl_column(0x1a)
+     453                    $C$DW$T$11      .dwtag  DW_TAG_base_type
+     454                            .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+     455                            .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+     456                            .dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
+     457                    $C$DW$T$43      .dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
+     458                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$11)
+     459                            .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
+     460                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     461                            .dwattr $C$DW$T$43, DW_AT_decl_line(0xab)
+     462                            .dwattr $C$DW$T$43, DW_AT_decl_column(0x1a)
+     463                    $C$DW$T$44      .dwtag  DW_TAG_typedef, DW_AT_name("uint32_t")
+     464                            .dwattr $C$DW$T$44, DW_AT_type(*$C$DW$T$11)
+     465                            .dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
+     466                            .dwattr $C$DW$T$44, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     467                            .dwattr $C$DW$T$44, DW_AT_decl_line(0x2f)
+     468                            .dwattr $C$DW$T$44, DW_AT_decl_column(0x1c)
+     469                    $C$DW$T$45      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast16_t")
+     470                            .dwattr $C$DW$T$45, DW_AT_type(*$C$DW$T$44)
+     471                            .dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
+     472                            .dwattr $C$DW$T$45, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     473                            .dwattr $C$DW$T$45, DW_AT_decl_line(0x48)
+     474                            .dwattr $C$DW$T$45, DW_AT_decl_column(0x16)
+     475                    $C$DW$T$46      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast32_t")
+     476                            .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$44)
+     477                            .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
+     478                            .dwattr $C$DW$T$46, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     479                            .dwattr $C$DW$T$46, DW_AT_decl_line(0x4b)
+     480                            .dwattr $C$DW$T$46, DW_AT_decl_column(0x16)
+     481                    $C$DW$T$47      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
+     482                            .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$44)
+     483                            .dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
+     484                            .dwattr $C$DW$T$47, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     485                            .dwattr $C$DW$T$47, DW_AT_decl_line(0x46)
+     486                            .dwattr $C$DW$T$47, DW_AT_decl_column(0x16)
+     487                    $C$DW$T$48      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least32_t")
+     488                            .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$44)
+     489                            .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
+     490                            .dwattr $C$DW$T$48, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     491                            .dwattr $C$DW$T$48, DW_AT_decl_line(0x3d)
+     492                            .dwattr $C$DW$T$48, DW_AT_decl_column(0x16)
+     493                    $C$DW$T$49      .dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
+     494                            .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$11)
+     495                            .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE   10
+
+     496                            .dwattr $C$DW$T$49, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     497                            .dwattr $C$DW$T$49, DW_AT_decl_line(0x53)
+     498                            .dwattr $C$DW$T$49, DW_AT_decl_column(0x1a)
+     499                    $C$DW$T$12      .dwtag  DW_TAG_base_type
+     500                            .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+     501                            .dwattr $C$DW$T$12, DW_AT_name("long")
+     502                            .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+     503                    $C$DW$T$50      .dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
+     504                            .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$12)
+     505                            .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
+     506                            .dwattr $C$DW$T$50, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     507                            .dwattr $C$DW$T$50, DW_AT_decl_line(0xa6)
+     508                            .dwattr $C$DW$T$50, DW_AT_decl_column(0x0e)
+     509                    $C$DW$T$13      .dwtag  DW_TAG_base_type
+     510                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+     511                            .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+     512                            .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+     513                    $C$DW$T$51      .dwtag  DW_TAG_typedef, DW_AT_name("_Uint32t")
+     514                            .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$13)
+     515                            .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
+     516                            .dwattr $C$DW$T$51, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     517                            .dwattr $C$DW$T$51, DW_AT_decl_line(0xa7)
+     518                            .dwattr $C$DW$T$51, DW_AT_decl_column(0x17)
+     519                    $C$DW$T$14      .dwtag  DW_TAG_base_type
+     520                            .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+     521                            .dwattr $C$DW$T$14, DW_AT_name("long long")
+     522                            .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+     523                    $C$DW$T$52      .dwtag  DW_TAG_typedef, DW_AT_name("_Longlong")
+     524                            .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$14)
+     525                            .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
+     526                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     527                            .dwattr $C$DW$T$52, DW_AT_decl_line(0x1b5)
+     528                            .dwattr $C$DW$T$52, DW_AT_decl_column(0x13)
+     529                    $C$DW$T$53      .dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
+     530                            .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$14)
+     531                            .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
+     532                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     533                            .dwattr $C$DW$T$53, DW_AT_decl_line(0x32)
+     534                            .dwattr $C$DW$T$53, DW_AT_decl_column(0x21)
+     535                    $C$DW$T$54      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
+     536                            .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$53)
+     537                            .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
+     538                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     539                            .dwattr $C$DW$T$54, DW_AT_decl_line(0x4e)
+     540                            .dwattr $C$DW$T$54, DW_AT_decl_column(0x17)
+     541                    $C$DW$T$55      .dwtag  DW_TAG_typedef, DW_AT_name("int_least64_t")
+     542                            .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$53)
+     543                            .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
+     544                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     545                            .dwattr $C$DW$T$55, DW_AT_decl_line(0x40)
+     546                            .dwattr $C$DW$T$55, DW_AT_decl_column(0x17)
+     547                    $C$DW$T$56      .dwtag  DW_TAG_typedef, DW_AT_name("intmax_t")
+     548                            .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$14)
+     549                            .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
+     550                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE   11
+
+     551                            .dwattr $C$DW$T$56, DW_AT_decl_line(0x56)
+     552                            .dwattr $C$DW$T$56, DW_AT_decl_column(0x20)
+     553                    $C$DW$T$15      .dwtag  DW_TAG_base_type
+     554                            .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+     555                            .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+     556                            .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+     557                    $C$DW$T$57      .dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
+     558                            .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$15)
+     559                            .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
+     560                            .dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     561                            .dwattr $C$DW$T$57, DW_AT_decl_line(0x1b6)
+     562                            .dwattr $C$DW$T$57, DW_AT_decl_column(0x14)
+     563                    $C$DW$T$58      .dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
+     564                            .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$15)
+     565                            .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
+     566                            .dwattr $C$DW$T$58, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     567                            .dwattr $C$DW$T$58, DW_AT_decl_line(0x33)
+     568                            .dwattr $C$DW$T$58, DW_AT_decl_column(0x20)
+     569                    $C$DW$T$59      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast64_t")
+     570                            .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$58)
+     571                            .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
+     572                            .dwattr $C$DW$T$59, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     573                            .dwattr $C$DW$T$59, DW_AT_decl_line(0x4f)
+     574                            .dwattr $C$DW$T$59, DW_AT_decl_column(0x16)
+     575                    $C$DW$T$60      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least64_t")
+     576                            .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$58)
+     577                            .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
+     578                            .dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     579                            .dwattr $C$DW$T$60, DW_AT_decl_line(0x41)
+     580                            .dwattr $C$DW$T$60, DW_AT_decl_column(0x16)
+     581                    $C$DW$T$61      .dwtag  DW_TAG_typedef, DW_AT_name("uintmax_t")
+     582                            .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$15)
+     583                            .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
+     584                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     585                            .dwattr $C$DW$T$61, DW_AT_decl_line(0x57)
+     586                            .dwattr $C$DW$T$61, DW_AT_decl_column(0x20)
+     587                    $C$DW$T$16      .dwtag  DW_TAG_base_type
+     588                            .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+     589                            .dwattr $C$DW$T$16, DW_AT_name("float")
+     590                            .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+     591                    $C$DW$T$17      .dwtag  DW_TAG_base_type
+     592                            .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+     593                            .dwattr $C$DW$T$17, DW_AT_name("double")
+     594                            .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+     595                    $C$DW$T$18      .dwtag  DW_TAG_base_type
+     596                            .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+     597                            .dwattr $C$DW$T$18, DW_AT_name("long double")
+     598                            .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+     599                    $C$DW$T$63      .dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
+     600                            .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$6)
+     601                            .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
+     602                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     603                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x218)
+     604                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x0e)
+     605                    $C$DW$T$64      .dwtag  DW_TAG_pointer_type
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE   12
+
+     606                            .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$6)
+     607                            .dwattr $C$DW$T$64, DW_AT_address_class(0x20)
+     608                    $C$DW$T$65      .dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
+     609                            .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$64)
+     610                            .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+     611                            .dwattr $C$DW$T$65, DW_AT_decl_file("../rtc.c")
+     612                            .dwattr $C$DW$T$65, DW_AT_decl_line(0x3c)
+     613                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x01)
+     614                    
+     615                    $C$DW$T$19      .dwtag  DW_TAG_structure_type
+     616                            .dwattr $C$DW$T$19, DW_AT_name("__va_list")
+     617                            .dwattr $C$DW$T$19, DW_AT_byte_size(0x04)
+     618                    $C$DW$24        .dwtag  DW_TAG_member
+     619                            .dwattr $C$DW$24, DW_AT_type(*$C$DW$T$3)
+     620                            .dwattr $C$DW$24, DW_AT_name("__ap")
+     621                            .dwattr $C$DW$24, DW_AT_TI_symbol_name("__ap")
+     622                            .dwattr $C$DW$24, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+     623                            .dwattr $C$DW$24, DW_AT_accessibility(DW_ACCESS_public)
+     624                            .dwattr $C$DW$24, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.
+     625                            .dwattr $C$DW$24, DW_AT_decl_line(0x36)
+     626                            .dwattr $C$DW$24, DW_AT_decl_column(0x0c)
+     627                            .dwendtag $C$DW$T$19
+     628                    
+     629                            .dwattr $C$DW$T$19, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+     630                            .dwattr $C$DW$T$19, DW_AT_decl_line(0x35)
+     631                            .dwattr $C$DW$T$19, DW_AT_decl_column(0x10)
+     632                    $C$DW$T$66      .dwtag  DW_TAG_typedef, DW_AT_name("va_list")
+     633                            .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$19)
+     634                            .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+     635                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+     636                            .dwattr $C$DW$T$66, DW_AT_decl_line(0x37)
+     637                            .dwattr $C$DW$T$66, DW_AT_decl_column(0x03)
+     638                    $C$DW$T$67      .dwtag  DW_TAG_typedef, DW_AT_name("_Va_list")
+     639                            .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$66)
+     640                            .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
+     641                            .dwattr $C$DW$T$67, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     642                            .dwattr $C$DW$T$67, DW_AT_decl_line(0x1f6)
+     643                            .dwattr $C$DW$T$67, DW_AT_decl_column(0x17)
+     644                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+     645                    
+     646                    ;***************************************************************
+     647                    ;* DWARF CIE ENTRIES                                           *
+     648                    ;***************************************************************
+     649                    
+     650                    $C$DW$CIE       .dwcie 14
+     651                            .dwcfi  cfa_register, 13
+     652                            .dwcfi  cfa_offset, 0
+     653                            .dwcfi  undefined, 0
+     654                            .dwcfi  undefined, 1
+     655                            .dwcfi  undefined, 2
+     656                            .dwcfi  undefined, 3
+     657                            .dwcfi  same_value, 4
+     658                            .dwcfi  same_value, 5
+     659                            .dwcfi  same_value, 6
+     660                            .dwcfi  same_value, 7
+TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:10 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+rtc.asm                                                              PAGE   13
+
+     661                            .dwcfi  same_value, 8
+     662                            .dwcfi  same_value, 9
+     663                            .dwcfi  same_value, 10
+     664                            .dwcfi  same_value, 11
+     665                            .dwcfi  undefined, 12
+     666                            .dwcfi  undefined, 13
+     667                            .dwcfi  undefined, 14
+     668                            .dwcfi  undefined, 14
+     669                            .dwcfi  undefined, 7
+     670                            .dwcfi  undefined, 64
+     671                            .dwcfi  undefined, 65
+     672                            .dwcfi  undefined, 66
+     673                            .dwcfi  undefined, 67
+     674                            .dwcfi  undefined, 68
+     675                            .dwcfi  undefined, 69
+     676                            .dwcfi  undefined, 70
+     677                            .dwcfi  undefined, 71
+     678                            .dwcfi  undefined, 72
+     679                            .dwcfi  undefined, 73
+     680                            .dwcfi  undefined, 74
+     681                            .dwcfi  undefined, 75
+     682                            .dwcfi  undefined, 76
+     683                            .dwcfi  undefined, 77
+     684                            .dwcfi  undefined, 78
+     685                            .dwcfi  undefined, 79
+     686                            .dwcfi  same_value, 80
+     687                            .dwcfi  same_value, 81
+     688                            .dwcfi  same_value, 82
+     689                            .dwcfi  same_value, 83
+     690                            .dwcfi  same_value, 84
+     691                            .dwcfi  same_value, 85
+     692                            .dwcfi  same_value, 86
+     693                            .dwcfi  same_value, 87
+     694                            .dwcfi  same_value, 88
+     695                            .dwcfi  same_value, 89
+     696                            .dwcfi  same_value, 90
+     697                            .dwcfi  same_value, 91
+     698                            .dwcfi  same_value, 92
+     699                            .dwcfi  same_value, 93
+     700                            .dwcfi  same_value, 94
+     701                            .dwcfi  same_value, 95
+     702                            .dwendentry
+     703                            .dwendtag $C$DW$CU
+     704                    
+
+--------------------------
+Thumb2 Statistics
+--------------------------
+Number of Thumb2 ins converted to Thumb = 0 (0%)
+Number of Thumb ins in input = 12 (66%)
+Number of Thumb2 ins encoded as Thumb2 = 6 (100%)
+Number of Thumb2 ins converted to 2 OPND Thumb = 0
+
+
+No Assembly Errors, No Assembly Warnings

@@ -40,7 +40,7 @@ extern void PortFIntHandler(void);
 extern void Timer0IntHandler(void);
 extern void SysTickIntHandler(void);
 extern void WatchdogIntHandler(void);
-extern void UART5IntHandler(void);
+
 //*****************************************************************************
 //
 // External declaration for the reset handler that is to be called when the
@@ -151,7 +151,7 @@ void (* const g_pfnVectors[])(void) =
     IntDefaultHandler,                      // SSI3 Rx and Tx
     IntDefaultHandler,                      // UART3 Rx and Tx
     IntDefaultHandler,                      // UART4 Rx and Tx
-	UART5IntHandler,                      // UART5 Rx and Tx
+	IntDefaultHandler,                      // UART5 Rx and Tx
     IntDefaultHandler,                      // UART6 Rx and Tx
     IntDefaultHandler,                      // UART7 Rx and Tx
     0,                                      // Reserved

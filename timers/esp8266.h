@@ -12,7 +12,20 @@
 #include <stdbool.h>
 
 /*
- * ESP-01 Connection: VCC-RX(PE3), GND/TX(PE5)
+ * 1. vcc
+2. pe4  -  txd
+3. pe5  -  rxd
+4. gnd
+ *
+ * ESP-01 Connection: VCC-RX(PE4), GND/TX(PE5)
+ *
+ * ESP07: Connection: TX-PE4 RX-PE5
+AT VER: 0.21.0.0
+SDK VER: 0.9.5
+MAC:18:FE:34:FC:C8:47
+Esp-01:
+18:FE:34:9D:F0:8A
+
  */
 uint8_t init_esp8266();
 uint8_t send_esp8266(	uint32_t humidity_data,//field1

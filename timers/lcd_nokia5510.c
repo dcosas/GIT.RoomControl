@@ -204,37 +204,31 @@ void nokia_test()
 	    nokiaLCDtext('a');
 }
 
+uint8_t validate_char(char c)
+{
+	if(c>=32 && c<=126)
+		return 1;
+	else
+		return 0;
+}
 
-void lcd_puts_line1(char* s)
+
+void lcd_puts(char* s, uint8_t line)
 {
 	uint8_t count = 0;
-	nokiaLCDsetXY(0,0);
+	if(line > 7 || line < 1)
+		return;
+	nokiaLCDsetXY(0,line-1);
 	while(count<12)
 	{
-		nokiaLCDtext(*s++);
+		if(validate_char(*s))
+		{
+			nokiaLCDtext(*s++);
+		}
+		else
+		{
+			*s++;
+		}
 		count++;
 	}
 }
-
-void lcd_puts_line2(char* s)
-{
-	uint8_t count = 0;
-	nokiaLCDsetXY(0,1);
-	while(count<12)
-	{
-		nokiaLCDtext(*s++);
-		count++;
-	}
-}
-
-void lcd_puts_line3(char* s)
-{
-	uint8_t count = 0;
-	nokiaLCDsetXY(0,2);
-	while(count<12)
-	{
-		nokiaLCDtext(*s++);
-		count++;
-	}
-}
-

@@ -61,7 +61,9 @@ PF4 SW1
 
 
 #define DEBUG 1
-#define FW_VERSION "1.0 10.20.15\0"
+#define FW_VERSION "1.0 10.20.15"
+#define FW_DATE __DATE__
+#define FW_TIME __TIME__
 #define SYSTICKS_PER_SECOND 100
 #define WATCHDOG_TIMER_SECONDS 35
 

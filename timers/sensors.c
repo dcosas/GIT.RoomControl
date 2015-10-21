@@ -62,7 +62,7 @@ void change_mode(uint8_t umode)
 	str_line1[6] = (char)((int)threshold_humidity[operating_mode] % 10) + '0';
 	str_line1[10] = (char)(threshold_temperature[operating_mode]/ 10) + '0';
 	str_line1[11] = (char)((int)threshold_temperature[operating_mode]% 10) + '0';
-	lcd_puts_line1(str_line1);
+	lcd_puts(str_line1, 1);
 }
 
 void PortFIntHandler()
@@ -167,9 +167,9 @@ void check_fan_timer(uint32_t current_seconds)
 }
 void update_lcd()
 {
-	lcd_puts_line1(str_line1);
-	lcd_puts_line2(str_line2);
-	lcd_puts_line3(str_line3);
+	lcd_puts(str_line1, 1);
+	lcd_puts(str_line2, 2);
+	lcd_puts(str_line3, 3);
 }
 
 void update_thingspeak()

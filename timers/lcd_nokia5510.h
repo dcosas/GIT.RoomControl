@@ -21,8 +21,6 @@
 
 void nokiaLCDinit(void);
 void nokia_test();
-void lcd_puts_line1(char*s);
-void lcd_puts_line2(char*s);
-void lcd_puts_line3(char*s);
+void lcd_puts(char*s, uint8_t line);
 
 #endif /* LCD_NOKIA5510_H_ */

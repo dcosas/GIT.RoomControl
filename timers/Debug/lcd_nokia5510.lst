@@ -1,11 +1,11 @@
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-       3                    ;* Date/Time created: Tue Oct 20 19:15:41 2015                                *
+       3                    ;* Date/Time created: Wed Oct 21 14:01:35 2015                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -58,7 +58,7 @@ lcd_nokia5510.asm                                                    PAGE    1
       53                            .dwendtag $C$DW$8
       54                    
       55                    
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    2
@@ -118,7 +118,7 @@ lcd_nokia5510.asm                                                    PAGE    2
      108 0000000c 14000700          .bits   20,8                    ; ASCII[3][0] @ 120
      109 00000010 0000007F          .bits   127,8                   ; ASCII[3][1] @ 128
      110 00000010 0000147F          .bits   20,8                    ; ASCII[3][2] @ 136
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    3
@@ -178,7 +178,7 @@ lcd_nokia5510.asm                                                    PAGE    3
      163 00000044 00000808          .bits   0,8                     ; ASCII[14][0] @ 560
      164 00000044 60000808          .bits   96,8                    ; ASCII[14][1] @ 568
      165 00000048 00000060          .bits   96,8                    ; ASCII[14][2] @ 576
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    4
@@ -238,7 +238,7 @@ lcd_nokia5510.asm                                                    PAGE    4
      218 0000007c 00000636          .bits   6,8                     ; ASCII[25][0] @ 1000
      219 0000007c 00490636          .bits   73,8                    ; ASCII[25][1] @ 1008
      220 0000007c 49490636          .bits   73,8                    ; ASCII[25][2] @ 1016
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    5
@@ -298,7 +298,7 @@ lcd_nokia5510.asm                                                    PAGE    5
      273 000000b4 0000007F          .bits   127,8                   ; ASCII[36][0] @ 1440
      274 000000b4 0000417F          .bits   65,8                    ; ASCII[36][1] @ 1448
      275 000000b4 0041417F          .bits   65,8                    ; ASCII[36][2] @ 1456
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    6
@@ -358,7 +358,7 @@ lcd_nokia5510.asm                                                    PAGE    6
      328 000000e8 3E7F1008          .bits   62,8                    ; ASCII[47][0] @ 1880
      329 000000ec 00000041          .bits   65,8                    ; ASCII[47][1] @ 1888
      330 000000ec 00004141          .bits   65,8                    ; ASCII[47][2] @ 1896
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    7
@@ -418,7 +418,7 @@ lcd_nokia5510.asm                                                    PAGE    7
      383 00000120 00610708          .bits   97,8                    ; ASCII[58][0] @ 2320
      384 00000120 51610708          .bits   81,8                    ; ASCII[58][1] @ 2328
      385 00000124 00000049          .bits   73,8                    ; ASCII[58][2] @ 2336
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    8
@@ -478,7 +478,7 @@ lcd_nokia5510.asm                                                    PAGE    8
      438 00000158 0000387F          .bits   56,8                    ; ASCII[69][0] @ 2760
      439 00000158 0054387F          .bits   84,8                    ; ASCII[69][1] @ 2768
      440 00000158 5454387F          .bits   84,8                    ; ASCII[69][2] @ 2776
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    9
@@ -538,7 +538,7 @@ lcd_nokia5510.asm                                                    PAGE    9
      493 00000190 0000007C          .bits   124,8                   ; ASCII[80][0] @ 3200
      494 00000190 0000147C          .bits   20,8                    ; ASCII[80][1] @ 3208
      495 00000190 0014147C          .bits   20,8                    ; ASCII[80][2] @ 3216
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   10
@@ -598,7 +598,7 @@ lcd_nokia5510.asm                                                    PAGE   10
      548 000001c4 00444C54          .bits   0,8                     ; ASCII[91][0] @ 3640
      549 000001c8 00000008          .bits   8,8                     ; ASCII[91][1] @ 3648
      550 000001c8 00003608          .bits   54,8                    ; ASCII[91][2] @ 3656
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   11
@@ -628,7 +628,7 @@ lcd_nokia5510.asm                                                    PAGE   11
      573                    
      574                    $C$DW$15        .dwtag  DW_TAG_variable, DW_AT_name("ASCII")
      575                            .dwattr $C$DW$15, DW_AT_TI_symbol_name("ASCII")
-     576                            .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$48)
+     576                            .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$50)
      577                            .dwattr $C$DW$15, DW_AT_location[DW_OP_addr ASCII]
      578                            .dwattr $C$DW$15, DW_AT_decl_file("../lcd_nokia5510.c")
      579                            .dwattr $C$DW$15, DW_AT_decl_line(0x16)
@@ -658,7 +658,7 @@ lcd_nokia5510.asm                                                    PAGE   11
      603                    $C$DW$17        .dwtag  DW_TAG_formal_parameter, DW_AT_name("dataCommand")
      604                            .dwattr $C$DW$17, DW_AT_TI_symbol_name("dataCommand")
      605                            .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$24)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   12
@@ -718,7 +718,7 @@ lcd_nokia5510.asm                                                    PAGE   12
      658 00000016 2240              MOVS      A3, #64               ; [DPU_3_PIPE] |126|  ; [ORIG 16-BIT INS]
      659                    $C$DW$21        .dwtag  DW_TAG_TI_branch
      660                            .dwattr $C$DW$21, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   13
@@ -778,7 +778,7 @@ lcd_nokia5510.asm                                                    PAGE   13
      713                    ;----------------------------------------------------------------------
      714 0000003c 4802              LDR       A1, $C$CON1           ; [DPU_3_PIPE] |134|  ; [ORIG 16-BIT INS]
      715 0000003e 2101              MOVS      A2, #1                ; [DPU_3_PIPE] |134|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   14
@@ -838,7 +838,7 @@ lcd_nokia5510.asm                                                    PAGE   14
      768                    
      769                    ;*****************************************************************************
      770                    ;* FUNCTION NAME: nokiaLCDsetXY                                              *
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   15
@@ -898,7 +898,7 @@ lcd_nokia5510.asm                                                    PAGE   15
      823                            ; CALL OCCURS {nokiaLCDwrite }   ; [] |140| 
      824                            .dwpsn  file "../lcd_nokia5510.c",line 141,column 1,is_stmt,isa 1
      825                    $C$DW$34        .dwtag  DW_TAG_TI_branch
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   16
@@ -958,14 +958,14 @@ lcd_nokia5510.asm                                                    PAGE   16
      878                            .dwcfi  cfa_offset, 8
      879                            .dwcfi  save_reg_to_mem, 14, -4
      880                            .dwcfi  save_reg_to_mem, 3, -8
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   17
 
      881                    $C$DW$36        .dwtag  DW_TAG_variable, DW_AT_name("i")
      882                            .dwattr $C$DW$36, DW_AT_TI_symbol_name("i")
-     883                            .dwattr $C$DW$36, DW_AT_type(*$C$DW$T$56)
+     883                            .dwattr $C$DW$36, DW_AT_type(*$C$DW$T$58)
      884                            .dwattr $C$DW$36, DW_AT_location[DW_OP_breg13 0]
      885                            .dwpsn  file "../lcd_nokia5510.c",line 146,column 2,is_stmt,isa 1
      886                    ;----------------------------------------------------------------------
@@ -1018,7 +1018,7 @@ lcd_nokia5510.asm                                                    PAGE   17
      933 00000030 7FFCF5B0          CMP       A1, #504              ; [DPU_3_PIPE] |147|  ; [KEEP 32-BIT INS]
      934 00000034 DBF1              BLT       ||$C$L3||             ; [DPU_3_PIPE] |147|  ; [ORIG 16-BIT INS]
      935                            ; BRANCHCC OCCURS {||$C$L3||}    ; [] |147| 
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   18
@@ -1078,7 +1078,7 @@ lcd_nokia5510.asm                                                    PAGE   18
      988                    ;*****************************************************************************
      989                    ;* FUNCTION NAME: nokiaLCDinit                                               *
      990                    ;*                                                                           *
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   19
@@ -1138,7 +1138,7 @@ lcd_nokia5510.asm                                                    PAGE   19
     1043 00000016 2040F04F          MOV       A1, #1073758208       ; [DPU_3_PIPE] |156|  ; [KEEP 32-BIT INS]
     1044 0000001a 2140              MOVS      A2, #64               ; [DPU_3_PIPE] |156|  ; [ORIG 16-BIT INS]
     1045 0000001c 2240              MOVS      A3, #64               ; [DPU_3_PIPE] |156|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   20
@@ -1198,7 +1198,7 @@ lcd_nokia5510.asm                                                    PAGE   20
     1098                            .dwattr $C$DW$49, DW_AT_name("GPIOPinWrite")
     1099                            .dwattr $C$DW$49, DW_AT_TI_call
     1100 00000048 FFFEF7FF!         BL        GPIOPinWrite          ; [DPU_3_PIPE] |162|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   21
@@ -1258,7 +1258,7 @@ lcd_nokia5510.asm                                                    PAGE   21
     1153                            .dwpsn  file "../lcd_nokia5510.c",line 167,column 2,is_stmt,isa 1
     1154                    ;----------------------------------------------------------------------
     1155                    ; 167 | GPIOPinWrite(GPIO_PORTA_BASE, GPIO_PIN_7, 0);                          
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   22
@@ -1318,7 +1318,7 @@ lcd_nokia5510.asm                                                    PAGE   22
     1208                    $C$DW$58        .dwtag  DW_TAG_TI_branch
     1209                            .dwattr $C$DW$58, DW_AT_low_pc(0x00)
     1210                            .dwattr $C$DW$58, DW_AT_name("nokiaLCDwrite")
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   23
@@ -1378,7 +1378,7 @@ lcd_nokia5510.asm                                                    PAGE   23
     1263                    ;----------------------------------------------------------------------
     1264                    ; 176 | SysCtlDelay(10000);                                                    
     1265                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   24
@@ -1438,7 +1438,7 @@ lcd_nokia5510.asm                                                    PAGE   24
     1318                    $C$DW$67        .dwtag  DW_TAG_formal_parameter, DW_AT_name("text")
     1319                            .dwattr $C$DW$67, DW_AT_TI_symbol_name("text")
     1320                            .dwattr $C$DW$67, DW_AT_type(*$C$DW$T$24)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   25
@@ -1498,7 +1498,7 @@ lcd_nokia5510.asm                                                    PAGE   25
     1373 00000010 0001F88D          STRB      A1, [SP, #1]          ; [DPU_3_PIPE] |185|  ; [KEEP 32-BIT INS]
     1374                            .dwpsn  file "../lcd_nokia5510.c",line 185,column 12,is_stmt,isa 1
     1375 00000014 0001F89D          LDRB      A1, [SP, #1]          ; [DPU_3_PIPE] |185|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   26
@@ -1558,7 +1558,7 @@ lcd_nokia5510.asm                                                    PAGE   26
     1428 0000004c FFFEF7FF!         BL        nokiaLCDwrite         ; [DPU_3_PIPE] |189|  ; [KEEP 32-BIT INS]
     1429                            ; CALL OCCURS {nokiaLCDwrite }   ; [] |189| 
     1430                            .dwpsn  file "../lcd_nokia5510.c",line 191,column 1,is_stmt,isa 1
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   27
@@ -1618,7 +1618,7 @@ lcd_nokia5510.asm                                                    PAGE   27
     1483 00000000           nokiaLCDinverse:
     1484                    ;* --------------------------------------------------------------------------*
     1485                            .dwcfi  cfa_offset, 0
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   28
@@ -1678,7 +1678,7 @@ lcd_nokia5510.asm                                                    PAGE   28
     1538                            .dwattr $C$DW$79, DW_AT_low_pc(nokia_test)
     1539                            .dwattr $C$DW$79, DW_AT_high_pc(0x00)
     1540                            .dwattr $C$DW$79, DW_AT_TI_symbol_name("nokia_test")
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   29
@@ -1738,7 +1738,7 @@ lcd_nokia5510.asm                                                    PAGE   29
     1593 00000006 FFFEF7FF!         BL        nokiaLCDclear         ; [DPU_3_PIPE] |201|  ; [KEEP 32-BIT INS]
     1594                            ; CALL OCCURS {nokiaLCDclear }   ; [] |201| 
     1595                            .dwpsn  file "../lcd_nokia5510.c",line 203,column 6,is_stmt,isa 1
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   30
@@ -1776,1049 +1776,924 @@ lcd_nokia5510.asm                                                    PAGE   30
     1626                            .dwendentry
     1627                            .dwendtag $C$DW$79
     1628                    
-    1629 00000000                   .sect   ".text:lcd_puts_line1"
+    1629 00000000                   .sect   ".text:validate_char"
     1630                            .clink
-    1631                            .thumbfunc lcd_puts_line1
+    1631                            .thumbfunc validate_char
     1632 00000000                   .thumb
-    1633                            .global lcd_puts_line1
+    1633                            .global validate_char
     1634                    
-    1635                    $C$DW$85        .dwtag  DW_TAG_subprogram, DW_AT_name("lcd_puts_line1")
-    1636                            .dwattr $C$DW$85, DW_AT_low_pc(lcd_puts_line1)
+    1635                    $C$DW$85        .dwtag  DW_TAG_subprogram, DW_AT_name("validate_char")
+    1636                            .dwattr $C$DW$85, DW_AT_low_pc(validate_char)
     1637                            .dwattr $C$DW$85, DW_AT_high_pc(0x00)
-    1638                            .dwattr $C$DW$85, DW_AT_TI_symbol_name("lcd_puts_line1")
+    1638                            .dwattr $C$DW$85, DW_AT_TI_symbol_name("validate_char")
     1639                            .dwattr $C$DW$85, DW_AT_external
-    1640                            .dwattr $C$DW$85, DW_AT_TI_begin_file("../lcd_nokia5510.c")
-    1641                            .dwattr $C$DW$85, DW_AT_TI_begin_line(0xd0)
-    1642                            .dwattr $C$DW$85, DW_AT_TI_begin_column(0x06)
-    1643                            .dwattr $C$DW$85, DW_AT_decl_file("../lcd_nokia5510.c")
-    1644                            .dwattr $C$DW$85, DW_AT_decl_line(0xd0)
-    1645                            .dwattr $C$DW$85, DW_AT_decl_column(0x06)
-    1646                            .dwattr $C$DW$85, DW_AT_TI_max_frame_size(0x10)
-    1647                            .dwpsn  file "../lcd_nokia5510.c",line 209,column 1,is_stmt,address lcd_puts_line1,isa 1
-    1648                    
-    1649                            .dwfde $C$DW$CIE, lcd_puts_line1
-    1650                    $C$DW$86        .dwtag  DW_TAG_formal_parameter, DW_AT_name("s")
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    1640                            .dwattr $C$DW$85, DW_AT_type(*$C$DW$T$24)
+    1641                            .dwattr $C$DW$85, DW_AT_TI_begin_file("../lcd_nokia5510.c")
+    1642                            .dwattr $C$DW$85, DW_AT_TI_begin_line(0xcf)
+    1643                            .dwattr $C$DW$85, DW_AT_TI_begin_column(0x09)
+    1644                            .dwattr $C$DW$85, DW_AT_decl_file("../lcd_nokia5510.c")
+    1645                            .dwattr $C$DW$85, DW_AT_decl_line(0xcf)
+    1646                            .dwattr $C$DW$85, DW_AT_decl_column(0x09)
+    1647                            .dwattr $C$DW$85, DW_AT_TI_max_frame_size(0x08)
+    1648                            .dwpsn  file "../lcd_nokia5510.c",line 208,column 1,is_stmt,address validate_char,isa 1
+    1649                    
+    1650                            .dwfde $C$DW$CIE, validate_char
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   31
 
-    1651                            .dwattr $C$DW$86, DW_AT_TI_symbol_name("s")
-    1652                            .dwattr $C$DW$86, DW_AT_type(*$C$DW$T$40)
-    1653                            .dwattr $C$DW$86, DW_AT_location[DW_OP_reg0]
-    1654                    ;----------------------------------------------------------------------
-    1655                    ; 208 | void lcd_puts_line1(char* s)                                           
-    1656                    ;----------------------------------------------------------------------
-    1657                    
-    1658                    ;*****************************************************************************
-    1659                    ;* FUNCTION NAME: lcd_puts_line1                                             *
-    1660                    ;*                                                                           *
-    1661                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-    1662                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-    1663                    ;*                           FPEXC,FPSCR                                     *
-    1664                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-    1665                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-    1666                    ;*                           FPEXC,FPSCR                                     *
-    1667                    ;*   Local Frame Size  : 0 Args + 8 Auto + 4 Save = 12 byte                  *
-    1668                    ;*****************************************************************************
-    1669 00000000           lcd_puts_line1:
-    1670                    ;* --------------------------------------------------------------------------*
-    1671                            .dwcfi  cfa_offset, 0
-    1672 00000000 B50E              PUSH      {A2, A3, A4, LR}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-    1673                            .dwcfi  cfa_offset, 16
-    1674                            .dwcfi  save_reg_to_mem, 14, -4
-    1675                            .dwcfi  save_reg_to_mem, 3, -8
-    1676                            .dwcfi  save_reg_to_mem, 2, -12
-    1677                            .dwcfi  save_reg_to_mem, 1, -16
-    1678                    $C$DW$87        .dwtag  DW_TAG_variable, DW_AT_name("s")
-    1679                            .dwattr $C$DW$87, DW_AT_TI_symbol_name("s")
-    1680                            .dwattr $C$DW$87, DW_AT_type(*$C$DW$T$40)
-    1681                            .dwattr $C$DW$87, DW_AT_location[DW_OP_breg13 0]
-    1682                    $C$DW$88        .dwtag  DW_TAG_variable, DW_AT_name("count")
-    1683                            .dwattr $C$DW$88, DW_AT_TI_symbol_name("count")
-    1684                            .dwattr $C$DW$88, DW_AT_type(*$C$DW$T$24)
-    1685                            .dwattr $C$DW$88, DW_AT_location[DW_OP_breg13 4]
-    1686 00000002 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |209|  ; [ORIG 16-BIT INS]
-    1687                            .dwpsn  file "../lcd_nokia5510.c",line 210,column 16,is_stmt,isa 1
-    1688                    ;----------------------------------------------------------------------
-    1689                    ; 210 | uint8_t count = 0;                                                     
-    1690                    ;----------------------------------------------------------------------
-    1691 00000004 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |210|  ; [ORIG 16-BIT INS]
-    1692 00000006 0004F88D          STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |210|  ; [KEEP 32-BIT INS]
-    1693                            .dwpsn  file "../lcd_nokia5510.c",line 211,column 2,is_stmt,isa 1
+    1651                    $C$DW$86        .dwtag  DW_TAG_formal_parameter, DW_AT_name("c")
+    1652                            .dwattr $C$DW$86, DW_AT_TI_symbol_name("c")
+    1653                            .dwattr $C$DW$86, DW_AT_type(*$C$DW$T$6)
+    1654                            .dwattr $C$DW$86, DW_AT_location[DW_OP_reg0]
+    1655                    ;----------------------------------------------------------------------
+    1656                    ; 207 | uint8_t validate_char(char c)                                          
+    1657                    ;----------------------------------------------------------------------
+    1658                    
+    1659                    ;*****************************************************************************
+    1660                    ;* FUNCTION NAME: validate_char                                              *
+    1661                    ;*                                                                           *
+    1662                    ;*   Regs Modified     : A1,SP,SR                                            *
+    1663                    ;*   Regs Used         : A1,SP,LR,SR                                         *
+    1664                    ;*   Local Frame Size  : 0 Args + 4 Auto + 0 Save = 4 byte                   *
+    1665                    ;*****************************************************************************
+    1666 00000000           validate_char:
+    1667                    ;* --------------------------------------------------------------------------*
+    1668                            .dwcfi  cfa_offset, 0
+    1669 00000000 0D08F1AD          SUB       SP, SP, #8            ; [DPU_3_PIPE]  ; [KEEP 32-BIT INS]
+    1670                            .dwcfi  cfa_offset, 8
+    1671                    $C$DW$87        .dwtag  DW_TAG_variable, DW_AT_name("c")
+    1672                            .dwattr $C$DW$87, DW_AT_TI_symbol_name("c")
+    1673                            .dwattr $C$DW$87, DW_AT_type(*$C$DW$T$6)
+    1674                            .dwattr $C$DW$87, DW_AT_location[DW_OP_breg13 0]
+    1675 00000004 0000F88D          STRB      A1, [SP, #0]          ; [DPU_3_PIPE] |208|  ; [KEEP 32-BIT INS]
+    1676                            .dwpsn  file "../lcd_nokia5510.c",line 209,column 2,is_stmt,isa 1
+    1677                    ;----------------------------------------------------------------------
+    1678                    ; 209 | if(c>=32 && c<=126)                                                    
+    1679                    ;----------------------------------------------------------------------
+    1680 00000008 0000F89D          LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |209|  ; [KEEP 32-BIT INS]
+    1681 0000000c 2820              CMP       A1, #32               ; [DPU_3_PIPE] |209|  ; [ORIG 16-BIT INS]
+    1682 0000000e DB05              BLT       ||$C$L9||             ; [DPU_3_PIPE] |209|  ; [ORIG 16-BIT INS]
+    1683                            ; BRANCHCC OCCURS {||$C$L9||}    ; [] |209| 
+    1684                    ;* --------------------------------------------------------------------------*
+    1685 00000010 0000F89D          LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |209|  ; [KEEP 32-BIT INS]
+    1686 00000014 287E              CMP       A1, #126              ; [DPU_3_PIPE] |209|  ; [ORIG 16-BIT INS]
+    1687 00000016 DC01              BGT       ||$C$L9||             ; [DPU_3_PIPE] |209|  ; [ORIG 16-BIT INS]
+    1688                            ; BRANCHCC OCCURS {||$C$L9||}    ; [] |209| 
+    1689                    ;* --------------------------------------------------------------------------*
+    1690                            .dwpsn  file "../lcd_nokia5510.c",line 210,column 3,is_stmt,isa 1
+    1691                    ;----------------------------------------------------------------------
+    1692                    ; 210 | return 1;                                                              
+    1693                    ; 211 | else                                                                   
     1694                    ;----------------------------------------------------------------------
-    1695                    ; 211 | nokiaLCDsetXY(0,0);                                                    
-    1696                    ;----------------------------------------------------------------------
-    1697 0000000a 2100              MOVS      A2, #0                ; [DPU_3_PIPE] |211|  ; [ORIG 16-BIT INS]
-    1698 0000000c 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |211|  ; [ORIG 16-BIT INS]
-    1699                    $C$DW$89        .dwtag  DW_TAG_TI_branch
-    1700                            .dwattr $C$DW$89, DW_AT_low_pc(0x00)
-    1701                            .dwattr $C$DW$89, DW_AT_name("nokiaLCDsetXY")
-    1702                            .dwattr $C$DW$89, DW_AT_TI_call
-    1703 0000000e FFFEF7FF!         BL        nokiaLCDsetXY         ; [DPU_3_PIPE] |211|  ; [KEEP 32-BIT INS]
-    1704                            ; CALL OCCURS {nokiaLCDsetXY }   ; [] |211| 
-    1705                            .dwpsn  file "../lcd_nokia5510.c",line 212,column 8,is_stmt,isa 1
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    1695 00000018 2001              MOVS      A1, #1                ; [DPU_3_PIPE] |210|  ; [ORIG 16-BIT INS]
+    1696 0000001a E000              B         ||$C$L10||            ; [DPU_3_PIPE] |210|  ; [ORIG 16-BIT INS]
+    1697                            ; BRANCH OCCURS {||$C$L10||}     ; [] |210| 
+    1698                    ;* --------------------------------------------------------------------------*
+    1699 0000001c           ||$C$L9||:    
+    1700                            .dwpsn  file "../lcd_nokia5510.c",line 212,column 3,is_stmt,isa 1
+    1701                    ;----------------------------------------------------------------------
+    1702                    ; 212 | return 0;                                                              
+    1703                    ;----------------------------------------------------------------------
+    1704 0000001c 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |212|  ; [ORIG 16-BIT INS]
+    1705                    ;* --------------------------------------------------------------------------*
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   32
 
-    1706                    ;----------------------------------------------------------------------
-    1707                    ; 212 | while(count<12)                                                        
-    1708                    ;----------------------------------------------------------------------
-    1709 00000012 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |212|  ; [KEEP 32-BIT INS]
-    1710 00000016 280C              CMP       A1, #12               ; [DPU_3_PIPE] |212|  ; [ORIG 16-BIT INS]
-    1711 00000018 DA0E              BGE       ||$C$L10||            ; [DPU_3_PIPE] |212|  ; [ORIG 16-BIT INS]
-    1712                            ; BRANCHCC OCCURS {||$C$L10||}   ; [] |212| 
-    1713                    ;* --------------------------------------------------------------------------*
-    1714                    ;*   BEGIN LOOP ||$C$L9||
-    1715                    ;*
-    1716                    ;*   Loop source line                : 212
-    1717                    ;*   Loop closing brace source line  : 216
-    1718                    ;*   Known Minimum Trip Count        : 1
-    1719                    ;*   Known Maximum Trip Count        : 4294967295
-    1720                    ;*   Known Max Trip Count Factor     : 1
-    1721                    ;* --------------------------------------------------------------------------*
-    1722 0000001a           ||$C$L9||:    
-    1723                            .dwpsn  file "../lcd_nokia5510.c",line 214,column 3,is_stmt,isa 1
-    1724                    ;----------------------------------------------------------------------
-    1725                    ; 214 | nokiaLCDtext(*s++);                                                    
-    1726                    ;----------------------------------------------------------------------
-    1727 0000001a 9900              LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |214|  ; [ORIG 16-BIT INS]
-    1728 0000001c 0B01F811          LDRB      A1, [A2], #1          ; [DPU_3_PIPE] |214|  ; [KEEP 32-BIT INS]
-    1729 00000020 9100              STR       A2, [SP, #0]          ; [DPU_3_PIPE] |214|  ; [ORIG 16-BIT INS]
-    1730                    $C$DW$90        .dwtag  DW_TAG_TI_branch
-    1731                            .dwattr $C$DW$90, DW_AT_low_pc(0x00)
-    1732                            .dwattr $C$DW$90, DW_AT_name("nokiaLCDtext")
-    1733                            .dwattr $C$DW$90, DW_AT_TI_call
-    1734 00000022 FFFEF7FF!         BL        nokiaLCDtext          ; [DPU_3_PIPE] |214|  ; [KEEP 32-BIT INS]
-    1735                            ; CALL OCCURS {nokiaLCDtext }    ; [] |214| 
-    1736                            .dwpsn  file "../lcd_nokia5510.c",line 215,column 3,is_stmt,isa 1
-    1737                    ;----------------------------------------------------------------------
-    1738                    ; 215 | count++;                                                               
-    1739                    ;----------------------------------------------------------------------
-    1740 00000026 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |215|  ; [KEEP 32-BIT INS]
-    1741 0000002a 1C40              ADDS      A1, A1, #1            ; [DPU_3_PIPE] |215|  ; [ORIG 16-BIT INS]
-    1742 0000002c 0004F88D          STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |215|  ; [KEEP 32-BIT INS]
-    1743                            .dwpsn  file "../lcd_nokia5510.c",line 212,column 8,is_stmt,isa 1
-    1744 00000030 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |212|  ; [KEEP 32-BIT INS]
-    1745 00000034 280C              CMP       A1, #12               ; [DPU_3_PIPE] |212|  ; [ORIG 16-BIT INS]
-    1746 00000036 DBF0              BLT       ||$C$L9||             ; [DPU_3_PIPE] |212|  ; [ORIG 16-BIT INS]
-    1747                            ; BRANCHCC OCCURS {||$C$L9||}    ; [] |212| 
-    1748                    ;* --------------------------------------------------------------------------*
-    1749                            .dwpsn  file "../lcd_nokia5510.c",line 217,column 1,is_stmt,isa 1
-    1750                    ;* --------------------------------------------------------------------------*
-    1751                    ||$C$L10||:    
-    1752                    $C$DW$91        .dwtag  DW_TAG_TI_branch
-    1753                            .dwattr $C$DW$91, DW_AT_low_pc(0x00)
-    1754                            .dwattr $C$DW$91, DW_AT_TI_return
-    1755 00000038 BD0E              POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-    1756                            .dwcfi  cfa_offset, 0
-    1757                            ; BRANCH OCCURS                  ; [] 
-    1758                            .dwattr $C$DW$85, DW_AT_TI_end_file("../lcd_nokia5510.c")
-    1759                            .dwattr $C$DW$85, DW_AT_TI_end_line(0xd9)
-    1760                            .dwattr $C$DW$85, DW_AT_TI_end_column(0x01)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    1706 0000001e           ||$C$L10||:    
+    1707                            .dwpsn  file "../lcd_nokia5510.c",line 213,column 1,is_stmt,isa 1
+    1708 0000001e B002              ADD       SP, SP, #8            ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+    1709                            .dwcfi  cfa_offset, 0
+    1710                    $C$DW$88        .dwtag  DW_TAG_TI_branch
+    1711                            .dwattr $C$DW$88, DW_AT_low_pc(0x00)
+    1712                            .dwattr $C$DW$88, DW_AT_TI_return
+    1713 00000020 4770              BX        LR                    ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+    1714                            ; BRANCH OCCURS                  ; [] 
+    1715                            .dwattr $C$DW$85, DW_AT_TI_end_file("../lcd_nokia5510.c")
+    1716                            .dwattr $C$DW$85, DW_AT_TI_end_line(0xd5)
+    1717                            .dwattr $C$DW$85, DW_AT_TI_end_column(0x01)
+    1718                            .dwendentry
+    1719                            .dwendtag $C$DW$85
+    1720                    
+    1721 00000000                   .sect   ".text:lcd_puts"
+    1722                            .clink
+    1723                            .thumbfunc lcd_puts
+    1724 00000000                   .thumb
+    1725                            .global lcd_puts
+    1726                    
+    1727                    $C$DW$89        .dwtag  DW_TAG_subprogram, DW_AT_name("lcd_puts")
+    1728                            .dwattr $C$DW$89, DW_AT_low_pc(lcd_puts)
+    1729                            .dwattr $C$DW$89, DW_AT_high_pc(0x00)
+    1730                            .dwattr $C$DW$89, DW_AT_TI_symbol_name("lcd_puts")
+    1731                            .dwattr $C$DW$89, DW_AT_external
+    1732                            .dwattr $C$DW$89, DW_AT_TI_begin_file("../lcd_nokia5510.c")
+    1733                            .dwattr $C$DW$89, DW_AT_TI_begin_line(0xd8)
+    1734                            .dwattr $C$DW$89, DW_AT_TI_begin_column(0x06)
+    1735                            .dwattr $C$DW$89, DW_AT_decl_file("../lcd_nokia5510.c")
+    1736                            .dwattr $C$DW$89, DW_AT_decl_line(0xd8)
+    1737                            .dwattr $C$DW$89, DW_AT_decl_column(0x06)
+    1738                            .dwattr $C$DW$89, DW_AT_TI_max_frame_size(0x10)
+    1739                            .dwpsn  file "../lcd_nokia5510.c",line 217,column 1,is_stmt,address lcd_puts,isa 1
+    1740                    
+    1741                            .dwfde $C$DW$CIE, lcd_puts
+    1742                    $C$DW$90        .dwtag  DW_TAG_formal_parameter, DW_AT_name("s")
+    1743                            .dwattr $C$DW$90, DW_AT_TI_symbol_name("s")
+    1744                            .dwattr $C$DW$90, DW_AT_type(*$C$DW$T$40)
+    1745                            .dwattr $C$DW$90, DW_AT_location[DW_OP_reg0]
+    1746                    $C$DW$91        .dwtag  DW_TAG_formal_parameter, DW_AT_name("line")
+    1747                            .dwattr $C$DW$91, DW_AT_TI_symbol_name("line")
+    1748                            .dwattr $C$DW$91, DW_AT_type(*$C$DW$T$24)
+    1749                            .dwattr $C$DW$91, DW_AT_location[DW_OP_reg1]
+    1750                    ;----------------------------------------------------------------------
+    1751                    ; 216 | void lcd_puts(char* s, uint8_t line)                                   
+    1752                    ;----------------------------------------------------------------------
+    1753                    
+    1754                    ;*****************************************************************************
+    1755                    ;* FUNCTION NAME: lcd_puts                                                   *
+    1756                    ;*                                                                           *
+    1757                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+    1758                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+    1759                    ;*                           FPEXC,FPSCR                                     *
+    1760                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   33
 
-    1761                            .dwendentry
-    1762                            .dwendtag $C$DW$85
-    1763                    
-    1764 00000000                   .sect   ".text:lcd_puts_line2"
-    1765                            .clink
-    1766                            .thumbfunc lcd_puts_line2
-    1767 00000000                   .thumb
-    1768                            .global lcd_puts_line2
-    1769                    
-    1770                    $C$DW$92        .dwtag  DW_TAG_subprogram, DW_AT_name("lcd_puts_line2")
-    1771                            .dwattr $C$DW$92, DW_AT_low_pc(lcd_puts_line2)
-    1772                            .dwattr $C$DW$92, DW_AT_high_pc(0x00)
-    1773                            .dwattr $C$DW$92, DW_AT_TI_symbol_name("lcd_puts_line2")
-    1774                            .dwattr $C$DW$92, DW_AT_external
-    1775                            .dwattr $C$DW$92, DW_AT_TI_begin_file("../lcd_nokia5510.c")
-    1776                            .dwattr $C$DW$92, DW_AT_TI_begin_line(0xdb)
-    1777                            .dwattr $C$DW$92, DW_AT_TI_begin_column(0x06)
-    1778                            .dwattr $C$DW$92, DW_AT_decl_file("../lcd_nokia5510.c")
-    1779                            .dwattr $C$DW$92, DW_AT_decl_line(0xdb)
-    1780                            .dwattr $C$DW$92, DW_AT_decl_column(0x06)
-    1781                            .dwattr $C$DW$92, DW_AT_TI_max_frame_size(0x10)
-    1782                            .dwpsn  file "../lcd_nokia5510.c",line 220,column 1,is_stmt,address lcd_puts_line2,isa 1
-    1783                    
-    1784                            .dwfde $C$DW$CIE, lcd_puts_line2
-    1785                    $C$DW$93        .dwtag  DW_TAG_formal_parameter, DW_AT_name("s")
-    1786                            .dwattr $C$DW$93, DW_AT_TI_symbol_name("s")
-    1787                            .dwattr $C$DW$93, DW_AT_type(*$C$DW$T$40)
-    1788                            .dwattr $C$DW$93, DW_AT_location[DW_OP_reg0]
+    1761                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+    1762                    ;*                           FPEXC,FPSCR                                     *
+    1763                    ;*   Local Frame Size  : 0 Args + 8 Auto + 4 Save = 12 byte                  *
+    1764                    ;*****************************************************************************
+    1765 00000000           lcd_puts:
+    1766                    ;* --------------------------------------------------------------------------*
+    1767                            .dwcfi  cfa_offset, 0
+    1768 00000000 B50E              PUSH      {A2, A3, A4, LR}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+    1769                            .dwcfi  cfa_offset, 16
+    1770                            .dwcfi  save_reg_to_mem, 14, -4
+    1771                            .dwcfi  save_reg_to_mem, 3, -8
+    1772                            .dwcfi  save_reg_to_mem, 2, -12
+    1773                            .dwcfi  save_reg_to_mem, 1, -16
+    1774                    $C$DW$92        .dwtag  DW_TAG_variable, DW_AT_name("s")
+    1775                            .dwattr $C$DW$92, DW_AT_TI_symbol_name("s")
+    1776                            .dwattr $C$DW$92, DW_AT_type(*$C$DW$T$40)
+    1777                            .dwattr $C$DW$92, DW_AT_location[DW_OP_breg13 0]
+    1778                    $C$DW$93        .dwtag  DW_TAG_variable, DW_AT_name("line")
+    1779                            .dwattr $C$DW$93, DW_AT_TI_symbol_name("line")
+    1780                            .dwattr $C$DW$93, DW_AT_type(*$C$DW$T$24)
+    1781                            .dwattr $C$DW$93, DW_AT_location[DW_OP_breg13 4]
+    1782                    $C$DW$94        .dwtag  DW_TAG_variable, DW_AT_name("count")
+    1783                            .dwattr $C$DW$94, DW_AT_TI_symbol_name("count")
+    1784                            .dwattr $C$DW$94, DW_AT_type(*$C$DW$T$24)
+    1785                            .dwattr $C$DW$94, DW_AT_location[DW_OP_breg13 5]
+    1786 00000002 1004F88D          STRB      A2, [SP, #4]          ; [DPU_3_PIPE] |217|  ; [KEEP 32-BIT INS]
+    1787 00000006 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |217|  ; [ORIG 16-BIT INS]
+    1788                            .dwpsn  file "../lcd_nokia5510.c",line 218,column 16,is_stmt,isa 1
     1789                    ;----------------------------------------------------------------------
-    1790                    ; 219 | void lcd_puts_line2(char* s)                                           
+    1790                    ; 218 | uint8_t count = 0;                                                     
     1791                    ;----------------------------------------------------------------------
-    1792                    
-    1793                    ;*****************************************************************************
-    1794                    ;* FUNCTION NAME: lcd_puts_line2                                             *
-    1795                    ;*                                                                           *
-    1796                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-    1797                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-    1798                    ;*                           FPEXC,FPSCR                                     *
-    1799                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-    1800                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-    1801                    ;*                           FPEXC,FPSCR                                     *
-    1802                    ;*   Local Frame Size  : 0 Args + 8 Auto + 4 Save = 12 byte                  *
-    1803                    ;*****************************************************************************
-    1804 00000000           lcd_puts_line2:
-    1805                    ;* --------------------------------------------------------------------------*
-    1806                            .dwcfi  cfa_offset, 0
-    1807 00000000 B50E              PUSH      {A2, A3, A4, LR}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-    1808                            .dwcfi  cfa_offset, 16
-    1809                            .dwcfi  save_reg_to_mem, 14, -4
-    1810                            .dwcfi  save_reg_to_mem, 3, -8
-    1811                            .dwcfi  save_reg_to_mem, 2, -12
-    1812                            .dwcfi  save_reg_to_mem, 1, -16
-    1813                    $C$DW$94        .dwtag  DW_TAG_variable, DW_AT_name("s")
-    1814                            .dwattr $C$DW$94, DW_AT_TI_symbol_name("s")
-    1815                            .dwattr $C$DW$94, DW_AT_type(*$C$DW$T$40)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    1792 00000008 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |218|  ; [ORIG 16-BIT INS]
+    1793 0000000a 0005F88D          STRB      A1, [SP, #5]          ; [DPU_3_PIPE] |218|  ; [KEEP 32-BIT INS]
+    1794                            .dwpsn  file "../lcd_nokia5510.c",line 219,column 2,is_stmt,isa 1
+    1795                    ;----------------------------------------------------------------------
+    1796                    ; 219 | if(line > 7 || line < 1)                                               
+    1797                    ; 220 |         return;                                                        
+    1798                    ;----------------------------------------------------------------------
+    1799 0000000e 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |219|  ; [KEEP 32-BIT INS]
+    1800 00000012 2807              CMP       A1, #7                ; [DPU_3_PIPE] |219|  ; [ORIG 16-BIT INS]
+    1801 00000014 DC27              BGT       ||$C$L15||            ; [DPU_3_PIPE] |219|  ; [ORIG 16-BIT INS]
+    1802                            ; BRANCHCC OCCURS {||$C$L15||}   ; [] |219| 
+    1803                    ;* --------------------------------------------------------------------------*
+    1804 00000016 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |219|  ; [KEEP 32-BIT INS]
+    1805 0000001a 2800              CMP       A1, #0                ; [DPU_3_PIPE] |219|  ; [ORIG 16-BIT INS]
+    1806 0000001c DC00              BGT       ||$C$L11||            ; [DPU_3_PIPE] |219|  ; [ORIG 16-BIT INS]
+    1807                            ; BRANCHCC OCCURS {||$C$L11||}   ; [] |219| 
+    1808                    ;* --------------------------------------------------------------------------*
+    1809 0000001e E022              B         ||$C$L15||            ; [DPU_3_PIPE] |219|  ; [ORIG 16-BIT INS]
+    1810                            ; BRANCH OCCURS {||$C$L15||}     ; [] |219| 
+    1811                    ;* --------------------------------------------------------------------------*
+    1812                    ;* --------------------------------------------------------------------------*
+    1813 00000020           ||$C$L11||:    
+    1814                            .dwpsn  file "../lcd_nokia5510.c",line 221,column 2,is_stmt,isa 1
+    1815                    ;----------------------------------------------------------------------
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   34
 
-    1816                            .dwattr $C$DW$94, DW_AT_location[DW_OP_breg13 0]
-    1817                    $C$DW$95        .dwtag  DW_TAG_variable, DW_AT_name("count")
-    1818                            .dwattr $C$DW$95, DW_AT_TI_symbol_name("count")
-    1819                            .dwattr $C$DW$95, DW_AT_type(*$C$DW$T$24)
-    1820                            .dwattr $C$DW$95, DW_AT_location[DW_OP_breg13 4]
-    1821 00000002 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |220|  ; [ORIG 16-BIT INS]
-    1822                            .dwpsn  file "../lcd_nokia5510.c",line 221,column 16,is_stmt,isa 1
-    1823                    ;----------------------------------------------------------------------
-    1824                    ; 221 | uint8_t count = 0;                                                     
-    1825                    ;----------------------------------------------------------------------
-    1826 00000004 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |221|  ; [ORIG 16-BIT INS]
-    1827 00000006 0004F88D          STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |221|  ; [KEEP 32-BIT INS]
-    1828                            .dwpsn  file "../lcd_nokia5510.c",line 222,column 2,is_stmt,isa 1
+    1816                    ; 221 | nokiaLCDsetXY(0,line-1);                                               
+    1817                    ;----------------------------------------------------------------------
+    1818 00000020 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |221|  ; [KEEP 32-BIT INS]
+    1819 00000024 1E40              SUBS      A1, A1, #1            ; [DPU_3_PIPE] |221|  ; [ORIG 16-BIT INS]
+    1820 00000026 B2C1              UXTB      A2, A1                ; [DPU_3_PIPE] |221|  ; [ORIG 16-BIT INS]
+    1821 00000028 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |221|  ; [ORIG 16-BIT INS]
+    1822                    $C$DW$95        .dwtag  DW_TAG_TI_branch
+    1823                            .dwattr $C$DW$95, DW_AT_low_pc(0x00)
+    1824                            .dwattr $C$DW$95, DW_AT_name("nokiaLCDsetXY")
+    1825                            .dwattr $C$DW$95, DW_AT_TI_call
+    1826 0000002a FFFEF7FF!         BL        nokiaLCDsetXY         ; [DPU_3_PIPE] |221|  ; [KEEP 32-BIT INS]
+    1827                            ; CALL OCCURS {nokiaLCDsetXY }   ; [] |221| 
+    1828                            .dwpsn  file "../lcd_nokia5510.c",line 222,column 8,is_stmt,isa 1
     1829                    ;----------------------------------------------------------------------
-    1830                    ; 222 | nokiaLCDsetXY(0,1);                                                    
+    1830                    ; 222 | while(count<12)                                                        
     1831                    ;----------------------------------------------------------------------
-    1832 0000000a 2101              MOVS      A2, #1                ; [DPU_3_PIPE] |222|  ; [ORIG 16-BIT INS]
-    1833 0000000c 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |222|  ; [ORIG 16-BIT INS]
-    1834                    $C$DW$96        .dwtag  DW_TAG_TI_branch
-    1835                            .dwattr $C$DW$96, DW_AT_low_pc(0x00)
-    1836                            .dwattr $C$DW$96, DW_AT_name("nokiaLCDsetXY")
-    1837                            .dwattr $C$DW$96, DW_AT_TI_call
-    1838 0000000e FFFEF7FF!         BL        nokiaLCDsetXY         ; [DPU_3_PIPE] |222|  ; [KEEP 32-BIT INS]
-    1839                            ; CALL OCCURS {nokiaLCDsetXY }   ; [] |222| 
-    1840                            .dwpsn  file "../lcd_nokia5510.c",line 223,column 8,is_stmt,isa 1
-    1841                    ;----------------------------------------------------------------------
-    1842                    ; 223 | while(count<12)                                                        
-    1843                    ;----------------------------------------------------------------------
-    1844 00000012 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |223|  ; [KEEP 32-BIT INS]
-    1845 00000016 280C              CMP       A1, #12               ; [DPU_3_PIPE] |223|  ; [ORIG 16-BIT INS]
-    1846 00000018 DA0E              BGE       ||$C$L12||            ; [DPU_3_PIPE] |223|  ; [ORIG 16-BIT INS]
-    1847                            ; BRANCHCC OCCURS {||$C$L12||}   ; [] |223| 
-    1848                    ;* --------------------------------------------------------------------------*
-    1849                    ;*   BEGIN LOOP ||$C$L11||
-    1850                    ;*
-    1851                    ;*   Loop source line                : 223
-    1852                    ;*   Loop closing brace source line  : 227
-    1853                    ;*   Known Minimum Trip Count        : 1
-    1854                    ;*   Known Maximum Trip Count        : 4294967295
-    1855                    ;*   Known Max Trip Count Factor     : 1
-    1856                    ;* --------------------------------------------------------------------------*
-    1857 0000001a           ||$C$L11||:    
-    1858                            .dwpsn  file "../lcd_nokia5510.c",line 225,column 3,is_stmt,isa 1
-    1859                    ;----------------------------------------------------------------------
-    1860                    ; 225 | nokiaLCDtext(*s++);                                                    
-    1861                    ;----------------------------------------------------------------------
-    1862 0000001a 9900              LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |225|  ; [ORIG 16-BIT INS]
-    1863 0000001c 0B01F811          LDRB      A1, [A2], #1          ; [DPU_3_PIPE] |225|  ; [KEEP 32-BIT INS]
-    1864 00000020 9100              STR       A2, [SP, #0]          ; [DPU_3_PIPE] |225|  ; [ORIG 16-BIT INS]
-    1865                    $C$DW$97        .dwtag  DW_TAG_TI_branch
-    1866                            .dwattr $C$DW$97, DW_AT_low_pc(0x00)
-    1867                            .dwattr $C$DW$97, DW_AT_name("nokiaLCDtext")
-    1868                            .dwattr $C$DW$97, DW_AT_TI_call
-    1869 00000022 FFFEF7FF!         BL        nokiaLCDtext          ; [DPU_3_PIPE] |225|  ; [KEEP 32-BIT INS]
-    1870                            ; CALL OCCURS {nokiaLCDtext }    ; [] |225| 
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    1832 0000002e 0005F89D          LDRB      A1, [SP, #5]          ; [DPU_3_PIPE] |222|  ; [KEEP 32-BIT INS]
+    1833 00000032 280C              CMP       A1, #12               ; [DPU_3_PIPE] |222|  ; [ORIG 16-BIT INS]
+    1834 00000034 DA17              BGE       ||$C$L15||            ; [DPU_3_PIPE] |222|  ; [ORIG 16-BIT INS]
+    1835                            ; BRANCHCC OCCURS {||$C$L15||}   ; [] |222| 
+    1836                    ;* --------------------------------------------------------------------------*
+    1837                    ;*   BEGIN LOOP ||$C$L12||
+    1838                    ;*
+    1839                    ;*   Loop source line                : 222
+    1840                    ;*   Loop closing brace source line  : 233
+    1841                    ;*   Known Minimum Trip Count        : 1
+    1842                    ;*   Known Maximum Trip Count        : 4294967295
+    1843                    ;*   Known Max Trip Count Factor     : 1
+    1844                    ;* --------------------------------------------------------------------------*
+    1845 00000036           ||$C$L12||:    
+    1846                            .dwpsn  file "../lcd_nokia5510.c",line 224,column 3,is_stmt,isa 1
+    1847                    ;----------------------------------------------------------------------
+    1848                    ; 224 | if(validate_char(*s))                                                  
+    1849                    ;----------------------------------------------------------------------
+    1850 00000036 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |224|  ; [ORIG 16-BIT INS]
+    1851 00000038 7800              LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |224|  ; [ORIG 16-BIT INS]
+    1852                    $C$DW$96        .dwtag  DW_TAG_TI_branch
+    1853                            .dwattr $C$DW$96, DW_AT_low_pc(0x00)
+    1854                            .dwattr $C$DW$96, DW_AT_name("validate_char")
+    1855                            .dwattr $C$DW$96, DW_AT_TI_call
+    1856 0000003a FFFEF7FF!         BL        validate_char         ; [DPU_3_PIPE] |224|  ; [KEEP 32-BIT INS]
+    1857                            ; CALL OCCURS {validate_char }   ; [] |224| 
+    1858 0000003e B130              CBZ       A1, ||$C$L13||        ; []  ; [ORIG 16-BIT INS]
+    1859                            ; BRANCHCC OCCURS {||$C$L13||}   ; [] |224| 
+    1860                    ;* --------------------------------------------------------------------------*
+    1861                            .dwpsn  file "../lcd_nokia5510.c",line 226,column 4,is_stmt,isa 1
+    1862                    ;----------------------------------------------------------------------
+    1863                    ; 226 | nokiaLCDtext(*s++);                                                    
+    1864                    ;----------------------------------------------------------------------
+    1865 00000040 9900              LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |226|  ; [ORIG 16-BIT INS]
+    1866 00000042 0B01F811          LDRB      A1, [A2], #1          ; [DPU_3_PIPE] |226|  ; [KEEP 32-BIT INS]
+    1867 00000046 9100              STR       A2, [SP, #0]          ; [DPU_3_PIPE] |226|  ; [ORIG 16-BIT INS]
+    1868                    $C$DW$97        .dwtag  DW_TAG_TI_branch
+    1869                            .dwattr $C$DW$97, DW_AT_low_pc(0x00)
+    1870                            .dwattr $C$DW$97, DW_AT_name("nokiaLCDtext")
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   35
 
-    1871                            .dwpsn  file "../lcd_nokia5510.c",line 226,column 3,is_stmt,isa 1
-    1872                    ;----------------------------------------------------------------------
-    1873                    ; 226 | count++;                                                               
-    1874                    ;----------------------------------------------------------------------
-    1875 00000026 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |226|  ; [KEEP 32-BIT INS]
-    1876 0000002a 1C40              ADDS      A1, A1, #1            ; [DPU_3_PIPE] |226|  ; [ORIG 16-BIT INS]
-    1877 0000002c 0004F88D          STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |226|  ; [KEEP 32-BIT INS]
-    1878                            .dwpsn  file "../lcd_nokia5510.c",line 223,column 8,is_stmt,isa 1
-    1879 00000030 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |223|  ; [KEEP 32-BIT INS]
-    1880 00000034 280C              CMP       A1, #12               ; [DPU_3_PIPE] |223|  ; [ORIG 16-BIT INS]
-    1881 00000036 DBF0              BLT       ||$C$L11||            ; [DPU_3_PIPE] |223|  ; [ORIG 16-BIT INS]
-    1882                            ; BRANCHCC OCCURS {||$C$L11||}   ; [] |223| 
-    1883                    ;* --------------------------------------------------------------------------*
-    1884                            .dwpsn  file "../lcd_nokia5510.c",line 228,column 1,is_stmt,isa 1
-    1885                    ;* --------------------------------------------------------------------------*
-    1886                    ||$C$L12||:    
-    1887                    $C$DW$98        .dwtag  DW_TAG_TI_branch
-    1888                            .dwattr $C$DW$98, DW_AT_low_pc(0x00)
-    1889                            .dwattr $C$DW$98, DW_AT_TI_return
-    1890 00000038 BD0E              POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-    1891                            .dwcfi  cfa_offset, 0
-    1892                            ; BRANCH OCCURS                  ; [] 
-    1893                            .dwattr $C$DW$92, DW_AT_TI_end_file("../lcd_nokia5510.c")
-    1894                            .dwattr $C$DW$92, DW_AT_TI_end_line(0xe4)
-    1895                            .dwattr $C$DW$92, DW_AT_TI_end_column(0x01)
-    1896                            .dwendentry
-    1897                            .dwendtag $C$DW$92
-    1898                    
-    1899 00000000                   .sect   ".text:lcd_puts_line3"
-    1900                            .clink
-    1901                            .thumbfunc lcd_puts_line3
-    1902 00000000                   .thumb
-    1903                            .global lcd_puts_line3
-    1904                    
-    1905                    $C$DW$99        .dwtag  DW_TAG_subprogram, DW_AT_name("lcd_puts_line3")
-    1906                            .dwattr $C$DW$99, DW_AT_low_pc(lcd_puts_line3)
-    1907                            .dwattr $C$DW$99, DW_AT_high_pc(0x00)
-    1908                            .dwattr $C$DW$99, DW_AT_TI_symbol_name("lcd_puts_line3")
-    1909                            .dwattr $C$DW$99, DW_AT_external
-    1910                            .dwattr $C$DW$99, DW_AT_TI_begin_file("../lcd_nokia5510.c")
-    1911                            .dwattr $C$DW$99, DW_AT_TI_begin_line(0xe6)
-    1912                            .dwattr $C$DW$99, DW_AT_TI_begin_column(0x06)
-    1913                            .dwattr $C$DW$99, DW_AT_decl_file("../lcd_nokia5510.c")
-    1914                            .dwattr $C$DW$99, DW_AT_decl_line(0xe6)
-    1915                            .dwattr $C$DW$99, DW_AT_decl_column(0x06)
-    1916                            .dwattr $C$DW$99, DW_AT_TI_max_frame_size(0x10)
-    1917                            .dwpsn  file "../lcd_nokia5510.c",line 231,column 1,is_stmt,address lcd_puts_line3,isa 1
+    1871                            .dwattr $C$DW$97, DW_AT_TI_call
+    1872 00000048 FFFEF7FF!         BL        nokiaLCDtext          ; [DPU_3_PIPE] |226|  ; [KEEP 32-BIT INS]
+    1873                            ; CALL OCCURS {nokiaLCDtext }    ; [] |226| 
+    1874                            .dwpsn  file "../lcd_nokia5510.c",line 227,column 3,is_stmt,isa 1
+    1875                    ;----------------------------------------------------------------------
+    1876                    ; 228 | else                                                                   
+    1877                    ;----------------------------------------------------------------------
+    1878 0000004c E002              B         ||$C$L14||            ; [DPU_3_PIPE] |227|  ; [ORIG 16-BIT INS]
+    1879                            ; BRANCH OCCURS {||$C$L14||}     ; [] |227| 
+    1880                    ;* --------------------------------------------------------------------------*
+    1881 0000004e           ||$C$L13||:    
+    1882                            .dwpsn  file "../lcd_nokia5510.c",line 230,column 4,is_stmt,isa 1
+    1883                    ;----------------------------------------------------------------------
+    1884                    ; 230 | *s++;                                                                  
+    1885                    ;----------------------------------------------------------------------
+    1886 0000004e 9800              LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |230|  ; [ORIG 16-BIT INS]
+    1887 00000050 1C40              ADDS      A1, A1, #1            ; [DPU_3_PIPE] |230|  ; [ORIG 16-BIT INS]
+    1888 00000052 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |230|  ; [ORIG 16-BIT INS]
+    1889                    ;* --------------------------------------------------------------------------*
+    1890 00000054           ||$C$L14||:    
+    1891                            .dwpsn  file "../lcd_nokia5510.c",line 232,column 3,is_stmt,isa 1
+    1892                    ;----------------------------------------------------------------------
+    1893                    ; 232 | count++;                                                               
+    1894                    ;----------------------------------------------------------------------
+    1895 00000054 0005F89D          LDRB      A1, [SP, #5]          ; [DPU_3_PIPE] |232|  ; [KEEP 32-BIT INS]
+    1896 00000058 1C40              ADDS      A1, A1, #1            ; [DPU_3_PIPE] |232|  ; [ORIG 16-BIT INS]
+    1897 0000005a 0005F88D          STRB      A1, [SP, #5]          ; [DPU_3_PIPE] |232|  ; [KEEP 32-BIT INS]
+    1898                            .dwpsn  file "../lcd_nokia5510.c",line 222,column 8,is_stmt,isa 1
+    1899 0000005e 0005F89D          LDRB      A1, [SP, #5]          ; [DPU_3_PIPE] |222|  ; [KEEP 32-BIT INS]
+    1900 00000062 280C              CMP       A1, #12               ; [DPU_3_PIPE] |222|  ; [ORIG 16-BIT INS]
+    1901 00000064 DBE7              BLT       ||$C$L12||            ; [DPU_3_PIPE] |222|  ; [ORIG 16-BIT INS]
+    1902                            ; BRANCHCC OCCURS {||$C$L12||}   ; [] |222| 
+    1903                    ;* --------------------------------------------------------------------------*
+    1904                            .dwpsn  file "../lcd_nokia5510.c",line 234,column 1,is_stmt,isa 1
+    1905                    ;* --------------------------------------------------------------------------*
+    1906                    ||$C$L15||:    
+    1907                    $C$DW$98        .dwtag  DW_TAG_TI_branch
+    1908                            .dwattr $C$DW$98, DW_AT_low_pc(0x00)
+    1909                            .dwattr $C$DW$98, DW_AT_TI_return
+    1910 00000066 BD0E              POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+    1911                            .dwcfi  cfa_offset, 0
+    1912                            ; BRANCH OCCURS                  ; [] 
+    1913                            .dwattr $C$DW$89, DW_AT_TI_end_file("../lcd_nokia5510.c")
+    1914                            .dwattr $C$DW$89, DW_AT_TI_end_line(0xea)
+    1915                            .dwattr $C$DW$89, DW_AT_TI_end_column(0x01)
+    1916                            .dwendentry
+    1917                            .dwendtag $C$DW$89
     1918                    
-    1919                            .dwfde $C$DW$CIE, lcd_puts_line3
-    1920                    $C$DW$100       .dwtag  DW_TAG_formal_parameter, DW_AT_name("s")
-    1921                            .dwattr $C$DW$100, DW_AT_TI_symbol_name("s")
-    1922                            .dwattr $C$DW$100, DW_AT_type(*$C$DW$T$40)
-    1923                            .dwattr $C$DW$100, DW_AT_location[DW_OP_reg0]
-    1924                    ;----------------------------------------------------------------------
-    1925                    ; 230 | void lcd_puts_line3(char* s)                                           
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    1919                    ;******************************************************************************
+    1920                    ;* CONSTANT TABLE                                                             *
+    1921                    ;******************************************************************************
+    1922 00000048                   .sect   ".text:nokiaLCDwrite"
+    1923                            .align  4
+    1924 00000048 40005000  ||$C$CON1||:    .bits   1073762304,32
+    1925                    ;******************************************************************************
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   36
 
-    1926                    ;----------------------------------------------------------------------
-    1927                    
-    1928                    ;*****************************************************************************
-    1929                    ;* FUNCTION NAME: lcd_puts_line3                                             *
-    1930                    ;*                                                                           *
-    1931                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-    1932                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-    1933                    ;*                           FPEXC,FPSCR                                     *
-    1934                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-    1935                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-    1936                    ;*                           FPEXC,FPSCR                                     *
-    1937                    ;*   Local Frame Size  : 0 Args + 8 Auto + 4 Save = 12 byte                  *
-    1938                    ;*****************************************************************************
-    1939 00000000           lcd_puts_line3:
-    1940                    ;* --------------------------------------------------------------------------*
-    1941                            .dwcfi  cfa_offset, 0
-    1942 00000000 B50E              PUSH      {A2, A3, A4, LR}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-    1943                            .dwcfi  cfa_offset, 16
-    1944                            .dwcfi  save_reg_to_mem, 14, -4
-    1945                            .dwcfi  save_reg_to_mem, 3, -8
-    1946                            .dwcfi  save_reg_to_mem, 2, -12
-    1947                            .dwcfi  save_reg_to_mem, 1, -16
-    1948                    $C$DW$101       .dwtag  DW_TAG_variable, DW_AT_name("s")
-    1949                            .dwattr $C$DW$101, DW_AT_TI_symbol_name("s")
-    1950                            .dwattr $C$DW$101, DW_AT_type(*$C$DW$T$40)
-    1951                            .dwattr $C$DW$101, DW_AT_location[DW_OP_breg13 0]
-    1952                    $C$DW$102       .dwtag  DW_TAG_variable, DW_AT_name("count")
-    1953                            .dwattr $C$DW$102, DW_AT_TI_symbol_name("count")
-    1954                            .dwattr $C$DW$102, DW_AT_type(*$C$DW$T$24)
-    1955                            .dwattr $C$DW$102, DW_AT_location[DW_OP_breg13 4]
-    1956 00000002 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |231|  ; [ORIG 16-BIT INS]
-    1957                            .dwpsn  file "../lcd_nokia5510.c",line 232,column 16,is_stmt,isa 1
-    1958                    ;----------------------------------------------------------------------
-    1959                    ; 232 | uint8_t count = 0;                                                     
-    1960                    ;----------------------------------------------------------------------
-    1961 00000004 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |232|  ; [ORIG 16-BIT INS]
-    1962 00000006 0004F88D          STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |232|  ; [KEEP 32-BIT INS]
-    1963                            .dwpsn  file "../lcd_nokia5510.c",line 233,column 2,is_stmt,isa 1
-    1964                    ;----------------------------------------------------------------------
-    1965                    ; 233 | nokiaLCDsetXY(0,2);                                                    
-    1966                    ;----------------------------------------------------------------------
-    1967 0000000a 2102              MOVS      A2, #2                ; [DPU_3_PIPE] |233|  ; [ORIG 16-BIT INS]
-    1968 0000000c 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |233|  ; [ORIG 16-BIT INS]
-    1969                    $C$DW$103       .dwtag  DW_TAG_TI_branch
-    1970                            .dwattr $C$DW$103, DW_AT_low_pc(0x00)
-    1971                            .dwattr $C$DW$103, DW_AT_name("nokiaLCDsetXY")
-    1972                            .dwattr $C$DW$103, DW_AT_TI_call
-    1973 0000000e FFFEF7FF!         BL        nokiaLCDsetXY         ; [DPU_3_PIPE] |233|  ; [KEEP 32-BIT INS]
-    1974                            ; CALL OCCURS {nokiaLCDsetXY }   ; [] |233| 
-    1975                            .dwpsn  file "../lcd_nokia5510.c",line 234,column 8,is_stmt,isa 1
-    1976                    ;----------------------------------------------------------------------
-    1977                    ; 234 | while(count<12)                                                        
-    1978                    ;----------------------------------------------------------------------
-    1979 00000012 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |234|  ; [KEEP 32-BIT INS]
-    1980 00000016 280C              CMP       A1, #12               ; [DPU_3_PIPE] |234|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    1926                    ;* CONSTANT TABLE                                                             *
+    1927                    ;******************************************************************************
+    1928 000000d2                   .sect   ".text:nokiaLCDinit"
+    1929                            .align  4
+    1930 000000d2 080146C0  ||$C$CON2||:    .bits   -268433407,32
+         000000d6 0000F000 
+    1931                            .align  4
+    1932 000000d6 5000F000  ||$C$CON3||:    .bits   1073762304,32
+         000000da 00004000 
+    1933                            .align  4
+    1934 000000da 86A04000  ||$C$CON4||:    .bits   100000,32
+         000000de 00000001 
+    1935                    ;******************************************************************************
+    1936                    ;* CONSTANT TABLE                                                             *
+    1937                    ;******************************************************************************
+    1938 00000052                   .sect   ".text:nokiaLCDtext"
+    1939                            .align  4
+    1940 00000052 000046C0! ||$C$CON5||:    .bits   ASCII,32
+         00000056 00000000 
+    1941                    ;*****************************************************************************
+    1942                    ;* UNDEFINED EXTERNAL REFERENCES                                             *
+    1943                    ;*****************************************************************************
+    1944                            .global GPIOPinWrite
+    1945                            .global GPIOPinTypeGPIOOutput
+    1946                            .global SysCtlPeripheralEnable
+    1947                            .global SysCtlDelay
+    1948                            .global SSI_init
+    1949                            .global SSI_write
+    1950                    
+    1951                    ;******************************************************************************
+    1952                    ;* BUILD ATTRIBUTES                                                           *
+    1953                    ;******************************************************************************
+    1954                            .battr "aeabi", Tag_File, 1, Tag_ABI_PCS_wchar_t(2)
+    1955                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_rounding(0)
+    1956                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_denormal(0)
+    1957                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_exceptions(0)
+    1958                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_number_model(1)
+    1959                            .battr "aeabi", Tag_File, 1, Tag_ABI_enum_size(0)
+    1960                            .battr "aeabi", Tag_File, 1, Tag_ABI_optimization_goals(5)
+    1961                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_optimization_goals(0)
+    1962                            .battr "TI", Tag_File, 1, Tag_Bitfield_layout(2)
+    1963                            .battr "TI", Tag_File, 1, Tag_FP_interface(1)
+    1964                    
+    1965                    ;******************************************************************************
+    1966                    ;* TYPE INFORMATION                                                           *
+    1967                    ;******************************************************************************
+    1968                    
+    1969                    $C$DW$T$20      .dwtag  DW_TAG_structure_type
+    1970                            .dwattr $C$DW$T$20, DW_AT_byte_size(0x18)
+    1971                    $C$DW$99        .dwtag  DW_TAG_member
+    1972                            .dwattr $C$DW$99, DW_AT_type(*$C$DW$T$10)
+    1973                            .dwattr $C$DW$99, DW_AT_name("fd")
+    1974                            .dwattr $C$DW$99, DW_AT_TI_symbol_name("fd")
+    1975                            .dwattr $C$DW$99, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    1976                            .dwattr $C$DW$99, DW_AT_accessibility(DW_ACCESS_public)
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   37
 
-    1981 00000018 DA0E              BGE       ||$C$L14||            ; [DPU_3_PIPE] |234|  ; [ORIG 16-BIT INS]
-    1982                            ; BRANCHCC OCCURS {||$C$L14||}   ; [] |234| 
-    1983                    ;* --------------------------------------------------------------------------*
-    1984                    ;*   BEGIN LOOP ||$C$L13||
-    1985                    ;*
-    1986                    ;*   Loop source line                : 234
-    1987                    ;*   Loop closing brace source line  : 238
-    1988                    ;*   Known Minimum Trip Count        : 1
-    1989                    ;*   Known Maximum Trip Count        : 4294967295
-    1990                    ;*   Known Max Trip Count Factor     : 1
-    1991                    ;* --------------------------------------------------------------------------*
-    1992 0000001a           ||$C$L13||:    
-    1993                            .dwpsn  file "../lcd_nokia5510.c",line 236,column 3,is_stmt,isa 1
-    1994                    ;----------------------------------------------------------------------
-    1995                    ; 236 | nokiaLCDtext(*s++);                                                    
-    1996                    ;----------------------------------------------------------------------
-    1997 0000001a 9900              LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |236|  ; [ORIG 16-BIT INS]
-    1998 0000001c 0B01F811          LDRB      A1, [A2], #1          ; [DPU_3_PIPE] |236|  ; [KEEP 32-BIT INS]
-    1999 00000020 9100              STR       A2, [SP, #0]          ; [DPU_3_PIPE] |236|  ; [ORIG 16-BIT INS]
-    2000                    $C$DW$104       .dwtag  DW_TAG_TI_branch
-    2001                            .dwattr $C$DW$104, DW_AT_low_pc(0x00)
-    2002                            .dwattr $C$DW$104, DW_AT_name("nokiaLCDtext")
-    2003                            .dwattr $C$DW$104, DW_AT_TI_call
-    2004 00000022 FFFEF7FF!         BL        nokiaLCDtext          ; [DPU_3_PIPE] |236|  ; [KEEP 32-BIT INS]
-    2005                            ; CALL OCCURS {nokiaLCDtext }    ; [] |236| 
-    2006                            .dwpsn  file "../lcd_nokia5510.c",line 237,column 3,is_stmt,isa 1
-    2007                    ;----------------------------------------------------------------------
-    2008                    ; 237 | count++;                                                               
-    2009                    ;----------------------------------------------------------------------
-    2010 00000026 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |237|  ; [KEEP 32-BIT INS]
-    2011 0000002a 1C40              ADDS      A1, A1, #1            ; [DPU_3_PIPE] |237|  ; [ORIG 16-BIT INS]
-    2012 0000002c 0004F88D          STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |237|  ; [KEEP 32-BIT INS]
-    2013                            .dwpsn  file "../lcd_nokia5510.c",line 234,column 8,is_stmt,isa 1
-    2014 00000030 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |234|  ; [KEEP 32-BIT INS]
-    2015 00000034 280C              CMP       A1, #12               ; [DPU_3_PIPE] |234|  ; [ORIG 16-BIT INS]
-    2016 00000036 DBF0              BLT       ||$C$L13||            ; [DPU_3_PIPE] |234|  ; [ORIG 16-BIT INS]
-    2017                            ; BRANCHCC OCCURS {||$C$L13||}   ; [] |234| 
-    2018                    ;* --------------------------------------------------------------------------*
-    2019                            .dwpsn  file "../lcd_nokia5510.c",line 239,column 1,is_stmt,isa 1
-    2020                    ;* --------------------------------------------------------------------------*
-    2021                    ||$C$L14||:    
-    2022                    $C$DW$105       .dwtag  DW_TAG_TI_branch
-    2023                            .dwattr $C$DW$105, DW_AT_low_pc(0x00)
-    2024                            .dwattr $C$DW$105, DW_AT_TI_return
-    2025 00000038 BD0E              POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-    2026                            .dwcfi  cfa_offset, 0
-    2027                            ; BRANCH OCCURS                  ; [] 
-    2028                            .dwattr $C$DW$99, DW_AT_TI_end_file("../lcd_nokia5510.c")
-    2029                            .dwattr $C$DW$99, DW_AT_TI_end_line(0xef)
-    2030                            .dwattr $C$DW$99, DW_AT_TI_end_column(0x01)
-    2031                            .dwendentry
-    2032                            .dwendtag $C$DW$99
-    2033                    
-    2034                    ;******************************************************************************
-    2035                    ;* CONSTANT TABLE                                                             *
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    1977                            .dwattr $C$DW$99, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.h
+    1978                            .dwattr $C$DW$99, DW_AT_decl_line(0x5c)
+    1979                            .dwattr $C$DW$99, DW_AT_decl_column(0x0b)
+    1980                    $C$DW$100       .dwtag  DW_TAG_member
+    1981                            .dwattr $C$DW$100, DW_AT_type(*$C$DW$T$19)
+    1982                            .dwattr $C$DW$100, DW_AT_name("buf")
+    1983                            .dwattr $C$DW$100, DW_AT_TI_symbol_name("buf")
+    1984                            .dwattr $C$DW$100, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+    1985                            .dwattr $C$DW$100, DW_AT_accessibility(DW_ACCESS_public)
+    1986                            .dwattr $C$DW$100, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    1987                            .dwattr $C$DW$100, DW_AT_decl_line(0x5d)
+    1988                            .dwattr $C$DW$100, DW_AT_decl_column(0x16)
+    1989                    $C$DW$101       .dwtag  DW_TAG_member
+    1990                            .dwattr $C$DW$101, DW_AT_type(*$C$DW$T$19)
+    1991                            .dwattr $C$DW$101, DW_AT_name("pos")
+    1992                            .dwattr $C$DW$101, DW_AT_TI_symbol_name("pos")
+    1993                            .dwattr $C$DW$101, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+    1994                            .dwattr $C$DW$101, DW_AT_accessibility(DW_ACCESS_public)
+    1995                            .dwattr $C$DW$101, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    1996                            .dwattr $C$DW$101, DW_AT_decl_line(0x5e)
+    1997                            .dwattr $C$DW$101, DW_AT_decl_column(0x16)
+    1998                    $C$DW$102       .dwtag  DW_TAG_member
+    1999                            .dwattr $C$DW$102, DW_AT_type(*$C$DW$T$19)
+    2000                            .dwattr $C$DW$102, DW_AT_name("bufend")
+    2001                            .dwattr $C$DW$102, DW_AT_TI_symbol_name("bufend")
+    2002                            .dwattr $C$DW$102, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+    2003                            .dwattr $C$DW$102, DW_AT_accessibility(DW_ACCESS_public)
+    2004                            .dwattr $C$DW$102, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    2005                            .dwattr $C$DW$102, DW_AT_decl_line(0x5f)
+    2006                            .dwattr $C$DW$102, DW_AT_decl_column(0x16)
+    2007                    $C$DW$103       .dwtag  DW_TAG_member
+    2008                            .dwattr $C$DW$103, DW_AT_type(*$C$DW$T$19)
+    2009                            .dwattr $C$DW$103, DW_AT_name("buff_stop")
+    2010                            .dwattr $C$DW$103, DW_AT_TI_symbol_name("buff_stop")
+    2011                            .dwattr $C$DW$103, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+    2012                            .dwattr $C$DW$103, DW_AT_accessibility(DW_ACCESS_public)
+    2013                            .dwattr $C$DW$103, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    2014                            .dwattr $C$DW$103, DW_AT_decl_line(0x60)
+    2015                            .dwattr $C$DW$103, DW_AT_decl_column(0x16)
+    2016                    $C$DW$104       .dwtag  DW_TAG_member
+    2017                            .dwattr $C$DW$104, DW_AT_type(*$C$DW$T$11)
+    2018                            .dwattr $C$DW$104, DW_AT_name("flags")
+    2019                            .dwattr $C$DW$104, DW_AT_TI_symbol_name("flags")
+    2020                            .dwattr $C$DW$104, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+    2021                            .dwattr $C$DW$104, DW_AT_accessibility(DW_ACCESS_public)
+    2022                            .dwattr $C$DW$104, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    2023                            .dwattr $C$DW$104, DW_AT_decl_line(0x61)
+    2024                            .dwattr $C$DW$104, DW_AT_decl_column(0x16)
+    2025                            .dwendtag $C$DW$T$20
+    2026                    
+    2027                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    2028                            .dwattr $C$DW$T$20, DW_AT_decl_line(0x5b)
+    2029                            .dwattr $C$DW$T$20, DW_AT_decl_column(0x10)
+    2030                    $C$DW$T$22      .dwtag  DW_TAG_typedef, DW_AT_name("FILE")
+    2031                            .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$20)
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   38
 
-    2036                    ;******************************************************************************
-    2037 00000048                   .sect   ".text:nokiaLCDwrite"
-    2038                            .align  4
-    2039 00000048 40005000  ||$C$CON1||:    .bits   1073762304,32
-    2040                    ;******************************************************************************
-    2041                    ;* CONSTANT TABLE                                                             *
-    2042                    ;******************************************************************************
-    2043 000000d2                   .sect   ".text:nokiaLCDinit"
-    2044                            .align  4
-    2045 000000d2 080146C0  ||$C$CON2||:    .bits   -268433407,32
-         000000d6 0000F000 
-    2046                            .align  4
-    2047 000000d6 5000F000  ||$C$CON3||:    .bits   1073762304,32
-         000000da 00004000 
-    2048                            .align  4
-    2049 000000da 86A04000  ||$C$CON4||:    .bits   100000,32
-         000000de 00000001 
-    2050                    ;******************************************************************************
-    2051                    ;* CONSTANT TABLE                                                             *
-    2052                    ;******************************************************************************
-    2053 00000052                   .sect   ".text:nokiaLCDtext"
-    2054                            .align  4
-    2055 00000052 000046C0! ||$C$CON5||:    .bits   ASCII,32
-         00000056 00000000 
-    2056                    ;*****************************************************************************
-    2057                    ;* UNDEFINED EXTERNAL REFERENCES                                             *
-    2058                    ;*****************************************************************************
-    2059                            .global GPIOPinWrite
-    2060                            .global GPIOPinTypeGPIOOutput
-    2061                            .global SysCtlPeripheralEnable
-    2062                            .global SysCtlDelay
-    2063                            .global SSI_init
-    2064                            .global SSI_write
-    2065                    
-    2066                    ;******************************************************************************
-    2067                    ;* BUILD ATTRIBUTES                                                           *
-    2068                    ;******************************************************************************
-    2069                            .battr "aeabi", Tag_File, 1, Tag_ABI_PCS_wchar_t(2)
-    2070                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_rounding(0)
-    2071                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_denormal(0)
-    2072                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_exceptions(0)
-    2073                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_number_model(1)
-    2074                            .battr "aeabi", Tag_File, 1, Tag_ABI_enum_size(0)
-    2075                            .battr "aeabi", Tag_File, 1, Tag_ABI_optimization_goals(5)
-    2076                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_optimization_goals(0)
-    2077                            .battr "TI", Tag_File, 1, Tag_Bitfield_layout(2)
-    2078                            .battr "TI", Tag_File, 1, Tag_FP_interface(1)
-    2079                    
-    2080                    ;******************************************************************************
-    2081                    ;* TYPE INFORMATION                                                           *
-    2082                    ;******************************************************************************
-    2083                    
-    2084                    $C$DW$T$20      .dwtag  DW_TAG_structure_type
-    2085                            .dwattr $C$DW$T$20, DW_AT_byte_size(0x18)
-    2086                    $C$DW$106       .dwtag  DW_TAG_member
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    2032                            .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
+    2033                            .dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    2034                            .dwattr $C$DW$T$22, DW_AT_decl_line(0x62)
+    2035                            .dwattr $C$DW$T$22, DW_AT_decl_column(0x03)
+    2036                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+    2037                            .dwattr $C$DW$T$2, DW_AT_name("void")
+    2038                    $C$DW$T$3       .dwtag  DW_TAG_pointer_type
+    2039                            .dwattr $C$DW$T$3, DW_AT_type(*$C$DW$T$2)
+    2040                            .dwattr $C$DW$T$3, DW_AT_address_class(0x20)
+    2041                    $C$DW$T$4       .dwtag  DW_TAG_base_type
+    2042                            .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+    2043                            .dwattr $C$DW$T$4, DW_AT_name("bool")
+    2044                            .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+    2045                    $C$DW$T$5       .dwtag  DW_TAG_base_type
+    2046                            .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+    2047                            .dwattr $C$DW$T$5, DW_AT_name("signed char")
+    2048                            .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+    2049                    $C$DW$T$42      .dwtag  DW_TAG_typedef, DW_AT_name("int8_t")
+    2050                            .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$5)
+    2051                            .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
+    2052                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2053                            .dwattr $C$DW$T$42, DW_AT_decl_line(0x2a)
+    2054                            .dwattr $C$DW$T$42, DW_AT_decl_column(0x1d)
+    2055                    $C$DW$T$43      .dwtag  DW_TAG_typedef, DW_AT_name("int_least8_t")
+    2056                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$42)
+    2057                            .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
+    2058                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2059                            .dwattr $C$DW$T$43, DW_AT_decl_line(0x37)
+    2060                            .dwattr $C$DW$T$43, DW_AT_decl_column(0x17)
+    2061                    $C$DW$T$6       .dwtag  DW_TAG_base_type
+    2062                            .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+    2063                            .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+    2064                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+    2065                    $C$DW$T$19      .dwtag  DW_TAG_pointer_type
+    2066                            .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$6)
+    2067                            .dwattr $C$DW$T$19, DW_AT_address_class(0x20)
+    2068                    $C$DW$T$24      .dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
+    2069                            .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$6)
+    2070                            .dwattr $C$DW$T$24, DW_AT_language(DW_LANG_C)
+    2071                            .dwattr $C$DW$T$24, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2072                            .dwattr $C$DW$T$24, DW_AT_decl_line(0x2b)
+    2073                            .dwattr $C$DW$T$24, DW_AT_decl_column(0x1c)
+    2074                    $C$DW$T$48      .dwtag  DW_TAG_const_type
+    2075                            .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$24)
+    2076                    
+    2077                    $C$DW$T$49      .dwtag  DW_TAG_array_type
+    2078                            .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$48)
+    2079                            .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
+    2080                            .dwattr $C$DW$T$49, DW_AT_byte_size(0x05)
+    2081                    $C$DW$105       .dwtag  DW_TAG_subrange_type
+    2082                            .dwattr $C$DW$105, DW_AT_upper_bound(0x04)
+    2083                            .dwendtag $C$DW$T$49
+    2084                    
+    2085                    
+    2086                    $C$DW$T$50      .dwtag  DW_TAG_array_type
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   39
 
-    2087                            .dwattr $C$DW$106, DW_AT_type(*$C$DW$T$10)
-    2088                            .dwattr $C$DW$106, DW_AT_name("fd")
-    2089                            .dwattr $C$DW$106, DW_AT_TI_symbol_name("fd")
-    2090                            .dwattr $C$DW$106, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-    2091                            .dwattr $C$DW$106, DW_AT_accessibility(DW_ACCESS_public)
-    2092                            .dwattr $C$DW$106, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
-    2093                            .dwattr $C$DW$106, DW_AT_decl_line(0x5c)
-    2094                            .dwattr $C$DW$106, DW_AT_decl_column(0x0b)
-    2095                    $C$DW$107       .dwtag  DW_TAG_member
-    2096                            .dwattr $C$DW$107, DW_AT_type(*$C$DW$T$19)
-    2097                            .dwattr $C$DW$107, DW_AT_name("buf")
-    2098                            .dwattr $C$DW$107, DW_AT_TI_symbol_name("buf")
-    2099                            .dwattr $C$DW$107, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-    2100                            .dwattr $C$DW$107, DW_AT_accessibility(DW_ACCESS_public)
-    2101                            .dwattr $C$DW$107, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
-    2102                            .dwattr $C$DW$107, DW_AT_decl_line(0x5d)
-    2103                            .dwattr $C$DW$107, DW_AT_decl_column(0x16)
-    2104                    $C$DW$108       .dwtag  DW_TAG_member
-    2105                            .dwattr $C$DW$108, DW_AT_type(*$C$DW$T$19)
-    2106                            .dwattr $C$DW$108, DW_AT_name("pos")
-    2107                            .dwattr $C$DW$108, DW_AT_TI_symbol_name("pos")
-    2108                            .dwattr $C$DW$108, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-    2109                            .dwattr $C$DW$108, DW_AT_accessibility(DW_ACCESS_public)
-    2110                            .dwattr $C$DW$108, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
-    2111                            .dwattr $C$DW$108, DW_AT_decl_line(0x5e)
-    2112                            .dwattr $C$DW$108, DW_AT_decl_column(0x16)
-    2113                    $C$DW$109       .dwtag  DW_TAG_member
-    2114                            .dwattr $C$DW$109, DW_AT_type(*$C$DW$T$19)
-    2115                            .dwattr $C$DW$109, DW_AT_name("bufend")
-    2116                            .dwattr $C$DW$109, DW_AT_TI_symbol_name("bufend")
-    2117                            .dwattr $C$DW$109, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
-    2118                            .dwattr $C$DW$109, DW_AT_accessibility(DW_ACCESS_public)
-    2119                            .dwattr $C$DW$109, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
-    2120                            .dwattr $C$DW$109, DW_AT_decl_line(0x5f)
-    2121                            .dwattr $C$DW$109, DW_AT_decl_column(0x16)
-    2122                    $C$DW$110       .dwtag  DW_TAG_member
-    2123                            .dwattr $C$DW$110, DW_AT_type(*$C$DW$T$19)
-    2124                            .dwattr $C$DW$110, DW_AT_name("buff_stop")
-    2125                            .dwattr $C$DW$110, DW_AT_TI_symbol_name("buff_stop")
-    2126                            .dwattr $C$DW$110, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
-    2127                            .dwattr $C$DW$110, DW_AT_accessibility(DW_ACCESS_public)
-    2128                            .dwattr $C$DW$110, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
-    2129                            .dwattr $C$DW$110, DW_AT_decl_line(0x60)
-    2130                            .dwattr $C$DW$110, DW_AT_decl_column(0x16)
-    2131                    $C$DW$111       .dwtag  DW_TAG_member
-    2132                            .dwattr $C$DW$111, DW_AT_type(*$C$DW$T$11)
-    2133                            .dwattr $C$DW$111, DW_AT_name("flags")
-    2134                            .dwattr $C$DW$111, DW_AT_TI_symbol_name("flags")
-    2135                            .dwattr $C$DW$111, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
-    2136                            .dwattr $C$DW$111, DW_AT_accessibility(DW_ACCESS_public)
-    2137                            .dwattr $C$DW$111, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
-    2138                            .dwattr $C$DW$111, DW_AT_decl_line(0x61)
-    2139                            .dwattr $C$DW$111, DW_AT_decl_column(0x16)
-    2140                            .dwendtag $C$DW$T$20
-    2141                    
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    2087                            .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$48)
+    2088                            .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
+    2089                            .dwattr $C$DW$T$50, DW_AT_byte_size(0x1e0)
+    2090                    $C$DW$106       .dwtag  DW_TAG_subrange_type
+    2091                            .dwattr $C$DW$106, DW_AT_upper_bound(0x5f)
+    2092                    $C$DW$107       .dwtag  DW_TAG_subrange_type
+    2093                            .dwattr $C$DW$107, DW_AT_upper_bound(0x04)
+    2094                            .dwendtag $C$DW$T$50
+    2095                    
+    2096                    $C$DW$T$53      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
+    2097                            .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$24)
+    2098                            .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
+    2099                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2100                            .dwattr $C$DW$T$53, DW_AT_decl_line(0x38)
+    2101                            .dwattr $C$DW$T$53, DW_AT_decl_column(0x16)
+    2102                    $C$DW$T$7       .dwtag  DW_TAG_base_type
+    2103                            .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+    2104                            .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+    2105                            .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+    2106                    $C$DW$T$8       .dwtag  DW_TAG_base_type
+    2107                            .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+    2108                            .dwattr $C$DW$T$8, DW_AT_name("short")
+    2109                            .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+    2110                    $C$DW$T$54      .dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
+    2111                            .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$8)
+    2112                            .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
+    2113                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2114                            .dwattr $C$DW$T$54, DW_AT_decl_line(0x2c)
+    2115                            .dwattr $C$DW$T$54, DW_AT_decl_column(0x1d)
+    2116                    $C$DW$T$55      .dwtag  DW_TAG_typedef, DW_AT_name("int_least16_t")
+    2117                            .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$54)
+    2118                            .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
+    2119                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2120                            .dwattr $C$DW$T$55, DW_AT_decl_line(0x3a)
+    2121                            .dwattr $C$DW$T$55, DW_AT_decl_column(0x17)
+    2122                    $C$DW$T$9       .dwtag  DW_TAG_base_type
+    2123                            .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+    2124                            .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+    2125                            .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+    2126                    $C$DW$T$56      .dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
+    2127                            .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$9)
+    2128                            .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
+    2129                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2130                            .dwattr $C$DW$T$56, DW_AT_decl_line(0x1e5)
+    2131                            .dwattr $C$DW$T$56, DW_AT_decl_column(0x21)
+    2132                    $C$DW$T$57      .dwtag  DW_TAG_typedef, DW_AT_name("_Wintt")
+    2133                            .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$9)
+    2134                            .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
+    2135                            .dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2136                            .dwattr $C$DW$T$57, DW_AT_decl_line(0x1e6)
+    2137                            .dwattr $C$DW$T$57, DW_AT_decl_column(0x21)
+    2138                    $C$DW$T$58      .dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
+    2139                            .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$9)
+    2140                            .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
+    2141                            .dwattr $C$DW$T$58, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   40
 
-    2142                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
-    2143                            .dwattr $C$DW$T$20, DW_AT_decl_line(0x5b)
-    2144                            .dwattr $C$DW$T$20, DW_AT_decl_column(0x10)
-    2145                    $C$DW$T$22      .dwtag  DW_TAG_typedef, DW_AT_name("FILE")
-    2146                            .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$20)
-    2147                            .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
-    2148                            .dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
-    2149                            .dwattr $C$DW$T$22, DW_AT_decl_line(0x62)
-    2150                            .dwattr $C$DW$T$22, DW_AT_decl_column(0x03)
-    2151                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
-    2152                            .dwattr $C$DW$T$2, DW_AT_name("void")
-    2153                    $C$DW$T$3       .dwtag  DW_TAG_pointer_type
-    2154                            .dwattr $C$DW$T$3, DW_AT_type(*$C$DW$T$2)
-    2155                            .dwattr $C$DW$T$3, DW_AT_address_class(0x20)
-    2156                    $C$DW$T$4       .dwtag  DW_TAG_base_type
-    2157                            .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
-    2158                            .dwattr $C$DW$T$4, DW_AT_name("bool")
-    2159                            .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
-    2160                    $C$DW$T$5       .dwtag  DW_TAG_base_type
-    2161                            .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
-    2162                            .dwattr $C$DW$T$5, DW_AT_name("signed char")
-    2163                            .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
-    2164                    $C$DW$T$42      .dwtag  DW_TAG_typedef, DW_AT_name("int8_t")
-    2165                            .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$5)
-    2166                            .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
-    2167                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2168                            .dwattr $C$DW$T$42, DW_AT_decl_line(0x2a)
-    2169                            .dwattr $C$DW$T$42, DW_AT_decl_column(0x1d)
-    2170                    $C$DW$T$43      .dwtag  DW_TAG_typedef, DW_AT_name("int_least8_t")
-    2171                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$42)
-    2172                            .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
-    2173                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2174                            .dwattr $C$DW$T$43, DW_AT_decl_line(0x37)
-    2175                            .dwattr $C$DW$T$43, DW_AT_decl_column(0x17)
-    2176                    $C$DW$T$6       .dwtag  DW_TAG_base_type
-    2177                            .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
-    2178                            .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
-    2179                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
-    2180                    $C$DW$T$19      .dwtag  DW_TAG_pointer_type
-    2181                            .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$6)
-    2182                            .dwattr $C$DW$T$19, DW_AT_address_class(0x20)
-    2183                    $C$DW$T$24      .dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
-    2184                            .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$6)
-    2185                            .dwattr $C$DW$T$24, DW_AT_language(DW_LANG_C)
-    2186                            .dwattr $C$DW$T$24, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2187                            .dwattr $C$DW$T$24, DW_AT_decl_line(0x2b)
-    2188                            .dwattr $C$DW$T$24, DW_AT_decl_column(0x1c)
-    2189                    $C$DW$T$46      .dwtag  DW_TAG_const_type
-    2190                            .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$24)
-    2191                    
-    2192                    $C$DW$T$47      .dwtag  DW_TAG_array_type
-    2193                            .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$46)
-    2194                            .dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
-    2195                            .dwattr $C$DW$T$47, DW_AT_byte_size(0x05)
-    2196                    $C$DW$112       .dwtag  DW_TAG_subrange_type
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    2142                            .dwattr $C$DW$T$58, DW_AT_decl_line(0x2d)
+    2143                            .dwattr $C$DW$T$58, DW_AT_decl_column(0x1c)
+    2144                    $C$DW$T$59      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
+    2145                            .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$58)
+    2146                            .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
+    2147                            .dwattr $C$DW$T$59, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2148                            .dwattr $C$DW$T$59, DW_AT_decl_line(0x3b)
+    2149                            .dwattr $C$DW$T$59, DW_AT_decl_column(0x16)
+    2150                    $C$DW$T$10      .dwtag  DW_TAG_base_type
+    2151                            .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+    2152                            .dwattr $C$DW$T$10, DW_AT_name("int")
+    2153                            .dwattr $C$DW$T$10, DW_AT_byte_size(0x04)
+    2154                    $C$DW$T$60      .dwtag  DW_TAG_typedef, DW_AT_name("_Ptrdifft")
+    2155                            .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$10)
+    2156                            .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
+    2157                            .dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2158                            .dwattr $C$DW$T$60, DW_AT_decl_line(0xa9)
+    2159                            .dwattr $C$DW$T$60, DW_AT_decl_column(0x1e)
+    2160                    $C$DW$T$61      .dwtag  DW_TAG_typedef, DW_AT_name("int32_t")
+    2161                            .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$10)
+    2162                            .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
+    2163                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2164                            .dwattr $C$DW$T$61, DW_AT_decl_line(0x2e)
+    2165                            .dwattr $C$DW$T$61, DW_AT_decl_column(0x1d)
+    2166                    $C$DW$T$62      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast16_t")
+    2167                            .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$61)
+    2168                            .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
+    2169                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2170                            .dwattr $C$DW$T$62, DW_AT_decl_line(0x47)
+    2171                            .dwattr $C$DW$T$62, DW_AT_decl_column(0x17)
+    2172                    $C$DW$T$63      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast32_t")
+    2173                            .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$61)
+    2174                            .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
+    2175                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2176                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x4a)
+    2177                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x17)
+    2178                    $C$DW$T$64      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast8_t")
+    2179                            .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$61)
+    2180                            .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
+    2181                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2182                            .dwattr $C$DW$T$64, DW_AT_decl_line(0x45)
+    2183                            .dwattr $C$DW$T$64, DW_AT_decl_column(0x17)
+    2184                    $C$DW$T$65      .dwtag  DW_TAG_typedef, DW_AT_name("int_least32_t")
+    2185                            .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$61)
+    2186                            .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+    2187                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2188                            .dwattr $C$DW$T$65, DW_AT_decl_line(0x3c)
+    2189                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x17)
+    2190                    $C$DW$T$66      .dwtag  DW_TAG_typedef, DW_AT_name("intptr_t")
+    2191                            .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$10)
+    2192                            .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+    2193                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2194                            .dwattr $C$DW$T$66, DW_AT_decl_line(0x52)
+    2195                            .dwattr $C$DW$T$66, DW_AT_decl_column(0x1a)
+    2196                    $C$DW$T$11      .dwtag  DW_TAG_base_type
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   41
 
-    2197                            .dwattr $C$DW$112, DW_AT_upper_bound(0x04)
-    2198                            .dwendtag $C$DW$T$47
-    2199                    
-    2200                    
-    2201                    $C$DW$T$48      .dwtag  DW_TAG_array_type
-    2202                            .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$46)
-    2203                            .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
-    2204                            .dwattr $C$DW$T$48, DW_AT_byte_size(0x1e0)
-    2205                    $C$DW$113       .dwtag  DW_TAG_subrange_type
-    2206                            .dwattr $C$DW$113, DW_AT_upper_bound(0x5f)
-    2207                    $C$DW$114       .dwtag  DW_TAG_subrange_type
-    2208                            .dwattr $C$DW$114, DW_AT_upper_bound(0x04)
-    2209                            .dwendtag $C$DW$T$48
-    2210                    
-    2211                    $C$DW$T$51      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
-    2212                            .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$24)
-    2213                            .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
-    2214                            .dwattr $C$DW$T$51, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2215                            .dwattr $C$DW$T$51, DW_AT_decl_line(0x38)
-    2216                            .dwattr $C$DW$T$51, DW_AT_decl_column(0x16)
-    2217                    $C$DW$T$7       .dwtag  DW_TAG_base_type
-    2218                            .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
-    2219                            .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
-    2220                            .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
-    2221                    $C$DW$T$8       .dwtag  DW_TAG_base_type
-    2222                            .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
-    2223                            .dwattr $C$DW$T$8, DW_AT_name("short")
-    2224                            .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
-    2225                    $C$DW$T$52      .dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
-    2226                            .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$8)
-    2227                            .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
-    2228                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2229                            .dwattr $C$DW$T$52, DW_AT_decl_line(0x2c)
-    2230                            .dwattr $C$DW$T$52, DW_AT_decl_column(0x1d)
-    2231                    $C$DW$T$53      .dwtag  DW_TAG_typedef, DW_AT_name("int_least16_t")
-    2232                            .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$52)
-    2233                            .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
-    2234                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2235                            .dwattr $C$DW$T$53, DW_AT_decl_line(0x3a)
-    2236                            .dwattr $C$DW$T$53, DW_AT_decl_column(0x17)
-    2237                    $C$DW$T$9       .dwtag  DW_TAG_base_type
-    2238                            .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
-    2239                            .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
-    2240                            .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
-    2241                    $C$DW$T$54      .dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
-    2242                            .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$9)
-    2243                            .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
-    2244                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-    2245                            .dwattr $C$DW$T$54, DW_AT_decl_line(0x1e5)
-    2246                            .dwattr $C$DW$T$54, DW_AT_decl_column(0x21)
-    2247                    $C$DW$T$55      .dwtag  DW_TAG_typedef, DW_AT_name("_Wintt")
-    2248                            .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$9)
-    2249                            .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
-    2250                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-    2251                            .dwattr $C$DW$T$55, DW_AT_decl_line(0x1e6)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    2197                            .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+    2198                            .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+    2199                            .dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
+    2200                    $C$DW$T$67      .dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
+    2201                            .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$11)
+    2202                            .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
+    2203                            .dwattr $C$DW$T$67, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2204                            .dwattr $C$DW$T$67, DW_AT_decl_line(0xab)
+    2205                            .dwattr $C$DW$T$67, DW_AT_decl_column(0x1a)
+    2206                    $C$DW$T$68      .dwtag  DW_TAG_typedef, DW_AT_name("size_t")
+    2207                            .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$11)
+    2208                            .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
+    2209                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    2210                            .dwattr $C$DW$T$68, DW_AT_decl_line(0x58)
+    2211                            .dwattr $C$DW$T$68, DW_AT_decl_column(0x19)
+    2212                    $C$DW$T$23      .dwtag  DW_TAG_typedef, DW_AT_name("uint32_t")
+    2213                            .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$11)
+    2214                            .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
+    2215                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2216                            .dwattr $C$DW$T$23, DW_AT_decl_line(0x2f)
+    2217                            .dwattr $C$DW$T$23, DW_AT_decl_column(0x1c)
+    2218                    $C$DW$T$69      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast16_t")
+    2219                            .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$23)
+    2220                            .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
+    2221                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2222                            .dwattr $C$DW$T$69, DW_AT_decl_line(0x48)
+    2223                            .dwattr $C$DW$T$69, DW_AT_decl_column(0x16)
+    2224                    $C$DW$T$70      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast32_t")
+    2225                            .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$23)
+    2226                            .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
+    2227                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2228                            .dwattr $C$DW$T$70, DW_AT_decl_line(0x4b)
+    2229                            .dwattr $C$DW$T$70, DW_AT_decl_column(0x16)
+    2230                    $C$DW$T$71      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
+    2231                            .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$23)
+    2232                            .dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
+    2233                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2234                            .dwattr $C$DW$T$71, DW_AT_decl_line(0x46)
+    2235                            .dwattr $C$DW$T$71, DW_AT_decl_column(0x16)
+    2236                    $C$DW$T$72      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least32_t")
+    2237                            .dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$23)
+    2238                            .dwattr $C$DW$T$72, DW_AT_language(DW_LANG_C)
+    2239                            .dwattr $C$DW$T$72, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2240                            .dwattr $C$DW$T$72, DW_AT_decl_line(0x3d)
+    2241                            .dwattr $C$DW$T$72, DW_AT_decl_column(0x16)
+    2242                    $C$DW$T$73      .dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
+    2243                            .dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$11)
+    2244                            .dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
+    2245                            .dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2246                            .dwattr $C$DW$T$73, DW_AT_decl_line(0x53)
+    2247                            .dwattr $C$DW$T$73, DW_AT_decl_column(0x1a)
+    2248                    $C$DW$T$12      .dwtag  DW_TAG_base_type
+    2249                            .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    2250                            .dwattr $C$DW$T$12, DW_AT_name("long")
+    2251                            .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   42
 
-    2252                            .dwattr $C$DW$T$55, DW_AT_decl_column(0x21)
-    2253                    $C$DW$T$56      .dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
-    2254                            .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$9)
-    2255                            .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
-    2256                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2257                            .dwattr $C$DW$T$56, DW_AT_decl_line(0x2d)
-    2258                            .dwattr $C$DW$T$56, DW_AT_decl_column(0x1c)
-    2259                    $C$DW$T$57      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
-    2260                            .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$56)
-    2261                            .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
-    2262                            .dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2263                            .dwattr $C$DW$T$57, DW_AT_decl_line(0x3b)
-    2264                            .dwattr $C$DW$T$57, DW_AT_decl_column(0x16)
-    2265                    $C$DW$T$10      .dwtag  DW_TAG_base_type
-    2266                            .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
-    2267                            .dwattr $C$DW$T$10, DW_AT_name("int")
-    2268                            .dwattr $C$DW$T$10, DW_AT_byte_size(0x04)
-    2269                    $C$DW$T$58      .dwtag  DW_TAG_typedef, DW_AT_name("_Ptrdifft")
-    2270                            .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$10)
-    2271                            .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
-    2272                            .dwattr $C$DW$T$58, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-    2273                            .dwattr $C$DW$T$58, DW_AT_decl_line(0xa9)
-    2274                            .dwattr $C$DW$T$58, DW_AT_decl_column(0x1e)
-    2275                    $C$DW$T$59      .dwtag  DW_TAG_typedef, DW_AT_name("int32_t")
-    2276                            .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$10)
-    2277                            .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
-    2278                            .dwattr $C$DW$T$59, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2279                            .dwattr $C$DW$T$59, DW_AT_decl_line(0x2e)
-    2280                            .dwattr $C$DW$T$59, DW_AT_decl_column(0x1d)
-    2281                    $C$DW$T$60      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast16_t")
-    2282                            .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$59)
-    2283                            .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
-    2284                            .dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2285                            .dwattr $C$DW$T$60, DW_AT_decl_line(0x47)
-    2286                            .dwattr $C$DW$T$60, DW_AT_decl_column(0x17)
-    2287                    $C$DW$T$61      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast32_t")
-    2288                            .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$59)
-    2289                            .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
-    2290                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2291                            .dwattr $C$DW$T$61, DW_AT_decl_line(0x4a)
-    2292                            .dwattr $C$DW$T$61, DW_AT_decl_column(0x17)
-    2293                    $C$DW$T$62      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast8_t")
-    2294                            .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$59)
-    2295                            .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
-    2296                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2297                            .dwattr $C$DW$T$62, DW_AT_decl_line(0x45)
-    2298                            .dwattr $C$DW$T$62, DW_AT_decl_column(0x17)
-    2299                    $C$DW$T$63      .dwtag  DW_TAG_typedef, DW_AT_name("int_least32_t")
-    2300                            .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$59)
-    2301                            .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
-    2302                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2303                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x3c)
-    2304                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x17)
-    2305                    $C$DW$T$64      .dwtag  DW_TAG_typedef, DW_AT_name("intptr_t")
-    2306                            .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$10)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    2252                    $C$DW$T$74      .dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
+    2253                            .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$12)
+    2254                            .dwattr $C$DW$T$74, DW_AT_language(DW_LANG_C)
+    2255                            .dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2256                            .dwattr $C$DW$T$74, DW_AT_decl_line(0xa6)
+    2257                            .dwattr $C$DW$T$74, DW_AT_decl_column(0x0e)
+    2258                    $C$DW$T$75      .dwtag  DW_TAG_typedef, DW_AT_name("fpos_t")
+    2259                            .dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$12)
+    2260                            .dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
+    2261                            .dwattr $C$DW$T$75, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    2262                            .dwattr $C$DW$T$75, DW_AT_decl_line(0x6e)
+    2263                            .dwattr $C$DW$T$75, DW_AT_decl_column(0x0e)
+    2264                    $C$DW$T$13      .dwtag  DW_TAG_base_type
+    2265                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    2266                            .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+    2267                            .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+    2268                    $C$DW$T$76      .dwtag  DW_TAG_typedef, DW_AT_name("_Uint32t")
+    2269                            .dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$13)
+    2270                            .dwattr $C$DW$T$76, DW_AT_language(DW_LANG_C)
+    2271                            .dwattr $C$DW$T$76, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2272                            .dwattr $C$DW$T$76, DW_AT_decl_line(0xa7)
+    2273                            .dwattr $C$DW$T$76, DW_AT_decl_column(0x17)
+    2274                    $C$DW$T$14      .dwtag  DW_TAG_base_type
+    2275                            .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    2276                            .dwattr $C$DW$T$14, DW_AT_name("long long")
+    2277                            .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+    2278                    $C$DW$T$77      .dwtag  DW_TAG_typedef, DW_AT_name("_Longlong")
+    2279                            .dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$14)
+    2280                            .dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
+    2281                            .dwattr $C$DW$T$77, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2282                            .dwattr $C$DW$T$77, DW_AT_decl_line(0x1b5)
+    2283                            .dwattr $C$DW$T$77, DW_AT_decl_column(0x13)
+    2284                    $C$DW$T$78      .dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
+    2285                            .dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$14)
+    2286                            .dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
+    2287                            .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2288                            .dwattr $C$DW$T$78, DW_AT_decl_line(0x32)
+    2289                            .dwattr $C$DW$T$78, DW_AT_decl_column(0x21)
+    2290                    $C$DW$T$79      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
+    2291                            .dwattr $C$DW$T$79, DW_AT_type(*$C$DW$T$78)
+    2292                            .dwattr $C$DW$T$79, DW_AT_language(DW_LANG_C)
+    2293                            .dwattr $C$DW$T$79, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2294                            .dwattr $C$DW$T$79, DW_AT_decl_line(0x4e)
+    2295                            .dwattr $C$DW$T$79, DW_AT_decl_column(0x17)
+    2296                    $C$DW$T$80      .dwtag  DW_TAG_typedef, DW_AT_name("int_least64_t")
+    2297                            .dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$78)
+    2298                            .dwattr $C$DW$T$80, DW_AT_language(DW_LANG_C)
+    2299                            .dwattr $C$DW$T$80, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2300                            .dwattr $C$DW$T$80, DW_AT_decl_line(0x40)
+    2301                            .dwattr $C$DW$T$80, DW_AT_decl_column(0x17)
+    2302                    $C$DW$T$81      .dwtag  DW_TAG_typedef, DW_AT_name("intmax_t")
+    2303                            .dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$14)
+    2304                            .dwattr $C$DW$T$81, DW_AT_language(DW_LANG_C)
+    2305                            .dwattr $C$DW$T$81, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2306                            .dwattr $C$DW$T$81, DW_AT_decl_line(0x56)
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   43
 
-    2307                            .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
-    2308                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2309                            .dwattr $C$DW$T$64, DW_AT_decl_line(0x52)
-    2310                            .dwattr $C$DW$T$64, DW_AT_decl_column(0x1a)
-    2311                    $C$DW$T$11      .dwtag  DW_TAG_base_type
-    2312                            .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
-    2313                            .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
-    2314                            .dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
-    2315                    $C$DW$T$65      .dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
-    2316                            .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$11)
-    2317                            .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
-    2318                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-    2319                            .dwattr $C$DW$T$65, DW_AT_decl_line(0xab)
-    2320                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x1a)
-    2321                    $C$DW$T$66      .dwtag  DW_TAG_typedef, DW_AT_name("size_t")
-    2322                            .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$11)
-    2323                            .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
-    2324                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
-    2325                            .dwattr $C$DW$T$66, DW_AT_decl_line(0x58)
-    2326                            .dwattr $C$DW$T$66, DW_AT_decl_column(0x19)
-    2327                    $C$DW$T$23      .dwtag  DW_TAG_typedef, DW_AT_name("uint32_t")
-    2328                            .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$11)
-    2329                            .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
-    2330                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2331                            .dwattr $C$DW$T$23, DW_AT_decl_line(0x2f)
-    2332                            .dwattr $C$DW$T$23, DW_AT_decl_column(0x1c)
-    2333                    $C$DW$T$67      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast16_t")
-    2334                            .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$23)
-    2335                            .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
-    2336                            .dwattr $C$DW$T$67, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2337                            .dwattr $C$DW$T$67, DW_AT_decl_line(0x48)
-    2338                            .dwattr $C$DW$T$67, DW_AT_decl_column(0x16)
-    2339                    $C$DW$T$68      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast32_t")
-    2340                            .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$23)
-    2341                            .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
-    2342                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2343                            .dwattr $C$DW$T$68, DW_AT_decl_line(0x4b)
-    2344                            .dwattr $C$DW$T$68, DW_AT_decl_column(0x16)
-    2345                    $C$DW$T$69      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
-    2346                            .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$23)
-    2347                            .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
-    2348                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2349                            .dwattr $C$DW$T$69, DW_AT_decl_line(0x46)
-    2350                            .dwattr $C$DW$T$69, DW_AT_decl_column(0x16)
-    2351                    $C$DW$T$70      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least32_t")
-    2352                            .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$23)
-    2353                            .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
-    2354                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2355                            .dwattr $C$DW$T$70, DW_AT_decl_line(0x3d)
-    2356                            .dwattr $C$DW$T$70, DW_AT_decl_column(0x16)
-    2357                    $C$DW$T$71      .dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
-    2358                            .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$11)
-    2359                            .dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
-    2360                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2361                            .dwattr $C$DW$T$71, DW_AT_decl_line(0x53)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    2307                            .dwattr $C$DW$T$81, DW_AT_decl_column(0x20)
+    2308                    $C$DW$T$15      .dwtag  DW_TAG_base_type
+    2309                            .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    2310                            .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    2311                            .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+    2312                    $C$DW$T$82      .dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
+    2313                            .dwattr $C$DW$T$82, DW_AT_type(*$C$DW$T$15)
+    2314                            .dwattr $C$DW$T$82, DW_AT_language(DW_LANG_C)
+    2315                            .dwattr $C$DW$T$82, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2316                            .dwattr $C$DW$T$82, DW_AT_decl_line(0x1b6)
+    2317                            .dwattr $C$DW$T$82, DW_AT_decl_column(0x14)
+    2318                    $C$DW$T$83      .dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
+    2319                            .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$15)
+    2320                            .dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
+    2321                            .dwattr $C$DW$T$83, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2322                            .dwattr $C$DW$T$83, DW_AT_decl_line(0x33)
+    2323                            .dwattr $C$DW$T$83, DW_AT_decl_column(0x20)
+    2324                    $C$DW$T$84      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast64_t")
+    2325                            .dwattr $C$DW$T$84, DW_AT_type(*$C$DW$T$83)
+    2326                            .dwattr $C$DW$T$84, DW_AT_language(DW_LANG_C)
+    2327                            .dwattr $C$DW$T$84, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2328                            .dwattr $C$DW$T$84, DW_AT_decl_line(0x4f)
+    2329                            .dwattr $C$DW$T$84, DW_AT_decl_column(0x16)
+    2330                    $C$DW$T$85      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least64_t")
+    2331                            .dwattr $C$DW$T$85, DW_AT_type(*$C$DW$T$83)
+    2332                            .dwattr $C$DW$T$85, DW_AT_language(DW_LANG_C)
+    2333                            .dwattr $C$DW$T$85, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2334                            .dwattr $C$DW$T$85, DW_AT_decl_line(0x41)
+    2335                            .dwattr $C$DW$T$85, DW_AT_decl_column(0x16)
+    2336                    $C$DW$T$86      .dwtag  DW_TAG_typedef, DW_AT_name("uintmax_t")
+    2337                            .dwattr $C$DW$T$86, DW_AT_type(*$C$DW$T$15)
+    2338                            .dwattr $C$DW$T$86, DW_AT_language(DW_LANG_C)
+    2339                            .dwattr $C$DW$T$86, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2340                            .dwattr $C$DW$T$86, DW_AT_decl_line(0x57)
+    2341                            .dwattr $C$DW$T$86, DW_AT_decl_column(0x20)
+    2342                    $C$DW$T$16      .dwtag  DW_TAG_base_type
+    2343                            .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    2344                            .dwattr $C$DW$T$16, DW_AT_name("float")
+    2345                            .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+    2346                    $C$DW$T$17      .dwtag  DW_TAG_base_type
+    2347                            .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    2348                            .dwattr $C$DW$T$17, DW_AT_name("double")
+    2349                            .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+    2350                    $C$DW$T$18      .dwtag  DW_TAG_base_type
+    2351                            .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    2352                            .dwattr $C$DW$T$18, DW_AT_name("long double")
+    2353                            .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+    2354                    $C$DW$T$87      .dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
+    2355                            .dwattr $C$DW$T$87, DW_AT_type(*$C$DW$T$6)
+    2356                            .dwattr $C$DW$T$87, DW_AT_language(DW_LANG_C)
+    2357                            .dwattr $C$DW$T$87, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2358                            .dwattr $C$DW$T$87, DW_AT_decl_line(0x218)
+    2359                            .dwattr $C$DW$T$87, DW_AT_decl_column(0x0e)
+    2360                    $C$DW$T$40      .dwtag  DW_TAG_pointer_type
+    2361                            .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$6)
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   44
 
-    2362                            .dwattr $C$DW$T$71, DW_AT_decl_column(0x1a)
-    2363                    $C$DW$T$12      .dwtag  DW_TAG_base_type
-    2364                            .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
-    2365                            .dwattr $C$DW$T$12, DW_AT_name("long")
-    2366                            .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
-    2367                    $C$DW$T$72      .dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
-    2368                            .dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$12)
-    2369                            .dwattr $C$DW$T$72, DW_AT_language(DW_LANG_C)
-    2370                            .dwattr $C$DW$T$72, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-    2371                            .dwattr $C$DW$T$72, DW_AT_decl_line(0xa6)
-    2372                            .dwattr $C$DW$T$72, DW_AT_decl_column(0x0e)
-    2373                    $C$DW$T$73      .dwtag  DW_TAG_typedef, DW_AT_name("fpos_t")
-    2374                            .dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$12)
-    2375                            .dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
-    2376                            .dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
-    2377                            .dwattr $C$DW$T$73, DW_AT_decl_line(0x6e)
-    2378                            .dwattr $C$DW$T$73, DW_AT_decl_column(0x0e)
-    2379                    $C$DW$T$13      .dwtag  DW_TAG_base_type
-    2380                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
-    2381                            .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
-    2382                            .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
-    2383                    $C$DW$T$74      .dwtag  DW_TAG_typedef, DW_AT_name("_Uint32t")
-    2384                            .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$13)
-    2385                            .dwattr $C$DW$T$74, DW_AT_language(DW_LANG_C)
-    2386                            .dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-    2387                            .dwattr $C$DW$T$74, DW_AT_decl_line(0xa7)
-    2388                            .dwattr $C$DW$T$74, DW_AT_decl_column(0x17)
-    2389                    $C$DW$T$14      .dwtag  DW_TAG_base_type
-    2390                            .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
-    2391                            .dwattr $C$DW$T$14, DW_AT_name("long long")
-    2392                            .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
-    2393                    $C$DW$T$75      .dwtag  DW_TAG_typedef, DW_AT_name("_Longlong")
-    2394                            .dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$14)
-    2395                            .dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
-    2396                            .dwattr $C$DW$T$75, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-    2397                            .dwattr $C$DW$T$75, DW_AT_decl_line(0x1b5)
-    2398                            .dwattr $C$DW$T$75, DW_AT_decl_column(0x13)
-    2399                    $C$DW$T$76      .dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
-    2400                            .dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$14)
-    2401                            .dwattr $C$DW$T$76, DW_AT_language(DW_LANG_C)
-    2402                            .dwattr $C$DW$T$76, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2403                            .dwattr $C$DW$T$76, DW_AT_decl_line(0x32)
-    2404                            .dwattr $C$DW$T$76, DW_AT_decl_column(0x21)
-    2405                    $C$DW$T$77      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
-    2406                            .dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$76)
-    2407                            .dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
-    2408                            .dwattr $C$DW$T$77, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2409                            .dwattr $C$DW$T$77, DW_AT_decl_line(0x4e)
-    2410                            .dwattr $C$DW$T$77, DW_AT_decl_column(0x17)
-    2411                    $C$DW$T$78      .dwtag  DW_TAG_typedef, DW_AT_name("int_least64_t")
-    2412                            .dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$76)
-    2413                            .dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
-    2414                            .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2415                            .dwattr $C$DW$T$78, DW_AT_decl_line(0x40)
-    2416                            .dwattr $C$DW$T$78, DW_AT_decl_column(0x17)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
+    2362                            .dwattr $C$DW$T$40, DW_AT_address_class(0x20)
+    2363                    $C$DW$T$88      .dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
+    2364                            .dwattr $C$DW$T$88, DW_AT_type(*$C$DW$T$40)
+    2365                            .dwattr $C$DW$T$88, DW_AT_language(DW_LANG_C)
+    2366                            .dwattr $C$DW$T$88, DW_AT_decl_file("../lcd_nokia5510.c")
+    2367                            .dwattr $C$DW$T$88, DW_AT_decl_line(0xea)
+    2368                            .dwattr $C$DW$T$88, DW_AT_decl_column(0x01)
+    2369                    
+    2370                    $C$DW$T$21      .dwtag  DW_TAG_structure_type
+    2371                            .dwattr $C$DW$T$21, DW_AT_name("__va_list")
+    2372                            .dwattr $C$DW$T$21, DW_AT_byte_size(0x04)
+    2373                    $C$DW$108       .dwtag  DW_TAG_member
+    2374                            .dwattr $C$DW$108, DW_AT_type(*$C$DW$T$3)
+    2375                            .dwattr $C$DW$108, DW_AT_name("__ap")
+    2376                            .dwattr $C$DW$108, DW_AT_TI_symbol_name("__ap")
+    2377                            .dwattr $C$DW$108, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    2378                            .dwattr $C$DW$108, DW_AT_accessibility(DW_ACCESS_public)
+    2379                            .dwattr $C$DW$108, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg
+    2380                            .dwattr $C$DW$108, DW_AT_decl_line(0x36)
+    2381                            .dwattr $C$DW$108, DW_AT_decl_column(0x0c)
+    2382                            .dwendtag $C$DW$T$21
+    2383                    
+    2384                            .dwattr $C$DW$T$21, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    2385                            .dwattr $C$DW$T$21, DW_AT_decl_line(0x35)
+    2386                            .dwattr $C$DW$T$21, DW_AT_decl_column(0x10)
+    2387                    $C$DW$T$89      .dwtag  DW_TAG_typedef, DW_AT_name("va_list")
+    2388                            .dwattr $C$DW$T$89, DW_AT_type(*$C$DW$T$21)
+    2389                            .dwattr $C$DW$T$89, DW_AT_language(DW_LANG_C)
+    2390                            .dwattr $C$DW$T$89, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    2391                            .dwattr $C$DW$T$89, DW_AT_decl_line(0x37)
+    2392                            .dwattr $C$DW$T$89, DW_AT_decl_column(0x03)
+    2393                    $C$DW$T$90      .dwtag  DW_TAG_typedef, DW_AT_name("_Va_list")
+    2394                            .dwattr $C$DW$T$90, DW_AT_type(*$C$DW$T$89)
+    2395                            .dwattr $C$DW$T$90, DW_AT_language(DW_LANG_C)
+    2396                            .dwattr $C$DW$T$90, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2397                            .dwattr $C$DW$T$90, DW_AT_decl_line(0x1f6)
+    2398                            .dwattr $C$DW$T$90, DW_AT_decl_column(0x17)
+    2399                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    2400                    
+    2401                    ;***************************************************************
+    2402                    ;* DWARF CIE ENTRIES                                           *
+    2403                    ;***************************************************************
+    2404                    
+    2405                    $C$DW$CIE       .dwcie 14
+    2406                            .dwcfi  cfa_register, 13
+    2407                            .dwcfi  cfa_offset, 0
+    2408                            .dwcfi  undefined, 0
+    2409                            .dwcfi  undefined, 1
+    2410                            .dwcfi  undefined, 2
+    2411                            .dwcfi  undefined, 3
+    2412                            .dwcfi  same_value, 4
+    2413                            .dwcfi  same_value, 5
+    2414                            .dwcfi  same_value, 6
+    2415                            .dwcfi  same_value, 7
+    2416                            .dwcfi  same_value, 8
+TI ARM Assembler PC v5.2.5 Wed Oct 21 14:01:35 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   45
 
-    2417                    $C$DW$T$79      .dwtag  DW_TAG_typedef, DW_AT_name("intmax_t")
-    2418                            .dwattr $C$DW$T$79, DW_AT_type(*$C$DW$T$14)
-    2419                            .dwattr $C$DW$T$79, DW_AT_language(DW_LANG_C)
-    2420                            .dwattr $C$DW$T$79, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2421                            .dwattr $C$DW$T$79, DW_AT_decl_line(0x56)
-    2422                            .dwattr $C$DW$T$79, DW_AT_decl_column(0x20)
-    2423                    $C$DW$T$15      .dwtag  DW_TAG_base_type
-    2424                            .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
-    2425                            .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
-    2426                            .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
-    2427                    $C$DW$T$80      .dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
-    2428                            .dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$15)
-    2429                            .dwattr $C$DW$T$80, DW_AT_language(DW_LANG_C)
-    2430                            .dwattr $C$DW$T$80, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-    2431                            .dwattr $C$DW$T$80, DW_AT_decl_line(0x1b6)
-    2432                            .dwattr $C$DW$T$80, DW_AT_decl_column(0x14)
-    2433                    $C$DW$T$81      .dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
-    2434                            .dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$15)
-    2435                            .dwattr $C$DW$T$81, DW_AT_language(DW_LANG_C)
-    2436                            .dwattr $C$DW$T$81, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2437                            .dwattr $C$DW$T$81, DW_AT_decl_line(0x33)
-    2438                            .dwattr $C$DW$T$81, DW_AT_decl_column(0x20)
-    2439                    $C$DW$T$82      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast64_t")
-    2440                            .dwattr $C$DW$T$82, DW_AT_type(*$C$DW$T$81)
-    2441                            .dwattr $C$DW$T$82, DW_AT_language(DW_LANG_C)
-    2442                            .dwattr $C$DW$T$82, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2443                            .dwattr $C$DW$T$82, DW_AT_decl_line(0x4f)
-    2444                            .dwattr $C$DW$T$82, DW_AT_decl_column(0x16)
-    2445                    $C$DW$T$83      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least64_t")
-    2446                            .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$81)
-    2447                            .dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
-    2448                            .dwattr $C$DW$T$83, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2449                            .dwattr $C$DW$T$83, DW_AT_decl_line(0x41)
-    2450                            .dwattr $C$DW$T$83, DW_AT_decl_column(0x16)
-    2451                    $C$DW$T$84      .dwtag  DW_TAG_typedef, DW_AT_name("uintmax_t")
-    2452                            .dwattr $C$DW$T$84, DW_AT_type(*$C$DW$T$15)
-    2453                            .dwattr $C$DW$T$84, DW_AT_language(DW_LANG_C)
-    2454                            .dwattr $C$DW$T$84, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-    2455                            .dwattr $C$DW$T$84, DW_AT_decl_line(0x57)
-    2456                            .dwattr $C$DW$T$84, DW_AT_decl_column(0x20)
-    2457                    $C$DW$T$16      .dwtag  DW_TAG_base_type
-    2458                            .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
-    2459                            .dwattr $C$DW$T$16, DW_AT_name("float")
-    2460                            .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
-    2461                    $C$DW$T$17      .dwtag  DW_TAG_base_type
-    2462                            .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
-    2463                            .dwattr $C$DW$T$17, DW_AT_name("double")
-    2464                            .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
-    2465                    $C$DW$T$18      .dwtag  DW_TAG_base_type
-    2466                            .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
-    2467                            .dwattr $C$DW$T$18, DW_AT_name("long double")
-    2468                            .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
-    2469                    $C$DW$T$85      .dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
-    2470                            .dwattr $C$DW$T$85, DW_AT_type(*$C$DW$T$6)
-    2471                            .dwattr $C$DW$T$85, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-lcd_nokia5510.asm                                                    PAGE   46
-
-    2472                            .dwattr $C$DW$T$85, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-    2473                            .dwattr $C$DW$T$85, DW_AT_decl_line(0x218)
-    2474                            .dwattr $C$DW$T$85, DW_AT_decl_column(0x0e)
-    2475                    $C$DW$T$40      .dwtag  DW_TAG_pointer_type
-    2476                            .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$6)
-    2477                            .dwattr $C$DW$T$40, DW_AT_address_class(0x20)
-    2478                    $C$DW$T$86      .dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
-    2479                            .dwattr $C$DW$T$86, DW_AT_type(*$C$DW$T$40)
-    2480                            .dwattr $C$DW$T$86, DW_AT_language(DW_LANG_C)
-    2481                            .dwattr $C$DW$T$86, DW_AT_decl_file("../lcd_nokia5510.c")
-    2482                            .dwattr $C$DW$T$86, DW_AT_decl_line(0xef)
-    2483                            .dwattr $C$DW$T$86, DW_AT_decl_column(0x01)
-    2484                    
-    2485                    $C$DW$T$21      .dwtag  DW_TAG_structure_type
-    2486                            .dwattr $C$DW$T$21, DW_AT_name("__va_list")
-    2487                            .dwattr $C$DW$T$21, DW_AT_byte_size(0x04)
-    2488                    $C$DW$115       .dwtag  DW_TAG_member
-    2489                            .dwattr $C$DW$115, DW_AT_type(*$C$DW$T$3)
-    2490                            .dwattr $C$DW$115, DW_AT_name("__ap")
-    2491                            .dwattr $C$DW$115, DW_AT_TI_symbol_name("__ap")
-    2492                            .dwattr $C$DW$115, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-    2493                            .dwattr $C$DW$115, DW_AT_accessibility(DW_ACCESS_public)
-    2494                            .dwattr $C$DW$115, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg
-    2495                            .dwattr $C$DW$115, DW_AT_decl_line(0x36)
-    2496                            .dwattr $C$DW$115, DW_AT_decl_column(0x0c)
-    2497                            .dwendtag $C$DW$T$21
-    2498                    
-    2499                            .dwattr $C$DW$T$21, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
-    2500                            .dwattr $C$DW$T$21, DW_AT_decl_line(0x35)
-    2501                            .dwattr $C$DW$T$21, DW_AT_decl_column(0x10)
-    2502                    $C$DW$T$87      .dwtag  DW_TAG_typedef, DW_AT_name("va_list")
-    2503                            .dwattr $C$DW$T$87, DW_AT_type(*$C$DW$T$21)
-    2504                            .dwattr $C$DW$T$87, DW_AT_language(DW_LANG_C)
-    2505                            .dwattr $C$DW$T$87, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
-    2506                            .dwattr $C$DW$T$87, DW_AT_decl_line(0x37)
-    2507                            .dwattr $C$DW$T$87, DW_AT_decl_column(0x03)
-    2508                    $C$DW$T$88      .dwtag  DW_TAG_typedef, DW_AT_name("_Va_list")
-    2509                            .dwattr $C$DW$T$88, DW_AT_type(*$C$DW$T$87)
-    2510                            .dwattr $C$DW$T$88, DW_AT_language(DW_LANG_C)
-    2511                            .dwattr $C$DW$T$88, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-    2512                            .dwattr $C$DW$T$88, DW_AT_decl_line(0x1f6)
-    2513                            .dwattr $C$DW$T$88, DW_AT_decl_column(0x17)
-    2514                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
-    2515                    
-    2516                    ;***************************************************************
-    2517                    ;* DWARF CIE ENTRIES                                           *
-    2518                    ;***************************************************************
-    2519                    
-    2520                    $C$DW$CIE       .dwcie 14
-    2521                            .dwcfi  cfa_register, 13
-    2522                            .dwcfi  cfa_offset, 0
-    2523                            .dwcfi  undefined, 0
-    2524                            .dwcfi  undefined, 1
-    2525                            .dwcfi  undefined, 2
-    2526                            .dwcfi  undefined, 3
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:41 2015
-
-Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-lcd_nokia5510.asm                                                    PAGE   47
-
-    2527                            .dwcfi  same_value, 4
-    2528                            .dwcfi  same_value, 5
-    2529                            .dwcfi  same_value, 6
-    2530                            .dwcfi  same_value, 7
-    2531                            .dwcfi  same_value, 8
-    2532                            .dwcfi  same_value, 9
-    2533                            .dwcfi  same_value, 10
-    2534                            .dwcfi  same_value, 11
-    2535                            .dwcfi  undefined, 12
-    2536                            .dwcfi  undefined, 13
-    2537                            .dwcfi  undefined, 14
-    2538                            .dwcfi  undefined, 14
-    2539                            .dwcfi  undefined, 7
-    2540                            .dwcfi  undefined, 64
-    2541                            .dwcfi  undefined, 65
-    2542                            .dwcfi  undefined, 66
-    2543                            .dwcfi  undefined, 67
-    2544                            .dwcfi  undefined, 68
-    2545                            .dwcfi  undefined, 69
-    2546                            .dwcfi  undefined, 70
-    2547                            .dwcfi  undefined, 71
-    2548                            .dwcfi  undefined, 72
-    2549                            .dwcfi  undefined, 73
-    2550                            .dwcfi  undefined, 74
-    2551                            .dwcfi  undefined, 75
-    2552                            .dwcfi  undefined, 76
-    2553                            .dwcfi  undefined, 77
-    2554                            .dwcfi  undefined, 78
-    2555                            .dwcfi  undefined, 79
-    2556                            .dwcfi  same_value, 80
-    2557                            .dwcfi  same_value, 81
-    2558                            .dwcfi  same_value, 82
-    2559                            .dwcfi  same_value, 83
-    2560                            .dwcfi  same_value, 84
-    2561                            .dwcfi  same_value, 85
-    2562                            .dwcfi  same_value, 86
-    2563                            .dwcfi  same_value, 87
-    2564                            .dwcfi  same_value, 88
-    2565                            .dwcfi  same_value, 89
-    2566                            .dwcfi  same_value, 90
-    2567                            .dwcfi  same_value, 91
-    2568                            .dwcfi  same_value, 92
-    2569                            .dwcfi  same_value, 93
-    2570                            .dwcfi  same_value, 94
-    2571                            .dwcfi  same_value, 95
-    2572                            .dwendentry
-    2573                            .dwendtag $C$DW$CU
-    2574                    
+    2417                            .dwcfi  same_value, 9
+    2418                            .dwcfi  same_value, 10
+    2419                            .dwcfi  same_value, 11
+    2420                            .dwcfi  undefined, 12
+    2421                            .dwcfi  undefined, 13
+    2422                            .dwcfi  undefined, 14
+    2423                            .dwcfi  undefined, 14
+    2424                            .dwcfi  undefined, 7
+    2425                            .dwcfi  undefined, 64
+    2426                            .dwcfi  undefined, 65
+    2427                            .dwcfi  undefined, 66
+    2428                            .dwcfi  undefined, 67
+    2429                            .dwcfi  undefined, 68
+    2430                            .dwcfi  undefined, 69
+    2431                            .dwcfi  undefined, 70
+    2432                            .dwcfi  undefined, 71
+    2433                            .dwcfi  undefined, 72
+    2434                            .dwcfi  undefined, 73
+    2435                            .dwcfi  undefined, 74
+    2436                            .dwcfi  undefined, 75
+    2437                            .dwcfi  undefined, 76
+    2438                            .dwcfi  undefined, 77
+    2439                            .dwcfi  undefined, 78
+    2440                            .dwcfi  undefined, 79
+    2441                            .dwcfi  same_value, 80
+    2442                            .dwcfi  same_value, 81
+    2443                            .dwcfi  same_value, 82
+    2444                            .dwcfi  same_value, 83
+    2445                            .dwcfi  same_value, 84
+    2446                            .dwcfi  same_value, 85
+    2447                            .dwcfi  same_value, 86
+    2448                            .dwcfi  same_value, 87
+    2449                            .dwcfi  same_value, 88
+    2450                            .dwcfi  same_value, 89
+    2451                            .dwcfi  same_value, 90
+    2452                            .dwcfi  same_value, 91
+    2453                            .dwcfi  same_value, 92
+    2454                            .dwcfi  same_value, 93
+    2455                            .dwcfi  same_value, 94
+    2456                            .dwcfi  same_value, 95
+    2457                            .dwendentry
+    2458                            .dwendtag $C$DW$CU
+    2459                    
 
 --------------------------
 Thumb2 Statistics
 --------------------------
 Number of Thumb2 ins converted to Thumb = 0 (0%)
-Number of Thumb ins in input = 178 (62%)
-Number of Thumb2 ins encoded as Thumb2 = 106 (100%)
-Number of Thumb2 ins converted to 2 OPND Thumb = 1
+Number of Thumb ins in input = 172 (63%)
+Number of Thumb2 ins encoded as Thumb2 = 99 (100%)
+Number of Thumb2 ins converted to 2 OPND Thumb = 3
 
 
 No Assembly Errors, No Assembly Warnings

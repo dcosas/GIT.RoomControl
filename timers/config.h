@@ -46,7 +46,7 @@ PD2 ds1820_3
 PF4 SW1
 
 
-/* Pin assignment LCD+SDcard board
+ Pin assignment LCD+SDcard board
  * Pin1: VCC
  * Pin2: SDcs-PA3
  * Pin3: Mosi-PA5
@@ -61,7 +61,7 @@ PF4 SW1
 
 
 #define DEBUG 1
-
+#define FW_VERSION "1.0 10.20.15\0"
 #define SYSTICKS_PER_SECOND 100
 #define WATCHDOG_TIMER_SECONDS 35
 

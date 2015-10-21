@@ -131,8 +131,9 @@ void init_system()
 {
 	nokiaLCDinit();
 	//    init_RTC();
-	init_sensors();
+	lcd_puts_line1(FW_VERSION);
 	init_esp8266();
+	init_sensors();
 }
 
 void kick_watchdog()

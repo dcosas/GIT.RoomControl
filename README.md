@@ -8,8 +8,7 @@ ToDo:
 -add cases for sensors
 
 /*
- * ToDo:
- * 16.10:
+ * ToDo: 
  * 3.	SD card: Add logging and configuration to SD card
  * 4.	Add RTC support
  * 5.	MG811: Add CO2 support

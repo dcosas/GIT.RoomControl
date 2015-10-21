@@ -165,6 +165,7 @@ float dht22_readhumidity()
 	read_dht22();
 	data = humidity&0xffff;
 	data /= 10;
+
 	return data;
 }
 

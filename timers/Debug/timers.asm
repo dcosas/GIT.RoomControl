@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Sun Oct 18 09:39:50 2015                                *
+;* Date/Time created: Tue Oct 20 19:15:43 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -204,7 +204,7 @@ $C$DW$29	.dwtag  DW_TAG_subprogram, DW_AT_name("init_esp8266")
 	.dwattr $C$DW$29, DW_AT_declaration
 	.dwattr $C$DW$29, DW_AT_external
 	.dwattr $C$DW$29, DW_AT_decl_file("..\esp8266.h")
-	.dwattr $C$DW$29, DW_AT_decl_line(0x18)
+	.dwattr $C$DW$29, DW_AT_decl_line(0x1e)
 	.dwattr $C$DW$29, DW_AT_decl_column(0x09)
 
 $C$DW$30	.dwtag  DW_TAG_subprogram, DW_AT_name("getTimer0ChAvalue")
@@ -278,7 +278,7 @@ lastUpdateCounter$1:
 sysTickTemp$3:
 	.bits	0,32			; sysTickTemp$3 @ 0
 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0932812 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0146812 
 	.sect	".text:WatchdogIntHandler"
 	.clink
 	.thumbfunc WatchdogIntHandler

@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Sun Oct 18 09:37:11 2015                                *
+;* Date/Time created: Tue Oct 20 19:15:42 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -258,7 +258,7 @@ $C$DW$48	.dwtag  DW_TAG_subprogram, DW_AT_name("init_ds1820")
 	.dwattr $C$DW$48, DW_AT_declaration
 	.dwattr $C$DW$48, DW_AT_external
 	.dwattr $C$DW$48, DW_AT_decl_file("..\ds1820.h")
-	.dwattr $C$DW$48, DW_AT_decl_line(0x0b)
+	.dwattr $C$DW$48, DW_AT_decl_line(0x19)
 	.dwattr $C$DW$48, DW_AT_decl_column(0x06)
 
 $C$DW$49	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_1")
@@ -267,7 +267,7 @@ $C$DW$49	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_1")
 	.dwattr $C$DW$49, DW_AT_declaration
 	.dwattr $C$DW$49, DW_AT_external
 	.dwattr $C$DW$49, DW_AT_decl_file("..\ds1820.h")
-	.dwattr $C$DW$49, DW_AT_decl_line(0x0d)
+	.dwattr $C$DW$49, DW_AT_decl_line(0x1b)
 	.dwattr $C$DW$49, DW_AT_decl_column(0x09)
 
 $C$DW$50	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_2")
@@ -276,7 +276,7 @@ $C$DW$50	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_2")
 	.dwattr $C$DW$50, DW_AT_declaration
 	.dwattr $C$DW$50, DW_AT_external
 	.dwattr $C$DW$50, DW_AT_decl_file("..\ds1820.h")
-	.dwattr $C$DW$50, DW_AT_decl_line(0x0e)
+	.dwattr $C$DW$50, DW_AT_decl_line(0x1c)
 	.dwattr $C$DW$50, DW_AT_decl_column(0x09)
 
 $C$DW$51	.dwtag  DW_TAG_subprogram, DW_AT_name("send_esp8266")
@@ -285,7 +285,7 @@ $C$DW$51	.dwtag  DW_TAG_subprogram, DW_AT_name("send_esp8266")
 	.dwattr $C$DW$51, DW_AT_declaration
 	.dwattr $C$DW$51, DW_AT_external
 	.dwattr $C$DW$51, DW_AT_decl_file("..\esp8266.h")
-	.dwattr $C$DW$51, DW_AT_decl_line(0x19)
+	.dwattr $C$DW$51, DW_AT_decl_line(0x1f)
 	.dwattr $C$DW$51, DW_AT_decl_column(0x09)
 $C$DW$52	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$52, DW_AT_type(*$C$DW$T$23)
@@ -467,7 +467,7 @@ start_seconds$1:
 	.align	4
 	.elfsym	fanTimerDuration$2,SYM_SIZE(4)
 fanTimerDuration$2:
-	.bits	25200,32			; fanTimerDuration$2 @ 0
+	.bits	10800,32			; fanTimerDuration$2 @ 0
 
 	.data
 	.align	1
@@ -475,7 +475,7 @@ fanTimerDuration$2:
 fanState$3:
 	.bits	0,8			; fanState$3 @ 0
 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\1150012 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0301612 
 	.sect	".text:get_mode"
 	.clink
 	.thumbfunc get_mode
@@ -1647,7 +1647,7 @@ $C$DW$119	.dwtag  DW_TAG_TI_branch
 ; 154 | fanTimerDuration = FAN_SECONDS_OFF;                                    
 ;----------------------------------------------------------------------
         LDR       A2, $C$CON32          ; [DPU_3_PIPE] |154| 
-        MOV       A1, #25200            ; [DPU_3_PIPE] |154| 
+        MOV       A1, #10800            ; [DPU_3_PIPE] |154| 
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |154| 
 	.dwpsn	file "../sensors.c",line 155,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
@@ -1700,7 +1700,7 @@ $C$DW$121	.dwtag  DW_TAG_TI_branch
 ; 162 | fanTimerDuration = FAN_SECONDS_ON;                                     
 ;----------------------------------------------------------------------
         LDR       A2, $C$CON32          ; [DPU_3_PIPE] |162| 
-        MOV       A1, #2700             ; [DPU_3_PIPE] |162| 
+        MOV       A1, #1200             ; [DPU_3_PIPE] |162| 
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |162| 
 	.dwpsn	file "../sensors.c",line 163,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------

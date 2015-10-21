@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Sun Oct 18 09:37:08 2015                                *
+;* Date/Time created: Tue Oct 20 19:28:20 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -402,7 +402,7 @@ endTime$2:
 bitTime$3:
 	.bits	0,32			; bitTime$3 @ 0
 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0615212 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0011612 
 	.sect	".text:getTimer0ChAvalue"
 	.clink
 	.thumbfunc getTimer0ChAvalue
@@ -1660,12 +1660,12 @@ $C$DW$118	.dwtag  DW_TAG_TI_branch
         VMOV.F32  S1, #1.00000000000000000000e+01 ; [DPU_LIN_PIPE] |167| 
         VDIV.F32  S0, S0, S1            ; [DPU_LIN_PIPE] |167| 
         VSTR.32   S0, [SP, #0]          ; [DPU_LIN_PIPE] |167| 
-	.dwpsn	file "../dht22.c",line 168,column 2,is_stmt,isa 1
+	.dwpsn	file "../dht22.c",line 169,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 168 | return data;                                                           
+; 169 | return data;                                                           
 ;----------------------------------------------------------------------
-        VLDR.32   S0, [SP, #0]          ; [DPU_LIN_PIPE] |168| 
-	.dwpsn	file "../dht22.c",line 169,column 1,is_stmt,isa 1
+        VLDR.32   S0, [SP, #0]          ; [DPU_LIN_PIPE] |169| 
+	.dwpsn	file "../dht22.c",line 170,column 1,is_stmt,isa 1
 $C$DW$119	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$119, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$119, DW_AT_TI_return
@@ -1673,7 +1673,7 @@ $C$DW$119	.dwtag  DW_TAG_TI_branch
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
 	.dwattr $C$DW$116, DW_AT_TI_end_file("../dht22.c")
-	.dwattr $C$DW$116, DW_AT_TI_end_line(0xa9)
+	.dwattr $C$DW$116, DW_AT_TI_end_line(0xaa)
 	.dwattr $C$DW$116, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$116
@@ -1691,18 +1691,18 @@ $C$DW$120	.dwtag  DW_TAG_subprogram, DW_AT_name("dht22_readtemp")
 	.dwattr $C$DW$120, DW_AT_external
 	.dwattr $C$DW$120, DW_AT_type(*$C$DW$T$16)
 	.dwattr $C$DW$120, DW_AT_TI_begin_file("../dht22.c")
-	.dwattr $C$DW$120, DW_AT_TI_begin_line(0xab)
+	.dwattr $C$DW$120, DW_AT_TI_begin_line(0xac)
 	.dwattr $C$DW$120, DW_AT_TI_begin_column(0x07)
 	.dwattr $C$DW$120, DW_AT_decl_file("../dht22.c")
-	.dwattr $C$DW$120, DW_AT_decl_line(0xab)
+	.dwattr $C$DW$120, DW_AT_decl_line(0xac)
 	.dwattr $C$DW$120, DW_AT_decl_column(0x07)
 	.dwattr $C$DW$120, DW_AT_TI_max_frame_size(0x08)
-	.dwpsn	file "../dht22.c",line 172,column 1,is_stmt,address dht22_readtemp,isa 1
+	.dwpsn	file "../dht22.c",line 173,column 1,is_stmt,address dht22_readtemp,isa 1
 
 	.dwfde $C$DW$CIE, dht22_readtemp
 ;----------------------------------------------------------------------
-; 171 | float dht22_readtemp()                                                 
-; 173 | float data;                                                            
+; 172 | float dht22_readtemp()                                                 
+; 174 | float data;                                                            
 ;----------------------------------------------------------------------
 
 ;*****************************************************************************
@@ -1721,30 +1721,30 @@ $C$DW$121	.dwtag  DW_TAG_variable, DW_AT_name("data")
 	.dwattr $C$DW$121, DW_AT_TI_symbol_name("data")
 	.dwattr $C$DW$121, DW_AT_type(*$C$DW$T$16)
 	.dwattr $C$DW$121, DW_AT_location[DW_OP_breg13 0]
-	.dwpsn	file "../dht22.c",line 174,column 2,is_stmt,isa 1
-;----------------------------------------------------------------------
-; 174 | data = temperature&0xffff;                                             
-;----------------------------------------------------------------------
-        LDR       A1, $C$CON31          ; [DPU_3_PIPE] |174| 
-        LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |174| 
-        BFC       A1, #16, #16          ; [DPU_3_PIPE] |174| 
-        VMOV      S0, A1                ; [DPU_LIN_PIPE] |174| 
-        VCVT.F32.U32 S0, S0             ; [DPU_LIN_PIPE] |174| 
-        VSTR.32   S0, [SP, #0]          ; [DPU_LIN_PIPE] |174| 
 	.dwpsn	file "../dht22.c",line 175,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 175 | data /= 10;                                                            
+; 175 | data = temperature&0xffff;                                             
 ;----------------------------------------------------------------------
-        VLDR.32   S0, [SP, #0]          ; [DPU_LIN_PIPE] |175| 
-        VMOV.F32  S1, #1.00000000000000000000e+01 ; [DPU_LIN_PIPE] |175| 
-        VDIV.F32  S0, S0, S1            ; [DPU_LIN_PIPE] |175| 
+        LDR       A1, $C$CON31          ; [DPU_3_PIPE] |175| 
+        LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |175| 
+        BFC       A1, #16, #16          ; [DPU_3_PIPE] |175| 
+        VMOV      S0, A1                ; [DPU_LIN_PIPE] |175| 
+        VCVT.F32.U32 S0, S0             ; [DPU_LIN_PIPE] |175| 
         VSTR.32   S0, [SP, #0]          ; [DPU_LIN_PIPE] |175| 
 	.dwpsn	file "../dht22.c",line 176,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 176 | return data;                                                           
+; 176 | data /= 10;                                                            
 ;----------------------------------------------------------------------
         VLDR.32   S0, [SP, #0]          ; [DPU_LIN_PIPE] |176| 
-	.dwpsn	file "../dht22.c",line 177,column 1,is_stmt,isa 1
+        VMOV.F32  S1, #1.00000000000000000000e+01 ; [DPU_LIN_PIPE] |176| 
+        VDIV.F32  S0, S0, S1            ; [DPU_LIN_PIPE] |176| 
+        VSTR.32   S0, [SP, #0]          ; [DPU_LIN_PIPE] |176| 
+	.dwpsn	file "../dht22.c",line 177,column 2,is_stmt,isa 1
+;----------------------------------------------------------------------
+; 177 | return data;                                                           
+;----------------------------------------------------------------------
+        VLDR.32   S0, [SP, #0]          ; [DPU_LIN_PIPE] |177| 
+	.dwpsn	file "../dht22.c",line 178,column 1,is_stmt,isa 1
         ADD       SP, SP, #8            ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
 $C$DW$122	.dwtag  DW_TAG_TI_branch
@@ -1753,7 +1753,7 @@ $C$DW$122	.dwtag  DW_TAG_TI_branch
         BX        LR                    ; [DPU_3_PIPE] 
         ; BRANCH OCCURS                  ; [] 
 	.dwattr $C$DW$120, DW_AT_TI_end_file("../dht22.c")
-	.dwattr $C$DW$120, DW_AT_TI_end_line(0xb1)
+	.dwattr $C$DW$120, DW_AT_TI_end_line(0xb2)
 	.dwattr $C$DW$120, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$120
@@ -2296,7 +2296,7 @@ $C$DW$T$97	.dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
 	.dwattr $C$DW$T$97, DW_AT_type(*$C$DW$T$96)
 	.dwattr $C$DW$T$97, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$97, DW_AT_decl_file("../dht22.c")
-	.dwattr $C$DW$T$97, DW_AT_decl_line(0xb1)
+	.dwattr $C$DW$T$97, DW_AT_decl_line(0xb2)
 	.dwattr $C$DW$T$97, DW_AT_decl_column(0x01)
 
 $C$DW$T$21	.dwtag  DW_TAG_structure_type

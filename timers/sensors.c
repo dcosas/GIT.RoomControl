@@ -31,8 +31,8 @@
 
 //#define FAN_SECONDS_ON 30 * SEC_PER_MINUTE
 //#define FAN_SECONDS_OFF 7000 * SEC_PER_HOUR
-#define FAN_SECONDS_ON 2700
-#define FAN_SECONDS_OFF 25200
+#define FAN_SECONDS_ON 1200
+#define FAN_SECONDS_OFF 10800
 
 static char str_line1[12]={'M','x',' ','H',':','x','x',' ','T',':','x','x'};
 static char str_line2[12]={'H',':','x','x',' ','T','1',':','x','x',' ',' '};

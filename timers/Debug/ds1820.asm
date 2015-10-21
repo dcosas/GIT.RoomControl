@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Sun Oct 18 09:37:09 2015                                *
+;* Date/Time created: Tue Oct 20 19:15:40 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -113,7 +113,7 @@ $C$DW$19	.dwtag  DW_TAG_variable, DW_AT_name("ds1820_data_bit")
 	.dwattr $C$DW$19, DW_AT_decl_file("../ds1820.c")
 	.dwattr $C$DW$19, DW_AT_decl_line(0x24)
 	.dwattr $C$DW$19, DW_AT_decl_column(0x09)
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\1192012 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0497212 
 	.sect	".text:set_mode_input"
 	.clink
 	.thumbfunc set_mode_input
@@ -1341,12 +1341,16 @@ $C$DW$99	.dwtag  DW_TAG_TI_branch
 	.dwpsn	file "../ds1820.c",line 138,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 138 | temp_ds1820 >>= 1;//truncate the LSB                                   
+; 140 | #if 0                                                                  
+; 141 | temp_ds1820 = ((0xff - temp_ds1820) + 1) >> 1;// convert from 2's compl
+;     | ement                                                                  
+; 142 | #endif                                                                 
 ;----------------------------------------------------------------------
         LDR       A2, $C$CON10          ; [DPU_3_PIPE] |138| 
         LDRH      A1, [A2, #0]          ; [DPU_3_PIPE] |138| 
         ASRS      A1, A1, #1            ; [DPU_3_PIPE] |138| 
         STRH      A1, [A2, #0]          ; [DPU_3_PIPE] |138| 
-	.dwpsn	file "../ds1820.c",line 139,column 1,is_stmt,isa 1
+	.dwpsn	file "../ds1820.c",line 143,column 1,is_stmt,isa 1
 $C$DW$100	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$100, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$100, DW_AT_TI_return
@@ -1354,7 +1358,7 @@ $C$DW$100	.dwtag  DW_TAG_TI_branch
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
 	.dwattr $C$DW$95, DW_AT_TI_end_file("../ds1820.c")
-	.dwattr $C$DW$95, DW_AT_TI_end_line(0x8b)
+	.dwattr $C$DW$95, DW_AT_TI_end_line(0x8f)
 	.dwattr $C$DW$95, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$95
@@ -1372,13 +1376,13 @@ $C$DW$101	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820")
 	.dwattr $C$DW$101, DW_AT_external
 	.dwattr $C$DW$101, DW_AT_type(*$C$DW$T$43)
 	.dwattr $C$DW$101, DW_AT_TI_begin_file("../ds1820.c")
-	.dwattr $C$DW$101, DW_AT_TI_begin_line(0x8d)
+	.dwattr $C$DW$101, DW_AT_TI_begin_line(0x91)
 	.dwattr $C$DW$101, DW_AT_TI_begin_column(0x0a)
 	.dwattr $C$DW$101, DW_AT_decl_file("../ds1820.c")
-	.dwattr $C$DW$101, DW_AT_decl_line(0x8d)
+	.dwattr $C$DW$101, DW_AT_decl_line(0x91)
 	.dwattr $C$DW$101, DW_AT_decl_column(0x0a)
 	.dwattr $C$DW$101, DW_AT_TI_max_frame_size(0x08)
-	.dwpsn	file "../ds1820.c",line 142,column 1,is_stmt,address read_ds1820,isa 1
+	.dwpsn	file "../ds1820.c",line 146,column 1,is_stmt,address read_ds1820,isa 1
 
 	.dwfde $C$DW$CIE, read_ds1820
 $C$DW$102	.dwtag  DW_TAG_formal_parameter, DW_AT_name("sensor_id")
@@ -1386,7 +1390,7 @@ $C$DW$102	.dwtag  DW_TAG_formal_parameter, DW_AT_name("sensor_id")
 	.dwattr $C$DW$102, DW_AT_type(*$C$DW$T$21)
 	.dwattr $C$DW$102, DW_AT_location[DW_OP_reg0]
 ;----------------------------------------------------------------------
-; 141 | uint16_t read_ds1820(uint8_t sensor_id)                                
+; 145 | uint16_t read_ds1820(uint8_t sensor_id)                                
 ;----------------------------------------------------------------------
 
 ;*****************************************************************************
@@ -1411,148 +1415,148 @@ $C$DW$103	.dwtag  DW_TAG_variable, DW_AT_name("sensor_id")
 	.dwattr $C$DW$103, DW_AT_TI_symbol_name("sensor_id")
 	.dwattr $C$DW$103, DW_AT_type(*$C$DW$T$21)
 	.dwattr $C$DW$103, DW_AT_location[DW_OP_breg13 0]
-        STRB      A1, [SP, #0]          ; [DPU_3_PIPE] |142| 
-	.dwpsn	file "../ds1820.c",line 143,column 2,is_stmt,isa 1
+        STRB      A1, [SP, #0]          ; [DPU_3_PIPE] |146| 
+	.dwpsn	file "../ds1820.c",line 147,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 143 | reset_ds1820(sensor_id);                                               
+; 147 | reset_ds1820(sensor_id);                                               
 ;----------------------------------------------------------------------
-        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |143| 
+        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |147| 
 $C$DW$104	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$104, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$104, DW_AT_name("reset_ds1820")
 	.dwattr $C$DW$104, DW_AT_TI_call
-        BL        reset_ds1820          ; [DPU_3_PIPE] |143| 
-        ; CALL OCCURS {reset_ds1820 }    ; [] |143| 
-	.dwpsn	file "../ds1820.c",line 144,column 2,is_stmt,isa 1
+        BL        reset_ds1820          ; [DPU_3_PIPE] |147| 
+        ; CALL OCCURS {reset_ds1820 }    ; [] |147| 
+	.dwpsn	file "../ds1820.c",line 148,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 144 | write_ds1820(sensor_id, DS1820_CONVERT_T);                             
+; 148 | write_ds1820(sensor_id, DS1820_CONVERT_T);                             
 ;----------------------------------------------------------------------
-        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |144| 
-        MOVS      A2, #204              ; [DPU_3_PIPE] |144| 
+        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |148| 
+        MOVS      A2, #68               ; [DPU_3_PIPE] |148| 
 $C$DW$105	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$105, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$105, DW_AT_name("write_ds1820")
 	.dwattr $C$DW$105, DW_AT_TI_call
-        BL        write_ds1820          ; [DPU_3_PIPE] |144| 
-        ; CALL OCCURS {write_ds1820 }    ; [] |144| 
-	.dwpsn	file "../ds1820.c",line 145,column 2,is_stmt,isa 1
+        BL        write_ds1820          ; [DPU_3_PIPE] |148| 
+        ; CALL OCCURS {write_ds1820 }    ; [] |148| 
+	.dwpsn	file "../ds1820.c",line 149,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 145 | write_ds1820(sensor_id, DS1820_SKIP_ROM);                              
+; 149 | write_ds1820(sensor_id, DS1820_SKIP_ROM);                              
 ;----------------------------------------------------------------------
-        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |145| 
-        MOVS      A2, #68               ; [DPU_3_PIPE] |145| 
+        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |149| 
+        MOVS      A2, #204              ; [DPU_3_PIPE] |149| 
 $C$DW$106	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$106, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$106, DW_AT_name("write_ds1820")
 	.dwattr $C$DW$106, DW_AT_TI_call
-        BL        write_ds1820          ; [DPU_3_PIPE] |145| 
-        ; CALL OCCURS {write_ds1820 }    ; [] |145| 
-	.dwpsn	file "../ds1820.c",line 146,column 2,is_stmt,isa 1
-;----------------------------------------------------------------------
-; 146 | set_line(sensor_id, HIGH);                                             
-;----------------------------------------------------------------------
-        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |146| 
-        MOVS      A2, #1                ; [DPU_3_PIPE] |146| 
-$C$DW$107	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$107, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$107, DW_AT_name("set_line")
-	.dwattr $C$DW$107, DW_AT_TI_call
-        BL        set_line              ; [DPU_3_PIPE] |146| 
-        ; CALL OCCURS {set_line }        ; [] |146| 
-	.dwpsn	file "../ds1820.c",line 147,column 2,is_stmt,isa 1
-;----------------------------------------------------------------------
-; 147 | delay_us(800);                                                         
-;----------------------------------------------------------------------
-        MOV       A1, #800              ; [DPU_3_PIPE] |147| 
-$C$DW$108	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$108, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$108, DW_AT_name("delay_us")
-	.dwattr $C$DW$108, DW_AT_TI_call
-        BL        delay_us              ; [DPU_3_PIPE] |147| 
-        ; CALL OCCURS {delay_us }        ; [] |147| 
-	.dwpsn	file "../ds1820.c",line 148,column 2,is_stmt,isa 1
-;----------------------------------------------------------------------
-; 148 | reset_ds1820(sensor_id);                                               
-;----------------------------------------------------------------------
-        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |148| 
-$C$DW$109	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$109, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$109, DW_AT_name("reset_ds1820")
-	.dwattr $C$DW$109, DW_AT_TI_call
-        BL        reset_ds1820          ; [DPU_3_PIPE] |148| 
-        ; CALL OCCURS {reset_ds1820 }    ; [] |148| 
-	.dwpsn	file "../ds1820.c",line 149,column 2,is_stmt,isa 1
-;----------------------------------------------------------------------
-; 149 | write_ds1820(sensor_id, DS1820_CONVERT_T);                             
-;----------------------------------------------------------------------
-        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |149| 
-        MOVS      A2, #204              ; [DPU_3_PIPE] |149| 
-$C$DW$110	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$110, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$110, DW_AT_name("write_ds1820")
-	.dwattr $C$DW$110, DW_AT_TI_call
         BL        write_ds1820          ; [DPU_3_PIPE] |149| 
         ; CALL OCCURS {write_ds1820 }    ; [] |149| 
 	.dwpsn	file "../ds1820.c",line 150,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 150 | write_ds1820(sensor_id, DS1820_READ_SCRATCHPAD);                       
+; 150 | set_line(sensor_id, HIGH);                                             
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |150| 
-        MOVS      A2, #190              ; [DPU_3_PIPE] |150| 
-$C$DW$111	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$111, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$111, DW_AT_name("write_ds1820")
-	.dwattr $C$DW$111, DW_AT_TI_call
-        BL        write_ds1820          ; [DPU_3_PIPE] |150| 
-        ; CALL OCCURS {write_ds1820 }    ; [] |150| 
+        MOVS      A2, #1                ; [DPU_3_PIPE] |150| 
+$C$DW$107	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$107, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$107, DW_AT_name("set_line")
+	.dwattr $C$DW$107, DW_AT_TI_call
+        BL        set_line              ; [DPU_3_PIPE] |150| 
+        ; CALL OCCURS {set_line }        ; [] |150| 
 	.dwpsn	file "../ds1820.c",line 151,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 151 | read_scratchpad(sensor_id);                                            
+; 151 | delay_us(800);                                                         
 ;----------------------------------------------------------------------
-        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |151| 
-$C$DW$112	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$112, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$112, DW_AT_name("read_scratchpad")
-	.dwattr $C$DW$112, DW_AT_TI_call
-        BL        read_scratchpad       ; [DPU_3_PIPE] |151| 
-        ; CALL OCCURS {read_scratchpad }  ; [] |151| 
+        MOV       A1, #800              ; [DPU_3_PIPE] |151| 
+$C$DW$108	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$108, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$108, DW_AT_name("delay_us")
+	.dwattr $C$DW$108, DW_AT_TI_call
+        BL        delay_us              ; [DPU_3_PIPE] |151| 
+        ; CALL OCCURS {delay_us }        ; [] |151| 
 	.dwpsn	file "../ds1820.c",line 152,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 152 | reset_ds1820(sensor_id);                                               
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |152| 
-$C$DW$113	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$113, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$113, DW_AT_name("reset_ds1820")
-	.dwattr $C$DW$113, DW_AT_TI_call
+$C$DW$109	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$109, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$109, DW_AT_name("reset_ds1820")
+	.dwattr $C$DW$109, DW_AT_TI_call
         BL        reset_ds1820          ; [DPU_3_PIPE] |152| 
         ; CALL OCCURS {reset_ds1820 }    ; [] |152| 
 	.dwpsn	file "../ds1820.c",line 153,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 153 | if(temp_ds1820 == 85)                                                  
+; 153 | write_ds1820(sensor_id, DS1820_CONVERT_T);                             
 ;----------------------------------------------------------------------
-        LDR       A1, $C$CON11          ; [DPU_3_PIPE] |153| 
-        LDRH      A1, [A1, #0]          ; [DPU_3_PIPE] |153| 
-        CMP       A1, #85               ; [DPU_3_PIPE] |153| 
-        BNE       ||$C$L10||            ; [DPU_3_PIPE] |153| 
-        ; BRANCHCC OCCURS {||$C$L10||}   ; [] |153| 
-;* --------------------------------------------------------------------------*
-	.dwpsn	file "../ds1820.c",line 154,column 3,is_stmt,isa 1
+        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |153| 
+        MOVS      A2, #68               ; [DPU_3_PIPE] |153| 
+$C$DW$110	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$110, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$110, DW_AT_name("write_ds1820")
+	.dwattr $C$DW$110, DW_AT_TI_call
+        BL        write_ds1820          ; [DPU_3_PIPE] |153| 
+        ; CALL OCCURS {write_ds1820 }    ; [] |153| 
+	.dwpsn	file "../ds1820.c",line 154,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 154 | temp_ds1820 = 0;                                                       
+; 154 | write_ds1820(sensor_id, DS1820_READ_SCRATCHPAD);                       
 ;----------------------------------------------------------------------
-        LDR       A2, $C$CON11          ; [DPU_3_PIPE] |154| 
-        MOVS      A1, #0                ; [DPU_3_PIPE] |154| 
-        STRH      A1, [A2, #0]          ; [DPU_3_PIPE] |154| 
-;* --------------------------------------------------------------------------*
-||$C$L10||:    
+        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |154| 
+        MOVS      A2, #190              ; [DPU_3_PIPE] |154| 
+$C$DW$111	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$111, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$111, DW_AT_name("write_ds1820")
+	.dwattr $C$DW$111, DW_AT_TI_call
+        BL        write_ds1820          ; [DPU_3_PIPE] |154| 
+        ; CALL OCCURS {write_ds1820 }    ; [] |154| 
+	.dwpsn	file "../ds1820.c",line 155,column 2,is_stmt,isa 1
+;----------------------------------------------------------------------
+; 155 | read_scratchpad(sensor_id);                                            
+;----------------------------------------------------------------------
+        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |155| 
+$C$DW$112	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$112, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$112, DW_AT_name("read_scratchpad")
+	.dwattr $C$DW$112, DW_AT_TI_call
+        BL        read_scratchpad       ; [DPU_3_PIPE] |155| 
+        ; CALL OCCURS {read_scratchpad }  ; [] |155| 
 	.dwpsn	file "../ds1820.c",line 156,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 156 | return temp_ds1820;                                                    
+; 156 | reset_ds1820(sensor_id);                                               
 ;----------------------------------------------------------------------
-        LDR       A1, $C$CON11          ; [DPU_3_PIPE] |156| 
-        LDRH      A1, [A1, #0]          ; [DPU_3_PIPE] |156| 
-	.dwpsn	file "../ds1820.c",line 157,column 1,is_stmt,isa 1
+        LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |156| 
+$C$DW$113	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$113, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$113, DW_AT_name("reset_ds1820")
+	.dwattr $C$DW$113, DW_AT_TI_call
+        BL        reset_ds1820          ; [DPU_3_PIPE] |156| 
+        ; CALL OCCURS {reset_ds1820 }    ; [] |156| 
+	.dwpsn	file "../ds1820.c",line 157,column 2,is_stmt,isa 1
+;----------------------------------------------------------------------
+; 157 | if(temp_ds1820 == 85)                                                  
+;----------------------------------------------------------------------
+        LDR       A1, $C$CON11          ; [DPU_3_PIPE] |157| 
+        LDRH      A1, [A1, #0]          ; [DPU_3_PIPE] |157| 
+        CMP       A1, #85               ; [DPU_3_PIPE] |157| 
+        BNE       ||$C$L10||            ; [DPU_3_PIPE] |157| 
+        ; BRANCHCC OCCURS {||$C$L10||}   ; [] |157| 
+;* --------------------------------------------------------------------------*
+	.dwpsn	file "../ds1820.c",line 158,column 3,is_stmt,isa 1
+;----------------------------------------------------------------------
+; 158 | temp_ds1820 = 0;                                                       
+;----------------------------------------------------------------------
+        LDR       A2, $C$CON11          ; [DPU_3_PIPE] |158| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |158| 
+        STRH      A1, [A2, #0]          ; [DPU_3_PIPE] |158| 
+;* --------------------------------------------------------------------------*
+||$C$L10||:    
+	.dwpsn	file "../ds1820.c",line 160,column 2,is_stmt,isa 1
+;----------------------------------------------------------------------
+; 160 | return temp_ds1820;                                                    
+;----------------------------------------------------------------------
+        LDR       A1, $C$CON11          ; [DPU_3_PIPE] |160| 
+        LDRH      A1, [A1, #0]          ; [DPU_3_PIPE] |160| 
+	.dwpsn	file "../ds1820.c",line 161,column 1,is_stmt,isa 1
 $C$DW$114	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$114, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$114, DW_AT_TI_return
@@ -1560,7 +1564,7 @@ $C$DW$114	.dwtag  DW_TAG_TI_branch
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
 	.dwattr $C$DW$101, DW_AT_TI_end_file("../ds1820.c")
-	.dwattr $C$DW$101, DW_AT_TI_end_line(0x9d)
+	.dwattr $C$DW$101, DW_AT_TI_end_line(0xa1)
 	.dwattr $C$DW$101, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$101
@@ -1578,17 +1582,17 @@ $C$DW$115	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_1")
 	.dwattr $C$DW$115, DW_AT_external
 	.dwattr $C$DW$115, DW_AT_type(*$C$DW$T$21)
 	.dwattr $C$DW$115, DW_AT_TI_begin_file("../ds1820.c")
-	.dwattr $C$DW$115, DW_AT_TI_begin_line(0x9f)
+	.dwattr $C$DW$115, DW_AT_TI_begin_line(0xa3)
 	.dwattr $C$DW$115, DW_AT_TI_begin_column(0x09)
 	.dwattr $C$DW$115, DW_AT_decl_file("../ds1820.c")
-	.dwattr $C$DW$115, DW_AT_decl_line(0x9f)
+	.dwattr $C$DW$115, DW_AT_decl_line(0xa3)
 	.dwattr $C$DW$115, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$115, DW_AT_TI_max_frame_size(0x08)
-	.dwpsn	file "../ds1820.c",line 160,column 1,is_stmt,address read_ds1820_1,isa 1
+	.dwpsn	file "../ds1820.c",line 164,column 1,is_stmt,address read_ds1820_1,isa 1
 
 	.dwfde $C$DW$CIE, read_ds1820_1
 ;----------------------------------------------------------------------
-; 159 | uint8_t read_ds1820_1()                                                
+; 163 | uint8_t read_ds1820_1()                                                
 ;----------------------------------------------------------------------
 
 ;*****************************************************************************
@@ -1609,26 +1613,26 @@ read_ds1820_1:
 	.dwcfi	cfa_offset, 8
 	.dwcfi	save_reg_to_mem, 14, -4
 	.dwcfi	save_reg_to_mem, 3, -8
-	.dwpsn	file "../ds1820.c",line 161,column 2,is_stmt,isa 1
+	.dwpsn	file "../ds1820.c",line 165,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 161 | ds1820_data_bit = DS1820_1_DATA_PORT_BIT;                              
+; 165 | ds1820_data_bit = DS1820_1_DATA_PORT_BIT;                              
 ;----------------------------------------------------------------------
-        LDR       A2, $C$CON12          ; [DPU_3_PIPE] |161| 
-        MOVS      A1, #1                ; [DPU_3_PIPE] |161| 
-        STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |161| 
-	.dwpsn	file "../ds1820.c",line 162,column 2,is_stmt,isa 1
+        LDR       A2, $C$CON12          ; [DPU_3_PIPE] |165| 
+        MOVS      A1, #1                ; [DPU_3_PIPE] |165| 
+        STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |165| 
+	.dwpsn	file "../ds1820.c",line 166,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 162 | return (uint8_t)read_ds1820(1);                                        
+; 166 | return (uint8_t)read_ds1820(1);                                        
 ;----------------------------------------------------------------------
-        MOVS      A1, #1                ; [DPU_3_PIPE] |162| 
+        MOVS      A1, #1                ; [DPU_3_PIPE] |166| 
 $C$DW$116	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$116, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$116, DW_AT_name("read_ds1820")
 	.dwattr $C$DW$116, DW_AT_TI_call
-        BL        read_ds1820           ; [DPU_3_PIPE] |162| 
-        ; CALL OCCURS {read_ds1820 }     ; [] |162| 
-        UXTB      A1, A1                ; [DPU_3_PIPE] |162| 
-	.dwpsn	file "../ds1820.c",line 163,column 1,is_stmt,isa 1
+        BL        read_ds1820           ; [DPU_3_PIPE] |166| 
+        ; CALL OCCURS {read_ds1820 }     ; [] |166| 
+        UXTB      A1, A1                ; [DPU_3_PIPE] |166| 
+	.dwpsn	file "../ds1820.c",line 167,column 1,is_stmt,isa 1
 $C$DW$117	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$117, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$117, DW_AT_TI_return
@@ -1636,7 +1640,7 @@ $C$DW$117	.dwtag  DW_TAG_TI_branch
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
 	.dwattr $C$DW$115, DW_AT_TI_end_file("../ds1820.c")
-	.dwattr $C$DW$115, DW_AT_TI_end_line(0xa3)
+	.dwattr $C$DW$115, DW_AT_TI_end_line(0xa7)
 	.dwattr $C$DW$115, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$115
@@ -1654,17 +1658,17 @@ $C$DW$118	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_2")
 	.dwattr $C$DW$118, DW_AT_external
 	.dwattr $C$DW$118, DW_AT_type(*$C$DW$T$21)
 	.dwattr $C$DW$118, DW_AT_TI_begin_file("../ds1820.c")
-	.dwattr $C$DW$118, DW_AT_TI_begin_line(0xa4)
+	.dwattr $C$DW$118, DW_AT_TI_begin_line(0xa8)
 	.dwattr $C$DW$118, DW_AT_TI_begin_column(0x09)
 	.dwattr $C$DW$118, DW_AT_decl_file("../ds1820.c")
-	.dwattr $C$DW$118, DW_AT_decl_line(0xa4)
+	.dwattr $C$DW$118, DW_AT_decl_line(0xa8)
 	.dwattr $C$DW$118, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$118, DW_AT_TI_max_frame_size(0x08)
-	.dwpsn	file "../ds1820.c",line 165,column 1,is_stmt,address read_ds1820_2,isa 1
+	.dwpsn	file "../ds1820.c",line 169,column 1,is_stmt,address read_ds1820_2,isa 1
 
 	.dwfde $C$DW$CIE, read_ds1820_2
 ;----------------------------------------------------------------------
-; 164 | uint8_t read_ds1820_2()                                                
+; 168 | uint8_t read_ds1820_2()                                                
 ;----------------------------------------------------------------------
 
 ;*****************************************************************************
@@ -1685,26 +1689,26 @@ read_ds1820_2:
 	.dwcfi	cfa_offset, 8
 	.dwcfi	save_reg_to_mem, 14, -4
 	.dwcfi	save_reg_to_mem, 3, -8
-	.dwpsn	file "../ds1820.c",line 166,column 2,is_stmt,isa 1
+	.dwpsn	file "../ds1820.c",line 170,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 166 | ds1820_data_bit = DS1820_2_DATA_PORT_BIT;                              
+; 170 | ds1820_data_bit = DS1820_2_DATA_PORT_BIT;                              
 ;----------------------------------------------------------------------
-        LDR       A2, $C$CON13          ; [DPU_3_PIPE] |166| 
-        MOVS      A1, #2                ; [DPU_3_PIPE] |166| 
-        STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |166| 
-	.dwpsn	file "../ds1820.c",line 167,column 2,is_stmt,isa 1
+        LDR       A2, $C$CON13          ; [DPU_3_PIPE] |170| 
+        MOVS      A1, #2                ; [DPU_3_PIPE] |170| 
+        STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |170| 
+	.dwpsn	file "../ds1820.c",line 171,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 167 | return (uint8_t)read_ds1820(2);                                        
+; 171 | return (uint8_t)read_ds1820(2);                                        
 ;----------------------------------------------------------------------
-        MOVS      A1, #2                ; [DPU_3_PIPE] |167| 
+        MOVS      A1, #2                ; [DPU_3_PIPE] |171| 
 $C$DW$119	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$119, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$119, DW_AT_name("read_ds1820")
 	.dwattr $C$DW$119, DW_AT_TI_call
-        BL        read_ds1820           ; [DPU_3_PIPE] |167| 
-        ; CALL OCCURS {read_ds1820 }     ; [] |167| 
-        UXTB      A1, A1                ; [DPU_3_PIPE] |167| 
-	.dwpsn	file "../ds1820.c",line 168,column 1,is_stmt,isa 1
+        BL        read_ds1820           ; [DPU_3_PIPE] |171| 
+        ; CALL OCCURS {read_ds1820 }     ; [] |171| 
+        UXTB      A1, A1                ; [DPU_3_PIPE] |171| 
+	.dwpsn	file "../ds1820.c",line 172,column 1,is_stmt,isa 1
 $C$DW$120	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$120, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$120, DW_AT_TI_return
@@ -1712,7 +1716,7 @@ $C$DW$120	.dwtag  DW_TAG_TI_branch
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
 	.dwattr $C$DW$118, DW_AT_TI_end_file("../ds1820.c")
-	.dwattr $C$DW$118, DW_AT_TI_end_line(0xa8)
+	.dwattr $C$DW$118, DW_AT_TI_end_line(0xac)
 	.dwattr $C$DW$118, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$118
@@ -1730,17 +1734,17 @@ $C$DW$121	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_3")
 	.dwattr $C$DW$121, DW_AT_external
 	.dwattr $C$DW$121, DW_AT_type(*$C$DW$T$21)
 	.dwattr $C$DW$121, DW_AT_TI_begin_file("../ds1820.c")
-	.dwattr $C$DW$121, DW_AT_TI_begin_line(0xa9)
+	.dwattr $C$DW$121, DW_AT_TI_begin_line(0xad)
 	.dwattr $C$DW$121, DW_AT_TI_begin_column(0x09)
 	.dwattr $C$DW$121, DW_AT_decl_file("../ds1820.c")
-	.dwattr $C$DW$121, DW_AT_decl_line(0xa9)
+	.dwattr $C$DW$121, DW_AT_decl_line(0xad)
 	.dwattr $C$DW$121, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$121, DW_AT_TI_max_frame_size(0x08)
-	.dwpsn	file "../ds1820.c",line 170,column 1,is_stmt,address read_ds1820_3,isa 1
+	.dwpsn	file "../ds1820.c",line 174,column 1,is_stmt,address read_ds1820_3,isa 1
 
 	.dwfde $C$DW$CIE, read_ds1820_3
 ;----------------------------------------------------------------------
-; 169 | uint8_t read_ds1820_3()                                                
+; 173 | uint8_t read_ds1820_3()                                                
 ;----------------------------------------------------------------------
 
 ;*****************************************************************************
@@ -1761,19 +1765,19 @@ read_ds1820_3:
 	.dwcfi	cfa_offset, 8
 	.dwcfi	save_reg_to_mem, 14, -4
 	.dwcfi	save_reg_to_mem, 3, -8
-	.dwpsn	file "../ds1820.c",line 171,column 2,is_stmt,isa 1
+	.dwpsn	file "../ds1820.c",line 175,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 171 | return (uint8_t)read_ds1820(3);                                        
+; 175 | return (uint8_t)read_ds1820(3);                                        
 ;----------------------------------------------------------------------
-        MOVS      A1, #3                ; [DPU_3_PIPE] |171| 
+        MOVS      A1, #3                ; [DPU_3_PIPE] |175| 
 $C$DW$122	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$122, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$122, DW_AT_name("read_ds1820")
 	.dwattr $C$DW$122, DW_AT_TI_call
-        BL        read_ds1820           ; [DPU_3_PIPE] |171| 
-        ; CALL OCCURS {read_ds1820 }     ; [] |171| 
-        UXTB      A1, A1                ; [DPU_3_PIPE] |171| 
-	.dwpsn	file "../ds1820.c",line 172,column 1,is_stmt,isa 1
+        BL        read_ds1820           ; [DPU_3_PIPE] |175| 
+        ; CALL OCCURS {read_ds1820 }     ; [] |175| 
+        UXTB      A1, A1                ; [DPU_3_PIPE] |175| 
+	.dwpsn	file "../ds1820.c",line 176,column 1,is_stmt,isa 1
 $C$DW$123	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$123, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$123, DW_AT_TI_return
@@ -1781,7 +1785,7 @@ $C$DW$123	.dwtag  DW_TAG_TI_branch
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
 	.dwattr $C$DW$121, DW_AT_TI_end_file("../ds1820.c")
-	.dwattr $C$DW$121, DW_AT_TI_end_line(0xac)
+	.dwattr $C$DW$121, DW_AT_TI_end_line(0xb0)
 	.dwattr $C$DW$121, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$121
@@ -2169,7 +2173,7 @@ $C$DW$T$77	.dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
 	.dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$76)
 	.dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$77, DW_AT_decl_file("../ds1820.c")
-	.dwattr $C$DW$T$77, DW_AT_decl_line(0xac)
+	.dwattr $C$DW$T$77, DW_AT_decl_line(0xb0)
 	.dwattr $C$DW$T$77, DW_AT_decl_column(0x01)
 
 $C$DW$T$19	.dwtag  DW_TAG_structure_type

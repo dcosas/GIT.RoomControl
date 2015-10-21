@@ -1,11 +1,11 @@
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-       3                    ;* Date/Time created: Sun Oct 18 09:37:13 2015                                *
+       3                    ;* Date/Time created: Tue Oct 20 19:15:43 2015                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -58,7 +58,7 @@ tiva_ssi.asm                                                         PAGE    1
       53                            .dwattr $C$DW$11, DW_AT_declaration
       54                            .dwattr $C$DW$11, DW_AT_external
       55                            .dwattr $C$DW$11, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/ssi.h")
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    2
@@ -118,7 +118,7 @@ tiva_ssi.asm                                                         PAGE    2
      108                            .dwattr $C$DW$21, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/ssi.h")
      109                            .dwattr $C$DW$21, DW_AT_decl_line(0x8a)
      110                            .dwattr $C$DW$21, DW_AT_decl_column(0x0d)
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    3
@@ -178,7 +178,7 @@ tiva_ssi.asm                                                         PAGE    3
      163                    $C$DW$32        .dwtag  DW_TAG_formal_parameter
      164                            .dwattr $C$DW$32, DW_AT_type(*$C$DW$T$23)
      165                            .dwendtag $C$DW$31
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    4
@@ -238,7 +238,7 @@ tiva_ssi.asm                                                         PAGE    4
      218                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
      219                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
      220                    ;*                           FPEXC,FPSCR                                     *
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    5
@@ -298,7 +298,7 @@ tiva_ssi.asm                                                         PAGE    5
      273                    ;  27 | SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);                           
      274                    ;----------------------------------------------------------------------
      275 00000018 481B              LDR       A1, $C$CON3           ; [DPU_3_PIPE] |27|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    6
@@ -358,7 +358,7 @@ tiva_ssi.asm                                                         PAGE    6
      328                    ;  33 | GPIOPinTypeSSI(GPIO_PORTA_BASE,GPIO_PIN_5|GPIO_PIN_4|GPIO_PIN_3|GPIO_PI
      329                    ;     | N_2);                                                                  
      330                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    7
@@ -418,7 +418,7 @@ tiva_ssi.asm                                                         PAGE    7
      383                            .dwattr $C$DW$50, DW_AT_low_pc(0x00)
      384                            .dwattr $C$DW$50, DW_AT_name("SSIEnable")
      385                            .dwattr $C$DW$50, DW_AT_TI_call
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    8
@@ -478,7 +478,7 @@ tiva_ssi.asm                                                         PAGE    8
      438                            .dwattr $C$DW$53, DW_AT_TI_symbol_name("SSI_write")
      439                            .dwattr $C$DW$53, DW_AT_external
      440                            .dwattr $C$DW$53, DW_AT_type(*$C$DW$T$33)
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    9
@@ -538,7 +538,7 @@ tiva_ssi.asm                                                         PAGE    9
      493 00000006 9001              STR       A1, [SP, #4]          ; [DPU_3_PIPE] |45|  ; [ORIG 16-BIT INS]
      494                            .dwpsn  file "../tiva_ssi.c",line 46,column 2,is_stmt,isa 1
      495                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   10
@@ -598,7 +598,7 @@ tiva_ssi.asm                                                         PAGE   10
      548                            .dwpsn  file "../tiva_ssi.c",line 50,column 1,is_stmt,isa 1
      549                    $C$DW$60        .dwtag  DW_TAG_TI_branch
      550                            .dwattr $C$DW$60, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   11
@@ -658,7 +658,7 @@ tiva_ssi.asm                                                         PAGE   11
      598                    ;******************************************************************************
      599                            .battr "aeabi", Tag_File, 1, Tag_ABI_PCS_wchar_t(2)
      600                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_rounding(0)
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   12
@@ -718,7 +718,7 @@ tiva_ssi.asm                                                         PAGE   12
      653                            .dwattr $C$DW$65, DW_AT_type(*$C$DW$T$19)
      654                            .dwattr $C$DW$65, DW_AT_name("buff_stop")
      655                            .dwattr $C$DW$65, DW_AT_TI_symbol_name("buff_stop")
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   13
@@ -778,7 +778,7 @@ tiva_ssi.asm                                                         PAGE   13
      708                            .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
      709                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
      710                    $C$DW$T$19      .dwtag  DW_TAG_pointer_type
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   14
@@ -838,7 +838,7 @@ tiva_ssi.asm                                                         PAGE   14
      763                            .dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
      764                            .dwattr $C$DW$T$45, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
      765                            .dwattr $C$DW$T$45, DW_AT_decl_line(0x2d)
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   15
@@ -898,7 +898,7 @@ tiva_ssi.asm                                                         PAGE   15
      818                            .dwattr $C$DW$T$55, DW_AT_decl_column(0x1a)
      819                    $C$DW$T$11      .dwtag  DW_TAG_base_type
      820                            .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   16
@@ -958,7 +958,7 @@ tiva_ssi.asm                                                         PAGE   16
      873                            .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
      874                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
      875                            .dwattr $C$DW$T$64, DW_AT_decl_line(0x3d)
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   17
@@ -1018,7 +1018,7 @@ tiva_ssi.asm                                                         PAGE   17
      928                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
      929                            .dwattr $C$DW$T$71, DW_AT_decl_line(0x4e)
      930                            .dwattr $C$DW$T$71, DW_AT_decl_column(0x17)
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   18
@@ -1078,7 +1078,7 @@ tiva_ssi.asm                                                         PAGE   18
      983                            .dwattr $C$DW$T$17, DW_AT_name("double")
      984                            .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
      985                    $C$DW$T$18      .dwtag  DW_TAG_base_type
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   19
@@ -1138,7 +1138,7 @@ tiva_ssi.asm                                                         PAGE   19
     1038                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
     1039                    
     1040                    ;***************************************************************
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   20
@@ -1198,7 +1198,7 @@ tiva_ssi.asm                                                         PAGE   20
     1093                            .dwcfi  same_value, 93
     1094                            .dwcfi  same_value, 94
     1095                            .dwcfi  same_value, 95
-TI ARM Assembler PC v5.2.5 Sun Oct 18 09:37:13 2015
+TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:43 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   21

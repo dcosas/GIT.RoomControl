@@ -1,11 +1,11 @@
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-       3                    ;* Date/Time created: Tue Oct 20 19:15:38 2015                                *
+       3                    ;* Date/Time created: Thu Oct 22 12:50:11 2015                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -58,7 +58,7 @@ actuators.asm                                                        PAGE    1
       53                            .dwendtag $C$DW$8
       54                    
       55                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppDat
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE    2
@@ -118,7 +118,7 @@ actuators.asm                                                        PAGE    2
      108 00000004 FFFEF7FF!         BL        SysCtlPeripheralEnable ; [DPU_3_PIPE] |25|  ; [KEEP 32-BIT INS]
      109                            ; CALL OCCURS {SysCtlPeripheralEnable }  ; [] |25| 
      110                            .dwpsn  file "../actuators.c",line 26,column 2,is_stmt,isa 1
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE    3
@@ -178,7 +178,7 @@ actuators.asm                                                        PAGE    3
      163                            ; CALL OCCURS {GPIOPinWrite }    ; [] |29| 
      164                            .dwpsn  file "../actuators.c",line 30,column 1,is_stmt,isa 1
      165                    $C$DW$16        .dwtag  DW_TAG_TI_branch
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE    4
@@ -238,7 +238,7 @@ actuators.asm                                                        PAGE    4
      218                    ;* --------------------------------------------------------------------------*
      219                            .dwcfi  cfa_offset, 0
      220 00000000 B508              PUSH      {A4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE    5
@@ -298,7 +298,7 @@ actuators.asm                                                        PAGE    5
      273                            .dwendtag $C$DW$17
      274                    
      275 00000000                   .sect   ".text:set_actuator2"
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE    6
@@ -358,7 +358,7 @@ actuators.asm                                                        PAGE    6
      328                    ;----------------------------------------------------------------------
      329                    ;  39 | state ? GPIOPinWrite(ACTUATORS_PORT_BASE, ACTUATOR2_PORT_BIT, ACTUATOR2
      330                    ;     | _PORT_BIT) : GPIOPinWrite(ACTUATORS_PORT_BASE, ACTUATOR2_PORT_BIT, 0); 
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE    7
@@ -418,7 +418,7 @@ actuators.asm                                                        PAGE    7
      381                    ;******************************************************************************
      382                    ;* CONSTANT TABLE                                                             *
      383                    ;******************************************************************************
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE    8
@@ -478,7 +478,7 @@ actuators.asm                                                        PAGE    8
      436                            .dwattr $C$DW$30, DW_AT_decl_line(0x5d)
      437                            .dwattr $C$DW$30, DW_AT_decl_column(0x16)
      438                    $C$DW$31        .dwtag  DW_TAG_member
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE    9
@@ -538,7 +538,7 @@ actuators.asm                                                        PAGE    9
      491                            .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
      492                            .dwattr $C$DW$T$4, DW_AT_name("bool")
      493                            .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE   10
@@ -598,7 +598,7 @@ actuators.asm                                                        PAGE   10
      546                            .dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
      547                            .dwattr $C$DW$T$37, DW_AT_decl_line(0x3a)
      548                            .dwattr $C$DW$T$37, DW_AT_decl_column(0x17)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE   11
@@ -658,7 +658,7 @@ actuators.asm                                                        PAGE   11
      601                            .dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
      602                            .dwattr $C$DW$T$45, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
      603                            .dwattr $C$DW$T$45, DW_AT_decl_line(0x4a)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE   12
@@ -718,7 +718,7 @@ actuators.asm                                                        PAGE   12
      656                            .dwattr $C$DW$T$52, DW_AT_decl_column(0x16)
      657                    $C$DW$T$53      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
      658                            .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$23)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE   13
@@ -778,7 +778,7 @@ actuators.asm                                                        PAGE   13
      711                    $C$DW$T$60      .dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
      712                            .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$14)
      713                            .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE   14
@@ -838,7 +838,7 @@ actuators.asm                                                        PAGE   14
      766                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
      767                            .dwattr $C$DW$T$68, DW_AT_decl_line(0x57)
      768                            .dwattr $C$DW$T$68, DW_AT_decl_column(0x20)
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE   15
@@ -898,7 +898,7 @@ actuators.asm                                                        PAGE   15
      821                            .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$73)
      822                            .dwattr $C$DW$T$74, DW_AT_language(DW_LANG_C)
      823                            .dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE   16
@@ -958,7 +958,7 @@ actuators.asm                                                        PAGE   16
      876                            .dwcfi  same_value, 88
      877                            .dwcfi  same_value, 89
      878                            .dwcfi  same_value, 90
-TI ARM Assembler PC v5.2.5 Tue Oct 20 19:15:39 2015
+TI ARM Assembler PC v5.2.5 Thu Oct 22 12:50:11 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 actuators.asm                                                        PAGE   17

@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Wed Oct 21 14:01:36 2015                                *
+;* Date/Time created: Thu Oct 22 12:50:14 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -292,7 +292,7 @@ lastUpdateCounter$1:
 sysTickTemp$3:
 	.bits	0,32			; sysTickTemp$3 @ 0
 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\1084812 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0067212 
 	.sect	".text:WatchdogIntHandler"
 	.clink
 	.thumbfunc WatchdogIntHandler
@@ -1892,9 +1892,9 @@ $C$DW$123	.dwtag  DW_TAG_TI_branch
 	.align	4
 ||$C$SL1||:	.string	"1.0 10.20.15",0
 	.align	4
-||$C$SL2||:	.string	"Oct 21 2015",0
+||$C$SL2||:	.string	"Oct 22 2015",0
 	.align	4
-||$C$SL3||:	.string	"14:01:36",0
+||$C$SL3||:	.string	"12:50:14",0
 ;******************************************************************************
 ;* CONSTANT TABLE                                                             *
 ;******************************************************************************

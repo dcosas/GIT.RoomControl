@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Tue Oct 20 19:15:44 2015                                *
+;* Date/Time created: Thu Oct 22 12:50:16 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -72,7 +72,7 @@ $C$DW$4	.dwtag  DW_TAG_variable, DW_AT_name("g_ui32UARTPeriph")
 bLastWasCR$1:
 	.bits	0,8			; bLastWasCR$1 @ 0
 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0623612 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0710412 
 	.sect	".text:UARTStdioConfig"
 	.clink
 	.thumbfunc UARTStdioConfig

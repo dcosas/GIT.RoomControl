@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Wed Oct 21 12:39:05 2015                                *
+;* Date/Time created: Thu Oct 22 12:50:11 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -113,7 +113,7 @@ $C$DW$19	.dwtag  DW_TAG_variable, DW_AT_name("ds1820_data_bit")
 	.dwattr $C$DW$19, DW_AT_decl_file("../ds1820.c")
 	.dwattr $C$DW$19, DW_AT_decl_line(0x24)
 	.dwattr $C$DW$19, DW_AT_decl_column(0x09)
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0611212 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0872812 
 	.sect	".text:set_mode_input"
 	.clink
 	.thumbfunc set_mode_input
@@ -1432,7 +1432,7 @@ $C$DW$104	.dwtag  DW_TAG_TI_branch
 ; 148 | write_ds1820(sensor_id, DS1820_CONVERT_T);                             
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |148| 
-        MOVS      A2, #68               ; [DPU_3_PIPE] |148| 
+        MOVS      A2, #204              ; [DPU_3_PIPE] |148| 
 $C$DW$105	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$105, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$105, DW_AT_name("write_ds1820")
@@ -1444,7 +1444,7 @@ $C$DW$105	.dwtag  DW_TAG_TI_branch
 ; 149 | write_ds1820(sensor_id, DS1820_SKIP_ROM);                              
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |149| 
-        MOVS      A2, #204              ; [DPU_3_PIPE] |149| 
+        MOVS      A2, #68               ; [DPU_3_PIPE] |149| 
 $C$DW$106	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$106, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$106, DW_AT_name("write_ds1820")
@@ -1490,7 +1490,7 @@ $C$DW$109	.dwtag  DW_TAG_TI_branch
 ; 153 | write_ds1820(sensor_id, DS1820_CONVERT_T);                             
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |153| 
-        MOVS      A2, #68               ; [DPU_3_PIPE] |153| 
+        MOVS      A2, #204              ; [DPU_3_PIPE] |153| 
 $C$DW$110	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$110, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$110, DW_AT_name("write_ds1820")

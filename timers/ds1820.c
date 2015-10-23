@@ -28,8 +28,8 @@
 #define HIGH 1
 #define LOW 0
 #define DS1820_SENSORS 4
-#define DS1820_CONVERT_T 0x44
-#define DS1820_SKIP_ROM 0xCC
+#define DS1820_CONVERT_T 0xCC
+#define DS1820_SKIP_ROM 0x44
 #define DS1820_READ_SCRATCHPAD 0xBE
 
 uint16_t temp_ds1820;

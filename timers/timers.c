@@ -27,6 +27,7 @@
 #include "dht22.h"
 #include "ds1820.h"
 //#include "sdcard.h"
+#include "co2sensor.h"
 
 volatile uint32_t g_ui32SysTickCounter;
 volatile uint32_t g_ui32SecondsCounter;
@@ -173,6 +174,8 @@ int main(void)
 
     ROM_IntMasterEnable();
 
+    init_co2sensor();
+    //receive_co2level();
     init_system();
 
     while(1)

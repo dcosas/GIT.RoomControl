@@ -35,6 +35,7 @@ timers.obj: ../lcd_nokia5510.h
 timers.obj: ../esp8266.h
 timers.obj: ../dht22.h
 timers.obj: ../ds1820.h
+timers.obj: ../co2sensor.h
 
 ../timers.c: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h: 
@@ -71,3 +72,4 @@ E:/Dev/Ti/TivaWare/third_party/fatfs/src/diskio.h:
 ../esp8266.h: 
 ../dht22.h: 
 ../ds1820.h: 
+../co2sensor.h: 

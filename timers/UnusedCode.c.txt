@@ -1,68 +1,38 @@
-/*
- * UnusedCode.c
- *
- *  Created on: Oct 6, 2015
- *      Author: dcosas
- */
-
-
-// reverses a string 'str' of length 'len'
-void reverse(char *str, int len)
+void uitoa(uint32_t integerValue, char* asciiValue, int maxCh)
 {
-    int i=0, j=len-1, temp;
-    while (i<j)
-    {
-        temp = str[i];
-        str[i] = str[j];
-        str[j] = temp;
-        i++; j--;
-    }
+	uint8_t i = 0;
+	uint32_t integerValueTemp;
+		
+	if (!asciiValue)
+		return;
+
+	//find how many characters integerValue has. Conversion will not need reverse function in this case.
+	integerValueTemp = integerValue;
+	do
+	{
+		i++;
+		integerValueTemp /= 10;
+		if (i == (maxCh-1))
+			break;
+	} while (integerValueTemp / 10);
+
+	do
+	{
+		asciiValue[i--] = integerValue % 10 + '0';
+		integerValue /= 10;
+	} while (integerValue / 10);
+	asciiValue[i] = integerValue % 10 + '0';
 }
 
- // Converts a given integer x to string str[].  d is the number
- // of digits required in output. If d is more than the number
- // of digits in x, then 0s are added at the beginning.
-int intToStr(int x, char str[], int d)
+void display_values(uint32_t current_time)
 {
-    int i = 0;
-    while (x)
-    {
-        str[i++] = (x%10) + '0';
-        x = x/10;
-    }
-
-    // If number of digits required is more, then
-    // add 0s at the beginning
-    while (i < d)
-        str[i++] = '0';
-
-    reverse(str, i);
-    str[i] = '\0';
-    return i;
-}
-
-// Converts a floating point number to string.
-void ftoa(float n, char *res, int afterpoint)
-{
-    // Extract integer part
-    int ipart = (int)n;
-
-    // Extract floating part
-    float fpart = n - (float)ipart;
-
-    // convert integer part to string
-    int i = intToStr(ipart, res, 0);
-
-    // check for display option after point
-    if (afterpoint != 0)
-    {
-        res[i] = '.';  // add dot
-
-        // Get the value of fraction part upto given no.
-        // of points after dot. The third parameter is needed
-        // to handle cases like 233.007
-        fpart = fpart * pow(10, afterpoint);
-
-        intToStr((int)fpart, res + i + 1, afterpoint);
-    }
+	char temp[N];
+	char ch;
+	uint8_t i=0;
+	std::memset(temp, 0, N * sizeof(char));
+	uitoa(current_time, temp, 2);
+	while (ch = temp[i++])
+	{
+		printf("%c", ch);
+	}
 }

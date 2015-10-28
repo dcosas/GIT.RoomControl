@@ -1,9 +1,9 @@
 ******************************************************************************
                   TI ARM Linker PC v5.2.5                      
 ******************************************************************************
->> Linked Tue Oct 27 17:18:45 2015
+>> Linked Wed Oct 28 12:22:44 2015
 
-OUTPUT FILE NAME:   <timers.out>
+OUTPUT FILE NAME:   <TivaControlBoard.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 00001729
 
 

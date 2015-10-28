@@ -5,8 +5,8 @@
  *      Author: dcosas
  */
 
-#ifndef ESP8266_H_
-#define ESP8266_H_
+#ifndef TIVACONTROLBOARD_ESP8266_H_
+#define TIVACONTROLBOARD_ESP8266_H_
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -37,4 +37,4 @@ uint8_t send_esp8266(	uint32_t humidity_data,//field1
 						uint32_t fan_relay);//field7
 void esp8266_test();
 
-#endif /* ESP8266_H_ */
+#endif /* TIVACONTROLBOARD_ESP8266_H_ */

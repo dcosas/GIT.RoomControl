@@ -5,8 +5,8 @@
  *      Author: dcosas
  */
 
-#ifndef DS1820_H_
-#define DS1820_H_
+#ifndef TIVACONTROLBOARD_DS1820_H_
+#define TIVACONTROLBOARD_DS1820_H_
 
 /*
  * Byte no. Scratchpad:
@@ -28,4 +28,4 @@ uint8_t read_ds1820_1();
 uint8_t read_ds1820_2();
 uint8_t read_ds1820_3();
 
-#endif /* DS1820_H_ */
+#endif /* TIVACONTROLBOARD_DS1820_H_ */

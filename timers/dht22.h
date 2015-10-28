@@ -5,8 +5,8 @@
  *      Author: dcosas
  */
 
-#ifndef DHT22_H_
-#define DHT22_H_
+#ifndef TIVACONTROLBOARD_DHT22_H_
+#define TIVACONTROLBOARD_DHT22_H_
 
 #include <stdint.h>
 
@@ -19,4 +19,4 @@ float dht22_readhumidity();
 float dht22_readtemp();
 uint32_t getTimer0ChAvalue();
 
-#endif /* DHT22_H_ */
+#endif /* TIVACONTROLBOARD_DHT22_H_ */

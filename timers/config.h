@@ -5,8 +5,8 @@
  *      Author: dcosas
  */
 
-#ifndef CONFIG_H_
-#define CONFIG_H_
+#ifndef TIVACONTROLBOARD_CONFIG_H_
+#define TIVACONTROLBOARD_CONFIG_H_
 
 /* Pin assignment Tiva Board
 PA0 UART0RX-pc comm
@@ -71,4 +71,4 @@ PF4 SW1
 #define WATCHDOG_TIMER_SECONDS 35
 
 
-#endif /* CONFIG_H_ */
+#endif /* TIVACONTROLBOARD_CONFIG_H_ */

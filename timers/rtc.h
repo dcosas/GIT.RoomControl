@@ -5,10 +5,10 @@
  *      Author: dcosas
  */
 
-#ifndef RTC_H_
-#define RTC_H_
+#ifndef TIVACONTROLBOARD_RTC_H_
+#define TIVACONTROLBOARD_RTC_H_
 
 void init_RTC();
 void read_dateandtime();
 
-#endif /* RTC_H_ */
+#endif /* TIVACONTROLBOARD_RTC_H_ */

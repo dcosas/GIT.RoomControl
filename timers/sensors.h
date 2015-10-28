@@ -5,8 +5,8 @@
  *      Author: dcosas
  */
 
-#ifndef SENSORS_H_
-#define SENSORS_H_
+#ifndef TIVACONTROLBOARD_SENSORS_H_
+#define TIVACONTROLBOARD_SENSORS_H_
 void init_sensors();
 float check_sensor1();
 float check_sensor2();
@@ -17,4 +17,4 @@ void change_mode();
 void get_mode();
 void update_lcd();
 void update_thingspeak();
-#endif /* SENSORS_H_ */
+#endif /* TIVACONTROLBOARD_SENSORS_H_ */

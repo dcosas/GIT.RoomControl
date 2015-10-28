@@ -5,9 +5,9 @@
  *      Author: dcosas
  */
 
-#ifndef TIMERS_H_
-#define TIMERS_H_
+#ifndef TIVACONTROLBOARD_TIMERS_H_
+#define TIVACONTROLBOARD_TIMERS_H_
 
 void delay_us(uint32_t microseconds);
 
-#endif /* TIMERS_H_ */
+#endif /* TIVACONTROLBOARD_TIMERS_H_ */

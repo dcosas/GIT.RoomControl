@@ -5,8 +5,8 @@
  *      Author: dcosas
  */
 
-#ifndef LCD_NOKIA5510_H_
-#define LCD_NOKIA5510_H_
+#ifndef TIVACONTROLBOARD_LCD_NOKIA5510_H_
+#define TIVACONTROLBOARD_LCD_NOKIA5510_H_
 
 /*Tiva-C- Nokia5110
  * PA2	- SCLK(Pin7)
@@ -23,4 +23,4 @@ void nokiaLCDinit(void);
 void nokia_test();
 void lcd_puts(char*s, uint8_t line);
 
-#endif /* LCD_NOKIA5510_H_ */
+#endif /* TIVACONTROLBOARD_LCD_NOKIA5510_H_ */

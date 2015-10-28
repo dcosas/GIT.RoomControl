@@ -5,11 +5,11 @@
  *      Author: dcosas
  */
 
-#ifndef ACTUATORS_H_
-#define ACTUATORS_H_
+#ifndef TIVACONTROLBOARD_ACTUATORS_H_
+#define TIVACONTROLBOARD_ACTUATORS_H_
 
 void init_actuators();
 void set_actuator1(uint8_t state);
 void set_actuator2(uint8_t state);
 
-#endif /* ACTUATORS_H_ */
+#endif /* TIVACONTROLBOARD_ACTUATORS_H_ */

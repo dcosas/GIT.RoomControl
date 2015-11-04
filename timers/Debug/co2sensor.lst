@@ -1,11 +1,11 @@
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-       3                    ;* Date/Time created: Wed Oct 28 12:40:18 2015                                *
+       3                    ;* Date/Time created: Wed Nov 04 18:29:33 2015                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -58,7 +58,7 @@ co2sensor.asm                                                        PAGE    1
       53                            .dwattr $C$DW$8, DW_AT_TI_symbol_name("SysCtlClockGet")
       54                            .dwattr $C$DW$8, DW_AT_type(*$C$DW$T$20)
       55                            .dwattr $C$DW$8, DW_AT_declaration
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    2
@@ -88,7 +88,7 @@ co2sensor.asm                                                        PAGE    2
       78                    
       79                    $C$DW$14        .dwtag  DW_TAG_subprogram, DW_AT_name("UARTCharsAvail")
       80                            .dwattr $C$DW$14, DW_AT_TI_symbol_name("UARTCharsAvail")
-      81                            .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$72)
+      81                            .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$78)
       82                            .dwattr $C$DW$14, DW_AT_declaration
       83                            .dwattr $C$DW$14, DW_AT_external
       84                            .dwattr $C$DW$14, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/uart.h")
@@ -101,7 +101,7 @@ co2sensor.asm                                                        PAGE    2
       91                    
       92                    $C$DW$16        .dwtag  DW_TAG_subprogram, DW_AT_name("UARTCharGet")
       93                            .dwattr $C$DW$16, DW_AT_TI_symbol_name("UARTCharGet")
-      94                            .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$43)
+      94                            .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$49)
       95                            .dwattr $C$DW$16, DW_AT_declaration
       96                            .dwattr $C$DW$16, DW_AT_external
       97                            .dwattr $C$DW$16, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/uart.h")
@@ -118,7 +118,7 @@ co2sensor.asm                                                        PAGE    2
      108                            .dwattr $C$DW$18, DW_AT_external
      109                            .dwattr $C$DW$18, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/uart.h")
      110                            .dwattr $C$DW$18, DW_AT_decl_line(0xd7)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    3
@@ -130,991 +130,1099 @@ co2sensor.asm                                                        PAGE    3
      115                            .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$6)
      116                            .dwendtag $C$DW$18
      117                    
-     118                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppDat
-     119 00000000                   .sect   ".text:init_co2sensor"
-     120                            .clink
-     121                            .thumbfunc init_co2sensor
-     122 00000000                   .thumb
-     123                            .global init_co2sensor
-     124                    
-     125                    $C$DW$21        .dwtag  DW_TAG_subprogram, DW_AT_name("init_co2sensor")
-     126                            .dwattr $C$DW$21, DW_AT_low_pc(init_co2sensor)
-     127                            .dwattr $C$DW$21, DW_AT_high_pc(0x00)
-     128                            .dwattr $C$DW$21, DW_AT_TI_symbol_name("init_co2sensor")
-     129                            .dwattr $C$DW$21, DW_AT_external
-     130                            .dwattr $C$DW$21, DW_AT_TI_begin_file("../co2sensor.c")
-     131                            .dwattr $C$DW$21, DW_AT_TI_begin_line(0x14)
-     132                            .dwattr $C$DW$21, DW_AT_TI_begin_column(0x06)
-     133                            .dwattr $C$DW$21, DW_AT_decl_file("../co2sensor.c")
-     134                            .dwattr $C$DW$21, DW_AT_decl_line(0x14)
-     135                            .dwattr $C$DW$21, DW_AT_decl_column(0x06)
-     136                            .dwattr $C$DW$21, DW_AT_TI_max_frame_size(0x08)
-     137                            .dwpsn  file "../co2sensor.c",line 21,column 1,is_stmt,address init_co2sensor,isa 1
+     118                    
+     119                    $C$DW$21        .dwtag  DW_TAG_subprogram, DW_AT_name("atoui")
+     120                            .dwattr $C$DW$21, DW_AT_TI_symbol_name("atoui")
+     121                            .dwattr $C$DW$21, DW_AT_declaration
+     122                            .dwattr $C$DW$21, DW_AT_external
+     123                            .dwattr $C$DW$21, DW_AT_decl_file("..\utils.h")
+     124                            .dwattr $C$DW$21, DW_AT_decl_line(0x0c)
+     125                            .dwattr $C$DW$21, DW_AT_decl_column(0x06)
+     126                    $C$DW$22        .dwtag  DW_TAG_formal_parameter
+     127                            .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$30)
+     128                    $C$DW$23        .dwtag  DW_TAG_formal_parameter
+     129                            .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$32)
+     130                            .dwendtag $C$DW$21
+     131                    
+     132                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppDat
+     133 00000000                   .sect   ".text:init_co2sensor"
+     134                            .clink
+     135                            .thumbfunc init_co2sensor
+     136 00000000                   .thumb
+     137                            .global init_co2sensor
      138                    
-     139                            .dwfde $C$DW$CIE, init_co2sensor
-     140                    ;----------------------------------------------------------------------
-     141                    ;  20 | void init_co2sensor()                                                  
-     142                    ;----------------------------------------------------------------------
-     143                    
-     144                    ;*****************************************************************************
-     145                    ;* FUNCTION NAME: init_co2sensor                                             *
-     146                    ;*                                                                           *
-     147                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-     148                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-     149                    ;*                           FPEXC,FPSCR                                     *
-     150                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-     151                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-     152                    ;*                           FPEXC,FPSCR                                     *
-     153                    ;*   Local Frame Size  : 0 Args + 0 Auto + 4 Save = 4 byte                   *
-     154                    ;*****************************************************************************
-     155 00000000           init_co2sensor:
-     156                    ;* --------------------------------------------------------------------------*
-     157                            .dwcfi  cfa_offset, 0
-     158 00000000 B508              PUSH      {A4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-     159                            .dwcfi  cfa_offset, 8
-     160                            .dwcfi  save_reg_to_mem, 14, -4
-     161                            .dwcfi  save_reg_to_mem, 3, -8
-     162                            .dwpsn  file "../co2sensor.c",line 22,column 2,is_stmt,isa 1
-     163                    ;----------------------------------------------------------------------
-     164                    ;  22 | SysCtlPeripheralEnable(SYSCTL_PERIPH_UART1);                           
-     165                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     139                    $C$DW$24        .dwtag  DW_TAG_subprogram, DW_AT_name("init_co2sensor")
+     140                            .dwattr $C$DW$24, DW_AT_low_pc(init_co2sensor)
+     141                            .dwattr $C$DW$24, DW_AT_high_pc(0x00)
+     142                            .dwattr $C$DW$24, DW_AT_TI_symbol_name("init_co2sensor")
+     143                            .dwattr $C$DW$24, DW_AT_external
+     144                            .dwattr $C$DW$24, DW_AT_TI_begin_file("../co2sensor.c")
+     145                            .dwattr $C$DW$24, DW_AT_TI_begin_line(0x16)
+     146                            .dwattr $C$DW$24, DW_AT_TI_begin_column(0x06)
+     147                            .dwattr $C$DW$24, DW_AT_decl_file("../co2sensor.c")
+     148                            .dwattr $C$DW$24, DW_AT_decl_line(0x16)
+     149                            .dwattr $C$DW$24, DW_AT_decl_column(0x06)
+     150                            .dwattr $C$DW$24, DW_AT_TI_max_frame_size(0x08)
+     151                            .dwpsn  file "../co2sensor.c",line 23,column 1,is_stmt,address init_co2sensor,isa 1
+     152                    
+     153                            .dwfde $C$DW$CIE, init_co2sensor
+     154                    ;----------------------------------------------------------------------
+     155                    ;  22 | void init_co2sensor()                                                  
+     156                    ;----------------------------------------------------------------------
+     157                    
+     158                    ;*****************************************************************************
+     159                    ;* FUNCTION NAME: init_co2sensor                                             *
+     160                    ;*                                                                           *
+     161                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     162                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     163                    ;*                           FPEXC,FPSCR                                     *
+     164                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     165                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    4
 
-     166 00000002 480D              LDR       A1, $C$CON1           ; [DPU_3_PIPE] |22|  ; [ORIG 16-BIT INS]
-     167                    $C$DW$22        .dwtag  DW_TAG_TI_branch
-     168                            .dwattr $C$DW$22, DW_AT_low_pc(0x00)
-     169                            .dwattr $C$DW$22, DW_AT_name("SysCtlPeripheralEnable")
-     170                            .dwattr $C$DW$22, DW_AT_TI_call
-     171 00000004 FFFEF7FF!         BL        SysCtlPeripheralEnable ; [DPU_3_PIPE] |22|  ; [KEEP 32-BIT INS]
-     172                            ; CALL OCCURS {SysCtlPeripheralEnable }  ; [] |22| 
-     173                            .dwpsn  file "../co2sensor.c",line 23,column 2,is_stmt,isa 1
-     174                    ;----------------------------------------------------------------------
-     175                    ;  23 | SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOC);                           
-     176                    ;----------------------------------------------------------------------
-     177 00000008 480C              LDR       A1, $C$CON2           ; [DPU_3_PIPE] |23|  ; [ORIG 16-BIT INS]
-     178                    $C$DW$23        .dwtag  DW_TAG_TI_branch
-     179                            .dwattr $C$DW$23, DW_AT_low_pc(0x00)
-     180                            .dwattr $C$DW$23, DW_AT_name("SysCtlPeripheralEnable")
-     181                            .dwattr $C$DW$23, DW_AT_TI_call
-     182 0000000a FFFEF7FF!         BL        SysCtlPeripheralEnable ; [DPU_3_PIPE] |23|  ; [KEEP 32-BIT INS]
-     183                            ; CALL OCCURS {SysCtlPeripheralEnable }  ; [] |23| 
-     184                            .dwpsn  file "../co2sensor.c",line 24,column 2,is_stmt,isa 1
-     185                    ;----------------------------------------------------------------------
-     186                    ;  24 | GPIOPinConfigure(GPIO_PC4_U1RX);                                       
-     187                    ;----------------------------------------------------------------------
-     188 0000000e 480C              LDR       A1, $C$CON3           ; [DPU_3_PIPE] |24|  ; [ORIG 16-BIT INS]
-     189                    $C$DW$24        .dwtag  DW_TAG_TI_branch
-     190                            .dwattr $C$DW$24, DW_AT_low_pc(0x00)
-     191                            .dwattr $C$DW$24, DW_AT_name("GPIOPinConfigure")
-     192                            .dwattr $C$DW$24, DW_AT_TI_call
-     193 00000010 FFFEF7FF!         BL        GPIOPinConfigure      ; [DPU_3_PIPE] |24|  ; [KEEP 32-BIT INS]
-     194                            ; CALL OCCURS {GPIOPinConfigure }  ; [] |24| 
-     195                            .dwpsn  file "../co2sensor.c",line 25,column 2,is_stmt,isa 1
-     196                    ;----------------------------------------------------------------------
-     197                    ;  25 | GPIOPinConfigure(GPIO_PC5_U1TX);                                       
-     198                    ;----------------------------------------------------------------------
-     199 00000014 480B              LDR       A1, $C$CON4           ; [DPU_3_PIPE] |25|  ; [ORIG 16-BIT INS]
-     200                    $C$DW$25        .dwtag  DW_TAG_TI_branch
-     201                            .dwattr $C$DW$25, DW_AT_low_pc(0x00)
-     202                            .dwattr $C$DW$25, DW_AT_name("GPIOPinConfigure")
-     203                            .dwattr $C$DW$25, DW_AT_TI_call
-     204 00000016 FFFEF7FF!         BL        GPIOPinConfigure      ; [DPU_3_PIPE] |25|  ; [KEEP 32-BIT INS]
-     205                            ; CALL OCCURS {GPIOPinConfigure }  ; [] |25| 
-     206                            .dwpsn  file "../co2sensor.c",line 26,column 2,is_stmt,isa 1
-     207                    ;----------------------------------------------------------------------
-     208                    ;  26 | GPIOPinTypeUART(GPIO_PORTC_BASE, GPIO_PIN_4 | GPIO_PIN_5);             
-     209                    ;----------------------------------------------------------------------
-     210 0000001a 480B              LDR       A1, $C$CON5           ; [DPU_3_PIPE] |26|  ; [ORIG 16-BIT INS]
-     211 0000001c 2130              MOVS      A2, #48               ; [DPU_3_PIPE] |26|  ; [ORIG 16-BIT INS]
-     212                    $C$DW$26        .dwtag  DW_TAG_TI_branch
-     213                            .dwattr $C$DW$26, DW_AT_low_pc(0x00)
-     214                            .dwattr $C$DW$26, DW_AT_name("GPIOPinTypeUART")
-     215                            .dwattr $C$DW$26, DW_AT_TI_call
-     216 0000001e FFFEF7FF!         BL        GPIOPinTypeUART       ; [DPU_3_PIPE] |26|  ; [KEEP 32-BIT INS]
-     217                            ; CALL OCCURS {GPIOPinTypeUART }  ; [] |26| 
-     218                            .dwpsn  file "../co2sensor.c",line 27,column 2,is_stmt,isa 1
-     219                    ;----------------------------------------------------------------------
-     220                    ;  27 | UARTConfigSetExpClk(UART1_BASE, SysCtlClockGet(), 9600,                
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     166                    ;*                           FPEXC,FPSCR                                     *
+     167                    ;*   Local Frame Size  : 0 Args + 0 Auto + 4 Save = 4 byte                   *
+     168                    ;*****************************************************************************
+     169 00000000           init_co2sensor:
+     170                    ;* --------------------------------------------------------------------------*
+     171                            .dwcfi  cfa_offset, 0
+     172 00000000 B508              PUSH      {A4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     173                            .dwcfi  cfa_offset, 8
+     174                            .dwcfi  save_reg_to_mem, 14, -4
+     175                            .dwcfi  save_reg_to_mem, 3, -8
+     176                            .dwpsn  file "../co2sensor.c",line 24,column 2,is_stmt,isa 1
+     177                    ;----------------------------------------------------------------------
+     178                    ;  24 | SysCtlPeripheralEnable(SYSCTL_PERIPH_UART1);                           
+     179                    ;----------------------------------------------------------------------
+     180 00000002 480D              LDR       A1, $C$CON1           ; [DPU_3_PIPE] |24|  ; [ORIG 16-BIT INS]
+     181                    $C$DW$25        .dwtag  DW_TAG_TI_branch
+     182                            .dwattr $C$DW$25, DW_AT_low_pc(0x00)
+     183                            .dwattr $C$DW$25, DW_AT_name("SysCtlPeripheralEnable")
+     184                            .dwattr $C$DW$25, DW_AT_TI_call
+     185 00000004 FFFEF7FF!         BL        SysCtlPeripheralEnable ; [DPU_3_PIPE] |24|  ; [KEEP 32-BIT INS]
+     186                            ; CALL OCCURS {SysCtlPeripheralEnable }  ; [] |24| 
+     187                            .dwpsn  file "../co2sensor.c",line 25,column 2,is_stmt,isa 1
+     188                    ;----------------------------------------------------------------------
+     189                    ;  25 | SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOC);                           
+     190                    ;----------------------------------------------------------------------
+     191 00000008 480C              LDR       A1, $C$CON2           ; [DPU_3_PIPE] |25|  ; [ORIG 16-BIT INS]
+     192                    $C$DW$26        .dwtag  DW_TAG_TI_branch
+     193                            .dwattr $C$DW$26, DW_AT_low_pc(0x00)
+     194                            .dwattr $C$DW$26, DW_AT_name("SysCtlPeripheralEnable")
+     195                            .dwattr $C$DW$26, DW_AT_TI_call
+     196 0000000a FFFEF7FF!         BL        SysCtlPeripheralEnable ; [DPU_3_PIPE] |25|  ; [KEEP 32-BIT INS]
+     197                            ; CALL OCCURS {SysCtlPeripheralEnable }  ; [] |25| 
+     198                            .dwpsn  file "../co2sensor.c",line 26,column 2,is_stmt,isa 1
+     199                    ;----------------------------------------------------------------------
+     200                    ;  26 | GPIOPinConfigure(GPIO_PC4_U1RX);                                       
+     201                    ;----------------------------------------------------------------------
+     202 0000000e 480C              LDR       A1, $C$CON3           ; [DPU_3_PIPE] |26|  ; [ORIG 16-BIT INS]
+     203                    $C$DW$27        .dwtag  DW_TAG_TI_branch
+     204                            .dwattr $C$DW$27, DW_AT_low_pc(0x00)
+     205                            .dwattr $C$DW$27, DW_AT_name("GPIOPinConfigure")
+     206                            .dwattr $C$DW$27, DW_AT_TI_call
+     207 00000010 FFFEF7FF!         BL        GPIOPinConfigure      ; [DPU_3_PIPE] |26|  ; [KEEP 32-BIT INS]
+     208                            ; CALL OCCURS {GPIOPinConfigure }  ; [] |26| 
+     209                            .dwpsn  file "../co2sensor.c",line 27,column 2,is_stmt,isa 1
+     210                    ;----------------------------------------------------------------------
+     211                    ;  27 | GPIOPinConfigure(GPIO_PC5_U1TX);                                       
+     212                    ;----------------------------------------------------------------------
+     213 00000014 480B              LDR       A1, $C$CON4           ; [DPU_3_PIPE] |27|  ; [ORIG 16-BIT INS]
+     214                    $C$DW$28        .dwtag  DW_TAG_TI_branch
+     215                            .dwattr $C$DW$28, DW_AT_low_pc(0x00)
+     216                            .dwattr $C$DW$28, DW_AT_name("GPIOPinConfigure")
+     217                            .dwattr $C$DW$28, DW_AT_TI_call
+     218 00000016 FFFEF7FF!         BL        GPIOPinConfigure      ; [DPU_3_PIPE] |27|  ; [KEEP 32-BIT INS]
+     219                            ; CALL OCCURS {GPIOPinConfigure }  ; [] |27| 
+     220                            .dwpsn  file "../co2sensor.c",line 28,column 2,is_stmt,isa 1
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    5
 
-     221                    ;  28 |                                                 (UART_CONFIG_WLEN_8 | U
-     222                    ;     | ART_CONFIG_STOP_ONE |                                                  
-     223                    ;  29 |                                                  UART_CONFIG_PAR_NONE))
-     224                    ;     | ;                                                                      
-     225                    ;----------------------------------------------------------------------
-     226                    $C$DW$27        .dwtag  DW_TAG_TI_branch
-     227                            .dwattr $C$DW$27, DW_AT_low_pc(0x00)
-     228                            .dwattr $C$DW$27, DW_AT_name("SysCtlClockGet")
-     229                            .dwattr $C$DW$27, DW_AT_TI_call
-     230 00000022 FFFEF7FF!         BL        SysCtlClockGet        ; [DPU_3_PIPE] |27|  ; [KEEP 32-BIT INS]
-     231                            ; CALL OCCURS {SysCtlClockGet }  ; [] |27| 
-     232 00000026 4601              MOV       A2, A1                ; [DPU_3_PIPE] |27|  ; [ORIG 16-BIT INS]
-     233 00000028 4808              LDR       A1, $C$CON6           ; [DPU_3_PIPE] |27|  ; [ORIG 16-BIT INS]
-     234 0000002a 5216F44F          MOV       A3, #9600             ; [DPU_3_PIPE] |27|  ; [KEEP 32-BIT INS]
-     235 0000002e 2360              MOVS      A4, #96               ; [DPU_3_PIPE] |27|  ; [ORIG 16-BIT INS]
-     236                    $C$DW$28        .dwtag  DW_TAG_TI_branch
-     237                            .dwattr $C$DW$28, DW_AT_low_pc(0x00)
-     238                            .dwattr $C$DW$28, DW_AT_name("UARTConfigSetExpClk")
-     239                            .dwattr $C$DW$28, DW_AT_TI_call
-     240 00000030 FFFEF7FF!         BL        UARTConfigSetExpClk   ; [DPU_3_PIPE] |27|  ; [KEEP 32-BIT INS]
-     241                            ; CALL OCCURS {UARTConfigSetExpClk }  ; [] |27| 
-     242                            .dwpsn  file "../co2sensor.c",line 30,column 1,is_stmt,isa 1
-     243                    $C$DW$29        .dwtag  DW_TAG_TI_branch
-     244                            .dwattr $C$DW$29, DW_AT_low_pc(0x00)
-     245                            .dwattr $C$DW$29, DW_AT_TI_return
-     246 00000034 BD08              POP       {A4, PC}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-     247                            .dwcfi  cfa_offset, 0
-     248                            ; BRANCH OCCURS                  ; [] 
-     249                            .dwattr $C$DW$21, DW_AT_TI_end_file("../co2sensor.c")
-     250                            .dwattr $C$DW$21, DW_AT_TI_end_line(0x1e)
-     251                            .dwattr $C$DW$21, DW_AT_TI_end_column(0x01)
-     252                            .dwendentry
-     253                            .dwendtag $C$DW$21
-     254                    
-     255 00000000                   .sect   ".text:receive_co2level"
-     256                            .clink
-     257                            .thumbfunc receive_co2level
-     258 00000000                   .thumb
-     259                            .global receive_co2level
-     260                    
-     261                    $C$DW$30        .dwtag  DW_TAG_subprogram, DW_AT_name("receive_co2level")
-     262                            .dwattr $C$DW$30, DW_AT_low_pc(receive_co2level)
-     263                            .dwattr $C$DW$30, DW_AT_high_pc(0x00)
-     264                            .dwattr $C$DW$30, DW_AT_TI_symbol_name("receive_co2level")
-     265                            .dwattr $C$DW$30, DW_AT_external
-     266                            .dwattr $C$DW$30, DW_AT_type(*$C$DW$T$23)
-     267                            .dwattr $C$DW$30, DW_AT_TI_begin_file("../co2sensor.c")
-     268                            .dwattr $C$DW$30, DW_AT_TI_begin_line(0x20)
-     269                            .dwattr $C$DW$30, DW_AT_TI_begin_column(0x09)
-     270                            .dwattr $C$DW$30, DW_AT_decl_file("../co2sensor.c")
-     271                            .dwattr $C$DW$30, DW_AT_decl_line(0x20)
-     272                            .dwattr $C$DW$30, DW_AT_decl_column(0x09)
-     273                            .dwattr $C$DW$30, DW_AT_TI_max_frame_size(0x18)
-     274                            .dwpsn  file "../co2sensor.c",line 33,column 1,is_stmt,address receive_co2level,isa 1
-     275                    
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     221                    ;----------------------------------------------------------------------
+     222                    ;  28 | GPIOPinTypeUART(GPIO_PORTC_BASE, GPIO_PIN_4 | GPIO_PIN_5);             
+     223                    ;----------------------------------------------------------------------
+     224 0000001a 480B              LDR       A1, $C$CON5           ; [DPU_3_PIPE] |28|  ; [ORIG 16-BIT INS]
+     225 0000001c 2130              MOVS      A2, #48               ; [DPU_3_PIPE] |28|  ; [ORIG 16-BIT INS]
+     226                    $C$DW$29        .dwtag  DW_TAG_TI_branch
+     227                            .dwattr $C$DW$29, DW_AT_low_pc(0x00)
+     228                            .dwattr $C$DW$29, DW_AT_name("GPIOPinTypeUART")
+     229                            .dwattr $C$DW$29, DW_AT_TI_call
+     230 0000001e FFFEF7FF!         BL        GPIOPinTypeUART       ; [DPU_3_PIPE] |28|  ; [KEEP 32-BIT INS]
+     231                            ; CALL OCCURS {GPIOPinTypeUART }  ; [] |28| 
+     232                            .dwpsn  file "../co2sensor.c",line 29,column 2,is_stmt,isa 1
+     233                    ;----------------------------------------------------------------------
+     234                    ;  29 | UARTConfigSetExpClk(UART1_BASE, SysCtlClockGet(), 9600,                
+     235                    ;  30 |                                                 (UART_CONFIG_WLEN_8 | U
+     236                    ;     | ART_CONFIG_STOP_ONE |                                                  
+     237                    ;  31 |                                                  UART_CONFIG_PAR_NONE))
+     238                    ;     | ;                                                                      
+     239                    ;----------------------------------------------------------------------
+     240                    $C$DW$30        .dwtag  DW_TAG_TI_branch
+     241                            .dwattr $C$DW$30, DW_AT_low_pc(0x00)
+     242                            .dwattr $C$DW$30, DW_AT_name("SysCtlClockGet")
+     243                            .dwattr $C$DW$30, DW_AT_TI_call
+     244 00000022 FFFEF7FF!         BL        SysCtlClockGet        ; [DPU_3_PIPE] |29|  ; [KEEP 32-BIT INS]
+     245                            ; CALL OCCURS {SysCtlClockGet }  ; [] |29| 
+     246 00000026 4601              MOV       A2, A1                ; [DPU_3_PIPE] |29|  ; [ORIG 16-BIT INS]
+     247 00000028 4808              LDR       A1, $C$CON6           ; [DPU_3_PIPE] |29|  ; [ORIG 16-BIT INS]
+     248 0000002a 5216F44F          MOV       A3, #9600             ; [DPU_3_PIPE] |29|  ; [KEEP 32-BIT INS]
+     249 0000002e 2360              MOVS      A4, #96               ; [DPU_3_PIPE] |29|  ; [ORIG 16-BIT INS]
+     250                    $C$DW$31        .dwtag  DW_TAG_TI_branch
+     251                            .dwattr $C$DW$31, DW_AT_low_pc(0x00)
+     252                            .dwattr $C$DW$31, DW_AT_name("UARTConfigSetExpClk")
+     253                            .dwattr $C$DW$31, DW_AT_TI_call
+     254 00000030 FFFEF7FF!         BL        UARTConfigSetExpClk   ; [DPU_3_PIPE] |29|  ; [KEEP 32-BIT INS]
+     255                            ; CALL OCCURS {UARTConfigSetExpClk }  ; [] |29| 
+     256                            .dwpsn  file "../co2sensor.c",line 32,column 1,is_stmt,isa 1
+     257                    $C$DW$32        .dwtag  DW_TAG_TI_branch
+     258                            .dwattr $C$DW$32, DW_AT_low_pc(0x00)
+     259                            .dwattr $C$DW$32, DW_AT_TI_return
+     260 00000034 BD08              POP       {A4, PC}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     261                            .dwcfi  cfa_offset, 0
+     262                            ; BRANCH OCCURS                  ; [] 
+     263                            .dwattr $C$DW$24, DW_AT_TI_end_file("../co2sensor.c")
+     264                            .dwattr $C$DW$24, DW_AT_TI_end_line(0x20)
+     265                            .dwattr $C$DW$24, DW_AT_TI_end_column(0x01)
+     266                            .dwendentry
+     267                            .dwendtag $C$DW$24
+     268                    
+     269 00000000                   .sect   ".text:receive_co2level"
+     270                            .clink
+     271                            .thumbfunc receive_co2level
+     272 00000000                   .thumb
+     273                            .global receive_co2level
+     274                    
+     275                    $C$DW$33        .dwtag  DW_TAG_subprogram, DW_AT_name("receive_co2level")
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    6
 
-     276                            .dwfde $C$DW$CIE, receive_co2level
-     277                    ;----------------------------------------------------------------------
-     278                    ;  32 | uint8_t receive_co2level()                                             
-     279                    ;  34 | char uart1_data[10];                                                   
-     280                    ;----------------------------------------------------------------------
-     281                    
-     282                    ;*****************************************************************************
-     283                    ;* FUNCTION NAME: receive_co2level                                           *
-     284                    ;*                                                                           *
-     285                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-     286                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-     287                    ;*                           FPEXC,FPSCR                                     *
-     288                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-     289                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-     290                    ;*                           FPEXC,FPSCR                                     *
-     291                    ;*   Local Frame Size  : 0 Args + 16 Auto + 4 Save = 20 byte                 *
-     292                    ;*****************************************************************************
-     293 00000000           receive_co2level:
-     294                    ;* --------------------------------------------------------------------------*
-     295                            .dwcfi  cfa_offset, 0
-     296 00000000 B500              PUSH      {LR}                  ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-     297                            .dwcfi  cfa_offset, 4
-     298                            .dwcfi  save_reg_to_mem, 14, -4
-     299 00000002 0D14F1AD          SUB       SP, SP, #20           ; [DPU_3_PIPE]  ; [KEEP 32-BIT INS]
-     300                            .dwcfi  cfa_offset, 24
-     301                    $C$DW$31        .dwtag  DW_TAG_variable, DW_AT_name("uart1_data")
-     302                            .dwattr $C$DW$31, DW_AT_TI_symbol_name("uart1_data")
-     303                            .dwattr $C$DW$31, DW_AT_type(*$C$DW$T$77)
-     304                            .dwattr $C$DW$31, DW_AT_location[DW_OP_breg13 0]
-     305                    $C$DW$32        .dwtag  DW_TAG_variable, DW_AT_name("uart1_data_counter")
-     306                            .dwattr $C$DW$32, DW_AT_TI_symbol_name("uart1_data_counter")
-     307                            .dwattr $C$DW$32, DW_AT_type(*$C$DW$T$6)
-     308                            .dwattr $C$DW$32, DW_AT_location[DW_OP_breg13 12]
-     309                    $C$DW$33        .dwtag  DW_TAG_variable, DW_AT_name("dummy")
-     310                            .dwattr $C$DW$33, DW_AT_TI_symbol_name("dummy")
-     311                            .dwattr $C$DW$33, DW_AT_type(*$C$DW$T$6)
-     312                            .dwattr $C$DW$33, DW_AT_location[DW_OP_breg13 13]
-     313                            .dwpsn  file "../co2sensor.c",line 35,column 25,is_stmt,isa 1
-     314                    ;----------------------------------------------------------------------
-     315                    ;  35 | char uart1_data_counter=0;                                             
-     316                    ;  36 | //char confirmation[]="CO2=";                                          
-     317                    ;  37 | char dummy;                                                            
-     318                    ;----------------------------------------------------------------------
-     319 00000006 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |35|  ; [ORIG 16-BIT INS]
-     320 00000008 000CF88D          STRB      A1, [SP, #12]         ; [DPU_3_PIPE] |35|  ; [KEEP 32-BIT INS]
-     321                            .dwpsn  file "../co2sensor.c",line 38,column 6,is_stmt,isa 1
-     322                    ;----------------------------------------------------------------------
-     323                    ;  38 | for(uart1_data_counter = 0; uart1_data_counter < 30; uart1_data_counter
-     324                    ;     | ++)                                                                    
-     325                    ;----------------------------------------------------------------------
-     326 0000000c 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |38|  ; [ORIG 16-BIT INS]
-     327 0000000e 000CF88D          STRB      A1, [SP, #12]         ; [DPU_3_PIPE] |38|  ; [KEEP 32-BIT INS]
-     328                            .dwpsn  file "../co2sensor.c",line 38,column 30,is_stmt,isa 1
-     329 00000012 000CF89D          LDRB      A1, [SP, #12]         ; [DPU_3_PIPE] |38|  ; [KEEP 32-BIT INS]
-     330 00000016 281E              CMP       A1, #30               ; [DPU_3_PIPE] |38|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     276                            .dwattr $C$DW$33, DW_AT_low_pc(receive_co2level)
+     277                            .dwattr $C$DW$33, DW_AT_high_pc(0x00)
+     278                            .dwattr $C$DW$33, DW_AT_TI_symbol_name("receive_co2level")
+     279                            .dwattr $C$DW$33, DW_AT_external
+     280                            .dwattr $C$DW$33, DW_AT_type(*$C$DW$T$44)
+     281                            .dwattr $C$DW$33, DW_AT_TI_begin_file("../co2sensor.c")
+     282                            .dwattr $C$DW$33, DW_AT_TI_begin_line(0x22)
+     283                            .dwattr $C$DW$33, DW_AT_TI_begin_column(0x0a)
+     284                            .dwattr $C$DW$33, DW_AT_decl_file("../co2sensor.c")
+     285                            .dwattr $C$DW$33, DW_AT_decl_line(0x22)
+     286                            .dwattr $C$DW$33, DW_AT_decl_column(0x0a)
+     287                            .dwattr $C$DW$33, DW_AT_TI_max_frame_size(0x18)
+     288                            .dwpsn  file "../co2sensor.c",line 35,column 1,is_stmt,address receive_co2level,isa 1
+     289                    
+     290                            .dwfde $C$DW$CIE, receive_co2level
+     291                    ;----------------------------------------------------------------------
+     292                    ;  34 | uint16_t receive_co2level()                                            
+     293                    ;  36 | char uart1_data[5];                                                    
+     294                    ;----------------------------------------------------------------------
+     295                    
+     296                    ;*****************************************************************************
+     297                    ;* FUNCTION NAME: receive_co2level                                           *
+     298                    ;*                                                                           *
+     299                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     300                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     301                    ;*                           FPEXC,FPSCR                                     *
+     302                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     303                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     304                    ;*                           FPEXC,FPSCR                                     *
+     305                    ;*   Local Frame Size  : 0 Args + 20 Auto + 4 Save = 24 byte                 *
+     306                    ;*****************************************************************************
+     307 00000000           receive_co2level:
+     308                    ;* --------------------------------------------------------------------------*
+     309                            .dwcfi  cfa_offset, 0
+     310 00000000 B500              PUSH      {LR}                  ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     311                            .dwcfi  cfa_offset, 4
+     312                            .dwcfi  save_reg_to_mem, 14, -4
+     313 00000002 0D14F1AD          SUB       SP, SP, #20           ; [DPU_3_PIPE]  ; [KEEP 32-BIT INS]
+     314                            .dwcfi  cfa_offset, 24
+     315                    $C$DW$34        .dwtag  DW_TAG_variable, DW_AT_name("uart1_data")
+     316                            .dwattr $C$DW$34, DW_AT_TI_symbol_name("uart1_data")
+     317                            .dwattr $C$DW$34, DW_AT_type(*$C$DW$T$83)
+     318                            .dwattr $C$DW$34, DW_AT_location[DW_OP_breg13 0]
+     319                    $C$DW$35        .dwtag  DW_TAG_variable, DW_AT_name("uart1_data_counter")
+     320                            .dwattr $C$DW$35, DW_AT_TI_symbol_name("uart1_data_counter")
+     321                            .dwattr $C$DW$35, DW_AT_type(*$C$DW$T$6)
+     322                            .dwattr $C$DW$35, DW_AT_location[DW_OP_breg13 8]
+     323                    $C$DW$36        .dwtag  DW_TAG_variable, DW_AT_name("co2level")
+     324                            .dwattr $C$DW$36, DW_AT_TI_symbol_name("co2level")
+     325                            .dwattr $C$DW$36, DW_AT_type(*$C$DW$T$20)
+     326                            .dwattr $C$DW$36, DW_AT_location[DW_OP_breg13 12]
+     327                    $C$DW$37        .dwtag  DW_TAG_variable, DW_AT_name("dummy")
+     328                            .dwattr $C$DW$37, DW_AT_TI_symbol_name("dummy")
+     329                            .dwattr $C$DW$37, DW_AT_type(*$C$DW$T$6)
+     330                            .dwattr $C$DW$37, DW_AT_location[DW_OP_breg13 16]
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    7
 
-     331 00000018 DA13              BGE       ||$C$L3||             ; [DPU_3_PIPE] |38|  ; [ORIG 16-BIT INS]
-     332                            ; BRANCHCC OCCURS {||$C$L3||}    ; [] |38| 
-     333                    ;* --------------------------------------------------------------------------*
-     334                    ;*   BEGIN LOOP ||$C$L1||
-     335                    ;*
-     336                    ;*   Loop source line                : 38
-     337                    ;*   Loop closing brace source line  : 41
-     338                    ;*   Known Minimum Trip Count        : 1
-     339                    ;*   Known Maximum Trip Count        : 4294967295
-     340                    ;*   Known Max Trip Count Factor     : 1
-     341                    ;* --------------------------------------------------------------------------*
-     342 0000001a           ||$C$L1||:    
-     343                            .dwpsn  file "../co2sensor.c",line 40,column 3,is_stmt,isa 1
+     331                            .dwpsn  file "../co2sensor.c",line 37,column 25,is_stmt,isa 1
+     332                    ;----------------------------------------------------------------------
+     333                    ;  37 | char uart1_data_counter=0;                                             
+     334                    ;  38 | uint32_t co2level;                                                     
+     335                    ;  39 | //char confirmation[]="CO2=";                                          
+     336                    ;  40 | char dummy;                                                            
+     337                    ;----------------------------------------------------------------------
+     338 00000006 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |37|  ; [ORIG 16-BIT INS]
+     339 00000008 0008F88D          STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |37|  ; [KEEP 32-BIT INS]
+     340                            .dwpsn  file "../co2sensor.c",line 41,column 6,is_stmt,isa 1
+     341                    ;----------------------------------------------------------------------
+     342                    ;  41 | for(uart1_data_counter = 0; uart1_data_counter < 30; uart1_data_counter
+     343                    ;     | ++)                                                                    
      344                    ;----------------------------------------------------------------------
-     345                    ;  40 | uart1_data[uart1_data_counter] = 0;                                    
-     346                    ;----------------------------------------------------------------------
-     347 0000001a 100CF89D          LDRB      A2, [SP, #12]         ; [DPU_3_PIPE] |40|  ; [KEEP 32-BIT INS]
-     348 0000001e 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |40|  ; [ORIG 16-BIT INS]
-     349 00000020 000DF801          STRB      A1, [A2, +SP]         ; [DPU_3_PIPE] |40|  ; [KEEP 32-BIT INS]
-     350                            .dwpsn  file "../co2sensor.c",line 38,column 55,is_stmt,isa 1
-     351 00000024 000CF89D          LDRB      A1, [SP, #12]         ; [DPU_3_PIPE] |38|  ; [KEEP 32-BIT INS]
-     352 00000028 1C40              ADDS      A1, A1, #1            ; [DPU_3_PIPE] |38|  ; [ORIG 16-BIT INS]
-     353 0000002a 000CF88D          STRB      A1, [SP, #12]         ; [DPU_3_PIPE] |38|  ; [KEEP 32-BIT INS]
-     354                            .dwpsn  file "../co2sensor.c",line 38,column 30,is_stmt,isa 1
-     355 0000002e 000CF89D          LDRB      A1, [SP, #12]         ; [DPU_3_PIPE] |38|  ; [KEEP 32-BIT INS]
-     356 00000032 281E              CMP       A1, #30               ; [DPU_3_PIPE] |38|  ; [ORIG 16-BIT INS]
-     357 00000034 DBF1              BLT       ||$C$L1||             ; [DPU_3_PIPE] |38|  ; [ORIG 16-BIT INS]
-     358                            ; BRANCHCC OCCURS {||$C$L1||}    ; [] |38| 
-     359                    ;* --------------------------------------------------------------------------*
-     360                            .dwpsn  file "../co2sensor.c",line 42,column 2,is_stmt,isa 1
-     361                    ;----------------------------------------------------------------------
-     362                    ;  42 | while(UARTCharsAvail(UART5_BASE))                                      
+     345 0000000c 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |41|  ; [ORIG 16-BIT INS]
+     346 0000000e 0008F88D          STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |41|  ; [KEEP 32-BIT INS]
+     347                            .dwpsn  file "../co2sensor.c",line 41,column 30,is_stmt,isa 1
+     348 00000012 0008F89D          LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |41|  ; [KEEP 32-BIT INS]
+     349 00000016 281E              CMP       A1, #30               ; [DPU_3_PIPE] |41|  ; [ORIG 16-BIT INS]
+     350 00000018 DA13              BGE       ||$C$L3||             ; [DPU_3_PIPE] |41|  ; [ORIG 16-BIT INS]
+     351                            ; BRANCHCC OCCURS {||$C$L3||}    ; [] |41| 
+     352                    ;* --------------------------------------------------------------------------*
+     353                    ;*   BEGIN LOOP ||$C$L1||
+     354                    ;*
+     355                    ;*   Loop source line                : 41
+     356                    ;*   Loop closing brace source line  : 44
+     357                    ;*   Known Minimum Trip Count        : 1
+     358                    ;*   Known Maximum Trip Count        : 4294967295
+     359                    ;*   Known Max Trip Count Factor     : 1
+     360                    ;* --------------------------------------------------------------------------*
+     361 0000001a           ||$C$L1||:    
+     362                            .dwpsn  file "../co2sensor.c",line 43,column 3,is_stmt,isa 1
      363                    ;----------------------------------------------------------------------
-     364 00000036 E004              B         ||$C$L3||             ; [DPU_3_PIPE] |42|  ; [ORIG 16-BIT INS]
-     365                            ; BRANCH OCCURS {||$C$L3||}      ; [] |42| 
-     366                    ;* --------------------------------------------------------------------------*
-     367 00000038           ||$C$L2||:    
-     368                            .dwpsn  file "../co2sensor.c",line 44,column 3,is_stmt,isa 1
-     369                    ;----------------------------------------------------------------------
-     370                    ;  44 | dummy = UARTCharGet(UART1_BASE);                                       
-     371                    ;----------------------------------------------------------------------
-     372 00000038 4813              LDR       A1, $C$CON7           ; [DPU_3_PIPE] |44|  ; [ORIG 16-BIT INS]
-     373                    $C$DW$34        .dwtag  DW_TAG_TI_branch
-     374                            .dwattr $C$DW$34, DW_AT_low_pc(0x00)
-     375                            .dwattr $C$DW$34, DW_AT_name("UARTCharGet")
-     376                            .dwattr $C$DW$34, DW_AT_TI_call
-     377 0000003a FFFEF7FF!         BL        UARTCharGet           ; [DPU_3_PIPE] |44|  ; [KEEP 32-BIT INS]
-     378                            ; CALL OCCURS {UARTCharGet }     ; [] |44| 
-     379 0000003e 000DF88D          STRB      A1, [SP, #13]         ; [DPU_3_PIPE] |44|  ; [KEEP 32-BIT INS]
-     380                    ;* --------------------------------------------------------------------------*
-     381                    ;*   BEGIN LOOP ||$C$L3||
-     382                    ;* --------------------------------------------------------------------------*
-     383 00000042           ||$C$L3||:    
-     384                            .dwpsn  file "../co2sensor.c",line 42,column 2,is_stmt,isa 1
-     385 00000042 4812              LDR       A1, $C$CON8           ; [DPU_3_PIPE] |42|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     364                    ;  43 | uart1_data[uart1_data_counter] = 0;                                    
+     365                    ;----------------------------------------------------------------------
+     366 0000001a 1008F89D          LDRB      A2, [SP, #8]          ; [DPU_3_PIPE] |43|  ; [KEEP 32-BIT INS]
+     367 0000001e 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |43|  ; [ORIG 16-BIT INS]
+     368 00000020 000DF801          STRB      A1, [A2, +SP]         ; [DPU_3_PIPE] |43|  ; [KEEP 32-BIT INS]
+     369                            .dwpsn  file "../co2sensor.c",line 41,column 55,is_stmt,isa 1
+     370 00000024 0008F89D          LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |41|  ; [KEEP 32-BIT INS]
+     371 00000028 1C40              ADDS      A1, A1, #1            ; [DPU_3_PIPE] |41|  ; [ORIG 16-BIT INS]
+     372 0000002a 0008F88D          STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |41|  ; [KEEP 32-BIT INS]
+     373                            .dwpsn  file "../co2sensor.c",line 41,column 30,is_stmt,isa 1
+     374 0000002e 0008F89D          LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |41|  ; [KEEP 32-BIT INS]
+     375 00000032 281E              CMP       A1, #30               ; [DPU_3_PIPE] |41|  ; [ORIG 16-BIT INS]
+     376 00000034 DBF1              BLT       ||$C$L1||             ; [DPU_3_PIPE] |41|  ; [ORIG 16-BIT INS]
+     377                            ; BRANCHCC OCCURS {||$C$L1||}    ; [] |41| 
+     378                    ;* --------------------------------------------------------------------------*
+     379                            .dwpsn  file "../co2sensor.c",line 45,column 2,is_stmt,isa 1
+     380                    ;----------------------------------------------------------------------
+     381                    ;  45 | while(UARTCharsAvail(UART5_BASE))                                      
+     382                    ;----------------------------------------------------------------------
+     383 00000036 E004              B         ||$C$L3||             ; [DPU_3_PIPE] |45|  ; [ORIG 16-BIT INS]
+     384                            ; BRANCH OCCURS {||$C$L3||}      ; [] |45| 
+     385                    ;* --------------------------------------------------------------------------*
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    8
 
-     386                    $C$DW$35        .dwtag  DW_TAG_TI_branch
-     387                            .dwattr $C$DW$35, DW_AT_low_pc(0x00)
-     388                            .dwattr $C$DW$35, DW_AT_name("UARTCharsAvail")
-     389                            .dwattr $C$DW$35, DW_AT_TI_call
-     390 00000044 FFFEF7FF!         BL        UARTCharsAvail        ; [DPU_3_PIPE] |42|  ; [KEEP 32-BIT INS]
-     391                            ; CALL OCCURS {UARTCharsAvail }  ; [] |42| 
-     392 00000048 2800              CMP       A1, #0                ; [DPU_3_PIPE] |42|  ; [ORIG 16-BIT INS]
-     393 0000004a D1F5              BNE       ||$C$L2||             ; [DPU_3_PIPE] |42|  ; [ORIG 16-BIT INS]
-     394                            ; BRANCHCC OCCURS {||$C$L2||}    ; [] |42| 
-     395                    ;* --------------------------------------------------------------------------*
-     396                            .dwpsn  file "../co2sensor.c",line 46,column 2,is_stmt,isa 1
-     397                    ;----------------------------------------------------------------------
-     398                    ;  46 | uart1_data_counter = 0;                                                
-     399                    ;----------------------------------------------------------------------
-     400 0000004c 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |46|  ; [ORIG 16-BIT INS]
-     401 0000004e 000CF88D          STRB      A1, [SP, #12]         ; [DPU_3_PIPE] |46|  ; [KEEP 32-BIT INS]
-     402                            .dwpsn  file "../co2sensor.c",line 47,column 2,is_stmt,isa 1
-     403                    ;----------------------------------------------------------------------
-     404                    ;  47 | UARTCharPut(UART1_BASE, 'R');                                          
-     405                    ;----------------------------------------------------------------------
-     406 00000052 480D              LDR       A1, $C$CON7           ; [DPU_3_PIPE] |47|  ; [ORIG 16-BIT INS]
-     407 00000054 2152              MOVS      A2, #82               ; [DPU_3_PIPE] |47|  ; [ORIG 16-BIT INS]
-     408                    $C$DW$36        .dwtag  DW_TAG_TI_branch
-     409                            .dwattr $C$DW$36, DW_AT_low_pc(0x00)
-     410                            .dwattr $C$DW$36, DW_AT_name("UARTCharPut")
-     411                            .dwattr $C$DW$36, DW_AT_TI_call
-     412 00000056 FFFEF7FF!         BL        UARTCharPut           ; [DPU_3_PIPE] |47|  ; [KEEP 32-BIT INS]
-     413                            ; CALL OCCURS {UARTCharPut }     ; [] |47| 
-     414                            .dwpsn  file "../co2sensor.c",line 49,column 2,is_stmt,isa 1
-     415                    ;----------------------------------------------------------------------
-     416                    ;  49 | while((dummy = UARTCharGet(UART1_BASE))!=10)                           
-     417                    ;----------------------------------------------------------------------
-     418 0000005a E009              B         ||$C$L5||             ; [DPU_3_PIPE] |49|  ; [ORIG 16-BIT INS]
-     419                            ; BRANCH OCCURS {||$C$L5||}      ; [] |49| 
-     420                    ;* --------------------------------------------------------------------------*
-     421 0000005c           ||$C$L4||:    
-     422                            .dwpsn  file "../co2sensor.c",line 51,column 3,is_stmt,isa 1
-     423                    ;----------------------------------------------------------------------
-     424                    ;  51 | uart1_data[uart1_data_counter++] = UARTCharGet(UART1_BASE);            
-     425                    ;----------------------------------------------------------------------
-     426 0000005c 480A              LDR       A1, $C$CON7           ; [DPU_3_PIPE] |51|  ; [ORIG 16-BIT INS]
-     427                    $C$DW$37        .dwtag  DW_TAG_TI_branch
-     428                            .dwattr $C$DW$37, DW_AT_low_pc(0x00)
-     429                            .dwattr $C$DW$37, DW_AT_name("UARTCharGet")
-     430                            .dwattr $C$DW$37, DW_AT_TI_call
-     431 0000005e FFFEF7FF!         BL        UARTCharGet           ; [DPU_3_PIPE] |51|  ; [KEEP 32-BIT INS]
-     432                            ; CALL OCCURS {UARTCharGet }     ; [] |51| 
-     433 00000062 100CF89D          LDRB      A2, [SP, #12]         ; [DPU_3_PIPE] |51|  ; [KEEP 32-BIT INS]
-     434 00000066 000DF801          STRB      A1, [A2, +SP]         ; [DPU_3_PIPE] |51|  ; [KEEP 32-BIT INS]
-     435 0000006a 1C49              ADDS      A2, A2, #1            ; [DPU_3_PIPE] |51|  ; [ORIG 16-BIT INS]
-     436 0000006c 100CF88D          STRB      A2, [SP, #12]         ; [DPU_3_PIPE] |51|  ; [KEEP 32-BIT INS]
-     437                    ;* --------------------------------------------------------------------------*
-     438                    ;*   BEGIN LOOP ||$C$L5||
+     386 00000038           ||$C$L2||:    
+     387                            .dwpsn  file "../co2sensor.c",line 47,column 3,is_stmt,isa 1
+     388                    ;----------------------------------------------------------------------
+     389                    ;  47 | dummy = UARTCharGet(UART1_BASE);                                       
+     390                    ;----------------------------------------------------------------------
+     391 00000038 4819              LDR       A1, $C$CON7           ; [DPU_3_PIPE] |47|  ; [ORIG 16-BIT INS]
+     392                    $C$DW$38        .dwtag  DW_TAG_TI_branch
+     393                            .dwattr $C$DW$38, DW_AT_low_pc(0x00)
+     394                            .dwattr $C$DW$38, DW_AT_name("UARTCharGet")
+     395                            .dwattr $C$DW$38, DW_AT_TI_call
+     396 0000003a FFFEF7FF!         BL        UARTCharGet           ; [DPU_3_PIPE] |47|  ; [KEEP 32-BIT INS]
+     397                            ; CALL OCCURS {UARTCharGet }     ; [] |47| 
+     398 0000003e 0010F88D          STRB      A1, [SP, #16]         ; [DPU_3_PIPE] |47|  ; [KEEP 32-BIT INS]
+     399                    ;* --------------------------------------------------------------------------*
+     400                    ;*   BEGIN LOOP ||$C$L3||
+     401                    ;* --------------------------------------------------------------------------*
+     402 00000042           ||$C$L3||:    
+     403                            .dwpsn  file "../co2sensor.c",line 45,column 2,is_stmt,isa 1
+     404 00000042 4818              LDR       A1, $C$CON8           ; [DPU_3_PIPE] |45|  ; [ORIG 16-BIT INS]
+     405                    $C$DW$39        .dwtag  DW_TAG_TI_branch
+     406                            .dwattr $C$DW$39, DW_AT_low_pc(0x00)
+     407                            .dwattr $C$DW$39, DW_AT_name("UARTCharsAvail")
+     408                            .dwattr $C$DW$39, DW_AT_TI_call
+     409 00000044 FFFEF7FF!         BL        UARTCharsAvail        ; [DPU_3_PIPE] |45|  ; [KEEP 32-BIT INS]
+     410                            ; CALL OCCURS {UARTCharsAvail }  ; [] |45| 
+     411 00000048 2800              CMP       A1, #0                ; [DPU_3_PIPE] |45|  ; [ORIG 16-BIT INS]
+     412 0000004a D1F5              BNE       ||$C$L2||             ; [DPU_3_PIPE] |45|  ; [ORIG 16-BIT INS]
+     413                            ; BRANCHCC OCCURS {||$C$L2||}    ; [] |45| 
+     414                    ;* --------------------------------------------------------------------------*
+     415                            .dwpsn  file "../co2sensor.c",line 49,column 2,is_stmt,isa 1
+     416                    ;----------------------------------------------------------------------
+     417                    ;  49 | uart1_data_counter = 0;                                                
+     418                    ;----------------------------------------------------------------------
+     419 0000004c 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |49|  ; [ORIG 16-BIT INS]
+     420 0000004e 0008F88D          STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |49|  ; [KEEP 32-BIT INS]
+     421                            .dwpsn  file "../co2sensor.c",line 50,column 2,is_stmt,isa 1
+     422                    ;----------------------------------------------------------------------
+     423                    ;  50 | UARTCharPut(UART1_BASE, 'R');                                          
+     424                    ;----------------------------------------------------------------------
+     425 00000052 4813              LDR       A1, $C$CON7           ; [DPU_3_PIPE] |50|  ; [ORIG 16-BIT INS]
+     426 00000054 2152              MOVS      A2, #82               ; [DPU_3_PIPE] |50|  ; [ORIG 16-BIT INS]
+     427                    $C$DW$40        .dwtag  DW_TAG_TI_branch
+     428                            .dwattr $C$DW$40, DW_AT_low_pc(0x00)
+     429                            .dwattr $C$DW$40, DW_AT_name("UARTCharPut")
+     430                            .dwattr $C$DW$40, DW_AT_TI_call
+     431 00000056 FFFEF7FF!         BL        UARTCharPut           ; [DPU_3_PIPE] |50|  ; [KEEP 32-BIT INS]
+     432                            ; CALL OCCURS {UARTCharPut }     ; [] |50| 
+     433                            .dwpsn  file "../co2sensor.c",line 52,column 2,is_stmt,isa 1
+     434                    ;----------------------------------------------------------------------
+     435                    ;  52 | while((dummy = UARTCharGet(UART1_BASE))!=10)                           
+     436                    ;----------------------------------------------------------------------
+     437 0000005a E010              B         ||$C$L5||             ; [DPU_3_PIPE] |52|  ; [ORIG 16-BIT INS]
+     438                            ; BRANCH OCCURS {||$C$L5||}      ; [] |52| 
      439                    ;* --------------------------------------------------------------------------*
-     440 00000070           ||$C$L5||:    
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     440 0000005c           ||$C$L4||:    
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    9
 
-     441                            .dwpsn  file "../co2sensor.c",line 49,column 8,is_stmt,isa 1
-     442 00000070 4805              LDR       A1, $C$CON7           ; [DPU_3_PIPE] |49|  ; [ORIG 16-BIT INS]
-     443                    $C$DW$38        .dwtag  DW_TAG_TI_branch
-     444                            .dwattr $C$DW$38, DW_AT_low_pc(0x00)
-     445                            .dwattr $C$DW$38, DW_AT_name("UARTCharGet")
-     446                            .dwattr $C$DW$38, DW_AT_TI_call
-     447 00000072 FFFEF7FF!         BL        UARTCharGet           ; [DPU_3_PIPE] |49|  ; [KEEP 32-BIT INS]
-     448                            ; CALL OCCURS {UARTCharGet }     ; [] |49| 
-     449 00000076 B2C0              UXTB      A1, A1                ; [DPU_3_PIPE] |49|  ; [ORIG 16-BIT INS]
-     450 00000078 280A              CMP       A1, #10               ; [DPU_3_PIPE] |49|  ; [ORIG 16-BIT INS]
-     451 0000007a 000DF88D          STRB      A1, [SP, #13]         ; [DPU_3_PIPE] |49|  ; [KEEP 32-BIT INS]
-     452 0000007e D1ED              BNE       ||$C$L4||             ; [DPU_3_PIPE] |49|  ; [ORIG 16-BIT INS]
-     453                            ; BRANCHCC OCCURS {||$C$L4||}    ; [] |49| 
+     441                            .dwpsn  file "../co2sensor.c",line 54,column 3,is_stmt,isa 1
+     442                    ;----------------------------------------------------------------------
+     443                    ;  54 | if(dummy>='0' && dummy<='9')                                           
+     444                    ;----------------------------------------------------------------------
+     445 0000005c 0010F89D          LDRB      A1, [SP, #16]         ; [DPU_3_PIPE] |54|  ; [KEEP 32-BIT INS]
+     446 00000060 2830              CMP       A1, #48               ; [DPU_3_PIPE] |54|  ; [ORIG 16-BIT INS]
+     447 00000062 DB0C              BLT       ||$C$L5||             ; [DPU_3_PIPE] |54|  ; [ORIG 16-BIT INS]
+     448                            ; BRANCHCC OCCURS {||$C$L5||}    ; [] |54| 
+     449                    ;* --------------------------------------------------------------------------*
+     450 00000064 0010F89D          LDRB      A1, [SP, #16]         ; [DPU_3_PIPE] |54|  ; [KEEP 32-BIT INS]
+     451 00000068 2839              CMP       A1, #57               ; [DPU_3_PIPE] |54|  ; [ORIG 16-BIT INS]
+     452 0000006a DC08              BGT       ||$C$L5||             ; [DPU_3_PIPE] |54|  ; [ORIG 16-BIT INS]
+     453                            ; BRANCHCC OCCURS {||$C$L5||}    ; [] |54| 
      454                    ;* --------------------------------------------------------------------------*
-     455                            .dwpsn  file "../co2sensor.c",line 54,column 1,is_stmt,isa 1
+     455                            .dwpsn  file "../co2sensor.c",line 55,column 4,is_stmt,isa 1
      456                    ;----------------------------------------------------------------------
-     457                    ;  54 | return 1;                                                              
-     458                    ;  55 | #if 0                                                                  
-     459                    ;  56 | while(1)                                                               
-     460                    ;  58 |         dummy = UARTCharGetNonBlocking(UART1_BASE);                    
-     461                    ;  59 |         if((dummy>'!') && (dummy < '}'))                               
-     462                    ;  61 |                 uart1_data[uart1_data_counter++] = dummy;              
-     463                    ;  62 |                 if(uart1_data_counter == 254)                          
-     464                    ;  63 |                         uart1_data_counter = 0;                        
-     465                    ;  64 |                 if(strstr((const char*)uart1_data, confirmation))      
-     466                    ;  66 |                         co2level[co2level_counter++] = UARTCharGet(UART
-     467                    ;     | 1_BASE);                                                               
-     468                    ;  67 |                         co2level[co2level_counter++] = UARTCharGet(UART
-     469                    ;     | 1_BASE);                                                               
-     470                    ;  68 |                         co2level[co2level_counter++] = UARTCharGet(UART
-     471                    ;     | 1_BASE);                                                               
-     472                    ;  69 |                         co2level[co2level_counter++] = UARTCharGet(UART
-     473                    ;     | 1_BASE);                                                               
-     474                    ;  70 |                         return 1;                                      
-     475                    ;  74 |         timeout++;                                                     
-     476                    ;  75 |         if(timeout>10000000)                                           
-     477                    ;  77 |                 return 0;                                              
-     478                    ;  80 | #endif                                                                 
-     479                    ;----------------------------------------------------------------------
-     480 00000080 2001              MOVS      A1, #1                ; [DPU_3_PIPE] |54|  ; [ORIG 16-BIT INS]
-     481                            .dwpsn  file "../co2sensor.c",line 81,column 1,is_stmt,isa 1
-     482 00000082 B005              ADD       SP, SP, #20           ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-     483                            .dwcfi  cfa_offset, 4
-     484                    $C$DW$39        .dwtag  DW_TAG_TI_branch
-     485                            .dwattr $C$DW$39, DW_AT_low_pc(0x00)
-     486                            .dwattr $C$DW$39, DW_AT_TI_return
-     487 00000084 BD00              POP       {PC}                  ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-     488                            .dwcfi  cfa_offset, 0
-     489                            ; BRANCH OCCURS                  ; [] 
-     490                            .dwattr $C$DW$30, DW_AT_TI_end_file("../co2sensor.c")
-     491                            .dwattr $C$DW$30, DW_AT_TI_end_line(0x51)
-     492                            .dwattr $C$DW$30, DW_AT_TI_end_column(0x01)
-     493                            .dwendentry
-     494                            .dwendtag $C$DW$30
-     495                    
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     457                    ;  55 | uart1_data[uart1_data_counter++] = dummy;                              
+     458                    ;----------------------------------------------------------------------
+     459 0000006c 0008F89D          LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |55|  ; [KEEP 32-BIT INS]
+     460 00000070 1C41              ADDS      A2, A1, #1            ; [DPU_3_PIPE] |55|  ; [ORIG 16-BIT INS]
+     461 00000072 1008F88D          STRB      A2, [SP, #8]          ; [DPU_3_PIPE] |55|  ; [KEEP 32-BIT INS]
+     462 00000076 1010F89D          LDRB      A2, [SP, #16]         ; [DPU_3_PIPE] |55|  ; [KEEP 32-BIT INS]
+     463 0000007a 100DF800          STRB      A2, [A1, +SP]         ; [DPU_3_PIPE] |55|  ; [KEEP 32-BIT INS]
+     464                    ;* --------------------------------------------------------------------------*
+     465                    ;*   BEGIN LOOP ||$C$L5||
+     466                    ;* --------------------------------------------------------------------------*
+     467 0000007e           ||$C$L5||:    
+     468                            .dwpsn  file "../co2sensor.c",line 52,column 8,is_stmt,isa 1
+     469 0000007e 4808              LDR       A1, $C$CON7           ; [DPU_3_PIPE] |52|  ; [ORIG 16-BIT INS]
+     470                    $C$DW$41        .dwtag  DW_TAG_TI_branch
+     471                            .dwattr $C$DW$41, DW_AT_low_pc(0x00)
+     472                            .dwattr $C$DW$41, DW_AT_name("UARTCharGet")
+     473                            .dwattr $C$DW$41, DW_AT_TI_call
+     474 00000080 FFFEF7FF!         BL        UARTCharGet           ; [DPU_3_PIPE] |52|  ; [KEEP 32-BIT INS]
+     475                            ; CALL OCCURS {UARTCharGet }     ; [] |52| 
+     476 00000084 B2C0              UXTB      A1, A1                ; [DPU_3_PIPE] |52|  ; [ORIG 16-BIT INS]
+     477 00000086 280A              CMP       A1, #10               ; [DPU_3_PIPE] |52|  ; [ORIG 16-BIT INS]
+     478 00000088 0010F88D          STRB      A1, [SP, #16]         ; [DPU_3_PIPE] |52|  ; [KEEP 32-BIT INS]
+     479 0000008c D1E6              BNE       ||$C$L4||             ; [DPU_3_PIPE] |52|  ; [ORIG 16-BIT INS]
+     480                            ; BRANCHCC OCCURS {||$C$L4||}    ; [] |52| 
+     481                    ;* --------------------------------------------------------------------------*
+     482                            .dwpsn  file "../co2sensor.c",line 57,column 2,is_stmt,isa 1
+     483                    ;----------------------------------------------------------------------
+     484                    ;  57 | atoui(&co2level, uart1_data);                                          
+     485                    ;----------------------------------------------------------------------
+     486 0000008e A803              ADD       A1, SP, #12           ; [DPU_3_PIPE] |57|  ; [ORIG 16-BIT INS]
+     487 00000090 4669              MOV       A2, SP                ; [DPU_3_PIPE] |57|  ; [ORIG 16-BIT INS]
+     488                    $C$DW$42        .dwtag  DW_TAG_TI_branch
+     489                            .dwattr $C$DW$42, DW_AT_low_pc(0x00)
+     490                            .dwattr $C$DW$42, DW_AT_name("atoui")
+     491                            .dwattr $C$DW$42, DW_AT_TI_call
+     492 00000092 FFFEF7FF!         BL        atoui                 ; [DPU_3_PIPE] |57|  ; [KEEP 32-BIT INS]
+     493                            ; CALL OCCURS {atoui }           ; [] |57| 
+     494                            .dwpsn  file "../co2sensor.c",line 58,column 2,is_stmt,isa 1
+     495                    ;----------------------------------------------------------------------
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   10
 
-     496 00000000                   .sect   ".text:read_co2level"
-     497                            .clink
-     498                            .thumbfunc read_co2level
-     499 00000000                   .thumb
-     500                            .global read_co2level
-     501                    
-     502                    $C$DW$40        .dwtag  DW_TAG_subprogram, DW_AT_name("read_co2level")
-     503                            .dwattr $C$DW$40, DW_AT_low_pc(read_co2level)
-     504                            .dwattr $C$DW$40, DW_AT_high_pc(0x00)
-     505                            .dwattr $C$DW$40, DW_AT_TI_symbol_name("read_co2level")
-     506                            .dwattr $C$DW$40, DW_AT_external
-     507                            .dwattr $C$DW$40, DW_AT_type(*$C$DW$T$39)
-     508                            .dwattr $C$DW$40, DW_AT_TI_begin_file("../co2sensor.c")
-     509                            .dwattr $C$DW$40, DW_AT_TI_begin_line(0x53)
-     510                            .dwattr $C$DW$40, DW_AT_TI_begin_column(0x0a)
-     511                            .dwattr $C$DW$40, DW_AT_decl_file("../co2sensor.c")
-     512                            .dwattr $C$DW$40, DW_AT_decl_line(0x53)
-     513                            .dwattr $C$DW$40, DW_AT_decl_column(0x0a)
-     514                            .dwattr $C$DW$40, DW_AT_TI_max_frame_size(0x00)
-     515                            .dwpsn  file "../co2sensor.c",line 84,column 1,is_stmt,address read_co2level,isa 1
-     516                    
-     517                            .dwfde $C$DW$CIE, read_co2level
-     518                    ;----------------------------------------------------------------------
-     519                    ;  83 | uint16_t read_co2level()                                               
-     520                    ;----------------------------------------------------------------------
-     521                    
-     522                    ;*****************************************************************************
-     523                    ;* FUNCTION NAME: read_co2level                                              *
-     524                    ;*                                                                           *
-     525                    ;*   Regs Modified     : A1,SR                                               *
-     526                    ;*   Regs Used         : A1,LR,SR                                            *
-     527                    ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
-     528                    ;*****************************************************************************
-     529 00000000           read_co2level:
-     530                    ;* --------------------------------------------------------------------------*
-     531                            .dwcfi  cfa_offset, 0
-     532                            .dwpsn  file "../co2sensor.c",line 85,column 1,is_stmt,isa 1
-     533                    ;----------------------------------------------------------------------
-     534                    ;  85 | return 0;                                                              
+     496                    ;  58 | return (uint16_t) co2level;                                            
+     497                    ;----------------------------------------------------------------------
+     498 00000096 000CF8BD          LDRH      A1, [SP, #12]         ; [DPU_3_PIPE] |58|  ; [KEEP 32-BIT INS]
+     499                            .dwpsn  file "../co2sensor.c",line 59,column 1,is_stmt,isa 1
+     500 0000009a B005              ADD       SP, SP, #20           ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     501                            .dwcfi  cfa_offset, 4
+     502                    $C$DW$43        .dwtag  DW_TAG_TI_branch
+     503                            .dwattr $C$DW$43, DW_AT_low_pc(0x00)
+     504                            .dwattr $C$DW$43, DW_AT_TI_return
+     505 0000009c BD00              POP       {PC}                  ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     506                            .dwcfi  cfa_offset, 0
+     507                            ; BRANCH OCCURS                  ; [] 
+     508                            .dwattr $C$DW$33, DW_AT_TI_end_file("../co2sensor.c")
+     509                            .dwattr $C$DW$33, DW_AT_TI_end_line(0x3b)
+     510                            .dwattr $C$DW$33, DW_AT_TI_end_column(0x01)
+     511                            .dwendentry
+     512                            .dwendtag $C$DW$33
+     513                    
+     514 00000000                   .sect   ".text:test_co2comm"
+     515                            .clink
+     516                            .thumbfunc test_co2comm
+     517 00000000                   .thumb
+     518                            .global test_co2comm
+     519                    
+     520                    $C$DW$44        .dwtag  DW_TAG_subprogram, DW_AT_name("test_co2comm")
+     521                            .dwattr $C$DW$44, DW_AT_low_pc(test_co2comm)
+     522                            .dwattr $C$DW$44, DW_AT_high_pc(0x00)
+     523                            .dwattr $C$DW$44, DW_AT_TI_symbol_name("test_co2comm")
+     524                            .dwattr $C$DW$44, DW_AT_external
+     525                            .dwattr $C$DW$44, DW_AT_TI_begin_file("../co2sensor.c")
+     526                            .dwattr $C$DW$44, DW_AT_TI_begin_line(0x3d)
+     527                            .dwattr $C$DW$44, DW_AT_TI_begin_column(0x06)
+     528                            .dwattr $C$DW$44, DW_AT_decl_file("../co2sensor.c")
+     529                            .dwattr $C$DW$44, DW_AT_decl_line(0x3d)
+     530                            .dwattr $C$DW$44, DW_AT_decl_column(0x06)
+     531                            .dwattr $C$DW$44, DW_AT_TI_max_frame_size(0x08)
+     532                            .dwpsn  file "../co2sensor.c",line 62,column 1,is_stmt,address test_co2comm,isa 1
+     533                    
+     534                            .dwfde $C$DW$CIE, test_co2comm
      535                    ;----------------------------------------------------------------------
-     536 00000000 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |85|  ; [ORIG 16-BIT INS]
-     537                            .dwpsn  file "../co2sensor.c",line 86,column 1,is_stmt,isa 1
-     538                    $C$DW$41        .dwtag  DW_TAG_TI_branch
-     539                            .dwattr $C$DW$41, DW_AT_low_pc(0x00)
-     540                            .dwattr $C$DW$41, DW_AT_TI_return
-     541 00000002 4770              BX        LR                    ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-     542                            ; BRANCH OCCURS                  ; [] 
-     543                            .dwattr $C$DW$40, DW_AT_TI_end_file("../co2sensor.c")
-     544                            .dwattr $C$DW$40, DW_AT_TI_end_line(0x56)
-     545                            .dwattr $C$DW$40, DW_AT_TI_end_column(0x01)
-     546                            .dwendentry
-     547                            .dwendtag $C$DW$40
-     548                    
-     549                    ;******************************************************************************
-     550                    ;* CONSTANT TABLE                                                             *
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     536                    ;  61 | void test_co2comm()                                                    
+     537                    ;----------------------------------------------------------------------
+     538                    
+     539                    ;*****************************************************************************
+     540                    ;* FUNCTION NAME: test_co2comm                                               *
+     541                    ;*                                                                           *
+     542                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     543                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     544                    ;*                           FPEXC,FPSCR                                     *
+     545                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
+     546                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
+     547                    ;*                           FPEXC,FPSCR                                     *
+     548                    ;*   Local Frame Size  : 0 Args + 0 Auto + 4 Save = 4 byte                   *
+     549                    ;*****************************************************************************
+     550 00000000           test_co2comm:
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   11
 
-     551                    ;******************************************************************************
-     552 00000036                   .sect   ".text:init_co2sensor"
-     553                            .align  4
-     554 00000036 180146C0  ||$C$CON1||:    .bits   -268429311,32
-         0000003a 0000F000 
-     555                            .align  4
-     556 0000003a 0802F000  ||$C$CON2||:    .bits   -268433406,32
-         0000003e 0000F000 
-     557                            .align  4
-     558 0000003e 1002F000  ||$C$CON3||:    .bits   135170,32
-         00000042 00000002 
-     559                            .align  4
-     560 00000042 14020002  ||$C$CON4||:    .bits   136194,32
-         00000046 00000002 
-     561                            .align  4
-     562 00000046 60000002  ||$C$CON5||:    .bits   1073766400,32
-         0000004a 00004000 
-     563                            .align  4
-     564 0000004a D0004000  ||$C$CON6||:    .bits   1073795072,32
-         0000004e 00004000 
-     565                    ;******************************************************************************
-     566                    ;* CONSTANT TABLE                                                             *
-     567                    ;******************************************************************************
-     568 00000086                   .sect   ".text:receive_co2level"
-     569                            .align  4
-     570 00000086 D00046C0  ||$C$CON7||:    .bits   1073795072,32
-         0000008a 00004000 
-     571                            .align  4
-     572 0000008a 10004000  ||$C$CON8||:    .bits   1073811456,32
-         0000008e 00004001 
-     573                    ;*****************************************************************************
-     574                    ;* UNDEFINED EXTERNAL REFERENCES                                             *
-     575                    ;*****************************************************************************
-     576                            .global GPIOPinConfigure
-     577                            .global GPIOPinTypeUART
-     578                            .global SysCtlPeripheralEnable
-     579                            .global SysCtlClockGet
-     580                            .global UARTConfigSetExpClk
-     581                            .global UARTCharsAvail
-     582                            .global UARTCharGet
-     583                            .global UARTCharPut
-     584                    
-     585                    ;******************************************************************************
-     586                    ;* BUILD ATTRIBUTES                                                           *
-     587                    ;******************************************************************************
-     588                            .battr "aeabi", Tag_File, 1, Tag_ABI_PCS_wchar_t(2)
-     589                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_rounding(0)
-     590                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_denormal(0)
-     591                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_exceptions(0)
-     592                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_number_model(1)
-     593                            .battr "aeabi", Tag_File, 1, Tag_ABI_enum_size(0)
-     594                            .battr "aeabi", Tag_File, 1, Tag_ABI_optimization_goals(5)
-     595                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_optimization_goals(0)
-     596                            .battr "TI", Tag_File, 1, Tag_Bitfield_layout(2)
-     597                            .battr "TI", Tag_File, 1, Tag_FP_interface(1)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     551                    ;* --------------------------------------------------------------------------*
+     552                            .dwcfi  cfa_offset, 0
+     553 00000000 B508              PUSH      {A4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     554                            .dwcfi  cfa_offset, 8
+     555                            .dwcfi  save_reg_to_mem, 14, -4
+     556                            .dwcfi  save_reg_to_mem, 3, -8
+     557                            .dwpsn  file "../co2sensor.c",line 63,column 2,is_stmt,isa 1
+     558                    ;----------------------------------------------------------------------
+     559                    ;  63 | init_co2sensor();                                                      
+     560                    ;----------------------------------------------------------------------
+     561                    $C$DW$45        .dwtag  DW_TAG_TI_branch
+     562                            .dwattr $C$DW$45, DW_AT_low_pc(0x00)
+     563                            .dwattr $C$DW$45, DW_AT_name("init_co2sensor")
+     564                            .dwattr $C$DW$45, DW_AT_TI_call
+     565 00000002 FFFEF7FF!         BL        init_co2sensor        ; [DPU_3_PIPE] |63|  ; [KEEP 32-BIT INS]
+     566                            ; CALL OCCURS {init_co2sensor }  ; [] |63| 
+     567                            .dwpsn  file "../co2sensor.c",line 64,column 2,is_stmt,isa 1
+     568                    ;----------------------------------------------------------------------
+     569                    ;  64 | receive_co2level();                                                    
+     570                    ;----------------------------------------------------------------------
+     571                    $C$DW$46        .dwtag  DW_TAG_TI_branch
+     572                            .dwattr $C$DW$46, DW_AT_low_pc(0x00)
+     573                            .dwattr $C$DW$46, DW_AT_name("receive_co2level")
+     574                            .dwattr $C$DW$46, DW_AT_TI_call
+     575 00000006 FFFEF7FF!         BL        receive_co2level      ; [DPU_3_PIPE] |64|  ; [KEEP 32-BIT INS]
+     576                            ; CALL OCCURS {receive_co2level }  ; [] |64| 
+     577                            .dwpsn  file "../co2sensor.c",line 65,column 1,is_stmt,isa 1
+     578                    $C$DW$47        .dwtag  DW_TAG_TI_branch
+     579                            .dwattr $C$DW$47, DW_AT_low_pc(0x00)
+     580                            .dwattr $C$DW$47, DW_AT_TI_return
+     581 0000000a BD08              POP       {A4, PC}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     582                            .dwcfi  cfa_offset, 0
+     583                            ; BRANCH OCCURS                  ; [] 
+     584                            .dwattr $C$DW$44, DW_AT_TI_end_file("../co2sensor.c")
+     585                            .dwattr $C$DW$44, DW_AT_TI_end_line(0x41)
+     586                            .dwattr $C$DW$44, DW_AT_TI_end_column(0x01)
+     587                            .dwendentry
+     588                            .dwendtag $C$DW$44
+     589                    
+     590 00000000                   .sect   ".text:read_co2level"
+     591                            .clink
+     592                            .thumbfunc read_co2level
+     593 00000000                   .thumb
+     594                            .global read_co2level
+     595                    
+     596                    $C$DW$48        .dwtag  DW_TAG_subprogram, DW_AT_name("read_co2level")
+     597                            .dwattr $C$DW$48, DW_AT_low_pc(read_co2level)
+     598                            .dwattr $C$DW$48, DW_AT_high_pc(0x00)
+     599                            .dwattr $C$DW$48, DW_AT_TI_symbol_name("read_co2level")
+     600                            .dwattr $C$DW$48, DW_AT_external
+     601                            .dwattr $C$DW$48, DW_AT_type(*$C$DW$T$44)
+     602                            .dwattr $C$DW$48, DW_AT_TI_begin_file("../co2sensor.c")
+     603                            .dwattr $C$DW$48, DW_AT_TI_begin_line(0x43)
+     604                            .dwattr $C$DW$48, DW_AT_TI_begin_column(0x0a)
+     605                            .dwattr $C$DW$48, DW_AT_decl_file("../co2sensor.c")
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   12
 
-     598                    
-     599                    ;******************************************************************************
-     600                    ;* TYPE INFORMATION                                                           *
-     601                    ;******************************************************************************
-     602                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
-     603                            .dwattr $C$DW$T$2, DW_AT_name("void")
-     604                    $C$DW$T$3       .dwtag  DW_TAG_pointer_type
-     605                            .dwattr $C$DW$T$3, DW_AT_type(*$C$DW$T$2)
-     606                            .dwattr $C$DW$T$3, DW_AT_address_class(0x20)
-     607                    $C$DW$T$4       .dwtag  DW_TAG_base_type
-     608                            .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
-     609                            .dwattr $C$DW$T$4, DW_AT_name("bool")
-     610                            .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
-     611                    $C$DW$T$5       .dwtag  DW_TAG_base_type
-     612                            .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
-     613                            .dwattr $C$DW$T$5, DW_AT_name("signed char")
-     614                            .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
-     615                    $C$DW$T$31      .dwtag  DW_TAG_typedef, DW_AT_name("int8_t")
-     616                            .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$5)
-     617                            .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
-     618                            .dwattr $C$DW$T$31, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     619                            .dwattr $C$DW$T$31, DW_AT_decl_line(0x2a)
-     620                            .dwattr $C$DW$T$31, DW_AT_decl_column(0x1d)
-     621                    $C$DW$T$32      .dwtag  DW_TAG_typedef, DW_AT_name("int_least8_t")
-     622                            .dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$31)
-     623                            .dwattr $C$DW$T$32, DW_AT_language(DW_LANG_C)
-     624                            .dwattr $C$DW$T$32, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     625                            .dwattr $C$DW$T$32, DW_AT_decl_line(0x37)
-     626                            .dwattr $C$DW$T$32, DW_AT_decl_column(0x17)
-     627                    $C$DW$T$6       .dwtag  DW_TAG_base_type
-     628                            .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
-     629                            .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
-     630                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
-     631                    $C$DW$T$23      .dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
-     632                            .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$6)
-     633                            .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
-     634                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     635                            .dwattr $C$DW$T$23, DW_AT_decl_line(0x2b)
-     636                            .dwattr $C$DW$T$23, DW_AT_decl_column(0x1c)
-     637                    $C$DW$T$34      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
-     638                            .dwattr $C$DW$T$34, DW_AT_type(*$C$DW$T$23)
-     639                            .dwattr $C$DW$T$34, DW_AT_language(DW_LANG_C)
-     640                            .dwattr $C$DW$T$34, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     641                            .dwattr $C$DW$T$34, DW_AT_decl_line(0x38)
-     642                            .dwattr $C$DW$T$34, DW_AT_decl_column(0x16)
-     643                    $C$DW$T$7       .dwtag  DW_TAG_base_type
-     644                            .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
-     645                            .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
-     646                            .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
-     647                    $C$DW$T$8       .dwtag  DW_TAG_base_type
-     648                            .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
-     649                            .dwattr $C$DW$T$8, DW_AT_name("short")
-     650                            .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
-     651                    $C$DW$T$35      .dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
-     652                            .dwattr $C$DW$T$35, DW_AT_type(*$C$DW$T$8)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     606                            .dwattr $C$DW$48, DW_AT_decl_line(0x43)
+     607                            .dwattr $C$DW$48, DW_AT_decl_column(0x0a)
+     608                            .dwattr $C$DW$48, DW_AT_TI_max_frame_size(0x00)
+     609                            .dwpsn  file "../co2sensor.c",line 68,column 1,is_stmt,address read_co2level,isa 1
+     610                    
+     611                            .dwfde $C$DW$CIE, read_co2level
+     612                    ;----------------------------------------------------------------------
+     613                    ;  67 | uint16_t read_co2level()                                               
+     614                    ;----------------------------------------------------------------------
+     615                    
+     616                    ;*****************************************************************************
+     617                    ;* FUNCTION NAME: read_co2level                                              *
+     618                    ;*                                                                           *
+     619                    ;*   Regs Modified     : A1,SR                                               *
+     620                    ;*   Regs Used         : A1,LR,SR                                            *
+     621                    ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     622                    ;*****************************************************************************
+     623 00000000           read_co2level:
+     624                    ;* --------------------------------------------------------------------------*
+     625                            .dwcfi  cfa_offset, 0
+     626                            .dwpsn  file "../co2sensor.c",line 69,column 1,is_stmt,isa 1
+     627                    ;----------------------------------------------------------------------
+     628                    ;  69 | return 0;                                                              
+     629                    ;----------------------------------------------------------------------
+     630 00000000 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |69|  ; [ORIG 16-BIT INS]
+     631                            .dwpsn  file "../co2sensor.c",line 70,column 1,is_stmt,isa 1
+     632                    $C$DW$49        .dwtag  DW_TAG_TI_branch
+     633                            .dwattr $C$DW$49, DW_AT_low_pc(0x00)
+     634                            .dwattr $C$DW$49, DW_AT_TI_return
+     635 00000002 4770              BX        LR                    ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
+     636                            ; BRANCH OCCURS                  ; [] 
+     637                            .dwattr $C$DW$48, DW_AT_TI_end_file("../co2sensor.c")
+     638                            .dwattr $C$DW$48, DW_AT_TI_end_line(0x46)
+     639                            .dwattr $C$DW$48, DW_AT_TI_end_column(0x01)
+     640                            .dwendentry
+     641                            .dwendtag $C$DW$48
+     642                    
+     643                    ;******************************************************************************
+     644                    ;* CONSTANT TABLE                                                             *
+     645                    ;******************************************************************************
+     646 00000036                   .sect   ".text:init_co2sensor"
+     647                            .align  4
+     648 00000036 180146C0  ||$C$CON1||:    .bits   -268429311,32
+         0000003a 0000F000 
+     649                            .align  4
+     650 0000003a 0802F000  ||$C$CON2||:    .bits   -268433406,32
+         0000003e 0000F000 
+     651                            .align  4
+     652 0000003e 1002F000  ||$C$CON3||:    .bits   135170,32
+         00000042 00000002 
+     653                            .align  4
+     654 00000042 14020002  ||$C$CON4||:    .bits   136194,32
+         00000046 00000002 
+     655                            .align  4
+     656 00000046 60000002  ||$C$CON5||:    .bits   1073766400,32
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   13
 
-     653                            .dwattr $C$DW$T$35, DW_AT_language(DW_LANG_C)
-     654                            .dwattr $C$DW$T$35, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     655                            .dwattr $C$DW$T$35, DW_AT_decl_line(0x2c)
-     656                            .dwattr $C$DW$T$35, DW_AT_decl_column(0x1d)
-     657                    $C$DW$T$36      .dwtag  DW_TAG_typedef, DW_AT_name("int_least16_t")
-     658                            .dwattr $C$DW$T$36, DW_AT_type(*$C$DW$T$35)
-     659                            .dwattr $C$DW$T$36, DW_AT_language(DW_LANG_C)
-     660                            .dwattr $C$DW$T$36, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     661                            .dwattr $C$DW$T$36, DW_AT_decl_line(0x3a)
-     662                            .dwattr $C$DW$T$36, DW_AT_decl_column(0x17)
-     663                    $C$DW$T$9       .dwtag  DW_TAG_base_type
-     664                            .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
-     665                            .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
-     666                            .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
-     667                    $C$DW$T$37      .dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
-     668                            .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$9)
-     669                            .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
-     670                            .dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-     671                            .dwattr $C$DW$T$37, DW_AT_decl_line(0x1e5)
-     672                            .dwattr $C$DW$T$37, DW_AT_decl_column(0x21)
-     673                    $C$DW$T$38      .dwtag  DW_TAG_typedef, DW_AT_name("_Wintt")
-     674                            .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$9)
-     675                            .dwattr $C$DW$T$38, DW_AT_language(DW_LANG_C)
-     676                            .dwattr $C$DW$T$38, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-     677                            .dwattr $C$DW$T$38, DW_AT_decl_line(0x1e6)
-     678                            .dwattr $C$DW$T$38, DW_AT_decl_column(0x21)
-     679                    $C$DW$T$39      .dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
-     680                            .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$9)
-     681                            .dwattr $C$DW$T$39, DW_AT_language(DW_LANG_C)
-     682                            .dwattr $C$DW$T$39, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     683                            .dwattr $C$DW$T$39, DW_AT_decl_line(0x2d)
-     684                            .dwattr $C$DW$T$39, DW_AT_decl_column(0x1c)
-     685                    $C$DW$T$41      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
-     686                            .dwattr $C$DW$T$41, DW_AT_type(*$C$DW$T$39)
-     687                            .dwattr $C$DW$T$41, DW_AT_language(DW_LANG_C)
-     688                            .dwattr $C$DW$T$41, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     689                            .dwattr $C$DW$T$41, DW_AT_decl_line(0x3b)
-     690                            .dwattr $C$DW$T$41, DW_AT_decl_column(0x16)
-     691                    $C$DW$T$10      .dwtag  DW_TAG_base_type
-     692                            .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
-     693                            .dwattr $C$DW$T$10, DW_AT_name("int")
-     694                            .dwattr $C$DW$T$10, DW_AT_byte_size(0x04)
-     695                    $C$DW$T$42      .dwtag  DW_TAG_typedef, DW_AT_name("_Ptrdifft")
-     696                            .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$10)
-     697                            .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
-     698                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-     699                            .dwattr $C$DW$T$42, DW_AT_decl_line(0xa9)
-     700                            .dwattr $C$DW$T$42, DW_AT_decl_column(0x1e)
-     701                    $C$DW$T$43      .dwtag  DW_TAG_typedef, DW_AT_name("int32_t")
-     702                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$10)
-     703                            .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
-     704                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     705                            .dwattr $C$DW$T$43, DW_AT_decl_line(0x2e)
-     706                            .dwattr $C$DW$T$43, DW_AT_decl_column(0x1d)
-     707                    $C$DW$T$46      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast16_t")
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+         0000004a 00004000 
+     657                            .align  4
+     658 0000004a D0004000  ||$C$CON6||:    .bits   1073795072,32
+         0000004e 00004000 
+     659                    ;******************************************************************************
+     660                    ;* CONSTANT TABLE                                                             *
+     661                    ;******************************************************************************
+     662 0000009e                   .sect   ".text:receive_co2level"
+     663                            .align  4
+     664 0000009e D00046C0  ||$C$CON7||:    .bits   1073795072,32
+         000000a2 00004000 
+     665                            .align  4
+     666 000000a2 10004000  ||$C$CON8||:    .bits   1073811456,32
+         000000a6 00004001 
+     667                    ;*****************************************************************************
+     668                    ;* UNDEFINED EXTERNAL REFERENCES                                             *
+     669                    ;*****************************************************************************
+     670                            .global GPIOPinConfigure
+     671                            .global GPIOPinTypeUART
+     672                            .global SysCtlPeripheralEnable
+     673                            .global SysCtlClockGet
+     674                            .global UARTConfigSetExpClk
+     675                            .global UARTCharsAvail
+     676                            .global UARTCharGet
+     677                            .global UARTCharPut
+     678                            .global atoui
+     679                    
+     680                    ;******************************************************************************
+     681                    ;* BUILD ATTRIBUTES                                                           *
+     682                    ;******************************************************************************
+     683                            .battr "aeabi", Tag_File, 1, Tag_ABI_PCS_wchar_t(2)
+     684                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_rounding(0)
+     685                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_denormal(0)
+     686                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_exceptions(0)
+     687                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_number_model(1)
+     688                            .battr "aeabi", Tag_File, 1, Tag_ABI_enum_size(0)
+     689                            .battr "aeabi", Tag_File, 1, Tag_ABI_optimization_goals(5)
+     690                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_optimization_goals(0)
+     691                            .battr "TI", Tag_File, 1, Tag_Bitfield_layout(2)
+     692                            .battr "TI", Tag_File, 1, Tag_FP_interface(1)
+     693                    
+     694                    ;******************************************************************************
+     695                    ;* TYPE INFORMATION                                                           *
+     696                    ;******************************************************************************
+     697                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+     698                            .dwattr $C$DW$T$2, DW_AT_name("void")
+     699                    $C$DW$T$3       .dwtag  DW_TAG_pointer_type
+     700                            .dwattr $C$DW$T$3, DW_AT_type(*$C$DW$T$2)
+     701                            .dwattr $C$DW$T$3, DW_AT_address_class(0x20)
+     702                    $C$DW$T$4       .dwtag  DW_TAG_base_type
+     703                            .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+     704                            .dwattr $C$DW$T$4, DW_AT_name("bool")
+     705                            .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+     706                    $C$DW$T$5       .dwtag  DW_TAG_base_type
+     707                            .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   14
 
-     708                            .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$43)
-     709                            .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
-     710                            .dwattr $C$DW$T$46, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     711                            .dwattr $C$DW$T$46, DW_AT_decl_line(0x47)
-     712                            .dwattr $C$DW$T$46, DW_AT_decl_column(0x17)
-     713                    $C$DW$T$47      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast32_t")
-     714                            .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$43)
-     715                            .dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
-     716                            .dwattr $C$DW$T$47, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     717                            .dwattr $C$DW$T$47, DW_AT_decl_line(0x4a)
-     718                            .dwattr $C$DW$T$47, DW_AT_decl_column(0x17)
-     719                    $C$DW$T$48      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast8_t")
-     720                            .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$43)
-     721                            .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
-     722                            .dwattr $C$DW$T$48, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     723                            .dwattr $C$DW$T$48, DW_AT_decl_line(0x45)
-     724                            .dwattr $C$DW$T$48, DW_AT_decl_column(0x17)
-     725                    $C$DW$T$49      .dwtag  DW_TAG_typedef, DW_AT_name("int_least32_t")
-     726                            .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$43)
-     727                            .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
-     728                            .dwattr $C$DW$T$49, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     729                            .dwattr $C$DW$T$49, DW_AT_decl_line(0x3c)
-     730                            .dwattr $C$DW$T$49, DW_AT_decl_column(0x17)
-     731                    $C$DW$T$50      .dwtag  DW_TAG_typedef, DW_AT_name("intptr_t")
-     732                            .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$10)
-     733                            .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
-     734                            .dwattr $C$DW$T$50, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     735                            .dwattr $C$DW$T$50, DW_AT_decl_line(0x52)
-     736                            .dwattr $C$DW$T$50, DW_AT_decl_column(0x1a)
-     737                    $C$DW$T$11      .dwtag  DW_TAG_base_type
-     738                            .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
-     739                            .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
-     740                            .dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
-     741                    $C$DW$T$51      .dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
-     742                            .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$11)
-     743                            .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
-     744                            .dwattr $C$DW$T$51, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-     745                            .dwattr $C$DW$T$51, DW_AT_decl_line(0xab)
-     746                            .dwattr $C$DW$T$51, DW_AT_decl_column(0x1a)
-     747                    $C$DW$T$52      .dwtag  DW_TAG_typedef, DW_AT_name("size_t")
-     748                            .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$11)
-     749                            .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
-     750                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/strin
-     751                            .dwattr $C$DW$T$52, DW_AT_decl_line(0x3d)
-     752                            .dwattr $C$DW$T$52, DW_AT_decl_column(0x19)
-     753                    $C$DW$T$20      .dwtag  DW_TAG_typedef, DW_AT_name("uint32_t")
-     754                            .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$T$11)
-     755                            .dwattr $C$DW$T$20, DW_AT_language(DW_LANG_C)
-     756                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     757                            .dwattr $C$DW$T$20, DW_AT_decl_line(0x2f)
-     758                            .dwattr $C$DW$T$20, DW_AT_decl_column(0x1c)
-     759                    $C$DW$T$55      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast16_t")
-     760                            .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$20)
-     761                            .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
-     762                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     708                            .dwattr $C$DW$T$5, DW_AT_name("signed char")
+     709                            .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+     710                    $C$DW$T$37      .dwtag  DW_TAG_typedef, DW_AT_name("int8_t")
+     711                            .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$5)
+     712                            .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
+     713                            .dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     714                            .dwattr $C$DW$T$37, DW_AT_decl_line(0x2a)
+     715                            .dwattr $C$DW$T$37, DW_AT_decl_column(0x1d)
+     716                    $C$DW$T$38      .dwtag  DW_TAG_typedef, DW_AT_name("int_least8_t")
+     717                            .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$37)
+     718                            .dwattr $C$DW$T$38, DW_AT_language(DW_LANG_C)
+     719                            .dwattr $C$DW$T$38, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     720                            .dwattr $C$DW$T$38, DW_AT_decl_line(0x37)
+     721                            .dwattr $C$DW$T$38, DW_AT_decl_column(0x17)
+     722                    $C$DW$T$6       .dwtag  DW_TAG_base_type
+     723                            .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+     724                            .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+     725                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+     726                    $C$DW$T$23      .dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
+     727                            .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$6)
+     728                            .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
+     729                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     730                            .dwattr $C$DW$T$23, DW_AT_decl_line(0x2b)
+     731                            .dwattr $C$DW$T$23, DW_AT_decl_column(0x1c)
+     732                    $C$DW$T$39      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
+     733                            .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$23)
+     734                            .dwattr $C$DW$T$39, DW_AT_language(DW_LANG_C)
+     735                            .dwattr $C$DW$T$39, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     736                            .dwattr $C$DW$T$39, DW_AT_decl_line(0x38)
+     737                            .dwattr $C$DW$T$39, DW_AT_decl_column(0x16)
+     738                    $C$DW$T$7       .dwtag  DW_TAG_base_type
+     739                            .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+     740                            .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+     741                            .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+     742                    $C$DW$T$8       .dwtag  DW_TAG_base_type
+     743                            .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+     744                            .dwattr $C$DW$T$8, DW_AT_name("short")
+     745                            .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+     746                    $C$DW$T$40      .dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
+     747                            .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$8)
+     748                            .dwattr $C$DW$T$40, DW_AT_language(DW_LANG_C)
+     749                            .dwattr $C$DW$T$40, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     750                            .dwattr $C$DW$T$40, DW_AT_decl_line(0x2c)
+     751                            .dwattr $C$DW$T$40, DW_AT_decl_column(0x1d)
+     752                    $C$DW$T$41      .dwtag  DW_TAG_typedef, DW_AT_name("int_least16_t")
+     753                            .dwattr $C$DW$T$41, DW_AT_type(*$C$DW$T$40)
+     754                            .dwattr $C$DW$T$41, DW_AT_language(DW_LANG_C)
+     755                            .dwattr $C$DW$T$41, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     756                            .dwattr $C$DW$T$41, DW_AT_decl_line(0x3a)
+     757                            .dwattr $C$DW$T$41, DW_AT_decl_column(0x17)
+     758                    $C$DW$T$9       .dwtag  DW_TAG_base_type
+     759                            .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+     760                            .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+     761                            .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+     762                    $C$DW$T$42      .dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   15
 
-     763                            .dwattr $C$DW$T$55, DW_AT_decl_line(0x48)
-     764                            .dwattr $C$DW$T$55, DW_AT_decl_column(0x16)
-     765                    $C$DW$T$56      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast32_t")
-     766                            .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$20)
-     767                            .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
-     768                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     769                            .dwattr $C$DW$T$56, DW_AT_decl_line(0x4b)
-     770                            .dwattr $C$DW$T$56, DW_AT_decl_column(0x16)
-     771                    $C$DW$T$57      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
-     772                            .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$20)
-     773                            .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
-     774                            .dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     775                            .dwattr $C$DW$T$57, DW_AT_decl_line(0x46)
-     776                            .dwattr $C$DW$T$57, DW_AT_decl_column(0x16)
-     777                    $C$DW$T$58      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least32_t")
-     778                            .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$20)
-     779                            .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
-     780                            .dwattr $C$DW$T$58, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     781                            .dwattr $C$DW$T$58, DW_AT_decl_line(0x3d)
-     782                            .dwattr $C$DW$T$58, DW_AT_decl_column(0x16)
-     783                    $C$DW$T$59      .dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
-     784                            .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$11)
-     785                            .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
-     786                            .dwattr $C$DW$T$59, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     787                            .dwattr $C$DW$T$59, DW_AT_decl_line(0x53)
-     788                            .dwattr $C$DW$T$59, DW_AT_decl_column(0x1a)
-     789                    $C$DW$T$12      .dwtag  DW_TAG_base_type
-     790                            .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
-     791                            .dwattr $C$DW$T$12, DW_AT_name("long")
-     792                            .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
-     793                    $C$DW$T$60      .dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
-     794                            .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$12)
-     795                            .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
-     796                            .dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-     797                            .dwattr $C$DW$T$60, DW_AT_decl_line(0xa6)
-     798                            .dwattr $C$DW$T$60, DW_AT_decl_column(0x0e)
-     799                    $C$DW$T$13      .dwtag  DW_TAG_base_type
-     800                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
-     801                            .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
-     802                            .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
-     803                    $C$DW$T$61      .dwtag  DW_TAG_typedef, DW_AT_name("_Uint32t")
-     804                            .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$13)
-     805                            .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
-     806                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-     807                            .dwattr $C$DW$T$61, DW_AT_decl_line(0xa7)
-     808                            .dwattr $C$DW$T$61, DW_AT_decl_column(0x17)
-     809                    $C$DW$T$14      .dwtag  DW_TAG_base_type
-     810                            .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
-     811                            .dwattr $C$DW$T$14, DW_AT_name("long long")
-     812                            .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
-     813                    $C$DW$T$62      .dwtag  DW_TAG_typedef, DW_AT_name("_Longlong")
-     814                            .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$14)
-     815                            .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
-     816                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-     817                            .dwattr $C$DW$T$62, DW_AT_decl_line(0x1b5)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     763                            .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$9)
+     764                            .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
+     765                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     766                            .dwattr $C$DW$T$42, DW_AT_decl_line(0x1e5)
+     767                            .dwattr $C$DW$T$42, DW_AT_decl_column(0x21)
+     768                    $C$DW$T$43      .dwtag  DW_TAG_typedef, DW_AT_name("_Wintt")
+     769                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$9)
+     770                            .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
+     771                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     772                            .dwattr $C$DW$T$43, DW_AT_decl_line(0x1e6)
+     773                            .dwattr $C$DW$T$43, DW_AT_decl_column(0x21)
+     774                    $C$DW$T$44      .dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
+     775                            .dwattr $C$DW$T$44, DW_AT_type(*$C$DW$T$9)
+     776                            .dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
+     777                            .dwattr $C$DW$T$44, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     778                            .dwattr $C$DW$T$44, DW_AT_decl_line(0x2d)
+     779                            .dwattr $C$DW$T$44, DW_AT_decl_column(0x1c)
+     780                    $C$DW$T$47      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
+     781                            .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$44)
+     782                            .dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
+     783                            .dwattr $C$DW$T$47, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     784                            .dwattr $C$DW$T$47, DW_AT_decl_line(0x3b)
+     785                            .dwattr $C$DW$T$47, DW_AT_decl_column(0x16)
+     786                    $C$DW$T$10      .dwtag  DW_TAG_base_type
+     787                            .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+     788                            .dwattr $C$DW$T$10, DW_AT_name("int")
+     789                            .dwattr $C$DW$T$10, DW_AT_byte_size(0x04)
+     790                    $C$DW$T$48      .dwtag  DW_TAG_typedef, DW_AT_name("_Ptrdifft")
+     791                            .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$10)
+     792                            .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
+     793                            .dwattr $C$DW$T$48, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     794                            .dwattr $C$DW$T$48, DW_AT_decl_line(0xa9)
+     795                            .dwattr $C$DW$T$48, DW_AT_decl_column(0x1e)
+     796                    $C$DW$T$49      .dwtag  DW_TAG_typedef, DW_AT_name("int32_t")
+     797                            .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$10)
+     798                            .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
+     799                            .dwattr $C$DW$T$49, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     800                            .dwattr $C$DW$T$49, DW_AT_decl_line(0x2e)
+     801                            .dwattr $C$DW$T$49, DW_AT_decl_column(0x1d)
+     802                    $C$DW$T$52      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast16_t")
+     803                            .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$49)
+     804                            .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
+     805                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     806                            .dwattr $C$DW$T$52, DW_AT_decl_line(0x47)
+     807                            .dwattr $C$DW$T$52, DW_AT_decl_column(0x17)
+     808                    $C$DW$T$53      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast32_t")
+     809                            .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$49)
+     810                            .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
+     811                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     812                            .dwattr $C$DW$T$53, DW_AT_decl_line(0x4a)
+     813                            .dwattr $C$DW$T$53, DW_AT_decl_column(0x17)
+     814                    $C$DW$T$54      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast8_t")
+     815                            .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$49)
+     816                            .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
+     817                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   16
 
-     818                            .dwattr $C$DW$T$62, DW_AT_decl_column(0x13)
-     819                    $C$DW$T$63      .dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
-     820                            .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$14)
-     821                            .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
-     822                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     823                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x32)
-     824                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x21)
-     825                    $C$DW$T$64      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
-     826                            .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$63)
-     827                            .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
-     828                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     829                            .dwattr $C$DW$T$64, DW_AT_decl_line(0x4e)
-     830                            .dwattr $C$DW$T$64, DW_AT_decl_column(0x17)
-     831                    $C$DW$T$65      .dwtag  DW_TAG_typedef, DW_AT_name("int_least64_t")
-     832                            .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$63)
-     833                            .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
-     834                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     835                            .dwattr $C$DW$T$65, DW_AT_decl_line(0x40)
-     836                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x17)
-     837                    $C$DW$T$66      .dwtag  DW_TAG_typedef, DW_AT_name("intmax_t")
-     838                            .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$14)
-     839                            .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
-     840                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     841                            .dwattr $C$DW$T$66, DW_AT_decl_line(0x56)
-     842                            .dwattr $C$DW$T$66, DW_AT_decl_column(0x20)
-     843                    $C$DW$T$15      .dwtag  DW_TAG_base_type
-     844                            .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
-     845                            .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
-     846                            .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
-     847                    $C$DW$T$67      .dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
-     848                            .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$15)
-     849                            .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
-     850                            .dwattr $C$DW$T$67, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-     851                            .dwattr $C$DW$T$67, DW_AT_decl_line(0x1b6)
-     852                            .dwattr $C$DW$T$67, DW_AT_decl_column(0x14)
-     853                    $C$DW$T$68      .dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
-     854                            .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$15)
-     855                            .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
-     856                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     857                            .dwattr $C$DW$T$68, DW_AT_decl_line(0x33)
-     858                            .dwattr $C$DW$T$68, DW_AT_decl_column(0x20)
-     859                    $C$DW$T$69      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast64_t")
-     860                            .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$68)
-     861                            .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
-     862                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     863                            .dwattr $C$DW$T$69, DW_AT_decl_line(0x4f)
-     864                            .dwattr $C$DW$T$69, DW_AT_decl_column(0x16)
-     865                    $C$DW$T$70      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least64_t")
-     866                            .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$68)
-     867                            .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
-     868                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     869                            .dwattr $C$DW$T$70, DW_AT_decl_line(0x41)
-     870                            .dwattr $C$DW$T$70, DW_AT_decl_column(0x16)
-     871                    $C$DW$T$71      .dwtag  DW_TAG_typedef, DW_AT_name("uintmax_t")
-     872                            .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$15)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     818                            .dwattr $C$DW$T$54, DW_AT_decl_line(0x45)
+     819                            .dwattr $C$DW$T$54, DW_AT_decl_column(0x17)
+     820                    $C$DW$T$55      .dwtag  DW_TAG_typedef, DW_AT_name("int_least32_t")
+     821                            .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$49)
+     822                            .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
+     823                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     824                            .dwattr $C$DW$T$55, DW_AT_decl_line(0x3c)
+     825                            .dwattr $C$DW$T$55, DW_AT_decl_column(0x17)
+     826                    $C$DW$T$56      .dwtag  DW_TAG_typedef, DW_AT_name("intptr_t")
+     827                            .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$10)
+     828                            .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
+     829                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     830                            .dwattr $C$DW$T$56, DW_AT_decl_line(0x52)
+     831                            .dwattr $C$DW$T$56, DW_AT_decl_column(0x1a)
+     832                    $C$DW$T$11      .dwtag  DW_TAG_base_type
+     833                            .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+     834                            .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+     835                            .dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
+     836                    $C$DW$T$57      .dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
+     837                            .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$11)
+     838                            .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
+     839                            .dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     840                            .dwattr $C$DW$T$57, DW_AT_decl_line(0xab)
+     841                            .dwattr $C$DW$T$57, DW_AT_decl_column(0x1a)
+     842                    $C$DW$T$58      .dwtag  DW_TAG_typedef, DW_AT_name("size_t")
+     843                            .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$11)
+     844                            .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
+     845                            .dwattr $C$DW$T$58, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/strin
+     846                            .dwattr $C$DW$T$58, DW_AT_decl_line(0x3d)
+     847                            .dwattr $C$DW$T$58, DW_AT_decl_column(0x19)
+     848                    $C$DW$T$20      .dwtag  DW_TAG_typedef, DW_AT_name("uint32_t")
+     849                            .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$T$11)
+     850                            .dwattr $C$DW$T$20, DW_AT_language(DW_LANG_C)
+     851                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     852                            .dwattr $C$DW$T$20, DW_AT_decl_line(0x2f)
+     853                            .dwattr $C$DW$T$20, DW_AT_decl_column(0x1c)
+     854                    $C$DW$T$30      .dwtag  DW_TAG_pointer_type
+     855                            .dwattr $C$DW$T$30, DW_AT_type(*$C$DW$T$20)
+     856                            .dwattr $C$DW$T$30, DW_AT_address_class(0x20)
+     857                    $C$DW$T$61      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast16_t")
+     858                            .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$20)
+     859                            .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
+     860                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     861                            .dwattr $C$DW$T$61, DW_AT_decl_line(0x48)
+     862                            .dwattr $C$DW$T$61, DW_AT_decl_column(0x16)
+     863                    $C$DW$T$62      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast32_t")
+     864                            .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$20)
+     865                            .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
+     866                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     867                            .dwattr $C$DW$T$62, DW_AT_decl_line(0x4b)
+     868                            .dwattr $C$DW$T$62, DW_AT_decl_column(0x16)
+     869                    $C$DW$T$63      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
+     870                            .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$20)
+     871                            .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
+     872                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   17
 
-     873                            .dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
-     874                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-     875                            .dwattr $C$DW$T$71, DW_AT_decl_line(0x57)
-     876                            .dwattr $C$DW$T$71, DW_AT_decl_column(0x20)
-     877                    $C$DW$T$16      .dwtag  DW_TAG_base_type
-     878                            .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
-     879                            .dwattr $C$DW$T$16, DW_AT_name("float")
-     880                            .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
-     881                    $C$DW$T$17      .dwtag  DW_TAG_base_type
-     882                            .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
-     883                            .dwattr $C$DW$T$17, DW_AT_name("double")
-     884                            .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
-     885                    $C$DW$T$18      .dwtag  DW_TAG_base_type
-     886                            .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
-     887                            .dwattr $C$DW$T$18, DW_AT_name("long double")
-     888                            .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
-     889                    $C$DW$T$72      .dwtag  DW_TAG_base_type
-     890                            .dwattr $C$DW$T$72, DW_AT_encoding(DW_ATE_unsigned_char)
-     891                            .dwattr $C$DW$T$72, DW_AT_name("unsigned char")
-     892                            .dwattr $C$DW$T$72, DW_AT_byte_size(0x01)
-     893                    $C$DW$T$76      .dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
-     894                            .dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$6)
-     895                            .dwattr $C$DW$T$76, DW_AT_language(DW_LANG_C)
-     896                            .dwattr $C$DW$T$76, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-     897                            .dwattr $C$DW$T$76, DW_AT_decl_line(0x218)
-     898                            .dwattr $C$DW$T$76, DW_AT_decl_column(0x0e)
-     899                    
-     900                    $C$DW$T$77      .dwtag  DW_TAG_array_type
-     901                            .dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$6)
-     902                            .dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
-     903                            .dwattr $C$DW$T$77, DW_AT_byte_size(0x0a)
-     904                    $C$DW$42        .dwtag  DW_TAG_subrange_type
-     905                            .dwattr $C$DW$42, DW_AT_upper_bound(0x09)
-     906                            .dwendtag $C$DW$T$77
-     907                    
-     908                    $C$DW$T$78      .dwtag  DW_TAG_pointer_type
-     909                            .dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$6)
-     910                            .dwattr $C$DW$T$78, DW_AT_address_class(0x20)
-     911                    $C$DW$T$79      .dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
-     912                            .dwattr $C$DW$T$79, DW_AT_type(*$C$DW$T$78)
-     913                            .dwattr $C$DW$T$79, DW_AT_language(DW_LANG_C)
-     914                            .dwattr $C$DW$T$79, DW_AT_decl_file("../co2sensor.c")
-     915                            .dwattr $C$DW$T$79, DW_AT_decl_line(0x56)
-     916                            .dwattr $C$DW$T$79, DW_AT_decl_column(0x01)
-     917                    
-     918                    $C$DW$T$19      .dwtag  DW_TAG_structure_type
-     919                            .dwattr $C$DW$T$19, DW_AT_name("__va_list")
-     920                            .dwattr $C$DW$T$19, DW_AT_byte_size(0x04)
-     921                    $C$DW$43        .dwtag  DW_TAG_member
-     922                            .dwattr $C$DW$43, DW_AT_type(*$C$DW$T$3)
-     923                            .dwattr $C$DW$43, DW_AT_name("__ap")
-     924                            .dwattr $C$DW$43, DW_AT_TI_symbol_name("__ap")
-     925                            .dwattr $C$DW$43, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-     926                            .dwattr $C$DW$43, DW_AT_accessibility(DW_ACCESS_public)
-     927                            .dwattr $C$DW$43, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     873                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x46)
+     874                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x16)
+     875                    $C$DW$T$64      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least32_t")
+     876                            .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$20)
+     877                            .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
+     878                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     879                            .dwattr $C$DW$T$64, DW_AT_decl_line(0x3d)
+     880                            .dwattr $C$DW$T$64, DW_AT_decl_column(0x16)
+     881                    $C$DW$T$65      .dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
+     882                            .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$11)
+     883                            .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+     884                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     885                            .dwattr $C$DW$T$65, DW_AT_decl_line(0x53)
+     886                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x1a)
+     887                    $C$DW$T$12      .dwtag  DW_TAG_base_type
+     888                            .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+     889                            .dwattr $C$DW$T$12, DW_AT_name("long")
+     890                            .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+     891                    $C$DW$T$66      .dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
+     892                            .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$12)
+     893                            .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+     894                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     895                            .dwattr $C$DW$T$66, DW_AT_decl_line(0xa6)
+     896                            .dwattr $C$DW$T$66, DW_AT_decl_column(0x0e)
+     897                    $C$DW$T$13      .dwtag  DW_TAG_base_type
+     898                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+     899                            .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+     900                            .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+     901                    $C$DW$T$67      .dwtag  DW_TAG_typedef, DW_AT_name("_Uint32t")
+     902                            .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$13)
+     903                            .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
+     904                            .dwattr $C$DW$T$67, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     905                            .dwattr $C$DW$T$67, DW_AT_decl_line(0xa7)
+     906                            .dwattr $C$DW$T$67, DW_AT_decl_column(0x17)
+     907                    $C$DW$T$14      .dwtag  DW_TAG_base_type
+     908                            .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+     909                            .dwattr $C$DW$T$14, DW_AT_name("long long")
+     910                            .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+     911                    $C$DW$T$68      .dwtag  DW_TAG_typedef, DW_AT_name("_Longlong")
+     912                            .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$14)
+     913                            .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
+     914                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     915                            .dwattr $C$DW$T$68, DW_AT_decl_line(0x1b5)
+     916                            .dwattr $C$DW$T$68, DW_AT_decl_column(0x13)
+     917                    $C$DW$T$69      .dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
+     918                            .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$14)
+     919                            .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
+     920                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     921                            .dwattr $C$DW$T$69, DW_AT_decl_line(0x32)
+     922                            .dwattr $C$DW$T$69, DW_AT_decl_column(0x21)
+     923                    $C$DW$T$70      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
+     924                            .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$69)
+     925                            .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
+     926                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     927                            .dwattr $C$DW$T$70, DW_AT_decl_line(0x4e)
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   18
 
-     928                            .dwattr $C$DW$43, DW_AT_decl_line(0x36)
-     929                            .dwattr $C$DW$43, DW_AT_decl_column(0x0c)
-     930                            .dwendtag $C$DW$T$19
-     931                    
-     932                            .dwattr $C$DW$T$19, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
-     933                            .dwattr $C$DW$T$19, DW_AT_decl_line(0x35)
-     934                            .dwattr $C$DW$T$19, DW_AT_decl_column(0x10)
-     935                    $C$DW$T$80      .dwtag  DW_TAG_typedef, DW_AT_name("va_list")
-     936                            .dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$19)
-     937                            .dwattr $C$DW$T$80, DW_AT_language(DW_LANG_C)
-     938                            .dwattr $C$DW$T$80, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
-     939                            .dwattr $C$DW$T$80, DW_AT_decl_line(0x37)
-     940                            .dwattr $C$DW$T$80, DW_AT_decl_column(0x03)
-     941                    $C$DW$T$81      .dwtag  DW_TAG_typedef, DW_AT_name("_Va_list")
-     942                            .dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$80)
-     943                            .dwattr $C$DW$T$81, DW_AT_language(DW_LANG_C)
-     944                            .dwattr $C$DW$T$81, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-     945                            .dwattr $C$DW$T$81, DW_AT_decl_line(0x1f6)
-     946                            .dwattr $C$DW$T$81, DW_AT_decl_column(0x17)
-     947                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
-     948                    
-     949                    ;***************************************************************
-     950                    ;* DWARF CIE ENTRIES                                           *
-     951                    ;***************************************************************
-     952                    
-     953                    $C$DW$CIE       .dwcie 14
-     954                            .dwcfi  cfa_register, 13
-     955                            .dwcfi  cfa_offset, 0
-     956                            .dwcfi  undefined, 0
-     957                            .dwcfi  undefined, 1
-     958                            .dwcfi  undefined, 2
-     959                            .dwcfi  undefined, 3
-     960                            .dwcfi  same_value, 4
-     961                            .dwcfi  same_value, 5
-     962                            .dwcfi  same_value, 6
-     963                            .dwcfi  same_value, 7
-     964                            .dwcfi  same_value, 8
-     965                            .dwcfi  same_value, 9
-     966                            .dwcfi  same_value, 10
-     967                            .dwcfi  same_value, 11
-     968                            .dwcfi  undefined, 12
-     969                            .dwcfi  undefined, 13
-     970                            .dwcfi  undefined, 14
-     971                            .dwcfi  undefined, 14
-     972                            .dwcfi  undefined, 7
-     973                            .dwcfi  undefined, 64
-     974                            .dwcfi  undefined, 65
-     975                            .dwcfi  undefined, 66
-     976                            .dwcfi  undefined, 67
-     977                            .dwcfi  undefined, 68
-     978                            .dwcfi  undefined, 69
-     979                            .dwcfi  undefined, 70
-     980                            .dwcfi  undefined, 71
-     981                            .dwcfi  undefined, 72
-     982                            .dwcfi  undefined, 73
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:18 2015
+     928                            .dwattr $C$DW$T$70, DW_AT_decl_column(0x17)
+     929                    $C$DW$T$71      .dwtag  DW_TAG_typedef, DW_AT_name("int_least64_t")
+     930                            .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$69)
+     931                            .dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
+     932                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     933                            .dwattr $C$DW$T$71, DW_AT_decl_line(0x40)
+     934                            .dwattr $C$DW$T$71, DW_AT_decl_column(0x17)
+     935                    $C$DW$T$72      .dwtag  DW_TAG_typedef, DW_AT_name("intmax_t")
+     936                            .dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$14)
+     937                            .dwattr $C$DW$T$72, DW_AT_language(DW_LANG_C)
+     938                            .dwattr $C$DW$T$72, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     939                            .dwattr $C$DW$T$72, DW_AT_decl_line(0x56)
+     940                            .dwattr $C$DW$T$72, DW_AT_decl_column(0x20)
+     941                    $C$DW$T$15      .dwtag  DW_TAG_base_type
+     942                            .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+     943                            .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+     944                            .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+     945                    $C$DW$T$73      .dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
+     946                            .dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$15)
+     947                            .dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
+     948                            .dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     949                            .dwattr $C$DW$T$73, DW_AT_decl_line(0x1b6)
+     950                            .dwattr $C$DW$T$73, DW_AT_decl_column(0x14)
+     951                    $C$DW$T$74      .dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
+     952                            .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$15)
+     953                            .dwattr $C$DW$T$74, DW_AT_language(DW_LANG_C)
+     954                            .dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     955                            .dwattr $C$DW$T$74, DW_AT_decl_line(0x33)
+     956                            .dwattr $C$DW$T$74, DW_AT_decl_column(0x20)
+     957                    $C$DW$T$75      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast64_t")
+     958                            .dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$74)
+     959                            .dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
+     960                            .dwattr $C$DW$T$75, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     961                            .dwattr $C$DW$T$75, DW_AT_decl_line(0x4f)
+     962                            .dwattr $C$DW$T$75, DW_AT_decl_column(0x16)
+     963                    $C$DW$T$76      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least64_t")
+     964                            .dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$74)
+     965                            .dwattr $C$DW$T$76, DW_AT_language(DW_LANG_C)
+     966                            .dwattr $C$DW$T$76, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     967                            .dwattr $C$DW$T$76, DW_AT_decl_line(0x41)
+     968                            .dwattr $C$DW$T$76, DW_AT_decl_column(0x16)
+     969                    $C$DW$T$77      .dwtag  DW_TAG_typedef, DW_AT_name("uintmax_t")
+     970                            .dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$15)
+     971                            .dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
+     972                            .dwattr $C$DW$T$77, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     973                            .dwattr $C$DW$T$77, DW_AT_decl_line(0x57)
+     974                            .dwattr $C$DW$T$77, DW_AT_decl_column(0x20)
+     975                    $C$DW$T$16      .dwtag  DW_TAG_base_type
+     976                            .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+     977                            .dwattr $C$DW$T$16, DW_AT_name("float")
+     978                            .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+     979                    $C$DW$T$17      .dwtag  DW_TAG_base_type
+     980                            .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+     981                            .dwattr $C$DW$T$17, DW_AT_name("double")
+     982                            .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   19
 
-     983                            .dwcfi  undefined, 74
-     984                            .dwcfi  undefined, 75
-     985                            .dwcfi  undefined, 76
-     986                            .dwcfi  undefined, 77
-     987                            .dwcfi  undefined, 78
-     988                            .dwcfi  undefined, 79
-     989                            .dwcfi  same_value, 80
-     990                            .dwcfi  same_value, 81
-     991                            .dwcfi  same_value, 82
-     992                            .dwcfi  same_value, 83
-     993                            .dwcfi  same_value, 84
-     994                            .dwcfi  same_value, 85
-     995                            .dwcfi  same_value, 86
-     996                            .dwcfi  same_value, 87
-     997                            .dwcfi  same_value, 88
-     998                            .dwcfi  same_value, 89
-     999                            .dwcfi  same_value, 90
-    1000                            .dwcfi  same_value, 91
-    1001                            .dwcfi  same_value, 92
-    1002                            .dwcfi  same_value, 93
-    1003                            .dwcfi  same_value, 94
-    1004                            .dwcfi  same_value, 95
-    1005                            .dwendentry
-    1006                            .dwendtag $C$DW$CU
-    1007                    
+     983                    $C$DW$T$18      .dwtag  DW_TAG_base_type
+     984                            .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+     985                            .dwattr $C$DW$T$18, DW_AT_name("long double")
+     986                            .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+     987                    $C$DW$T$81      .dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
+     988                            .dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$6)
+     989                            .dwattr $C$DW$T$81, DW_AT_language(DW_LANG_C)
+     990                            .dwattr $C$DW$T$81, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     991                            .dwattr $C$DW$T$81, DW_AT_decl_line(0x218)
+     992                            .dwattr $C$DW$T$81, DW_AT_decl_column(0x0e)
+     993                    $C$DW$T$32      .dwtag  DW_TAG_pointer_type
+     994                            .dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$6)
+     995                            .dwattr $C$DW$T$32, DW_AT_address_class(0x20)
+     996                    $C$DW$T$82      .dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
+     997                            .dwattr $C$DW$T$82, DW_AT_type(*$C$DW$T$32)
+     998                            .dwattr $C$DW$T$82, DW_AT_language(DW_LANG_C)
+     999                            .dwattr $C$DW$T$82, DW_AT_decl_file("../co2sensor.c")
+    1000                            .dwattr $C$DW$T$82, DW_AT_decl_line(0x46)
+    1001                            .dwattr $C$DW$T$82, DW_AT_decl_column(0x01)
+    1002                    
+    1003                    $C$DW$T$83      .dwtag  DW_TAG_array_type
+    1004                            .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$6)
+    1005                            .dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
+    1006                            .dwattr $C$DW$T$83, DW_AT_byte_size(0x05)
+    1007                    $C$DW$50        .dwtag  DW_TAG_subrange_type
+    1008                            .dwattr $C$DW$50, DW_AT_upper_bound(0x04)
+    1009                            .dwendtag $C$DW$T$83
+    1010                    
+    1011                    $C$DW$T$78      .dwtag  DW_TAG_base_type
+    1012                            .dwattr $C$DW$T$78, DW_AT_encoding(DW_ATE_unsigned_char)
+    1013                            .dwattr $C$DW$T$78, DW_AT_name("unsigned char")
+    1014                            .dwattr $C$DW$T$78, DW_AT_byte_size(0x01)
+    1015                    
+    1016                    $C$DW$T$19      .dwtag  DW_TAG_structure_type
+    1017                            .dwattr $C$DW$T$19, DW_AT_name("__va_list")
+    1018                            .dwattr $C$DW$T$19, DW_AT_byte_size(0x04)
+    1019                    $C$DW$51        .dwtag  DW_TAG_member
+    1020                            .dwattr $C$DW$51, DW_AT_type(*$C$DW$T$3)
+    1021                            .dwattr $C$DW$51, DW_AT_name("__ap")
+    1022                            .dwattr $C$DW$51, DW_AT_TI_symbol_name("__ap")
+    1023                            .dwattr $C$DW$51, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    1024                            .dwattr $C$DW$51, DW_AT_accessibility(DW_ACCESS_public)
+    1025                            .dwattr $C$DW$51, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.
+    1026                            .dwattr $C$DW$51, DW_AT_decl_line(0x36)
+    1027                            .dwattr $C$DW$51, DW_AT_decl_column(0x0c)
+    1028                            .dwendtag $C$DW$T$19
+    1029                    
+    1030                            .dwattr $C$DW$T$19, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    1031                            .dwattr $C$DW$T$19, DW_AT_decl_line(0x35)
+    1032                            .dwattr $C$DW$T$19, DW_AT_decl_column(0x10)
+    1033                    $C$DW$T$84      .dwtag  DW_TAG_typedef, DW_AT_name("va_list")
+    1034                            .dwattr $C$DW$T$84, DW_AT_type(*$C$DW$T$19)
+    1035                            .dwattr $C$DW$T$84, DW_AT_language(DW_LANG_C)
+    1036                            .dwattr $C$DW$T$84, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    1037                            .dwattr $C$DW$T$84, DW_AT_decl_line(0x37)
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+co2sensor.asm                                                        PAGE   20
+
+    1038                            .dwattr $C$DW$T$84, DW_AT_decl_column(0x03)
+    1039                    $C$DW$T$85      .dwtag  DW_TAG_typedef, DW_AT_name("_Va_list")
+    1040                            .dwattr $C$DW$T$85, DW_AT_type(*$C$DW$T$84)
+    1041                            .dwattr $C$DW$T$85, DW_AT_language(DW_LANG_C)
+    1042                            .dwattr $C$DW$T$85, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    1043                            .dwattr $C$DW$T$85, DW_AT_decl_line(0x1f6)
+    1044                            .dwattr $C$DW$T$85, DW_AT_decl_column(0x17)
+    1045                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    1046                    
+    1047                    ;***************************************************************
+    1048                    ;* DWARF CIE ENTRIES                                           *
+    1049                    ;***************************************************************
+    1050                    
+    1051                    $C$DW$CIE       .dwcie 14
+    1052                            .dwcfi  cfa_register, 13
+    1053                            .dwcfi  cfa_offset, 0
+    1054                            .dwcfi  undefined, 0
+    1055                            .dwcfi  undefined, 1
+    1056                            .dwcfi  undefined, 2
+    1057                            .dwcfi  undefined, 3
+    1058                            .dwcfi  same_value, 4
+    1059                            .dwcfi  same_value, 5
+    1060                            .dwcfi  same_value, 6
+    1061                            .dwcfi  same_value, 7
+    1062                            .dwcfi  same_value, 8
+    1063                            .dwcfi  same_value, 9
+    1064                            .dwcfi  same_value, 10
+    1065                            .dwcfi  same_value, 11
+    1066                            .dwcfi  undefined, 12
+    1067                            .dwcfi  undefined, 13
+    1068                            .dwcfi  undefined, 14
+    1069                            .dwcfi  undefined, 14
+    1070                            .dwcfi  undefined, 7
+    1071                            .dwcfi  undefined, 64
+    1072                            .dwcfi  undefined, 65
+    1073                            .dwcfi  undefined, 66
+    1074                            .dwcfi  undefined, 67
+    1075                            .dwcfi  undefined, 68
+    1076                            .dwcfi  undefined, 69
+    1077                            .dwcfi  undefined, 70
+    1078                            .dwcfi  undefined, 71
+    1079                            .dwcfi  undefined, 72
+    1080                            .dwcfi  undefined, 73
+    1081                            .dwcfi  undefined, 74
+    1082                            .dwcfi  undefined, 75
+    1083                            .dwcfi  undefined, 76
+    1084                            .dwcfi  undefined, 77
+    1085                            .dwcfi  undefined, 78
+    1086                            .dwcfi  undefined, 79
+    1087                            .dwcfi  same_value, 80
+    1088                            .dwcfi  same_value, 81
+    1089                            .dwcfi  same_value, 82
+    1090                            .dwcfi  same_value, 83
+    1091                            .dwcfi  same_value, 84
+    1092                            .dwcfi  same_value, 85
+TI ARM Assembler PC v5.2.5 Wed Nov 04 18:29:33 2015
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+co2sensor.asm                                                        PAGE   21
+
+    1093                            .dwcfi  same_value, 86
+    1094                            .dwcfi  same_value, 87
+    1095                            .dwcfi  same_value, 88
+    1096                            .dwcfi  same_value, 89
+    1097                            .dwcfi  same_value, 90
+    1098                            .dwcfi  same_value, 91
+    1099                            .dwcfi  same_value, 92
+    1100                            .dwcfi  same_value, 93
+    1101                            .dwcfi  same_value, 94
+    1102                            .dwcfi  same_value, 95
+    1103                            .dwendentry
+    1104                            .dwendtag $C$DW$CU
+    1105                    
 
 --------------------------
 Thumb2 Statistics
 --------------------------
 Number of Thumb2 ins converted to Thumb = 0 (0%)
-Number of Thumb ins in input = 57 (67%)
-Number of Thumb2 ins encoded as Thumb2 = 28 (100%)
+Number of Thumb ins in input = 67 (66%)
+Number of Thumb2 ins encoded as Thumb2 = 34 (100%)
 Number of Thumb2 ins converted to 2 OPND Thumb = 1
 
 

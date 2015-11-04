@@ -7,21 +7,27 @@ CMD_SRCS += \
 ../lnk_msp430g2553.cmd 
 
 C_SRCS += \
-C:/ti/msp430/MSPWare_2_21_00_39/examples/boards/MSP-EXP430G2/MSP-EXP430G2\ Software\ Examples/Source/OutOfBox_MSP-EXP430G2/MSP-EXP430G2-LaunchPad/main.c 
+../main.c \
+../utils.c 
 
 OBJS += \
-./main.obj 
+./main.obj \
+./utils.obj 
 
 C_DEPS += \
-./main.pp 
+./main.pp \
+./utils.pp 
 
 C_DEPS__QUOTED += \
-"main.pp" 
+"main.pp" \
+"utils.pp" 
 
 OBJS__QUOTED += \
-"main.obj" 
+"main.obj" \
+"utils.obj" 
 
 C_SRCS__QUOTED += \
-"C:/ti/msp430/MSPWare_2_21_00_39/examples/boards/MSP-EXP430G2/MSP-EXP430G2 Software Examples/Source/OutOfBox_MSP-EXP430G2/MSP-EXP430G2-LaunchPad/main.c" 
+"../main.c" \
+"../utils.c" 
 
 

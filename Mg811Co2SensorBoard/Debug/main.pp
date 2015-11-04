@@ -1,6 +1,6 @@
 # FIXED
 
-main.obj: C:/ti/msp430/MSPWare_2_21_00_39/examples/boards/MSP-EXP430G2/MSP-EXP430G2\ Software\ Examples/Source/OutOfBox_MSP-EXP430G2/MSP-EXP430G2-LaunchPad/main.c
+main.obj: ../main.c
 main.obj: C:/ti/ccsv6/ccs_base/msp430/include/msp430g2553.h
 main.obj: C:/ti/ccsv6/ccs_base/msp430/include/in430.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/include/intrinsics.h
@@ -13,8 +13,9 @@ main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/include/stdarg.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/include/linkage.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/include/_lock.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/include/float.h
+main.obj: ../utils.h
 
-C:/ti/msp430/MSPWare_2_21_00_39/examples/boards/MSP-EXP430G2/MSP-EXP430G2\ Software\ Examples/Source/OutOfBox_MSP-EXP430G2/MSP-EXP430G2-LaunchPad/main.c: 
+../main.c: 
 C:/ti/ccsv6/ccs_base/msp430/include/msp430g2553.h: 
 C:/ti/ccsv6/ccs_base/msp430/include/in430.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/include/intrinsics.h: 
@@ -27,3 +28,4 @@ C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/include/stdarg.h:
 C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/include/linkage.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/include/_lock.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/include/float.h: 
+../utils.h: 

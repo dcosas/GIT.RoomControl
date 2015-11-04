@@ -1,11 +1,11 @@
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-       3                    ;* Date/Time created: Wed Oct 28 12:40:21 2015                                *
+       3                    ;* Date/Time created: Mon Nov 02 22:40:38 2015                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -58,7 +58,7 @@ sdcard.asm                                                           PAGE    1
       53                            .dwattr $C$DW$8, DW_AT_decl_column(0x09)
       54                    $C$DW$9 .dwtag  DW_TAG_formal_parameter
       55                            .dwattr $C$DW$9, DW_AT_type(*$C$DW$T$39)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE    2
@@ -118,7 +118,7 @@ sdcard.asm                                                           PAGE    2
      108 00000000           g_sNewFile:     .usect  ".bss:g_sNewFile",548,4
      109                    $C$DW$20        .dwtag  DW_TAG_variable, DW_AT_name("g_sNewFile")
      110                            .dwattr $C$DW$20, DW_AT_TI_symbol_name("g_sNewFile")
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE    3
@@ -178,7 +178,7 @@ sdcard.asm                                                           PAGE    3
      163                    ;*                           FPEXC,FPSCR                                     *
      164                    ;*   Local Frame Size  : 0 Args + 0 Auto + 4 Save = 4 byte                   *
      165                    ;*****************************************************************************
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE    4
@@ -238,7 +238,7 @@ sdcard.asm                                                           PAGE    4
      218                    ;----------------------------------------------------------------------
      219                    ;  20 | uint8_t init_sdcard()                                                  
      220                    ;  22 | FRESULT iFResult;                                                      
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE    5
@@ -298,7 +298,7 @@ sdcard.asm                                                           PAGE    5
      273                            ; BRANCH OCCURS {||$C$L2||}      ; [] |25| 
      274                    ;* --------------------------------------------------------------------------*
      275 00000018           ||$C$L1||:    
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE    6
@@ -358,7 +358,7 @@ sdcard.asm                                                           PAGE    6
      328                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
      329                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
      330                    ;*                           FPEXC,FPSCR                                     *
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE    7
@@ -418,7 +418,7 @@ sdcard.asm                                                           PAGE    7
      383                    ;----------------------------------------------------------------------
      384 00000016 481A              LDR       A1, $C$CON3           ; [DPU_3_PIPE] |38|  ; [ORIG 16-BIT INS]
      385 00000018 A115              ADR       A2, $C$SL1            ; [DPU_3_PIPE] |38|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE    8
@@ -478,7 +478,7 @@ sdcard.asm                                                           PAGE    8
      438                    ;----------------------------------------------------------------------
      439 00000044 0004F89D          LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |48|  ; [KEEP 32-BIT INS]
      440 00000048 E00F              B         ||$C$L5||             ; [DPU_3_PIPE] |48|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE    9
@@ -538,7 +538,7 @@ sdcard.asm                                                           PAGE    9
      493                    $C$DW$39        .dwtag  DW_TAG_TI_branch
      494                            .dwattr $C$DW$39, DW_AT_low_pc(0x00)
      495                            .dwattr $C$DW$39, DW_AT_TI_return
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   10
@@ -598,7 +598,7 @@ sdcard.asm                                                           PAGE   10
      536                    
      537                    ;******************************************************************************
      538                    ;* BUILD ATTRIBUTES                                                           *
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   11
@@ -658,7 +658,7 @@ sdcard.asm                                                           PAGE   11
      591                            .dwattr $C$DW$48, DW_AT_decl_line(0xbb)
      592                            .dwattr $C$DW$48, DW_AT_decl_column(0x02)
      593                    $C$DW$49        .dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_OBJECT"), DW_AT_const_value(0x09)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   12
@@ -718,7 +718,7 @@ sdcard.asm                                                           PAGE   12
      646                            .dwattr $C$DW$T$35, DW_AT_decl_line(0xc7)
      647                            .dwattr $C$DW$T$35, DW_AT_decl_column(0x03)
      648                    
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   13
@@ -778,7 +778,7 @@ sdcard.asm                                                           PAGE   13
      701                            .dwattr $C$DW$T$57, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/diskio.h")
      702                            .dwattr $C$DW$T$57, DW_AT_decl_line(0x1c)
      703                            .dwattr $C$DW$T$57, DW_AT_decl_column(0x03)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   14
@@ -838,7 +838,7 @@ sdcard.asm                                                           PAGE   14
      756                            .dwattr $C$DW$72, DW_AT_data_member_location[DW_OP_plus_uconst 0x5]
      757                            .dwattr $C$DW$72, DW_AT_accessibility(DW_ACCESS_public)
      758                            .dwattr $C$DW$72, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   15
@@ -898,7 +898,7 @@ sdcard.asm                                                           PAGE   15
      811                            .dwattr $C$DW$78, DW_AT_accessibility(DW_ACCESS_public)
      812                            .dwattr $C$DW$78, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
      813                            .dwattr $C$DW$78, DW_AT_decl_line(0x64)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   16
@@ -958,7 +958,7 @@ sdcard.asm                                                           PAGE   16
      866                            .dwattr $C$DW$84, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
      867                            .dwattr $C$DW$84, DW_AT_decl_line(0x6a)
      868                            .dwattr $C$DW$84, DW_AT_decl_column(0x08)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   17
@@ -1018,7 +1018,7 @@ sdcard.asm                                                           PAGE   17
      921                            .dwattr $C$DW$88, DW_AT_decl_column(0x07)
      922                    $C$DW$89        .dwtag  DW_TAG_member
      923                            .dwattr $C$DW$89, DW_AT_type(*$C$DW$T$19)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   18
@@ -1078,7 +1078,7 @@ sdcard.asm                                                           PAGE   18
      976                    $C$DW$95        .dwtag  DW_TAG_member
      977                            .dwattr $C$DW$95, DW_AT_type(*$C$DW$T$21)
      978                            .dwattr $C$DW$95, DW_AT_name("dir_sect")
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   19
@@ -1138,7 +1138,7 @@ sdcard.asm                                                           PAGE   19
     1031                            .dwattr $C$DW$99, DW_AT_name("id")
     1032                            .dwattr $C$DW$99, DW_AT_TI_symbol_name("id")
     1033                            .dwattr $C$DW$99, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   20
@@ -1198,7 +1198,7 @@ sdcard.asm                                                           PAGE   20
     1086                            .dwattr $C$DW$105, DW_AT_TI_symbol_name("fn")
     1087                            .dwattr $C$DW$105, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
     1088                            .dwattr $C$DW$105, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   21
@@ -1258,7 +1258,7 @@ sdcard.asm                                                           PAGE   21
     1141                            .dwattr $C$DW$109, DW_AT_decl_column(0x07)
     1142                    $C$DW$110       .dwtag  DW_TAG_member
     1143                            .dwattr $C$DW$110, DW_AT_type(*$C$DW$T$31)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   22
@@ -1318,7 +1318,7 @@ sdcard.asm                                                           PAGE   22
     1196                    $C$DW$T$19      .dwtag  DW_TAG_typedef, DW_AT_name("BYTE")
     1197                            .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$6)
     1198                            .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   23
@@ -1378,7 +1378,7 @@ sdcard.asm                                                           PAGE   23
     1251                            .dwattr $C$DW$T$70, DW_AT_decl_column(0x11)
     1252                    $C$DW$T$71      .dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
     1253                            .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$8)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   24
@@ -1438,7 +1438,7 @@ sdcard.asm                                                           PAGE   24
     1306                            .dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
     1307                            .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
     1308                            .dwattr $C$DW$T$78, DW_AT_decl_line(0x3b)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   25
@@ -1498,7 +1498,7 @@ sdcard.asm                                                           PAGE   25
     1361                            .dwattr $C$DW$T$86, DW_AT_decl_column(0x1a)
     1362                    $C$DW$T$11      .dwtag  DW_TAG_base_type
     1363                            .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   26
@@ -1558,7 +1558,7 @@ sdcard.asm                                                           PAGE   26
     1416                            .dwattr $C$DW$T$93, DW_AT_decl_column(0x1a)
     1417                    $C$DW$T$12      .dwtag  DW_TAG_base_type
     1418                            .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   27
@@ -1618,7 +1618,7 @@ sdcard.asm                                                           PAGE   27
     1471                    $C$DW$T$100     .dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
     1472                            .dwattr $C$DW$T$100, DW_AT_type(*$C$DW$T$99)
     1473                            .dwattr $C$DW$T$100, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   28
@@ -1678,7 +1678,7 @@ sdcard.asm                                                           PAGE   28
     1526                            .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
     1527                    $C$DW$T$17      .dwtag  DW_TAG_base_type
     1528                            .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   29
@@ -1738,7 +1738,7 @@ sdcard.asm                                                           PAGE   29
     1581                            .dwattr $C$DW$T$112, DW_AT_language(DW_LANG_C)
     1582                            .dwattr $C$DW$T$112, DW_AT_byte_size(0x01)
     1583                    $C$DW$114       .dwtag  DW_TAG_subrange_type
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   30
@@ -1798,7 +1798,7 @@ sdcard.asm                                                           PAGE   30
     1636                            .dwcfi  undefined, 1
     1637                            .dwcfi  undefined, 2
     1638                            .dwcfi  undefined, 3
-TI ARM Assembler PC v5.2.5 Wed Oct 28 12:40:21 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 02 22:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sdcard.asm                                                           PAGE   31
@@ -1858,7 +1858,7 @@ Thumb2 Statistics
 Number of Thumb2 ins converted to Thumb = 0 (0%)
 Number of Thumb ins in input = 51 (75%)
 Number of Thumb2 ins encoded as Thumb2 = 17 (100%)
-Number of Thumb2 ins converted to 2 OPND Thumb = 10
+Number of Thumb2 ins converted to 2 OPND Thumb = 1
 
 
 No Assembly Errors, No Assembly Warnings

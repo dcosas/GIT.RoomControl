@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Wed Oct 28 12:40:20 2015                                *
+;* Date/Time created: Mon Nov 02 22:40:37 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -578,7 +578,7 @@ $C$DW$15	.dwtag  DW_TAG_variable, DW_AT_name("ASCII")
 	.dwattr $C$DW$15, DW_AT_decl_file("../lcd_nokia5510.c")
 	.dwattr $C$DW$15, DW_AT_decl_line(0x16)
 	.dwattr $C$DW$15, DW_AT_decl_column(0x16)
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0859612 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0504012 
 	.sect	".text:nokiaLCDwrite"
 	.clink
 	.thumbfunc nokiaLCDwrite

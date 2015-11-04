@@ -17,6 +17,8 @@
 #include "driverlib/uart.h"
 #include "driverlib/interrupt.h"
 
+#include "utils.h"
+
 void init_co2sensor()
 {
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_UART1);
@@ -29,10 +31,11 @@ void init_co2sensor()
 							 UART_CONFIG_PAR_NONE));
 }
 
-uint8_t receive_co2level()
+uint16_t receive_co2level()
 {
-	char uart1_data[10];
+	char uart1_data[5];
 	char uart1_data_counter=0;
+	uint32_t co2level;
 	//char confirmation[]="CO2=";
 	char dummy;
 	for(uart1_data_counter = 0; uart1_data_counter < 30; uart1_data_counter++)
@@ -48,36 +51,17 @@ uint8_t receive_co2level()
 
 	while((dummy = UARTCharGet(UART1_BASE))!=10)
 	{
-		uart1_data[uart1_data_counter++] = UARTCharGet(UART1_BASE);
-	}
-
-return 1;
-#if 0
-	while(1)
-	{
-		dummy = UARTCharGetNonBlocking(UART1_BASE);
-		if((dummy>'!') && (dummy < '}'))
-		{
+		if(dummy>='0' && dummy<='9')
 			uart1_data[uart1_data_counter++] = dummy;
-			if(uart1_data_counter == 254)
-				uart1_data_counter = 0;
-			if(strstr((const char*)uart1_data, confirmation))
-			{
-				co2level[co2level_counter++] = UARTCharGet(UART1_BASE);
-				co2level[co2level_counter++] = UARTCharGet(UART1_BASE);
-				co2level[co2level_counter++] = UARTCharGet(UART1_BASE);
-				co2level[co2level_counter++] = UARTCharGet(UART1_BASE);
-				return 1;
-			}
-		}
-
-		timeout++;
-		if(timeout>10000000)
-		{
-			return 0;
-		}
 	}
-#endif
+	atoui(&co2level, uart1_data);
+	return (uint16_t) co2level;
+}
+
+void test_co2comm()
+{
+	init_co2sensor();
+	receive_co2level();
 }
 
 uint16_t read_co2level()

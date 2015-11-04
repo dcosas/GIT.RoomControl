@@ -28,7 +28,7 @@
 #include "ds1820.h"
 //#include "sdcard.h"
 #include "co2sensor.h"
-
+#include "utils.h"
 volatile uint32_t g_ui32SysTickCounter;
 volatile uint32_t g_ui32SecondsCounter;
 
@@ -170,12 +170,11 @@ int main(void)
     ROM_WatchdogReloadSet(WATCHDOG0_BASE, SysCtlClockGet() * WATCHDOG_TIMER_SECONDS);
     ROM_WatchdogResetEnable(WATCHDOG0_BASE);
     //ToDo: enable after testing
-    ROM_WatchdogEnable(WATCHDOG0_BASE);
+   // ROM_WatchdogEnable(WATCHDOG0_BASE);
 
     ROM_IntMasterEnable();
 
-    init_co2sensor();
-    //receive_co2level();
+
     init_system();
 
     while(1)

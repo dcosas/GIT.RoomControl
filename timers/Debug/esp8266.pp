@@ -16,6 +16,7 @@ esp8266.obj: E:/Dev/Ti/TivaWare/driverlib/sysctl.h
 esp8266.obj: E:/Dev/Ti/TivaWare/driverlib/uart.h
 esp8266.obj: E:/Dev/Ti/TivaWare/driverlib/interrupt.h
 esp8266.obj: ../timers.h
+esp8266.obj: ../utils.h
 
 ../esp8266.c: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h: 
@@ -33,3 +34,4 @@ E:/Dev/Ti/TivaWare/driverlib/sysctl.h:
 E:/Dev/Ti/TivaWare/driverlib/uart.h: 
 E:/Dev/Ti/TivaWare/driverlib/interrupt.h: 
 ../timers.h: 
+../utils.h: 

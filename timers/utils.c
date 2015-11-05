@@ -49,15 +49,15 @@ uint32_t power(uint32_t base, uint32_t exponent)
 void atoui(uint32_t *integerValue, char* asciiValue)
 {
 	uint8_t counter=0, tableSize=0;
+	*integerValue = 0;
 	while (*asciiValue++)
 	{
 		tableSize++;
 	}
 	asciiValue -= tableSize+1;
-	for (counter = tableSize; counter > 0; counter--)
+	for (counter = tableSize-1; counter > 0; counter--)
 	{
 		*integerValue += (*asciiValue - '0') * power(10, counter);
 		asciiValue++;
 	}
 }
-

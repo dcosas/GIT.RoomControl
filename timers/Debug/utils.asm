@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Wed Nov 04 18:27:11 2015                                *
+;* Date/Time created: Thu Nov 05 12:31:48 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -10,7 +10,7 @@ $C$DW$CU	.dwtag  DW_TAG_compile_unit
 	.dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.5 Copyright (c) 1996-2015 Texas Instruments Incorporated")
 	.dwattr $C$DW$CU, DW_AT_TI_version(0x01)
 	.dwattr $C$DW$CU, DW_AT_comp_dir("E:\Dev\Ti\Code\GIT\LaunchpadRoomControl\LaunchpadRoomControl\timers\Debug")
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0687612 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0878012 
 	.sect	".text:uitoa"
 	.clink
 	.thumbfunc uitoa
@@ -468,98 +468,106 @@ $C$DW$25	.dwtag  DW_TAG_variable, DW_AT_name("tableSize")
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |51| 
 	.dwpsn	file "../utils.c",line 52,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-;  52 | while (*asciiValue++)                                                  
+;  52 | *integerValue = 0;                                                     
 ;----------------------------------------------------------------------
-        B         ||$C$L9||             ; [DPU_3_PIPE] |52| 
-        ; BRANCH OCCURS {||$C$L9||}      ; [] |52| 
+        LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |52| 
+        MOVS      A2, #0                ; [DPU_3_PIPE] |52| 
+        STR       A2, [A1, #0]          ; [DPU_3_PIPE] |52| 
+	.dwpsn	file "../utils.c",line 53,column 2,is_stmt,isa 1
+;----------------------------------------------------------------------
+;  53 | while (*asciiValue++)                                                  
+;----------------------------------------------------------------------
+        B         ||$C$L9||             ; [DPU_3_PIPE] |53| 
+        ; BRANCH OCCURS {||$C$L9||}      ; [] |53| 
 ;* --------------------------------------------------------------------------*
 ||$C$L8||:    
-	.dwpsn	file "../utils.c",line 54,column 3,is_stmt,isa 1
+	.dwpsn	file "../utils.c",line 55,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
-;  54 | tableSize++;                                                           
+;  55 | tableSize++;                                                           
 ;----------------------------------------------------------------------
-        LDRB      A1, [SP, #9]          ; [DPU_3_PIPE] |54| 
-        ADDS      A1, A1, #1            ; [DPU_3_PIPE] |54| 
-        STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |54| 
+        LDRB      A1, [SP, #9]          ; [DPU_3_PIPE] |55| 
+        ADDS      A1, A1, #1            ; [DPU_3_PIPE] |55| 
+        STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |55| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP ||$C$L9||
 ;* --------------------------------------------------------------------------*
 ||$C$L9||:    
-	.dwpsn	file "../utils.c",line 52,column 2,is_stmt,isa 1
-        LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |52| 
-        LDRB      A2, [A1], #1          ; [DPU_3_PIPE] |52| 
-        CMP       A2, #0                ; [DPU_3_PIPE] |52| 
-        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |52| 
-        BNE       ||$C$L8||             ; [DPU_3_PIPE] |52| 
-        ; BRANCHCC OCCURS {||$C$L8||}    ; [] |52| 
+	.dwpsn	file "../utils.c",line 53,column 2,is_stmt,isa 1
+        LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |53| 
+        LDRB      A2, [A1], #1          ; [DPU_3_PIPE] |53| 
+        CMP       A2, #0                ; [DPU_3_PIPE] |53| 
+        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |53| 
+        BNE       ||$C$L8||             ; [DPU_3_PIPE] |53| 
+        ; BRANCHCC OCCURS {||$C$L8||}    ; [] |53| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../utils.c",line 56,column 2,is_stmt,isa 1
+	.dwpsn	file "../utils.c",line 57,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
-;  56 | asciiValue -= tableSize+1;                                             
-;----------------------------------------------------------------------
-        LDRB      A1, [SP, #9]          ; [DPU_3_PIPE] |56| 
-        LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |56| 
-        ADDS      A1, A1, #1            ; [DPU_3_PIPE] |56| 
-        SUBS      A2, A2, A1            ; [DPU_3_PIPE] |56| 
-        STR       A2, [SP, #4]          ; [DPU_3_PIPE] |56| 
-	.dwpsn	file "../utils.c",line 57,column 7,is_stmt,isa 1
-;----------------------------------------------------------------------
-;  57 | for (counter = tableSize; counter > 0; counter--)                      
+;  57 | asciiValue -= tableSize+1;                                             
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #9]          ; [DPU_3_PIPE] |57| 
-        STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |57| 
-	.dwpsn	file "../utils.c",line 57,column 28,is_stmt,isa 1
-        LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |57| 
-        CMP       A1, #0                ; [DPU_3_PIPE] |57| 
-        BLE       ||$C$L11||            ; [DPU_3_PIPE] |57| 
-        ; BRANCHCC OCCURS {||$C$L11||}   ; [] |57| 
+        LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |57| 
+        ADDS      A1, A1, #1            ; [DPU_3_PIPE] |57| 
+        SUBS      A2, A2, A1            ; [DPU_3_PIPE] |57| 
+        STR       A2, [SP, #4]          ; [DPU_3_PIPE] |57| 
+	.dwpsn	file "../utils.c",line 58,column 7,is_stmt,isa 1
+;----------------------------------------------------------------------
+;  58 | for (counter = tableSize-1; counter > 0; counter--)                    
+;----------------------------------------------------------------------
+        LDRB      A1, [SP, #9]          ; [DPU_3_PIPE] |58| 
+        SUBS      A1, A1, #1            ; [DPU_3_PIPE] |58| 
+        STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |58| 
+	.dwpsn	file "../utils.c",line 58,column 30,is_stmt,isa 1
+        LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |58| 
+        CMP       A1, #0                ; [DPU_3_PIPE] |58| 
+        BLE       ||$C$L11||            ; [DPU_3_PIPE] |58| 
+        ; BRANCHCC OCCURS {||$C$L11||}   ; [] |58| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP ||$C$L10||
 ;*
-;*   Loop source line                : 57
-;*   Loop closing brace source line  : 61
+;*   Loop source line                : 58
+;*   Loop closing brace source line  : 62
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L10||:    
-	.dwpsn	file "../utils.c",line 59,column 3,is_stmt,isa 1
+	.dwpsn	file "../utils.c",line 60,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
-;  59 | *integerValue += (*asciiValue - '0') * power(10, counter);             
+;  60 | *integerValue += (*asciiValue - '0') * power(10, counter);             
 ;----------------------------------------------------------------------
-        LDRB      A2, [SP, #8]          ; [DPU_3_PIPE] |59| 
-        LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |59| 
-        MOVS      A1, #10               ; [DPU_3_PIPE] |59| 
+        LDRB      A2, [SP, #8]          ; [DPU_3_PIPE] |60| 
+        LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |60| 
+        MOVS      A1, #10               ; [DPU_3_PIPE] |60| 
 $C$DW$26	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$26, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$26, DW_AT_name("power")
 	.dwattr $C$DW$26, DW_AT_TI_call
-        BL        power                 ; [DPU_3_PIPE] |59| 
-        ; CALL OCCURS {power }           ; [] |59| 
-        LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |59| 
-        LDR       A4, [A3, #0]          ; [DPU_3_PIPE] |59| 
-        LDRB      A2, [A2, #0]          ; [DPU_3_PIPE] |59| 
-        SUBS      A2, A2, #48           ; [DPU_3_PIPE] |59| 
-        MLA       A1, A1, A2, A4        ; [DPU_3_PIPE] |59| 
-        STR       A1, [A3, #0]          ; [DPU_3_PIPE] |59| 
-	.dwpsn	file "../utils.c",line 60,column 3,is_stmt,isa 1
+        BL        power                 ; [DPU_3_PIPE] |60| 
+        ; CALL OCCURS {power }           ; [] |60| 
+        LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |60| 
+        LDR       A4, [A3, #0]          ; [DPU_3_PIPE] |60| 
+        LDRB      A2, [A2, #0]          ; [DPU_3_PIPE] |60| 
+        SUBS      A2, A2, #48           ; [DPU_3_PIPE] |60| 
+        MLA       A1, A1, A2, A4        ; [DPU_3_PIPE] |60| 
+        STR       A1, [A3, #0]          ; [DPU_3_PIPE] |60| 
+	.dwpsn	file "../utils.c",line 61,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
-;  60 | asciiValue++;                                                          
+;  61 | asciiValue++;                                                          
 ;----------------------------------------------------------------------
-        LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |60| 
-        ADDS      A1, A1, #1            ; [DPU_3_PIPE] |60| 
-        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |60| 
-	.dwpsn	file "../utils.c",line 57,column 41,is_stmt,isa 1
-        LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |57| 
-        SUBS      A1, A1, #1            ; [DPU_3_PIPE] |57| 
-        STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |57| 
-	.dwpsn	file "../utils.c",line 57,column 28,is_stmt,isa 1
-        LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |57| 
-        CMP       A1, #0                ; [DPU_3_PIPE] |57| 
-        BGT       ||$C$L10||            ; [DPU_3_PIPE] |57| 
-        ; BRANCHCC OCCURS {||$C$L10||}   ; [] |57| 
+        LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |61| 
+        ADDS      A1, A1, #1            ; [DPU_3_PIPE] |61| 
+        STR       A1, [SP, #4]          ; [DPU_3_PIPE] |61| 
+	.dwpsn	file "../utils.c",line 58,column 43,is_stmt,isa 1
+        LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |58| 
+        SUBS      A1, A1, #1            ; [DPU_3_PIPE] |58| 
+        STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |58| 
+	.dwpsn	file "../utils.c",line 58,column 30,is_stmt,isa 1
+        LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |58| 
+        CMP       A1, #0                ; [DPU_3_PIPE] |58| 
+        BGT       ||$C$L10||            ; [DPU_3_PIPE] |58| 
+        ; BRANCHCC OCCURS {||$C$L10||}   ; [] |58| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../utils.c",line 62,column 1,is_stmt,isa 1
+	.dwpsn	file "../utils.c",line 63,column 1,is_stmt,isa 1
 ;* --------------------------------------------------------------------------*
 ||$C$L11||:    
 $C$DW$27	.dwtag  DW_TAG_TI_branch
@@ -569,7 +577,7 @@ $C$DW$27	.dwtag  DW_TAG_TI_branch
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
 	.dwattr $C$DW$19, DW_AT_TI_end_file("../utils.c")
-	.dwattr $C$DW$19, DW_AT_TI_end_line(0x3e)
+	.dwattr $C$DW$19, DW_AT_TI_end_line(0x3f)
 	.dwattr $C$DW$19, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$19
@@ -832,7 +840,7 @@ $C$DW$T$54	.dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
 	.dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$21)
 	.dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$54, DW_AT_decl_file("../utils.c")
-	.dwattr $C$DW$T$54, DW_AT_decl_line(0x3e)
+	.dwattr $C$DW$T$54, DW_AT_decl_line(0x3f)
 	.dwattr $C$DW$T$54, DW_AT_decl_column(0x01)
 	.dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
 

@@ -27,7 +27,6 @@
 #include "dht22.h"
 #include "ds1820.h"
 //#include "sdcard.h"
-#include "co2sensor.h"
 #include "utils.h"
 volatile uint32_t g_ui32SysTickCounter;
 volatile uint32_t g_ui32SecondsCounter;
@@ -78,6 +77,7 @@ void check_sensors()
 	check_sensor2();//temperature 1 	- fructification dht22
 	check_sensor3();//temperature 2 	- incubation ds1820
 	check_sensor4();//temperature 3 	- outside ds1820
+	check_sensor5();//CO2 level			- fructification co2
 	check_fan_timer(temp_secondsCounter);//Fan actuation 	- fructification
 	update_lcd();
 
@@ -173,7 +173,6 @@ int main(void)
    // ROM_WatchdogEnable(WATCHDOG0_BASE);
 
     ROM_IntMasterEnable();
-
 
     init_system();
 

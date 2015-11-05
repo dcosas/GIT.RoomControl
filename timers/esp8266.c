@@ -17,6 +17,7 @@
 #include "driverlib/uart.h"
 #include "driverlib/interrupt.h"
 #include "timers.h"
+#include "utils.h"
 
 //#define CONNECT_TO_AP "AT+CWJAP=\"wrtr\",\"\""
 #define SEND_TEST_DATA  "GET /update?key=DJGH4273J29TEUBH&field1=22"
@@ -37,6 +38,7 @@
 #define CONNECT_TO_THINGSPEAK "AT+CIPSTART=\"TCP\",\"184.106.153.149\",80"
 #define CONNECT_TO_THINGSPEAK_CONFIRMATION "Linked"
 #define SEND_CMD_LENGTH "AT+CIPSEND=104"
+#define SEND_AT_CIPSEND "AT+CIPSEND="
 #define CMD_LENGTH_CONFIRMATION ">"
 #define SEND_DATA "GET /update?key=VW5223XR8EZEL6A3&field1="//size 40 +2(data)+2(cr+lf)
 #define SEND_DATA_FIELD2 "&field2="//size 8+2(data)
@@ -114,13 +116,17 @@ uint8_t send_esp8266(	uint32_t humidity_data,//field1
 						uint32_t temperature_data_1, //field2
 						uint32_t temperature_data_2,  //field3
 						uint32_t temperature_data_3, //field4
-						uint32_t temperature_data_4,  //field5
+						uint32_t co2level,  //field5
 						uint32_t water_relay, //field6
 						uint32_t fan_relay)//field7
 {
-	char cmnd[102];
+	char cmnd[106];
+	char cmnd_len_array[14];
+	char cmnd_len_array_temp[3]={0,0,0};
 	char buffer[2]={0,0};
+	char buffer_long[5] = {0,0,0,0,0};
 	uint8_t result=1;
+	uint16_t cmnd_len;
 
    // result = esp8266_send(CONNECT_TO_THINGSPEAK, CONNECT_TO_THINGSPEAK_CONFIRMATION);
     uart_send(CONNECT_TO_THINGSPEAK);
@@ -147,11 +153,12 @@ uint8_t send_esp8266(	uint32_t humidity_data,//field1
 	buffer[0] = (char)(temperature_data_3 / 10)+'0';//decimal
 	buffer[1] = (char)(temperature_data_3 % 10)+'0';//unit
 	strcat(cmnd, buffer);
-//field5 temperature 4
+//field5 CO2 level
 	strcat(cmnd,SEND_DATA_FIELD5);
-	buffer[0] = (char)(temperature_data_4 / 10)+'0';//decimal
-	buffer[1] = (char)(temperature_data_4 % 10)+'0';//unit
-	strcat(cmnd, buffer);
+	//buffer[0] = (char)(temperature_data_4 / 10)+'0';//decimal
+	//buffer[1] = (char)(temperature_data_4 % 10)+'0';//unit
+	uitoa(co2level, buffer_long, 5);
+	strcat(cmnd, buffer_long);
 //field6 Water relay
 	strcat(cmnd,SEND_DATA_FIELD6);
 	buffer[0] = (char)(water_relay)+'0';//decimal
@@ -163,9 +170,13 @@ uint8_t send_esp8266(	uint32_t humidity_data,//field1
 	buffer[1] = '0';//unit
 	strcat(cmnd, buffer);
 
-
+	cmnd_len = strlen(cmnd);
+	uitoa(cmnd_len, cmnd_len_array_temp, 3);
+	strcpy(cmnd_len_array, SEND_AT_CIPSEND);
+	strcat(cmnd_len_array, cmnd_len_array_temp);
 	//uart_send(SEND_CMD_LENGTH);
-	result = esp8266_send(SEND_CMD_LENGTH, CMD_LENGTH_CONFIRMATION);
+	//result = esp8266_send(SEND_CMD_LENGTH, CMD_LENGTH_CONFIRMATION);
+	result = esp8266_send(cmnd_len_array, CMD_LENGTH_CONFIRMATION);
 	if(!result)
 	{
 	   	esp8266_reset();

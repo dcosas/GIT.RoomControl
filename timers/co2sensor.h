@@ -10,7 +10,7 @@
 
 
 void init_co2sensor();
-uint16_t read_co2level();
+uint16_t get_co2level();
 void test_co2comm();
 
 #endif /* TIVACONTROLBOARD_CO2SENSOR_H_ */

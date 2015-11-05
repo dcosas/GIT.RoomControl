@@ -7,6 +7,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdint.h>
+#include <string.h>
 #include "inc/hw_memmap.h"
 #include "inc/hw_types.h"
 #include "inc/hw_gpio.h"
@@ -21,7 +22,8 @@
 #include "lcd_nokia5510.h"
 #include "ds1820.h"
 #include "esp8266.h"
-
+#include "co2sensor.h"
+#include "utils.h"
 
 #define ON 1
 #define OFF 0
@@ -37,6 +39,7 @@
 static char str_line1[12]={'M','x',' ','H',':','x','x',' ','T',':','x','x'};
 static char str_line2[12]={'H',':','x','x',' ','T','1',':','x','x',' ',' '};
 static char str_line3[12]={'T','2',':','x','x',' ','T','3',':','x','x',' '};
+static char str_line4[12]={' ',' ',' ',' ',' ',' ','p','p','m','C','O','2'};
 
 int32_t threshold_humidity[3] = {90, 90, 90};
 int32_t threshold_temperature[3] = {18, 17, 16};
@@ -90,6 +93,7 @@ void init_sensors()
 	init_dht22();
 	init_actuators();
 	init_ds1820();
+	init_co2sensor();
 	change_mode(0);
 }
 //HUMIDITY sensor check - actuates water pump relay if humidity level falls below threshold
@@ -112,7 +116,7 @@ float check_sensor1()
 	esp8266_data[0] = (uint32_t) f_data;
 	return f_data;
 }
-
+//Temperature sensor from dht22 from fructification room
 float check_sensor2()
 {
 	float f_data = dht22_readtemp();
@@ -121,7 +125,7 @@ float check_sensor2()
 	esp8266_data[1] = (uint32_t) f_data;
 	return f_data;
 }
-
+//Temperature sensor ds1820 from incubation room
 void check_sensor3()
 {
 	uint8_t data = read_ds1820_1();
@@ -129,13 +133,22 @@ void check_sensor3()
 	str_line3[4] = (char)(data % 10)+ '0';
 	esp8266_data[2] = data;
 }
-
+//Temperature sensor ds1820 from outside
 void check_sensor4()
 {
 	uint8_t data = read_ds1820_2();
 	str_line3[9] = (char)(data / 10)+ '0';
 	str_line3[10] = (char)(data % 10)+ '0';
 	esp8266_data[3] = data;
+}
+//CO2 level from fructificare
+void check_sensor5()
+{
+	uint16_t co2level;
+	co2level = get_co2level();
+	esp8266_data[4] = co2level;
+	memset(str_line4, ' ', 5);
+	uitoa(co2level, str_line4, 5);
 }
 
 void check_fan_timer(uint32_t current_seconds)
@@ -170,6 +183,7 @@ void update_lcd()
 	lcd_puts(str_line1, 1);
 	lcd_puts(str_line2, 2);
 	lcd_puts(str_line3, 3);
+	lcd_puts(str_line4, 4);
 }
 
 void update_thingspeak()

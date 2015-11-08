@@ -16,7 +16,9 @@
 
 #include "timers.h"
 
-
+#define WIDTH  (8 * sizeof(uint8_t))
+#define TOPBIT (1 << (WIDTH - 1))
+#define POLYNOMIAL			0x1021
 //ds1820 connected to PD0
 
 #define DS1820_DATA_PORT_PERIPH SYSCTL_PERIPH_GPIOD
@@ -122,20 +124,95 @@ void write_ds1820(uint8_t sensor_id, uint8_t data)
 }
 
 
+uint8_t  crcSlow(uint8_t const message[], int nBytes)
+{
+	uint8_t   remainder = 0;
+	uint8_t bit;
+	int m_byte;
+
+    /*
+     * Perform modulo-2 division, a byte at a time.
+     */
+    for (m_byte = 0; m_byte < nBytes; ++m_byte)
+    {
+        /*
+         * Bring the next byte into the remainder.
+         */
+        remainder ^= (message[m_byte] << (WIDTH - 8));
+
+        /*
+         * Perform modulo-2 division, a bit at a time.
+         */
+        for (bit = 8; bit > 0; --bit)
+        {
+            /*
+             * Try to divide the current data bit.
+             */
+            if (remainder & TOPBIT)
+            {
+                remainder = (remainder << 1) ^ POLYNOMIAL;
+            }
+            else
+            {
+                remainder = (remainder << 1);
+            }
+        }
+    }
+
+    /*
+     * The final remainder is the CRC result.
+     */
+    return (remainder);
+
+}   /* crcSlow() */
+
+
+uint8_t CRC8(const uint8_t *data, uint8_t len) {
+	uint8_t crc = 0x00;
+	uint8_t extract;
+	uint8_t tempI,sum;
+  while (len--) {
+	  extract = *data++;
+    for (tempI = 8; tempI; tempI--) {
+      sum = (crc ^ extract) & 0x01;
+      crc >>= 1;
+      if (sum) {
+        crc ^= 0x8C;
+      }
+      extract >>= 1;
+    }
+  }
+  return crc;
+}
+
+
 void read_scratchpad(uint8_t sensor_id)
 {
-	uint8_t i;
+	uint8_t i, slot_no=0,crc_result;
+	uint8_t received_slots[10] = {0,0,0,0,0,0,0,0,0};
 	temp_ds1820 = 0;
-	for(i=0;i<8;i++)
+
+	for(i=0;i<72;i++)
 	{
 		temp_ds1820 >>= 1;
 		if(readslot(sensor_id))
 		{
 			temp_ds1820 |= 0x80;
 		}
+		if(!(i%7) && (i>0))
+		{
+			received_slots[slot_no] = temp_ds1820&0xff;
+			//if(slot_no == 0)
+			//	received_slots[slot_no] >>= 1;//truncate the LSB for temperature
+			temp_ds1820 = 0;
+			slot_no++;
+		}
 	}
-	temp_ds1820 &= 0xff;
-	temp_ds1820 >>= 1;//truncate the LSB
+	//crc_result = CRC8(received_slots,8);
+	crc_result = crcSlow(received_slots,8);
+	temp_ds1820 = (received_slots[0]>>1);
+	//temp_ds1820 &= 0xff;
+	//temp_ds1820 >>= 1;//truncate the LSB
 
 #if 0
 	temp_ds1820 = ((0xff - temp_ds1820) + 1) >> 1;// convert from 2's complement

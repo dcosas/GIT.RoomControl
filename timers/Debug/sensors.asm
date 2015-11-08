@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Thu Nov 05 12:17:15 2015                                *
+;* Date/Time created: Sat Nov 07 12:29:25 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -432,9 +432,9 @@ $C$DW$69	.dwtag  DW_TAG_variable, DW_AT_name("str_line4")
 	.align	4
 	.elfsym	threshold_humidity,SYM_SIZE(12)
 threshold_humidity:
-	.bits	90,32			; threshold_humidity[0] @ 0
+	.bits	85,32			; threshold_humidity[0] @ 0
 	.bits	90,32			; threshold_humidity[1] @ 32
-	.bits	90,32			; threshold_humidity[2] @ 64
+	.bits	80,32			; threshold_humidity[2] @ 64
 
 $C$DW$70	.dwtag  DW_TAG_variable, DW_AT_name("threshold_humidity")
 	.dwattr $C$DW$70, DW_AT_TI_symbol_name("threshold_humidity")
@@ -519,7 +519,7 @@ start_seconds$1:
 	.align	4
 	.elfsym	fanTimerDuration$2,SYM_SIZE(4)
 fanTimerDuration$2:
-	.bits	10800,32			; fanTimerDuration$2 @ 0
+	.bits	3600,32			; fanTimerDuration$2 @ 0
 
 	.data
 	.align	1
@@ -527,7 +527,7 @@ fanTimerDuration$2:
 fanState$3:
 	.bits	0,8			; fanState$3 @ 0
 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0195212 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0666412 
 	.sect	".text:get_mode"
 	.clink
 	.thumbfunc get_mode
@@ -1816,7 +1816,7 @@ $C$DW$134	.dwtag  DW_TAG_TI_branch
 ; 167 | fanTimerDuration = FAN_SECONDS_OFF;                                    
 ;----------------------------------------------------------------------
         LDR       A2, $C$CON34          ; [DPU_3_PIPE] |167| 
-        MOV       A1, #10800            ; [DPU_3_PIPE] |167| 
+        MOV       A1, #3600             ; [DPU_3_PIPE] |167| 
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |167| 
 	.dwpsn	file "../sensors.c",line 168,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------

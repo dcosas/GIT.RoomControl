@@ -55,7 +55,7 @@ void atoui(uint32_t *integerValue, char* asciiValue)
 		tableSize++;
 	}
 	asciiValue -= tableSize+1;
-	for (counter = tableSize-1; counter > 0; counter--)
+	for (counter = tableSize; counter > 0; counter--)
 	{
 		*integerValue += (*asciiValue - '0') * power(10, counter);
 		asciiValue++;

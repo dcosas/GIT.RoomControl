@@ -34,14 +34,14 @@
 //#define FAN_SECONDS_ON 30 * SEC_PER_MINUTE
 //#define FAN_SECONDS_OFF 7000 * SEC_PER_HOUR
 #define FAN_SECONDS_ON 1200
-#define FAN_SECONDS_OFF 10800
+#define FAN_SECONDS_OFF 3600
 
 static char str_line1[12]={'M','x',' ','H',':','x','x',' ','T',':','x','x'};
 static char str_line2[12]={'H',':','x','x',' ','T','1',':','x','x',' ',' '};
 static char str_line3[12]={'T','2',':','x','x',' ','T','3',':','x','x',' '};
 static char str_line4[12]={' ',' ',' ',' ',' ',' ','p','p','m','C','O','2'};
 
-int32_t threshold_humidity[3] = {90, 90, 90};
+int32_t threshold_humidity[3] = {85, 90, 80};
 int32_t threshold_temperature[3] = {18, 17, 16};
 int32_t threshold_co2[3] = {0, 1, 2};
 uint8_t operating_mode;

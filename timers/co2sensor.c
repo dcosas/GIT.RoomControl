@@ -35,8 +35,8 @@ uint16_t get_co2level()
 {
 	char uart1_data[5] = {0,0,0,0,0};
 	char uart1_data_counter=0;
-	uint16_t timeout=0;
-	uint32_t co2level;
+	uint32_t timeout=0;
+	uint32_t co2level=0;
 	//char confirmation[]="CO2=";
 	char dummy;
 	while(UARTCharsAvail(UART1_BASE))
@@ -51,7 +51,7 @@ uint16_t get_co2level()
 		if(dummy>='0' && dummy<='9')
 			uart1_data[uart1_data_counter++] = dummy;
 		timeout++;
-		if(timeout>30000)
+		if(timeout>1000000)
 		{
 			return 0;
 		}

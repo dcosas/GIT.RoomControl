@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Thu Nov 05 12:31:48 2015                                *
+;* Date/Time created: Sat Nov 07 12:29:28 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -10,7 +10,7 @@ $C$DW$CU	.dwtag  DW_TAG_compile_unit
 	.dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.5 Copyright (c) 1996-2015 Texas Instruments Incorporated")
 	.dwattr $C$DW$CU, DW_AT_TI_version(0x01)
 	.dwattr $C$DW$CU, DW_AT_comp_dir("E:\Dev\Ti\Code\GIT\LaunchpadRoomControl\LaunchpadRoomControl\timers\Debug")
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0878012 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0624812 
 	.sect	".text:uitoa"
 	.clink
 	.thumbfunc uitoa
@@ -511,12 +511,11 @@ $C$DW$25	.dwtag  DW_TAG_variable, DW_AT_name("tableSize")
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |57| 
 	.dwpsn	file "../utils.c",line 58,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
-;  58 | for (counter = tableSize-1; counter > 0; counter--)                    
+;  58 | for (counter = tableSize; counter > 0; counter--)                      
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #9]          ; [DPU_3_PIPE] |58| 
-        SUBS      A1, A1, #1            ; [DPU_3_PIPE] |58| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |58| 
-	.dwpsn	file "../utils.c",line 58,column 30,is_stmt,isa 1
+	.dwpsn	file "../utils.c",line 58,column 28,is_stmt,isa 1
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |58| 
         CMP       A1, #0                ; [DPU_3_PIPE] |58| 
         BLE       ||$C$L11||            ; [DPU_3_PIPE] |58| 
@@ -557,11 +556,11 @@ $C$DW$26	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |61| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |61| 
         STR       A1, [SP, #4]          ; [DPU_3_PIPE] |61| 
-	.dwpsn	file "../utils.c",line 58,column 43,is_stmt,isa 1
+	.dwpsn	file "../utils.c",line 58,column 41,is_stmt,isa 1
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |58| 
         SUBS      A1, A1, #1            ; [DPU_3_PIPE] |58| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |58| 
-	.dwpsn	file "../utils.c",line 58,column 30,is_stmt,isa 1
+	.dwpsn	file "../utils.c",line 58,column 28,is_stmt,isa 1
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |58| 
         CMP       A1, #0                ; [DPU_3_PIPE] |58| 
         BGT       ||$C$L10||            ; [DPU_3_PIPE] |58| 

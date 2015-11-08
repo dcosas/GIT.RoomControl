@@ -14,11 +14,7 @@ volatile uint8_t convertAdcFlag;
 uint16_t calculateCO2(uint16_t co2)
 {
 	uint16_t v400ppm = 1500;
-	uint16_t v40000ppm = 980;
-	if(co2 < 700)
-		//return v40000ppm;
-		return 40000;
-
+	//uint16_t v40000ppm = 980;
 	//float power = (co2 - v400ppm)/a + b;
 	float power;
 	power = (int16_t)co2 - (int16_t)v400ppm;
@@ -44,7 +40,6 @@ void TransmitCO2AndVoltage(uint16_t co2level)
 	const char nline[] = {10,13};
 	char temp[] = {0,0,0,0};
 	uint16_t co2ppm;
-
 	uitoa(co2level, temp,4);
 	//TransmitUART(co2,4);
 	TransmitUART(temp,4);
@@ -65,9 +60,8 @@ void TransmitCO2(uint16_t co2level)
 	const char nline[] = {10, 13};
 	char temp[] = {0,0,0,0,0};
 	uint16_t co2ppm;
-	co2level = 100;
-	//TransmitUART(co2,4);
 	co2ppm = calculateCO2(co2level);
+	//co2ppm = 40000;
 	uitoa(co2ppm, temp,5);
 	TransmitUART(temp,5);
 	TransmitUART(nline,1);
@@ -111,11 +105,13 @@ uint16_t getAdcCo2Sensor()
 {
 	uint8_t i = 0;
 	uint16_t averageAdcReading=0;
+	uint16_t lastReading = 0;
 	for(i=0;i<=50;i++)
 	{
 		ADC10CTL0 |= ENC + ADC10SC;             // Sampling and conversion start
 		__bis_SR_register(CPUOFF + GIE);        // LPM0, ADC10_ISR will force ex
-		averageAdcReading += ADC10MEM;
+		lastReading = ADC10MEM;
+		averageAdcReading += lastReading;
 	}
 	return averageAdcReading/i;
 }
@@ -127,8 +123,8 @@ void main(void)
 	DCOCTL = 0;                               // Select lowest DCOx and MODx settings
 	BCSCTL1 = CALBC1_1MHZ;                    // Set DCO
 	DCOCTL = CALDCO_1MHZ;
-	//ConfigureADC(PA0, ADCREF_1_5V);
-	ConfigureADC(PA0, ADCREF_2_5V);
+	ConfigureADC(PA0, ADCREF_1_5V);
+	//ConfigureADC(PA0, ADCREF_2_5V);
 	//ConfigureADC(PA0, ADCREF_3_3V);
 	ConfigureUART();
 	__enable_interrupt();                     // Enable interrupts.
@@ -136,7 +132,8 @@ void main(void)
 	{
 		__bis_SR_register(CPUOFF + GIE);        // LPM0, ADC10_ISR will force exi
 		co2sensorLevel = getAdcCo2Sensor();
-		co2sensorLevel *= 2.4414;
+		//co2sensorLevel *= 2.4414;
+		co2sensorLevel *= 1.4648;
 		TransmitCO2(co2sensorLevel);
 	}
 }

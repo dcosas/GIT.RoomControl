@@ -155,8 +155,8 @@ uint8_t send_esp8266(	uint32_t humidity_data,//field1
 	strcat(cmnd, buffer);
 //field5 CO2 level
 	strcat(cmnd,SEND_DATA_FIELD5);
-	//buffer[0] = (char)(temperature_data_4 / 10)+'0';//decimal
-	//buffer[1] = (char)(temperature_data_4 % 10)+'0';//unit
+	//buffer[0] = (char)(co2level / 10)+'0';//decimal
+	//buffer[1] = (char)(co2level % 10)+'0';//unit
 	uitoa(co2level, buffer_long, 5);
 	strcat(cmnd, buffer_long);
 //field6 Water relay
@@ -171,6 +171,7 @@ uint8_t send_esp8266(	uint32_t humidity_data,//field1
 	strcat(cmnd, buffer);
 
 	cmnd_len = strlen(cmnd);
+	cmnd_len += 2;
 	uitoa(cmnd_len, cmnd_len_array_temp, 3);
 	strcpy(cmnd_len_array, SEND_AT_CIPSEND);
 	strcat(cmnd_len_array, cmnd_len_array_temp);

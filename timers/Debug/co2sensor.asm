@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Thu Nov 05 12:05:55 2015                                *
+;* Date/Time created: Sat Nov 07 12:29:21 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -148,7 +148,7 @@ $C$DW$26	.dwtag  DW_TAG_subprogram, DW_AT_name("memset")
 	.dwattr $C$DW$26, DW_AT_type(*$C$DW$T$3)
 	.dwattr $C$DW$26, DW_AT_declaration
 	.dwattr $C$DW$26, DW_AT_external
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0748412 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0626412 
 	.sect	".text:init_co2sensor"
 	.clink
 	.thumbfunc init_co2sensor
@@ -303,7 +303,7 @@ $C$DW$36	.dwtag  DW_TAG_subprogram, DW_AT_name("get_co2level")
 	.dwattr $C$DW$36, DW_AT_decl_file("../co2sensor.c")
 	.dwattr $C$DW$36, DW_AT_decl_line(0x22)
 	.dwattr $C$DW$36, DW_AT_decl_column(0x0a)
-	.dwattr $C$DW$36, DW_AT_TI_max_frame_size(0x18)
+	.dwattr $C$DW$36, DW_AT_TI_max_frame_size(0x20)
 	.dwpsn	file "../co2sensor.c",line 35,column 1,is_stmt,address get_co2level,isa 1
 
 	.dwfde $C$DW$CIE, get_co2level
@@ -320,7 +320,7 @@ $C$DW$36	.dwtag  DW_TAG_subprogram, DW_AT_name("get_co2level")
 ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
 ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
 ;*                           FPEXC,FPSCR                                     *
-;*   Local Frame Size  : 0 Args + 20 Auto + 4 Save = 24 byte                 *
+;*   Local Frame Size  : 0 Args + 24 Auto + 4 Save = 28 byte                 *
 ;*****************************************************************************
 get_co2level:
 ;* --------------------------------------------------------------------------*
@@ -328,8 +328,8 @@ get_co2level:
         PUSH      {LR}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 	.dwcfi	save_reg_to_mem, 14, -4
-        SUB       SP, SP, #20           ; [DPU_3_PIPE] 
-	.dwcfi	cfa_offset, 24
+        SUB       SP, SP, #28           ; [DPU_3_PIPE] 
+	.dwcfi	cfa_offset, 32
 $C$DW$37	.dwtag  DW_TAG_variable, DW_AT_name("uart1_data")
 	.dwattr $C$DW$37, DW_AT_TI_symbol_name("uart1_data")
 	.dwattr $C$DW$37, DW_AT_type(*$C$DW$T$85)
@@ -340,16 +340,16 @@ $C$DW$38	.dwtag  DW_TAG_variable, DW_AT_name("uart1_data_counter")
 	.dwattr $C$DW$38, DW_AT_location[DW_OP_breg13 8]
 $C$DW$39	.dwtag  DW_TAG_variable, DW_AT_name("timeout")
 	.dwattr $C$DW$39, DW_AT_TI_symbol_name("timeout")
-	.dwattr $C$DW$39, DW_AT_type(*$C$DW$T$46)
-	.dwattr $C$DW$39, DW_AT_location[DW_OP_breg13 10]
+	.dwattr $C$DW$39, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$39, DW_AT_location[DW_OP_breg13 12]
 $C$DW$40	.dwtag  DW_TAG_variable, DW_AT_name("co2level")
 	.dwattr $C$DW$40, DW_AT_TI_symbol_name("co2level")
 	.dwattr $C$DW$40, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$40, DW_AT_location[DW_OP_breg13 12]
+	.dwattr $C$DW$40, DW_AT_location[DW_OP_breg13 16]
 $C$DW$41	.dwtag  DW_TAG_variable, DW_AT_name("dummy")
 	.dwattr $C$DW$41, DW_AT_TI_symbol_name("dummy")
 	.dwattr $C$DW$41, DW_AT_type(*$C$DW$T$6)
-	.dwattr $C$DW$41, DW_AT_location[DW_OP_breg13 16]
+	.dwattr $C$DW$41, DW_AT_location[DW_OP_breg13 20]
 	.dwpsn	file "../co2sensor.c",line 36,column 21,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ;  36 | char uart1_data[5] = {0,0,0,0,0};                                      
@@ -371,13 +371,18 @@ $C$DW$42	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |37| 
 	.dwpsn	file "../co2sensor.c",line 38,column 18,is_stmt,isa 1
 ;----------------------------------------------------------------------
-;  38 | uint16_t timeout=0;                                                    
-;  39 | uint32_t co2level;                                                     
+;  38 | uint32_t timeout=0;                                                    
+;----------------------------------------------------------------------
+        MOVS      A1, #0                ; [DPU_3_PIPE] |38| 
+        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |38| 
+	.dwpsn	file "../co2sensor.c",line 39,column 19,is_stmt,isa 1
+;----------------------------------------------------------------------
+;  39 | uint32_t co2level=0;                                                   
 ;  40 | //char confirmation[]="CO2=";                                          
 ;  41 | char dummy;                                                            
 ;----------------------------------------------------------------------
-        MOVS      A1, #0                ; [DPU_3_PIPE] |38| 
-        STRH      A1, [SP, #10]         ; [DPU_3_PIPE] |38| 
+        MOVS      A1, #0                ; [DPU_3_PIPE] |39| 
+        STR       A1, [SP, #16]         ; [DPU_3_PIPE] |39| 
 	.dwpsn	file "../co2sensor.c",line 42,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ;  42 | while(UARTCharsAvail(UART1_BASE))                                      
@@ -397,7 +402,7 @@ $C$DW$43	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$43, DW_AT_TI_call
         BL        UARTCharGet           ; [DPU_3_PIPE] |44| 
         ; CALL OCCURS {UARTCharGet }     ; [] |44| 
-        STRB      A1, [SP, #16]         ; [DPU_3_PIPE] |44| 
+        STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |44| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP ||$C$L2||
 ;* --------------------------------------------------------------------------*
@@ -444,12 +449,12 @@ $C$DW$45	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
 ;  51 | if(dummy>='0' && dummy<='9')                                           
 ;----------------------------------------------------------------------
-        LDRB      A1, [SP, #16]         ; [DPU_3_PIPE] |51| 
+        LDRB      A1, [SP, #20]         ; [DPU_3_PIPE] |51| 
         CMP       A1, #48               ; [DPU_3_PIPE] |51| 
         BLT       ||$C$L4||             ; [DPU_3_PIPE] |51| 
         ; BRANCHCC OCCURS {||$C$L4||}    ; [] |51| 
 ;* --------------------------------------------------------------------------*
-        LDRB      A1, [SP, #16]         ; [DPU_3_PIPE] |51| 
+        LDRB      A1, [SP, #20]         ; [DPU_3_PIPE] |51| 
         CMP       A1, #57               ; [DPU_3_PIPE] |51| 
         BGT       ||$C$L4||             ; [DPU_3_PIPE] |51| 
         ; BRANCHCC OCCURS {||$C$L4||}    ; [] |51| 
@@ -461,7 +466,7 @@ $C$DW$45	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |52| 
         ADDS      A2, A1, #1            ; [DPU_3_PIPE] |52| 
         STRB      A2, [SP, #8]          ; [DPU_3_PIPE] |52| 
-        LDRB      A2, [SP, #16]         ; [DPU_3_PIPE] |52| 
+        LDRB      A2, [SP, #20]         ; [DPU_3_PIPE] |52| 
         STRB      A2, [A1, +SP]         ; [DPU_3_PIPE] |52| 
 ;* --------------------------------------------------------------------------*
 ||$C$L4||:    
@@ -469,17 +474,17 @@ $C$DW$45	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
 ;  53 | timeout++;                                                             
 ;----------------------------------------------------------------------
-        LDRH      A1, [SP, #10]         ; [DPU_3_PIPE] |53| 
+        LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |53| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |53| 
-        STRH      A1, [SP, #10]         ; [DPU_3_PIPE] |53| 
+        STR       A1, [SP, #12]         ; [DPU_3_PIPE] |53| 
 	.dwpsn	file "../co2sensor.c",line 54,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
-;  54 | if(timeout>30000)                                                      
+;  54 | if(timeout>1000000)                                                    
 ;----------------------------------------------------------------------
-        LDRH      A1, [SP, #10]         ; [DPU_3_PIPE] |54| 
-        MOV       A2, #30000            ; [DPU_3_PIPE] |54| 
+        LDR       A2, $C$CON8           ; [DPU_3_PIPE] |54| 
+        LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |54| 
         CMP       A2, A1                ; [DPU_3_PIPE] |54| 
-        BGE       ||$C$L5||             ; [DPU_3_PIPE] |54| 
+        BCS       ||$C$L5||             ; [DPU_3_PIPE] |54| 
         ; BRANCHCC OCCURS {||$C$L5||}    ; [] |54| 
 ;* --------------------------------------------------------------------------*
 	.dwpsn	file "../co2sensor.c",line 56,column 4,is_stmt,isa 1
@@ -503,7 +508,7 @@ $C$DW$46	.dwtag  DW_TAG_TI_branch
         ; CALL OCCURS {UARTCharGetNonBlocking }  ; [] |49| 
         UXTB      A1, A1                ; [DPU_3_PIPE] |49| 
         CMP       A1, #10               ; [DPU_3_PIPE] |49| 
-        STRB      A1, [SP, #16]         ; [DPU_3_PIPE] |49| 
+        STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |49| 
         BNE       ||$C$L3||             ; [DPU_3_PIPE] |49| 
         ; BRANCHCC OCCURS {||$C$L3||}    ; [] |49| 
 ;* --------------------------------------------------------------------------*
@@ -511,7 +516,7 @@ $C$DW$46	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
 ;  59 | atoui(&co2level, uart1_data);                                          
 ;----------------------------------------------------------------------
-        ADD       A1, SP, #12           ; [DPU_3_PIPE] |59| 
+        ADD       A1, SP, #16           ; [DPU_3_PIPE] |59| 
         MOV       A2, SP                ; [DPU_3_PIPE] |59| 
 $C$DW$47	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$47, DW_AT_low_pc(0x00)
@@ -523,11 +528,11 @@ $C$DW$47	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
 ;  60 | return (uint16_t) co2level;                                            
 ;----------------------------------------------------------------------
-        LDRH      A1, [SP, #12]         ; [DPU_3_PIPE] |60| 
+        LDRH      A1, [SP, #16]         ; [DPU_3_PIPE] |60| 
 ;* --------------------------------------------------------------------------*
 ||$C$L6||:    
 	.dwpsn	file "../co2sensor.c",line 61,column 1,is_stmt,isa 1
-        ADD       SP, SP, #20           ; [DPU_3_PIPE] 
+        ADD       SP, SP, #28           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$48	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$48, DW_AT_low_pc(0x00)
@@ -692,6 +697,8 @@ $C$DW$54	.dwtag  DW_TAG_TI_branch
 	.sect	".text:get_co2level"
 	.align	4
 ||$C$CON7||:	.bits	1073795072,32
+	.align	4
+||$C$CON8||:	.bits	1000000,32
 ;*****************************************************************************
 ;* UNDEFINED EXTERNAL REFERENCES                                             *
 ;*****************************************************************************

@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Thu Nov 05 11:53:20 2015                                *
+;* Date/Time created: Sat Nov 07 12:29:27 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -300,7 +300,7 @@ lastUpdateCounter$1:
 sysTickTemp$3:
 	.bits	0,32			; sysTickTemp$3 @ 0
 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0774412 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0662412 
 	.sect	".text:WatchdogIntHandler"
 	.clink
 	.thumbfunc WatchdogIntHandler
@@ -1684,7 +1684,6 @@ $C$DW$115	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
 ; 171 | ROM_WatchdogResetEnable(WATCHDOG0_BASE);                               
 ; 172 | //ToDo: enable after testing                                           
-; 173 | // ROM_WatchdogEnable(WATCHDOG0_BASE);                                 
 ;----------------------------------------------------------------------
         LDR       A1, $C$CON25          ; [DPU_3_PIPE] |171| 
         LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |171| 
@@ -1697,6 +1696,21 @@ $C$DW$116	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$116, DW_AT_TI_indirect
         BLX       A2                    ; [DPU_3_PIPE] |171| 
         ; CALL OCCURS {}                 ; [] |171| 
+	.dwpsn	file "../timers.c",line 173,column 5,is_stmt,isa 1
+;----------------------------------------------------------------------
+; 173 | ROM_WatchdogEnable(WATCHDOG0_BASE);                                    
+;----------------------------------------------------------------------
+        LDR       A1, $C$CON25          ; [DPU_3_PIPE] |173| 
+        LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |173| 
+        LDR       A1, [A1, #8]          ; [DPU_3_PIPE] |173| 
+        MOV       A2, A1                ; [DPU_3_PIPE] |173| 
+        MOV       A1, #1073741824       ; [DPU_3_PIPE] |173| 
+$C$DW$117	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$117, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$117, DW_AT_TI_call
+	.dwattr $C$DW$117, DW_AT_TI_indirect
+        BLX       A2                    ; [DPU_3_PIPE] |173| 
+        ; CALL OCCURS {}                 ; [] |173| 
 	.dwpsn	file "../timers.c",line 175,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 175 | ROM_IntMasterEnable();                                                 
@@ -1704,20 +1718,20 @@ $C$DW$116	.dwtag  DW_TAG_TI_branch
         LDR       A1, $C$CON24          ; [DPU_3_PIPE] |175| 
         LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |175| 
         LDR       A1, [A1, #4]          ; [DPU_3_PIPE] |175| 
-$C$DW$117	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$117, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$117, DW_AT_TI_call
-	.dwattr $C$DW$117, DW_AT_TI_indirect
+$C$DW$118	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$118, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$118, DW_AT_TI_call
+	.dwattr $C$DW$118, DW_AT_TI_indirect
         BLX       A1                    ; [DPU_3_PIPE] |175| 
         ; CALL OCCURS {}                 ; [] |175| 
 	.dwpsn	file "../timers.c",line 177,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 177 | init_system();                                                         
 ;----------------------------------------------------------------------
-$C$DW$118	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$118, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$118, DW_AT_name("init_system")
-	.dwattr $C$DW$118, DW_AT_TI_call
+$C$DW$119	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$119, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$119, DW_AT_name("init_system")
+	.dwattr $C$DW$119, DW_AT_TI_call
         BL        init_system           ; [DPU_3_PIPE] |177| 
         ; CALL OCCURS {init_system }     ; [] |177| 
 	.dwpsn	file "../timers.c",line 179,column 11,is_stmt,isa 1
@@ -1741,20 +1755,20 @@ $C$DW$118	.dwtag  DW_TAG_TI_branch
         LDR       A1, $C$CON23          ; [DPU_3_PIPE] |181| 
         MOVS      A2, #2                ; [DPU_3_PIPE] |181| 
         MOVS      A3, #2                ; [DPU_3_PIPE] |181| 
-$C$DW$119	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$119, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$119, DW_AT_name("GPIOPinWrite")
-	.dwattr $C$DW$119, DW_AT_TI_call
+$C$DW$120	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$120, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$120, DW_AT_name("GPIOPinWrite")
+	.dwattr $C$DW$120, DW_AT_TI_call
         BL        GPIOPinWrite          ; [DPU_3_PIPE] |181| 
         ; CALL OCCURS {GPIOPinWrite }    ; [] |181| 
 	.dwpsn	file "../timers.c",line 182,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 182 | check_sensors();                                                       
 ;----------------------------------------------------------------------
-$C$DW$120	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$120, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$120, DW_AT_name("check_sensors")
-	.dwattr $C$DW$120, DW_AT_TI_call
+$C$DW$121	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$121, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$121, DW_AT_name("check_sensors")
+	.dwattr $C$DW$121, DW_AT_TI_call
         BL        check_sensors         ; [DPU_3_PIPE] |182| 
         ; CALL OCCURS {check_sensors }   ; [] |182| 
 	.dwpsn	file "../timers.c",line 183,column 6,is_stmt,isa 1
@@ -1764,10 +1778,10 @@ $C$DW$120	.dwtag  DW_TAG_TI_branch
         LDR       A1, $C$CON23          ; [DPU_3_PIPE] |183| 
         MOVS      A2, #2                ; [DPU_3_PIPE] |183| 
         MOVS      A3, #0                ; [DPU_3_PIPE] |183| 
-$C$DW$121	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$121, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$121, DW_AT_name("GPIOPinWrite")
-	.dwattr $C$DW$121, DW_AT_TI_call
+$C$DW$122	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$122, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$122, DW_AT_name("GPIOPinWrite")
+	.dwattr $C$DW$122, DW_AT_TI_call
         BL        GPIOPinWrite          ; [DPU_3_PIPE] |183| 
         ; CALL OCCURS {GPIOPinWrite }    ; [] |183| 
 	.dwpsn	file "../timers.c",line 184,column 10,is_stmt,isa 1
@@ -1795,26 +1809,26 @@ $C$DW$121	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
 ; 186 | SysCtlDelay(SysCtlClockGet());                                         
 ;----------------------------------------------------------------------
-$C$DW$122	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$122, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$122, DW_AT_name("SysCtlClockGet")
-	.dwattr $C$DW$122, DW_AT_TI_call
-        BL        SysCtlClockGet        ; [DPU_3_PIPE] |186| 
-        ; CALL OCCURS {SysCtlClockGet }  ; [] |186| 
 $C$DW$123	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$123, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$123, DW_AT_name("SysCtlDelay")
+	.dwattr $C$DW$123, DW_AT_name("SysCtlClockGet")
 	.dwattr $C$DW$123, DW_AT_TI_call
+        BL        SysCtlClockGet        ; [DPU_3_PIPE] |186| 
+        ; CALL OCCURS {SysCtlClockGet }  ; [] |186| 
+$C$DW$124	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$124, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$124, DW_AT_name("SysCtlDelay")
+	.dwattr $C$DW$124, DW_AT_TI_call
         BL        SysCtlDelay           ; [DPU_3_PIPE] |186| 
         ; CALL OCCURS {SysCtlDelay }     ; [] |186| 
 	.dwpsn	file "../timers.c",line 187,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 187 | kick_watchdog();                                                       
 ;----------------------------------------------------------------------
-$C$DW$124	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$124, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$124, DW_AT_name("kick_watchdog")
-	.dwattr $C$DW$124, DW_AT_TI_call
+$C$DW$125	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$125, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$125, DW_AT_name("kick_watchdog")
+	.dwattr $C$DW$125, DW_AT_TI_call
         BL        kick_watchdog         ; [DPU_3_PIPE] |187| 
         ; CALL OCCURS {kick_watchdog }   ; [] |187| 
 	.dwpsn	file "../timers.c",line 184,column 44,is_stmt,isa 1
@@ -1896,9 +1910,9 @@ $C$DW$124	.dwtag  DW_TAG_TI_branch
 	.align	4
 ||$C$SL1||:	.string	"1.0 10.20.15",0
 	.align	4
-||$C$SL2||:	.string	"Nov  5 2015",0
+||$C$SL2||:	.string	"Nov  7 2015",0
 	.align	4
-||$C$SL3||:	.string	"11:53:20",0
+||$C$SL3||:	.string	"12:29:27",0
 ;******************************************************************************
 ;* CONSTANT TABLE                                                             *
 ;******************************************************************************
@@ -1972,14 +1986,14 @@ $C$DW$124	.dwtag  DW_TAG_TI_branch
 
 $C$DW$T$38	.dwtag  DW_TAG_enumeration_type
 	.dwattr $C$DW$T$38, DW_AT_byte_size(0x01)
-$C$DW$125	.dwtag  DW_TAG_enumerator, DW_AT_name("FALSE"), DW_AT_const_value(0x00)
-	.dwattr $C$DW$125, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
-	.dwattr $C$DW$125, DW_AT_decl_line(0x24)
-	.dwattr $C$DW$125, DW_AT_decl_column(0x10)
-$C$DW$126	.dwtag  DW_TAG_enumerator, DW_AT_name("TRUE"), DW_AT_const_value(0x01)
+$C$DW$126	.dwtag  DW_TAG_enumerator, DW_AT_name("FALSE"), DW_AT_const_value(0x00)
 	.dwattr $C$DW$126, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$126, DW_AT_decl_line(0x24)
-	.dwattr $C$DW$126, DW_AT_decl_column(0x1b)
+	.dwattr $C$DW$126, DW_AT_decl_column(0x10)
+$C$DW$127	.dwtag  DW_TAG_enumerator, DW_AT_name("TRUE"), DW_AT_const_value(0x01)
+	.dwattr $C$DW$127, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$127, DW_AT_decl_line(0x24)
+	.dwattr $C$DW$127, DW_AT_decl_column(0x1b)
 	.dwendtag $C$DW$T$38
 
 	.dwattr $C$DW$T$38, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
@@ -1994,86 +2008,86 @@ $C$DW$T$39	.dwtag  DW_TAG_typedef, DW_AT_name("BOOL")
 
 $C$DW$T$40	.dwtag  DW_TAG_enumeration_type
 	.dwattr $C$DW$T$40, DW_AT_byte_size(0x01)
-$C$DW$127	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_OK"), DW_AT_const_value(0x00)
-	.dwattr $C$DW$127, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$127, DW_AT_decl_line(0xb3)
-	.dwattr $C$DW$127, DW_AT_decl_column(0x02)
-$C$DW$128	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_DISK_ERR"), DW_AT_const_value(0x01)
+$C$DW$128	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_OK"), DW_AT_const_value(0x00)
 	.dwattr $C$DW$128, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$128, DW_AT_decl_line(0xb4)
+	.dwattr $C$DW$128, DW_AT_decl_line(0xb3)
 	.dwattr $C$DW$128, DW_AT_decl_column(0x02)
-$C$DW$129	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INT_ERR"), DW_AT_const_value(0x02)
+$C$DW$129	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_DISK_ERR"), DW_AT_const_value(0x01)
 	.dwattr $C$DW$129, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$129, DW_AT_decl_line(0xb5)
+	.dwattr $C$DW$129, DW_AT_decl_line(0xb4)
 	.dwattr $C$DW$129, DW_AT_decl_column(0x02)
-$C$DW$130	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NOT_READY"), DW_AT_const_value(0x03)
+$C$DW$130	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INT_ERR"), DW_AT_const_value(0x02)
 	.dwattr $C$DW$130, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$130, DW_AT_decl_line(0xb6)
+	.dwattr $C$DW$130, DW_AT_decl_line(0xb5)
 	.dwattr $C$DW$130, DW_AT_decl_column(0x02)
-$C$DW$131	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NO_FILE"), DW_AT_const_value(0x04)
+$C$DW$131	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NOT_READY"), DW_AT_const_value(0x03)
 	.dwattr $C$DW$131, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$131, DW_AT_decl_line(0xb7)
+	.dwattr $C$DW$131, DW_AT_decl_line(0xb6)
 	.dwattr $C$DW$131, DW_AT_decl_column(0x02)
-$C$DW$132	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NO_PATH"), DW_AT_const_value(0x05)
+$C$DW$132	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NO_FILE"), DW_AT_const_value(0x04)
 	.dwattr $C$DW$132, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$132, DW_AT_decl_line(0xb8)
+	.dwattr $C$DW$132, DW_AT_decl_line(0xb7)
 	.dwattr $C$DW$132, DW_AT_decl_column(0x02)
-$C$DW$133	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_NAME"), DW_AT_const_value(0x06)
+$C$DW$133	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NO_PATH"), DW_AT_const_value(0x05)
 	.dwattr $C$DW$133, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$133, DW_AT_decl_line(0xb9)
+	.dwattr $C$DW$133, DW_AT_decl_line(0xb8)
 	.dwattr $C$DW$133, DW_AT_decl_column(0x02)
-$C$DW$134	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_DENIED"), DW_AT_const_value(0x07)
+$C$DW$134	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_NAME"), DW_AT_const_value(0x06)
 	.dwattr $C$DW$134, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$134, DW_AT_decl_line(0xba)
+	.dwattr $C$DW$134, DW_AT_decl_line(0xb9)
 	.dwattr $C$DW$134, DW_AT_decl_column(0x02)
-$C$DW$135	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_EXIST"), DW_AT_const_value(0x08)
+$C$DW$135	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_DENIED"), DW_AT_const_value(0x07)
 	.dwattr $C$DW$135, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$135, DW_AT_decl_line(0xbb)
+	.dwattr $C$DW$135, DW_AT_decl_line(0xba)
 	.dwattr $C$DW$135, DW_AT_decl_column(0x02)
-$C$DW$136	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_OBJECT"), DW_AT_const_value(0x09)
+$C$DW$136	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_EXIST"), DW_AT_const_value(0x08)
 	.dwattr $C$DW$136, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$136, DW_AT_decl_line(0xbc)
+	.dwattr $C$DW$136, DW_AT_decl_line(0xbb)
 	.dwattr $C$DW$136, DW_AT_decl_column(0x02)
-$C$DW$137	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_WRITE_PROTECTED"), DW_AT_const_value(0x0a)
+$C$DW$137	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_OBJECT"), DW_AT_const_value(0x09)
 	.dwattr $C$DW$137, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$137, DW_AT_decl_line(0xbd)
+	.dwattr $C$DW$137, DW_AT_decl_line(0xbc)
 	.dwattr $C$DW$137, DW_AT_decl_column(0x02)
-$C$DW$138	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_DRIVE"), DW_AT_const_value(0x0b)
+$C$DW$138	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_WRITE_PROTECTED"), DW_AT_const_value(0x0a)
 	.dwattr $C$DW$138, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$138, DW_AT_decl_line(0xbe)
+	.dwattr $C$DW$138, DW_AT_decl_line(0xbd)
 	.dwattr $C$DW$138, DW_AT_decl_column(0x02)
-$C$DW$139	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NOT_ENABLED"), DW_AT_const_value(0x0c)
+$C$DW$139	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_DRIVE"), DW_AT_const_value(0x0b)
 	.dwattr $C$DW$139, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$139, DW_AT_decl_line(0xbf)
+	.dwattr $C$DW$139, DW_AT_decl_line(0xbe)
 	.dwattr $C$DW$139, DW_AT_decl_column(0x02)
-$C$DW$140	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NO_FILESYSTEM"), DW_AT_const_value(0x0d)
+$C$DW$140	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NOT_ENABLED"), DW_AT_const_value(0x0c)
 	.dwattr $C$DW$140, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$140, DW_AT_decl_line(0xc0)
+	.dwattr $C$DW$140, DW_AT_decl_line(0xbf)
 	.dwattr $C$DW$140, DW_AT_decl_column(0x02)
-$C$DW$141	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_MKFS_ABORTED"), DW_AT_const_value(0x0e)
+$C$DW$141	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NO_FILESYSTEM"), DW_AT_const_value(0x0d)
 	.dwattr $C$DW$141, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$141, DW_AT_decl_line(0xc1)
+	.dwattr $C$DW$141, DW_AT_decl_line(0xc0)
 	.dwattr $C$DW$141, DW_AT_decl_column(0x02)
-$C$DW$142	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_TIMEOUT"), DW_AT_const_value(0x0f)
+$C$DW$142	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_MKFS_ABORTED"), DW_AT_const_value(0x0e)
 	.dwattr $C$DW$142, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$142, DW_AT_decl_line(0xc2)
+	.dwattr $C$DW$142, DW_AT_decl_line(0xc1)
 	.dwattr $C$DW$142, DW_AT_decl_column(0x02)
-$C$DW$143	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_LOCKED"), DW_AT_const_value(0x10)
+$C$DW$143	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_TIMEOUT"), DW_AT_const_value(0x0f)
 	.dwattr $C$DW$143, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$143, DW_AT_decl_line(0xc3)
+	.dwattr $C$DW$143, DW_AT_decl_line(0xc2)
 	.dwattr $C$DW$143, DW_AT_decl_column(0x02)
-$C$DW$144	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NOT_ENOUGH_CORE"), DW_AT_const_value(0x11)
+$C$DW$144	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_LOCKED"), DW_AT_const_value(0x10)
 	.dwattr $C$DW$144, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$144, DW_AT_decl_line(0xc4)
+	.dwattr $C$DW$144, DW_AT_decl_line(0xc3)
 	.dwattr $C$DW$144, DW_AT_decl_column(0x02)
-$C$DW$145	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_TOO_MANY_OPEN_FILES"), DW_AT_const_value(0x12)
+$C$DW$145	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NOT_ENOUGH_CORE"), DW_AT_const_value(0x11)
 	.dwattr $C$DW$145, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$145, DW_AT_decl_line(0xc5)
+	.dwattr $C$DW$145, DW_AT_decl_line(0xc4)
 	.dwattr $C$DW$145, DW_AT_decl_column(0x02)
-$C$DW$146	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_PARAMETER"), DW_AT_const_value(0x13)
+$C$DW$146	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_TOO_MANY_OPEN_FILES"), DW_AT_const_value(0x12)
 	.dwattr $C$DW$146, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$146, DW_AT_decl_line(0xc6)
+	.dwattr $C$DW$146, DW_AT_decl_line(0xc5)
 	.dwattr $C$DW$146, DW_AT_decl_column(0x02)
+$C$DW$147	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_PARAMETER"), DW_AT_const_value(0x13)
+	.dwattr $C$DW$147, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
+	.dwattr $C$DW$147, DW_AT_decl_line(0xc6)
+	.dwattr $C$DW$147, DW_AT_decl_column(0x02)
 	.dwendtag $C$DW$T$40
 
 	.dwattr $C$DW$T$40, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
@@ -2088,26 +2102,26 @@ $C$DW$T$41	.dwtag  DW_TAG_typedef, DW_AT_name("FRESULT")
 
 $C$DW$T$42	.dwtag  DW_TAG_enumeration_type
 	.dwattr $C$DW$T$42, DW_AT_byte_size(0x01)
-$C$DW$147	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_OK"), DW_AT_const_value(0x00)
-	.dwattr $C$DW$147, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/diskio.h")
-	.dwattr $C$DW$147, DW_AT_decl_line(0x17)
-	.dwattr $C$DW$147, DW_AT_decl_column(0x02)
-$C$DW$148	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_ERROR"), DW_AT_const_value(0x01)
+$C$DW$148	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_OK"), DW_AT_const_value(0x00)
 	.dwattr $C$DW$148, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/diskio.h")
-	.dwattr $C$DW$148, DW_AT_decl_line(0x18)
+	.dwattr $C$DW$148, DW_AT_decl_line(0x17)
 	.dwattr $C$DW$148, DW_AT_decl_column(0x02)
-$C$DW$149	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_WRPRT"), DW_AT_const_value(0x02)
+$C$DW$149	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_ERROR"), DW_AT_const_value(0x01)
 	.dwattr $C$DW$149, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/diskio.h")
-	.dwattr $C$DW$149, DW_AT_decl_line(0x19)
+	.dwattr $C$DW$149, DW_AT_decl_line(0x18)
 	.dwattr $C$DW$149, DW_AT_decl_column(0x02)
-$C$DW$150	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_NOTRDY"), DW_AT_const_value(0x03)
+$C$DW$150	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_WRPRT"), DW_AT_const_value(0x02)
 	.dwattr $C$DW$150, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/diskio.h")
-	.dwattr $C$DW$150, DW_AT_decl_line(0x1a)
+	.dwattr $C$DW$150, DW_AT_decl_line(0x19)
 	.dwattr $C$DW$150, DW_AT_decl_column(0x02)
-$C$DW$151	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_PARERR"), DW_AT_const_value(0x04)
+$C$DW$151	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_NOTRDY"), DW_AT_const_value(0x03)
 	.dwattr $C$DW$151, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/diskio.h")
-	.dwattr $C$DW$151, DW_AT_decl_line(0x1b)
+	.dwattr $C$DW$151, DW_AT_decl_line(0x1a)
 	.dwattr $C$DW$151, DW_AT_decl_column(0x02)
+$C$DW$152	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_PARERR"), DW_AT_const_value(0x04)
+	.dwattr $C$DW$152, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/diskio.h")
+	.dwattr $C$DW$152, DW_AT_decl_line(0x1b)
+	.dwattr $C$DW$152, DW_AT_decl_column(0x02)
 	.dwendtag $C$DW$T$42
 
 	.dwattr $C$DW$T$42, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/diskio.h")
@@ -2122,87 +2136,87 @@ $C$DW$T$43	.dwtag  DW_TAG_typedef, DW_AT_name("DRESULT")
 
 $C$DW$T$19	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$19, DW_AT_byte_size(0x48)
-$C$DW$152	.dwtag  DW_TAG_member
-	.dwattr $C$DW$152, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$152, DW_AT_name("_Ddig")
-	.dwattr $C$DW$152, DW_AT_TI_symbol_name("_Ddig")
-	.dwattr $C$DW$152, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$152, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$152, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
-	.dwattr $C$DW$152, DW_AT_decl_line(0x37)
-	.dwattr $C$DW$152, DW_AT_decl_column(0x06)
 $C$DW$153	.dwtag  DW_TAG_member
 	.dwattr $C$DW$153, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$153, DW_AT_name("_Dmdig")
-	.dwattr $C$DW$153, DW_AT_TI_symbol_name("_Dmdig")
-	.dwattr $C$DW$153, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$153, DW_AT_name("_Ddig")
+	.dwattr $C$DW$153, DW_AT_TI_symbol_name("_Ddig")
+	.dwattr $C$DW$153, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$153, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$153, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
 	.dwattr $C$DW$153, DW_AT_decl_line(0x37)
-	.dwattr $C$DW$153, DW_AT_decl_column(0x0d)
+	.dwattr $C$DW$153, DW_AT_decl_column(0x06)
 $C$DW$154	.dwtag  DW_TAG_member
 	.dwattr $C$DW$154, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$154, DW_AT_name("_Dmax10e")
-	.dwattr $C$DW$154, DW_AT_TI_symbol_name("_Dmax10e")
-	.dwattr $C$DW$154, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$154, DW_AT_name("_Dmdig")
+	.dwattr $C$DW$154, DW_AT_TI_symbol_name("_Dmdig")
+	.dwattr $C$DW$154, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$154, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$154, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
 	.dwattr $C$DW$154, DW_AT_decl_line(0x37)
-	.dwattr $C$DW$154, DW_AT_decl_column(0x15)
+	.dwattr $C$DW$154, DW_AT_decl_column(0x0d)
 $C$DW$155	.dwtag  DW_TAG_member
 	.dwattr $C$DW$155, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$155, DW_AT_name("_Dmaxe")
-	.dwattr $C$DW$155, DW_AT_TI_symbol_name("_Dmaxe")
-	.dwattr $C$DW$155, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$155, DW_AT_name("_Dmax10e")
+	.dwattr $C$DW$155, DW_AT_TI_symbol_name("_Dmax10e")
+	.dwattr $C$DW$155, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$155, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$155, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
 	.dwattr $C$DW$155, DW_AT_decl_line(0x37)
-	.dwattr $C$DW$155, DW_AT_decl_column(0x1f)
+	.dwattr $C$DW$155, DW_AT_decl_column(0x15)
 $C$DW$156	.dwtag  DW_TAG_member
 	.dwattr $C$DW$156, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$156, DW_AT_name("_Dmin10e")
-	.dwattr $C$DW$156, DW_AT_TI_symbol_name("_Dmin10e")
-	.dwattr $C$DW$156, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$156, DW_AT_name("_Dmaxe")
+	.dwattr $C$DW$156, DW_AT_TI_symbol_name("_Dmaxe")
+	.dwattr $C$DW$156, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
 	.dwattr $C$DW$156, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$156, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
 	.dwattr $C$DW$156, DW_AT_decl_line(0x37)
-	.dwattr $C$DW$156, DW_AT_decl_column(0x27)
+	.dwattr $C$DW$156, DW_AT_decl_column(0x1f)
 $C$DW$157	.dwtag  DW_TAG_member
 	.dwattr $C$DW$157, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$157, DW_AT_name("_Dmine")
-	.dwattr $C$DW$157, DW_AT_TI_symbol_name("_Dmine")
-	.dwattr $C$DW$157, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$157, DW_AT_name("_Dmin10e")
+	.dwattr $C$DW$157, DW_AT_TI_symbol_name("_Dmin10e")
+	.dwattr $C$DW$157, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
 	.dwattr $C$DW$157, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$157, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
 	.dwattr $C$DW$157, DW_AT_decl_line(0x37)
-	.dwattr $C$DW$157, DW_AT_decl_column(0x31)
+	.dwattr $C$DW$157, DW_AT_decl_column(0x27)
 $C$DW$158	.dwtag  DW_TAG_member
-	.dwattr $C$DW$158, DW_AT_type(*$C$DW$T$35)
-	.dwattr $C$DW$158, DW_AT_name("_Deps")
-	.dwattr $C$DW$158, DW_AT_TI_symbol_name("_Deps")
-	.dwattr $C$DW$158, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$158, DW_AT_type(*$C$DW$T$10)
+	.dwattr $C$DW$158, DW_AT_name("_Dmine")
+	.dwattr $C$DW$158, DW_AT_TI_symbol_name("_Dmine")
+	.dwattr $C$DW$158, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
 	.dwattr $C$DW$158, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$158, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
-	.dwattr $C$DW$158, DW_AT_decl_line(0x3e)
-	.dwattr $C$DW$158, DW_AT_decl_column(0x05)
+	.dwattr $C$DW$158, DW_AT_decl_line(0x37)
+	.dwattr $C$DW$158, DW_AT_decl_column(0x31)
 $C$DW$159	.dwtag  DW_TAG_member
 	.dwattr $C$DW$159, DW_AT_type(*$C$DW$T$35)
-	.dwattr $C$DW$159, DW_AT_name("_Dmax")
-	.dwattr $C$DW$159, DW_AT_TI_symbol_name("_Dmax")
-	.dwattr $C$DW$159, DW_AT_data_member_location[DW_OP_plus_uconst 0x28]
+	.dwattr $C$DW$159, DW_AT_name("_Deps")
+	.dwattr $C$DW$159, DW_AT_TI_symbol_name("_Deps")
+	.dwattr $C$DW$159, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
 	.dwattr $C$DW$159, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$159, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
 	.dwattr $C$DW$159, DW_AT_decl_line(0x3e)
-	.dwattr $C$DW$159, DW_AT_decl_column(0x0c)
+	.dwattr $C$DW$159, DW_AT_decl_column(0x05)
 $C$DW$160	.dwtag  DW_TAG_member
 	.dwattr $C$DW$160, DW_AT_type(*$C$DW$T$35)
-	.dwattr $C$DW$160, DW_AT_name("_Dmin")
-	.dwattr $C$DW$160, DW_AT_TI_symbol_name("_Dmin")
-	.dwattr $C$DW$160, DW_AT_data_member_location[DW_OP_plus_uconst 0x38]
+	.dwattr $C$DW$160, DW_AT_name("_Dmax")
+	.dwattr $C$DW$160, DW_AT_TI_symbol_name("_Dmax")
+	.dwattr $C$DW$160, DW_AT_data_member_location[DW_OP_plus_uconst 0x28]
 	.dwattr $C$DW$160, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$160, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
 	.dwattr $C$DW$160, DW_AT_decl_line(0x3e)
-	.dwattr $C$DW$160, DW_AT_decl_column(0x13)
+	.dwattr $C$DW$160, DW_AT_decl_column(0x0c)
+$C$DW$161	.dwtag  DW_TAG_member
+	.dwattr $C$DW$161, DW_AT_type(*$C$DW$T$35)
+	.dwattr $C$DW$161, DW_AT_name("_Dmin")
+	.dwattr $C$DW$161, DW_AT_TI_symbol_name("_Dmin")
+	.dwattr $C$DW$161, DW_AT_data_member_location[DW_OP_plus_uconst 0x38]
+	.dwattr $C$DW$161, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$161, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
+	.dwattr $C$DW$161, DW_AT_decl_line(0x3e)
+	.dwattr $C$DW$161, DW_AT_decl_column(0x13)
 	.dwendtag $C$DW$T$19
 
 	.dwattr $C$DW$T$19, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
@@ -2217,177 +2231,177 @@ $C$DW$T$44	.dwtag  DW_TAG_typedef, DW_AT_name("_Dvals")
 
 $C$DW$T$24	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$24, DW_AT_byte_size(0x234)
-$C$DW$161	.dwtag  DW_TAG_member
-	.dwattr $C$DW$161, DW_AT_type(*$C$DW$T$20)
-	.dwattr $C$DW$161, DW_AT_name("fs_type")
-	.dwattr $C$DW$161, DW_AT_TI_symbol_name("fs_type")
-	.dwattr $C$DW$161, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$161, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$161, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$161, DW_AT_decl_line(0x4e)
-	.dwattr $C$DW$161, DW_AT_decl_column(0x07)
 $C$DW$162	.dwtag  DW_TAG_member
 	.dwattr $C$DW$162, DW_AT_type(*$C$DW$T$20)
-	.dwattr $C$DW$162, DW_AT_name("drv")
-	.dwattr $C$DW$162, DW_AT_TI_symbol_name("drv")
-	.dwattr $C$DW$162, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
+	.dwattr $C$DW$162, DW_AT_name("fs_type")
+	.dwattr $C$DW$162, DW_AT_TI_symbol_name("fs_type")
+	.dwattr $C$DW$162, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$162, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$162, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$162, DW_AT_decl_line(0x4f)
+	.dwattr $C$DW$162, DW_AT_decl_line(0x4e)
 	.dwattr $C$DW$162, DW_AT_decl_column(0x07)
 $C$DW$163	.dwtag  DW_TAG_member
 	.dwattr $C$DW$163, DW_AT_type(*$C$DW$T$20)
-	.dwattr $C$DW$163, DW_AT_name("csize")
-	.dwattr $C$DW$163, DW_AT_TI_symbol_name("csize")
-	.dwattr $C$DW$163, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+	.dwattr $C$DW$163, DW_AT_name("drv")
+	.dwattr $C$DW$163, DW_AT_TI_symbol_name("drv")
+	.dwattr $C$DW$163, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
 	.dwattr $C$DW$163, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$163, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$163, DW_AT_decl_line(0x50)
+	.dwattr $C$DW$163, DW_AT_decl_line(0x4f)
 	.dwattr $C$DW$163, DW_AT_decl_column(0x07)
 $C$DW$164	.dwtag  DW_TAG_member
 	.dwattr $C$DW$164, DW_AT_type(*$C$DW$T$20)
-	.dwattr $C$DW$164, DW_AT_name("n_fats")
-	.dwattr $C$DW$164, DW_AT_TI_symbol_name("n_fats")
-	.dwattr $C$DW$164, DW_AT_data_member_location[DW_OP_plus_uconst 0x3]
+	.dwattr $C$DW$164, DW_AT_name("csize")
+	.dwattr $C$DW$164, DW_AT_TI_symbol_name("csize")
+	.dwattr $C$DW$164, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
 	.dwattr $C$DW$164, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$164, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$164, DW_AT_decl_line(0x51)
+	.dwattr $C$DW$164, DW_AT_decl_line(0x50)
 	.dwattr $C$DW$164, DW_AT_decl_column(0x07)
 $C$DW$165	.dwtag  DW_TAG_member
 	.dwattr $C$DW$165, DW_AT_type(*$C$DW$T$20)
-	.dwattr $C$DW$165, DW_AT_name("wflag")
-	.dwattr $C$DW$165, DW_AT_TI_symbol_name("wflag")
-	.dwattr $C$DW$165, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$165, DW_AT_name("n_fats")
+	.dwattr $C$DW$165, DW_AT_TI_symbol_name("n_fats")
+	.dwattr $C$DW$165, DW_AT_data_member_location[DW_OP_plus_uconst 0x3]
 	.dwattr $C$DW$165, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$165, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$165, DW_AT_decl_line(0x52)
+	.dwattr $C$DW$165, DW_AT_decl_line(0x51)
 	.dwattr $C$DW$165, DW_AT_decl_column(0x07)
 $C$DW$166	.dwtag  DW_TAG_member
 	.dwattr $C$DW$166, DW_AT_type(*$C$DW$T$20)
-	.dwattr $C$DW$166, DW_AT_name("fsi_flag")
-	.dwattr $C$DW$166, DW_AT_TI_symbol_name("fsi_flag")
-	.dwattr $C$DW$166, DW_AT_data_member_location[DW_OP_plus_uconst 0x5]
+	.dwattr $C$DW$166, DW_AT_name("wflag")
+	.dwattr $C$DW$166, DW_AT_TI_symbol_name("wflag")
+	.dwattr $C$DW$166, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$166, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$166, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$166, DW_AT_decl_line(0x53)
+	.dwattr $C$DW$166, DW_AT_decl_line(0x52)
 	.dwattr $C$DW$166, DW_AT_decl_column(0x07)
 $C$DW$167	.dwtag  DW_TAG_member
-	.dwattr $C$DW$167, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$167, DW_AT_name("id")
-	.dwattr $C$DW$167, DW_AT_TI_symbol_name("id")
-	.dwattr $C$DW$167, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$167, DW_AT_type(*$C$DW$T$20)
+	.dwattr $C$DW$167, DW_AT_name("fsi_flag")
+	.dwattr $C$DW$167, DW_AT_TI_symbol_name("fsi_flag")
+	.dwattr $C$DW$167, DW_AT_data_member_location[DW_OP_plus_uconst 0x5]
 	.dwattr $C$DW$167, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$167, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$167, DW_AT_decl_line(0x54)
+	.dwattr $C$DW$167, DW_AT_decl_line(0x53)
 	.dwattr $C$DW$167, DW_AT_decl_column(0x07)
 $C$DW$168	.dwtag  DW_TAG_member
 	.dwattr $C$DW$168, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$168, DW_AT_name("n_rootdir")
-	.dwattr $C$DW$168, DW_AT_TI_symbol_name("n_rootdir")
-	.dwattr $C$DW$168, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$168, DW_AT_name("id")
+	.dwattr $C$DW$168, DW_AT_TI_symbol_name("id")
+	.dwattr $C$DW$168, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$168, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$168, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$168, DW_AT_decl_line(0x55)
+	.dwattr $C$DW$168, DW_AT_decl_line(0x54)
 	.dwattr $C$DW$168, DW_AT_decl_column(0x07)
 $C$DW$169	.dwtag  DW_TAG_member
-	.dwattr $C$DW$169, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$169, DW_AT_name("last_clust")
-	.dwattr $C$DW$169, DW_AT_TI_symbol_name("last_clust")
-	.dwattr $C$DW$169, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$169, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$169, DW_AT_name("n_rootdir")
+	.dwattr $C$DW$169, DW_AT_TI_symbol_name("n_rootdir")
+	.dwattr $C$DW$169, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$169, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$169, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$169, DW_AT_decl_line(0x5d)
-	.dwattr $C$DW$169, DW_AT_decl_column(0x08)
+	.dwattr $C$DW$169, DW_AT_decl_line(0x55)
+	.dwattr $C$DW$169, DW_AT_decl_column(0x07)
 $C$DW$170	.dwtag  DW_TAG_member
 	.dwattr $C$DW$170, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$170, DW_AT_name("free_clust")
-	.dwattr $C$DW$170, DW_AT_TI_symbol_name("free_clust")
-	.dwattr $C$DW$170, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$170, DW_AT_name("last_clust")
+	.dwattr $C$DW$170, DW_AT_TI_symbol_name("last_clust")
+	.dwattr $C$DW$170, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
 	.dwattr $C$DW$170, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$170, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$170, DW_AT_decl_line(0x5e)
+	.dwattr $C$DW$170, DW_AT_decl_line(0x5d)
 	.dwattr $C$DW$170, DW_AT_decl_column(0x08)
 $C$DW$171	.dwtag  DW_TAG_member
 	.dwattr $C$DW$171, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$171, DW_AT_name("fsi_sector")
-	.dwattr $C$DW$171, DW_AT_TI_symbol_name("fsi_sector")
-	.dwattr $C$DW$171, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$171, DW_AT_name("free_clust")
+	.dwattr $C$DW$171, DW_AT_TI_symbol_name("free_clust")
+	.dwattr $C$DW$171, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
 	.dwattr $C$DW$171, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$171, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$171, DW_AT_decl_line(0x5f)
+	.dwattr $C$DW$171, DW_AT_decl_line(0x5e)
 	.dwattr $C$DW$171, DW_AT_decl_column(0x08)
 $C$DW$172	.dwtag  DW_TAG_member
 	.dwattr $C$DW$172, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$172, DW_AT_name("n_fatent")
-	.dwattr $C$DW$172, DW_AT_TI_symbol_name("n_fatent")
-	.dwattr $C$DW$172, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$172, DW_AT_name("fsi_sector")
+	.dwattr $C$DW$172, DW_AT_TI_symbol_name("fsi_sector")
+	.dwattr $C$DW$172, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
 	.dwattr $C$DW$172, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$172, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$172, DW_AT_decl_line(0x64)
+	.dwattr $C$DW$172, DW_AT_decl_line(0x5f)
 	.dwattr $C$DW$172, DW_AT_decl_column(0x08)
 $C$DW$173	.dwtag  DW_TAG_member
 	.dwattr $C$DW$173, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$173, DW_AT_name("fsize")
-	.dwattr $C$DW$173, DW_AT_TI_symbol_name("fsize")
-	.dwattr $C$DW$173, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
+	.dwattr $C$DW$173, DW_AT_name("n_fatent")
+	.dwattr $C$DW$173, DW_AT_TI_symbol_name("n_fatent")
+	.dwattr $C$DW$173, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
 	.dwattr $C$DW$173, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$173, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$173, DW_AT_decl_line(0x65)
+	.dwattr $C$DW$173, DW_AT_decl_line(0x64)
 	.dwattr $C$DW$173, DW_AT_decl_column(0x08)
 $C$DW$174	.dwtag  DW_TAG_member
 	.dwattr $C$DW$174, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$174, DW_AT_name("volbase")
-	.dwattr $C$DW$174, DW_AT_TI_symbol_name("volbase")
-	.dwattr $C$DW$174, DW_AT_data_member_location[DW_OP_plus_uconst 0x20]
+	.dwattr $C$DW$174, DW_AT_name("fsize")
+	.dwattr $C$DW$174, DW_AT_TI_symbol_name("fsize")
+	.dwattr $C$DW$174, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
 	.dwattr $C$DW$174, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$174, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$174, DW_AT_decl_line(0x66)
+	.dwattr $C$DW$174, DW_AT_decl_line(0x65)
 	.dwattr $C$DW$174, DW_AT_decl_column(0x08)
 $C$DW$175	.dwtag  DW_TAG_member
 	.dwattr $C$DW$175, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$175, DW_AT_name("fatbase")
-	.dwattr $C$DW$175, DW_AT_TI_symbol_name("fatbase")
-	.dwattr $C$DW$175, DW_AT_data_member_location[DW_OP_plus_uconst 0x24]
+	.dwattr $C$DW$175, DW_AT_name("volbase")
+	.dwattr $C$DW$175, DW_AT_TI_symbol_name("volbase")
+	.dwattr $C$DW$175, DW_AT_data_member_location[DW_OP_plus_uconst 0x20]
 	.dwattr $C$DW$175, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$175, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$175, DW_AT_decl_line(0x67)
+	.dwattr $C$DW$175, DW_AT_decl_line(0x66)
 	.dwattr $C$DW$175, DW_AT_decl_column(0x08)
 $C$DW$176	.dwtag  DW_TAG_member
 	.dwattr $C$DW$176, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$176, DW_AT_name("dirbase")
-	.dwattr $C$DW$176, DW_AT_TI_symbol_name("dirbase")
-	.dwattr $C$DW$176, DW_AT_data_member_location[DW_OP_plus_uconst 0x28]
+	.dwattr $C$DW$176, DW_AT_name("fatbase")
+	.dwattr $C$DW$176, DW_AT_TI_symbol_name("fatbase")
+	.dwattr $C$DW$176, DW_AT_data_member_location[DW_OP_plus_uconst 0x24]
 	.dwattr $C$DW$176, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$176, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$176, DW_AT_decl_line(0x68)
+	.dwattr $C$DW$176, DW_AT_decl_line(0x67)
 	.dwattr $C$DW$176, DW_AT_decl_column(0x08)
 $C$DW$177	.dwtag  DW_TAG_member
 	.dwattr $C$DW$177, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$177, DW_AT_name("database")
-	.dwattr $C$DW$177, DW_AT_TI_symbol_name("database")
-	.dwattr $C$DW$177, DW_AT_data_member_location[DW_OP_plus_uconst 0x2c]
+	.dwattr $C$DW$177, DW_AT_name("dirbase")
+	.dwattr $C$DW$177, DW_AT_TI_symbol_name("dirbase")
+	.dwattr $C$DW$177, DW_AT_data_member_location[DW_OP_plus_uconst 0x28]
 	.dwattr $C$DW$177, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$177, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$177, DW_AT_decl_line(0x69)
+	.dwattr $C$DW$177, DW_AT_decl_line(0x68)
 	.dwattr $C$DW$177, DW_AT_decl_column(0x08)
 $C$DW$178	.dwtag  DW_TAG_member
 	.dwattr $C$DW$178, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$178, DW_AT_name("winsect")
-	.dwattr $C$DW$178, DW_AT_TI_symbol_name("winsect")
-	.dwattr $C$DW$178, DW_AT_data_member_location[DW_OP_plus_uconst 0x30]
+	.dwattr $C$DW$178, DW_AT_name("database")
+	.dwattr $C$DW$178, DW_AT_TI_symbol_name("database")
+	.dwattr $C$DW$178, DW_AT_data_member_location[DW_OP_plus_uconst 0x2c]
 	.dwattr $C$DW$178, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$178, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$178, DW_AT_decl_line(0x6a)
+	.dwattr $C$DW$178, DW_AT_decl_line(0x69)
 	.dwattr $C$DW$178, DW_AT_decl_column(0x08)
 $C$DW$179	.dwtag  DW_TAG_member
-	.dwattr $C$DW$179, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$179, DW_AT_name("win")
-	.dwattr $C$DW$179, DW_AT_TI_symbol_name("win")
-	.dwattr $C$DW$179, DW_AT_data_member_location[DW_OP_plus_uconst 0x34]
+	.dwattr $C$DW$179, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$179, DW_AT_name("winsect")
+	.dwattr $C$DW$179, DW_AT_TI_symbol_name("winsect")
+	.dwattr $C$DW$179, DW_AT_data_member_location[DW_OP_plus_uconst 0x30]
 	.dwattr $C$DW$179, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$179, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$179, DW_AT_decl_line(0x6b)
-	.dwattr $C$DW$179, DW_AT_decl_column(0x07)
+	.dwattr $C$DW$179, DW_AT_decl_line(0x6a)
+	.dwattr $C$DW$179, DW_AT_decl_column(0x08)
+$C$DW$180	.dwtag  DW_TAG_member
+	.dwattr $C$DW$180, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$180, DW_AT_name("win")
+	.dwattr $C$DW$180, DW_AT_TI_symbol_name("win")
+	.dwattr $C$DW$180, DW_AT_data_member_location[DW_OP_plus_uconst 0x34]
+	.dwattr $C$DW$180, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$180, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
+	.dwattr $C$DW$180, DW_AT_decl_line(0x6b)
+	.dwattr $C$DW$180, DW_AT_decl_column(0x07)
 	.dwendtag $C$DW$T$24
 
 	.dwattr $C$DW$T$24, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
@@ -2405,114 +2419,114 @@ $C$DW$T$26	.dwtag  DW_TAG_pointer_type
 
 $C$DW$T$28	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$28, DW_AT_byte_size(0x224)
-$C$DW$180	.dwtag  DW_TAG_member
-	.dwattr $C$DW$180, DW_AT_type(*$C$DW$T$26)
-	.dwattr $C$DW$180, DW_AT_name("fs")
-	.dwattr $C$DW$180, DW_AT_TI_symbol_name("fs")
-	.dwattr $C$DW$180, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$180, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$180, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$180, DW_AT_decl_line(0x73)
-	.dwattr $C$DW$180, DW_AT_decl_column(0x09)
 $C$DW$181	.dwtag  DW_TAG_member
-	.dwattr $C$DW$181, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$181, DW_AT_name("id")
-	.dwattr $C$DW$181, DW_AT_TI_symbol_name("id")
-	.dwattr $C$DW$181, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$181, DW_AT_type(*$C$DW$T$26)
+	.dwattr $C$DW$181, DW_AT_name("fs")
+	.dwattr $C$DW$181, DW_AT_TI_symbol_name("fs")
+	.dwattr $C$DW$181, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$181, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$181, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$181, DW_AT_decl_line(0x74)
-	.dwattr $C$DW$181, DW_AT_decl_column(0x07)
+	.dwattr $C$DW$181, DW_AT_decl_line(0x73)
+	.dwattr $C$DW$181, DW_AT_decl_column(0x09)
 $C$DW$182	.dwtag  DW_TAG_member
-	.dwattr $C$DW$182, DW_AT_type(*$C$DW$T$20)
-	.dwattr $C$DW$182, DW_AT_name("flag")
-	.dwattr $C$DW$182, DW_AT_TI_symbol_name("flag")
-	.dwattr $C$DW$182, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$182, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$182, DW_AT_name("id")
+	.dwattr $C$DW$182, DW_AT_TI_symbol_name("id")
+	.dwattr $C$DW$182, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$182, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$182, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$182, DW_AT_decl_line(0x75)
+	.dwattr $C$DW$182, DW_AT_decl_line(0x74)
 	.dwattr $C$DW$182, DW_AT_decl_column(0x07)
 $C$DW$183	.dwtag  DW_TAG_member
 	.dwattr $C$DW$183, DW_AT_type(*$C$DW$T$20)
-	.dwattr $C$DW$183, DW_AT_name("pad1")
-	.dwattr $C$DW$183, DW_AT_TI_symbol_name("pad1")
-	.dwattr $C$DW$183, DW_AT_data_member_location[DW_OP_plus_uconst 0x7]
+	.dwattr $C$DW$183, DW_AT_name("flag")
+	.dwattr $C$DW$183, DW_AT_TI_symbol_name("flag")
+	.dwattr $C$DW$183, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$183, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$183, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$183, DW_AT_decl_line(0x76)
+	.dwattr $C$DW$183, DW_AT_decl_line(0x75)
 	.dwattr $C$DW$183, DW_AT_decl_column(0x07)
 $C$DW$184	.dwtag  DW_TAG_member
-	.dwattr $C$DW$184, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$184, DW_AT_name("fptr")
-	.dwattr $C$DW$184, DW_AT_TI_symbol_name("fptr")
-	.dwattr $C$DW$184, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$184, DW_AT_type(*$C$DW$T$20)
+	.dwattr $C$DW$184, DW_AT_name("pad1")
+	.dwattr $C$DW$184, DW_AT_TI_symbol_name("pad1")
+	.dwattr $C$DW$184, DW_AT_data_member_location[DW_OP_plus_uconst 0x7]
 	.dwattr $C$DW$184, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$184, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$184, DW_AT_decl_line(0x77)
-	.dwattr $C$DW$184, DW_AT_decl_column(0x08)
+	.dwattr $C$DW$184, DW_AT_decl_line(0x76)
+	.dwattr $C$DW$184, DW_AT_decl_column(0x07)
 $C$DW$185	.dwtag  DW_TAG_member
 	.dwattr $C$DW$185, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$185, DW_AT_name("fsize")
-	.dwattr $C$DW$185, DW_AT_TI_symbol_name("fsize")
-	.dwattr $C$DW$185, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$185, DW_AT_name("fptr")
+	.dwattr $C$DW$185, DW_AT_TI_symbol_name("fptr")
+	.dwattr $C$DW$185, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$185, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$185, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$185, DW_AT_decl_line(0x78)
+	.dwattr $C$DW$185, DW_AT_decl_line(0x77)
 	.dwattr $C$DW$185, DW_AT_decl_column(0x08)
 $C$DW$186	.dwtag  DW_TAG_member
 	.dwattr $C$DW$186, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$186, DW_AT_name("sclust")
-	.dwattr $C$DW$186, DW_AT_TI_symbol_name("sclust")
-	.dwattr $C$DW$186, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$186, DW_AT_name("fsize")
+	.dwattr $C$DW$186, DW_AT_TI_symbol_name("fsize")
+	.dwattr $C$DW$186, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
 	.dwattr $C$DW$186, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$186, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$186, DW_AT_decl_line(0x79)
+	.dwattr $C$DW$186, DW_AT_decl_line(0x78)
 	.dwattr $C$DW$186, DW_AT_decl_column(0x08)
 $C$DW$187	.dwtag  DW_TAG_member
 	.dwattr $C$DW$187, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$187, DW_AT_name("clust")
-	.dwattr $C$DW$187, DW_AT_TI_symbol_name("clust")
-	.dwattr $C$DW$187, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$187, DW_AT_name("sclust")
+	.dwattr $C$DW$187, DW_AT_TI_symbol_name("sclust")
+	.dwattr $C$DW$187, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
 	.dwattr $C$DW$187, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$187, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$187, DW_AT_decl_line(0x7a)
+	.dwattr $C$DW$187, DW_AT_decl_line(0x79)
 	.dwattr $C$DW$187, DW_AT_decl_column(0x08)
 $C$DW$188	.dwtag  DW_TAG_member
 	.dwattr $C$DW$188, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$188, DW_AT_name("dsect")
-	.dwattr $C$DW$188, DW_AT_TI_symbol_name("dsect")
-	.dwattr $C$DW$188, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$188, DW_AT_name("clust")
+	.dwattr $C$DW$188, DW_AT_TI_symbol_name("clust")
+	.dwattr $C$DW$188, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
 	.dwattr $C$DW$188, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$188, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$188, DW_AT_decl_line(0x7b)
+	.dwattr $C$DW$188, DW_AT_decl_line(0x7a)
 	.dwattr $C$DW$188, DW_AT_decl_column(0x08)
 $C$DW$189	.dwtag  DW_TAG_member
 	.dwattr $C$DW$189, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$189, DW_AT_name("dir_sect")
-	.dwattr $C$DW$189, DW_AT_TI_symbol_name("dir_sect")
-	.dwattr $C$DW$189, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
+	.dwattr $C$DW$189, DW_AT_name("dsect")
+	.dwattr $C$DW$189, DW_AT_TI_symbol_name("dsect")
+	.dwattr $C$DW$189, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
 	.dwattr $C$DW$189, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$189, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$189, DW_AT_decl_line(0x7d)
+	.dwattr $C$DW$189, DW_AT_decl_line(0x7b)
 	.dwattr $C$DW$189, DW_AT_decl_column(0x08)
 $C$DW$190	.dwtag  DW_TAG_member
-	.dwattr $C$DW$190, DW_AT_type(*$C$DW$T$27)
-	.dwattr $C$DW$190, DW_AT_name("dir_ptr")
-	.dwattr $C$DW$190, DW_AT_TI_symbol_name("dir_ptr")
-	.dwattr $C$DW$190, DW_AT_data_member_location[DW_OP_plus_uconst 0x20]
+	.dwattr $C$DW$190, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$190, DW_AT_name("dir_sect")
+	.dwattr $C$DW$190, DW_AT_TI_symbol_name("dir_sect")
+	.dwattr $C$DW$190, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
 	.dwattr $C$DW$190, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$190, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$190, DW_AT_decl_line(0x7e)
+	.dwattr $C$DW$190, DW_AT_decl_line(0x7d)
 	.dwattr $C$DW$190, DW_AT_decl_column(0x08)
 $C$DW$191	.dwtag  DW_TAG_member
-	.dwattr $C$DW$191, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$191, DW_AT_name("buf")
-	.dwattr $C$DW$191, DW_AT_TI_symbol_name("buf")
-	.dwattr $C$DW$191, DW_AT_data_member_location[DW_OP_plus_uconst 0x24]
+	.dwattr $C$DW$191, DW_AT_type(*$C$DW$T$27)
+	.dwattr $C$DW$191, DW_AT_name("dir_ptr")
+	.dwattr $C$DW$191, DW_AT_TI_symbol_name("dir_ptr")
+	.dwattr $C$DW$191, DW_AT_data_member_location[DW_OP_plus_uconst 0x20]
 	.dwattr $C$DW$191, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$191, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$191, DW_AT_decl_line(0x87)
-	.dwattr $C$DW$191, DW_AT_decl_column(0x07)
+	.dwattr $C$DW$191, DW_AT_decl_line(0x7e)
+	.dwattr $C$DW$191, DW_AT_decl_column(0x08)
+$C$DW$192	.dwtag  DW_TAG_member
+	.dwattr $C$DW$192, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$192, DW_AT_name("buf")
+	.dwattr $C$DW$192, DW_AT_TI_symbol_name("buf")
+	.dwattr $C$DW$192, DW_AT_data_member_location[DW_OP_plus_uconst 0x24]
+	.dwattr $C$DW$192, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$192, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
+	.dwattr $C$DW$192, DW_AT_decl_line(0x87)
+	.dwattr $C$DW$192, DW_AT_decl_column(0x07)
 	.dwendtag $C$DW$T$28
 
 	.dwattr $C$DW$T$28, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
@@ -2527,78 +2541,78 @@ $C$DW$T$45	.dwtag  DW_TAG_typedef, DW_AT_name("FIL")
 
 $C$DW$T$29	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$29, DW_AT_byte_size(0x1c)
-$C$DW$192	.dwtag  DW_TAG_member
-	.dwattr $C$DW$192, DW_AT_type(*$C$DW$T$26)
-	.dwattr $C$DW$192, DW_AT_name("fs")
-	.dwattr $C$DW$192, DW_AT_TI_symbol_name("fs")
-	.dwattr $C$DW$192, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$192, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$192, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$192, DW_AT_decl_line(0x90)
-	.dwattr $C$DW$192, DW_AT_decl_column(0x09)
 $C$DW$193	.dwtag  DW_TAG_member
-	.dwattr $C$DW$193, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$193, DW_AT_name("id")
-	.dwattr $C$DW$193, DW_AT_TI_symbol_name("id")
-	.dwattr $C$DW$193, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$193, DW_AT_type(*$C$DW$T$26)
+	.dwattr $C$DW$193, DW_AT_name("fs")
+	.dwattr $C$DW$193, DW_AT_TI_symbol_name("fs")
+	.dwattr $C$DW$193, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$193, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$193, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$193, DW_AT_decl_line(0x91)
-	.dwattr $C$DW$193, DW_AT_decl_column(0x07)
+	.dwattr $C$DW$193, DW_AT_decl_line(0x90)
+	.dwattr $C$DW$193, DW_AT_decl_column(0x09)
 $C$DW$194	.dwtag  DW_TAG_member
 	.dwattr $C$DW$194, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$194, DW_AT_name("index")
-	.dwattr $C$DW$194, DW_AT_TI_symbol_name("index")
-	.dwattr $C$DW$194, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$194, DW_AT_name("id")
+	.dwattr $C$DW$194, DW_AT_TI_symbol_name("id")
+	.dwattr $C$DW$194, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$194, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$194, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$194, DW_AT_decl_line(0x92)
+	.dwattr $C$DW$194, DW_AT_decl_line(0x91)
 	.dwattr $C$DW$194, DW_AT_decl_column(0x07)
 $C$DW$195	.dwtag  DW_TAG_member
-	.dwattr $C$DW$195, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$195, DW_AT_name("sclust")
-	.dwattr $C$DW$195, DW_AT_TI_symbol_name("sclust")
-	.dwattr $C$DW$195, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$195, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$195, DW_AT_name("index")
+	.dwattr $C$DW$195, DW_AT_TI_symbol_name("index")
+	.dwattr $C$DW$195, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$195, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$195, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$195, DW_AT_decl_line(0x93)
-	.dwattr $C$DW$195, DW_AT_decl_column(0x08)
+	.dwattr $C$DW$195, DW_AT_decl_line(0x92)
+	.dwattr $C$DW$195, DW_AT_decl_column(0x07)
 $C$DW$196	.dwtag  DW_TAG_member
 	.dwattr $C$DW$196, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$196, DW_AT_name("clust")
-	.dwattr $C$DW$196, DW_AT_TI_symbol_name("clust")
-	.dwattr $C$DW$196, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+	.dwattr $C$DW$196, DW_AT_name("sclust")
+	.dwattr $C$DW$196, DW_AT_TI_symbol_name("sclust")
+	.dwattr $C$DW$196, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$196, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$196, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$196, DW_AT_decl_line(0x94)
+	.dwattr $C$DW$196, DW_AT_decl_line(0x93)
 	.dwattr $C$DW$196, DW_AT_decl_column(0x08)
 $C$DW$197	.dwtag  DW_TAG_member
 	.dwattr $C$DW$197, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$197, DW_AT_name("sect")
-	.dwattr $C$DW$197, DW_AT_TI_symbol_name("sect")
-	.dwattr $C$DW$197, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+	.dwattr $C$DW$197, DW_AT_name("clust")
+	.dwattr $C$DW$197, DW_AT_TI_symbol_name("clust")
+	.dwattr $C$DW$197, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
 	.dwattr $C$DW$197, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$197, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$197, DW_AT_decl_line(0x95)
+	.dwattr $C$DW$197, DW_AT_decl_line(0x94)
 	.dwattr $C$DW$197, DW_AT_decl_column(0x08)
 $C$DW$198	.dwtag  DW_TAG_member
-	.dwattr $C$DW$198, DW_AT_type(*$C$DW$T$27)
-	.dwattr $C$DW$198, DW_AT_name("dir")
-	.dwattr $C$DW$198, DW_AT_TI_symbol_name("dir")
-	.dwattr $C$DW$198, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+	.dwattr $C$DW$198, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$198, DW_AT_name("sect")
+	.dwattr $C$DW$198, DW_AT_TI_symbol_name("sect")
+	.dwattr $C$DW$198, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
 	.dwattr $C$DW$198, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$198, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$198, DW_AT_decl_line(0x96)
+	.dwattr $C$DW$198, DW_AT_decl_line(0x95)
 	.dwattr $C$DW$198, DW_AT_decl_column(0x08)
 $C$DW$199	.dwtag  DW_TAG_member
 	.dwattr $C$DW$199, DW_AT_type(*$C$DW$T$27)
-	.dwattr $C$DW$199, DW_AT_name("fn")
-	.dwattr $C$DW$199, DW_AT_TI_symbol_name("fn")
-	.dwattr $C$DW$199, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$199, DW_AT_name("dir")
+	.dwattr $C$DW$199, DW_AT_TI_symbol_name("dir")
+	.dwattr $C$DW$199, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
 	.dwattr $C$DW$199, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$199, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$199, DW_AT_decl_line(0x97)
+	.dwattr $C$DW$199, DW_AT_decl_line(0x96)
 	.dwattr $C$DW$199, DW_AT_decl_column(0x08)
+$C$DW$200	.dwtag  DW_TAG_member
+	.dwattr $C$DW$200, DW_AT_type(*$C$DW$T$27)
+	.dwattr $C$DW$200, DW_AT_name("fn")
+	.dwattr $C$DW$200, DW_AT_TI_symbol_name("fn")
+	.dwattr $C$DW$200, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+	.dwattr $C$DW$200, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$200, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
+	.dwattr $C$DW$200, DW_AT_decl_line(0x97)
+	.dwattr $C$DW$200, DW_AT_decl_column(0x08)
 	.dwendtag $C$DW$T$29
 
 	.dwattr $C$DW$T$29, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
@@ -2613,51 +2627,51 @@ $C$DW$T$46	.dwtag  DW_TAG_typedef, DW_AT_name("DIR")
 
 $C$DW$T$33	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$33, DW_AT_byte_size(0x18)
-$C$DW$200	.dwtag  DW_TAG_member
-	.dwattr $C$DW$200, DW_AT_type(*$C$DW$T$22)
-	.dwattr $C$DW$200, DW_AT_name("fsize")
-	.dwattr $C$DW$200, DW_AT_TI_symbol_name("fsize")
-	.dwattr $C$DW$200, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$200, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$200, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$200, DW_AT_decl_line(0xa3)
-	.dwattr $C$DW$200, DW_AT_decl_column(0x08)
 $C$DW$201	.dwtag  DW_TAG_member
-	.dwattr $C$DW$201, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$201, DW_AT_name("fdate")
-	.dwattr $C$DW$201, DW_AT_TI_symbol_name("fdate")
-	.dwattr $C$DW$201, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+	.dwattr $C$DW$201, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$201, DW_AT_name("fsize")
+	.dwattr $C$DW$201, DW_AT_TI_symbol_name("fsize")
+	.dwattr $C$DW$201, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$201, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$201, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$201, DW_AT_decl_line(0xa4)
-	.dwattr $C$DW$201, DW_AT_decl_column(0x07)
+	.dwattr $C$DW$201, DW_AT_decl_line(0xa3)
+	.dwattr $C$DW$201, DW_AT_decl_column(0x08)
 $C$DW$202	.dwtag  DW_TAG_member
 	.dwattr $C$DW$202, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$202, DW_AT_name("ftime")
-	.dwattr $C$DW$202, DW_AT_TI_symbol_name("ftime")
-	.dwattr $C$DW$202, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+	.dwattr $C$DW$202, DW_AT_name("fdate")
+	.dwattr $C$DW$202, DW_AT_TI_symbol_name("fdate")
+	.dwattr $C$DW$202, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$202, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$202, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$202, DW_AT_decl_line(0xa5)
+	.dwattr $C$DW$202, DW_AT_decl_line(0xa4)
 	.dwattr $C$DW$202, DW_AT_decl_column(0x07)
 $C$DW$203	.dwtag  DW_TAG_member
-	.dwattr $C$DW$203, DW_AT_type(*$C$DW$T$20)
-	.dwattr $C$DW$203, DW_AT_name("fattrib")
-	.dwattr $C$DW$203, DW_AT_TI_symbol_name("fattrib")
-	.dwattr $C$DW$203, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+	.dwattr $C$DW$203, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$203, DW_AT_name("ftime")
+	.dwattr $C$DW$203, DW_AT_TI_symbol_name("ftime")
+	.dwattr $C$DW$203, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$203, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$203, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$203, DW_AT_decl_line(0xa6)
+	.dwattr $C$DW$203, DW_AT_decl_line(0xa5)
 	.dwattr $C$DW$203, DW_AT_decl_column(0x07)
 $C$DW$204	.dwtag  DW_TAG_member
-	.dwattr $C$DW$204, DW_AT_type(*$C$DW$T$32)
-	.dwattr $C$DW$204, DW_AT_name("fname")
-	.dwattr $C$DW$204, DW_AT_TI_symbol_name("fname")
-	.dwattr $C$DW$204, DW_AT_data_member_location[DW_OP_plus_uconst 0x9]
+	.dwattr $C$DW$204, DW_AT_type(*$C$DW$T$20)
+	.dwattr $C$DW$204, DW_AT_name("fattrib")
+	.dwattr $C$DW$204, DW_AT_TI_symbol_name("fattrib")
+	.dwattr $C$DW$204, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$204, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$204, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
-	.dwattr $C$DW$204, DW_AT_decl_line(0xa7)
-	.dwattr $C$DW$204, DW_AT_decl_column(0x08)
+	.dwattr $C$DW$204, DW_AT_decl_line(0xa6)
+	.dwattr $C$DW$204, DW_AT_decl_column(0x07)
+$C$DW$205	.dwtag  DW_TAG_member
+	.dwattr $C$DW$205, DW_AT_type(*$C$DW$T$32)
+	.dwattr $C$DW$205, DW_AT_name("fname")
+	.dwattr $C$DW$205, DW_AT_TI_symbol_name("fname")
+	.dwattr $C$DW$205, DW_AT_data_member_location[DW_OP_plus_uconst 0x9]
+	.dwattr $C$DW$205, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$205, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
+	.dwattr $C$DW$205, DW_AT_decl_line(0xa7)
+	.dwattr $C$DW$205, DW_AT_decl_column(0x08)
 	.dwendtag $C$DW$T$33
 
 	.dwattr $C$DW$T$33, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.h")
@@ -2672,42 +2686,42 @@ $C$DW$T$47	.dwtag  DW_TAG_typedef, DW_AT_name("FILINFO")
 
 $C$DW$T$35	.dwtag  DW_TAG_union_type
 	.dwattr $C$DW$T$35, DW_AT_byte_size(0x10)
-$C$DW$205	.dwtag  DW_TAG_member
-	.dwattr $C$DW$205, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$205, DW_AT_name("_Us")
-	.dwattr $C$DW$205, DW_AT_TI_symbol_name("_Us")
-	.dwattr $C$DW$205, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$205, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$205, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
-	.dwattr $C$DW$205, DW_AT_decl_line(0x3a)
-	.dwattr $C$DW$205, DW_AT_decl_column(0x12)
 $C$DW$206	.dwtag  DW_TAG_member
-	.dwattr $C$DW$206, DW_AT_type(*$C$DW$T$16)
-	.dwattr $C$DW$206, DW_AT_name("_Float")
-	.dwattr $C$DW$206, DW_AT_TI_symbol_name("_Float")
+	.dwattr $C$DW$206, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$206, DW_AT_name("_Us")
+	.dwattr $C$DW$206, DW_AT_TI_symbol_name("_Us")
 	.dwattr $C$DW$206, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$206, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$206, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
-	.dwattr $C$DW$206, DW_AT_decl_line(0x3b)
-	.dwattr $C$DW$206, DW_AT_decl_column(0x09)
+	.dwattr $C$DW$206, DW_AT_decl_line(0x3a)
+	.dwattr $C$DW$206, DW_AT_decl_column(0x12)
 $C$DW$207	.dwtag  DW_TAG_member
-	.dwattr $C$DW$207, DW_AT_type(*$C$DW$T$17)
-	.dwattr $C$DW$207, DW_AT_name("_Double")
-	.dwattr $C$DW$207, DW_AT_TI_symbol_name("_Double")
+	.dwattr $C$DW$207, DW_AT_type(*$C$DW$T$16)
+	.dwattr $C$DW$207, DW_AT_name("_Float")
+	.dwattr $C$DW$207, DW_AT_TI_symbol_name("_Float")
 	.dwattr $C$DW$207, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$207, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$207, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
-	.dwattr $C$DW$207, DW_AT_decl_line(0x3c)
-	.dwattr $C$DW$207, DW_AT_decl_column(0x0a)
+	.dwattr $C$DW$207, DW_AT_decl_line(0x3b)
+	.dwattr $C$DW$207, DW_AT_decl_column(0x09)
 $C$DW$208	.dwtag  DW_TAG_member
-	.dwattr $C$DW$208, DW_AT_type(*$C$DW$T$18)
-	.dwattr $C$DW$208, DW_AT_name("_Long_double")
-	.dwattr $C$DW$208, DW_AT_TI_symbol_name("_Long_double")
+	.dwattr $C$DW$208, DW_AT_type(*$C$DW$T$17)
+	.dwattr $C$DW$208, DW_AT_name("_Double")
+	.dwattr $C$DW$208, DW_AT_TI_symbol_name("_Double")
 	.dwattr $C$DW$208, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$208, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$208, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
-	.dwattr $C$DW$208, DW_AT_decl_line(0x3d)
-	.dwattr $C$DW$208, DW_AT_decl_column(0x0f)
+	.dwattr $C$DW$208, DW_AT_decl_line(0x3c)
+	.dwattr $C$DW$208, DW_AT_decl_column(0x0a)
+$C$DW$209	.dwtag  DW_TAG_member
+	.dwattr $C$DW$209, DW_AT_type(*$C$DW$T$18)
+	.dwattr $C$DW$209, DW_AT_name("_Long_double")
+	.dwattr $C$DW$209, DW_AT_TI_symbol_name("_Long_double")
+	.dwattr $C$DW$209, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$209, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$209, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
+	.dwattr $C$DW$209, DW_AT_decl_line(0x3d)
+	.dwattr $C$DW$209, DW_AT_decl_column(0x0f)
 	.dwendtag $C$DW$T$35
 
 	.dwattr $C$DW$T$35, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h")
@@ -2716,42 +2730,42 @@ $C$DW$208	.dwtag  DW_TAG_member
 
 $C$DW$T$36	.dwtag  DW_TAG_union_type
 	.dwattr $C$DW$T$36, DW_AT_byte_size(0x10)
-$C$DW$209	.dwtag  DW_TAG_member
-	.dwattr $C$DW$209, DW_AT_type(*$C$DW$T$34)
-	.dwattr $C$DW$209, DW_AT_name("_Word")
-	.dwattr $C$DW$209, DW_AT_TI_symbol_name("_Word")
-	.dwattr $C$DW$209, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$209, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$209, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/ymath.h")
-	.dwattr $C$DW$209, DW_AT_decl_line(0x8f)
-	.dwattr $C$DW$209, DW_AT_decl_column(0x11)
 $C$DW$210	.dwtag  DW_TAG_member
-	.dwattr $C$DW$210, DW_AT_type(*$C$DW$T$16)
-	.dwattr $C$DW$210, DW_AT_name("_Float")
-	.dwattr $C$DW$210, DW_AT_TI_symbol_name("_Float")
+	.dwattr $C$DW$210, DW_AT_type(*$C$DW$T$34)
+	.dwattr $C$DW$210, DW_AT_name("_Word")
+	.dwattr $C$DW$210, DW_AT_TI_symbol_name("_Word")
 	.dwattr $C$DW$210, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$210, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$210, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/ymath.h")
-	.dwattr $C$DW$210, DW_AT_decl_line(0x90)
-	.dwattr $C$DW$210, DW_AT_decl_column(0x08)
+	.dwattr $C$DW$210, DW_AT_decl_line(0x8f)
+	.dwattr $C$DW$210, DW_AT_decl_column(0x11)
 $C$DW$211	.dwtag  DW_TAG_member
-	.dwattr $C$DW$211, DW_AT_type(*$C$DW$T$17)
-	.dwattr $C$DW$211, DW_AT_name("_Double")
-	.dwattr $C$DW$211, DW_AT_TI_symbol_name("_Double")
+	.dwattr $C$DW$211, DW_AT_type(*$C$DW$T$16)
+	.dwattr $C$DW$211, DW_AT_name("_Float")
+	.dwattr $C$DW$211, DW_AT_TI_symbol_name("_Float")
 	.dwattr $C$DW$211, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$211, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$211, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/ymath.h")
-	.dwattr $C$DW$211, DW_AT_decl_line(0x91)
-	.dwattr $C$DW$211, DW_AT_decl_column(0x09)
+	.dwattr $C$DW$211, DW_AT_decl_line(0x90)
+	.dwattr $C$DW$211, DW_AT_decl_column(0x08)
 $C$DW$212	.dwtag  DW_TAG_member
-	.dwattr $C$DW$212, DW_AT_type(*$C$DW$T$18)
-	.dwattr $C$DW$212, DW_AT_name("_Long_double")
-	.dwattr $C$DW$212, DW_AT_TI_symbol_name("_Long_double")
+	.dwattr $C$DW$212, DW_AT_type(*$C$DW$T$17)
+	.dwattr $C$DW$212, DW_AT_name("_Double")
+	.dwattr $C$DW$212, DW_AT_TI_symbol_name("_Double")
 	.dwattr $C$DW$212, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$212, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$212, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/ymath.h")
-	.dwattr $C$DW$212, DW_AT_decl_line(0x92)
-	.dwattr $C$DW$212, DW_AT_decl_column(0x0e)
+	.dwattr $C$DW$212, DW_AT_decl_line(0x91)
+	.dwattr $C$DW$212, DW_AT_decl_column(0x09)
+$C$DW$213	.dwtag  DW_TAG_member
+	.dwattr $C$DW$213, DW_AT_type(*$C$DW$T$18)
+	.dwattr $C$DW$213, DW_AT_name("_Long_double")
+	.dwattr $C$DW$213, DW_AT_TI_symbol_name("_Long_double")
+	.dwattr $C$DW$213, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$213, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$213, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/ymath.h")
+	.dwattr $C$DW$213, DW_AT_decl_line(0x92)
+	.dwattr $C$DW$213, DW_AT_decl_column(0x0e)
 	.dwendtag $C$DW$T$36
 
 	.dwattr $C$DW$T$36, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/ymath.h")
@@ -2809,8 +2823,8 @@ $C$DW$T$23	.dwtag  DW_TAG_array_type
 	.dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$20)
 	.dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$23, DW_AT_byte_size(0x200)
-$C$DW$213	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$213, DW_AT_upper_bound(0x1ff)
+$C$DW$214	.dwtag  DW_TAG_subrange_type
+	.dwattr $C$DW$214, DW_AT_upper_bound(0x1ff)
 	.dwendtag $C$DW$T$23
 
 $C$DW$T$27	.dwtag  DW_TAG_pointer_type
@@ -2899,8 +2913,8 @@ $C$DW$T$34	.dwtag  DW_TAG_array_type
 	.dwattr $C$DW$T$34, DW_AT_type(*$C$DW$T$9)
 	.dwattr $C$DW$T$34, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$34, DW_AT_byte_size(0x10)
-$C$DW$214	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$214, DW_AT_upper_bound(0x07)
+$C$DW$215	.dwtag  DW_TAG_subrange_type
+	.dwattr $C$DW$215, DW_AT_upper_bound(0x07)
 	.dwendtag $C$DW$T$34
 
 $C$DW$T$81	.dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
@@ -3180,8 +3194,8 @@ $C$DW$T$32	.dwtag  DW_TAG_array_type
 	.dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$31)
 	.dwattr $C$DW$T$32, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$32, DW_AT_byte_size(0x0d)
-$C$DW$215	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$215, DW_AT_upper_bound(0x0c)
+$C$DW$216	.dwtag  DW_TAG_subrange_type
+	.dwattr $C$DW$216, DW_AT_upper_bound(0x0c)
 	.dwendtag $C$DW$T$32
 
 $C$DW$T$130	.dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
@@ -3209,15 +3223,15 @@ $C$DW$T$128	.dwtag  DW_TAG_volatile_type
 $C$DW$T$37	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$37, DW_AT_name("__va_list")
 	.dwattr $C$DW$T$37, DW_AT_byte_size(0x04)
-$C$DW$216	.dwtag  DW_TAG_member
-	.dwattr $C$DW$216, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$216, DW_AT_name("__ap")
-	.dwattr $C$DW$216, DW_AT_TI_symbol_name("__ap")
-	.dwattr $C$DW$216, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$216, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$216, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h")
-	.dwattr $C$DW$216, DW_AT_decl_line(0x36)
-	.dwattr $C$DW$216, DW_AT_decl_column(0x0c)
+$C$DW$217	.dwtag  DW_TAG_member
+	.dwattr $C$DW$217, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$217, DW_AT_name("__ap")
+	.dwattr $C$DW$217, DW_AT_TI_symbol_name("__ap")
+	.dwattr $C$DW$217, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$217, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$217, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h")
+	.dwattr $C$DW$217, DW_AT_decl_line(0x36)
+	.dwattr $C$DW$217, DW_AT_decl_column(0x0c)
 	.dwendtag $C$DW$T$37
 
 	.dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h")

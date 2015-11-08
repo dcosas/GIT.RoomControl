@@ -170,7 +170,7 @@ int main(void)
     ROM_WatchdogReloadSet(WATCHDOG0_BASE, SysCtlClockGet() * WATCHDOG_TIMER_SECONDS);
     ROM_WatchdogResetEnable(WATCHDOG0_BASE);
     //ToDo: enable after testing
-   // ROM_WatchdogEnable(WATCHDOG0_BASE);
+    ROM_WatchdogEnable(WATCHDOG0_BASE);
 
     ROM_IntMasterEnable();
 

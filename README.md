@@ -1,4 +1,4 @@
-# LaunchpadRoomControl
+# LaunchpadRoomMonitoring
 Work in progress
 
 Launchpad Tiva-C based room control system

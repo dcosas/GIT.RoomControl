@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Sat Nov 07 12:29:27 2015                                *
+;* Date/Time created: Thu Nov 12 19:35:52 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -300,7 +300,7 @@ lastUpdateCounter$1:
 sysTickTemp$3:
 	.bits	0,32			; sysTickTemp$3 @ 0
 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0662412 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\1202412 
 	.sect	".text:WatchdogIntHandler"
 	.clink
 	.thumbfunc WatchdogIntHandler
@@ -764,6 +764,7 @@ $C$DW$66	.dwtag  DW_TAG_TI_branch
 	.dwpsn	file "../timers.c",line 82,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ;  82 | update_lcd();                                                          
+;  84 | //if((temp_secondsCounter - lastUpdateCounter) > 60)                   
 ;----------------------------------------------------------------------
 $C$DW$67	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$67, DW_AT_low_pc(0x00)
@@ -771,19 +772,6 @@ $C$DW$67	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$67, DW_AT_TI_call
         BL        update_lcd            ; [DPU_3_PIPE] |82| 
         ; CALL OCCURS {update_lcd }      ; [] |82| 
-	.dwpsn	file "../timers.c",line 84,column 2,is_stmt,isa 1
-;----------------------------------------------------------------------
-;  84 | if((temp_secondsCounter - lastUpdateCounter) > 60)                     
-;----------------------------------------------------------------------
-        LDR       A2, $C$CON12          ; [DPU_3_PIPE] |84| 
-        LDR       A1, $C$CON10          ; [DPU_3_PIPE] |84| 
-        LDR       A2, [A2, #0]          ; [DPU_3_PIPE] |84| 
-        LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |84| 
-        SUBS      A1, A1, A2            ; [DPU_3_PIPE] |84| 
-        CMP       A1, #60               ; [DPU_3_PIPE] |84| 
-        BLS       ||$C$L3||             ; [DPU_3_PIPE] |84| 
-        ; BRANCHCC OCCURS {||$C$L3||}    ; [] |84| 
-;* --------------------------------------------------------------------------*
 	.dwpsn	file "../timers.c",line 86,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ;  86 | update_thingspeak();//Update ESP8266 at every minute                   
@@ -803,8 +791,6 @@ $C$DW$68	.dwtag  DW_TAG_TI_branch
         LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |87| 
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |87| 
 	.dwpsn	file "../timers.c",line 89,column 1,is_stmt,isa 1
-;* --------------------------------------------------------------------------*
-||$C$L3||:    
 $C$DW$69	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$69, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$69, DW_AT_TI_return
@@ -883,8 +869,8 @@ SysTickIntHandler:
         UDIV      A2, A1, A3            ; [DPU_3_PIPE] |96| 
         MULS      A2, A2, A3            ; [DPU_3_PIPE] |96| 
         SUBS      A1, A1, A2            ; [DPU_3_PIPE] |96| 
-        BNE       ||$C$L4||             ; [DPU_3_PIPE] |96| 
-        ; BRANCHCC OCCURS {||$C$L4||}    ; [] |96| 
+        BNE       ||$C$L3||             ; [DPU_3_PIPE] |96| 
+        ; BRANCHCC OCCURS {||$C$L3||}    ; [] |96| 
 ;* --------------------------------------------------------------------------*
 	.dwpsn	file "../timers.c",line 98,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
@@ -897,7 +883,7 @@ SysTickIntHandler:
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |98| 
 	.dwpsn	file "../timers.c",line 101,column 1,is_stmt,isa 1
 ;* --------------------------------------------------------------------------*
-||$C$L4||:    
+||$C$L3||:    
 $C$DW$72	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$72, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$72, DW_AT_TI_return
@@ -979,8 +965,8 @@ $C$DW$76	.dwtag  DW_TAG_variable, DW_AT_name("start_us")
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |106| 
         CMP       A1, #10               ; [DPU_3_PIPE] |106| 
-        BCC       ||$C$L6||             ; [DPU_3_PIPE] |106| 
-        ; BRANCHCC OCCURS {||$C$L6||}    ; [] |106| 
+        BCC       ||$C$L5||             ; [DPU_3_PIPE] |106| 
+        ; BRANCHCC OCCURS {||$C$L5||}    ; [] |106| 
 ;* --------------------------------------------------------------------------*
 	.dwpsn	file "../timers.c",line 107,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
@@ -1010,7 +996,7 @@ $C$DW$77	.dwtag  DW_TAG_TI_branch
 ; 110 | while((getTimer0ChAvalue()-start_us) < microseconds);                  
 ;----------------------------------------------------------------------
 ;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP ||$C$L5||
+;*   BEGIN LOOP ||$C$L4||
 ;*
 ;*   Loop source line                : 110
 ;*   Loop closing brace source line  : 110
@@ -1018,7 +1004,7 @@ $C$DW$77	.dwtag  DW_TAG_TI_branch
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
-||$C$L5||:    
+||$C$L4||:    
 	.dwpsn	file "../timers.c",line 110,column 8,is_stmt,isa 1
 $C$DW$78	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$78, DW_AT_low_pc(0x00)
@@ -1030,12 +1016,12 @@ $C$DW$78	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |110| 
         SUBS      A1, A1, A3            ; [DPU_3_PIPE] |110| 
         CMP       A2, A1                ; [DPU_3_PIPE] |110| 
-        BHI       ||$C$L5||             ; [DPU_3_PIPE] |110| 
-        ; BRANCHCC OCCURS {||$C$L5||}    ; [] |110| 
+        BHI       ||$C$L4||             ; [DPU_3_PIPE] |110| 
+        ; BRANCHCC OCCURS {||$C$L4||}    ; [] |110| 
 ;* --------------------------------------------------------------------------*
 	.dwpsn	file "../timers.c",line 111,column 1,is_stmt,isa 1
 ;* --------------------------------------------------------------------------*
-||$C$L6||:    
+||$C$L5||:    
 $C$DW$79	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$79, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$79, DW_AT_TI_return
@@ -1109,8 +1095,8 @@ $C$DW$83	.dwtag  DW_TAG_variable, DW_AT_name("start_ms")
 ; 116 | if(miliseconds < 1)                                                    
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |116| 
-        CBZ       A1, ||$C$L8||         ; [] 
-        ; BRANCHCC OCCURS {||$C$L8||}    ; [] |116| 
+        CBZ       A1, ||$C$L7||         ; [] 
+        ; BRANCHCC OCCURS {||$C$L7||}    ; [] |116| 
 ;* --------------------------------------------------------------------------*
 	.dwpsn	file "../timers.c",line 117,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
@@ -1128,7 +1114,7 @@ $C$DW$83	.dwtag  DW_TAG_variable, DW_AT_name("start_ms")
 ; 119 | while((g_ui32SysTickCounter - start_ms) < miliseconds);                
 ;----------------------------------------------------------------------
 ;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP ||$C$L7||
+;*   BEGIN LOOP ||$C$L6||
 ;*
 ;*   Loop source line                : 119
 ;*   Loop closing brace source line  : 119
@@ -1136,7 +1122,7 @@ $C$DW$83	.dwtag  DW_TAG_variable, DW_AT_name("start_ms")
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
-||$C$L7||:    
+||$C$L6||:    
 	.dwpsn	file "../timers.c",line 119,column 8,is_stmt,isa 1
         LDR       A1, $C$CON16          ; [DPU_3_PIPE] |119| 
         LDR       A3, [SP, #4]          ; [DPU_3_PIPE] |119| 
@@ -1144,12 +1130,12 @@ $C$DW$83	.dwtag  DW_TAG_variable, DW_AT_name("start_ms")
         LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |119| 
         SUBS      A1, A1, A3            ; [DPU_3_PIPE] |119| 
         CMP       A2, A1                ; [DPU_3_PIPE] |119| 
-        BHI       ||$C$L7||             ; [DPU_3_PIPE] |119| 
-        ; BRANCHCC OCCURS {||$C$L7||}    ; [] |119| 
+        BHI       ||$C$L6||             ; [DPU_3_PIPE] |119| 
+        ; BRANCHCC OCCURS {||$C$L6||}    ; [] |119| 
 ;* --------------------------------------------------------------------------*
 	.dwpsn	file "../timers.c",line 120,column 1,is_stmt,isa 1
 ;* --------------------------------------------------------------------------*
-||$C$L8||:    
+||$C$L7||:    
         ADD       SP, SP, #8            ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
 $C$DW$84	.dwtag  DW_TAG_TI_branch
@@ -1220,10 +1206,10 @@ $C$DW$87	.dwtag  DW_TAG_variable, DW_AT_name("seconds")
 ; 124 | while(seconds>=1)                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |124| 
-        CBZ       A1, ||$C$L10||        ; [] 
-        ; BRANCHCC OCCURS {||$C$L10||}   ; [] |124| 
+        CBZ       A1, ||$C$L9||         ; [] 
+        ; BRANCHCC OCCURS {||$C$L9||}    ; [] |124| 
 ;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP ||$C$L9||
+;*   BEGIN LOOP ||$C$L8||
 ;*
 ;*   Loop source line                : 124
 ;*   Loop closing brace source line  : 128
@@ -1231,7 +1217,7 @@ $C$DW$87	.dwtag  DW_TAG_variable, DW_AT_name("seconds")
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
-||$C$L9||:    
+||$C$L8||:    
 	.dwpsn	file "../timers.c",line 126,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 126 | SysCtlDelay(SysCtlClockGet());                                         
@@ -1258,12 +1244,12 @@ $C$DW$89	.dwtag  DW_TAG_TI_branch
 	.dwpsn	file "../timers.c",line 124,column 8,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |124| 
         CMP       A1, #0                ; [DPU_3_PIPE] |124| 
-        BNE       ||$C$L9||             ; [DPU_3_PIPE] |124| 
-        ; BRANCHCC OCCURS {||$C$L9||}    ; [] |124| 
+        BNE       ||$C$L8||             ; [DPU_3_PIPE] |124| 
+        ; BRANCHCC OCCURS {||$C$L8||}    ; [] |124| 
 ;* --------------------------------------------------------------------------*
 	.dwpsn	file "../timers.c",line 129,column 1,is_stmt,isa 1
 ;* --------------------------------------------------------------------------*
-||$C$L10||:    
+||$C$L9||:    
 $C$DW$90	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$90, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$90, DW_AT_TI_return
@@ -1671,8 +1657,8 @@ $C$DW$114	.dwtag  DW_TAG_TI_branch
         LDR       A2, $C$CON25          ; [DPU_3_PIPE] |170| 
         LDR       A2, [A2, #0]          ; [DPU_3_PIPE] |170| 
         LDR       A3, [A2, #32]         ; [DPU_3_PIPE] |170| 
-        MOVS      A2, #35               ; [DPU_3_PIPE] |170| 
-        MULS      A2, A2, A1            ; [DPU_3_PIPE] |170| 
+        LSLS      A2, A1, #6            ; [DPU_3_PIPE] |170| 
+        SUB       A2, A2, A1, LSL #2    ; [DPU_3_PIPE] |170| 
         MOV       A1, #1073741824       ; [DPU_3_PIPE] |170| 
 $C$DW$115	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$115, DW_AT_low_pc(0x00)
@@ -1739,7 +1725,7 @@ $C$DW$119	.dwtag  DW_TAG_TI_branch
 ; 179 | while(1)                                                               
 ;----------------------------------------------------------------------
 ;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP ||$C$L11||
+;*   BEGIN LOOP ||$C$L10||
 ;*
 ;*   Loop source line                : 179
 ;*   Loop closing brace source line  : 189
@@ -1747,7 +1733,7 @@ $C$DW$119	.dwtag  DW_TAG_TI_branch
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
-||$C$L11||:    
+||$C$L10||:    
 	.dwpsn	file "../timers.c",line 181,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 181 | GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, GPIO_PIN_1);                 
@@ -1793,10 +1779,10 @@ $C$DW$122	.dwtag  DW_TAG_TI_branch
 	.dwpsn	file "../timers.c",line 184,column 27,is_stmt,isa 1
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |184| 
         CMP       A1, #2                ; [DPU_3_PIPE] |184| 
-        BGE       ||$C$L11||            ; [DPU_3_PIPE] |184| 
-        ; BRANCHCC OCCURS {||$C$L11||}   ; [] |184| 
+        BGE       ||$C$L10||            ; [DPU_3_PIPE] |184| 
+        ; BRANCHCC OCCURS {||$C$L10||}   ; [] |184| 
 ;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP ||$C$L12||
+;*   BEGIN LOOP ||$C$L11||
 ;*
 ;*   Loop source line                : 184
 ;*   Loop closing brace source line  : 188
@@ -1804,7 +1790,7 @@ $C$DW$122	.dwtag  DW_TAG_TI_branch
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
-||$C$L12||:    
+||$C$L11||:    
 	.dwpsn	file "../timers.c",line 186,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 186 | SysCtlDelay(SysCtlClockGet());                                         
@@ -1838,12 +1824,12 @@ $C$DW$125	.dwtag  DW_TAG_TI_branch
 	.dwpsn	file "../timers.c",line 184,column 27,is_stmt,isa 1
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |184| 
         CMP       A1, #2                ; [DPU_3_PIPE] |184| 
-        BLT       ||$C$L12||            ; [DPU_3_PIPE] |184| 
-        ; BRANCHCC OCCURS {||$C$L12||}   ; [] |184| 
+        BLT       ||$C$L11||            ; [DPU_3_PIPE] |184| 
+        ; BRANCHCC OCCURS {||$C$L11||}   ; [] |184| 
 ;* --------------------------------------------------------------------------*
 	.dwpsn	file "../timers.c",line 179,column 11,is_stmt,isa 1
-        B         ||$C$L11||            ; [DPU_3_PIPE] |179| 
-        ; BRANCH OCCURS {||$C$L11||}     ; [] |179| 
+        B         ||$C$L10||            ; [DPU_3_PIPE] |179| 
+        ; BRANCH OCCURS {||$C$L10||}     ; [] |179| 
 ;* --------------------------------------------------------------------------*
 	.dwattr $C$DW$101, DW_AT_TI_end_file("../timers.c")
 	.dwattr $C$DW$101, DW_AT_TI_end_line(0xbe)
@@ -1910,9 +1896,9 @@ $C$DW$125	.dwtag  DW_TAG_TI_branch
 	.align	4
 ||$C$SL1||:	.string	"1.0 10.20.15",0
 	.align	4
-||$C$SL2||:	.string	"Nov  7 2015",0
+||$C$SL2||:	.string	"Nov 12 2015",0
 	.align	4
-||$C$SL3||:	.string	"12:29:27",0
+||$C$SL3||:	.string	"19:35:52",0
 ;******************************************************************************
 ;* CONSTANT TABLE                                                             *
 ;******************************************************************************

@@ -41,13 +41,14 @@ static char str_line2[12]={'H',':','x','x',' ','T','1',':','x','x',' ',' '};
 static char str_line3[12]={'T','2',':','x','x',' ','T','3',':','x','x',' '};
 static char str_line4[12]={' ',' ',' ',' ',' ',' ','p','p','m','C','O','2'};
 
-int32_t threshold_humidity[3] = {85, 90, 80};
+int32_t threshold_humidity[3] = {90, 95, 85};
 int32_t threshold_temperature[3] = {18, 17, 16};
-int32_t threshold_co2[3] = {0, 1, 2};
+uint32_t threshold_co2[3] = {1000, 1000, 1000};
 uint8_t operating_mode;
 
 uint32_t esp8266_data[7] ={0, 0, 0, 0, 0, 0, 0};
 
+uint8_t fanControlledByTimer;
 
 uint8_t get_mode()
 {
@@ -95,6 +96,7 @@ void init_sensors()
 	init_ds1820();
 	init_co2sensor();
 	change_mode(0);
+	fanControlledByTimer = 1;
 }
 //HUMIDITY sensor check - actuates water pump relay if humidity level falls below threshold
 float check_sensor1()
@@ -149,6 +151,18 @@ void check_sensor5()
 	esp8266_data[4] = co2level;
 	memset(str_line4, ' ', 5);
 	uitoa(co2level, str_line4, 5);
+	if(co2level > threshold_co2[operating_mode])
+	{
+		esp8266_data[6] = 1;
+		set_actuator2(ON);
+		fanControlledByTimer = 0;
+	}
+	else
+	{
+		esp8266_data[6] = 0;
+		set_actuator2(OFF);
+		fanControlledByTimer = 1;
+	}
 }
 
 void check_fan_timer(uint32_t current_seconds)
@@ -156,7 +170,8 @@ void check_fan_timer(uint32_t current_seconds)
 	static uint32_t start_seconds = 0;
 	static uint32_t fanTimerDuration = FAN_SECONDS_OFF;
 	static uint8_t fanState = OFF;
-
+	if(!fanControlledByTimer)
+		return;
 	if((current_seconds - start_seconds) > fanTimerDuration) // Time to switch the fan
 	{
 		if(fanState == ON)
@@ -188,7 +203,6 @@ void update_lcd()
 
 void update_thingspeak()
 {
-//	esp8266_test();
 	send_esp8266(	esp8266_data[0],//humidity
 					esp8266_data[1],//temp1
 					esp8266_data[2],//temp2

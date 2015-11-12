@@ -20,7 +20,7 @@
 #include "utils.h"
 
 //#define CONNECT_TO_AP "AT+CWJAP=\"wrtr\",\"\""
-#define SEND_TEST_DATA  "GET /update?key=DJGH4273J29TEUBH&field1=22"
+#define SEND_DATA_TEST  "GET /update?key=DJGH4273J29TEUBH&field1="
 #define SEND_TEST_CMD_LENGTH "AT+CIPSEND=44"
 
 
@@ -40,6 +40,7 @@
 #define SEND_CMD_LENGTH "AT+CIPSEND=104"
 #define SEND_AT_CIPSEND "AT+CIPSEND="
 #define CMD_LENGTH_CONFIRMATION ">"
+#define CMD_CONFIRMATION "IPD"
 #define SEND_DATA "GET /update?key=VW5223XR8EZEL6A3&field1="//size 40 +2(data)+2(cr+lf)
 #define SEND_DATA_FIELD2 "&field2="//size 8+2(data)
 #define SEND_DATA_FIELD3 "&field3="
@@ -87,7 +88,7 @@ uint8_t esp8266_send(char* str, char* confirmation)
 		if((dummy>'!') && (dummy < '}'))
 		{
 			uart_data[uart_data_counter++] = dummy;
-			if(uart_data_counter == 254)
+			if(uart_data_counter == 29)
 						uart_data_counter = 0;
 			if(strstr((const char*)uart_data, confirmation))
 			{
@@ -120,21 +121,22 @@ uint8_t send_esp8266(	uint32_t humidity_data,//field1
 						uint32_t water_relay, //field6
 						uint32_t fan_relay)//field7
 {
-	char cmnd[106];
+	char cmnd[102];
 	char cmnd_len_array[14];
 	char cmnd_len_array_temp[3]={0,0,0};
 	char buffer[2]={0,0};
 	char buffer_long[5] = {0,0,0,0,0};
 	uint8_t result=1;
 	uint16_t cmnd_len;
-
+//	memset(cmnd,0,106);
+//	memset(buffer_long, '0',5);
    // result = esp8266_send(CONNECT_TO_THINGSPEAK, CONNECT_TO_THINGSPEAK_CONFIRMATION);
-    uart_send(CONNECT_TO_THINGSPEAK);
-    //SysCtlDelay(SysCtlClockGet());
 
-	SysCtlDelay(SysCtlClockGet()/3);
-//field1 humidity
+   // SysCtlDelay(SysCtlClockGet());
+//	SysCtlDelay(SysCtlClockGet());
 	strcpy(cmnd,SEND_DATA);
+	//strcpy(cmnd,SEND_DATA_TEST);
+//field1 humidity
 	buffer[0] = (char)(humidity_data / 10)+'0';//decimal
 	buffer[1] = (char)(humidity_data % 10)+'0';//unit
 	strcat(cmnd, buffer);
@@ -155,10 +157,13 @@ uint8_t send_esp8266(	uint32_t humidity_data,//field1
 	strcat(cmnd, buffer);
 //field5 CO2 level
 	strcat(cmnd,SEND_DATA_FIELD5);
-	//buffer[0] = (char)(co2level / 10)+'0';//decimal
+	buffer[0] = (char)(co2level / 1000)+'0';//decimal
+	//buffer[0] = '0';//decimal
 	//buffer[1] = (char)(co2level % 10)+'0';//unit
-	uitoa(co2level, buffer_long, 5);
-	strcat(cmnd, buffer_long);
+	buffer[1] = '0';//unit
+	//uitoa(co2level, buffer_long, 5);
+	//strcat(cmnd, buffer_long);
+	strcat(cmnd, buffer);
 //field6 Water relay
 	strcat(cmnd,SEND_DATA_FIELD6);
 	buffer[0] = (char)(water_relay)+'0';//decimal
@@ -170,29 +175,28 @@ uint8_t send_esp8266(	uint32_t humidity_data,//field1
 	buffer[1] = '0';//unit
 	strcat(cmnd, buffer);
 
-	cmnd_len = strlen(cmnd);
+	/*cmnd_len = strlen(cmnd);
+	if(cmnd_len>106)
+		cmnd_len = 106;
 	cmnd_len += 2;
 	uitoa(cmnd_len, cmnd_len_array_temp, 3);
 	strcpy(cmnd_len_array, SEND_AT_CIPSEND);
 	strcat(cmnd_len_array, cmnd_len_array_temp);
-	//uart_send(SEND_CMD_LENGTH);
-	//result = esp8266_send(SEND_CMD_LENGTH, CMD_LENGTH_CONFIRMATION);
-	result = esp8266_send(cmnd_len_array, CMD_LENGTH_CONFIRMATION);
+	//result = esp8266_send(cmnd_len_array, CMD_LENGTH_CONFIRMATION);
+	uart_send(cmnd_len_array);*/
+	uart_send(CONNECT_TO_THINGSPEAK);
+	//SysCtlDelay(SysCtlClockGet());
+	SysCtlDelay(SysCtlClockGet());
+	uart_send(SEND_CMD_LENGTH);
+	SysCtlDelay(SysCtlClockGet()/3);
+	//SysCtlDelay(SysCtlClockGet());
+	result = esp8266_send(cmnd, CMD_CONFIRMATION);
 	if(!result)
 	{
 	   	esp8266_reset();
 	  	return 0;
 	}
-	SysCtlDelay(SysCtlClockGet()/3);
-
-	uart_send(cmnd);
 	return 1;
-}
-
-void list_ap()
-{
-	//uart_send(LIST_AP);
-	//esp8266_send(LIST_AP,LIST_AP_CONFIRMATION);
 }
 
 uint8_t init_esp8266()
@@ -217,22 +221,4 @@ uint8_t init_esp8266()
 	uart_send(CONNECT_TO_AP);
 	SysCtlDelay(SysCtlClockGet());
 	return result;
-}
-
-void esp8266_test()
-{
-	uint8_t result = 1;
-	SysCtlDelay(SysCtlClockGet());
-  //  result = esp8266_send(CONNECT_TO_THINGSPEAK, CONNECT_TO_THINGSPEAK_CONFIRMATION);
-    SysCtlDelay(SysCtlClockGet());
-	//uart_send(CONNECT_TO_THINGSPEAK);
-    if(!result)
-    {
-       	esp8266_reset();
-       	return;
-    }
-    uart_send(SEND_TEST_CMD_LENGTH);
-    SysCtlDelay(SysCtlClockGet());
-    uart_send(SEND_TEST_DATA);
-    SysCtlDelay(SysCtlClockGet());
 }

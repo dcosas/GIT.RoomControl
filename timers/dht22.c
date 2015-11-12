@@ -60,6 +60,8 @@ void PortEIntHandler(){
 			bitTime = endTime - startTime;
 			if(dhtBitCount == 0)
 				bitTime = 0;
+			if(dhtBitCount >= 50)
+				dhtBitCount = 0;
 			//receivedBits[dhtBitCount++] = bitTime;
 			if(bitTime>5)
 			{

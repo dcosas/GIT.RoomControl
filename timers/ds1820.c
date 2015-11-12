@@ -188,7 +188,7 @@ uint8_t CRC8(const uint8_t *data, uint8_t len) {
 
 void read_scratchpad(uint8_t sensor_id)
 {
-	uint8_t i, slot_no=0,crc_result;
+	uint8_t i, slot_no=0;
 	uint8_t received_slots[10] = {0,0,0,0,0,0,0,0,0};
 	temp_ds1820 = 0;
 
@@ -209,7 +209,7 @@ void read_scratchpad(uint8_t sensor_id)
 		}
 	}
 	//crc_result = CRC8(received_slots,8);
-	crc_result = crcSlow(received_slots,8);
+	//crc_result = crcSlow(received_slots,8);
 	temp_ds1820 = (received_slots[0]>>1);
 	//temp_ds1820 &= 0xff;
 	//temp_ds1820 >>= 1;//truncate the LSB

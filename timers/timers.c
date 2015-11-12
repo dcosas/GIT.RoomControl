@@ -81,7 +81,7 @@ void check_sensors()
 	check_fan_timer(temp_secondsCounter);//Fan actuation 	- fructification
 	update_lcd();
 
-	if((temp_secondsCounter - lastUpdateCounter) > 60)
+	//if((temp_secondsCounter - lastUpdateCounter) > 60)
 	{
 		update_thingspeak();//Update ESP8266 at every minute
 		lastUpdateCounter = temp_secondsCounter;

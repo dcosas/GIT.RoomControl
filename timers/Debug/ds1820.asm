@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Sat Nov 07 12:29:22 2015                                *
+;* Date/Time created: Wed Nov 11 22:11:42 2015                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -13,7 +13,7 @@ $C$DW$CU	.dwtag  DW_TAG_compile_unit
 
 $C$DW$1	.dwtag  DW_TAG_subprogram, DW_AT_name("GPIOPinRead")
 	.dwattr $C$DW$1, DW_AT_TI_symbol_name("GPIOPinRead")
-	.dwattr $C$DW$1, DW_AT_type(*$C$DW$T$58)
+	.dwattr $C$DW$1, DW_AT_type(*$C$DW$T$57)
 	.dwattr $C$DW$1, DW_AT_declaration
 	.dwattr $C$DW$1, DW_AT_external
 	.dwattr $C$DW$1, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
@@ -98,7 +98,7 @@ $C$DW$17	.dwtag  DW_TAG_formal_parameter
 $C$DW$18	.dwtag  DW_TAG_variable, DW_AT_name("temp_ds1820")
 	.dwattr $C$DW$18, DW_AT_TI_symbol_name("temp_ds1820")
 	.dwattr $C$DW$18, DW_AT_location[DW_OP_addr temp_ds1820]
-	.dwattr $C$DW$18, DW_AT_type(*$C$DW$T$53)
+	.dwattr $C$DW$18, DW_AT_type(*$C$DW$T$52)
 	.dwattr $C$DW$18, DW_AT_external
 	.dwattr $C$DW$18, DW_AT_decl_file("../ds1820.c")
 	.dwattr $C$DW$18, DW_AT_decl_line(0x25)
@@ -119,7 +119,7 @@ $C$DW$20	.dwtag  DW_TAG_subprogram, DW_AT_name("memset")
 	.dwattr $C$DW$20, DW_AT_type(*$C$DW$T$3)
 	.dwattr $C$DW$20, DW_AT_declaration
 	.dwattr $C$DW$20, DW_AT_external
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0624812 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0134412 
 	.sect	".text:set_mode_input"
 	.clink
 	.thumbfunc set_mode_input
@@ -1667,18 +1667,14 @@ $C$DW$119	.dwtag  DW_TAG_variable, DW_AT_name("slot_no")
 	.dwattr $C$DW$119, DW_AT_TI_symbol_name("slot_no")
 	.dwattr $C$DW$119, DW_AT_type(*$C$DW$T$23)
 	.dwattr $C$DW$119, DW_AT_location[DW_OP_breg13 2]
-$C$DW$120	.dwtag  DW_TAG_variable, DW_AT_name("crc_result")
-	.dwattr $C$DW$120, DW_AT_TI_symbol_name("crc_result")
-	.dwattr $C$DW$120, DW_AT_type(*$C$DW$T$23)
+$C$DW$120	.dwtag  DW_TAG_variable, DW_AT_name("received_slots")
+	.dwattr $C$DW$120, DW_AT_TI_symbol_name("received_slots")
+	.dwattr $C$DW$120, DW_AT_type(*$C$DW$T$44)
 	.dwattr $C$DW$120, DW_AT_location[DW_OP_breg13 3]
-$C$DW$121	.dwtag  DW_TAG_variable, DW_AT_name("received_slots")
-	.dwattr $C$DW$121, DW_AT_TI_symbol_name("received_slots")
-	.dwattr $C$DW$121, DW_AT_type(*$C$DW$T$45)
-	.dwattr $C$DW$121, DW_AT_location[DW_OP_breg13 4]
         STRB      A1, [SP, #0]          ; [DPU_3_PIPE] |190| 
 	.dwpsn	file "../ds1820.c",line 191,column 20,is_stmt,isa 1
 ;----------------------------------------------------------------------
-; 191 | uint8_t i, slot_no=0,crc_result;                                       
+; 191 | uint8_t i, slot_no=0;                                                  
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |191| 
         STRB      A1, [SP, #2]          ; [DPU_3_PIPE] |191| 
@@ -1688,11 +1684,11 @@ $C$DW$121	.dwtag  DW_TAG_variable, DW_AT_name("received_slots")
 ;----------------------------------------------------------------------
         MOVS      A2, #0                ; [DPU_3_PIPE] |192| 
         MOVS      A3, #10               ; [DPU_3_PIPE] |192| 
-        ADD       A1, SP, #4            ; [DPU_3_PIPE] |192| 
-$C$DW$122	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$122, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$122, DW_AT_name("memset")
-	.dwattr $C$DW$122, DW_AT_TI_call
+        ADD       A1, SP, #3            ; [DPU_3_PIPE] |192| 
+$C$DW$121	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$121, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$121, DW_AT_name("memset")
+	.dwattr $C$DW$121, DW_AT_TI_call
         BL        memset                ; [DPU_3_PIPE] |192| 
         ; CALL OCCURS {memset }          ; [] |192| 
 	.dwpsn	file "../ds1820.c",line 193,column 2,is_stmt,isa 1
@@ -1736,10 +1732,10 @@ $C$DW$122	.dwtag  DW_TAG_TI_branch
 ; 198 | if(readslot(sensor_id))                                                
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |198| 
-$C$DW$123	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$123, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$123, DW_AT_name("readslot")
-	.dwattr $C$DW$123, DW_AT_TI_call
+$C$DW$122	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$122, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$122, DW_AT_name("readslot")
+	.dwattr $C$DW$122, DW_AT_TI_call
         BL        readslot              ; [DPU_3_PIPE] |198| 
         ; CALL OCCURS {readslot }        ; [] |198| 
         CBZ       A1, ||$C$L18||        ; [] 
@@ -1784,7 +1780,7 @@ $C$DW$123	.dwtag  DW_TAG_TI_branch
         LDRH      A1, [A1, #0]          ; [DPU_3_PIPE] |204| 
         ADD       A2, A2, SP            ; [DPU_3_PIPE] |204| 
         AND       A1, A1, #255          ; [DPU_3_PIPE] |204| 
-        STRB      A1, [A2, #4]          ; [DPU_3_PIPE] |204| 
+        STRB      A1, [A2, #3]          ; [DPU_3_PIPE] |204| 
 	.dwpsn	file "../ds1820.c",line 207,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 207 | temp_ds1820 = 0;                                                       
@@ -1796,6 +1792,7 @@ $C$DW$123	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
 ; 208 | slot_no++;                                                             
 ; 211 | //crc_result = CRC8(received_slots,8);                                 
+; 212 | //crc_result = crcSlow(received_slots,8);                              
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #2]          ; [DPU_3_PIPE] |208| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |208| 
@@ -1813,19 +1810,6 @@ $C$DW$123	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L17||}   ; [] |195| 
 ;* --------------------------------------------------------------------------*
 ||$C$L20||:    
-	.dwpsn	file "../ds1820.c",line 212,column 2,is_stmt,isa 1
-;----------------------------------------------------------------------
-; 212 | crc_result = crcSlow(received_slots,8);                                
-;----------------------------------------------------------------------
-        ADD       A1, SP, #4            ; [DPU_3_PIPE] |212| 
-        MOVS      A2, #8                ; [DPU_3_PIPE] |212| 
-$C$DW$124	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$124, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$124, DW_AT_name("crcSlow")
-	.dwattr $C$DW$124, DW_AT_TI_call
-        BL        crcSlow               ; [DPU_3_PIPE] |212| 
-        ; CALL OCCURS {crcSlow }         ; [] |212| 
-        STRB      A1, [SP, #3]          ; [DPU_3_PIPE] |212| 
 	.dwpsn	file "../ds1820.c",line 213,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 213 | temp_ds1820 = (received_slots[0]>>1);                                  
@@ -1836,16 +1820,16 @@ $C$DW$124	.dwtag  DW_TAG_TI_branch
 ;     | ement                                                                  
 ; 219 | #endif                                                                 
 ;----------------------------------------------------------------------
-        LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |213| 
+        LDRB      A1, [SP, #3]          ; [DPU_3_PIPE] |213| 
         LDR       A2, $C$CON10          ; [DPU_3_PIPE] |213| 
         ASRS      A1, A1, #1            ; [DPU_3_PIPE] |213| 
         STRH      A1, [A2, #0]          ; [DPU_3_PIPE] |213| 
 	.dwpsn	file "../ds1820.c",line 220,column 1,is_stmt,isa 1
         ADD       SP, SP, #20           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
-$C$DW$125	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$125, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$125, DW_AT_TI_return
+$C$DW$123	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$123, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$123, DW_AT_TI_return
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
@@ -1861,26 +1845,26 @@ $C$DW$125	.dwtag  DW_TAG_TI_branch
 	.thumb
 	.global	read_ds1820
 
-$C$DW$126	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820")
-	.dwattr $C$DW$126, DW_AT_low_pc(read_ds1820)
-	.dwattr $C$DW$126, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$126, DW_AT_TI_symbol_name("read_ds1820")
-	.dwattr $C$DW$126, DW_AT_external
-	.dwattr $C$DW$126, DW_AT_type(*$C$DW$T$53)
-	.dwattr $C$DW$126, DW_AT_TI_begin_file("../ds1820.c")
-	.dwattr $C$DW$126, DW_AT_TI_begin_line(0xde)
-	.dwattr $C$DW$126, DW_AT_TI_begin_column(0x0a)
-	.dwattr $C$DW$126, DW_AT_decl_file("../ds1820.c")
-	.dwattr $C$DW$126, DW_AT_decl_line(0xde)
-	.dwattr $C$DW$126, DW_AT_decl_column(0x0a)
-	.dwattr $C$DW$126, DW_AT_TI_max_frame_size(0x08)
+$C$DW$124	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820")
+	.dwattr $C$DW$124, DW_AT_low_pc(read_ds1820)
+	.dwattr $C$DW$124, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$124, DW_AT_TI_symbol_name("read_ds1820")
+	.dwattr $C$DW$124, DW_AT_external
+	.dwattr $C$DW$124, DW_AT_type(*$C$DW$T$52)
+	.dwattr $C$DW$124, DW_AT_TI_begin_file("../ds1820.c")
+	.dwattr $C$DW$124, DW_AT_TI_begin_line(0xde)
+	.dwattr $C$DW$124, DW_AT_TI_begin_column(0x0a)
+	.dwattr $C$DW$124, DW_AT_decl_file("../ds1820.c")
+	.dwattr $C$DW$124, DW_AT_decl_line(0xde)
+	.dwattr $C$DW$124, DW_AT_decl_column(0x0a)
+	.dwattr $C$DW$124, DW_AT_TI_max_frame_size(0x08)
 	.dwpsn	file "../ds1820.c",line 223,column 1,is_stmt,address read_ds1820,isa 1
 
 	.dwfde $C$DW$CIE, read_ds1820
-$C$DW$127	.dwtag  DW_TAG_formal_parameter, DW_AT_name("sensor_id")
-	.dwattr $C$DW$127, DW_AT_TI_symbol_name("sensor_id")
-	.dwattr $C$DW$127, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$127, DW_AT_location[DW_OP_reg0]
+$C$DW$125	.dwtag  DW_TAG_formal_parameter, DW_AT_name("sensor_id")
+	.dwattr $C$DW$125, DW_AT_TI_symbol_name("sensor_id")
+	.dwattr $C$DW$125, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$125, DW_AT_location[DW_OP_reg0]
 ;----------------------------------------------------------------------
 ; 222 | uint16_t read_ds1820(uint8_t sensor_id)                                
 ;----------------------------------------------------------------------
@@ -1903,20 +1887,20 @@ read_ds1820:
 	.dwcfi	cfa_offset, 8
 	.dwcfi	save_reg_to_mem, 14, -4
 	.dwcfi	save_reg_to_mem, 3, -8
-$C$DW$128	.dwtag  DW_TAG_variable, DW_AT_name("sensor_id")
-	.dwattr $C$DW$128, DW_AT_TI_symbol_name("sensor_id")
-	.dwattr $C$DW$128, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$128, DW_AT_location[DW_OP_breg13 0]
+$C$DW$126	.dwtag  DW_TAG_variable, DW_AT_name("sensor_id")
+	.dwattr $C$DW$126, DW_AT_TI_symbol_name("sensor_id")
+	.dwattr $C$DW$126, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$126, DW_AT_location[DW_OP_breg13 0]
         STRB      A1, [SP, #0]          ; [DPU_3_PIPE] |223| 
 	.dwpsn	file "../ds1820.c",line 224,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 224 | reset_ds1820(sensor_id);                                               
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |224| 
-$C$DW$129	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$129, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$129, DW_AT_name("reset_ds1820")
-	.dwattr $C$DW$129, DW_AT_TI_call
+$C$DW$127	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$127, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$127, DW_AT_name("reset_ds1820")
+	.dwattr $C$DW$127, DW_AT_TI_call
         BL        reset_ds1820          ; [DPU_3_PIPE] |224| 
         ; CALL OCCURS {reset_ds1820 }    ; [] |224| 
 	.dwpsn	file "../ds1820.c",line 225,column 2,is_stmt,isa 1
@@ -1925,10 +1909,10 @@ $C$DW$129	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |225| 
         MOVS      A2, #204              ; [DPU_3_PIPE] |225| 
-$C$DW$130	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$130, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$130, DW_AT_name("write_ds1820")
-	.dwattr $C$DW$130, DW_AT_TI_call
+$C$DW$128	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$128, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$128, DW_AT_name("write_ds1820")
+	.dwattr $C$DW$128, DW_AT_TI_call
         BL        write_ds1820          ; [DPU_3_PIPE] |225| 
         ; CALL OCCURS {write_ds1820 }    ; [] |225| 
 	.dwpsn	file "../ds1820.c",line 226,column 2,is_stmt,isa 1
@@ -1937,10 +1921,10 @@ $C$DW$130	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |226| 
         MOVS      A2, #68               ; [DPU_3_PIPE] |226| 
-$C$DW$131	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$131, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$131, DW_AT_name("write_ds1820")
-	.dwattr $C$DW$131, DW_AT_TI_call
+$C$DW$129	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$129, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$129, DW_AT_name("write_ds1820")
+	.dwattr $C$DW$129, DW_AT_TI_call
         BL        write_ds1820          ; [DPU_3_PIPE] |226| 
         ; CALL OCCURS {write_ds1820 }    ; [] |226| 
 	.dwpsn	file "../ds1820.c",line 227,column 2,is_stmt,isa 1
@@ -1949,10 +1933,10 @@ $C$DW$131	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |227| 
         MOVS      A2, #1                ; [DPU_3_PIPE] |227| 
-$C$DW$132	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$132, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$132, DW_AT_name("set_line")
-	.dwattr $C$DW$132, DW_AT_TI_call
+$C$DW$130	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$130, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$130, DW_AT_name("set_line")
+	.dwattr $C$DW$130, DW_AT_TI_call
         BL        set_line              ; [DPU_3_PIPE] |227| 
         ; CALL OCCURS {set_line }        ; [] |227| 
 	.dwpsn	file "../ds1820.c",line 228,column 2,is_stmt,isa 1
@@ -1960,10 +1944,10 @@ $C$DW$132	.dwtag  DW_TAG_TI_branch
 ; 228 | delay_us(800);                                                         
 ;----------------------------------------------------------------------
         MOV       A1, #800              ; [DPU_3_PIPE] |228| 
-$C$DW$133	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$133, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$133, DW_AT_name("delay_us")
-	.dwattr $C$DW$133, DW_AT_TI_call
+$C$DW$131	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$131, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$131, DW_AT_name("delay_us")
+	.dwattr $C$DW$131, DW_AT_TI_call
         BL        delay_us              ; [DPU_3_PIPE] |228| 
         ; CALL OCCURS {delay_us }        ; [] |228| 
 	.dwpsn	file "../ds1820.c",line 229,column 2,is_stmt,isa 1
@@ -1971,10 +1955,10 @@ $C$DW$133	.dwtag  DW_TAG_TI_branch
 ; 229 | reset_ds1820(sensor_id);                                               
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |229| 
-$C$DW$134	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$134, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$134, DW_AT_name("reset_ds1820")
-	.dwattr $C$DW$134, DW_AT_TI_call
+$C$DW$132	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$132, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$132, DW_AT_name("reset_ds1820")
+	.dwattr $C$DW$132, DW_AT_TI_call
         BL        reset_ds1820          ; [DPU_3_PIPE] |229| 
         ; CALL OCCURS {reset_ds1820 }    ; [] |229| 
 	.dwpsn	file "../ds1820.c",line 230,column 2,is_stmt,isa 1
@@ -1983,10 +1967,10 @@ $C$DW$134	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |230| 
         MOVS      A2, #204              ; [DPU_3_PIPE] |230| 
-$C$DW$135	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$135, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$135, DW_AT_name("write_ds1820")
-	.dwattr $C$DW$135, DW_AT_TI_call
+$C$DW$133	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$133, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$133, DW_AT_name("write_ds1820")
+	.dwattr $C$DW$133, DW_AT_TI_call
         BL        write_ds1820          ; [DPU_3_PIPE] |230| 
         ; CALL OCCURS {write_ds1820 }    ; [] |230| 
 	.dwpsn	file "../ds1820.c",line 231,column 2,is_stmt,isa 1
@@ -1995,10 +1979,10 @@ $C$DW$135	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |231| 
         MOVS      A2, #190              ; [DPU_3_PIPE] |231| 
-$C$DW$136	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$136, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$136, DW_AT_name("write_ds1820")
-	.dwattr $C$DW$136, DW_AT_TI_call
+$C$DW$134	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$134, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$134, DW_AT_name("write_ds1820")
+	.dwattr $C$DW$134, DW_AT_TI_call
         BL        write_ds1820          ; [DPU_3_PIPE] |231| 
         ; CALL OCCURS {write_ds1820 }    ; [] |231| 
 	.dwpsn	file "../ds1820.c",line 232,column 2,is_stmt,isa 1
@@ -2006,10 +1990,10 @@ $C$DW$136	.dwtag  DW_TAG_TI_branch
 ; 232 | read_scratchpad(sensor_id);                                            
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |232| 
-$C$DW$137	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$137, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$137, DW_AT_name("read_scratchpad")
-	.dwattr $C$DW$137, DW_AT_TI_call
+$C$DW$135	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$135, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$135, DW_AT_name("read_scratchpad")
+	.dwattr $C$DW$135, DW_AT_TI_call
         BL        read_scratchpad       ; [DPU_3_PIPE] |232| 
         ; CALL OCCURS {read_scratchpad }  ; [] |232| 
 	.dwpsn	file "../ds1820.c",line 233,column 2,is_stmt,isa 1
@@ -2017,10 +2001,10 @@ $C$DW$137	.dwtag  DW_TAG_TI_branch
 ; 233 | reset_ds1820(sensor_id);                                               
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |233| 
-$C$DW$138	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$138, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$138, DW_AT_name("reset_ds1820")
-	.dwattr $C$DW$138, DW_AT_TI_call
+$C$DW$136	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$136, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$136, DW_AT_name("reset_ds1820")
+	.dwattr $C$DW$136, DW_AT_TI_call
         BL        reset_ds1820          ; [DPU_3_PIPE] |233| 
         ; CALL OCCURS {reset_ds1820 }    ; [] |233| 
 	.dwpsn	file "../ds1820.c",line 234,column 2,is_stmt,isa 1
@@ -2049,17 +2033,17 @@ $C$DW$138	.dwtag  DW_TAG_TI_branch
         LDR       A1, $C$CON11          ; [DPU_3_PIPE] |237| 
         LDRH      A1, [A1, #0]          ; [DPU_3_PIPE] |237| 
 	.dwpsn	file "../ds1820.c",line 238,column 1,is_stmt,isa 1
-$C$DW$139	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$139, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$139, DW_AT_TI_return
+$C$DW$137	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$137, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$137, DW_AT_TI_return
         POP       {A4, PC}              ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$126, DW_AT_TI_end_file("../ds1820.c")
-	.dwattr $C$DW$126, DW_AT_TI_end_line(0xee)
-	.dwattr $C$DW$126, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$124, DW_AT_TI_end_file("../ds1820.c")
+	.dwattr $C$DW$124, DW_AT_TI_end_line(0xee)
+	.dwattr $C$DW$124, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$126
+	.dwendtag $C$DW$124
 
 	.sect	".text:read_ds1820_1"
 	.clink
@@ -2067,19 +2051,19 @@ $C$DW$139	.dwtag  DW_TAG_TI_branch
 	.thumb
 	.global	read_ds1820_1
 
-$C$DW$140	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_1")
-	.dwattr $C$DW$140, DW_AT_low_pc(read_ds1820_1)
-	.dwattr $C$DW$140, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$140, DW_AT_TI_symbol_name("read_ds1820_1")
-	.dwattr $C$DW$140, DW_AT_external
-	.dwattr $C$DW$140, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$140, DW_AT_TI_begin_file("../ds1820.c")
-	.dwattr $C$DW$140, DW_AT_TI_begin_line(0xf0)
-	.dwattr $C$DW$140, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$140, DW_AT_decl_file("../ds1820.c")
-	.dwattr $C$DW$140, DW_AT_decl_line(0xf0)
-	.dwattr $C$DW$140, DW_AT_decl_column(0x09)
-	.dwattr $C$DW$140, DW_AT_TI_max_frame_size(0x08)
+$C$DW$138	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_1")
+	.dwattr $C$DW$138, DW_AT_low_pc(read_ds1820_1)
+	.dwattr $C$DW$138, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$138, DW_AT_TI_symbol_name("read_ds1820_1")
+	.dwattr $C$DW$138, DW_AT_external
+	.dwattr $C$DW$138, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$138, DW_AT_TI_begin_file("../ds1820.c")
+	.dwattr $C$DW$138, DW_AT_TI_begin_line(0xf0)
+	.dwattr $C$DW$138, DW_AT_TI_begin_column(0x09)
+	.dwattr $C$DW$138, DW_AT_decl_file("../ds1820.c")
+	.dwattr $C$DW$138, DW_AT_decl_line(0xf0)
+	.dwattr $C$DW$138, DW_AT_decl_column(0x09)
+	.dwattr $C$DW$138, DW_AT_TI_max_frame_size(0x08)
 	.dwpsn	file "../ds1820.c",line 241,column 1,is_stmt,address read_ds1820_1,isa 1
 
 	.dwfde $C$DW$CIE, read_ds1820_1
@@ -2117,25 +2101,25 @@ read_ds1820_1:
 ; 243 | return (uint8_t)read_ds1820(1);                                        
 ;----------------------------------------------------------------------
         MOVS      A1, #1                ; [DPU_3_PIPE] |243| 
-$C$DW$141	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$141, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$141, DW_AT_name("read_ds1820")
-	.dwattr $C$DW$141, DW_AT_TI_call
+$C$DW$139	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$139, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$139, DW_AT_name("read_ds1820")
+	.dwattr $C$DW$139, DW_AT_TI_call
         BL        read_ds1820           ; [DPU_3_PIPE] |243| 
         ; CALL OCCURS {read_ds1820 }     ; [] |243| 
         UXTB      A1, A1                ; [DPU_3_PIPE] |243| 
 	.dwpsn	file "../ds1820.c",line 244,column 1,is_stmt,isa 1
-$C$DW$142	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$142, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$142, DW_AT_TI_return
+$C$DW$140	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$140, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$140, DW_AT_TI_return
         POP       {A4, PC}              ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$140, DW_AT_TI_end_file("../ds1820.c")
-	.dwattr $C$DW$140, DW_AT_TI_end_line(0xf4)
-	.dwattr $C$DW$140, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$138, DW_AT_TI_end_file("../ds1820.c")
+	.dwattr $C$DW$138, DW_AT_TI_end_line(0xf4)
+	.dwattr $C$DW$138, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$140
+	.dwendtag $C$DW$138
 
 	.sect	".text:read_ds1820_2"
 	.clink
@@ -2143,19 +2127,19 @@ $C$DW$142	.dwtag  DW_TAG_TI_branch
 	.thumb
 	.global	read_ds1820_2
 
-$C$DW$143	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_2")
-	.dwattr $C$DW$143, DW_AT_low_pc(read_ds1820_2)
-	.dwattr $C$DW$143, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$143, DW_AT_TI_symbol_name("read_ds1820_2")
-	.dwattr $C$DW$143, DW_AT_external
-	.dwattr $C$DW$143, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$143, DW_AT_TI_begin_file("../ds1820.c")
-	.dwattr $C$DW$143, DW_AT_TI_begin_line(0xf5)
-	.dwattr $C$DW$143, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$143, DW_AT_decl_file("../ds1820.c")
-	.dwattr $C$DW$143, DW_AT_decl_line(0xf5)
-	.dwattr $C$DW$143, DW_AT_decl_column(0x09)
-	.dwattr $C$DW$143, DW_AT_TI_max_frame_size(0x08)
+$C$DW$141	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_2")
+	.dwattr $C$DW$141, DW_AT_low_pc(read_ds1820_2)
+	.dwattr $C$DW$141, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$141, DW_AT_TI_symbol_name("read_ds1820_2")
+	.dwattr $C$DW$141, DW_AT_external
+	.dwattr $C$DW$141, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$141, DW_AT_TI_begin_file("../ds1820.c")
+	.dwattr $C$DW$141, DW_AT_TI_begin_line(0xf5)
+	.dwattr $C$DW$141, DW_AT_TI_begin_column(0x09)
+	.dwattr $C$DW$141, DW_AT_decl_file("../ds1820.c")
+	.dwattr $C$DW$141, DW_AT_decl_line(0xf5)
+	.dwattr $C$DW$141, DW_AT_decl_column(0x09)
+	.dwattr $C$DW$141, DW_AT_TI_max_frame_size(0x08)
 	.dwpsn	file "../ds1820.c",line 246,column 1,is_stmt,address read_ds1820_2,isa 1
 
 	.dwfde $C$DW$CIE, read_ds1820_2
@@ -2193,25 +2177,25 @@ read_ds1820_2:
 ; 248 | return (uint8_t)read_ds1820(2);                                        
 ;----------------------------------------------------------------------
         MOVS      A1, #2                ; [DPU_3_PIPE] |248| 
-$C$DW$144	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$144, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$144, DW_AT_name("read_ds1820")
-	.dwattr $C$DW$144, DW_AT_TI_call
+$C$DW$142	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$142, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$142, DW_AT_name("read_ds1820")
+	.dwattr $C$DW$142, DW_AT_TI_call
         BL        read_ds1820           ; [DPU_3_PIPE] |248| 
         ; CALL OCCURS {read_ds1820 }     ; [] |248| 
         UXTB      A1, A1                ; [DPU_3_PIPE] |248| 
 	.dwpsn	file "../ds1820.c",line 249,column 1,is_stmt,isa 1
-$C$DW$145	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$145, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$145, DW_AT_TI_return
+$C$DW$143	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$143, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$143, DW_AT_TI_return
         POP       {A4, PC}              ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$143, DW_AT_TI_end_file("../ds1820.c")
-	.dwattr $C$DW$143, DW_AT_TI_end_line(0xf9)
-	.dwattr $C$DW$143, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$141, DW_AT_TI_end_file("../ds1820.c")
+	.dwattr $C$DW$141, DW_AT_TI_end_line(0xf9)
+	.dwattr $C$DW$141, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$143
+	.dwendtag $C$DW$141
 
 	.sect	".text:read_ds1820_3"
 	.clink
@@ -2219,19 +2203,19 @@ $C$DW$145	.dwtag  DW_TAG_TI_branch
 	.thumb
 	.global	read_ds1820_3
 
-$C$DW$146	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_3")
-	.dwattr $C$DW$146, DW_AT_low_pc(read_ds1820_3)
-	.dwattr $C$DW$146, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$146, DW_AT_TI_symbol_name("read_ds1820_3")
-	.dwattr $C$DW$146, DW_AT_external
-	.dwattr $C$DW$146, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$146, DW_AT_TI_begin_file("../ds1820.c")
-	.dwattr $C$DW$146, DW_AT_TI_begin_line(0xfa)
-	.dwattr $C$DW$146, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$146, DW_AT_decl_file("../ds1820.c")
-	.dwattr $C$DW$146, DW_AT_decl_line(0xfa)
-	.dwattr $C$DW$146, DW_AT_decl_column(0x09)
-	.dwattr $C$DW$146, DW_AT_TI_max_frame_size(0x08)
+$C$DW$144	.dwtag  DW_TAG_subprogram, DW_AT_name("read_ds1820_3")
+	.dwattr $C$DW$144, DW_AT_low_pc(read_ds1820_3)
+	.dwattr $C$DW$144, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$144, DW_AT_TI_symbol_name("read_ds1820_3")
+	.dwattr $C$DW$144, DW_AT_external
+	.dwattr $C$DW$144, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$144, DW_AT_TI_begin_file("../ds1820.c")
+	.dwattr $C$DW$144, DW_AT_TI_begin_line(0xfa)
+	.dwattr $C$DW$144, DW_AT_TI_begin_column(0x09)
+	.dwattr $C$DW$144, DW_AT_decl_file("../ds1820.c")
+	.dwattr $C$DW$144, DW_AT_decl_line(0xfa)
+	.dwattr $C$DW$144, DW_AT_decl_column(0x09)
+	.dwattr $C$DW$144, DW_AT_TI_max_frame_size(0x08)
 	.dwpsn	file "../ds1820.c",line 251,column 1,is_stmt,address read_ds1820_3,isa 1
 
 	.dwfde $C$DW$CIE, read_ds1820_3
@@ -2262,25 +2246,25 @@ read_ds1820_3:
 ; 252 | return (uint8_t)read_ds1820(3);                                        
 ;----------------------------------------------------------------------
         MOVS      A1, #3                ; [DPU_3_PIPE] |252| 
-$C$DW$147	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$147, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$147, DW_AT_name("read_ds1820")
-	.dwattr $C$DW$147, DW_AT_TI_call
+$C$DW$145	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$145, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$145, DW_AT_name("read_ds1820")
+	.dwattr $C$DW$145, DW_AT_TI_call
         BL        read_ds1820           ; [DPU_3_PIPE] |252| 
         ; CALL OCCURS {read_ds1820 }     ; [] |252| 
         UXTB      A1, A1                ; [DPU_3_PIPE] |252| 
 	.dwpsn	file "../ds1820.c",line 253,column 1,is_stmt,isa 1
-$C$DW$148	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$148, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$148, DW_AT_TI_return
+$C$DW$146	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$146, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$146, DW_AT_TI_return
         POP       {A4, PC}              ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$146, DW_AT_TI_end_file("../ds1820.c")
-	.dwattr $C$DW$146, DW_AT_TI_end_line(0xfd)
-	.dwattr $C$DW$146, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$144, DW_AT_TI_end_file("../ds1820.c")
+	.dwattr $C$DW$144, DW_AT_TI_end_line(0xfd)
+	.dwattr $C$DW$144, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$146
+	.dwendtag $C$DW$144
 
 ;******************************************************************************
 ;* CONSTANT TABLE                                                             *
@@ -2408,25 +2392,25 @@ $C$DW$T$23	.dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
 	.dwattr $C$DW$T$23, DW_AT_decl_line(0x2b)
 	.dwattr $C$DW$T$23, DW_AT_decl_column(0x1c)
 
-$C$DW$T$45	.dwtag  DW_TAG_array_type
-	.dwattr $C$DW$T$45, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$45, DW_AT_byte_size(0x0a)
-$C$DW$149	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$149, DW_AT_upper_bound(0x09)
-	.dwendtag $C$DW$T$45
+$C$DW$T$44	.dwtag  DW_TAG_array_type
+	.dwattr $C$DW$T$44, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$44, DW_AT_byte_size(0x0a)
+$C$DW$147	.dwtag  DW_TAG_subrange_type
+	.dwattr $C$DW$147, DW_AT_upper_bound(0x09)
+	.dwendtag $C$DW$T$44
 
 $C$DW$T$39	.dwtag  DW_TAG_const_type
 	.dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$23)
 $C$DW$T$40	.dwtag  DW_TAG_pointer_type
 	.dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$39)
 	.dwattr $C$DW$T$40, DW_AT_address_class(0x20)
-$C$DW$T$48	.dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
-	.dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$23)
-	.dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$48, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$48, DW_AT_decl_line(0x38)
-	.dwattr $C$DW$T$48, DW_AT_decl_column(0x16)
+$C$DW$T$47	.dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
+	.dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$23)
+	.dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$47, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
+	.dwattr $C$DW$T$47, DW_AT_decl_line(0x38)
+	.dwattr $C$DW$T$47, DW_AT_decl_column(0x16)
 $C$DW$T$7	.dwtag  DW_TAG_base_type
 	.dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
 	.dwattr $C$DW$T$7, DW_AT_name("wchar_t")
@@ -2435,226 +2419,226 @@ $C$DW$T$8	.dwtag  DW_TAG_base_type
 	.dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
 	.dwattr $C$DW$T$8, DW_AT_name("short")
 	.dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
-$C$DW$T$49	.dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
-	.dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$8)
+$C$DW$T$48	.dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
+	.dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$8)
+	.dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$48, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
+	.dwattr $C$DW$T$48, DW_AT_decl_line(0x2c)
+	.dwattr $C$DW$T$48, DW_AT_decl_column(0x1d)
+$C$DW$T$49	.dwtag  DW_TAG_typedef, DW_AT_name("int_least16_t")
+	.dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$48)
 	.dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$49, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$49, DW_AT_decl_line(0x2c)
-	.dwattr $C$DW$T$49, DW_AT_decl_column(0x1d)
-$C$DW$T$50	.dwtag  DW_TAG_typedef, DW_AT_name("int_least16_t")
-	.dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$49)
-	.dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$50, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$50, DW_AT_decl_line(0x3a)
-	.dwattr $C$DW$T$50, DW_AT_decl_column(0x17)
+	.dwattr $C$DW$T$49, DW_AT_decl_line(0x3a)
+	.dwattr $C$DW$T$49, DW_AT_decl_column(0x17)
 $C$DW$T$9	.dwtag  DW_TAG_base_type
 	.dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
 	.dwattr $C$DW$T$9, DW_AT_name("unsigned short")
 	.dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
-$C$DW$T$51	.dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
+$C$DW$T$50	.dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
+	.dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$9)
+	.dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$50, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
+	.dwattr $C$DW$T$50, DW_AT_decl_line(0x1e5)
+	.dwattr $C$DW$T$50, DW_AT_decl_column(0x21)
+$C$DW$T$51	.dwtag  DW_TAG_typedef, DW_AT_name("_Wintt")
 	.dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$9)
 	.dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$51, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
-	.dwattr $C$DW$T$51, DW_AT_decl_line(0x1e5)
+	.dwattr $C$DW$T$51, DW_AT_decl_line(0x1e6)
 	.dwattr $C$DW$T$51, DW_AT_decl_column(0x21)
-$C$DW$T$52	.dwtag  DW_TAG_typedef, DW_AT_name("_Wintt")
+$C$DW$T$52	.dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
 	.dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$9)
 	.dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
-	.dwattr $C$DW$T$52, DW_AT_decl_line(0x1e6)
-	.dwattr $C$DW$T$52, DW_AT_decl_column(0x21)
-$C$DW$T$53	.dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
-	.dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$9)
-	.dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$53, DW_AT_decl_line(0x2d)
-	.dwattr $C$DW$T$53, DW_AT_decl_column(0x1c)
-$C$DW$T$56	.dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
-	.dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$53)
-	.dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$56, DW_AT_decl_line(0x3b)
-	.dwattr $C$DW$T$56, DW_AT_decl_column(0x16)
+	.dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
+	.dwattr $C$DW$T$52, DW_AT_decl_line(0x2d)
+	.dwattr $C$DW$T$52, DW_AT_decl_column(0x1c)
+$C$DW$T$55	.dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
+	.dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$52)
+	.dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
+	.dwattr $C$DW$T$55, DW_AT_decl_line(0x3b)
+	.dwattr $C$DW$T$55, DW_AT_decl_column(0x16)
 $C$DW$T$10	.dwtag  DW_TAG_base_type
 	.dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
 	.dwattr $C$DW$T$10, DW_AT_name("int")
 	.dwattr $C$DW$T$10, DW_AT_byte_size(0x04)
-$C$DW$T$57	.dwtag  DW_TAG_typedef, DW_AT_name("_Ptrdifft")
+$C$DW$T$56	.dwtag  DW_TAG_typedef, DW_AT_name("_Ptrdifft")
+	.dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$10)
+	.dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
+	.dwattr $C$DW$T$56, DW_AT_decl_line(0xa9)
+	.dwattr $C$DW$T$56, DW_AT_decl_column(0x1e)
+$C$DW$T$57	.dwtag  DW_TAG_typedef, DW_AT_name("int32_t")
 	.dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$10)
 	.dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
-	.dwattr $C$DW$T$57, DW_AT_decl_line(0xa9)
-	.dwattr $C$DW$T$57, DW_AT_decl_column(0x1e)
-$C$DW$T$58	.dwtag  DW_TAG_typedef, DW_AT_name("int32_t")
-	.dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$58, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$58, DW_AT_decl_line(0x2e)
-	.dwattr $C$DW$T$58, DW_AT_decl_column(0x1d)
-$C$DW$T$61	.dwtag  DW_TAG_typedef, DW_AT_name("int_fast16_t")
-	.dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$58)
+	.dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
+	.dwattr $C$DW$T$57, DW_AT_decl_line(0x2e)
+	.dwattr $C$DW$T$57, DW_AT_decl_column(0x1d)
+$C$DW$T$60	.dwtag  DW_TAG_typedef, DW_AT_name("int_fast16_t")
+	.dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$57)
+	.dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
+	.dwattr $C$DW$T$60, DW_AT_decl_line(0x47)
+	.dwattr $C$DW$T$60, DW_AT_decl_column(0x17)
+$C$DW$T$61	.dwtag  DW_TAG_typedef, DW_AT_name("int_fast32_t")
+	.dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$57)
 	.dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$61, DW_AT_decl_line(0x47)
+	.dwattr $C$DW$T$61, DW_AT_decl_line(0x4a)
 	.dwattr $C$DW$T$61, DW_AT_decl_column(0x17)
-$C$DW$T$62	.dwtag  DW_TAG_typedef, DW_AT_name("int_fast32_t")
-	.dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$58)
+$C$DW$T$62	.dwtag  DW_TAG_typedef, DW_AT_name("int_fast8_t")
+	.dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$57)
 	.dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$62, DW_AT_decl_line(0x4a)
+	.dwattr $C$DW$T$62, DW_AT_decl_line(0x45)
 	.dwattr $C$DW$T$62, DW_AT_decl_column(0x17)
-$C$DW$T$63	.dwtag  DW_TAG_typedef, DW_AT_name("int_fast8_t")
-	.dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$58)
+$C$DW$T$63	.dwtag  DW_TAG_typedef, DW_AT_name("int_least32_t")
+	.dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$57)
 	.dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$63, DW_AT_decl_line(0x45)
+	.dwattr $C$DW$T$63, DW_AT_decl_line(0x3c)
 	.dwattr $C$DW$T$63, DW_AT_decl_column(0x17)
-$C$DW$T$64	.dwtag  DW_TAG_typedef, DW_AT_name("int_least32_t")
-	.dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$58)
+$C$DW$T$64	.dwtag  DW_TAG_typedef, DW_AT_name("intptr_t")
+	.dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$10)
 	.dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$64, DW_AT_decl_line(0x3c)
-	.dwattr $C$DW$T$64, DW_AT_decl_column(0x17)
-$C$DW$T$65	.dwtag  DW_TAG_typedef, DW_AT_name("intptr_t")
-	.dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$65, DW_AT_decl_line(0x52)
-	.dwattr $C$DW$T$65, DW_AT_decl_column(0x1a)
+	.dwattr $C$DW$T$64, DW_AT_decl_line(0x52)
+	.dwattr $C$DW$T$64, DW_AT_decl_column(0x1a)
 $C$DW$T$11	.dwtag  DW_TAG_base_type
 	.dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
 	.dwattr $C$DW$T$11, DW_AT_name("unsigned int")
 	.dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
-$C$DW$T$66	.dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
-	.dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
-	.dwattr $C$DW$T$66, DW_AT_decl_line(0xab)
-	.dwattr $C$DW$T$66, DW_AT_decl_column(0x1a)
+$C$DW$T$65	.dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
+	.dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$11)
+	.dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
+	.dwattr $C$DW$T$65, DW_AT_decl_line(0xab)
+	.dwattr $C$DW$T$65, DW_AT_decl_column(0x1a)
 $C$DW$T$22	.dwtag  DW_TAG_typedef, DW_AT_name("uint32_t")
 	.dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$11)
 	.dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
 	.dwattr $C$DW$T$22, DW_AT_decl_line(0x2f)
 	.dwattr $C$DW$T$22, DW_AT_decl_column(0x1c)
-$C$DW$T$67	.dwtag  DW_TAG_typedef, DW_AT_name("uint_fast16_t")
+$C$DW$T$66	.dwtag  DW_TAG_typedef, DW_AT_name("uint_fast16_t")
+	.dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$22)
+	.dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
+	.dwattr $C$DW$T$66, DW_AT_decl_line(0x48)
+	.dwattr $C$DW$T$66, DW_AT_decl_column(0x16)
+$C$DW$T$67	.dwtag  DW_TAG_typedef, DW_AT_name("uint_fast32_t")
 	.dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$22)
 	.dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$67, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$67, DW_AT_decl_line(0x48)
+	.dwattr $C$DW$T$67, DW_AT_decl_line(0x4b)
 	.dwattr $C$DW$T$67, DW_AT_decl_column(0x16)
-$C$DW$T$68	.dwtag  DW_TAG_typedef, DW_AT_name("uint_fast32_t")
+$C$DW$T$68	.dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
 	.dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$22)
 	.dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$68, DW_AT_decl_line(0x4b)
+	.dwattr $C$DW$T$68, DW_AT_decl_line(0x46)
 	.dwattr $C$DW$T$68, DW_AT_decl_column(0x16)
-$C$DW$T$69	.dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
+$C$DW$T$69	.dwtag  DW_TAG_typedef, DW_AT_name("uint_least32_t")
 	.dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$22)
 	.dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$69, DW_AT_decl_line(0x46)
+	.dwattr $C$DW$T$69, DW_AT_decl_line(0x3d)
 	.dwattr $C$DW$T$69, DW_AT_decl_column(0x16)
-$C$DW$T$70	.dwtag  DW_TAG_typedef, DW_AT_name("uint_least32_t")
-	.dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$22)
+$C$DW$T$70	.dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
+	.dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$11)
 	.dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$70, DW_AT_decl_line(0x3d)
-	.dwattr $C$DW$T$70, DW_AT_decl_column(0x16)
-$C$DW$T$71	.dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
-	.dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$71, DW_AT_decl_line(0x53)
-	.dwattr $C$DW$T$71, DW_AT_decl_column(0x1a)
+	.dwattr $C$DW$T$70, DW_AT_decl_line(0x53)
+	.dwattr $C$DW$T$70, DW_AT_decl_column(0x1a)
 $C$DW$T$12	.dwtag  DW_TAG_base_type
 	.dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
 	.dwattr $C$DW$T$12, DW_AT_name("long")
 	.dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
-$C$DW$T$72	.dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
-	.dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$12)
-	.dwattr $C$DW$T$72, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$72, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
-	.dwattr $C$DW$T$72, DW_AT_decl_line(0xa6)
-	.dwattr $C$DW$T$72, DW_AT_decl_column(0x0e)
+$C$DW$T$71	.dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
+	.dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$12)
+	.dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
+	.dwattr $C$DW$T$71, DW_AT_decl_line(0xa6)
+	.dwattr $C$DW$T$71, DW_AT_decl_column(0x0e)
 $C$DW$T$13	.dwtag  DW_TAG_base_type
 	.dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
 	.dwattr $C$DW$T$13, DW_AT_name("unsigned long")
 	.dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
-$C$DW$T$73	.dwtag  DW_TAG_typedef, DW_AT_name("_Uint32t")
-	.dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$13)
-	.dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
-	.dwattr $C$DW$T$73, DW_AT_decl_line(0xa7)
-	.dwattr $C$DW$T$73, DW_AT_decl_column(0x17)
+$C$DW$T$72	.dwtag  DW_TAG_typedef, DW_AT_name("_Uint32t")
+	.dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$13)
+	.dwattr $C$DW$T$72, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$72, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
+	.dwattr $C$DW$T$72, DW_AT_decl_line(0xa7)
+	.dwattr $C$DW$T$72, DW_AT_decl_column(0x17)
 $C$DW$T$14	.dwtag  DW_TAG_base_type
 	.dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
 	.dwattr $C$DW$T$14, DW_AT_name("long long")
 	.dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
-$C$DW$T$74	.dwtag  DW_TAG_typedef, DW_AT_name("_Longlong")
+$C$DW$T$73	.dwtag  DW_TAG_typedef, DW_AT_name("_Longlong")
+	.dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$14)
+	.dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
+	.dwattr $C$DW$T$73, DW_AT_decl_line(0x1b5)
+	.dwattr $C$DW$T$73, DW_AT_decl_column(0x13)
+$C$DW$T$74	.dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
 	.dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$14)
 	.dwattr $C$DW$T$74, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
-	.dwattr $C$DW$T$74, DW_AT_decl_line(0x1b5)
-	.dwattr $C$DW$T$74, DW_AT_decl_column(0x13)
-$C$DW$T$75	.dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
-	.dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$14)
+	.dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
+	.dwattr $C$DW$T$74, DW_AT_decl_line(0x32)
+	.dwattr $C$DW$T$74, DW_AT_decl_column(0x21)
+$C$DW$T$75	.dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
+	.dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$74)
 	.dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$75, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$75, DW_AT_decl_line(0x32)
-	.dwattr $C$DW$T$75, DW_AT_decl_column(0x21)
-$C$DW$T$76	.dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
-	.dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$75)
+	.dwattr $C$DW$T$75, DW_AT_decl_line(0x4e)
+	.dwattr $C$DW$T$75, DW_AT_decl_column(0x17)
+$C$DW$T$76	.dwtag  DW_TAG_typedef, DW_AT_name("int_least64_t")
+	.dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$74)
 	.dwattr $C$DW$T$76, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$76, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$76, DW_AT_decl_line(0x4e)
+	.dwattr $C$DW$T$76, DW_AT_decl_line(0x40)
 	.dwattr $C$DW$T$76, DW_AT_decl_column(0x17)
-$C$DW$T$77	.dwtag  DW_TAG_typedef, DW_AT_name("int_least64_t")
-	.dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$75)
+$C$DW$T$77	.dwtag  DW_TAG_typedef, DW_AT_name("intmax_t")
+	.dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$14)
 	.dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$77, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$77, DW_AT_decl_line(0x40)
-	.dwattr $C$DW$T$77, DW_AT_decl_column(0x17)
-$C$DW$T$78	.dwtag  DW_TAG_typedef, DW_AT_name("intmax_t")
-	.dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$14)
-	.dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$78, DW_AT_decl_line(0x56)
-	.dwattr $C$DW$T$78, DW_AT_decl_column(0x20)
+	.dwattr $C$DW$T$77, DW_AT_decl_line(0x56)
+	.dwattr $C$DW$T$77, DW_AT_decl_column(0x20)
 $C$DW$T$15	.dwtag  DW_TAG_base_type
 	.dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
 	.dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
 	.dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
-$C$DW$T$79	.dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
+$C$DW$T$78	.dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
+	.dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$15)
+	.dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
+	.dwattr $C$DW$T$78, DW_AT_decl_line(0x1b6)
+	.dwattr $C$DW$T$78, DW_AT_decl_column(0x14)
+$C$DW$T$79	.dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
 	.dwattr $C$DW$T$79, DW_AT_type(*$C$DW$T$15)
 	.dwattr $C$DW$T$79, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$79, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
-	.dwattr $C$DW$T$79, DW_AT_decl_line(0x1b6)
-	.dwattr $C$DW$T$79, DW_AT_decl_column(0x14)
-$C$DW$T$80	.dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
-	.dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$15)
+	.dwattr $C$DW$T$79, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
+	.dwattr $C$DW$T$79, DW_AT_decl_line(0x33)
+	.dwattr $C$DW$T$79, DW_AT_decl_column(0x20)
+$C$DW$T$80	.dwtag  DW_TAG_typedef, DW_AT_name("uint_fast64_t")
+	.dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$79)
 	.dwattr $C$DW$T$80, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$80, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$80, DW_AT_decl_line(0x33)
-	.dwattr $C$DW$T$80, DW_AT_decl_column(0x20)
-$C$DW$T$81	.dwtag  DW_TAG_typedef, DW_AT_name("uint_fast64_t")
-	.dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$80)
+	.dwattr $C$DW$T$80, DW_AT_decl_line(0x4f)
+	.dwattr $C$DW$T$80, DW_AT_decl_column(0x16)
+$C$DW$T$81	.dwtag  DW_TAG_typedef, DW_AT_name("uint_least64_t")
+	.dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$79)
 	.dwattr $C$DW$T$81, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$81, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$81, DW_AT_decl_line(0x4f)
+	.dwattr $C$DW$T$81, DW_AT_decl_line(0x41)
 	.dwattr $C$DW$T$81, DW_AT_decl_column(0x16)
-$C$DW$T$82	.dwtag  DW_TAG_typedef, DW_AT_name("uint_least64_t")
-	.dwattr $C$DW$T$82, DW_AT_type(*$C$DW$T$80)
+$C$DW$T$82	.dwtag  DW_TAG_typedef, DW_AT_name("uintmax_t")
+	.dwattr $C$DW$T$82, DW_AT_type(*$C$DW$T$15)
 	.dwattr $C$DW$T$82, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$82, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$82, DW_AT_decl_line(0x41)
-	.dwattr $C$DW$T$82, DW_AT_decl_column(0x16)
-$C$DW$T$83	.dwtag  DW_TAG_typedef, DW_AT_name("uintmax_t")
-	.dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$15)
-	.dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$83, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h")
-	.dwattr $C$DW$T$83, DW_AT_decl_line(0x57)
-	.dwattr $C$DW$T$83, DW_AT_decl_column(0x20)
+	.dwattr $C$DW$T$82, DW_AT_decl_line(0x57)
+	.dwattr $C$DW$T$82, DW_AT_decl_column(0x20)
 $C$DW$T$16	.dwtag  DW_TAG_base_type
 	.dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
 	.dwattr $C$DW$T$16, DW_AT_name("float")
@@ -2667,51 +2651,51 @@ $C$DW$T$18	.dwtag  DW_TAG_base_type
 	.dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
 	.dwattr $C$DW$T$18, DW_AT_name("long double")
 	.dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
-$C$DW$T$85	.dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
+$C$DW$T$84	.dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
+	.dwattr $C$DW$T$84, DW_AT_type(*$C$DW$T$6)
+	.dwattr $C$DW$T$84, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$84, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
+	.dwattr $C$DW$T$84, DW_AT_decl_line(0x218)
+	.dwattr $C$DW$T$84, DW_AT_decl_column(0x0e)
+$C$DW$T$85	.dwtag  DW_TAG_pointer_type
 	.dwattr $C$DW$T$85, DW_AT_type(*$C$DW$T$6)
-	.dwattr $C$DW$T$85, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$85, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
-	.dwattr $C$DW$T$85, DW_AT_decl_line(0x218)
-	.dwattr $C$DW$T$85, DW_AT_decl_column(0x0e)
-$C$DW$T$86	.dwtag  DW_TAG_pointer_type
-	.dwattr $C$DW$T$86, DW_AT_type(*$C$DW$T$6)
-	.dwattr $C$DW$T$86, DW_AT_address_class(0x20)
-$C$DW$T$87	.dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
-	.dwattr $C$DW$T$87, DW_AT_type(*$C$DW$T$86)
-	.dwattr $C$DW$T$87, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$87, DW_AT_decl_file("../ds1820.c")
-	.dwattr $C$DW$T$87, DW_AT_decl_line(0xfd)
-	.dwattr $C$DW$T$87, DW_AT_decl_column(0x01)
+	.dwattr $C$DW$T$85, DW_AT_address_class(0x20)
+$C$DW$T$86	.dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
+	.dwattr $C$DW$T$86, DW_AT_type(*$C$DW$T$85)
+	.dwattr $C$DW$T$86, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$86, DW_AT_decl_file("../ds1820.c")
+	.dwattr $C$DW$T$86, DW_AT_decl_line(0xfd)
+	.dwattr $C$DW$T$86, DW_AT_decl_column(0x01)
 
 $C$DW$T$19	.dwtag  DW_TAG_structure_type
 	.dwattr $C$DW$T$19, DW_AT_name("__va_list")
 	.dwattr $C$DW$T$19, DW_AT_byte_size(0x04)
-$C$DW$150	.dwtag  DW_TAG_member
-	.dwattr $C$DW$150, DW_AT_type(*$C$DW$T$3)
-	.dwattr $C$DW$150, DW_AT_name("__ap")
-	.dwattr $C$DW$150, DW_AT_TI_symbol_name("__ap")
-	.dwattr $C$DW$150, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-	.dwattr $C$DW$150, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$150, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h")
-	.dwattr $C$DW$150, DW_AT_decl_line(0x36)
-	.dwattr $C$DW$150, DW_AT_decl_column(0x0c)
+$C$DW$148	.dwtag  DW_TAG_member
+	.dwattr $C$DW$148, DW_AT_type(*$C$DW$T$3)
+	.dwattr $C$DW$148, DW_AT_name("__ap")
+	.dwattr $C$DW$148, DW_AT_TI_symbol_name("__ap")
+	.dwattr $C$DW$148, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+	.dwattr $C$DW$148, DW_AT_accessibility(DW_ACCESS_public)
+	.dwattr $C$DW$148, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h")
+	.dwattr $C$DW$148, DW_AT_decl_line(0x36)
+	.dwattr $C$DW$148, DW_AT_decl_column(0x0c)
 	.dwendtag $C$DW$T$19
 
 	.dwattr $C$DW$T$19, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h")
 	.dwattr $C$DW$T$19, DW_AT_decl_line(0x35)
 	.dwattr $C$DW$T$19, DW_AT_decl_column(0x10)
-$C$DW$T$88	.dwtag  DW_TAG_typedef, DW_AT_name("va_list")
-	.dwattr $C$DW$T$88, DW_AT_type(*$C$DW$T$19)
+$C$DW$T$87	.dwtag  DW_TAG_typedef, DW_AT_name("va_list")
+	.dwattr $C$DW$T$87, DW_AT_type(*$C$DW$T$19)
+	.dwattr $C$DW$T$87, DW_AT_language(DW_LANG_C)
+	.dwattr $C$DW$T$87, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h")
+	.dwattr $C$DW$T$87, DW_AT_decl_line(0x37)
+	.dwattr $C$DW$T$87, DW_AT_decl_column(0x03)
+$C$DW$T$88	.dwtag  DW_TAG_typedef, DW_AT_name("_Va_list")
+	.dwattr $C$DW$T$88, DW_AT_type(*$C$DW$T$87)
 	.dwattr $C$DW$T$88, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$88, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h")
-	.dwattr $C$DW$T$88, DW_AT_decl_line(0x37)
-	.dwattr $C$DW$T$88, DW_AT_decl_column(0x03)
-$C$DW$T$89	.dwtag  DW_TAG_typedef, DW_AT_name("_Va_list")
-	.dwattr $C$DW$T$89, DW_AT_type(*$C$DW$T$88)
-	.dwattr $C$DW$T$89, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$89, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
-	.dwattr $C$DW$T$89, DW_AT_decl_line(0x1f6)
-	.dwattr $C$DW$T$89, DW_AT_decl_column(0x17)
+	.dwattr $C$DW$T$88, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h")
+	.dwattr $C$DW$T$88, DW_AT_decl_line(0x1f6)
+	.dwattr $C$DW$T$88, DW_AT_decl_column(0x17)
 	.dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
 
 ;***************************************************************

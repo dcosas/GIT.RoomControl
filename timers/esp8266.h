@@ -17,7 +17,7 @@
 3. pe5  -  rxd
 4. gnd
  *
- * ESP-01 Connection: VCC-RX(PE4), GND/TX(PE5)
+ * ESP-01 Connection: VCC-RX(PE4), TX(PE5)/GND
  *
  * ESP07: Connection: TX-PE4 RX-PE5
 AT VER: 0.21.0.0
@@ -35,6 +35,5 @@ uint8_t send_esp8266(	uint32_t humidity_data,//field1
 						uint32_t temperature_data_4,  //field5
 						uint32_t water_relay, //field6
 						uint32_t fan_relay);//field7
-void esp8266_test();
 
 #endif /* TIVACONTROLBOARD_ESP8266_H_ */

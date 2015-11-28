@@ -14,6 +14,7 @@ void check_sensor3();
 void check_sensor4();
 void check_sensor5();
 void check_fan_timer(uint32_t current_seconds);
+void check_water_timer(uint32_t current_seconds);
 void change_mode();
 void get_mode();
 void update_lcd();

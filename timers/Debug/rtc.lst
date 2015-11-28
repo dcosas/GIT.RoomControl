@@ -1,11 +1,11 @@
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-       3                    ;* Date/Time created: Sat Nov 07 12:29:24 2015                                *
+       3                    ;* Date/Time created: Mon Nov 16 12:40:37 2015                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -58,7 +58,7 @@ rtc.asm                                                              PAGE    1
       53                            .dwattr $C$DW$6, DW_AT_decl_line(0x0c)
       54                            .dwattr $C$DW$6, DW_AT_decl_column(0x06)
       55                            .dwattr $C$DW$6, DW_AT_TI_max_frame_size(0x08)
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE    2
@@ -118,7 +118,7 @@ rtc.asm                                                              PAGE    2
      108                            .global set_dateandtime
      109                    
      110                    $C$DW$9 .dwtag  DW_TAG_subprogram, DW_AT_name("set_dateandtime")
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE    3
@@ -178,7 +178,7 @@ rtc.asm                                                              PAGE    3
      163                    ;*   Local Frame Size  : 0 Args + 4 Auto + 4 Save = 8 byte                   *
      164                    ;*****************************************************************************
      165 00000000           set_dateandtime:
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE    4
@@ -238,7 +238,7 @@ rtc.asm                                                              PAGE    4
      218 00000000                   .sect   ".text:read_dateandtime"
      219                            .clink
      220                            .thumbfunc read_dateandtime
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE    5
@@ -298,7 +298,7 @@ rtc.asm                                                              PAGE    5
      273                    ;*****************************************************************************
      274                    ;* FUNCTION NAME: read_dateandtime                                           *
      275                    ;*                                                                           *
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE    6
@@ -358,7 +358,7 @@ rtc.asm                                                              PAGE    6
      328                            .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
      329                            .dwattr $C$DW$T$5, DW_AT_name("signed char")
      330                            .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE    7
@@ -418,7 +418,7 @@ rtc.asm                                                              PAGE    7
      383                    $C$DW$T$33      .dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
      384                            .dwattr $C$DW$T$33, DW_AT_type(*$C$DW$T$9)
      385                            .dwattr $C$DW$T$33, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE    8
@@ -478,7 +478,7 @@ rtc.asm                                                              PAGE    8
      438                            .dwattr $C$DW$T$40, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
      439                            .dwattr $C$DW$T$40, DW_AT_decl_line(0x45)
      440                            .dwattr $C$DW$T$40, DW_AT_decl_column(0x17)
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE    9
@@ -538,7 +538,7 @@ rtc.asm                                                              PAGE    9
      493                    $C$DW$T$49      .dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
      494                            .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$11)
      495                            .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE   10
@@ -598,7 +598,7 @@ rtc.asm                                                              PAGE   10
      548                            .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$14)
      549                            .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
      550                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE   11
@@ -658,7 +658,7 @@ rtc.asm                                                              PAGE   11
      603                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x218)
      604                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x0e)
      605                    $C$DW$T$64      .dwtag  DW_TAG_pointer_type
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE   12
@@ -718,7 +718,7 @@ rtc.asm                                                              PAGE   12
      658                            .dwcfi  same_value, 5
      659                            .dwcfi  same_value, 6
      660                            .dwcfi  same_value, 7
-TI ARM Assembler PC v5.2.5 Sat Nov 07 12:29:24 2015
+TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:38 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 rtc.asm                                                              PAGE   13

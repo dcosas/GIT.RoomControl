@@ -6,6 +6,17 @@
  */
 
 #include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_ints.h"
+#include "inc/hw_memmap.h"
+#include "inc/hw_types.h"
+#include "driverlib/gpio.h"
+#include "utils/uartstdio.h"
+#include "driverlib/uart.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/rom.h"
+#include "driverlib/sysctl.h"
+#include "config.h"
 
 void uitoa(uint32_t integerValue, char* asciiValue, int maxCh)
 {
@@ -61,3 +72,34 @@ void atoui(uint32_t *integerValue, char* asciiValue)
 		asciiValue++;
 	}
 }
+
+#ifdef DEBUG
+void ConfigureUART0(void)
+{
+	ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
+    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_UART0);
+    ROM_GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
+    UARTClockSourceSet(UART0_BASE, UART_CLOCK_PIOSC);
+    UARTStdioConfig(0, 115200, 16000000);
+}
+
+void LOGprintf(const char *pcString, ...)
+{
+    va_list vaArgP;
+
+    //
+    // Start the varargs processing.
+    //
+    va_start(vaArgP, pcString);
+
+    UARTvprintf(pcString, vaArgP);
+
+    //
+    // We're finished with the varargs now.
+    //
+    va_end(vaArgP);
+}
+
+#endif
+
+

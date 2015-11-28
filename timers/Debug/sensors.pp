@@ -10,6 +10,8 @@ sensors.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.h
 sensors.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h
 sensors.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h
 sensors.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/string.h
+sensors.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib.h
+sensors.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
 sensors.obj: E:/Dev/Ti/TivaWare/inc/hw_memmap.h
 sensors.obj: E:/Dev/Ti/TivaWare/inc/hw_types.h
 sensors.obj: E:/Dev/Ti/TivaWare/inc/hw_gpio.h
@@ -25,6 +27,7 @@ sensors.obj: ../ds1820.h
 sensors.obj: ../esp8266.h
 sensors.obj: ../co2sensor.h
 sensors.obj: ../utils.h
+sensors.obj: ../config.h
 
 ../sensors.c: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdbool.h: 
@@ -36,6 +39,8 @@ C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.h:
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/string.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h: 
 E:/Dev/Ti/TivaWare/inc/hw_memmap.h: 
 E:/Dev/Ti/TivaWare/inc/hw_types.h: 
 E:/Dev/Ti/TivaWare/inc/hw_gpio.h: 
@@ -51,3 +56,4 @@ E:/Dev/Ti/TivaWare/driverlib/sysctl.h:
 ../esp8266.h: 
 ../co2sensor.h: 
 ../utils.h: 
+../config.h: 

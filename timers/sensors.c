@@ -8,6 +8,8 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
+#include <stdlib.h>
+#include <time.h>
 #include "inc/hw_memmap.h"
 #include "inc/hw_types.h"
 #include "inc/hw_gpio.h"
@@ -36,12 +38,15 @@
 #define FAN_SECONDS_ON 1200
 #define FAN_SECONDS_OFF 3600
 
+#define WATER_SECONDS_ON 2
+#define WATER_SECONDS_OFF 4
+
 static char str_line1[12]={'M','x',' ','H',':','x','x',' ','T',':','x','x'};
 static char str_line2[12]={'H',':','x','x',' ','T','1',':','x','x',' ',' '};
 static char str_line3[12]={'T','2',':','x','x',' ','T','3',':','x','x',' '};
 static char str_line4[12]={' ',' ',' ',' ',' ',' ','p','p','m','C','O','2'};
 
-int32_t threshold_humidity[3] = {90, 95, 85};
+int32_t threshold_humidity[3] = {95, 95, 85};
 int32_t threshold_temperature[3] = {18, 17, 16};
 uint32_t threshold_co2[3] = {1000, 1000, 1000};
 uint8_t operating_mode;
@@ -49,7 +54,7 @@ uint8_t operating_mode;
 uint32_t esp8266_data[7] ={0, 0, 0, 0, 0, 0, 0};
 
 uint8_t fanControlledByTimer;
-
+uint8_t waterControlledByTimer;
 uint8_t get_mode()
 {
 	return operating_mode;
@@ -97,6 +102,11 @@ void init_sensors()
 	init_co2sensor();
 	change_mode(0);
 	fanControlledByTimer = 1;
+	waterControlledByTimer = 1;
+
+#ifdef DEBUG
+	srand(time(NULL));
+#endif
 }
 //HUMIDITY sensor check - actuates water pump relay if humidity level falls below threshold
 float check_sensor1()
@@ -106,11 +116,13 @@ float check_sensor1()
 	{
 		esp8266_data[5] = 1;
 		set_actuator1(ON);
+		waterControlledByTimer = 0;
 	}
 	else
 	{
 		esp8266_data[5] = 0;
 		set_actuator1(OFF);
+		waterControlledByTimer = 1;
 	}
 
 	str_line2[2] = (char)(f_data / 10 )+ '0';
@@ -165,6 +177,35 @@ void check_sensor5()
 	}
 }
 
+void check_water_timer(uint32_t current_seconds)
+{
+	static uint32_t start_seconds = 0;
+	static uint32_t waterTimerDuration = WATER_SECONDS_OFF;
+	static uint8_t waterState = OFF;
+	if(!waterControlledByTimer)
+		return;
+	if((current_seconds - start_seconds) > waterTimerDuration) // Time to switch the fan
+	{
+		if(waterState == ON)
+		{
+			esp8266_data[5] = 0;
+			set_actuator1(OFF);
+			//GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0);
+			waterTimerDuration = WATER_SECONDS_OFF;
+			waterState = OFF;
+		}
+		else
+		{
+			esp8266_data[5] = 1;
+			set_actuator1(ON);
+			//GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
+			waterTimerDuration = WATER_SECONDS_ON;
+			waterState = ON;
+		}
+		start_seconds = current_seconds;//reset start_seconds to current seconds
+	}
+}
+
 void check_fan_timer(uint32_t current_seconds)
 {
 	static uint32_t start_seconds = 0;
@@ -203,12 +244,23 @@ void update_lcd()
 
 void update_thingspeak()
 {
+#ifdef DEBUG
+		/*esp8266_data[0] = rand()%100;
+		esp8266_data[1] = rand()%100;
+		esp8266_data[2] = rand()%100;
+		esp8266_data[3] = rand()%100;
+		esp8266_data[4] = rand();
+		esp8266_data[5] = rand()%2;
+		esp8266_data[6] = rand()%2;*/
+#endif
 	send_esp8266(	esp8266_data[0],//humidity
-					esp8266_data[1],//temp1
-					esp8266_data[2],//temp2
-					esp8266_data[3],//temp3
-					esp8266_data[4],//temp4
-					esp8266_data[5],//water relay
-					esp8266_data[6]);//fan relay
+						esp8266_data[1],//temp1
+						esp8266_data[2],//temp2
+						esp8266_data[3],//temp3
+						esp8266_data[4],//temp4
+						esp8266_data[5],//water relay
+						esp8266_data[6]);//fan relay
+
+
 
 }

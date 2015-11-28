@@ -57,19 +57,9 @@ __error__(char *pcFilename, uint32_t ui32Line)
 }
 #endif
 
-void
-ConfigureUART(void)
-{
-	ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
-    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_UART0);
-    ROM_GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
-    UARTClockSourceSet(UART0_BASE, UART_CLOCK_PIOSC);
-    //UARTStdioConfig(0, 115200, 16000000);
-}
-
 void check_sensors()
 {
-	static uint32_t lastUpdateCounter = 0, temp_secondsCounter;
+	static uint32_t lastUpdateCounter = 0, temp_secondsCounter = 0;
 	ROM_IntMasterDisable();
 	temp_secondsCounter = g_ui32SecondsCounter;
 	ROM_IntMasterEnable();
@@ -79,9 +69,10 @@ void check_sensors()
 	check_sensor4();//temperature 3 	- outside ds1820
 	check_sensor5();//CO2 level			- fructification co2
 	check_fan_timer(temp_secondsCounter);//Fan actuation 	- fructification
+	//check_water_timer(temp_secondsCounter);
 	update_lcd();
 
-	//if((temp_secondsCounter - lastUpdateCounter) > 60)
+	if((temp_secondsCounter - lastUpdateCounter) > THINGSPEAK_UPDATE_RATE)
 	{
 		update_thingspeak();//Update ESP8266 at every minute
 		lastUpdateCounter = temp_secondsCounter;
@@ -157,9 +148,10 @@ int main(void)
     SysTickPeriodSet(SysCtlClockGet()/100);//10ms tick for sd card
     SysTickIntEnable();
     SysTickEnable();
-    //Uart
-   // ConfigureUART();
-
+#ifdef DEBUG
+    ConfigureUART0();
+    LOGprintf("Monitoring SW started...\n");
+#endif
     //OnBoard LEDs
     ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
     ROM_GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_2 | GPIO_PIN_1);

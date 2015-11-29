@@ -1,11 +1,11 @@
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-       3                    ;* Date/Time created: Mon Nov 16 12:40:35 2015                                *
+       3                    ;* Date/Time created: Sun Nov 29 14:18:49 2015                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -58,7 +58,7 @@ co2sensor.asm                                                        PAGE    1
       53                            .dwattr $C$DW$8, DW_AT_TI_symbol_name("SysCtlClockGet")
       54                            .dwattr $C$DW$8, DW_AT_type(*$C$DW$T$22)
       55                            .dwattr $C$DW$8, DW_AT_declaration
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    2
@@ -118,7 +118,7 @@ co2sensor.asm                                                        PAGE    2
      108                            .dwattr $C$DW$18, DW_AT_declaration
      109                            .dwattr $C$DW$18, DW_AT_external
      110                            .dwattr $C$DW$18, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/uart.h")
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    3
@@ -178,7 +178,7 @@ co2sensor.asm                                                        PAGE    3
      163                            .dwattr $C$DW$27, DW_AT_TI_begin_file("../co2sensor.c")
      164                            .dwattr $C$DW$27, DW_AT_TI_begin_line(0x16)
      165                            .dwattr $C$DW$27, DW_AT_TI_begin_column(0x06)
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    4
@@ -238,7 +238,7 @@ co2sensor.asm                                                        PAGE    4
      218                    ;----------------------------------------------------------------------
      219                    ;  26 | GPIOPinConfigure(GPIO_PC4_U1RX);                                       
      220                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    5
@@ -298,7 +298,7 @@ co2sensor.asm                                                        PAGE    5
      273 00000030 FFFEF7FF!         BL        UARTConfigSetExpClk   ; [DPU_3_PIPE] |29|  ; [KEEP 32-BIT INS]
      274                            ; CALL OCCURS {UARTConfigSetExpClk }  ; [] |29| 
      275                            .dwpsn  file "../co2sensor.c",line 32,column 1,is_stmt,isa 1
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    6
@@ -358,7 +358,7 @@ co2sensor.asm                                                        PAGE    6
      328 00000000 B500              PUSH      {LR}                  ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
      329                            .dwcfi  cfa_offset, 4
      330                            .dwcfi  save_reg_to_mem, 14, -4
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    7
@@ -418,7 +418,7 @@ co2sensor.asm                                                        PAGE    7
      383                    ;----------------------------------------------------------------------
      384 0000001a 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |39|  ; [ORIG 16-BIT INS]
      385 0000001c 9004              STR       A1, [SP, #16]         ; [DPU_3_PIPE] |39|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    8
@@ -478,7 +478,7 @@ co2sensor.asm                                                        PAGE    8
      438 0000003e FFFEF7FF!         BL        UARTCharPut           ; [DPU_3_PIPE] |47|  ; [KEEP 32-BIT INS]
      439                            ; CALL OCCURS {UARTCharPut }     ; [] |47| 
      440                            .dwpsn  file "../co2sensor.c",line 49,column 2,is_stmt,isa 1
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE    9
@@ -538,7 +538,7 @@ co2sensor.asm                                                        PAGE    9
      493                    ;----------------------------------------------------------------------
      494 00000074 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |56|  ; [ORIG 16-BIT INS]
      495 00000076 E00D              B         ||$C$L6||             ; [DPU_3_PIPE] |56|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   10
@@ -598,7 +598,7 @@ co2sensor.asm                                                        PAGE   10
      548                    
      549 00000000                   .sect   ".text:test_co2comm"
      550                            .clink
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   11
@@ -658,7 +658,7 @@ co2sensor.asm                                                        PAGE   11
      603                    ;----------------------------------------------------------------------
      604                    ;  66 | get_co2level();                                                        
      605                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   12
@@ -718,7 +718,7 @@ co2sensor.asm                                                        PAGE   12
      658 00000000           read_co2level:
      659                    ;* --------------------------------------------------------------------------*
      660                            .dwcfi  cfa_offset, 0
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   13
@@ -778,7 +778,7 @@ co2sensor.asm                                                        PAGE   13
      707                            .global SysCtlPeripheralEnable
      708                            .global SysCtlClockGet
      709                            .global UARTConfigSetExpClk
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   14
@@ -838,7 +838,7 @@ co2sensor.asm                                                        PAGE   14
      762                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
      763                    $C$DW$T$25      .dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
      764                            .dwattr $C$DW$T$25, DW_AT_type(*$C$DW$T$6)
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   15
@@ -898,7 +898,7 @@ co2sensor.asm                                                        PAGE   15
      817                    $C$DW$T$49      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
      818                            .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$46)
      819                            .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   16
@@ -958,7 +958,7 @@ co2sensor.asm                                                        PAGE   16
      872                            .dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
      873                    $C$DW$T$59      .dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
      874                            .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$11)
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   17
@@ -1018,7 +1018,7 @@ co2sensor.asm                                                        PAGE   17
      927                            .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
      928                    $C$DW$T$68      .dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
      929                            .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$12)
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   18
@@ -1078,7 +1078,7 @@ co2sensor.asm                                                        PAGE   18
      982                    $C$DW$T$75      .dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
      983                            .dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$15)
      984                            .dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   19
@@ -1138,7 +1138,7 @@ co2sensor.asm                                                        PAGE   19
     1037                            .dwattr $C$DW$T$84, DW_AT_decl_line(0x48)
     1038                            .dwattr $C$DW$T$84, DW_AT_decl_column(0x01)
     1039                    
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   20
@@ -1198,7 +1198,7 @@ co2sensor.asm                                                        PAGE   20
     1092                            .dwcfi  undefined, 1
     1093                            .dwcfi  undefined, 2
     1094                            .dwcfi  undefined, 3
-TI ARM Assembler PC v5.2.5 Mon Nov 16 12:40:35 2015
+TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 co2sensor.asm                                                        PAGE   21

@@ -26,6 +26,7 @@
 #include "esp8266.h"
 #include "co2sensor.h"
 #include "utils.h"
+#include "rtc.h"
 
 #define ON 1
 #define OFF 0
@@ -35,8 +36,8 @@
 
 //#define FAN_SECONDS_ON 30 * SEC_PER_MINUTE
 //#define FAN_SECONDS_OFF 7000 * SEC_PER_HOUR
-#define FAN_SECONDS_ON 1200
-#define FAN_SECONDS_OFF 3600
+#define FAN_SECONDS_ON 1800
+#define FAN_SECONDS_OFF 39600
 
 #define WATER_SECONDS_ON 2
 #define WATER_SECONDS_OFF 4
@@ -46,7 +47,7 @@ static char str_line2[12]={'H',':','x','x',' ','T','1',':','x','x',' ',' '};
 static char str_line3[12]={'T','2',':','x','x',' ','T','3',':','x','x',' '};
 static char str_line4[12]={' ',' ',' ',' ',' ',' ','p','p','m','C','O','2'};
 
-int32_t threshold_humidity[3] = {95, 95, 85};
+int32_t threshold_humidity[3] = {85, 90, 80};
 int32_t threshold_temperature[3] = {18, 17, 16};
 uint32_t threshold_co2[3] = {1000, 1000, 1000};
 uint8_t operating_mode;
@@ -102,7 +103,7 @@ void init_sensors()
 	init_co2sensor();
 	change_mode(0);
 	fanControlledByTimer = 1;
-	waterControlledByTimer = 1;
+	waterControlledByTimer = 0;
 
 #ifdef DEBUG
 	srand(time(NULL));
@@ -111,7 +112,10 @@ void init_sensors()
 //HUMIDITY sensor check - actuates water pump relay if humidity level falls below threshold
 float check_sensor1()
 {
-	float f_data = dht22_readhumidity();
+	float f_data;
+	if(waterControlledByTimer)
+		return 0.0;
+	f_data = dht22_readhumidity();
 	if(f_data < threshold_humidity[operating_mode])
 	{
 		esp8266_data[5] = 1;
@@ -177,33 +181,19 @@ void check_sensor5()
 	}
 }
 
-void check_water_timer(uint32_t current_seconds)
+void check_rtcTimer()
 {
-	static uint32_t start_seconds = 0;
-	static uint32_t waterTimerDuration = WATER_SECONDS_OFF;
-	static uint8_t waterState = OFF;
-	if(!waterControlledByTimer)
-		return;
-	if((current_seconds - start_seconds) > waterTimerDuration) // Time to switch the fan
+	if(isTimeToActuate(0))
 	{
-		if(waterState == ON)
-		{
-			esp8266_data[5] = 0;
-			set_actuator1(OFF);
-			//GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0);
-			waterTimerDuration = WATER_SECONDS_OFF;
-			waterState = OFF;
-		}
-		else
-		{
-			esp8266_data[5] = 1;
-			set_actuator1(ON);
-			//GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
-			waterTimerDuration = WATER_SECONDS_ON;
-			waterState = ON;
-		}
-		start_seconds = current_seconds;//reset start_seconds to current seconds
+		waterControlledByTimer = 1;
+		esp8266_data[5] = 1;
+		set_actuator1(ON);
 	}
+	else
+	{
+		waterControlledByTimer = 0;
+	}
+
 }
 
 void check_fan_timer(uint32_t current_seconds)
@@ -213,6 +203,16 @@ void check_fan_timer(uint32_t current_seconds)
 	static uint8_t fanState = OFF;
 	if(!fanControlledByTimer)
 		return;
+	if(fanState == OFF)
+	{
+		esp8266_data[6] = 0;
+		set_actuator2(OFF);
+	}
+	else
+	{
+		esp8266_data[6] = 1;
+		set_actuator2(ON);
+	}
 	if((current_seconds - start_seconds) > fanTimerDuration) // Time to switch the fan
 	{
 		if(fanState == ON)

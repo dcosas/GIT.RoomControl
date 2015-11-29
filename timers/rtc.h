@@ -9,6 +9,6 @@
 #define TIVACONTROLBOARD_RTC_H_
 
 void init_RTC();
-void read_dateandtime();
+uint8_t isTimeToActuate(uint8_t sensor_id);
 
 #endif /* TIVACONTROLBOARD_RTC_H_ */

@@ -69,6 +69,7 @@ void check_sensors()
 	check_sensor4();//temperature 3 	- outside ds1820
 	check_sensor5();//CO2 level			- fructification co2
 	check_fan_timer(temp_secondsCounter);//Fan actuation 	- fructification
+	check_rtcTimer();
 	//check_water_timer(temp_secondsCounter);
 	update_lcd();
 
@@ -128,6 +129,7 @@ void init_system()
 	lcd_puts(FW_TIME, 3);
 	init_esp8266();
 	init_sensors();
+	init_RTC();
 }
 
 void kick_watchdog()

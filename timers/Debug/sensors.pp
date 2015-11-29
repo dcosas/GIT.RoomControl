@@ -28,6 +28,7 @@ sensors.obj: ../esp8266.h
 sensors.obj: ../co2sensor.h
 sensors.obj: ../utils.h
 sensors.obj: ../config.h
+sensors.obj: ../rtc.h
 
 ../sensors.c: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdbool.h: 
@@ -57,3 +58,4 @@ E:/Dev/Ti/TivaWare/driverlib/sysctl.h:
 ../co2sensor.h: 
 ../utils.h: 
 ../config.h: 
+../rtc.h: 

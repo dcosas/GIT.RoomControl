@@ -1,27 +1,27 @@
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE    1
 
        1                    ;******************************************************************************
-       2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-       3                    ;* Date/Time created: Sun Nov 29 14:18:50 2015                                *
+       2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.6 *
+       3                    ;* Date/Time created: Tue Jan 26 13:54:19 2016                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
        7                    
        8                    $C$DW$CU        .dwtag  DW_TAG_compile_unit
        9                            .dwattr $C$DW$CU, DW_AT_name("../dht22.c")
-      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.5 Copyright (c) 1996-2015 Te
+      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.6 Copyright (c) 1996-2015 Te
       11                            .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("E:\Dev\Ti\Code\GIT\LaunchpadRoomControl\LaunchpadRoomControl
+      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("D:\Deian\Dev\TI\temp\LaunchpadRoomControl\timers\Debug")
       13                    
       14                    $C$DW$1 .dwtag  DW_TAG_subprogram, DW_AT_name("IntMasterEnable")
       15                            .dwattr $C$DW$1, DW_AT_TI_symbol_name("IntMasterEnable")
       16                            .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$66)
       17                            .dwattr $C$DW$1, DW_AT_declaration
       18                            .dwattr $C$DW$1, DW_AT_external
-      19                            .dwattr $C$DW$1, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/interrupt.h")
+      19                            .dwattr $C$DW$1, DW_AT_decl_file("C:/ti/TivaWare/driverlib/interrupt.h")
       20                            .dwattr $C$DW$1, DW_AT_decl_line(0x43)
       21                            .dwattr $C$DW$1, DW_AT_decl_column(0x0d)
       22                    
@@ -30,7 +30,7 @@ dht22.asm                                                            PAGE    1
       25                            .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$66)
       26                            .dwattr $C$DW$2, DW_AT_declaration
       27                            .dwattr $C$DW$2, DW_AT_external
-      28                            .dwattr $C$DW$2, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/interrupt.h")
+      28                            .dwattr $C$DW$2, DW_AT_decl_file("C:/ti/TivaWare/driverlib/interrupt.h")
       29                            .dwattr $C$DW$2, DW_AT_decl_line(0x44)
       30                            .dwattr $C$DW$2, DW_AT_decl_column(0x0d)
       31                    
@@ -38,7 +38,7 @@ dht22.asm                                                            PAGE    1
       33                            .dwattr $C$DW$3, DW_AT_TI_symbol_name("IntEnable")
       34                            .dwattr $C$DW$3, DW_AT_declaration
       35                            .dwattr $C$DW$3, DW_AT_external
-      36                            .dwattr $C$DW$3, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/interrupt.h")
+      36                            .dwattr $C$DW$3, DW_AT_decl_file("C:/ti/TivaWare/driverlib/interrupt.h")
       37                            .dwattr $C$DW$3, DW_AT_decl_line(0x4c)
       38                            .dwattr $C$DW$3, DW_AT_decl_column(0x0d)
       39                    $C$DW$4 .dwtag  DW_TAG_formal_parameter
@@ -50,7 +50,7 @@ dht22.asm                                                            PAGE    1
       45                            .dwattr $C$DW$5, DW_AT_TI_symbol_name("GPIOIntTypeSet")
       46                            .dwattr $C$DW$5, DW_AT_declaration
       47                            .dwattr $C$DW$5, DW_AT_external
-      48                            .dwattr $C$DW$5, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+      48                            .dwattr $C$DW$5, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
       49                            .dwattr $C$DW$5, DW_AT_decl_line(0x90)
       50                            .dwattr $C$DW$5, DW_AT_decl_column(0x0d)
       51                    $C$DW$6 .dwtag  DW_TAG_formal_parameter
@@ -58,7 +58,7 @@ dht22.asm                                                            PAGE    1
       53                    $C$DW$7 .dwtag  DW_TAG_formal_parameter
       54                            .dwattr $C$DW$7, DW_AT_type(*$C$DW$T$26)
       55                    $C$DW$8 .dwtag  DW_TAG_formal_parameter
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE    2
@@ -71,7 +71,7 @@ dht22.asm                                                            PAGE    2
       61                            .dwattr $C$DW$9, DW_AT_TI_symbol_name("GPIOPadConfigSet")
       62                            .dwattr $C$DW$9, DW_AT_declaration
       63                            .dwattr $C$DW$9, DW_AT_external
-      64                            .dwattr $C$DW$9, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+      64                            .dwattr $C$DW$9, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
       65                            .dwattr $C$DW$9, DW_AT_decl_line(0x93)
       66                            .dwattr $C$DW$9, DW_AT_decl_column(0x0d)
       67                    $C$DW$10        .dwtag  DW_TAG_formal_parameter
@@ -89,7 +89,7 @@ dht22.asm                                                            PAGE    2
       79                            .dwattr $C$DW$14, DW_AT_TI_symbol_name("GPIOIntEnable")
       80                            .dwattr $C$DW$14, DW_AT_declaration
       81                            .dwattr $C$DW$14, DW_AT_external
-      82                            .dwattr $C$DW$14, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+      82                            .dwattr $C$DW$14, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
       83                            .dwattr $C$DW$14, DW_AT_decl_line(0x97)
       84                            .dwattr $C$DW$14, DW_AT_decl_column(0x0d)
       85                    $C$DW$15        .dwtag  DW_TAG_formal_parameter
@@ -104,7 +104,7 @@ dht22.asm                                                            PAGE    2
       94                            .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$23)
       95                            .dwattr $C$DW$17, DW_AT_declaration
       96                            .dwattr $C$DW$17, DW_AT_external
-      97                            .dwattr $C$DW$17, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+      97                            .dwattr $C$DW$17, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
       98                            .dwattr $C$DW$17, DW_AT_decl_line(0x99)
       99                            .dwattr $C$DW$17, DW_AT_decl_column(0x11)
      100                    $C$DW$18        .dwtag  DW_TAG_formal_parameter
@@ -118,12 +118,12 @@ dht22.asm                                                            PAGE    2
      108                            .dwattr $C$DW$20, DW_AT_TI_symbol_name("GPIOIntClear")
      109                            .dwattr $C$DW$20, DW_AT_declaration
      110                            .dwattr $C$DW$20, DW_AT_external
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE    3
 
-     111                            .dwattr $C$DW$20, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     111                            .dwattr $C$DW$20, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
      112                            .dwattr $C$DW$20, DW_AT_decl_line(0x9a)
      113                            .dwattr $C$DW$20, DW_AT_decl_column(0x0d)
      114                    $C$DW$21        .dwtag  DW_TAG_formal_parameter
@@ -137,7 +137,7 @@ dht22.asm                                                            PAGE    3
      122                            .dwattr $C$DW$23, DW_AT_TI_symbol_name("GPIOIntRegister")
      123                            .dwattr $C$DW$23, DW_AT_declaration
      124                            .dwattr $C$DW$23, DW_AT_external
-     125                            .dwattr $C$DW$23, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     125                            .dwattr $C$DW$23, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
      126                            .dwattr $C$DW$23, DW_AT_decl_line(0x9b)
      127                            .dwattr $C$DW$23, DW_AT_decl_column(0x0d)
      128                    $C$DW$24        .dwtag  DW_TAG_formal_parameter
@@ -152,7 +152,7 @@ dht22.asm                                                            PAGE    3
      137                            .dwattr $C$DW$26, DW_AT_type(*$C$DW$T$56)
      138                            .dwattr $C$DW$26, DW_AT_declaration
      139                            .dwattr $C$DW$26, DW_AT_external
-     140                            .dwattr $C$DW$26, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     140                            .dwattr $C$DW$26, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
      141                            .dwattr $C$DW$26, DW_AT_decl_line(0x9d)
      142                            .dwattr $C$DW$26, DW_AT_decl_column(0x10)
      143                    $C$DW$27        .dwtag  DW_TAG_formal_parameter
@@ -166,7 +166,7 @@ dht22.asm                                                            PAGE    3
      151                            .dwattr $C$DW$29, DW_AT_TI_symbol_name("GPIOPinWrite")
      152                            .dwattr $C$DW$29, DW_AT_declaration
      153                            .dwattr $C$DW$29, DW_AT_external
-     154                            .dwattr $C$DW$29, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     154                            .dwattr $C$DW$29, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
      155                            .dwattr $C$DW$29, DW_AT_decl_line(0x9e)
      156                            .dwattr $C$DW$29, DW_AT_decl_column(0x0d)
      157                    $C$DW$30        .dwtag  DW_TAG_formal_parameter
@@ -178,7 +178,7 @@ dht22.asm                                                            PAGE    3
      163                            .dwendtag $C$DW$29
      164                    
      165                    
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE    4
@@ -187,8 +187,8 @@ dht22.asm                                                            PAGE    4
      167                            .dwattr $C$DW$33, DW_AT_TI_symbol_name("GPIOPinTypeGPIOInput")
      168                            .dwattr $C$DW$33, DW_AT_declaration
      169                            .dwattr $C$DW$33, DW_AT_external
-     170                            .dwattr $C$DW$33, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
-     171                            .dwattr $C$DW$33, DW_AT_decl_line(0xa7)
+     170                            .dwattr $C$DW$33, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
+     171                            .dwattr $C$DW$33, DW_AT_decl_line(0xa8)
      172                            .dwattr $C$DW$33, DW_AT_decl_column(0x0d)
      173                    $C$DW$34        .dwtag  DW_TAG_formal_parameter
      174                            .dwattr $C$DW$34, DW_AT_type(*$C$DW$T$23)
@@ -201,8 +201,8 @@ dht22.asm                                                            PAGE    4
      181                            .dwattr $C$DW$36, DW_AT_TI_symbol_name("GPIOPinTypeGPIOOutput")
      182                            .dwattr $C$DW$36, DW_AT_declaration
      183                            .dwattr $C$DW$36, DW_AT_external
-     184                            .dwattr $C$DW$36, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
-     185                            .dwattr $C$DW$36, DW_AT_decl_line(0xa8)
+     184                            .dwattr $C$DW$36, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
+     185                            .dwattr $C$DW$36, DW_AT_decl_line(0xa9)
      186                            .dwattr $C$DW$36, DW_AT_decl_column(0x0d)
      187                    $C$DW$37        .dwtag  DW_TAG_formal_parameter
      188                            .dwattr $C$DW$37, DW_AT_type(*$C$DW$T$23)
@@ -215,7 +215,7 @@ dht22.asm                                                            PAGE    4
      195                            .dwattr $C$DW$39, DW_AT_TI_symbol_name("SysCtlPeripheralEnable")
      196                            .dwattr $C$DW$39, DW_AT_declaration
      197                            .dwattr $C$DW$39, DW_AT_external
-     198                            .dwattr $C$DW$39, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/sysctl.h")
+     198                            .dwattr $C$DW$39, DW_AT_decl_file("C:/ti/TivaWare/driverlib/sysctl.h")
      199                            .dwattr $C$DW$39, DW_AT_decl_line(0x24e)
      200                            .dwattr $C$DW$39, DW_AT_decl_column(0x0d)
      201                    $C$DW$40        .dwtag  DW_TAG_formal_parameter
@@ -227,7 +227,7 @@ dht22.asm                                                            PAGE    4
      207                            .dwattr $C$DW$41, DW_AT_TI_symbol_name("TimerEnable")
      208                            .dwattr $C$DW$41, DW_AT_declaration
      209                            .dwattr $C$DW$41, DW_AT_external
-     210                            .dwattr $C$DW$41, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/timer.h")
+     210                            .dwattr $C$DW$41, DW_AT_decl_file("C:/ti/TivaWare/driverlib/timer.h")
      211                            .dwattr $C$DW$41, DW_AT_decl_line(0xf3)
      212                            .dwattr $C$DW$41, DW_AT_decl_column(0x0d)
      213                    $C$DW$42        .dwtag  DW_TAG_formal_parameter
@@ -238,7 +238,7 @@ dht22.asm                                                            PAGE    4
      218                    
      219                    
      220                    $C$DW$44        .dwtag  DW_TAG_subprogram, DW_AT_name("TimerConfigure")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE    5
@@ -246,7 +246,7 @@ dht22.asm                                                            PAGE    5
      221                            .dwattr $C$DW$44, DW_AT_TI_symbol_name("TimerConfigure")
      222                            .dwattr $C$DW$44, DW_AT_declaration
      223                            .dwattr $C$DW$44, DW_AT_external
-     224                            .dwattr $C$DW$44, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/timer.h")
+     224                            .dwattr $C$DW$44, DW_AT_decl_file("C:/ti/TivaWare/driverlib/timer.h")
      225                            .dwattr $C$DW$44, DW_AT_decl_line(0xf5)
      226                            .dwattr $C$DW$44, DW_AT_decl_column(0x0d)
      227                    $C$DW$45        .dwtag  DW_TAG_formal_parameter
@@ -260,7 +260,7 @@ dht22.asm                                                            PAGE    5
      235                            .dwattr $C$DW$47, DW_AT_TI_symbol_name("TimerLoadSet")
      236                            .dwattr $C$DW$47, DW_AT_declaration
      237                            .dwattr $C$DW$47, DW_AT_external
-     238                            .dwattr $C$DW$47, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/timer.h")
+     238                            .dwattr $C$DW$47, DW_AT_decl_file("C:/ti/TivaWare/driverlib/timer.h")
      239                            .dwattr $C$DW$47, DW_AT_decl_line(0x108)
      240                            .dwattr $C$DW$47, DW_AT_decl_column(0x0d)
      241                    $C$DW$48        .dwtag  DW_TAG_formal_parameter
@@ -276,7 +276,7 @@ dht22.asm                                                            PAGE    5
      251                            .dwattr $C$DW$51, DW_AT_TI_symbol_name("TimerIntEnable")
      252                            .dwattr $C$DW$51, DW_AT_declaration
      253                            .dwattr $C$DW$51, DW_AT_external
-     254                            .dwattr $C$DW$51, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/timer.h")
+     254                            .dwattr $C$DW$51, DW_AT_decl_file("C:/ti/TivaWare/driverlib/timer.h")
      255                            .dwattr $C$DW$51, DW_AT_decl_line(0x117)
      256                            .dwattr $C$DW$51, DW_AT_decl_column(0x0d)
      257                    $C$DW$52        .dwtag  DW_TAG_formal_parameter
@@ -290,7 +290,7 @@ dht22.asm                                                            PAGE    5
      265                            .dwattr $C$DW$54, DW_AT_TI_symbol_name("TimerIntClear")
      266                            .dwattr $C$DW$54, DW_AT_declaration
      267                            .dwattr $C$DW$54, DW_AT_external
-     268                            .dwattr $C$DW$54, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/timer.h")
+     268                            .dwattr $C$DW$54, DW_AT_decl_file("C:/ti/TivaWare/driverlib/timer.h")
      269                            .dwattr $C$DW$54, DW_AT_decl_line(0x11a)
      270                            .dwattr $C$DW$54, DW_AT_decl_column(0x0d)
      271                    $C$DW$55        .dwtag  DW_TAG_formal_parameter
@@ -298,7 +298,7 @@ dht22.asm                                                            PAGE    5
      273                    $C$DW$56        .dwtag  DW_TAG_formal_parameter
      274                            .dwattr $C$DW$56, DW_AT_type(*$C$DW$T$23)
      275                            .dwendtag $C$DW$54
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE    6
@@ -358,7 +358,7 @@ dht22.asm                                                            PAGE    6
      328                            .common dhtBit,1,1
      329                    $C$DW$62        .dwtag  DW_TAG_variable, DW_AT_name("dhtBit")
      330                            .dwattr $C$DW$62, DW_AT_TI_symbol_name("dhtBit")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE    7
@@ -418,7 +418,7 @@ dht22.asm                                                            PAGE    7
      383                            .dwattr $C$DW$67, DW_AT_external
      384                            .dwattr $C$DW$67, DW_AT_decl_file("../dht22.c")
      385                            .dwattr $C$DW$67, DW_AT_decl_line(0x23)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE    8
@@ -442,7 +442,7 @@ dht22.asm                                                            PAGE    8
      402 00000008           bitTime$3:
      403 00000008 00000000          .bits   0,32                    ; bitTime$3 @ 0
      404                    
-     405                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppDat
+     405                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.6\bin\armacpia.exe -@C:\\Users\\dcosas\\AppData\\Loc
      406 00000000                   .sect   ".text:getTimer0ChAvalue"
      407                            .clink
      408                            .thumbfunc getTimer0ChAvalue
@@ -478,7 +478,7 @@ dht22.asm                                                            PAGE    8
      438                    ;*****************************************************************************
      439 00000000           getTimer0ChAvalue:
      440                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE    9
@@ -538,7 +538,7 @@ dht22.asm                                                            PAGE    9
      493                    ;----------------------------------------------------------------------
      494                    ;  43 | void PortEIntHandler(){                                                
      495                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   10
@@ -598,7 +598,7 @@ dht22.asm                                                            PAGE   10
      548 00000010 FFFEF7FF!         BL        GPIOIntStatus         ; [DPU_3_PIPE] |47|  ; [KEEP 32-BIT INS]
      549                            ; CALL OCCURS {GPIOIntStatus }   ; [] |47| 
      550 00000014 9000              STR       A1, [SP, #0]          ; [DPU_3_PIPE] |47|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   11
@@ -658,7 +658,7 @@ dht22.asm                                                            PAGE   11
      603                    ;* --------------------------------------------------------------------------*
      604                            .dwpsn  file "../dht22.c",line 55,column 4,is_stmt,isa 1
      605                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   12
@@ -718,7 +718,7 @@ dht22.asm                                                            PAGE   12
      658                    ;----------------------------------------------------------------------
      659                    ;  63 | if(dhtBitCount >= 50)                                                  
      660                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   13
@@ -778,7 +778,7 @@ dht22.asm                                                            PAGE   13
      713 00000096 6813              LDR       A4, [A3, #0]          ; [DPU_3_PIPE] |70|  ; [ORIG 16-BIT INS]
      714 00000098 2101              MOVS      A2, #1                ; [DPU_3_PIPE] |70|  ; [ORIG 16-BIT INS]
      715 0000009a 0011F1C0          RSB       A1, A1, #17           ; [DPU_3_PIPE] |70|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   14
@@ -838,7 +838,7 @@ dht22.asm                                                            PAGE   14
      768                            .dwpsn  file "../dht22.c",line 74,column 6,is_stmt,isa 1
      769                    ;----------------------------------------------------------------------
      770                    ;  74 | checksum |= 1<<(42-dhtBitCount);                                       
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   15
@@ -898,7 +898,7 @@ dht22.asm                                                            PAGE   15
      823                    ;----------------------------------------------------------------------
      824                    ;  82 | startTime = 0;                                                         
      825                    ;  83 | //calculate bit length and save the value                              
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   16
@@ -958,7 +958,7 @@ dht22.asm                                                            PAGE   16
      878                            .dwattr $C$DW$82, DW_AT_decl_file("../dht22.c")
      879                            .dwattr $C$DW$82, DW_AT_decl_line(0x5a)
      880                            .dwattr $C$DW$82, DW_AT_decl_column(0x06)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   17
@@ -1018,7 +1018,7 @@ dht22.asm                                                            PAGE   17
      933 00000010 FFFEF7FF!         BL        GPIOIntTypeSet        ; [DPU_3_PIPE] |94|  ; [KEEP 32-BIT INS]
      934                            ; CALL OCCURS {GPIOIntTypeSet }  ; [] |94| 
      935                            .dwpsn  file "../dht22.c",line 95,column 2,is_stmt,isa 1
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   18
@@ -1078,7 +1078,7 @@ dht22.asm                                                            PAGE   18
      988                            .dwattr $C$DW$88, DW_AT_decl_column(0x06)
      989                            .dwattr $C$DW$88, DW_AT_TI_max_frame_size(0x08)
      990                            .dwpsn  file "../dht22.c",line 100,column 1,is_stmt,address startDHT,isa 1
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   19
@@ -1138,7 +1138,7 @@ dht22.asm                                                            PAGE   19
     1043 00000012 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |107|  ; [ORIG 16-BIT INS]
     1044                            .dwpsn  file "../dht22.c",line 108,column 2,is_stmt,isa 1
     1045                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   20
@@ -1198,7 +1198,7 @@ dht22.asm                                                            PAGE   20
     1098 00000032 1A40              SUBS      A1, A1, A2            ; [DPU_3_PIPE] |112|  ; [ORIG 16-BIT INS]
     1099 00000034 2864              CMP       A1, #100              ; [DPU_3_PIPE] |112|  ; [ORIG 16-BIT INS]
     1100 00000036 D3F9              BCC       ||$C$L11||            ; [DPU_3_PIPE] |112|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   21
@@ -1258,7 +1258,7 @@ dht22.asm                                                            PAGE   21
     1153                    ;----------------------------------------------------------------------
     1154                    $C$DW$93        .dwtag  DW_TAG_TI_branch
     1155                            .dwattr $C$DW$93, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   22
@@ -1318,7 +1318,7 @@ dht22.asm                                                            PAGE   22
     1208                    ;*****************************************************************************
     1209 00000000           read_dht22:
     1210                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   23
@@ -1378,7 +1378,7 @@ dht22.asm                                                            PAGE   23
     1263                    ;* --------------------------------------------------------------------------*
     1264 0000001c           ||$C$L13||:    
     1265                            .dwpsn  file "../dht22.c",line 128,column 28,is_stmt,isa 1
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   24
@@ -1438,7 +1438,7 @@ dht22.asm                                                            PAGE   24
     1318                    ;----------------------------------------------------------------------
     1319                    ; 132 | void init_dht22()                                                      
     1320                    ; 134 | uint32_t delay;                                                        
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   25
@@ -1498,7 +1498,7 @@ dht22.asm                                                            PAGE   25
     1373 00000010 481A              LDR       A1, $C$CON24          ; [DPU_3_PIPE] |138|  ; [ORIG 16-BIT INS]
     1374 00000012 2101              MOVS      A2, #1                ; [DPU_3_PIPE] |138|  ; [ORIG 16-BIT INS]
     1375 00000014 2201              MOVS      A3, #1                ; [DPU_3_PIPE] |138|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   26
@@ -1558,7 +1558,7 @@ dht22.asm                                                            PAGE   26
     1428 00000038 72FAF44F          MOV       A3, #500              ; [DPU_3_PIPE] |145|  ; [KEEP 32-BIT INS]
     1429                    $C$DW$107       .dwtag  DW_TAG_TI_branch
     1430                            .dwattr $C$DW$107, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   27
@@ -1618,7 +1618,7 @@ dht22.asm                                                            PAGE   27
     1483                    ; 151 | for(delay=0;delay<1000000;delay++);                                    
     1484                    ;----------------------------------------------------------------------
     1485 0000005a 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |151|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   28
@@ -1678,7 +1678,7 @@ dht22.asm                                                            PAGE   28
     1538                            .dwattr $C$DW$113, DW_AT_TI_symbol_name("Timer0IntHandler")
     1539                            .dwattr $C$DW$113, DW_AT_external
     1540                            .dwattr $C$DW$113, DW_AT_TI_begin_file("../dht22.c")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   29
@@ -1738,7 +1738,7 @@ dht22.asm                                                            PAGE   29
     1593                    $C$DW$115       .dwtag  DW_TAG_TI_branch
     1594                            .dwattr $C$DW$115, DW_AT_low_pc(0x00)
     1595                            .dwattr $C$DW$115, DW_AT_TI_return
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   30
@@ -1798,7 +1798,7 @@ dht22.asm                                                            PAGE   30
     1648                            .dwcfi  save_reg_to_mem, 14, -4
     1649                            .dwcfi  save_reg_to_mem, 3, -8
     1650                    $C$DW$117       .dwtag  DW_TAG_variable, DW_AT_name("data")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   31
@@ -1858,7 +1858,7 @@ dht22.asm                                                            PAGE   31
     1703 00000000                   .thumb
     1704                            .global dht22_readtemp
     1705                    
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   32
@@ -1918,7 +1918,7 @@ dht22.asm                                                            PAGE   32
     1758 0000001c 0A04EEF2          VMOV.F32  S1, #1.00000000000000000000e+01 ; [DPU_LIN_PIPE] |178|  ; [KEEP 32-BIT INS]
     1759 00000020 0A20EE80          VDIV.F32  S0, S0, S1            ; [DPU_LIN_PIPE] |178|  ; [KEEP 32-BIT INS]
     1760 00000024 0A00ED8D          VSTR.32   S0, [SP, #0]          ; [DPU_LIN_PIPE] |178|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   33
@@ -1978,7 +1978,7 @@ dht22.asm                                                            PAGE   33
     1805 0000013e 00000000! ||$C$CON9||:    .bits   humidity,32
          00000142 00000000 
     1806                            .align  4
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   34
@@ -2038,7 +2038,7 @@ dht22.asm                                                            PAGE   34
     1846                    ;******************************************************************************
     1847 00000076                   .sect   ".text:init_dht22"
     1848                            .align  4
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   35
@@ -2098,7 +2098,7 @@ dht22.asm                                                            PAGE   35
     1896                            .global TimerConfigure
     1897                            .global TimerLoadSet
     1898                            .global TimerIntEnable
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   36
@@ -2131,7 +2131,7 @@ dht22.asm                                                            PAGE   36
     1924                            .dwattr $C$DW$123, DW_AT_TI_symbol_name("fd")
     1925                            .dwattr $C$DW$123, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     1926                            .dwattr $C$DW$123, DW_AT_accessibility(DW_ACCESS_public)
-    1927                            .dwattr $C$DW$123, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    1927                            .dwattr $C$DW$123, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     1928                            .dwattr $C$DW$123, DW_AT_decl_line(0x5c)
     1929                            .dwattr $C$DW$123, DW_AT_decl_column(0x0b)
     1930                    $C$DW$124       .dwtag  DW_TAG_member
@@ -2140,7 +2140,7 @@ dht22.asm                                                            PAGE   36
     1933                            .dwattr $C$DW$124, DW_AT_TI_symbol_name("buf")
     1934                            .dwattr $C$DW$124, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     1935                            .dwattr $C$DW$124, DW_AT_accessibility(DW_ACCESS_public)
-    1936                            .dwattr $C$DW$124, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    1936                            .dwattr $C$DW$124, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     1937                            .dwattr $C$DW$124, DW_AT_decl_line(0x5d)
     1938                            .dwattr $C$DW$124, DW_AT_decl_column(0x16)
     1939                    $C$DW$125       .dwtag  DW_TAG_member
@@ -2149,7 +2149,7 @@ dht22.asm                                                            PAGE   36
     1942                            .dwattr $C$DW$125, DW_AT_TI_symbol_name("pos")
     1943                            .dwattr $C$DW$125, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
     1944                            .dwattr $C$DW$125, DW_AT_accessibility(DW_ACCESS_public)
-    1945                            .dwattr $C$DW$125, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    1945                            .dwattr $C$DW$125, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     1946                            .dwattr $C$DW$125, DW_AT_decl_line(0x5e)
     1947                            .dwattr $C$DW$125, DW_AT_decl_column(0x16)
     1948                    $C$DW$126       .dwtag  DW_TAG_member
@@ -2158,12 +2158,12 @@ dht22.asm                                                            PAGE   36
     1951                            .dwattr $C$DW$126, DW_AT_TI_symbol_name("bufend")
     1952                            .dwattr $C$DW$126, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
     1953                            .dwattr $C$DW$126, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   37
 
-    1954                            .dwattr $C$DW$126, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    1954                            .dwattr $C$DW$126, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     1955                            .dwattr $C$DW$126, DW_AT_decl_line(0x5f)
     1956                            .dwattr $C$DW$126, DW_AT_decl_column(0x16)
     1957                    $C$DW$127       .dwtag  DW_TAG_member
@@ -2172,7 +2172,7 @@ dht22.asm                                                            PAGE   37
     1960                            .dwattr $C$DW$127, DW_AT_TI_symbol_name("buff_stop")
     1961                            .dwattr $C$DW$127, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
     1962                            .dwattr $C$DW$127, DW_AT_accessibility(DW_ACCESS_public)
-    1963                            .dwattr $C$DW$127, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    1963                            .dwattr $C$DW$127, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     1964                            .dwattr $C$DW$127, DW_AT_decl_line(0x60)
     1965                            .dwattr $C$DW$127, DW_AT_decl_column(0x16)
     1966                    $C$DW$128       .dwtag  DW_TAG_member
@@ -2181,18 +2181,18 @@ dht22.asm                                                            PAGE   37
     1969                            .dwattr $C$DW$128, DW_AT_TI_symbol_name("flags")
     1970                            .dwattr $C$DW$128, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
     1971                            .dwattr $C$DW$128, DW_AT_accessibility(DW_ACCESS_public)
-    1972                            .dwattr $C$DW$128, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    1972                            .dwattr $C$DW$128, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     1973                            .dwattr $C$DW$128, DW_AT_decl_line(0x61)
     1974                            .dwattr $C$DW$128, DW_AT_decl_column(0x16)
     1975                            .dwendtag $C$DW$T$20
     1976                    
-    1977                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    1977                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
     1978                            .dwattr $C$DW$T$20, DW_AT_decl_line(0x5b)
     1979                            .dwattr $C$DW$T$20, DW_AT_decl_column(0x10)
     1980                    $C$DW$T$22      .dwtag  DW_TAG_typedef, DW_AT_name("FILE")
     1981                            .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$20)
     1982                            .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
-    1983                            .dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    1983                            .dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
     1984                            .dwattr $C$DW$T$22, DW_AT_decl_line(0x62)
     1985                            .dwattr $C$DW$T$22, DW_AT_decl_column(0x03)
     1986                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
@@ -2217,8 +2217,8 @@ dht22.asm                                                            PAGE   37
     2005                    $C$DW$T$45      .dwtag  DW_TAG_typedef, DW_AT_name("int8_t")
     2006                            .dwattr $C$DW$T$45, DW_AT_type(*$C$DW$T$5)
     2007                            .dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
-    2008                            .dwattr $C$DW$T$45, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+    2008                            .dwattr $C$DW$T$45, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   38
@@ -2228,7 +2228,7 @@ dht22.asm                                                            PAGE   38
     2011                    $C$DW$T$46      .dwtag  DW_TAG_typedef, DW_AT_name("int_least8_t")
     2012                            .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$45)
     2013                            .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
-    2014                            .dwattr $C$DW$T$46, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2014                            .dwattr $C$DW$T$46, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2015                            .dwattr $C$DW$T$46, DW_AT_decl_line(0x37)
     2016                            .dwattr $C$DW$T$46, DW_AT_decl_column(0x17)
     2017                    $C$DW$T$6       .dwtag  DW_TAG_base_type
@@ -2241,7 +2241,7 @@ dht22.asm                                                            PAGE   38
     2024                    $C$DW$T$26      .dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
     2025                            .dwattr $C$DW$T$26, DW_AT_type(*$C$DW$T$6)
     2026                            .dwattr $C$DW$T$26, DW_AT_language(DW_LANG_C)
-    2027                            .dwattr $C$DW$T$26, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2027                            .dwattr $C$DW$T$26, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2028                            .dwattr $C$DW$T$26, DW_AT_decl_line(0x2b)
     2029                            .dwattr $C$DW$T$26, DW_AT_decl_column(0x1c)
     2030                    $C$DW$T$47      .dwtag  DW_TAG_volatile_type
@@ -2249,7 +2249,7 @@ dht22.asm                                                            PAGE   38
     2032                    $C$DW$T$48      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
     2033                            .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$26)
     2034                            .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
-    2035                            .dwattr $C$DW$T$48, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2035                            .dwattr $C$DW$T$48, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2036                            .dwattr $C$DW$T$48, DW_AT_decl_line(0x38)
     2037                            .dwattr $C$DW$T$48, DW_AT_decl_column(0x16)
     2038                    $C$DW$T$7       .dwtag  DW_TAG_base_type
@@ -2263,13 +2263,13 @@ dht22.asm                                                            PAGE   38
     2046                    $C$DW$T$49      .dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
     2047                            .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$8)
     2048                            .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
-    2049                            .dwattr $C$DW$T$49, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2049                            .dwattr $C$DW$T$49, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2050                            .dwattr $C$DW$T$49, DW_AT_decl_line(0x2c)
     2051                            .dwattr $C$DW$T$49, DW_AT_decl_column(0x1d)
     2052                    $C$DW$T$50      .dwtag  DW_TAG_typedef, DW_AT_name("int_least16_t")
     2053                            .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$49)
     2054                            .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
-    2055                            .dwattr $C$DW$T$50, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2055                            .dwattr $C$DW$T$50, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2056                            .dwattr $C$DW$T$50, DW_AT_decl_line(0x3a)
     2057                            .dwattr $C$DW$T$50, DW_AT_decl_column(0x17)
     2058                    $C$DW$T$9       .dwtag  DW_TAG_base_type
@@ -2278,31 +2278,31 @@ dht22.asm                                                            PAGE   38
     2061                            .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
     2062                    $C$DW$T$51      .dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
     2063                            .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$9)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   39
 
     2064                            .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
-    2065                            .dwattr $C$DW$T$51, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2065                            .dwattr $C$DW$T$51, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2066                            .dwattr $C$DW$T$51, DW_AT_decl_line(0x1e5)
     2067                            .dwattr $C$DW$T$51, DW_AT_decl_column(0x21)
     2068                    $C$DW$T$52      .dwtag  DW_TAG_typedef, DW_AT_name("_Wintt")
     2069                            .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$9)
     2070                            .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
-    2071                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2071                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2072                            .dwattr $C$DW$T$52, DW_AT_decl_line(0x1e6)
     2073                            .dwattr $C$DW$T$52, DW_AT_decl_column(0x21)
     2074                    $C$DW$T$53      .dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
     2075                            .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$9)
     2076                            .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
-    2077                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2077                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2078                            .dwattr $C$DW$T$53, DW_AT_decl_line(0x2d)
     2079                            .dwattr $C$DW$T$53, DW_AT_decl_column(0x1c)
     2080                    $C$DW$T$54      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
     2081                            .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$53)
     2082                            .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
-    2083                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2083                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2084                            .dwattr $C$DW$T$54, DW_AT_decl_line(0x3b)
     2085                            .dwattr $C$DW$T$54, DW_AT_decl_column(0x16)
     2086                    $C$DW$T$10      .dwtag  DW_TAG_base_type
@@ -2312,33 +2312,33 @@ dht22.asm                                                            PAGE   39
     2090                    $C$DW$T$55      .dwtag  DW_TAG_typedef, DW_AT_name("_Ptrdifft")
     2091                            .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$10)
     2092                            .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
-    2093                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2093                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2094                            .dwattr $C$DW$T$55, DW_AT_decl_line(0xa9)
     2095                            .dwattr $C$DW$T$55, DW_AT_decl_column(0x1e)
     2096                    $C$DW$T$56      .dwtag  DW_TAG_typedef, DW_AT_name("int32_t")
     2097                            .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$10)
     2098                            .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
-    2099                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2099                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2100                            .dwattr $C$DW$T$56, DW_AT_decl_line(0x2e)
     2101                            .dwattr $C$DW$T$56, DW_AT_decl_column(0x1d)
     2102                    $C$DW$T$59      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast16_t")
     2103                            .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$56)
     2104                            .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
-    2105                            .dwattr $C$DW$T$59, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2105                            .dwattr $C$DW$T$59, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2106                            .dwattr $C$DW$T$59, DW_AT_decl_line(0x47)
     2107                            .dwattr $C$DW$T$59, DW_AT_decl_column(0x17)
     2108                    $C$DW$T$60      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast32_t")
     2109                            .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$56)
     2110                            .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
-    2111                            .dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2111                            .dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2112                            .dwattr $C$DW$T$60, DW_AT_decl_line(0x4a)
     2113                            .dwattr $C$DW$T$60, DW_AT_decl_column(0x17)
     2114                    $C$DW$T$61      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast8_t")
     2115                            .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$56)
     2116                            .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
-    2117                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2117                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2118                            .dwattr $C$DW$T$61, DW_AT_decl_line(0x45)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   40
@@ -2347,13 +2347,13 @@ dht22.asm                                                            PAGE   40
     2120                    $C$DW$T$62      .dwtag  DW_TAG_typedef, DW_AT_name("int_least32_t")
     2121                            .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$56)
     2122                            .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
-    2123                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2123                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2124                            .dwattr $C$DW$T$62, DW_AT_decl_line(0x3c)
     2125                            .dwattr $C$DW$T$62, DW_AT_decl_column(0x17)
     2126                    $C$DW$T$63      .dwtag  DW_TAG_typedef, DW_AT_name("intptr_t")
     2127                            .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$10)
     2128                            .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
-    2129                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2129                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2130                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x52)
     2131                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x1a)
     2132                    $C$DW$T$11      .dwtag  DW_TAG_base_type
@@ -2363,19 +2363,19 @@ dht22.asm                                                            PAGE   40
     2136                    $C$DW$T$64      .dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
     2137                            .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$11)
     2138                            .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
-    2139                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2139                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2140                            .dwattr $C$DW$T$64, DW_AT_decl_line(0xab)
     2141                            .dwattr $C$DW$T$64, DW_AT_decl_column(0x1a)
     2142                    $C$DW$T$65      .dwtag  DW_TAG_typedef, DW_AT_name("size_t")
     2143                            .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$11)
     2144                            .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
-    2145                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    2145                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
     2146                            .dwattr $C$DW$T$65, DW_AT_decl_line(0x58)
     2147                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x19)
     2148                    $C$DW$T$23      .dwtag  DW_TAG_typedef, DW_AT_name("uint32_t")
     2149                            .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$11)
     2150                            .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
-    2151                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2151                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2152                            .dwattr $C$DW$T$23, DW_AT_decl_line(0x2f)
     2153                            .dwattr $C$DW$T$23, DW_AT_decl_column(0x1c)
     2154                    $C$DW$T$70      .dwtag  DW_TAG_volatile_type
@@ -2392,36 +2392,36 @@ dht22.asm                                                            PAGE   40
     2165                    $C$DW$T$73      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast16_t")
     2166                            .dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$23)
     2167                            .dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
-    2168                            .dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2168                            .dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2169                            .dwattr $C$DW$T$73, DW_AT_decl_line(0x48)
     2170                            .dwattr $C$DW$T$73, DW_AT_decl_column(0x16)
     2171                    $C$DW$T$74      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast32_t")
     2172                            .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$23)
     2173                            .dwattr $C$DW$T$74, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   41
 
-    2174                            .dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2174                            .dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2175                            .dwattr $C$DW$T$74, DW_AT_decl_line(0x4b)
     2176                            .dwattr $C$DW$T$74, DW_AT_decl_column(0x16)
     2177                    $C$DW$T$75      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
     2178                            .dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$23)
     2179                            .dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
-    2180                            .dwattr $C$DW$T$75, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2180                            .dwattr $C$DW$T$75, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2181                            .dwattr $C$DW$T$75, DW_AT_decl_line(0x46)
     2182                            .dwattr $C$DW$T$75, DW_AT_decl_column(0x16)
     2183                    $C$DW$T$76      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least32_t")
     2184                            .dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$23)
     2185                            .dwattr $C$DW$T$76, DW_AT_language(DW_LANG_C)
-    2186                            .dwattr $C$DW$T$76, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2186                            .dwattr $C$DW$T$76, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2187                            .dwattr $C$DW$T$76, DW_AT_decl_line(0x3d)
     2188                            .dwattr $C$DW$T$76, DW_AT_decl_column(0x16)
     2189                    $C$DW$T$77      .dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
     2190                            .dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$11)
     2191                            .dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
-    2192                            .dwattr $C$DW$T$77, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2192                            .dwattr $C$DW$T$77, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2193                            .dwattr $C$DW$T$77, DW_AT_decl_line(0x53)
     2194                            .dwattr $C$DW$T$77, DW_AT_decl_column(0x1a)
     2195                    $C$DW$T$12      .dwtag  DW_TAG_base_type
@@ -2431,13 +2431,13 @@ dht22.asm                                                            PAGE   41
     2199                    $C$DW$T$78      .dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
     2200                            .dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$12)
     2201                            .dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
-    2202                            .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2202                            .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2203                            .dwattr $C$DW$T$78, DW_AT_decl_line(0xa6)
     2204                            .dwattr $C$DW$T$78, DW_AT_decl_column(0x0e)
     2205                    $C$DW$T$79      .dwtag  DW_TAG_typedef, DW_AT_name("fpos_t")
     2206                            .dwattr $C$DW$T$79, DW_AT_type(*$C$DW$T$12)
     2207                            .dwattr $C$DW$T$79, DW_AT_language(DW_LANG_C)
-    2208                            .dwattr $C$DW$T$79, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    2208                            .dwattr $C$DW$T$79, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
     2209                            .dwattr $C$DW$T$79, DW_AT_decl_line(0x6e)
     2210                            .dwattr $C$DW$T$79, DW_AT_decl_column(0x0e)
     2211                    $C$DW$T$13      .dwtag  DW_TAG_base_type
@@ -2447,7 +2447,7 @@ dht22.asm                                                            PAGE   41
     2215                    $C$DW$T$80      .dwtag  DW_TAG_typedef, DW_AT_name("_Uint32t")
     2216                            .dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$13)
     2217                            .dwattr $C$DW$T$80, DW_AT_language(DW_LANG_C)
-    2218                            .dwattr $C$DW$T$80, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2218                            .dwattr $C$DW$T$80, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2219                            .dwattr $C$DW$T$80, DW_AT_decl_line(0xa7)
     2220                            .dwattr $C$DW$T$80, DW_AT_decl_column(0x17)
     2221                    $C$DW$T$14      .dwtag  DW_TAG_base_type
@@ -2457,8 +2457,8 @@ dht22.asm                                                            PAGE   41
     2225                    $C$DW$T$81      .dwtag  DW_TAG_typedef, DW_AT_name("_Longlong")
     2226                            .dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$14)
     2227                            .dwattr $C$DW$T$81, DW_AT_language(DW_LANG_C)
-    2228                            .dwattr $C$DW$T$81, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+    2228                            .dwattr $C$DW$T$81, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   42
@@ -2468,25 +2468,25 @@ dht22.asm                                                            PAGE   42
     2231                    $C$DW$T$82      .dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
     2232                            .dwattr $C$DW$T$82, DW_AT_type(*$C$DW$T$14)
     2233                            .dwattr $C$DW$T$82, DW_AT_language(DW_LANG_C)
-    2234                            .dwattr $C$DW$T$82, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2234                            .dwattr $C$DW$T$82, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2235                            .dwattr $C$DW$T$82, DW_AT_decl_line(0x32)
     2236                            .dwattr $C$DW$T$82, DW_AT_decl_column(0x21)
     2237                    $C$DW$T$83      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
     2238                            .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$82)
     2239                            .dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
-    2240                            .dwattr $C$DW$T$83, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2240                            .dwattr $C$DW$T$83, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2241                            .dwattr $C$DW$T$83, DW_AT_decl_line(0x4e)
     2242                            .dwattr $C$DW$T$83, DW_AT_decl_column(0x17)
     2243                    $C$DW$T$84      .dwtag  DW_TAG_typedef, DW_AT_name("int_least64_t")
     2244                            .dwattr $C$DW$T$84, DW_AT_type(*$C$DW$T$82)
     2245                            .dwattr $C$DW$T$84, DW_AT_language(DW_LANG_C)
-    2246                            .dwattr $C$DW$T$84, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2246                            .dwattr $C$DW$T$84, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2247                            .dwattr $C$DW$T$84, DW_AT_decl_line(0x40)
     2248                            .dwattr $C$DW$T$84, DW_AT_decl_column(0x17)
     2249                    $C$DW$T$85      .dwtag  DW_TAG_typedef, DW_AT_name("intmax_t")
     2250                            .dwattr $C$DW$T$85, DW_AT_type(*$C$DW$T$14)
     2251                            .dwattr $C$DW$T$85, DW_AT_language(DW_LANG_C)
-    2252                            .dwattr $C$DW$T$85, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2252                            .dwattr $C$DW$T$85, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2253                            .dwattr $C$DW$T$85, DW_AT_decl_line(0x56)
     2254                            .dwattr $C$DW$T$85, DW_AT_decl_column(0x20)
     2255                    $C$DW$T$15      .dwtag  DW_TAG_base_type
@@ -2496,36 +2496,36 @@ dht22.asm                                                            PAGE   42
     2259                    $C$DW$T$86      .dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
     2260                            .dwattr $C$DW$T$86, DW_AT_type(*$C$DW$T$15)
     2261                            .dwattr $C$DW$T$86, DW_AT_language(DW_LANG_C)
-    2262                            .dwattr $C$DW$T$86, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2262                            .dwattr $C$DW$T$86, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2263                            .dwattr $C$DW$T$86, DW_AT_decl_line(0x1b6)
     2264                            .dwattr $C$DW$T$86, DW_AT_decl_column(0x14)
     2265                    $C$DW$T$87      .dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
     2266                            .dwattr $C$DW$T$87, DW_AT_type(*$C$DW$T$15)
     2267                            .dwattr $C$DW$T$87, DW_AT_language(DW_LANG_C)
-    2268                            .dwattr $C$DW$T$87, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2268                            .dwattr $C$DW$T$87, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2269                            .dwattr $C$DW$T$87, DW_AT_decl_line(0x33)
     2270                            .dwattr $C$DW$T$87, DW_AT_decl_column(0x20)
     2271                    $C$DW$T$88      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast64_t")
     2272                            .dwattr $C$DW$T$88, DW_AT_type(*$C$DW$T$87)
     2273                            .dwattr $C$DW$T$88, DW_AT_language(DW_LANG_C)
-    2274                            .dwattr $C$DW$T$88, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2274                            .dwattr $C$DW$T$88, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2275                            .dwattr $C$DW$T$88, DW_AT_decl_line(0x4f)
     2276                            .dwattr $C$DW$T$88, DW_AT_decl_column(0x16)
     2277                    $C$DW$T$89      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least64_t")
     2278                            .dwattr $C$DW$T$89, DW_AT_type(*$C$DW$T$87)
     2279                            .dwattr $C$DW$T$89, DW_AT_language(DW_LANG_C)
-    2280                            .dwattr $C$DW$T$89, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2280                            .dwattr $C$DW$T$89, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2281                            .dwattr $C$DW$T$89, DW_AT_decl_line(0x41)
     2282                            .dwattr $C$DW$T$89, DW_AT_decl_column(0x16)
     2283                    $C$DW$T$90      .dwtag  DW_TAG_typedef, DW_AT_name("uintmax_t")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   43
 
     2284                            .dwattr $C$DW$T$90, DW_AT_type(*$C$DW$T$15)
     2285                            .dwattr $C$DW$T$90, DW_AT_language(DW_LANG_C)
-    2286                            .dwattr $C$DW$T$90, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2286                            .dwattr $C$DW$T$90, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2287                            .dwattr $C$DW$T$90, DW_AT_decl_line(0x57)
     2288                            .dwattr $C$DW$T$90, DW_AT_decl_column(0x20)
     2289                    $C$DW$T$16      .dwtag  DW_TAG_base_type
@@ -2547,7 +2547,7 @@ dht22.asm                                                            PAGE   43
     2305                    $C$DW$T$95      .dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
     2306                            .dwattr $C$DW$T$95, DW_AT_type(*$C$DW$T$6)
     2307                            .dwattr $C$DW$T$95, DW_AT_language(DW_LANG_C)
-    2308                            .dwattr $C$DW$T$95, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2308                            .dwattr $C$DW$T$95, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2309                            .dwattr $C$DW$T$95, DW_AT_decl_line(0x218)
     2310                            .dwattr $C$DW$T$95, DW_AT_decl_column(0x0e)
     2311                    $C$DW$T$96      .dwtag  DW_TAG_pointer_type
@@ -2569,29 +2569,29 @@ dht22.asm                                                            PAGE   43
     2327                            .dwattr $C$DW$130, DW_AT_TI_symbol_name("__ap")
     2328                            .dwattr $C$DW$130, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2329                            .dwattr $C$DW$130, DW_AT_accessibility(DW_ACCESS_public)
-    2330                            .dwattr $C$DW$130, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg
+    2330                            .dwattr $C$DW$130, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdarg
     2331                            .dwattr $C$DW$130, DW_AT_decl_line(0x36)
     2332                            .dwattr $C$DW$130, DW_AT_decl_column(0x0c)
     2333                            .dwendtag $C$DW$T$21
     2334                    
-    2335                            .dwattr $C$DW$T$21, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    2335                            .dwattr $C$DW$T$21, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdar
     2336                            .dwattr $C$DW$T$21, DW_AT_decl_line(0x35)
     2337                            .dwattr $C$DW$T$21, DW_AT_decl_column(0x10)
     2338                    $C$DW$T$98      .dwtag  DW_TAG_typedef, DW_AT_name("va_list")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   44
 
     2339                            .dwattr $C$DW$T$98, DW_AT_type(*$C$DW$T$21)
     2340                            .dwattr $C$DW$T$98, DW_AT_language(DW_LANG_C)
-    2341                            .dwattr $C$DW$T$98, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    2341                            .dwattr $C$DW$T$98, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdar
     2342                            .dwattr $C$DW$T$98, DW_AT_decl_line(0x37)
     2343                            .dwattr $C$DW$T$98, DW_AT_decl_column(0x03)
     2344                    $C$DW$T$99      .dwtag  DW_TAG_typedef, DW_AT_name("_Va_list")
     2345                            .dwattr $C$DW$T$99, DW_AT_type(*$C$DW$T$98)
     2346                            .dwattr $C$DW$T$99, DW_AT_language(DW_LANG_C)
-    2347                            .dwattr $C$DW$T$99, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2347                            .dwattr $C$DW$T$99, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2348                            .dwattr $C$DW$T$99, DW_AT_decl_line(0x1f6)
     2349                            .dwattr $C$DW$T$99, DW_AT_decl_column(0x17)
     2350                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
@@ -2638,7 +2638,7 @@ dht22.asm                                                            PAGE   44
     2391                            .dwcfi  undefined, 79
     2392                            .dwcfi  same_value, 80
     2393                            .dwcfi  same_value, 81
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:50 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 dht22.asm                                                            PAGE   45
@@ -2667,7 +2667,7 @@ Thumb2 Statistics
 Number of Thumb2 ins converted to Thumb = 0 (0%)
 Number of Thumb ins in input = 256 (82%)
 Number of Thumb2 ins encoded as Thumb2 = 56 (100%)
-Number of Thumb2 ins converted to 2 OPND Thumb = 7
+Number of Thumb2 ins converted to 2 OPND Thumb = 8
 
 
 No Assembly Errors, No Assembly Warnings

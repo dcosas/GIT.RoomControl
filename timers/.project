@@ -44,11 +44,11 @@
 	<variableList>
 		<variable>
 			<name>ORIGINAL_PROJECT_ROOT</name>
-			<value>file:/E:/Dev/Ti/TivaWare/examples/boards/ek-tm4c123gxl/timers/ccs</value>
+			<value>file:/C:/ti/TivaWare/examples/boards/dk-tm4c123g/sd_card/ccs</value>
 		</variable>
 		<variable>
 			<name>SW_ROOT</name>
-			<value>$%7BPARENT-5-ORIGINAL_PROJECT_ROOT%7D</value>
+			<value>file:/C:/ti/TivaWare</value>
 		</variable>
 	</variableList>
 </projectDescription>

@@ -1,26 +1,26 @@
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    1
 
        1                    ;******************************************************************************
-       2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-       3                    ;* Date/Time created: Sun Nov 29 14:18:54 2015                                *
+       2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.6 *
+       3                    ;* Date/Time created: Tue Jan 26 13:54:20 2016                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
        7                    
        8                    $C$DW$CU        .dwtag  DW_TAG_compile_unit
        9                            .dwattr $C$DW$CU, DW_AT_name("../tiva_ssi.c")
-      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.5 Copyright (c) 1996-2015 Te
+      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.6 Copyright (c) 1996-2015 Te
       11                            .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("E:\Dev\Ti\Code\GIT\LaunchpadRoomControl\LaunchpadRoomControl
+      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("D:\Deian\Dev\TI\temp\LaunchpadRoomControl\timers\Debug")
       13                    
       14                    $C$DW$1 .dwtag  DW_TAG_subprogram, DW_AT_name("SSIConfigSetExpClk")
       15                            .dwattr $C$DW$1, DW_AT_TI_symbol_name("SSIConfigSetExpClk")
       16                            .dwattr $C$DW$1, DW_AT_declaration
       17                            .dwattr $C$DW$1, DW_AT_external
-      18                            .dwattr $C$DW$1, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/ssi.h")
+      18                            .dwattr $C$DW$1, DW_AT_decl_file("C:/ti/TivaWare/driverlib/ssi.h")
       19                            .dwattr $C$DW$1, DW_AT_decl_line(0x77)
       20                            .dwattr $C$DW$1, DW_AT_decl_column(0x0d)
       21                    $C$DW$2 .dwtag  DW_TAG_formal_parameter
@@ -42,7 +42,7 @@ tiva_ssi.asm                                                         PAGE    1
       37                            .dwattr $C$DW$8, DW_AT_TI_symbol_name("SSIDataGet")
       38                            .dwattr $C$DW$8, DW_AT_declaration
       39                            .dwattr $C$DW$8, DW_AT_external
-      40                            .dwattr $C$DW$8, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/ssi.h")
+      40                            .dwattr $C$DW$8, DW_AT_decl_file("C:/ti/TivaWare/driverlib/ssi.h")
       41                            .dwattr $C$DW$8, DW_AT_decl_line(0x7b)
       42                            .dwattr $C$DW$8, DW_AT_decl_column(0x0d)
       43                    $C$DW$9 .dwtag  DW_TAG_formal_parameter
@@ -57,8 +57,8 @@ tiva_ssi.asm                                                         PAGE    1
       52                            .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$48)
       53                            .dwattr $C$DW$11, DW_AT_declaration
       54                            .dwattr $C$DW$11, DW_AT_external
-      55                            .dwattr $C$DW$11, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/ssi.h")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+      55                            .dwattr $C$DW$11, DW_AT_decl_file("C:/ti/TivaWare/driverlib/ssi.h")
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    2
@@ -76,7 +76,7 @@ tiva_ssi.asm                                                         PAGE    2
       66                            .dwattr $C$DW$14, DW_AT_TI_symbol_name("SSIDataPut")
       67                            .dwattr $C$DW$14, DW_AT_declaration
       68                            .dwattr $C$DW$14, DW_AT_external
-      69                            .dwattr $C$DW$14, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/ssi.h")
+      69                            .dwattr $C$DW$14, DW_AT_decl_file("C:/ti/TivaWare/driverlib/ssi.h")
       70                            .dwattr $C$DW$14, DW_AT_decl_line(0x7e)
       71                            .dwattr $C$DW$14, DW_AT_decl_column(0x0d)
       72                    $C$DW$15        .dwtag  DW_TAG_formal_parameter
@@ -90,7 +90,7 @@ tiva_ssi.asm                                                         PAGE    2
       80                            .dwattr $C$DW$17, DW_AT_TI_symbol_name("SSIDisable")
       81                            .dwattr $C$DW$17, DW_AT_declaration
       82                            .dwattr $C$DW$17, DW_AT_external
-      83                            .dwattr $C$DW$17, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/ssi.h")
+      83                            .dwattr $C$DW$17, DW_AT_decl_file("C:/ti/TivaWare/driverlib/ssi.h")
       84                            .dwattr $C$DW$17, DW_AT_decl_line(0x80)
       85                            .dwattr $C$DW$17, DW_AT_decl_column(0x0d)
       86                    $C$DW$18        .dwtag  DW_TAG_formal_parameter
@@ -102,7 +102,7 @@ tiva_ssi.asm                                                         PAGE    2
       92                            .dwattr $C$DW$19, DW_AT_TI_symbol_name("SSIEnable")
       93                            .dwattr $C$DW$19, DW_AT_declaration
       94                            .dwattr $C$DW$19, DW_AT_external
-      95                            .dwattr $C$DW$19, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/ssi.h")
+      95                            .dwattr $C$DW$19, DW_AT_decl_file("C:/ti/TivaWare/driverlib/ssi.h")
       96                            .dwattr $C$DW$19, DW_AT_decl_line(0x81)
       97                            .dwattr $C$DW$19, DW_AT_decl_column(0x0d)
       98                    $C$DW$20        .dwtag  DW_TAG_formal_parameter
@@ -115,10 +115,10 @@ tiva_ssi.asm                                                         PAGE    2
      105                            .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$79)
      106                            .dwattr $C$DW$21, DW_AT_declaration
      107                            .dwattr $C$DW$21, DW_AT_external
-     108                            .dwattr $C$DW$21, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/ssi.h")
+     108                            .dwattr $C$DW$21, DW_AT_decl_file("C:/ti/TivaWare/driverlib/ssi.h")
      109                            .dwattr $C$DW$21, DW_AT_decl_line(0x8a)
      110                            .dwattr $C$DW$21, DW_AT_decl_column(0x0d)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    3
@@ -132,7 +132,7 @@ tiva_ssi.asm                                                         PAGE    3
      117                            .dwattr $C$DW$23, DW_AT_TI_symbol_name("SSIClockSourceSet")
      118                            .dwattr $C$DW$23, DW_AT_declaration
      119                            .dwattr $C$DW$23, DW_AT_external
-     120                            .dwattr $C$DW$23, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/ssi.h")
+     120                            .dwattr $C$DW$23, DW_AT_decl_file("C:/ti/TivaWare/driverlib/ssi.h")
      121                            .dwattr $C$DW$23, DW_AT_decl_line(0x8b)
      122                            .dwattr $C$DW$23, DW_AT_decl_column(0x0d)
      123                    $C$DW$24        .dwtag  DW_TAG_formal_parameter
@@ -146,7 +146,7 @@ tiva_ssi.asm                                                         PAGE    3
      131                            .dwattr $C$DW$26, DW_AT_TI_symbol_name("GPIOPinConfigure")
      132                            .dwattr $C$DW$26, DW_AT_declaration
      133                            .dwattr $C$DW$26, DW_AT_external
-     134                            .dwattr $C$DW$26, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     134                            .dwattr $C$DW$26, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
      135                            .dwattr $C$DW$26, DW_AT_decl_line(0x9f)
      136                            .dwattr $C$DW$26, DW_AT_decl_column(0x0d)
      137                    $C$DW$27        .dwtag  DW_TAG_formal_parameter
@@ -158,8 +158,8 @@ tiva_ssi.asm                                                         PAGE    3
      143                            .dwattr $C$DW$28, DW_AT_TI_symbol_name("GPIOPinTypeSSI")
      144                            .dwattr $C$DW$28, DW_AT_declaration
      145                            .dwattr $C$DW$28, DW_AT_external
-     146                            .dwattr $C$DW$28, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
-     147                            .dwattr $C$DW$28, DW_AT_decl_line(0xaf)
+     146                            .dwattr $C$DW$28, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
+     147                            .dwattr $C$DW$28, DW_AT_decl_line(0xb2)
      148                            .dwattr $C$DW$28, DW_AT_decl_column(0x0d)
      149                    $C$DW$29        .dwtag  DW_TAG_formal_parameter
      150                            .dwattr $C$DW$29, DW_AT_type(*$C$DW$T$23)
@@ -172,13 +172,13 @@ tiva_ssi.asm                                                         PAGE    3
      157                            .dwattr $C$DW$31, DW_AT_TI_symbol_name("SysCtlPeripheralReset")
      158                            .dwattr $C$DW$31, DW_AT_declaration
      159                            .dwattr $C$DW$31, DW_AT_external
-     160                            .dwattr $C$DW$31, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/sysctl.h")
+     160                            .dwattr $C$DW$31, DW_AT_decl_file("C:/ti/TivaWare/driverlib/sysctl.h")
      161                            .dwattr $C$DW$31, DW_AT_decl_line(0x24d)
      162                            .dwattr $C$DW$31, DW_AT_decl_column(0x0d)
      163                    $C$DW$32        .dwtag  DW_TAG_formal_parameter
      164                            .dwattr $C$DW$32, DW_AT_type(*$C$DW$T$23)
      165                            .dwendtag $C$DW$31
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    4
@@ -189,7 +189,7 @@ tiva_ssi.asm                                                         PAGE    4
      169                            .dwattr $C$DW$33, DW_AT_TI_symbol_name("SysCtlPeripheralEnable")
      170                            .dwattr $C$DW$33, DW_AT_declaration
      171                            .dwattr $C$DW$33, DW_AT_external
-     172                            .dwattr $C$DW$33, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/sysctl.h")
+     172                            .dwattr $C$DW$33, DW_AT_decl_file("C:/ti/TivaWare/driverlib/sysctl.h")
      173                            .dwattr $C$DW$33, DW_AT_decl_line(0x24e)
      174                            .dwattr $C$DW$33, DW_AT_decl_column(0x0d)
      175                    $C$DW$34        .dwtag  DW_TAG_formal_parameter
@@ -202,10 +202,10 @@ tiva_ssi.asm                                                         PAGE    4
      182                            .dwattr $C$DW$35, DW_AT_type(*$C$DW$T$23)
      183                            .dwattr $C$DW$35, DW_AT_declaration
      184                            .dwattr $C$DW$35, DW_AT_external
-     185                            .dwattr $C$DW$35, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/sysctl.h")
+     185                            .dwattr $C$DW$35, DW_AT_decl_file("C:/ti/TivaWare/driverlib/sysctl.h")
      186                            .dwattr $C$DW$35, DW_AT_decl_line(0x26c)
      187                            .dwattr $C$DW$35, DW_AT_decl_column(0x11)
-     188                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppDat
+     188                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.6\bin\armacpia.exe -@C:\\Users\\dcosas\\AppData\\Loc
      189 00000000                   .sect   ".text:SSI_init"
      190                            .clink
      191                            .thumbfunc SSI_init
@@ -238,7 +238,7 @@ tiva_ssi.asm                                                         PAGE    4
      218                    ;*   Regs Modified     : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
      219                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
      220                    ;*                           FPEXC,FPSCR                                     *
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    5
@@ -298,7 +298,7 @@ tiva_ssi.asm                                                         PAGE    5
      273                    ;  27 | SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);                           
      274                    ;----------------------------------------------------------------------
      275 00000018 481B              LDR       A1, $C$CON3           ; [DPU_3_PIPE] |27|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    6
@@ -358,7 +358,7 @@ tiva_ssi.asm                                                         PAGE    6
      328                    ;  33 | GPIOPinTypeSSI(GPIO_PORTA_BASE,GPIO_PIN_5|GPIO_PIN_4|GPIO_PIN_3|GPIO_PI
      329                    ;     | N_2);                                                                  
      330                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    7
@@ -418,7 +418,7 @@ tiva_ssi.asm                                                         PAGE    7
      383                            .dwattr $C$DW$50, DW_AT_low_pc(0x00)
      384                            .dwattr $C$DW$50, DW_AT_name("SSIEnable")
      385                            .dwattr $C$DW$50, DW_AT_TI_call
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    8
@@ -478,7 +478,7 @@ tiva_ssi.asm                                                         PAGE    8
      438                            .dwattr $C$DW$53, DW_AT_TI_symbol_name("SSI_write")
      439                            .dwattr $C$DW$53, DW_AT_external
      440                            .dwattr $C$DW$53, DW_AT_type(*$C$DW$T$33)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE    9
@@ -538,7 +538,7 @@ tiva_ssi.asm                                                         PAGE    9
      493 00000006 9001              STR       A1, [SP, #4]          ; [DPU_3_PIPE] |45|  ; [ORIG 16-BIT INS]
      494                            .dwpsn  file "../tiva_ssi.c",line 46,column 2,is_stmt,isa 1
      495                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   10
@@ -598,7 +598,7 @@ tiva_ssi.asm                                                         PAGE   10
      548                            .dwpsn  file "../tiva_ssi.c",line 50,column 1,is_stmt,isa 1
      549                    $C$DW$60        .dwtag  DW_TAG_TI_branch
      550                            .dwattr $C$DW$60, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   11
@@ -658,7 +658,7 @@ tiva_ssi.asm                                                         PAGE   11
      598                    ;******************************************************************************
      599                            .battr "aeabi", Tag_File, 1, Tag_ABI_PCS_wchar_t(2)
      600                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_rounding(0)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   12
@@ -684,7 +684,7 @@ tiva_ssi.asm                                                         PAGE   12
      619                            .dwattr $C$DW$61, DW_AT_TI_symbol_name("fd")
      620                            .dwattr $C$DW$61, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
      621                            .dwattr $C$DW$61, DW_AT_accessibility(DW_ACCESS_public)
-     622                            .dwattr $C$DW$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.h
+     622                            .dwattr $C$DW$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.h
      623                            .dwattr $C$DW$61, DW_AT_decl_line(0x5c)
      624                            .dwattr $C$DW$61, DW_AT_decl_column(0x0b)
      625                    $C$DW$62        .dwtag  DW_TAG_member
@@ -693,7 +693,7 @@ tiva_ssi.asm                                                         PAGE   12
      628                            .dwattr $C$DW$62, DW_AT_TI_symbol_name("buf")
      629                            .dwattr $C$DW$62, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
      630                            .dwattr $C$DW$62, DW_AT_accessibility(DW_ACCESS_public)
-     631                            .dwattr $C$DW$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.h
+     631                            .dwattr $C$DW$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.h
      632                            .dwattr $C$DW$62, DW_AT_decl_line(0x5d)
      633                            .dwattr $C$DW$62, DW_AT_decl_column(0x16)
      634                    $C$DW$63        .dwtag  DW_TAG_member
@@ -702,7 +702,7 @@ tiva_ssi.asm                                                         PAGE   12
      637                            .dwattr $C$DW$63, DW_AT_TI_symbol_name("pos")
      638                            .dwattr $C$DW$63, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
      639                            .dwattr $C$DW$63, DW_AT_accessibility(DW_ACCESS_public)
-     640                            .dwattr $C$DW$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.h
+     640                            .dwattr $C$DW$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.h
      641                            .dwattr $C$DW$63, DW_AT_decl_line(0x5e)
      642                            .dwattr $C$DW$63, DW_AT_decl_column(0x16)
      643                    $C$DW$64        .dwtag  DW_TAG_member
@@ -711,21 +711,21 @@ tiva_ssi.asm                                                         PAGE   12
      646                            .dwattr $C$DW$64, DW_AT_TI_symbol_name("bufend")
      647                            .dwattr $C$DW$64, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
      648                            .dwattr $C$DW$64, DW_AT_accessibility(DW_ACCESS_public)
-     649                            .dwattr $C$DW$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.h
+     649                            .dwattr $C$DW$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.h
      650                            .dwattr $C$DW$64, DW_AT_decl_line(0x5f)
      651                            .dwattr $C$DW$64, DW_AT_decl_column(0x16)
      652                    $C$DW$65        .dwtag  DW_TAG_member
      653                            .dwattr $C$DW$65, DW_AT_type(*$C$DW$T$19)
      654                            .dwattr $C$DW$65, DW_AT_name("buff_stop")
      655                            .dwattr $C$DW$65, DW_AT_TI_symbol_name("buff_stop")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   13
 
      656                            .dwattr $C$DW$65, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
      657                            .dwattr $C$DW$65, DW_AT_accessibility(DW_ACCESS_public)
-     658                            .dwattr $C$DW$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.h
+     658                            .dwattr $C$DW$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.h
      659                            .dwattr $C$DW$65, DW_AT_decl_line(0x60)
      660                            .dwattr $C$DW$65, DW_AT_decl_column(0x16)
      661                    $C$DW$66        .dwtag  DW_TAG_member
@@ -734,18 +734,18 @@ tiva_ssi.asm                                                         PAGE   13
      664                            .dwattr $C$DW$66, DW_AT_TI_symbol_name("flags")
      665                            .dwattr $C$DW$66, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
      666                            .dwattr $C$DW$66, DW_AT_accessibility(DW_ACCESS_public)
-     667                            .dwattr $C$DW$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.h
+     667                            .dwattr $C$DW$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.h
      668                            .dwattr $C$DW$66, DW_AT_decl_line(0x61)
      669                            .dwattr $C$DW$66, DW_AT_decl_column(0x16)
      670                            .dwendtag $C$DW$T$20
      671                    
-     672                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+     672                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
      673                            .dwattr $C$DW$T$20, DW_AT_decl_line(0x5b)
      674                            .dwattr $C$DW$T$20, DW_AT_decl_column(0x10)
      675                    $C$DW$T$22      .dwtag  DW_TAG_typedef, DW_AT_name("FILE")
      676                            .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$20)
      677                            .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
-     678                            .dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+     678                            .dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
      679                            .dwattr $C$DW$T$22, DW_AT_decl_line(0x62)
      680                            .dwattr $C$DW$T$22, DW_AT_decl_column(0x03)
      681                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
@@ -764,13 +764,13 @@ tiva_ssi.asm                                                         PAGE   13
      694                    $C$DW$T$37      .dwtag  DW_TAG_typedef, DW_AT_name("int8_t")
      695                            .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$5)
      696                            .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
-     697                            .dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     697                            .dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      698                            .dwattr $C$DW$T$37, DW_AT_decl_line(0x2a)
      699                            .dwattr $C$DW$T$37, DW_AT_decl_column(0x1d)
      700                    $C$DW$T$38      .dwtag  DW_TAG_typedef, DW_AT_name("int_least8_t")
      701                            .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$37)
      702                            .dwattr $C$DW$T$38, DW_AT_language(DW_LANG_C)
-     703                            .dwattr $C$DW$T$38, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     703                            .dwattr $C$DW$T$38, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      704                            .dwattr $C$DW$T$38, DW_AT_decl_line(0x37)
      705                            .dwattr $C$DW$T$38, DW_AT_decl_column(0x17)
      706                    $C$DW$T$6       .dwtag  DW_TAG_base_type
@@ -778,7 +778,7 @@ tiva_ssi.asm                                                         PAGE   13
      708                            .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
      709                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
      710                    $C$DW$T$19      .dwtag  DW_TAG_pointer_type
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   14
@@ -788,13 +788,13 @@ tiva_ssi.asm                                                         PAGE   14
      713                    $C$DW$T$33      .dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
      714                            .dwattr $C$DW$T$33, DW_AT_type(*$C$DW$T$6)
      715                            .dwattr $C$DW$T$33, DW_AT_language(DW_LANG_C)
-     716                            .dwattr $C$DW$T$33, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     716                            .dwattr $C$DW$T$33, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      717                            .dwattr $C$DW$T$33, DW_AT_decl_line(0x2b)
      718                            .dwattr $C$DW$T$33, DW_AT_decl_column(0x1c)
      719                    $C$DW$T$40      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
      720                            .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$33)
      721                            .dwattr $C$DW$T$40, DW_AT_language(DW_LANG_C)
-     722                            .dwattr $C$DW$T$40, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     722                            .dwattr $C$DW$T$40, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      723                            .dwattr $C$DW$T$40, DW_AT_decl_line(0x38)
      724                            .dwattr $C$DW$T$40, DW_AT_decl_column(0x16)
      725                    $C$DW$T$7       .dwtag  DW_TAG_base_type
@@ -808,13 +808,13 @@ tiva_ssi.asm                                                         PAGE   14
      733                    $C$DW$T$41      .dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
      734                            .dwattr $C$DW$T$41, DW_AT_type(*$C$DW$T$8)
      735                            .dwattr $C$DW$T$41, DW_AT_language(DW_LANG_C)
-     736                            .dwattr $C$DW$T$41, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     736                            .dwattr $C$DW$T$41, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      737                            .dwattr $C$DW$T$41, DW_AT_decl_line(0x2c)
      738                            .dwattr $C$DW$T$41, DW_AT_decl_column(0x1d)
      739                    $C$DW$T$42      .dwtag  DW_TAG_typedef, DW_AT_name("int_least16_t")
      740                            .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$41)
      741                            .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
-     742                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     742                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      743                            .dwattr $C$DW$T$42, DW_AT_decl_line(0x3a)
      744                            .dwattr $C$DW$T$42, DW_AT_decl_column(0x17)
      745                    $C$DW$T$9       .dwtag  DW_TAG_base_type
@@ -824,21 +824,21 @@ tiva_ssi.asm                                                         PAGE   14
      749                    $C$DW$T$43      .dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
      750                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$9)
      751                            .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
-     752                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     752                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
      753                            .dwattr $C$DW$T$43, DW_AT_decl_line(0x1e5)
      754                            .dwattr $C$DW$T$43, DW_AT_decl_column(0x21)
      755                    $C$DW$T$44      .dwtag  DW_TAG_typedef, DW_AT_name("_Wintt")
      756                            .dwattr $C$DW$T$44, DW_AT_type(*$C$DW$T$9)
      757                            .dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
-     758                            .dwattr $C$DW$T$44, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     758                            .dwattr $C$DW$T$44, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
      759                            .dwattr $C$DW$T$44, DW_AT_decl_line(0x1e6)
      760                            .dwattr $C$DW$T$44, DW_AT_decl_column(0x21)
      761                    $C$DW$T$45      .dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
      762                            .dwattr $C$DW$T$45, DW_AT_type(*$C$DW$T$9)
      763                            .dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
-     764                            .dwattr $C$DW$T$45, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     764                            .dwattr $C$DW$T$45, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      765                            .dwattr $C$DW$T$45, DW_AT_decl_line(0x2d)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   15
@@ -847,7 +847,7 @@ tiva_ssi.asm                                                         PAGE   15
      767                    $C$DW$T$46      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
      768                            .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$45)
      769                            .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
-     770                            .dwattr $C$DW$T$46, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     770                            .dwattr $C$DW$T$46, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      771                            .dwattr $C$DW$T$46, DW_AT_decl_line(0x3b)
      772                            .dwattr $C$DW$T$46, DW_AT_decl_column(0x16)
      773                    $C$DW$T$10      .dwtag  DW_TAG_base_type
@@ -857,48 +857,48 @@ tiva_ssi.asm                                                         PAGE   15
      777                    $C$DW$T$47      .dwtag  DW_TAG_typedef, DW_AT_name("_Ptrdifft")
      778                            .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$10)
      779                            .dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
-     780                            .dwattr $C$DW$T$47, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     780                            .dwattr $C$DW$T$47, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
      781                            .dwattr $C$DW$T$47, DW_AT_decl_line(0xa9)
      782                            .dwattr $C$DW$T$47, DW_AT_decl_column(0x1e)
      783                    $C$DW$T$48      .dwtag  DW_TAG_typedef, DW_AT_name("int32_t")
      784                            .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$10)
      785                            .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
-     786                            .dwattr $C$DW$T$48, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     786                            .dwattr $C$DW$T$48, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      787                            .dwattr $C$DW$T$48, DW_AT_decl_line(0x2e)
      788                            .dwattr $C$DW$T$48, DW_AT_decl_column(0x1d)
      789                    $C$DW$T$51      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast16_t")
      790                            .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$48)
      791                            .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
-     792                            .dwattr $C$DW$T$51, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     792                            .dwattr $C$DW$T$51, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      793                            .dwattr $C$DW$T$51, DW_AT_decl_line(0x47)
      794                            .dwattr $C$DW$T$51, DW_AT_decl_column(0x17)
      795                    $C$DW$T$52      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast32_t")
      796                            .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$48)
      797                            .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
-     798                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     798                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      799                            .dwattr $C$DW$T$52, DW_AT_decl_line(0x4a)
      800                            .dwattr $C$DW$T$52, DW_AT_decl_column(0x17)
      801                    $C$DW$T$53      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast8_t")
      802                            .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$48)
      803                            .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
-     804                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     804                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      805                            .dwattr $C$DW$T$53, DW_AT_decl_line(0x45)
      806                            .dwattr $C$DW$T$53, DW_AT_decl_column(0x17)
      807                    $C$DW$T$54      .dwtag  DW_TAG_typedef, DW_AT_name("int_least32_t")
      808                            .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$48)
      809                            .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
-     810                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     810                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      811                            .dwattr $C$DW$T$54, DW_AT_decl_line(0x3c)
      812                            .dwattr $C$DW$T$54, DW_AT_decl_column(0x17)
      813                    $C$DW$T$55      .dwtag  DW_TAG_typedef, DW_AT_name("intptr_t")
      814                            .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$10)
      815                            .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
-     816                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     816                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      817                            .dwattr $C$DW$T$55, DW_AT_decl_line(0x52)
      818                            .dwattr $C$DW$T$55, DW_AT_decl_column(0x1a)
      819                    $C$DW$T$11      .dwtag  DW_TAG_base_type
      820                            .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   16
@@ -908,19 +908,19 @@ tiva_ssi.asm                                                         PAGE   16
      823                    $C$DW$T$56      .dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
      824                            .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$11)
      825                            .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
-     826                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     826                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
      827                            .dwattr $C$DW$T$56, DW_AT_decl_line(0xab)
      828                            .dwattr $C$DW$T$56, DW_AT_decl_column(0x1a)
      829                    $C$DW$T$57      .dwtag  DW_TAG_typedef, DW_AT_name("size_t")
      830                            .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$11)
      831                            .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
-     832                            .dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+     832                            .dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
      833                            .dwattr $C$DW$T$57, DW_AT_decl_line(0x58)
      834                            .dwattr $C$DW$T$57, DW_AT_decl_column(0x19)
      835                    $C$DW$T$23      .dwtag  DW_TAG_typedef, DW_AT_name("uint32_t")
      836                            .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$11)
      837                            .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
-     838                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     838                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      839                            .dwattr $C$DW$T$23, DW_AT_decl_line(0x2f)
      840                            .dwattr $C$DW$T$23, DW_AT_decl_column(0x1c)
      841                    $C$DW$T$26      .dwtag  DW_TAG_pointer_type
@@ -938,27 +938,27 @@ tiva_ssi.asm                                                         PAGE   16
      853                    $C$DW$T$61      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast16_t")
      854                            .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$23)
      855                            .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
-     856                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     856                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      857                            .dwattr $C$DW$T$61, DW_AT_decl_line(0x48)
      858                            .dwattr $C$DW$T$61, DW_AT_decl_column(0x16)
      859                    $C$DW$T$62      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast32_t")
      860                            .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$23)
      861                            .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
-     862                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     862                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      863                            .dwattr $C$DW$T$62, DW_AT_decl_line(0x4b)
      864                            .dwattr $C$DW$T$62, DW_AT_decl_column(0x16)
      865                    $C$DW$T$63      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
      866                            .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$23)
      867                            .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
-     868                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     868                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      869                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x46)
      870                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x16)
      871                    $C$DW$T$64      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least32_t")
      872                            .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$23)
      873                            .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
-     874                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     874                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      875                            .dwattr $C$DW$T$64, DW_AT_decl_line(0x3d)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   17
@@ -967,7 +967,7 @@ tiva_ssi.asm                                                         PAGE   17
      877                    $C$DW$T$65      .dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
      878                            .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$11)
      879                            .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
-     880                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     880                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      881                            .dwattr $C$DW$T$65, DW_AT_decl_line(0x53)
      882                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x1a)
      883                    $C$DW$T$12      .dwtag  DW_TAG_base_type
@@ -977,13 +977,13 @@ tiva_ssi.asm                                                         PAGE   17
      887                    $C$DW$T$66      .dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
      888                            .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$12)
      889                            .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
-     890                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     890                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
      891                            .dwattr $C$DW$T$66, DW_AT_decl_line(0xa6)
      892                            .dwattr $C$DW$T$66, DW_AT_decl_column(0x0e)
      893                    $C$DW$T$67      .dwtag  DW_TAG_typedef, DW_AT_name("fpos_t")
      894                            .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$12)
      895                            .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
-     896                            .dwattr $C$DW$T$67, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+     896                            .dwattr $C$DW$T$67, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
      897                            .dwattr $C$DW$T$67, DW_AT_decl_line(0x6e)
      898                            .dwattr $C$DW$T$67, DW_AT_decl_column(0x0e)
      899                    $C$DW$T$13      .dwtag  DW_TAG_base_type
@@ -993,7 +993,7 @@ tiva_ssi.asm                                                         PAGE   17
      903                    $C$DW$T$68      .dwtag  DW_TAG_typedef, DW_AT_name("_Uint32t")
      904                            .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$13)
      905                            .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
-     906                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     906                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
      907                            .dwattr $C$DW$T$68, DW_AT_decl_line(0xa7)
      908                            .dwattr $C$DW$T$68, DW_AT_decl_column(0x17)
      909                    $C$DW$T$14      .dwtag  DW_TAG_base_type
@@ -1003,22 +1003,22 @@ tiva_ssi.asm                                                         PAGE   17
      913                    $C$DW$T$69      .dwtag  DW_TAG_typedef, DW_AT_name("_Longlong")
      914                            .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$14)
      915                            .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
-     916                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     916                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
      917                            .dwattr $C$DW$T$69, DW_AT_decl_line(0x1b5)
      918                            .dwattr $C$DW$T$69, DW_AT_decl_column(0x13)
      919                    $C$DW$T$70      .dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
      920                            .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$14)
      921                            .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
-     922                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     922                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      923                            .dwattr $C$DW$T$70, DW_AT_decl_line(0x32)
      924                            .dwattr $C$DW$T$70, DW_AT_decl_column(0x21)
      925                    $C$DW$T$71      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
      926                            .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$70)
      927                            .dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
-     928                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     928                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      929                            .dwattr $C$DW$T$71, DW_AT_decl_line(0x4e)
      930                            .dwattr $C$DW$T$71, DW_AT_decl_column(0x17)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   18
@@ -1026,13 +1026,13 @@ tiva_ssi.asm                                                         PAGE   18
      931                    $C$DW$T$72      .dwtag  DW_TAG_typedef, DW_AT_name("int_least64_t")
      932                            .dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$70)
      933                            .dwattr $C$DW$T$72, DW_AT_language(DW_LANG_C)
-     934                            .dwattr $C$DW$T$72, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     934                            .dwattr $C$DW$T$72, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      935                            .dwattr $C$DW$T$72, DW_AT_decl_line(0x40)
      936                            .dwattr $C$DW$T$72, DW_AT_decl_column(0x17)
      937                    $C$DW$T$73      .dwtag  DW_TAG_typedef, DW_AT_name("intmax_t")
      938                            .dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$14)
      939                            .dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
-     940                            .dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     940                            .dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      941                            .dwattr $C$DW$T$73, DW_AT_decl_line(0x56)
      942                            .dwattr $C$DW$T$73, DW_AT_decl_column(0x20)
      943                    $C$DW$T$15      .dwtag  DW_TAG_base_type
@@ -1042,31 +1042,31 @@ tiva_ssi.asm                                                         PAGE   18
      947                    $C$DW$T$74      .dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
      948                            .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$15)
      949                            .dwattr $C$DW$T$74, DW_AT_language(DW_LANG_C)
-     950                            .dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     950                            .dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
      951                            .dwattr $C$DW$T$74, DW_AT_decl_line(0x1b6)
      952                            .dwattr $C$DW$T$74, DW_AT_decl_column(0x14)
      953                    $C$DW$T$75      .dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
      954                            .dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$15)
      955                            .dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
-     956                            .dwattr $C$DW$T$75, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     956                            .dwattr $C$DW$T$75, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      957                            .dwattr $C$DW$T$75, DW_AT_decl_line(0x33)
      958                            .dwattr $C$DW$T$75, DW_AT_decl_column(0x20)
      959                    $C$DW$T$76      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast64_t")
      960                            .dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$75)
      961                            .dwattr $C$DW$T$76, DW_AT_language(DW_LANG_C)
-     962                            .dwattr $C$DW$T$76, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     962                            .dwattr $C$DW$T$76, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      963                            .dwattr $C$DW$T$76, DW_AT_decl_line(0x4f)
      964                            .dwattr $C$DW$T$76, DW_AT_decl_column(0x16)
      965                    $C$DW$T$77      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least64_t")
      966                            .dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$75)
      967                            .dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
-     968                            .dwattr $C$DW$T$77, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     968                            .dwattr $C$DW$T$77, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      969                            .dwattr $C$DW$T$77, DW_AT_decl_line(0x41)
      970                            .dwattr $C$DW$T$77, DW_AT_decl_column(0x16)
      971                    $C$DW$T$78      .dwtag  DW_TAG_typedef, DW_AT_name("uintmax_t")
      972                            .dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$15)
      973                            .dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
-     974                            .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+     974                            .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
      975                            .dwattr $C$DW$T$78, DW_AT_decl_line(0x57)
      976                            .dwattr $C$DW$T$78, DW_AT_decl_column(0x20)
      977                    $C$DW$T$16      .dwtag  DW_TAG_base_type
@@ -1078,7 +1078,7 @@ tiva_ssi.asm                                                         PAGE   18
      983                            .dwattr $C$DW$T$17, DW_AT_name("double")
      984                            .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
      985                    $C$DW$T$18      .dwtag  DW_TAG_base_type
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   19
@@ -1093,7 +1093,7 @@ tiva_ssi.asm                                                         PAGE   19
      993                    $C$DW$T$83      .dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
      994                            .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$6)
      995                            .dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
-     996                            .dwattr $C$DW$T$83, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+     996                            .dwattr $C$DW$T$83, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
      997                            .dwattr $C$DW$T$83, DW_AT_decl_line(0x218)
      998                            .dwattr $C$DW$T$83, DW_AT_decl_column(0x0e)
      999                    $C$DW$T$84      .dwtag  DW_TAG_pointer_type
@@ -1115,30 +1115,30 @@ tiva_ssi.asm                                                         PAGE   19
     1015                            .dwattr $C$DW$68, DW_AT_TI_symbol_name("__ap")
     1016                            .dwattr $C$DW$68, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     1017                            .dwattr $C$DW$68, DW_AT_accessibility(DW_ACCESS_public)
-    1018                            .dwattr $C$DW$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.
+    1018                            .dwattr $C$DW$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdarg.
     1019                            .dwattr $C$DW$68, DW_AT_decl_line(0x36)
     1020                            .dwattr $C$DW$68, DW_AT_decl_column(0x0c)
     1021                            .dwendtag $C$DW$T$21
     1022                    
-    1023                            .dwattr $C$DW$T$21, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    1023                            .dwattr $C$DW$T$21, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdar
     1024                            .dwattr $C$DW$T$21, DW_AT_decl_line(0x35)
     1025                            .dwattr $C$DW$T$21, DW_AT_decl_column(0x10)
     1026                    $C$DW$T$86      .dwtag  DW_TAG_typedef, DW_AT_name("va_list")
     1027                            .dwattr $C$DW$T$86, DW_AT_type(*$C$DW$T$21)
     1028                            .dwattr $C$DW$T$86, DW_AT_language(DW_LANG_C)
-    1029                            .dwattr $C$DW$T$86, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    1029                            .dwattr $C$DW$T$86, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdar
     1030                            .dwattr $C$DW$T$86, DW_AT_decl_line(0x37)
     1031                            .dwattr $C$DW$T$86, DW_AT_decl_column(0x03)
     1032                    $C$DW$T$87      .dwtag  DW_TAG_typedef, DW_AT_name("_Va_list")
     1033                            .dwattr $C$DW$T$87, DW_AT_type(*$C$DW$T$86)
     1034                            .dwattr $C$DW$T$87, DW_AT_language(DW_LANG_C)
-    1035                            .dwattr $C$DW$T$87, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    1035                            .dwattr $C$DW$T$87, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     1036                            .dwattr $C$DW$T$87, DW_AT_decl_line(0x1f6)
     1037                            .dwattr $C$DW$T$87, DW_AT_decl_column(0x17)
     1038                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
     1039                    
     1040                    ;***************************************************************
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   20
@@ -1198,7 +1198,7 @@ tiva_ssi.asm                                                         PAGE   20
     1093                            .dwcfi  same_value, 93
     1094                            .dwcfi  same_value, 94
     1095                            .dwcfi  same_value, 95
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:54 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 tiva_ssi.asm                                                         PAGE   21
@@ -1213,7 +1213,7 @@ Thumb2 Statistics
 Number of Thumb2 ins converted to Thumb = 0 (0%)
 Number of Thumb ins in input = 39 (60%)
 Number of Thumb2 ins encoded as Thumb2 = 25 (100%)
-Number of Thumb2 ins converted to 2 OPND Thumb = 1
+Number of Thumb2 ins converted to 2 OPND Thumb = 2
 
 
 No Assembly Errors, No Assembly Warnings

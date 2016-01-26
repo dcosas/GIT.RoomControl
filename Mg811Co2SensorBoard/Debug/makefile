@@ -137,7 +137,7 @@ all: MSP-EXP430G2-Launchpad.out
 MSP-EXP430G2-Launchpad.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MSP430 Linker'
-	"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/bin/cl430" -vmsp --abi=eabi -Ooff --opt_for_speed=0 --use_hw_mpy=none -g --define=__MSP430G2553__ --diag_warning=225 --printf_support=minimal -z -m"MSP-EXP430G2-Launchpad.map" --stack_size=50 --heap_size=0 -i"C:/ti/ccsv6/ccs_base/msp430/include" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/include" --reread_libs --warn_sections --xml_link_info="MSP-EXP430G2-Launchpad_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MSP-EXP430G2-Launchpad.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/bin/cl430" -vmsp --abi=eabi -Ooff --opt_for_speed=0 --use_hw_mpy=none -g --define=__MSP430G2553__ --diag_warning=225 --printf_support=minimal -z -m"MSP-EXP430G2-Launchpad.map" --heap_size=0 --stack_size=50 -i"C:/ti/ccsv6/ccs_base/msp430/include" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.6/include" --reread_libs --warn_sections --xml_link_info="MSP-EXP430G2-Launchpad_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MSP-EXP430G2-Launchpad.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

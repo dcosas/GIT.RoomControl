@@ -1,26 +1,26 @@
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    1
 
        1                    ;******************************************************************************
-       2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-       3                    ;* Date/Time created: Sun Nov 29 14:18:51 2015                                *
+       2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.6 *
+       3                    ;* Date/Time created: Tue Jan 26 13:54:19 2016                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
        7                    
        8                    $C$DW$CU        .dwtag  DW_TAG_compile_unit
        9                            .dwattr $C$DW$CU, DW_AT_name("../lcd_nokia5510.c")
-      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.5 Copyright (c) 1996-2015 Te
+      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.6 Copyright (c) 1996-2015 Te
       11                            .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("E:\Dev\Ti\Code\GIT\LaunchpadRoomControl\LaunchpadRoomControl
+      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("D:\Deian\Dev\TI\temp\LaunchpadRoomControl\timers\Debug")
       13                    
       14                    $C$DW$1 .dwtag  DW_TAG_subprogram, DW_AT_name("GPIOPinWrite")
       15                            .dwattr $C$DW$1, DW_AT_TI_symbol_name("GPIOPinWrite")
       16                            .dwattr $C$DW$1, DW_AT_declaration
       17                            .dwattr $C$DW$1, DW_AT_external
-      18                            .dwattr $C$DW$1, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+      18                            .dwattr $C$DW$1, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
       19                            .dwattr $C$DW$1, DW_AT_decl_line(0x9e)
       20                            .dwattr $C$DW$1, DW_AT_decl_column(0x0d)
       21                    $C$DW$2 .dwtag  DW_TAG_formal_parameter
@@ -36,8 +36,8 @@ lcd_nokia5510.asm                                                    PAGE    1
       31                            .dwattr $C$DW$5, DW_AT_TI_symbol_name("GPIOPinTypeGPIOOutput")
       32                            .dwattr $C$DW$5, DW_AT_declaration
       33                            .dwattr $C$DW$5, DW_AT_external
-      34                            .dwattr $C$DW$5, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
-      35                            .dwattr $C$DW$5, DW_AT_decl_line(0xa8)
+      34                            .dwattr $C$DW$5, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
+      35                            .dwattr $C$DW$5, DW_AT_decl_line(0xa9)
       36                            .dwattr $C$DW$5, DW_AT_decl_column(0x0d)
       37                    $C$DW$6 .dwtag  DW_TAG_formal_parameter
       38                            .dwattr $C$DW$6, DW_AT_type(*$C$DW$T$23)
@@ -50,7 +50,7 @@ lcd_nokia5510.asm                                                    PAGE    1
       45                            .dwattr $C$DW$8, DW_AT_TI_symbol_name("SysCtlPeripheralEnable")
       46                            .dwattr $C$DW$8, DW_AT_declaration
       47                            .dwattr $C$DW$8, DW_AT_external
-      48                            .dwattr $C$DW$8, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/sysctl.h")
+      48                            .dwattr $C$DW$8, DW_AT_decl_file("C:/ti/TivaWare/driverlib/sysctl.h")
       49                            .dwattr $C$DW$8, DW_AT_decl_line(0x24e)
       50                            .dwattr $C$DW$8, DW_AT_decl_column(0x0d)
       51                    $C$DW$9 .dwtag  DW_TAG_formal_parameter
@@ -58,7 +58,7 @@ lcd_nokia5510.asm                                                    PAGE    1
       53                            .dwendtag $C$DW$8
       54                    
       55                    
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    2
@@ -67,7 +67,7 @@ lcd_nokia5510.asm                                                    PAGE    2
       57                            .dwattr $C$DW$10, DW_AT_TI_symbol_name("SysCtlDelay")
       58                            .dwattr $C$DW$10, DW_AT_declaration
       59                            .dwattr $C$DW$10, DW_AT_external
-      60                            .dwattr $C$DW$10, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/sysctl.h")
+      60                            .dwattr $C$DW$10, DW_AT_decl_file("C:/ti/TivaWare/driverlib/sysctl.h")
       61                            .dwattr $C$DW$10, DW_AT_decl_line(0x268)
       62                            .dwattr $C$DW$10, DW_AT_decl_column(0x0d)
       63                    $C$DW$11        .dwtag  DW_TAG_formal_parameter
@@ -118,7 +118,7 @@ lcd_nokia5510.asm                                                    PAGE    2
      108 0000000c 14000700          .bits   20,8                    ; ASCII[3][0] @ 120
      109 00000010 0000007F          .bits   127,8                   ; ASCII[3][1] @ 128
      110 00000010 0000147F          .bits   20,8                    ; ASCII[3][2] @ 136
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    3
@@ -178,7 +178,7 @@ lcd_nokia5510.asm                                                    PAGE    3
      163 00000044 00000808          .bits   0,8                     ; ASCII[14][0] @ 560
      164 00000044 60000808          .bits   96,8                    ; ASCII[14][1] @ 568
      165 00000048 00000060          .bits   96,8                    ; ASCII[14][2] @ 576
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    4
@@ -238,7 +238,7 @@ lcd_nokia5510.asm                                                    PAGE    4
      218 0000007c 00000636          .bits   6,8                     ; ASCII[25][0] @ 1000
      219 0000007c 00490636          .bits   73,8                    ; ASCII[25][1] @ 1008
      220 0000007c 49490636          .bits   73,8                    ; ASCII[25][2] @ 1016
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    5
@@ -298,7 +298,7 @@ lcd_nokia5510.asm                                                    PAGE    5
      273 000000b4 0000007F          .bits   127,8                   ; ASCII[36][0] @ 1440
      274 000000b4 0000417F          .bits   65,8                    ; ASCII[36][1] @ 1448
      275 000000b4 0041417F          .bits   65,8                    ; ASCII[36][2] @ 1456
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    6
@@ -358,7 +358,7 @@ lcd_nokia5510.asm                                                    PAGE    6
      328 000000e8 3E7F1008          .bits   62,8                    ; ASCII[47][0] @ 1880
      329 000000ec 00000041          .bits   65,8                    ; ASCII[47][1] @ 1888
      330 000000ec 00004141          .bits   65,8                    ; ASCII[47][2] @ 1896
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    7
@@ -418,7 +418,7 @@ lcd_nokia5510.asm                                                    PAGE    7
      383 00000120 00610708          .bits   97,8                    ; ASCII[58][0] @ 2320
      384 00000120 51610708          .bits   81,8                    ; ASCII[58][1] @ 2328
      385 00000124 00000049          .bits   73,8                    ; ASCII[58][2] @ 2336
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    8
@@ -478,7 +478,7 @@ lcd_nokia5510.asm                                                    PAGE    8
      438 00000158 0000387F          .bits   56,8                    ; ASCII[69][0] @ 2760
      439 00000158 0054387F          .bits   84,8                    ; ASCII[69][1] @ 2768
      440 00000158 5454387F          .bits   84,8                    ; ASCII[69][2] @ 2776
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE    9
@@ -538,7 +538,7 @@ lcd_nokia5510.asm                                                    PAGE    9
      493 00000190 0000007C          .bits   124,8                   ; ASCII[80][0] @ 3200
      494 00000190 0000147C          .bits   20,8                    ; ASCII[80][1] @ 3208
      495 00000190 0014147C          .bits   20,8                    ; ASCII[80][2] @ 3216
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   10
@@ -598,7 +598,7 @@ lcd_nokia5510.asm                                                    PAGE   10
      548 000001c4 00444C54          .bits   0,8                     ; ASCII[91][0] @ 3640
      549 000001c8 00000008          .bits   8,8                     ; ASCII[91][1] @ 3648
      550 000001c8 00003608          .bits   54,8                    ; ASCII[91][2] @ 3656
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   11
@@ -633,7 +633,7 @@ lcd_nokia5510.asm                                                    PAGE   11
      578                            .dwattr $C$DW$15, DW_AT_decl_file("../lcd_nokia5510.c")
      579                            .dwattr $C$DW$15, DW_AT_decl_line(0x16)
      580                            .dwattr $C$DW$15, DW_AT_decl_column(0x16)
-     581                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppDat
+     581                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.6\bin\armacpia.exe -@C:\\Users\\dcosas\\AppData\\Loc
      582 00000000                   .sect   ".text:nokiaLCDwrite"
      583                            .clink
      584                            .thumbfunc nokiaLCDwrite
@@ -658,7 +658,7 @@ lcd_nokia5510.asm                                                    PAGE   11
      603                    $C$DW$17        .dwtag  DW_TAG_formal_parameter, DW_AT_name("dataCommand")
      604                            .dwattr $C$DW$17, DW_AT_TI_symbol_name("dataCommand")
      605                            .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$24)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   12
@@ -718,7 +718,7 @@ lcd_nokia5510.asm                                                    PAGE   12
      658 00000016 2240              MOVS      A3, #64               ; [DPU_3_PIPE] |126|  ; [ORIG 16-BIT INS]
      659                    $C$DW$21        .dwtag  DW_TAG_TI_branch
      660                            .dwattr $C$DW$21, DW_AT_low_pc(0x00)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   13
@@ -778,7 +778,7 @@ lcd_nokia5510.asm                                                    PAGE   13
      713                    ;----------------------------------------------------------------------
      714 0000003c 4802              LDR       A1, $C$CON1           ; [DPU_3_PIPE] |134|  ; [ORIG 16-BIT INS]
      715 0000003e 2101              MOVS      A2, #1                ; [DPU_3_PIPE] |134|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   14
@@ -838,7 +838,7 @@ lcd_nokia5510.asm                                                    PAGE   14
      768                    
      769                    ;*****************************************************************************
      770                    ;* FUNCTION NAME: nokiaLCDsetXY                                              *
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   15
@@ -898,7 +898,7 @@ lcd_nokia5510.asm                                                    PAGE   15
      823                            ; CALL OCCURS {nokiaLCDwrite }   ; [] |140| 
      824                            .dwpsn  file "../lcd_nokia5510.c",line 141,column 1,is_stmt,isa 1
      825                    $C$DW$34        .dwtag  DW_TAG_TI_branch
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   16
@@ -958,7 +958,7 @@ lcd_nokia5510.asm                                                    PAGE   16
      878                            .dwcfi  cfa_offset, 8
      879                            .dwcfi  save_reg_to_mem, 14, -4
      880                            .dwcfi  save_reg_to_mem, 3, -8
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   17
@@ -1018,7 +1018,7 @@ lcd_nokia5510.asm                                                    PAGE   17
      933 00000030 7FFCF5B0          CMP       A1, #504              ; [DPU_3_PIPE] |147|  ; [KEEP 32-BIT INS]
      934 00000034 DBF1              BLT       ||$C$L3||             ; [DPU_3_PIPE] |147|  ; [ORIG 16-BIT INS]
      935                            ; BRANCHCC OCCURS {||$C$L3||}    ; [] |147| 
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   18
@@ -1078,7 +1078,7 @@ lcd_nokia5510.asm                                                    PAGE   18
      988                    ;*****************************************************************************
      989                    ;* FUNCTION NAME: nokiaLCDinit                                               *
      990                    ;*                                                                           *
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   19
@@ -1138,7 +1138,7 @@ lcd_nokia5510.asm                                                    PAGE   19
     1043 00000016 2040F04F          MOV       A1, #1073758208       ; [DPU_3_PIPE] |156|  ; [KEEP 32-BIT INS]
     1044 0000001a 2140              MOVS      A2, #64               ; [DPU_3_PIPE] |156|  ; [ORIG 16-BIT INS]
     1045 0000001c 2240              MOVS      A3, #64               ; [DPU_3_PIPE] |156|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   20
@@ -1198,7 +1198,7 @@ lcd_nokia5510.asm                                                    PAGE   20
     1098                            .dwattr $C$DW$49, DW_AT_name("GPIOPinWrite")
     1099                            .dwattr $C$DW$49, DW_AT_TI_call
     1100 00000048 FFFEF7FF!         BL        GPIOPinWrite          ; [DPU_3_PIPE] |162|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   21
@@ -1258,7 +1258,7 @@ lcd_nokia5510.asm                                                    PAGE   21
     1153                            .dwpsn  file "../lcd_nokia5510.c",line 167,column 2,is_stmt,isa 1
     1154                    ;----------------------------------------------------------------------
     1155                    ; 167 | GPIOPinWrite(GPIO_PORTA_BASE, GPIO_PIN_7, 0);                          
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   22
@@ -1318,7 +1318,7 @@ lcd_nokia5510.asm                                                    PAGE   22
     1208                    $C$DW$58        .dwtag  DW_TAG_TI_branch
     1209                            .dwattr $C$DW$58, DW_AT_low_pc(0x00)
     1210                            .dwattr $C$DW$58, DW_AT_name("nokiaLCDwrite")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   23
@@ -1378,7 +1378,7 @@ lcd_nokia5510.asm                                                    PAGE   23
     1263                    ;----------------------------------------------------------------------
     1264                    ; 176 | SysCtlDelay(10000);                                                    
     1265                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   24
@@ -1438,7 +1438,7 @@ lcd_nokia5510.asm                                                    PAGE   24
     1318                    $C$DW$67        .dwtag  DW_TAG_formal_parameter, DW_AT_name("text")
     1319                            .dwattr $C$DW$67, DW_AT_TI_symbol_name("text")
     1320                            .dwattr $C$DW$67, DW_AT_type(*$C$DW$T$24)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   25
@@ -1498,7 +1498,7 @@ lcd_nokia5510.asm                                                    PAGE   25
     1373 00000010 0001F88D          STRB      A1, [SP, #1]          ; [DPU_3_PIPE] |185|  ; [KEEP 32-BIT INS]
     1374                            .dwpsn  file "../lcd_nokia5510.c",line 185,column 12,is_stmt,isa 1
     1375 00000014 0001F89D          LDRB      A1, [SP, #1]          ; [DPU_3_PIPE] |185|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   26
@@ -1558,7 +1558,7 @@ lcd_nokia5510.asm                                                    PAGE   26
     1428 0000004c FFFEF7FF!         BL        nokiaLCDwrite         ; [DPU_3_PIPE] |189|  ; [KEEP 32-BIT INS]
     1429                            ; CALL OCCURS {nokiaLCDwrite }   ; [] |189| 
     1430                            .dwpsn  file "../lcd_nokia5510.c",line 191,column 1,is_stmt,isa 1
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   27
@@ -1618,7 +1618,7 @@ lcd_nokia5510.asm                                                    PAGE   27
     1483 00000000           nokiaLCDinverse:
     1484                    ;* --------------------------------------------------------------------------*
     1485                            .dwcfi  cfa_offset, 0
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   28
@@ -1678,7 +1678,7 @@ lcd_nokia5510.asm                                                    PAGE   28
     1538                            .dwattr $C$DW$79, DW_AT_low_pc(nokia_test)
     1539                            .dwattr $C$DW$79, DW_AT_high_pc(0x00)
     1540                            .dwattr $C$DW$79, DW_AT_TI_symbol_name("nokia_test")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   29
@@ -1738,7 +1738,7 @@ lcd_nokia5510.asm                                                    PAGE   29
     1593 00000006 FFFEF7FF!         BL        nokiaLCDclear         ; [DPU_3_PIPE] |201|  ; [KEEP 32-BIT INS]
     1594                            ; CALL OCCURS {nokiaLCDclear }   ; [] |201| 
     1595                            .dwpsn  file "../lcd_nokia5510.c",line 203,column 6,is_stmt,isa 1
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   30
@@ -1798,7 +1798,7 @@ lcd_nokia5510.asm                                                    PAGE   30
     1648                            .dwpsn  file "../lcd_nokia5510.c",line 208,column 1,is_stmt,address validate_char,isa 1
     1649                    
     1650                            .dwfde $C$DW$CIE, validate_char
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   31
@@ -1858,7 +1858,7 @@ lcd_nokia5510.asm                                                    PAGE   31
     1703                    ;----------------------------------------------------------------------
     1704 0000001c 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |212|  ; [ORIG 16-BIT INS]
     1705                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   32
@@ -1918,7 +1918,7 @@ lcd_nokia5510.asm                                                    PAGE   32
     1758                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
     1759                    ;*                           FPEXC,FPSCR                                     *
     1760                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   33
@@ -1978,7 +1978,7 @@ lcd_nokia5510.asm                                                    PAGE   33
     1813 00000020           ||$C$L11||:    
     1814                            .dwpsn  file "../lcd_nokia5510.c",line 221,column 2,is_stmt,isa 1
     1815                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   34
@@ -2038,7 +2038,7 @@ lcd_nokia5510.asm                                                    PAGE   34
     1868                    $C$DW$97        .dwtag  DW_TAG_TI_branch
     1869                            .dwattr $C$DW$97, DW_AT_low_pc(0x00)
     1870                            .dwattr $C$DW$97, DW_AT_name("nokiaLCDtext")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   35
@@ -2098,7 +2098,7 @@ lcd_nokia5510.asm                                                    PAGE   35
     1923                            .align  4
     1924 00000048 40005000  ||$C$CON1||:    .bits   1073762304,32
     1925                    ;******************************************************************************
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   36
@@ -2158,12 +2158,12 @@ lcd_nokia5510.asm                                                    PAGE   36
     1974                            .dwattr $C$DW$99, DW_AT_TI_symbol_name("fd")
     1975                            .dwattr $C$DW$99, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     1976                            .dwattr $C$DW$99, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   37
 
-    1977                            .dwattr $C$DW$99, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.h
+    1977                            .dwattr $C$DW$99, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.h
     1978                            .dwattr $C$DW$99, DW_AT_decl_line(0x5c)
     1979                            .dwattr $C$DW$99, DW_AT_decl_column(0x0b)
     1980                    $C$DW$100       .dwtag  DW_TAG_member
@@ -2172,7 +2172,7 @@ lcd_nokia5510.asm                                                    PAGE   37
     1983                            .dwattr $C$DW$100, DW_AT_TI_symbol_name("buf")
     1984                            .dwattr $C$DW$100, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     1985                            .dwattr $C$DW$100, DW_AT_accessibility(DW_ACCESS_public)
-    1986                            .dwattr $C$DW$100, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    1986                            .dwattr $C$DW$100, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     1987                            .dwattr $C$DW$100, DW_AT_decl_line(0x5d)
     1988                            .dwattr $C$DW$100, DW_AT_decl_column(0x16)
     1989                    $C$DW$101       .dwtag  DW_TAG_member
@@ -2181,7 +2181,7 @@ lcd_nokia5510.asm                                                    PAGE   37
     1992                            .dwattr $C$DW$101, DW_AT_TI_symbol_name("pos")
     1993                            .dwattr $C$DW$101, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
     1994                            .dwattr $C$DW$101, DW_AT_accessibility(DW_ACCESS_public)
-    1995                            .dwattr $C$DW$101, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    1995                            .dwattr $C$DW$101, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     1996                            .dwattr $C$DW$101, DW_AT_decl_line(0x5e)
     1997                            .dwattr $C$DW$101, DW_AT_decl_column(0x16)
     1998                    $C$DW$102       .dwtag  DW_TAG_member
@@ -2190,7 +2190,7 @@ lcd_nokia5510.asm                                                    PAGE   37
     2001                            .dwattr $C$DW$102, DW_AT_TI_symbol_name("bufend")
     2002                            .dwattr $C$DW$102, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
     2003                            .dwattr $C$DW$102, DW_AT_accessibility(DW_ACCESS_public)
-    2004                            .dwattr $C$DW$102, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    2004                            .dwattr $C$DW$102, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     2005                            .dwattr $C$DW$102, DW_AT_decl_line(0x5f)
     2006                            .dwattr $C$DW$102, DW_AT_decl_column(0x16)
     2007                    $C$DW$103       .dwtag  DW_TAG_member
@@ -2199,7 +2199,7 @@ lcd_nokia5510.asm                                                    PAGE   37
     2010                            .dwattr $C$DW$103, DW_AT_TI_symbol_name("buff_stop")
     2011                            .dwattr $C$DW$103, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
     2012                            .dwattr $C$DW$103, DW_AT_accessibility(DW_ACCESS_public)
-    2013                            .dwattr $C$DW$103, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    2013                            .dwattr $C$DW$103, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     2014                            .dwattr $C$DW$103, DW_AT_decl_line(0x60)
     2015                            .dwattr $C$DW$103, DW_AT_decl_column(0x16)
     2016                    $C$DW$104       .dwtag  DW_TAG_member
@@ -2208,23 +2208,23 @@ lcd_nokia5510.asm                                                    PAGE   37
     2019                            .dwattr $C$DW$104, DW_AT_TI_symbol_name("flags")
     2020                            .dwattr $C$DW$104, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
     2021                            .dwattr $C$DW$104, DW_AT_accessibility(DW_ACCESS_public)
-    2022                            .dwattr $C$DW$104, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    2022                            .dwattr $C$DW$104, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     2023                            .dwattr $C$DW$104, DW_AT_decl_line(0x61)
     2024                            .dwattr $C$DW$104, DW_AT_decl_column(0x16)
     2025                            .dwendtag $C$DW$T$20
     2026                    
-    2027                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    2027                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
     2028                            .dwattr $C$DW$T$20, DW_AT_decl_line(0x5b)
     2029                            .dwattr $C$DW$T$20, DW_AT_decl_column(0x10)
     2030                    $C$DW$T$22      .dwtag  DW_TAG_typedef, DW_AT_name("FILE")
     2031                            .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$20)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   38
 
     2032                            .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
-    2033                            .dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    2033                            .dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
     2034                            .dwattr $C$DW$T$22, DW_AT_decl_line(0x62)
     2035                            .dwattr $C$DW$T$22, DW_AT_decl_column(0x03)
     2036                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
@@ -2243,13 +2243,13 @@ lcd_nokia5510.asm                                                    PAGE   38
     2049                    $C$DW$T$42      .dwtag  DW_TAG_typedef, DW_AT_name("int8_t")
     2050                            .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$5)
     2051                            .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
-    2052                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2052                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2053                            .dwattr $C$DW$T$42, DW_AT_decl_line(0x2a)
     2054                            .dwattr $C$DW$T$42, DW_AT_decl_column(0x1d)
     2055                    $C$DW$T$43      .dwtag  DW_TAG_typedef, DW_AT_name("int_least8_t")
     2056                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$42)
     2057                            .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
-    2058                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2058                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2059                            .dwattr $C$DW$T$43, DW_AT_decl_line(0x37)
     2060                            .dwattr $C$DW$T$43, DW_AT_decl_column(0x17)
     2061                    $C$DW$T$6       .dwtag  DW_TAG_base_type
@@ -2262,7 +2262,7 @@ lcd_nokia5510.asm                                                    PAGE   38
     2068                    $C$DW$T$24      .dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
     2069                            .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$6)
     2070                            .dwattr $C$DW$T$24, DW_AT_language(DW_LANG_C)
-    2071                            .dwattr $C$DW$T$24, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2071                            .dwattr $C$DW$T$24, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2072                            .dwattr $C$DW$T$24, DW_AT_decl_line(0x2b)
     2073                            .dwattr $C$DW$T$24, DW_AT_decl_column(0x1c)
     2074                    $C$DW$T$48      .dwtag  DW_TAG_const_type
@@ -2278,7 +2278,7 @@ lcd_nokia5510.asm                                                    PAGE   38
     2084                    
     2085                    
     2086                    $C$DW$T$50      .dwtag  DW_TAG_array_type
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   39
@@ -2295,7 +2295,7 @@ lcd_nokia5510.asm                                                    PAGE   39
     2096                    $C$DW$T$53      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
     2097                            .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$24)
     2098                            .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
-    2099                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2099                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2100                            .dwattr $C$DW$T$53, DW_AT_decl_line(0x38)
     2101                            .dwattr $C$DW$T$53, DW_AT_decl_column(0x16)
     2102                    $C$DW$T$7       .dwtag  DW_TAG_base_type
@@ -2309,13 +2309,13 @@ lcd_nokia5510.asm                                                    PAGE   39
     2110                    $C$DW$T$54      .dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
     2111                            .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$8)
     2112                            .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
-    2113                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2113                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2114                            .dwattr $C$DW$T$54, DW_AT_decl_line(0x2c)
     2115                            .dwattr $C$DW$T$54, DW_AT_decl_column(0x1d)
     2116                    $C$DW$T$55      .dwtag  DW_TAG_typedef, DW_AT_name("int_least16_t")
     2117                            .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$54)
     2118                            .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
-    2119                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2119                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2120                            .dwattr $C$DW$T$55, DW_AT_decl_line(0x3a)
     2121                            .dwattr $C$DW$T$55, DW_AT_decl_column(0x17)
     2122                    $C$DW$T$9       .dwtag  DW_TAG_base_type
@@ -2325,20 +2325,20 @@ lcd_nokia5510.asm                                                    PAGE   39
     2126                    $C$DW$T$56      .dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
     2127                            .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$9)
     2128                            .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
-    2129                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2129                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2130                            .dwattr $C$DW$T$56, DW_AT_decl_line(0x1e5)
     2131                            .dwattr $C$DW$T$56, DW_AT_decl_column(0x21)
     2132                    $C$DW$T$57      .dwtag  DW_TAG_typedef, DW_AT_name("_Wintt")
     2133                            .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$9)
     2134                            .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
-    2135                            .dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2135                            .dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2136                            .dwattr $C$DW$T$57, DW_AT_decl_line(0x1e6)
     2137                            .dwattr $C$DW$T$57, DW_AT_decl_column(0x21)
     2138                    $C$DW$T$58      .dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
     2139                            .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$9)
     2140                            .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
-    2141                            .dwattr $C$DW$T$58, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+    2141                            .dwattr $C$DW$T$58, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   40
@@ -2348,7 +2348,7 @@ lcd_nokia5510.asm                                                    PAGE   40
     2144                    $C$DW$T$59      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
     2145                            .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$58)
     2146                            .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
-    2147                            .dwattr $C$DW$T$59, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2147                            .dwattr $C$DW$T$59, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2148                            .dwattr $C$DW$T$59, DW_AT_decl_line(0x3b)
     2149                            .dwattr $C$DW$T$59, DW_AT_decl_column(0x16)
     2150                    $C$DW$T$10      .dwtag  DW_TAG_base_type
@@ -2358,47 +2358,47 @@ lcd_nokia5510.asm                                                    PAGE   40
     2154                    $C$DW$T$60      .dwtag  DW_TAG_typedef, DW_AT_name("_Ptrdifft")
     2155                            .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$10)
     2156                            .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
-    2157                            .dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2157                            .dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2158                            .dwattr $C$DW$T$60, DW_AT_decl_line(0xa9)
     2159                            .dwattr $C$DW$T$60, DW_AT_decl_column(0x1e)
     2160                    $C$DW$T$61      .dwtag  DW_TAG_typedef, DW_AT_name("int32_t")
     2161                            .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$10)
     2162                            .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
-    2163                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2163                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2164                            .dwattr $C$DW$T$61, DW_AT_decl_line(0x2e)
     2165                            .dwattr $C$DW$T$61, DW_AT_decl_column(0x1d)
     2166                    $C$DW$T$62      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast16_t")
     2167                            .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$61)
     2168                            .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
-    2169                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2169                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2170                            .dwattr $C$DW$T$62, DW_AT_decl_line(0x47)
     2171                            .dwattr $C$DW$T$62, DW_AT_decl_column(0x17)
     2172                    $C$DW$T$63      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast32_t")
     2173                            .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$61)
     2174                            .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
-    2175                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2175                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2176                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x4a)
     2177                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x17)
     2178                    $C$DW$T$64      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast8_t")
     2179                            .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$61)
     2180                            .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
-    2181                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2181                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2182                            .dwattr $C$DW$T$64, DW_AT_decl_line(0x45)
     2183                            .dwattr $C$DW$T$64, DW_AT_decl_column(0x17)
     2184                    $C$DW$T$65      .dwtag  DW_TAG_typedef, DW_AT_name("int_least32_t")
     2185                            .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$61)
     2186                            .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
-    2187                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2187                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2188                            .dwattr $C$DW$T$65, DW_AT_decl_line(0x3c)
     2189                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x17)
     2190                    $C$DW$T$66      .dwtag  DW_TAG_typedef, DW_AT_name("intptr_t")
     2191                            .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$10)
     2192                            .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
-    2193                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2193                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2194                            .dwattr $C$DW$T$66, DW_AT_decl_line(0x52)
     2195                            .dwattr $C$DW$T$66, DW_AT_decl_column(0x1a)
     2196                    $C$DW$T$11      .dwtag  DW_TAG_base_type
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   41
@@ -2409,56 +2409,56 @@ lcd_nokia5510.asm                                                    PAGE   41
     2200                    $C$DW$T$67      .dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
     2201                            .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$11)
     2202                            .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
-    2203                            .dwattr $C$DW$T$67, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2203                            .dwattr $C$DW$T$67, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2204                            .dwattr $C$DW$T$67, DW_AT_decl_line(0xab)
     2205                            .dwattr $C$DW$T$67, DW_AT_decl_column(0x1a)
     2206                    $C$DW$T$68      .dwtag  DW_TAG_typedef, DW_AT_name("size_t")
     2207                            .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$11)
     2208                            .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
-    2209                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    2209                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
     2210                            .dwattr $C$DW$T$68, DW_AT_decl_line(0x58)
     2211                            .dwattr $C$DW$T$68, DW_AT_decl_column(0x19)
     2212                    $C$DW$T$23      .dwtag  DW_TAG_typedef, DW_AT_name("uint32_t")
     2213                            .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$11)
     2214                            .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
-    2215                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2215                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2216                            .dwattr $C$DW$T$23, DW_AT_decl_line(0x2f)
     2217                            .dwattr $C$DW$T$23, DW_AT_decl_column(0x1c)
     2218                    $C$DW$T$69      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast16_t")
     2219                            .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$23)
     2220                            .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
-    2221                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2221                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2222                            .dwattr $C$DW$T$69, DW_AT_decl_line(0x48)
     2223                            .dwattr $C$DW$T$69, DW_AT_decl_column(0x16)
     2224                    $C$DW$T$70      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast32_t")
     2225                            .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$23)
     2226                            .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
-    2227                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2227                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2228                            .dwattr $C$DW$T$70, DW_AT_decl_line(0x4b)
     2229                            .dwattr $C$DW$T$70, DW_AT_decl_column(0x16)
     2230                    $C$DW$T$71      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
     2231                            .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$23)
     2232                            .dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
-    2233                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2233                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2234                            .dwattr $C$DW$T$71, DW_AT_decl_line(0x46)
     2235                            .dwattr $C$DW$T$71, DW_AT_decl_column(0x16)
     2236                    $C$DW$T$72      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least32_t")
     2237                            .dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$23)
     2238                            .dwattr $C$DW$T$72, DW_AT_language(DW_LANG_C)
-    2239                            .dwattr $C$DW$T$72, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2239                            .dwattr $C$DW$T$72, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2240                            .dwattr $C$DW$T$72, DW_AT_decl_line(0x3d)
     2241                            .dwattr $C$DW$T$72, DW_AT_decl_column(0x16)
     2242                    $C$DW$T$73      .dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
     2243                            .dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$11)
     2244                            .dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
-    2245                            .dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2245                            .dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2246                            .dwattr $C$DW$T$73, DW_AT_decl_line(0x53)
     2247                            .dwattr $C$DW$T$73, DW_AT_decl_column(0x1a)
     2248                    $C$DW$T$12      .dwtag  DW_TAG_base_type
     2249                            .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
     2250                            .dwattr $C$DW$T$12, DW_AT_name("long")
     2251                            .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   42
@@ -2466,13 +2466,13 @@ lcd_nokia5510.asm                                                    PAGE   42
     2252                    $C$DW$T$74      .dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
     2253                            .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$12)
     2254                            .dwattr $C$DW$T$74, DW_AT_language(DW_LANG_C)
-    2255                            .dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2255                            .dwattr $C$DW$T$74, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2256                            .dwattr $C$DW$T$74, DW_AT_decl_line(0xa6)
     2257                            .dwattr $C$DW$T$74, DW_AT_decl_column(0x0e)
     2258                    $C$DW$T$75      .dwtag  DW_TAG_typedef, DW_AT_name("fpos_t")
     2259                            .dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$12)
     2260                            .dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
-    2261                            .dwattr $C$DW$T$75, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    2261                            .dwattr $C$DW$T$75, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
     2262                            .dwattr $C$DW$T$75, DW_AT_decl_line(0x6e)
     2263                            .dwattr $C$DW$T$75, DW_AT_decl_column(0x0e)
     2264                    $C$DW$T$13      .dwtag  DW_TAG_base_type
@@ -2482,7 +2482,7 @@ lcd_nokia5510.asm                                                    PAGE   42
     2268                    $C$DW$T$76      .dwtag  DW_TAG_typedef, DW_AT_name("_Uint32t")
     2269                            .dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$13)
     2270                            .dwattr $C$DW$T$76, DW_AT_language(DW_LANG_C)
-    2271                            .dwattr $C$DW$T$76, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2271                            .dwattr $C$DW$T$76, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2272                            .dwattr $C$DW$T$76, DW_AT_decl_line(0xa7)
     2273                            .dwattr $C$DW$T$76, DW_AT_decl_column(0x17)
     2274                    $C$DW$T$14      .dwtag  DW_TAG_base_type
@@ -2492,33 +2492,33 @@ lcd_nokia5510.asm                                                    PAGE   42
     2278                    $C$DW$T$77      .dwtag  DW_TAG_typedef, DW_AT_name("_Longlong")
     2279                            .dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$14)
     2280                            .dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
-    2281                            .dwattr $C$DW$T$77, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2281                            .dwattr $C$DW$T$77, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2282                            .dwattr $C$DW$T$77, DW_AT_decl_line(0x1b5)
     2283                            .dwattr $C$DW$T$77, DW_AT_decl_column(0x13)
     2284                    $C$DW$T$78      .dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
     2285                            .dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$14)
     2286                            .dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
-    2287                            .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2287                            .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2288                            .dwattr $C$DW$T$78, DW_AT_decl_line(0x32)
     2289                            .dwattr $C$DW$T$78, DW_AT_decl_column(0x21)
     2290                    $C$DW$T$79      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
     2291                            .dwattr $C$DW$T$79, DW_AT_type(*$C$DW$T$78)
     2292                            .dwattr $C$DW$T$79, DW_AT_language(DW_LANG_C)
-    2293                            .dwattr $C$DW$T$79, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2293                            .dwattr $C$DW$T$79, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2294                            .dwattr $C$DW$T$79, DW_AT_decl_line(0x4e)
     2295                            .dwattr $C$DW$T$79, DW_AT_decl_column(0x17)
     2296                    $C$DW$T$80      .dwtag  DW_TAG_typedef, DW_AT_name("int_least64_t")
     2297                            .dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$78)
     2298                            .dwattr $C$DW$T$80, DW_AT_language(DW_LANG_C)
-    2299                            .dwattr $C$DW$T$80, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2299                            .dwattr $C$DW$T$80, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2300                            .dwattr $C$DW$T$80, DW_AT_decl_line(0x40)
     2301                            .dwattr $C$DW$T$80, DW_AT_decl_column(0x17)
     2302                    $C$DW$T$81      .dwtag  DW_TAG_typedef, DW_AT_name("intmax_t")
     2303                            .dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$14)
     2304                            .dwattr $C$DW$T$81, DW_AT_language(DW_LANG_C)
-    2305                            .dwattr $C$DW$T$81, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2305                            .dwattr $C$DW$T$81, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2306                            .dwattr $C$DW$T$81, DW_AT_decl_line(0x56)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   43
@@ -2531,31 +2531,31 @@ lcd_nokia5510.asm                                                    PAGE   43
     2312                    $C$DW$T$82      .dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
     2313                            .dwattr $C$DW$T$82, DW_AT_type(*$C$DW$T$15)
     2314                            .dwattr $C$DW$T$82, DW_AT_language(DW_LANG_C)
-    2315                            .dwattr $C$DW$T$82, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2315                            .dwattr $C$DW$T$82, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2316                            .dwattr $C$DW$T$82, DW_AT_decl_line(0x1b6)
     2317                            .dwattr $C$DW$T$82, DW_AT_decl_column(0x14)
     2318                    $C$DW$T$83      .dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
     2319                            .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$15)
     2320                            .dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
-    2321                            .dwattr $C$DW$T$83, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2321                            .dwattr $C$DW$T$83, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2322                            .dwattr $C$DW$T$83, DW_AT_decl_line(0x33)
     2323                            .dwattr $C$DW$T$83, DW_AT_decl_column(0x20)
     2324                    $C$DW$T$84      .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast64_t")
     2325                            .dwattr $C$DW$T$84, DW_AT_type(*$C$DW$T$83)
     2326                            .dwattr $C$DW$T$84, DW_AT_language(DW_LANG_C)
-    2327                            .dwattr $C$DW$T$84, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2327                            .dwattr $C$DW$T$84, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2328                            .dwattr $C$DW$T$84, DW_AT_decl_line(0x4f)
     2329                            .dwattr $C$DW$T$84, DW_AT_decl_column(0x16)
     2330                    $C$DW$T$85      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least64_t")
     2331                            .dwattr $C$DW$T$85, DW_AT_type(*$C$DW$T$83)
     2332                            .dwattr $C$DW$T$85, DW_AT_language(DW_LANG_C)
-    2333                            .dwattr $C$DW$T$85, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2333                            .dwattr $C$DW$T$85, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2334                            .dwattr $C$DW$T$85, DW_AT_decl_line(0x41)
     2335                            .dwattr $C$DW$T$85, DW_AT_decl_column(0x16)
     2336                    $C$DW$T$86      .dwtag  DW_TAG_typedef, DW_AT_name("uintmax_t")
     2337                            .dwattr $C$DW$T$86, DW_AT_type(*$C$DW$T$15)
     2338                            .dwattr $C$DW$T$86, DW_AT_language(DW_LANG_C)
-    2339                            .dwattr $C$DW$T$86, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2339                            .dwattr $C$DW$T$86, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2340                            .dwattr $C$DW$T$86, DW_AT_decl_line(0x57)
     2341                            .dwattr $C$DW$T$86, DW_AT_decl_column(0x20)
     2342                    $C$DW$T$16      .dwtag  DW_TAG_base_type
@@ -2573,12 +2573,12 @@ lcd_nokia5510.asm                                                    PAGE   43
     2354                    $C$DW$T$87      .dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
     2355                            .dwattr $C$DW$T$87, DW_AT_type(*$C$DW$T$6)
     2356                            .dwattr $C$DW$T$87, DW_AT_language(DW_LANG_C)
-    2357                            .dwattr $C$DW$T$87, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2357                            .dwattr $C$DW$T$87, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2358                            .dwattr $C$DW$T$87, DW_AT_decl_line(0x218)
     2359                            .dwattr $C$DW$T$87, DW_AT_decl_column(0x0e)
     2360                    $C$DW$T$40      .dwtag  DW_TAG_pointer_type
     2361                            .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$6)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   44
@@ -2600,24 +2600,24 @@ lcd_nokia5510.asm                                                    PAGE   44
     2376                            .dwattr $C$DW$108, DW_AT_TI_symbol_name("__ap")
     2377                            .dwattr $C$DW$108, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2378                            .dwattr $C$DW$108, DW_AT_accessibility(DW_ACCESS_public)
-    2379                            .dwattr $C$DW$108, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg
+    2379                            .dwattr $C$DW$108, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdarg
     2380                            .dwattr $C$DW$108, DW_AT_decl_line(0x36)
     2381                            .dwattr $C$DW$108, DW_AT_decl_column(0x0c)
     2382                            .dwendtag $C$DW$T$21
     2383                    
-    2384                            .dwattr $C$DW$T$21, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    2384                            .dwattr $C$DW$T$21, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdar
     2385                            .dwattr $C$DW$T$21, DW_AT_decl_line(0x35)
     2386                            .dwattr $C$DW$T$21, DW_AT_decl_column(0x10)
     2387                    $C$DW$T$89      .dwtag  DW_TAG_typedef, DW_AT_name("va_list")
     2388                            .dwattr $C$DW$T$89, DW_AT_type(*$C$DW$T$21)
     2389                            .dwattr $C$DW$T$89, DW_AT_language(DW_LANG_C)
-    2390                            .dwattr $C$DW$T$89, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    2390                            .dwattr $C$DW$T$89, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdar
     2391                            .dwattr $C$DW$T$89, DW_AT_decl_line(0x37)
     2392                            .dwattr $C$DW$T$89, DW_AT_decl_column(0x03)
     2393                    $C$DW$T$90      .dwtag  DW_TAG_typedef, DW_AT_name("_Va_list")
     2394                            .dwattr $C$DW$T$90, DW_AT_type(*$C$DW$T$89)
     2395                            .dwattr $C$DW$T$90, DW_AT_language(DW_LANG_C)
-    2396                            .dwattr $C$DW$T$90, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    2396                            .dwattr $C$DW$T$90, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     2397                            .dwattr $C$DW$T$90, DW_AT_decl_line(0x1f6)
     2398                            .dwattr $C$DW$T$90, DW_AT_decl_column(0x17)
     2399                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
@@ -2638,7 +2638,7 @@ lcd_nokia5510.asm                                                    PAGE   44
     2414                            .dwcfi  same_value, 6
     2415                            .dwcfi  same_value, 7
     2416                            .dwcfi  same_value, 8
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:52 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:19 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 lcd_nokia5510.asm                                                    PAGE   45

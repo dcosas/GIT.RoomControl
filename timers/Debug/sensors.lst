@@ -1,27 +1,27 @@
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    1
 
        1                    ;******************************************************************************
-       2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-       3                    ;* Date/Time created: Sun Nov 29 14:18:53 2015                                *
+       2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.6 *
+       3                    ;* Date/Time created: Tue Jan 26 13:54:20 2016                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
        7                    
        8                    $C$DW$CU        .dwtag  DW_TAG_compile_unit
        9                            .dwattr $C$DW$CU, DW_AT_name("../sensors.c")
-      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.5 Copyright (c) 1996-2015 Te
+      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.6 Copyright (c) 1996-2015 Te
       11                            .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("E:\Dev\Ti\Code\GIT\LaunchpadRoomControl\LaunchpadRoomControl
+      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("D:\Deian\Dev\TI\temp\LaunchpadRoomControl\timers\Debug")
       13                    
       14                    $C$DW$1 .dwtag  DW_TAG_subprogram, DW_AT_name("memset")
       15                            .dwattr $C$DW$1, DW_AT_TI_symbol_name("memset")
       16                            .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$3)
       17                            .dwattr $C$DW$1, DW_AT_declaration
       18                            .dwattr $C$DW$1, DW_AT_external
-      19                            .dwattr $C$DW$1, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/string.h
+      19                            .dwattr $C$DW$1, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/string.h
       20                            .dwattr $C$DW$1, DW_AT_decl_line(0x6f)
       21                            .dwattr $C$DW$1, DW_AT_decl_column(0x16)
       22                    $C$DW$2 .dwtag  DW_TAG_formal_parameter
@@ -37,7 +37,7 @@ sensors.asm                                                          PAGE    1
       32                            .dwattr $C$DW$5, DW_AT_TI_symbol_name("srand")
       33                            .dwattr $C$DW$5, DW_AT_declaration
       34                            .dwattr $C$DW$5, DW_AT_external
-      35                            .dwattr $C$DW$5, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib.h
+      35                            .dwattr $C$DW$5, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdlib.h
       36                            .dwattr $C$DW$5, DW_AT_decl_line(0xa5)
       37                            .dwattr $C$DW$5, DW_AT_decl_column(0x19)
       38                    $C$DW$6 .dwtag  DW_TAG_formal_parameter
@@ -50,7 +50,7 @@ sensors.asm                                                          PAGE    1
       45                            .dwattr $C$DW$7, DW_AT_type(*$C$DW$T$103)
       46                            .dwattr $C$DW$7, DW_AT_declaration
       47                            .dwattr $C$DW$7, DW_AT_external
-      48                            .dwattr $C$DW$7, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h")
+      48                            .dwattr $C$DW$7, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h")
       49                            .dwattr $C$DW$7, DW_AT_decl_line(0x79)
       50                            .dwattr $C$DW$7, DW_AT_decl_column(0x19)
       51                    $C$DW$8 .dwtag  DW_TAG_formal_parameter
@@ -58,7 +58,7 @@ sensors.asm                                                          PAGE    1
       53                            .dwendtag $C$DW$7
       54                    
       55                    
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    2
@@ -67,7 +67,7 @@ sensors.asm                                                          PAGE    2
       57                            .dwattr $C$DW$9, DW_AT_TI_symbol_name("GPIOIntTypeSet")
       58                            .dwattr $C$DW$9, DW_AT_declaration
       59                            .dwattr $C$DW$9, DW_AT_external
-      60                            .dwattr $C$DW$9, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+      60                            .dwattr $C$DW$9, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
       61                            .dwattr $C$DW$9, DW_AT_decl_line(0x90)
       62                            .dwattr $C$DW$9, DW_AT_decl_column(0x0d)
       63                    $C$DW$10        .dwtag  DW_TAG_formal_parameter
@@ -83,7 +83,7 @@ sensors.asm                                                          PAGE    2
       73                            .dwattr $C$DW$13, DW_AT_TI_symbol_name("GPIOPadConfigSet")
       74                            .dwattr $C$DW$13, DW_AT_declaration
       75                            .dwattr $C$DW$13, DW_AT_external
-      76                            .dwattr $C$DW$13, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+      76                            .dwattr $C$DW$13, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
       77                            .dwattr $C$DW$13, DW_AT_decl_line(0x93)
       78                            .dwattr $C$DW$13, DW_AT_decl_column(0x0d)
       79                    $C$DW$14        .dwtag  DW_TAG_formal_parameter
@@ -101,7 +101,7 @@ sensors.asm                                                          PAGE    2
       91                            .dwattr $C$DW$18, DW_AT_TI_symbol_name("GPIOIntEnable")
       92                            .dwattr $C$DW$18, DW_AT_declaration
       93                            .dwattr $C$DW$18, DW_AT_external
-      94                            .dwattr $C$DW$18, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+      94                            .dwattr $C$DW$18, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
       95                            .dwattr $C$DW$18, DW_AT_decl_line(0x97)
       96                            .dwattr $C$DW$18, DW_AT_decl_column(0x0d)
       97                    $C$DW$19        .dwtag  DW_TAG_formal_parameter
@@ -116,9 +116,9 @@ sensors.asm                                                          PAGE    2
      106                            .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$39)
      107                            .dwattr $C$DW$21, DW_AT_declaration
      108                            .dwattr $C$DW$21, DW_AT_external
-     109                            .dwattr $C$DW$21, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     109                            .dwattr $C$DW$21, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
      110                            .dwattr $C$DW$21, DW_AT_decl_line(0x99)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    3
@@ -135,7 +135,7 @@ sensors.asm                                                          PAGE    3
      120                            .dwattr $C$DW$24, DW_AT_TI_symbol_name("GPIOIntClear")
      121                            .dwattr $C$DW$24, DW_AT_declaration
      122                            .dwattr $C$DW$24, DW_AT_external
-     123                            .dwattr $C$DW$24, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     123                            .dwattr $C$DW$24, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
      124                            .dwattr $C$DW$24, DW_AT_decl_line(0x9a)
      125                            .dwattr $C$DW$24, DW_AT_decl_column(0x0d)
      126                    $C$DW$25        .dwtag  DW_TAG_formal_parameter
@@ -149,7 +149,7 @@ sensors.asm                                                          PAGE    3
      134                            .dwattr $C$DW$27, DW_AT_TI_symbol_name("GPIOIntRegister")
      135                            .dwattr $C$DW$27, DW_AT_declaration
      136                            .dwattr $C$DW$27, DW_AT_external
-     137                            .dwattr $C$DW$27, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     137                            .dwattr $C$DW$27, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
      138                            .dwattr $C$DW$27, DW_AT_decl_line(0x9b)
      139                            .dwattr $C$DW$27, DW_AT_decl_column(0x0d)
      140                    $C$DW$28        .dwtag  DW_TAG_formal_parameter
@@ -164,7 +164,7 @@ sensors.asm                                                          PAGE    3
      149                            .dwattr $C$DW$30, DW_AT_type(*$C$DW$T$91)
      150                            .dwattr $C$DW$30, DW_AT_declaration
      151                            .dwattr $C$DW$30, DW_AT_external
-     152                            .dwattr $C$DW$30, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     152                            .dwattr $C$DW$30, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
      153                            .dwattr $C$DW$30, DW_AT_decl_line(0x9d)
      154                            .dwattr $C$DW$30, DW_AT_decl_column(0x10)
      155                    $C$DW$31        .dwtag  DW_TAG_formal_parameter
@@ -178,12 +178,12 @@ sensors.asm                                                          PAGE    3
      163                            .dwattr $C$DW$33, DW_AT_TI_symbol_name("GPIOPinWrite")
      164                            .dwattr $C$DW$33, DW_AT_declaration
      165                            .dwattr $C$DW$33, DW_AT_external
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    4
 
-     166                            .dwattr $C$DW$33, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
+     166                            .dwattr $C$DW$33, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
      167                            .dwattr $C$DW$33, DW_AT_decl_line(0x9e)
      168                            .dwattr $C$DW$33, DW_AT_decl_column(0x0d)
      169                    $C$DW$34        .dwtag  DW_TAG_formal_parameter
@@ -199,8 +199,8 @@ sensors.asm                                                          PAGE    4
      179                            .dwattr $C$DW$37, DW_AT_TI_symbol_name("GPIOPinTypeGPIOInput")
      180                            .dwattr $C$DW$37, DW_AT_declaration
      181                            .dwattr $C$DW$37, DW_AT_external
-     182                            .dwattr $C$DW$37, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/gpio.h")
-     183                            .dwattr $C$DW$37, DW_AT_decl_line(0xa7)
+     182                            .dwattr $C$DW$37, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
+     183                            .dwattr $C$DW$37, DW_AT_decl_line(0xa8)
      184                            .dwattr $C$DW$37, DW_AT_decl_column(0x0d)
      185                    $C$DW$38        .dwtag  DW_TAG_formal_parameter
      186                            .dwattr $C$DW$38, DW_AT_type(*$C$DW$T$39)
@@ -213,7 +213,7 @@ sensors.asm                                                          PAGE    4
      193                            .dwattr $C$DW$40, DW_AT_TI_symbol_name("SysCtlPeripheralEnable")
      194                            .dwattr $C$DW$40, DW_AT_declaration
      195                            .dwattr $C$DW$40, DW_AT_external
-     196                            .dwattr $C$DW$40, DW_AT_decl_file("E:/Dev/Ti/TivaWare/driverlib/sysctl.h")
+     196                            .dwattr $C$DW$40, DW_AT_decl_file("C:/ti/TivaWare/driverlib/sysctl.h")
      197                            .dwattr $C$DW$40, DW_AT_decl_line(0x24e)
      198                            .dwattr $C$DW$40, DW_AT_decl_column(0x0d)
      199                    $C$DW$41        .dwtag  DW_TAG_formal_parameter
@@ -238,7 +238,7 @@ sensors.asm                                                          PAGE    4
      218                            .dwattr $C$DW$43, DW_AT_decl_line(0x12)
      219                            .dwattr $C$DW$43, DW_AT_decl_column(0x07)
      220                    
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    5
@@ -298,7 +298,7 @@ sensors.asm                                                          PAGE    5
      273                            .dwendtag $C$DW$50
      274                    
      275                    
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    6
@@ -358,7 +358,7 @@ sensors.asm                                                          PAGE    6
      328                            .dwattr $C$DW$64, DW_AT_TI_symbol_name("init_co2sensor")
      329                            .dwattr $C$DW$64, DW_AT_declaration
      330                            .dwattr $C$DW$64, DW_AT_external
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    7
@@ -418,7 +418,7 @@ sensors.asm                                                          PAGE    7
      383 00000004 2078783A          .bits   32,8                    ; str_line1[7] @ 56
      384 00000008 00000054          .bits   84,8                    ; str_line1[8] @ 64
      385 00000008 00003A54          .bits   58,8                    ; str_line1[9] @ 72
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    8
@@ -478,7 +478,7 @@ sensors.asm                                                          PAGE    8
      438                            .dwattr $C$DW$74, DW_AT_TI_symbol_name("str_line3")
      439                            .dwattr $C$DW$74, DW_AT_type(*$C$DW$T$135)
      440                            .dwattr $C$DW$74, DW_AT_location[DW_OP_addr str_line3]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    9
@@ -538,7 +538,7 @@ sensors.asm                                                          PAGE    9
      493                    
      494                    $C$DW$77        .dwtag  DW_TAG_variable, DW_AT_name("threshold_temperature")
      495                            .dwattr $C$DW$77, DW_AT_TI_symbol_name("threshold_temperature")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   10
@@ -598,7 +598,7 @@ sensors.asm                                                          PAGE   10
      548                            .dwattr $C$DW$80, DW_AT_decl_line(0x37)
      549                            .dwattr $C$DW$80, DW_AT_decl_column(0x0a)
      550                            .global fanControlledByTimer
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   11
@@ -640,7 +640,7 @@ sensors.asm                                                          PAGE   11
      585 00000078           fanState$3:
      586 00000078 00000000          .bits   0,8                     ; fanState$3 @ 0
      587                    
-     588                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppDat
+     588                    ;       C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.6\bin\armacpia.exe -@C:\\Users\\dcosas\\AppData\\Loc
      589 00000000                   .sect   ".text:get_mode"
      590                            .clink
      591                            .thumbfunc get_mode
@@ -658,7 +658,7 @@ sensors.asm                                                          PAGE   11
      603                            .dwattr $C$DW$83, DW_AT_TI_begin_column(0x09)
      604                            .dwattr $C$DW$83, DW_AT_decl_file("../sensors.c")
      605                            .dwattr $C$DW$83, DW_AT_decl_line(0x3b)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   12
@@ -718,7 +718,7 @@ sensors.asm                                                          PAGE   12
      658                            .dwattr $C$DW$85, DW_AT_decl_line(0x40)
      659                            .dwattr $C$DW$85, DW_AT_decl_column(0x06)
      660                            .dwattr $C$DW$85, DW_AT_TI_max_frame_size(0x08)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   13
@@ -778,7 +778,7 @@ sensors.asm                                                          PAGE   13
      713                    ;----------------------------------------------------------------------
      714                    ;  69 | operating_mode = umode;                                                
      715                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   14
@@ -838,7 +838,7 @@ sensors.asm                                                          PAGE   14
      768 00000064 4911              LDR       A2, $C$CON7           ; [DPU_3_PIPE] |73|  ; [ORIG 16-BIT INS]
      769 00000066 200A              MOVS      A1, #10               ; [DPU_3_PIPE] |73|  ; [ORIG 16-BIT INS]
      770 00000068 F0F0FB92          SDIV      A1, A3, A1            ; [DPU_3_PIPE] |73|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   15
@@ -898,7 +898,7 @@ sensors.asm                                                          PAGE   15
      823                            .dwattr $C$DW$90, DW_AT_low_pc(PortFIntHandler)
      824                            .dwattr $C$DW$90, DW_AT_high_pc(0x00)
      825                            .dwattr $C$DW$90, DW_AT_TI_symbol_name("PortFIntHandler")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   16
@@ -958,7 +958,7 @@ sensors.asm                                                          PAGE   16
      878                    ;----------------------------------------------------------------------
      879 00000006 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |81|  ; [ORIG 16-BIT INS]
      880 00000008 0004F88D          STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |81|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   17
@@ -1018,7 +1018,7 @@ sensors.asm                                                          PAGE   17
      933 00000034 B928              CBNZ      A1, ||$C$L2||         ; []  ; [ORIG 16-BIT INS]
      934                            ; BRANCHCC OCCURS {||$C$L2||}    ; [] |86| 
      935                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   18
@@ -1078,7 +1078,7 @@ sensors.asm                                                          PAGE   18
      988                    ;----------------------------------------------------------------------
      989                    
      990                    ;*****************************************************************************
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   19
@@ -1138,7 +1138,7 @@ sensors.asm                                                          PAGE   19
     1043                            .dwattr $C$DW$101, DW_AT_TI_call
     1044 00000018 FFFEF7FF!         BL        GPIOPadConfigSet      ; [DPU_3_PIPE] |95|  ; [KEEP 32-BIT INS]
     1045                            ; CALL OCCURS {GPIOPadConfigSet }  ; [] |95| 
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   20
@@ -1198,7 +1198,7 @@ sensors.asm                                                          PAGE   20
     1098                            .dwattr $C$DW$106, DW_AT_low_pc(0x00)
     1099                            .dwattr $C$DW$106, DW_AT_name("init_actuators")
     1100                            .dwattr $C$DW$106, DW_AT_TI_call
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   21
@@ -1258,7 +1258,7 @@ sensors.asm                                                          PAGE   21
     1153                    ; 110 | #endif                                                                 
     1154                    ;----------------------------------------------------------------------
     1155 00000058 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |109|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   22
@@ -1318,7 +1318,7 @@ sensors.asm                                                          PAGE   22
     1208                    ;*****************************************************************************
     1209                    ;* FUNCTION NAME: check_sensor1                                              *
     1210                    ;*                                                                           *
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   23
@@ -1378,7 +1378,7 @@ sensors.asm                                                          PAGE   23
     1263                    ;----------------------------------------------------------------------
     1264 00000018 4828              LDR       A1, $C$CON20          ; [DPU_3_PIPE] |119|  ; [ORIG 16-BIT INS]
     1265 0000001a 4927              LDR       A2, $C$CON19          ; [DPU_3_PIPE] |119|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   24
@@ -1438,7 +1438,7 @@ sensors.asm                                                          PAGE   24
     1318                    ; 128 | set_actuator1(OFF);                                                    
     1319                    ;----------------------------------------------------------------------
     1320 00000052 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |128|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   25
@@ -1498,7 +1498,7 @@ sensors.asm                                                          PAGE   25
     1373                            .dwpsn  file "../sensors.c",line 135,column 2,is_stmt,isa 1
     1374                    ;----------------------------------------------------------------------
     1375                    ; 135 | return f_data;                                                         
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   26
@@ -1558,7 +1558,7 @@ sensors.asm                                                          PAGE   26
     1428                    ;*   Local Frame Size  : 0 Args + 4 Auto + 4 Save = 8 byte                   *
     1429                    ;*****************************************************************************
     1430 00000000           check_sensor2:
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   27
@@ -1618,7 +1618,7 @@ sensors.asm                                                          PAGE   27
     1483                    ;----------------------------------------------------------------------
     1484 00000044 0A00ED9D          VLDR.32   S0, [SP, #0]          ; [DPU_LIN_PIPE] |143|  ; [KEEP 32-BIT INS]
     1485 00000048 0AC0EEBC          VCVT.U32.F32 S0, S0             ; [DPU_LIN_PIPE] |143|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   28
@@ -1678,7 +1678,7 @@ sensors.asm                                                          PAGE   28
     1538                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
     1539                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
     1540                    ;*                           FPEXC,FPSCR                                     *
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   29
@@ -1738,7 +1738,7 @@ sensors.asm                                                          PAGE   29
     1593 00000032 4904              LDR       A2, $C$CON30          ; [DPU_3_PIPE] |152|  ; [ORIG 16-BIT INS]
     1594 00000034 0000F89D          LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |152|  ; [KEEP 32-BIT INS]
     1595 00000038 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |152|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   30
@@ -1798,7 +1798,7 @@ sensors.asm                                                          PAGE   30
     1648 00000000 B508              PUSH      {A4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
     1649                            .dwcfi  cfa_offset, 8
     1650                            .dwcfi  save_reg_to_mem, 14, -4
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   31
@@ -1858,7 +1858,7 @@ sensors.asm                                                          PAGE   31
     1703                            .dwcfi  cfa_offset, 0
     1704                            ; BRANCH OCCURS                  ; [] 
     1705                            .dwattr $C$DW$127, DW_AT_TI_end_file("../sensors.c")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   32
@@ -1918,7 +1918,7 @@ sensors.asm                                                          PAGE   32
     1758                            .dwattr $C$DW$132, DW_AT_location[DW_OP_breg13 0]
     1759                            .dwpsn  file "../sensors.c",line 166,column 2,is_stmt,isa 1
     1760                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   33
@@ -1978,7 +1978,7 @@ sensors.asm                                                          PAGE   33
     1813 00000038 D209              BCS       ||$C$L7||             ; [DPU_3_PIPE] |170|  ; [ORIG 16-BIT INS]
     1814                            ; BRANCHCC OCCURS {||$C$L7||}    ; [] |170| 
     1815                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   34
@@ -2038,7 +2038,7 @@ sensors.asm                                                          PAGE   34
     1868                    ;----------------------------------------------------------------------
     1869                    ; 180 | fanControlledByTimer = 1;                                              
     1870                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   35
@@ -2098,7 +2098,7 @@ sensors.asm                                                          PAGE   35
     1923                    ;*   Local Frame Size  : 0 Args + 0 Auto + 4 Save = 4 byte                   *
     1924                    ;*****************************************************************************
     1925 00000000           check_rtcTimer:
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   36
@@ -2158,7 +2158,7 @@ sensors.asm                                                          PAGE   36
     1978 0000001e           ||$C$L9||:    
     1979                            .dwpsn  file "../sensors.c",line 194,column 3,is_stmt,isa 1
     1980                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   37
@@ -2218,7 +2218,7 @@ sensors.asm                                                          PAGE   37
     2033                            .dwattr $C$DW$146, DW_AT_location[DW_OP_addr fanState$3]
     2034                    $C$DW$147       .dwtag  DW_TAG_formal_parameter, DW_AT_name("current_seconds")
     2035                            .dwattr $C$DW$147, DW_AT_TI_symbol_name("current_seconds")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   38
@@ -2278,7 +2278,7 @@ sensors.asm                                                          PAGE   38
     2088 0000000c 4823              LDR       A1, $C$CON43          ; [DPU_3_PIPE] |206|  ; [ORIG 16-BIT INS]
     2089 0000000e 7800              LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |206|  ; [ORIG 16-BIT INS]
     2090 00000010 B930              CBNZ      A1, ||$C$L11||        ; []  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   39
@@ -2338,7 +2338,7 @@ sensors.asm                                                          PAGE   39
     2143                    ;----------------------------------------------------------------------
     2144 0000002c 4A1D              LDR       A3, $C$CON45          ; [DPU_3_PIPE] |216|  ; [ORIG 16-BIT INS]
     2145 0000002e 491E              LDR       A2, $C$CON46          ; [DPU_3_PIPE] |216|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   40
@@ -2398,7 +2398,7 @@ sensors.asm                                                          PAGE   40
     2198                    ;----------------------------------------------------------------------
     2199 0000005a 4913              LDR       A2, $C$CON46          ; [DPU_3_PIPE] |223|  ; [ORIG 16-BIT INS]
     2200 0000005c 20B0F649          MOV       A1, #39600            ; [DPU_3_PIPE] |223|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   41
@@ -2458,7 +2458,7 @@ sensors.asm                                                          PAGE   41
     2253 00000082 60E1F44F          MOV       A1, #1800             ; [DPU_3_PIPE] |231|  ; [KEEP 32-BIT INS]
     2254 00000086 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |231|  ; [ORIG 16-BIT INS]
     2255                            .dwpsn  file "../sensors.c",line 232,column 4,is_stmt,isa 1
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   42
@@ -2518,7 +2518,7 @@ sensors.asm                                                          PAGE   42
     2308                    ;----------------------------------------------------------------------
     2309                    ; 237 | void update_lcd()                                                      
     2310                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   43
@@ -2578,7 +2578,7 @@ sensors.asm                                                          PAGE   43
     2363                            .dwattr $C$DW$159, DW_AT_TI_call
     2364 00000016 FFFEF7FF!         BL        lcd_puts              ; [DPU_3_PIPE] |241|  ; [KEEP 32-BIT INS]
     2365                            ; CALL OCCURS {lcd_puts }        ; [] |241| 
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   44
@@ -2638,7 +2638,7 @@ sensors.asm                                                          PAGE   44
     2418                    ;*****************************************************************************
     2419                    ;* FUNCTION NAME: update_thingspeak                                          *
     2420                    ;*                                                                           *
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   45
@@ -2698,7 +2698,7 @@ sensors.asm                                                          PAGE   45
     2473                            .dwattr $C$DW$164, DW_AT_low_pc(0x00)
     2474                            .dwattr $C$DW$164, DW_AT_TI_return
     2475 00000028 BD0E              POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   46
@@ -2758,7 +2758,7 @@ sensors.asm                                                          PAGE   46
     2527 00000068 40025000  ||$C$CON14||:   .bits   1073893376,32
     2528                            .align  4
     2529 0000006c 00000000! ||$C$CON15||:   .bits   PortFIntHandler,32
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   47
@@ -2818,7 +2818,7 @@ sensors.asm                                                          PAGE   47
     2572                            .align  4
     2573 0000003c 00000003! ||$C$CON28||:   .bits   str_line3+3,32
     2574                            .align  4
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   48
@@ -2878,7 +2878,7 @@ sensors.asm                                                          PAGE   48
     2618                            .align  4
     2619 0000009a 00000000! ||$C$CON43||:   .bits   fanState$3,32
          0000009e 00000000 
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   49
@@ -2938,7 +2938,7 @@ sensors.asm                                                          PAGE   49
     2661                            .global memset
     2662                            .global srand
     2663                            .global time
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   50
@@ -2995,10 +2995,10 @@ sensors.asm                                                          PAGE   50
     2713                            .dwattr $C$DW$165, DW_AT_TI_symbol_name("fd")
     2714                            .dwattr $C$DW$165, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2715                            .dwattr $C$DW$165, DW_AT_accessibility(DW_ACCESS_public)
-    2716                            .dwattr $C$DW$165, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    2716                            .dwattr $C$DW$165, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     2717                            .dwattr $C$DW$165, DW_AT_decl_line(0x5c)
     2718                            .dwattr $C$DW$165, DW_AT_decl_column(0x0b)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   51
@@ -3009,7 +3009,7 @@ sensors.asm                                                          PAGE   51
     2722                            .dwattr $C$DW$166, DW_AT_TI_symbol_name("buf")
     2723                            .dwattr $C$DW$166, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     2724                            .dwattr $C$DW$166, DW_AT_accessibility(DW_ACCESS_public)
-    2725                            .dwattr $C$DW$166, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    2725                            .dwattr $C$DW$166, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     2726                            .dwattr $C$DW$166, DW_AT_decl_line(0x5d)
     2727                            .dwattr $C$DW$166, DW_AT_decl_column(0x16)
     2728                    $C$DW$167       .dwtag  DW_TAG_member
@@ -3018,7 +3018,7 @@ sensors.asm                                                          PAGE   51
     2731                            .dwattr $C$DW$167, DW_AT_TI_symbol_name("pos")
     2732                            .dwattr $C$DW$167, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
     2733                            .dwattr $C$DW$167, DW_AT_accessibility(DW_ACCESS_public)
-    2734                            .dwattr $C$DW$167, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    2734                            .dwattr $C$DW$167, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     2735                            .dwattr $C$DW$167, DW_AT_decl_line(0x5e)
     2736                            .dwattr $C$DW$167, DW_AT_decl_column(0x16)
     2737                    $C$DW$168       .dwtag  DW_TAG_member
@@ -3027,7 +3027,7 @@ sensors.asm                                                          PAGE   51
     2740                            .dwattr $C$DW$168, DW_AT_TI_symbol_name("bufend")
     2741                            .dwattr $C$DW$168, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
     2742                            .dwattr $C$DW$168, DW_AT_accessibility(DW_ACCESS_public)
-    2743                            .dwattr $C$DW$168, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    2743                            .dwattr $C$DW$168, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     2744                            .dwattr $C$DW$168, DW_AT_decl_line(0x5f)
     2745                            .dwattr $C$DW$168, DW_AT_decl_column(0x16)
     2746                    $C$DW$169       .dwtag  DW_TAG_member
@@ -3036,7 +3036,7 @@ sensors.asm                                                          PAGE   51
     2749                            .dwattr $C$DW$169, DW_AT_TI_symbol_name("buff_stop")
     2750                            .dwattr $C$DW$169, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
     2751                            .dwattr $C$DW$169, DW_AT_accessibility(DW_ACCESS_public)
-    2752                            .dwattr $C$DW$169, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    2752                            .dwattr $C$DW$169, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     2753                            .dwattr $C$DW$169, DW_AT_decl_line(0x60)
     2754                            .dwattr $C$DW$169, DW_AT_decl_column(0x16)
     2755                    $C$DW$170       .dwtag  DW_TAG_member
@@ -3045,20 +3045,20 @@ sensors.asm                                                          PAGE   51
     2758                            .dwattr $C$DW$170, DW_AT_TI_symbol_name("flags")
     2759                            .dwattr $C$DW$170, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
     2760                            .dwattr $C$DW$170, DW_AT_accessibility(DW_ACCESS_public)
-    2761                            .dwattr $C$DW$170, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.
+    2761                            .dwattr $C$DW$170, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     2762                            .dwattr $C$DW$170, DW_AT_decl_line(0x61)
     2763                            .dwattr $C$DW$170, DW_AT_decl_column(0x16)
     2764                            .dwendtag $C$DW$T$20
     2765                    
-    2766                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    2766                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
     2767                            .dwattr $C$DW$T$20, DW_AT_decl_line(0x5b)
     2768                            .dwattr $C$DW$T$20, DW_AT_decl_column(0x10)
     2769                    $C$DW$T$29      .dwtag  DW_TAG_typedef, DW_AT_name("FILE")
     2770                            .dwattr $C$DW$T$29, DW_AT_type(*$C$DW$T$20)
     2771                            .dwattr $C$DW$T$29, DW_AT_language(DW_LANG_C)
-    2772                            .dwattr $C$DW$T$29, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    2772                            .dwattr $C$DW$T$29, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
     2773                            .dwattr $C$DW$T$29, DW_AT_decl_line(0x62)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   52
@@ -3073,7 +3073,7 @@ sensors.asm                                                          PAGE   52
     2781                            .dwattr $C$DW$171, DW_AT_TI_symbol_name("quot")
     2782                            .dwattr $C$DW$171, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2783                            .dwattr $C$DW$171, DW_AT_accessibility(DW_ACCESS_public)
-    2784                            .dwattr $C$DW$171, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib
+    2784                            .dwattr $C$DW$171, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdlib
     2785                            .dwattr $C$DW$171, DW_AT_decl_line(0x59)
     2786                            .dwattr $C$DW$171, DW_AT_decl_column(0x16)
     2787                    $C$DW$172       .dwtag  DW_TAG_member
@@ -3082,18 +3082,18 @@ sensors.asm                                                          PAGE   52
     2790                            .dwattr $C$DW$172, DW_AT_TI_symbol_name("rem")
     2791                            .dwattr $C$DW$172, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     2792                            .dwattr $C$DW$172, DW_AT_accessibility(DW_ACCESS_public)
-    2793                            .dwattr $C$DW$172, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib
+    2793                            .dwattr $C$DW$172, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdlib
     2794                            .dwattr $C$DW$172, DW_AT_decl_line(0x59)
     2795                            .dwattr $C$DW$172, DW_AT_decl_column(0x1c)
     2796                            .dwendtag $C$DW$T$21
     2797                    
-    2798                            .dwattr $C$DW$T$21, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdli
+    2798                            .dwattr $C$DW$T$21, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdli
     2799                            .dwattr $C$DW$T$21, DW_AT_decl_line(0x59)
     2800                            .dwattr $C$DW$T$21, DW_AT_decl_column(0x10)
     2801                    $C$DW$T$30      .dwtag  DW_TAG_typedef, DW_AT_name("div_t")
     2802                            .dwattr $C$DW$T$30, DW_AT_type(*$C$DW$T$21)
     2803                            .dwattr $C$DW$T$30, DW_AT_language(DW_LANG_C)
-    2804                            .dwattr $C$DW$T$30, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdli
+    2804                            .dwattr $C$DW$T$30, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdli
     2805                            .dwattr $C$DW$T$30, DW_AT_decl_line(0x59)
     2806                            .dwattr $C$DW$T$30, DW_AT_decl_column(0x23)
     2807                    
@@ -3105,7 +3105,7 @@ sensors.asm                                                          PAGE   52
     2813                            .dwattr $C$DW$173, DW_AT_TI_symbol_name("quot")
     2814                            .dwattr $C$DW$173, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2815                            .dwattr $C$DW$173, DW_AT_accessibility(DW_ACCESS_public)
-    2816                            .dwattr $C$DW$173, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib
+    2816                            .dwattr $C$DW$173, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdlib
     2817                            .dwattr $C$DW$173, DW_AT_decl_line(0x5b)
     2818                            .dwattr $C$DW$173, DW_AT_decl_column(0x16)
     2819                    $C$DW$174       .dwtag  DW_TAG_member
@@ -3114,23 +3114,23 @@ sensors.asm                                                          PAGE   52
     2822                            .dwattr $C$DW$174, DW_AT_TI_symbol_name("rem")
     2823                            .dwattr $C$DW$174, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     2824                            .dwattr $C$DW$174, DW_AT_accessibility(DW_ACCESS_public)
-    2825                            .dwattr $C$DW$174, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib
+    2825                            .dwattr $C$DW$174, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdlib
     2826                            .dwattr $C$DW$174, DW_AT_decl_line(0x5b)
     2827                            .dwattr $C$DW$174, DW_AT_decl_column(0x1c)
     2828                            .dwendtag $C$DW$T$22
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   53
 
     2829                    
-    2830                            .dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdli
+    2830                            .dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdli
     2831                            .dwattr $C$DW$T$22, DW_AT_decl_line(0x5b)
     2832                            .dwattr $C$DW$T$22, DW_AT_decl_column(0x10)
     2833                    $C$DW$T$31      .dwtag  DW_TAG_typedef, DW_AT_name("ldiv_t")
     2834                            .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$22)
     2835                            .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
-    2836                            .dwattr $C$DW$T$31, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdli
+    2836                            .dwattr $C$DW$T$31, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdli
     2837                            .dwattr $C$DW$T$31, DW_AT_decl_line(0x5b)
     2838                            .dwattr $C$DW$T$31, DW_AT_decl_column(0x23)
     2839                    
@@ -3142,7 +3142,7 @@ sensors.asm                                                          PAGE   53
     2845                            .dwattr $C$DW$175, DW_AT_TI_symbol_name("quot")
     2846                            .dwattr $C$DW$175, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2847                            .dwattr $C$DW$175, DW_AT_accessibility(DW_ACCESS_public)
-    2848                            .dwattr $C$DW$175, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib
+    2848                            .dwattr $C$DW$175, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdlib
     2849                            .dwattr $C$DW$175, DW_AT_decl_line(0x5e)
     2850                            .dwattr $C$DW$175, DW_AT_decl_column(0x1c)
     2851                    $C$DW$176       .dwtag  DW_TAG_member
@@ -3151,18 +3151,18 @@ sensors.asm                                                          PAGE   53
     2854                            .dwattr $C$DW$176, DW_AT_TI_symbol_name("rem")
     2855                            .dwattr $C$DW$176, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
     2856                            .dwattr $C$DW$176, DW_AT_accessibility(DW_ACCESS_public)
-    2857                            .dwattr $C$DW$176, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib
+    2857                            .dwattr $C$DW$176, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdlib
     2858                            .dwattr $C$DW$176, DW_AT_decl_line(0x5e)
     2859                            .dwattr $C$DW$176, DW_AT_decl_column(0x22)
     2860                            .dwendtag $C$DW$T$23
     2861                    
-    2862                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdli
+    2862                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdli
     2863                            .dwattr $C$DW$T$23, DW_AT_decl_line(0x5e)
     2864                            .dwattr $C$DW$T$23, DW_AT_decl_column(0x10)
     2865                    $C$DW$T$32      .dwtag  DW_TAG_typedef, DW_AT_name("lldiv_t")
     2866                            .dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$23)
     2867                            .dwattr $C$DW$T$32, DW_AT_language(DW_LANG_C)
-    2868                            .dwattr $C$DW$T$32, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdli
+    2868                            .dwattr $C$DW$T$32, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdli
     2869                            .dwattr $C$DW$T$32, DW_AT_decl_line(0x5e)
     2870                            .dwattr $C$DW$T$32, DW_AT_decl_column(0x29)
     2871                    
@@ -3174,11 +3174,11 @@ sensors.asm                                                          PAGE   53
     2877                            .dwattr $C$DW$177, DW_AT_TI_symbol_name("daylight")
     2878                            .dwattr $C$DW$177, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2879                            .dwattr $C$DW$177, DW_AT_accessibility(DW_ACCESS_public)
-    2880                            .dwattr $C$DW$177, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
+    2880                            .dwattr $C$DW$177, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     2881                            .dwattr $C$DW$177, DW_AT_decl_line(0x6d)
     2882                            .dwattr $C$DW$177, DW_AT_decl_column(0x0b)
     2883                    $C$DW$178       .dwtag  DW_TAG_member
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   54
@@ -3188,7 +3188,7 @@ sensors.asm                                                          PAGE   54
     2886                            .dwattr $C$DW$178, DW_AT_TI_symbol_name("timezone")
     2887                            .dwattr $C$DW$178, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     2888                            .dwattr $C$DW$178, DW_AT_accessibility(DW_ACCESS_public)
-    2889                            .dwattr $C$DW$178, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
+    2889                            .dwattr $C$DW$178, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     2890                            .dwattr $C$DW$178, DW_AT_decl_line(0x6e)
     2891                            .dwattr $C$DW$178, DW_AT_decl_column(0x0b)
     2892                    $C$DW$179       .dwtag  DW_TAG_member
@@ -3197,7 +3197,7 @@ sensors.asm                                                          PAGE   54
     2895                            .dwattr $C$DW$179, DW_AT_TI_symbol_name("tzname")
     2896                            .dwattr $C$DW$179, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
     2897                            .dwattr $C$DW$179, DW_AT_accessibility(DW_ACCESS_public)
-    2898                            .dwattr $C$DW$179, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
+    2898                            .dwattr $C$DW$179, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     2899                            .dwattr $C$DW$179, DW_AT_decl_line(0x6f)
     2900                            .dwattr $C$DW$179, DW_AT_decl_column(0x0b)
     2901                    $C$DW$180       .dwtag  DW_TAG_member
@@ -3206,18 +3206,18 @@ sensors.asm                                                          PAGE   54
     2904                            .dwattr $C$DW$180, DW_AT_TI_symbol_name("dstname")
     2905                            .dwattr $C$DW$180, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
     2906                            .dwattr $C$DW$180, DW_AT_accessibility(DW_ACCESS_public)
-    2907                            .dwattr $C$DW$180, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
+    2907                            .dwattr $C$DW$180, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     2908                            .dwattr $C$DW$180, DW_AT_decl_line(0x70)
     2909                            .dwattr $C$DW$180, DW_AT_decl_column(0x0b)
     2910                            .dwendtag $C$DW$T$26
     2911                    
-    2912                            .dwattr $C$DW$T$26, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.
+    2912                            .dwattr $C$DW$T$26, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.
     2913                            .dwattr $C$DW$T$26, DW_AT_decl_line(0x6c)
     2914                            .dwattr $C$DW$T$26, DW_AT_decl_column(0x01)
     2915                    $C$DW$T$33      .dwtag  DW_TAG_typedef, DW_AT_name("TZ")
     2916                            .dwattr $C$DW$T$33, DW_AT_type(*$C$DW$T$26)
     2917                            .dwattr $C$DW$T$33, DW_AT_language(DW_LANG_C)
-    2918                            .dwattr $C$DW$T$33, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.
+    2918                            .dwattr $C$DW$T$33, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.
     2919                            .dwattr $C$DW$T$33, DW_AT_decl_line(0x71)
     2920                            .dwattr $C$DW$T$33, DW_AT_decl_column(0x03)
     2921                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
@@ -3234,11 +3234,11 @@ sensors.asm                                                          PAGE   54
     2932                    $C$DW$T$49      .dwtag  DW_TAG_typedef, DW_AT_name("__TI_atexit_fn")
     2933                            .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$48)
     2934                            .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
-    2935                            .dwattr $C$DW$T$49, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdli
+    2935                            .dwattr $C$DW$T$49, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdli
     2936                            .dwattr $C$DW$T$49, DW_AT_decl_line(0xb3)
     2937                            .dwattr $C$DW$T$49, DW_AT_decl_column(0x14)
     2938                    $C$DW$T$67      .dwtag  DW_TAG_const_type
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   55
@@ -3258,13 +3258,13 @@ sensors.asm                                                          PAGE   55
     2951                    $C$DW$T$69      .dwtag  DW_TAG_typedef, DW_AT_name("int8_t")
     2952                            .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$5)
     2953                            .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
-    2954                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2954                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2955                            .dwattr $C$DW$T$69, DW_AT_decl_line(0x2a)
     2956                            .dwattr $C$DW$T$69, DW_AT_decl_column(0x1d)
     2957                    $C$DW$T$70      .dwtag  DW_TAG_typedef, DW_AT_name("int_least8_t")
     2958                            .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$69)
     2959                            .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
-    2960                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2960                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2961                            .dwattr $C$DW$T$70, DW_AT_decl_line(0x37)
     2962                            .dwattr $C$DW$T$70, DW_AT_decl_column(0x17)
     2963                    $C$DW$T$6       .dwtag  DW_TAG_base_type
@@ -3277,13 +3277,13 @@ sensors.asm                                                          PAGE   55
     2970                    $C$DW$T$40      .dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
     2971                            .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$6)
     2972                            .dwattr $C$DW$T$40, DW_AT_language(DW_LANG_C)
-    2973                            .dwattr $C$DW$T$40, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2973                            .dwattr $C$DW$T$40, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2974                            .dwattr $C$DW$T$40, DW_AT_decl_line(0x2b)
     2975                            .dwattr $C$DW$T$40, DW_AT_decl_column(0x1c)
     2976                    $C$DW$T$77      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
     2977                            .dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$40)
     2978                            .dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
-    2979                            .dwattr $C$DW$T$77, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2979                            .dwattr $C$DW$T$77, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     2980                            .dwattr $C$DW$T$77, DW_AT_decl_line(0x38)
     2981                            .dwattr $C$DW$T$77, DW_AT_decl_column(0x16)
     2982                    $C$DW$T$7       .dwtag  DW_TAG_base_type
@@ -3297,8 +3297,8 @@ sensors.asm                                                          PAGE   55
     2990                    $C$DW$T$78      .dwtag  DW_TAG_typedef, DW_AT_name("int16_t")
     2991                            .dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$8)
     2992                            .dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
-    2993                            .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+    2993                            .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   56
@@ -3308,7 +3308,7 @@ sensors.asm                                                          PAGE   56
     2996                    $C$DW$T$79      .dwtag  DW_TAG_typedef, DW_AT_name("int_least16_t")
     2997                            .dwattr $C$DW$T$79, DW_AT_type(*$C$DW$T$78)
     2998                            .dwattr $C$DW$T$79, DW_AT_language(DW_LANG_C)
-    2999                            .dwattr $C$DW$T$79, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    2999                            .dwattr $C$DW$T$79, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     3000                            .dwattr $C$DW$T$79, DW_AT_decl_line(0x3a)
     3001                            .dwattr $C$DW$T$79, DW_AT_decl_column(0x17)
     3002                    $C$DW$T$9       .dwtag  DW_TAG_base_type
@@ -3318,31 +3318,31 @@ sensors.asm                                                          PAGE   56
     3006                    $C$DW$T$80      .dwtag  DW_TAG_typedef, DW_AT_name("_Wchart")
     3007                            .dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$9)
     3008                            .dwattr $C$DW$T$80, DW_AT_language(DW_LANG_C)
-    3009                            .dwattr $C$DW$T$80, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    3009                            .dwattr $C$DW$T$80, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     3010                            .dwattr $C$DW$T$80, DW_AT_decl_line(0x1e5)
     3011                            .dwattr $C$DW$T$80, DW_AT_decl_column(0x21)
     3012                    $C$DW$T$81      .dwtag  DW_TAG_typedef, DW_AT_name("_Wintt")
     3013                            .dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$9)
     3014                            .dwattr $C$DW$T$81, DW_AT_language(DW_LANG_C)
-    3015                            .dwattr $C$DW$T$81, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    3015                            .dwattr $C$DW$T$81, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     3016                            .dwattr $C$DW$T$81, DW_AT_decl_line(0x1e6)
     3017                            .dwattr $C$DW$T$81, DW_AT_decl_column(0x21)
     3018                    $C$DW$T$82      .dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
     3019                            .dwattr $C$DW$T$82, DW_AT_type(*$C$DW$T$9)
     3020                            .dwattr $C$DW$T$82, DW_AT_language(DW_LANG_C)
-    3021                            .dwattr $C$DW$T$82, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    3021                            .dwattr $C$DW$T$82, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     3022                            .dwattr $C$DW$T$82, DW_AT_decl_line(0x2d)
     3023                            .dwattr $C$DW$T$82, DW_AT_decl_column(0x1c)
     3024                    $C$DW$T$85      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
     3025                            .dwattr $C$DW$T$85, DW_AT_type(*$C$DW$T$82)
     3026                            .dwattr $C$DW$T$85, DW_AT_language(DW_LANG_C)
-    3027                            .dwattr $C$DW$T$85, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    3027                            .dwattr $C$DW$T$85, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     3028                            .dwattr $C$DW$T$85, DW_AT_decl_line(0x3b)
     3029                            .dwattr $C$DW$T$85, DW_AT_decl_column(0x16)
     3030                    $C$DW$T$86      .dwtag  DW_TAG_typedef, DW_AT_name("wchar_t")
     3031                            .dwattr $C$DW$T$86, DW_AT_type(*$C$DW$T$9)
     3032                            .dwattr $C$DW$T$86, DW_AT_language(DW_LANG_C)
-    3033                            .dwattr $C$DW$T$86, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdli
+    3033                            .dwattr $C$DW$T$86, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdli
     3034                            .dwattr $C$DW$T$86, DW_AT_decl_line(0x75)
     3035                            .dwattr $C$DW$T$86, DW_AT_decl_column(0x1a)
     3036                    $C$DW$T$10      .dwtag  DW_TAG_base_type
@@ -3352,13 +3352,13 @@ sensors.asm                                                          PAGE   56
     3040                    $C$DW$T$87      .dwtag  DW_TAG_typedef, DW_AT_name("_Ptrdifft")
     3041                            .dwattr $C$DW$T$87, DW_AT_type(*$C$DW$T$10)
     3042                            .dwattr $C$DW$T$87, DW_AT_language(DW_LANG_C)
-    3043                            .dwattr $C$DW$T$87, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals
+    3043                            .dwattr $C$DW$T$87, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals
     3044                            .dwattr $C$DW$T$87, DW_AT_decl_line(0xa9)
     3045                            .dwattr $C$DW$T$87, DW_AT_decl_column(0x1e)
     3046                    
     3047                    $C$DW$T$88      .dwtag  DW_TAG_subroutine_type
     3048                            .dwattr $C$DW$T$88, DW_AT_type(*$C$DW$T$10)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   57
@@ -3376,13 +3376,13 @@ sensors.asm                                                          PAGE   57
     3059                    $C$DW$T$90      .dwtag  DW_TAG_typedef, DW_AT_name("__TI_compar_fn")
     3060                            .dwattr $C$DW$T$90, DW_AT_type(*$C$DW$T$89)
     3061                            .dwattr $C$DW$T$90, DW_AT_language(DW_LANG_C)
-    3062                            .dwattr $C$DW$T$90, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdli
+    3062                            .dwattr $C$DW$T$90, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdli
     3063                            .dwattr $C$DW$T$90, DW_AT_decl_line(0xb6)
     3064                            .dwattr $C$DW$T$90, DW_AT_decl_column(0x13)
     3065                    $C$DW$T$91      .dwtag  DW_TAG_typedef, DW_AT_name("int32_t")
     3066                            .dwattr $C$DW$T$91, DW_AT_type(*$C$DW$T$10)
     3067                            .dwattr $C$DW$T$91, DW_AT_language(DW_LANG_C)
-    3068                            .dwattr $C$DW$T$91, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    3068                            .dwattr $C$DW$T$91, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     3069                            .dwattr $C$DW$T$91, DW_AT_decl_line(0x2e)
     3070                            .dwattr $C$DW$T$91, DW_AT_decl_column(0x1d)
     3071                    
@@ -3397,28 +3397,28 @@ sensors.asm                                                          PAGE   57
     3080                    $C$DW$T$96      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast16_t")
     3081                            .dwattr $C$DW$T$96, DW_AT_type(*$C$DW$T$91)
     3082                            .dwattr $C$DW$T$96, DW_AT_language(DW_LANG_C)
-    3083                            .dwattr $C$DW$T$96, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    3083                            .dwattr $C$DW$T$96, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     3084                            .dwattr $C$DW$T$96, DW_AT_decl_line(0x47)
     3085                            .dwattr $C$DW$T$96, DW_AT_decl_column(0x17)
     3086                    $C$DW$T$97      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast32_t")
     3087                            .dwattr $C$DW$T$97, DW_AT_type(*$C$DW$T$91)
     3088                            .dwattr $C$DW$T$97, DW_AT_language(DW_LANG_C)
-    3089                            .dwattr $C$DW$T$97, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    3089                            .dwattr $C$DW$T$97, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     3090                            .dwattr $C$DW$T$97, DW_AT_decl_line(0x4a)
     3091                            .dwattr $C$DW$T$97, DW_AT_decl_column(0x17)
     3092                    $C$DW$T$98      .dwtag  DW_TAG_typedef, DW_AT_name("int_fast8_t")
     3093                            .dwattr $C$DW$T$98, DW_AT_type(*$C$DW$T$91)
     3094                            .dwattr $C$DW$T$98, DW_AT_language(DW_LANG_C)
-    3095                            .dwattr $C$DW$T$98, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    3095                            .dwattr $C$DW$T$98, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     3096                            .dwattr $C$DW$T$98, DW_AT_decl_line(0x45)
     3097                            .dwattr $C$DW$T$98, DW_AT_decl_column(0x17)
     3098                    $C$DW$T$99      .dwtag  DW_TAG_typedef, DW_AT_name("int_least32_t")
     3099                            .dwattr $C$DW$T$99, DW_AT_type(*$C$DW$T$91)
     3100                            .dwattr $C$DW$T$99, DW_AT_language(DW_LANG_C)
-    3101                            .dwattr $C$DW$T$99, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    3101                            .dwattr $C$DW$T$99, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     3102                            .dwattr $C$DW$T$99, DW_AT_decl_line(0x3c)
     3103                            .dwattr $C$DW$T$99, DW_AT_decl_column(0x17)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   58
@@ -3426,7 +3426,7 @@ sensors.asm                                                          PAGE   58
     3104                    $C$DW$T$100     .dwtag  DW_TAG_typedef, DW_AT_name("intptr_t")
     3105                            .dwattr $C$DW$T$100, DW_AT_type(*$C$DW$T$10)
     3106                            .dwattr $C$DW$T$100, DW_AT_language(DW_LANG_C)
-    3107                            .dwattr $C$DW$T$100, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3107                            .dwattr $C$DW$T$100, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3108                            .dwattr $C$DW$T$100, DW_AT_decl_line(0x52)
     3109                            .dwattr $C$DW$T$100, DW_AT_decl_column(0x1a)
     3110                    $C$DW$T$11      .dwtag  DW_TAG_base_type
@@ -3436,25 +3436,25 @@ sensors.asm                                                          PAGE   58
     3114                    $C$DW$T$101     .dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
     3115                            .dwattr $C$DW$T$101, DW_AT_type(*$C$DW$T$11)
     3116                            .dwattr $C$DW$T$101, DW_AT_language(DW_LANG_C)
-    3117                            .dwattr $C$DW$T$101, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yval
+    3117                            .dwattr $C$DW$T$101, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yval
     3118                            .dwattr $C$DW$T$101, DW_AT_decl_line(0xab)
     3119                            .dwattr $C$DW$T$101, DW_AT_decl_column(0x1a)
     3120                    $C$DW$T$102     .dwtag  DW_TAG_typedef, DW_AT_name("clock_t")
     3121                            .dwattr $C$DW$T$102, DW_AT_type(*$C$DW$T$11)
     3122                            .dwattr $C$DW$T$102, DW_AT_language(DW_LANG_C)
-    3123                            .dwattr $C$DW$T$102, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time
+    3123                            .dwattr $C$DW$T$102, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time
     3124                            .dwattr $C$DW$T$102, DW_AT_decl_line(0x4f)
     3125                            .dwattr $C$DW$T$102, DW_AT_decl_column(0x16)
     3126                    $C$DW$T$34      .dwtag  DW_TAG_typedef, DW_AT_name("size_t")
     3127                            .dwattr $C$DW$T$34, DW_AT_type(*$C$DW$T$11)
     3128                            .dwattr $C$DW$T$34, DW_AT_language(DW_LANG_C)
-    3129                            .dwattr $C$DW$T$34, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio
+    3129                            .dwattr $C$DW$T$34, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
     3130                            .dwattr $C$DW$T$34, DW_AT_decl_line(0x58)
     3131                            .dwattr $C$DW$T$34, DW_AT_decl_column(0x19)
     3132                    $C$DW$T$103     .dwtag  DW_TAG_typedef, DW_AT_name("time_t")
     3133                            .dwattr $C$DW$T$103, DW_AT_type(*$C$DW$T$11)
     3134                            .dwattr $C$DW$T$103, DW_AT_language(DW_LANG_C)
-    3135                            .dwattr $C$DW$T$103, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time
+    3135                            .dwattr $C$DW$T$103, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time
     3136                            .dwattr $C$DW$T$103, DW_AT_decl_line(0x50)
     3137                            .dwattr $C$DW$T$103, DW_AT_decl_column(0x16)
     3138                    $C$DW$T$104     .dwtag  DW_TAG_pointer_type
@@ -3463,7 +3463,7 @@ sensors.asm                                                          PAGE   58
     3141                    $C$DW$T$39      .dwtag  DW_TAG_typedef, DW_AT_name("uint32_t")
     3142                            .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$11)
     3143                            .dwattr $C$DW$T$39, DW_AT_language(DW_LANG_C)
-    3144                            .dwattr $C$DW$T$39, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdin
+    3144                            .dwattr $C$DW$T$39, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     3145                            .dwattr $C$DW$T$39, DW_AT_decl_line(0x2f)
     3146                            .dwattr $C$DW$T$39, DW_AT_decl_column(0x1c)
     3147                    
@@ -3478,7 +3478,7 @@ sensors.asm                                                          PAGE   58
     3156                    
     3157                    $C$DW$T$111     .dwtag  DW_TAG_array_type
     3158                            .dwattr $C$DW$T$111, DW_AT_type(*$C$DW$T$39)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   59
@@ -3492,31 +3492,31 @@ sensors.asm                                                          PAGE   59
     3165                    $C$DW$T$113     .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast16_t")
     3166                            .dwattr $C$DW$T$113, DW_AT_type(*$C$DW$T$39)
     3167                            .dwattr $C$DW$T$113, DW_AT_language(DW_LANG_C)
-    3168                            .dwattr $C$DW$T$113, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3168                            .dwattr $C$DW$T$113, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3169                            .dwattr $C$DW$T$113, DW_AT_decl_line(0x48)
     3170                            .dwattr $C$DW$T$113, DW_AT_decl_column(0x16)
     3171                    $C$DW$T$114     .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast32_t")
     3172                            .dwattr $C$DW$T$114, DW_AT_type(*$C$DW$T$39)
     3173                            .dwattr $C$DW$T$114, DW_AT_language(DW_LANG_C)
-    3174                            .dwattr $C$DW$T$114, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3174                            .dwattr $C$DW$T$114, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3175                            .dwattr $C$DW$T$114, DW_AT_decl_line(0x4b)
     3176                            .dwattr $C$DW$T$114, DW_AT_decl_column(0x16)
     3177                    $C$DW$T$115     .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast8_t")
     3178                            .dwattr $C$DW$T$115, DW_AT_type(*$C$DW$T$39)
     3179                            .dwattr $C$DW$T$115, DW_AT_language(DW_LANG_C)
-    3180                            .dwattr $C$DW$T$115, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3180                            .dwattr $C$DW$T$115, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3181                            .dwattr $C$DW$T$115, DW_AT_decl_line(0x46)
     3182                            .dwattr $C$DW$T$115, DW_AT_decl_column(0x16)
     3183                    $C$DW$T$116     .dwtag  DW_TAG_typedef, DW_AT_name("uint_least32_t")
     3184                            .dwattr $C$DW$T$116, DW_AT_type(*$C$DW$T$39)
     3185                            .dwattr $C$DW$T$116, DW_AT_language(DW_LANG_C)
-    3186                            .dwattr $C$DW$T$116, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3186                            .dwattr $C$DW$T$116, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3187                            .dwattr $C$DW$T$116, DW_AT_decl_line(0x3d)
     3188                            .dwattr $C$DW$T$116, DW_AT_decl_column(0x16)
     3189                    $C$DW$T$117     .dwtag  DW_TAG_typedef, DW_AT_name("uintptr_t")
     3190                            .dwattr $C$DW$T$117, DW_AT_type(*$C$DW$T$11)
     3191                            .dwattr $C$DW$T$117, DW_AT_language(DW_LANG_C)
-    3192                            .dwattr $C$DW$T$117, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3192                            .dwattr $C$DW$T$117, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3193                            .dwattr $C$DW$T$117, DW_AT_decl_line(0x53)
     3194                            .dwattr $C$DW$T$117, DW_AT_decl_column(0x1a)
     3195                    $C$DW$T$12      .dwtag  DW_TAG_base_type
@@ -3526,19 +3526,19 @@ sensors.asm                                                          PAGE   59
     3199                    $C$DW$T$118     .dwtag  DW_TAG_typedef, DW_AT_name("_Int32t")
     3200                            .dwattr $C$DW$T$118, DW_AT_type(*$C$DW$T$12)
     3201                            .dwattr $C$DW$T$118, DW_AT_language(DW_LANG_C)
-    3202                            .dwattr $C$DW$T$118, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yval
+    3202                            .dwattr $C$DW$T$118, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yval
     3203                            .dwattr $C$DW$T$118, DW_AT_decl_line(0xa6)
     3204                            .dwattr $C$DW$T$118, DW_AT_decl_column(0x0e)
     3205                    $C$DW$T$119     .dwtag  DW_TAG_typedef, DW_AT_name("fpos_t")
     3206                            .dwattr $C$DW$T$119, DW_AT_type(*$C$DW$T$12)
     3207                            .dwattr $C$DW$T$119, DW_AT_language(DW_LANG_C)
-    3208                            .dwattr $C$DW$T$119, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3208                            .dwattr $C$DW$T$119, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3209                            .dwattr $C$DW$T$119, DW_AT_decl_line(0x6e)
     3210                            .dwattr $C$DW$T$119, DW_AT_decl_column(0x0e)
     3211                    $C$DW$T$13      .dwtag  DW_TAG_base_type
     3212                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
     3213                            .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   60
@@ -3547,7 +3547,7 @@ sensors.asm                                                          PAGE   60
     3215                    $C$DW$T$120     .dwtag  DW_TAG_typedef, DW_AT_name("_Uint32t")
     3216                            .dwattr $C$DW$T$120, DW_AT_type(*$C$DW$T$13)
     3217                            .dwattr $C$DW$T$120, DW_AT_language(DW_LANG_C)
-    3218                            .dwattr $C$DW$T$120, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yval
+    3218                            .dwattr $C$DW$T$120, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yval
     3219                            .dwattr $C$DW$T$120, DW_AT_decl_line(0xa7)
     3220                            .dwattr $C$DW$T$120, DW_AT_decl_column(0x17)
     3221                    $C$DW$T$14      .dwtag  DW_TAG_base_type
@@ -3557,31 +3557,31 @@ sensors.asm                                                          PAGE   60
     3225                    $C$DW$T$121     .dwtag  DW_TAG_typedef, DW_AT_name("_Longlong")
     3226                            .dwattr $C$DW$T$121, DW_AT_type(*$C$DW$T$14)
     3227                            .dwattr $C$DW$T$121, DW_AT_language(DW_LANG_C)
-    3228                            .dwattr $C$DW$T$121, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yval
+    3228                            .dwattr $C$DW$T$121, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yval
     3229                            .dwattr $C$DW$T$121, DW_AT_decl_line(0x1b5)
     3230                            .dwattr $C$DW$T$121, DW_AT_decl_column(0x13)
     3231                    $C$DW$T$122     .dwtag  DW_TAG_typedef, DW_AT_name("int64_t")
     3232                            .dwattr $C$DW$T$122, DW_AT_type(*$C$DW$T$14)
     3233                            .dwattr $C$DW$T$122, DW_AT_language(DW_LANG_C)
-    3234                            .dwattr $C$DW$T$122, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3234                            .dwattr $C$DW$T$122, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3235                            .dwattr $C$DW$T$122, DW_AT_decl_line(0x32)
     3236                            .dwattr $C$DW$T$122, DW_AT_decl_column(0x21)
     3237                    $C$DW$T$123     .dwtag  DW_TAG_typedef, DW_AT_name("int_fast64_t")
     3238                            .dwattr $C$DW$T$123, DW_AT_type(*$C$DW$T$122)
     3239                            .dwattr $C$DW$T$123, DW_AT_language(DW_LANG_C)
-    3240                            .dwattr $C$DW$T$123, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3240                            .dwattr $C$DW$T$123, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3241                            .dwattr $C$DW$T$123, DW_AT_decl_line(0x4e)
     3242                            .dwattr $C$DW$T$123, DW_AT_decl_column(0x17)
     3243                    $C$DW$T$124     .dwtag  DW_TAG_typedef, DW_AT_name("int_least64_t")
     3244                            .dwattr $C$DW$T$124, DW_AT_type(*$C$DW$T$122)
     3245                            .dwattr $C$DW$T$124, DW_AT_language(DW_LANG_C)
-    3246                            .dwattr $C$DW$T$124, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3246                            .dwattr $C$DW$T$124, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3247                            .dwattr $C$DW$T$124, DW_AT_decl_line(0x40)
     3248                            .dwattr $C$DW$T$124, DW_AT_decl_column(0x17)
     3249                    $C$DW$T$125     .dwtag  DW_TAG_typedef, DW_AT_name("intmax_t")
     3250                            .dwattr $C$DW$T$125, DW_AT_type(*$C$DW$T$14)
     3251                            .dwattr $C$DW$T$125, DW_AT_language(DW_LANG_C)
-    3252                            .dwattr $C$DW$T$125, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3252                            .dwattr $C$DW$T$125, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3253                            .dwattr $C$DW$T$125, DW_AT_decl_line(0x56)
     3254                            .dwattr $C$DW$T$125, DW_AT_decl_column(0x20)
     3255                    $C$DW$T$15      .dwtag  DW_TAG_base_type
@@ -3591,14 +3591,14 @@ sensors.asm                                                          PAGE   60
     3259                    $C$DW$T$126     .dwtag  DW_TAG_typedef, DW_AT_name("_ULonglong")
     3260                            .dwattr $C$DW$T$126, DW_AT_type(*$C$DW$T$15)
     3261                            .dwattr $C$DW$T$126, DW_AT_language(DW_LANG_C)
-    3262                            .dwattr $C$DW$T$126, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yval
+    3262                            .dwattr $C$DW$T$126, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yval
     3263                            .dwattr $C$DW$T$126, DW_AT_decl_line(0x1b6)
     3264                            .dwattr $C$DW$T$126, DW_AT_decl_column(0x14)
     3265                    $C$DW$T$127     .dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
     3266                            .dwattr $C$DW$T$127, DW_AT_type(*$C$DW$T$15)
     3267                            .dwattr $C$DW$T$127, DW_AT_language(DW_LANG_C)
-    3268                            .dwattr $C$DW$T$127, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+    3268                            .dwattr $C$DW$T$127, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   61
@@ -3608,19 +3608,19 @@ sensors.asm                                                          PAGE   61
     3271                    $C$DW$T$128     .dwtag  DW_TAG_typedef, DW_AT_name("uint_fast64_t")
     3272                            .dwattr $C$DW$T$128, DW_AT_type(*$C$DW$T$127)
     3273                            .dwattr $C$DW$T$128, DW_AT_language(DW_LANG_C)
-    3274                            .dwattr $C$DW$T$128, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3274                            .dwattr $C$DW$T$128, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3275                            .dwattr $C$DW$T$128, DW_AT_decl_line(0x4f)
     3276                            .dwattr $C$DW$T$128, DW_AT_decl_column(0x16)
     3277                    $C$DW$T$129     .dwtag  DW_TAG_typedef, DW_AT_name("uint_least64_t")
     3278                            .dwattr $C$DW$T$129, DW_AT_type(*$C$DW$T$127)
     3279                            .dwattr $C$DW$T$129, DW_AT_language(DW_LANG_C)
-    3280                            .dwattr $C$DW$T$129, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3280                            .dwattr $C$DW$T$129, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3281                            .dwattr $C$DW$T$129, DW_AT_decl_line(0x41)
     3282                            .dwattr $C$DW$T$129, DW_AT_decl_column(0x16)
     3283                    $C$DW$T$130     .dwtag  DW_TAG_typedef, DW_AT_name("uintmax_t")
     3284                            .dwattr $C$DW$T$130, DW_AT_type(*$C$DW$T$15)
     3285                            .dwattr $C$DW$T$130, DW_AT_language(DW_LANG_C)
-    3286                            .dwattr $C$DW$T$130, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdi
+    3286                            .dwattr $C$DW$T$130, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
     3287                            .dwattr $C$DW$T$130, DW_AT_decl_line(0x57)
     3288                            .dwattr $C$DW$T$130, DW_AT_decl_column(0x20)
     3289                    $C$DW$T$16      .dwtag  DW_TAG_base_type
@@ -3638,7 +3638,7 @@ sensors.asm                                                          PAGE   61
     3301                    $C$DW$T$133     .dwtag  DW_TAG_typedef, DW_AT_name("_Sysch_t")
     3302                            .dwattr $C$DW$T$133, DW_AT_type(*$C$DW$T$6)
     3303                            .dwattr $C$DW$T$133, DW_AT_language(DW_LANG_C)
-    3304                            .dwattr $C$DW$T$133, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yval
+    3304                            .dwattr $C$DW$T$133, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yval
     3305                            .dwattr $C$DW$T$133, DW_AT_decl_line(0x218)
     3306                            .dwattr $C$DW$T$133, DW_AT_decl_column(0x0e)
     3307                    
@@ -3658,7 +3658,7 @@ sensors.asm                                                          PAGE   61
     3321                            .dwattr $C$DW$T$134, DW_AT_language(DW_LANG_C)
     3322                            .dwattr $C$DW$T$134, DW_AT_decl_file("../sensors.c")
     3323                            .dwattr $C$DW$T$134, DW_AT_decl_line(0x10a)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   62
@@ -3687,24 +3687,24 @@ sensors.asm                                                          PAGE   62
     3345                            .dwattr $C$DW$188, DW_AT_TI_symbol_name("__ap")
     3346                            .dwattr $C$DW$188, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     3347                            .dwattr $C$DW$188, DW_AT_accessibility(DW_ACCESS_public)
-    3348                            .dwattr $C$DW$188, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg
+    3348                            .dwattr $C$DW$188, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdarg
     3349                            .dwattr $C$DW$188, DW_AT_decl_line(0x36)
     3350                            .dwattr $C$DW$188, DW_AT_decl_column(0x0c)
     3351                            .dwendtag $C$DW$T$27
     3352                    
-    3353                            .dwattr $C$DW$T$27, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdar
+    3353                            .dwattr $C$DW$T$27, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdar
     3354                            .dwattr $C$DW$T$27, DW_AT_decl_line(0x35)
     3355                            .dwattr $C$DW$T$27, DW_AT_decl_column(0x10)
     3356                    $C$DW$T$136     .dwtag  DW_TAG_typedef, DW_AT_name("va_list")
     3357                            .dwattr $C$DW$T$136, DW_AT_type(*$C$DW$T$27)
     3358                            .dwattr $C$DW$T$136, DW_AT_language(DW_LANG_C)
-    3359                            .dwattr $C$DW$T$136, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stda
+    3359                            .dwattr $C$DW$T$136, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stda
     3360                            .dwattr $C$DW$T$136, DW_AT_decl_line(0x37)
     3361                            .dwattr $C$DW$T$136, DW_AT_decl_column(0x03)
     3362                    $C$DW$T$137     .dwtag  DW_TAG_typedef, DW_AT_name("_Va_list")
     3363                            .dwattr $C$DW$T$137, DW_AT_type(*$C$DW$T$136)
     3364                            .dwattr $C$DW$T$137, DW_AT_language(DW_LANG_C)
-    3365                            .dwattr $C$DW$T$137, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yval
+    3365                            .dwattr $C$DW$T$137, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yval
     3366                            .dwattr $C$DW$T$137, DW_AT_decl_line(0x1f6)
     3367                            .dwattr $C$DW$T$137, DW_AT_decl_column(0x17)
     3368                    
@@ -3717,8 +3717,8 @@ sensors.asm                                                          PAGE   62
     3375                            .dwattr $C$DW$189, DW_AT_TI_symbol_name("tm_sec")
     3376                            .dwattr $C$DW$189, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     3377                            .dwattr $C$DW$189, DW_AT_accessibility(DW_ACCESS_public)
-    3378                            .dwattr $C$DW$189, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+    3378                            .dwattr $C$DW$189, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   63
@@ -3731,7 +3731,7 @@ sensors.asm                                                          PAGE   63
     3384                            .dwattr $C$DW$190, DW_AT_TI_symbol_name("tm_min")
     3385                            .dwattr $C$DW$190, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     3386                            .dwattr $C$DW$190, DW_AT_accessibility(DW_ACCESS_public)
-    3387                            .dwattr $C$DW$190, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
+    3387                            .dwattr $C$DW$190, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     3388                            .dwattr $C$DW$190, DW_AT_decl_line(0x5a)
     3389                            .dwattr $C$DW$190, DW_AT_decl_column(0x09)
     3390                    $C$DW$191       .dwtag  DW_TAG_member
@@ -3740,7 +3740,7 @@ sensors.asm                                                          PAGE   63
     3393                            .dwattr $C$DW$191, DW_AT_TI_symbol_name("tm_hour")
     3394                            .dwattr $C$DW$191, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
     3395                            .dwattr $C$DW$191, DW_AT_accessibility(DW_ACCESS_public)
-    3396                            .dwattr $C$DW$191, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
+    3396                            .dwattr $C$DW$191, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     3397                            .dwattr $C$DW$191, DW_AT_decl_line(0x5b)
     3398                            .dwattr $C$DW$191, DW_AT_decl_column(0x09)
     3399                    $C$DW$192       .dwtag  DW_TAG_member
@@ -3749,7 +3749,7 @@ sensors.asm                                                          PAGE   63
     3402                            .dwattr $C$DW$192, DW_AT_TI_symbol_name("tm_mday")
     3403                            .dwattr $C$DW$192, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
     3404                            .dwattr $C$DW$192, DW_AT_accessibility(DW_ACCESS_public)
-    3405                            .dwattr $C$DW$192, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
+    3405                            .dwattr $C$DW$192, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     3406                            .dwattr $C$DW$192, DW_AT_decl_line(0x5c)
     3407                            .dwattr $C$DW$192, DW_AT_decl_column(0x09)
     3408                    $C$DW$193       .dwtag  DW_TAG_member
@@ -3758,7 +3758,7 @@ sensors.asm                                                          PAGE   63
     3411                            .dwattr $C$DW$193, DW_AT_TI_symbol_name("tm_mon")
     3412                            .dwattr $C$DW$193, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
     3413                            .dwattr $C$DW$193, DW_AT_accessibility(DW_ACCESS_public)
-    3414                            .dwattr $C$DW$193, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
+    3414                            .dwattr $C$DW$193, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     3415                            .dwattr $C$DW$193, DW_AT_decl_line(0x5d)
     3416                            .dwattr $C$DW$193, DW_AT_decl_column(0x09)
     3417                    $C$DW$194       .dwtag  DW_TAG_member
@@ -3767,7 +3767,7 @@ sensors.asm                                                          PAGE   63
     3420                            .dwattr $C$DW$194, DW_AT_TI_symbol_name("tm_year")
     3421                            .dwattr $C$DW$194, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
     3422                            .dwattr $C$DW$194, DW_AT_accessibility(DW_ACCESS_public)
-    3423                            .dwattr $C$DW$194, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
+    3423                            .dwattr $C$DW$194, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     3424                            .dwattr $C$DW$194, DW_AT_decl_line(0x5e)
     3425                            .dwattr $C$DW$194, DW_AT_decl_column(0x09)
     3426                    $C$DW$195       .dwtag  DW_TAG_member
@@ -3776,9 +3776,9 @@ sensors.asm                                                          PAGE   63
     3429                            .dwattr $C$DW$195, DW_AT_TI_symbol_name("tm_wday")
     3430                            .dwattr $C$DW$195, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
     3431                            .dwattr $C$DW$195, DW_AT_accessibility(DW_ACCESS_public)
-    3432                            .dwattr $C$DW$195, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
+    3432                            .dwattr $C$DW$195, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     3433                            .dwattr $C$DW$195, DW_AT_decl_line(0x5f)
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   64
@@ -3790,7 +3790,7 @@ sensors.asm                                                          PAGE   64
     3438                            .dwattr $C$DW$196, DW_AT_TI_symbol_name("tm_yday")
     3439                            .dwattr $C$DW$196, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
     3440                            .dwattr $C$DW$196, DW_AT_accessibility(DW_ACCESS_public)
-    3441                            .dwattr $C$DW$196, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
+    3441                            .dwattr $C$DW$196, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     3442                            .dwattr $C$DW$196, DW_AT_decl_line(0x60)
     3443                            .dwattr $C$DW$196, DW_AT_decl_column(0x09)
     3444                    $C$DW$197       .dwtag  DW_TAG_member
@@ -3799,12 +3799,12 @@ sensors.asm                                                          PAGE   64
     3447                            .dwattr $C$DW$197, DW_AT_TI_symbol_name("tm_isdst")
     3448                            .dwattr $C$DW$197, DW_AT_data_member_location[DW_OP_plus_uconst 0x20]
     3449                            .dwattr $C$DW$197, DW_AT_accessibility(DW_ACCESS_public)
-    3450                            .dwattr $C$DW$197, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.h
+    3450                            .dwattr $C$DW$197, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     3451                            .dwattr $C$DW$197, DW_AT_decl_line(0x61)
     3452                            .dwattr $C$DW$197, DW_AT_decl_column(0x09)
     3453                            .dwendtag $C$DW$T$28
     3454                    
-    3455                            .dwattr $C$DW$T$28, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/time.
+    3455                            .dwattr $C$DW$T$28, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.
     3456                            .dwattr $C$DW$T$28, DW_AT_decl_line(0x57)
     3457                            .dwattr $C$DW$T$28, DW_AT_decl_column(0x08)
     3458                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
@@ -3838,7 +3838,7 @@ sensors.asm                                                          PAGE   64
     3486                            .dwcfi  undefined, 66
     3487                            .dwcfi  undefined, 67
     3488                            .dwcfi  undefined, 68
-TI ARM Assembler PC v5.2.5 Sun Nov 29 14:18:53 2015
+TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   65

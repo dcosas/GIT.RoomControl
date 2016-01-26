@@ -1,22 +1,22 @@
 ;******************************************************************************
-;* TI ARM C/C++ Codegen                                             PC v5.2.5 *
-;* Date/Time created: Sun Nov 29 14:18:56 2015                                *
+;* TI ARM C/C++ Codegen                                             PC v5.2.6 *
+;* Date/Time created: Tue Jan 26 13:56:44 2016                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
 
 $C$DW$CU	.dwtag  DW_TAG_compile_unit
-	.dwattr $C$DW$CU, DW_AT_name("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
-	.dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.5 Copyright (c) 1996-2015 Texas Instruments Incorporated")
+	.dwattr $C$DW$CU, DW_AT_name("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.6 Copyright (c) 1996-2015 Texas Instruments Incorporated")
 	.dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-	.dwattr $C$DW$CU, DW_AT_comp_dir("E:\Dev\Ti\Code\GIT\LaunchpadRoomControl\LaunchpadRoomControl\timers\Debug")
+	.dwattr $C$DW$CU, DW_AT_comp_dir("D:\Deian\Dev\TI\temp\LaunchpadRoomControl\timers\Debug")
 
 $C$DW$1	.dwtag  DW_TAG_subprogram, DW_AT_name("get_fattime")
 	.dwattr $C$DW$1, DW_AT_TI_symbol_name("get_fattime")
 	.dwattr $C$DW$1, DW_AT_type(*$C$DW$T$21)
 	.dwattr $C$DW$1, DW_AT_declaration
 	.dwattr $C$DW$1, DW_AT_external
-	.dwattr $C$DW$1, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$1, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$1, DW_AT_decl_line(0xfd)
 	.dwattr $C$DW$1, DW_AT_decl_column(0x07)
 
@@ -25,7 +25,7 @@ $C$DW$2	.dwtag  DW_TAG_subprogram, DW_AT_name("disk_initialize")
 	.dwattr $C$DW$2, DW_AT_type(*$C$DW$T$109)
 	.dwattr $C$DW$2, DW_AT_declaration
 	.dwattr $C$DW$2, DW_AT_external
-	.dwattr $C$DW$2, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$2, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$2, DW_AT_decl_line(0x23)
 	.dwattr $C$DW$2, DW_AT_decl_column(0x09)
 $C$DW$3	.dwtag  DW_TAG_formal_parameter
@@ -38,7 +38,7 @@ $C$DW$4	.dwtag  DW_TAG_subprogram, DW_AT_name("disk_status")
 	.dwattr $C$DW$4, DW_AT_type(*$C$DW$T$109)
 	.dwattr $C$DW$4, DW_AT_declaration
 	.dwattr $C$DW$4, DW_AT_external
-	.dwattr $C$DW$4, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$4, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$4, DW_AT_decl_line(0x24)
 	.dwattr $C$DW$4, DW_AT_decl_column(0x09)
 $C$DW$5	.dwtag  DW_TAG_formal_parameter
@@ -51,7 +51,7 @@ $C$DW$6	.dwtag  DW_TAG_subprogram, DW_AT_name("disk_read")
 	.dwattr $C$DW$6, DW_AT_type(*$C$DW$T$34)
 	.dwattr $C$DW$6, DW_AT_declaration
 	.dwattr $C$DW$6, DW_AT_external
-	.dwattr $C$DW$6, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$6, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$6, DW_AT_decl_line(0x25)
 	.dwattr $C$DW$6, DW_AT_decl_column(0x09)
 $C$DW$7	.dwtag  DW_TAG_formal_parameter
@@ -70,7 +70,7 @@ $C$DW$11	.dwtag  DW_TAG_subprogram, DW_AT_name("disk_write")
 	.dwattr $C$DW$11, DW_AT_type(*$C$DW$T$34)
 	.dwattr $C$DW$11, DW_AT_declaration
 	.dwattr $C$DW$11, DW_AT_external
-	.dwattr $C$DW$11, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$11, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$11, DW_AT_decl_line(0x26)
 	.dwattr $C$DW$11, DW_AT_decl_column(0x09)
 $C$DW$12	.dwtag  DW_TAG_formal_parameter
@@ -89,7 +89,7 @@ $C$DW$16	.dwtag  DW_TAG_subprogram, DW_AT_name("disk_ioctl")
 	.dwattr $C$DW$16, DW_AT_type(*$C$DW$T$34)
 	.dwattr $C$DW$16, DW_AT_declaration
 	.dwattr $C$DW$16, DW_AT_external
-	.dwattr $C$DW$16, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$16, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$16, DW_AT_decl_line(0x27)
 	.dwattr $C$DW$16, DW_AT_decl_column(0x09)
 $C$DW$17	.dwtag  DW_TAG_formal_parameter
@@ -105,7 +105,7 @@ $C$DW$20	.dwtag  DW_TAG_variable, DW_AT_name("FatFs")
 	.dwattr $C$DW$20, DW_AT_TI_symbol_name("FatFs")
 	.dwattr $C$DW$20, DW_AT_type(*$C$DW$T$100)
 	.dwattr $C$DW$20, DW_AT_location[DW_OP_addr FatFs]
-	.dwattr $C$DW$20, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$20, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$20, DW_AT_decl_line(0x1d6)
 	.dwattr $C$DW$20, DW_AT_decl_column(0x08)
 	.common	Fsid,2,2
@@ -113,10 +113,10 @@ $C$DW$21	.dwtag  DW_TAG_variable, DW_AT_name("Fsid")
 	.dwattr $C$DW$21, DW_AT_TI_symbol_name("Fsid")
 	.dwattr $C$DW$21, DW_AT_type(*$C$DW$T$20)
 	.dwattr $C$DW$21, DW_AT_location[DW_OP_addr Fsid]
-	.dwattr $C$DW$21, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$21, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$21, DW_AT_decl_line(0x1dc)
 	.dwattr $C$DW$21, DW_AT_decl_column(0x06)
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.5\bin\armacpia.exe -@C:\\Users\\DCOSAS~1.SAG\\AppData\\Local\\Temp\\0997612 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.6\bin\armacpia.exe -@C:\\Users\\dcosas\\AppData\\Local\\Temp\\2028012 
 	.sect	".text:mem_cpy"
 	.clink
 	.thumbfunc mem_cpy
@@ -126,14 +126,14 @@ $C$DW$22	.dwtag  DW_TAG_subprogram, DW_AT_name("mem_cpy")
 	.dwattr $C$DW$22, DW_AT_low_pc(mem_cpy)
 	.dwattr $C$DW$22, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$22, DW_AT_TI_symbol_name("mem_cpy")
-	.dwattr $C$DW$22, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$22, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$22, DW_AT_TI_begin_line(0x21b)
 	.dwattr $C$DW$22, DW_AT_TI_begin_column(0x06)
-	.dwattr $C$DW$22, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$22, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$22, DW_AT_decl_line(0x21b)
 	.dwattr $C$DW$22, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$22, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 539,column 53,is_stmt,address mem_cpy,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 539,column 53,is_stmt,address mem_cpy,isa 1
 
 	.dwfde $C$DW$CIE, mem_cpy
 $C$DW$23	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dst")
@@ -187,13 +187,13 @@ $C$DW$30	.dwtag  DW_TAG_variable, DW_AT_name("s")
         STR       A3, [SP, #8]          ; [DPU_3_PIPE] |539| 
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |539| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |539| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 540,column 10,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 540,column 10,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 540 | BYTE *d = (BYTE*)dst;                                                  
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |540| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |540| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 541,column 16,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 541,column 16,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 541 | const BYTE *s = (const BYTE*)src;                                      
 ; 543 | #if _WORD_ACCESS == 1                                                  
@@ -205,7 +205,7 @@ $C$DW$30	.dwtag  DW_TAG_variable, DW_AT_name("s")
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |541| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |541| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 550,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 550,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 550 | while (cnt--)                                                          
 ;----------------------------------------------------------------------
@@ -224,7 +224,7 @@ $C$DW$30	.dwtag  DW_TAG_variable, DW_AT_name("s")
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L1||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 551,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 551,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 551 | *d++ = *s++;                                                           
 ;----------------------------------------------------------------------
@@ -235,7 +235,7 @@ $C$DW$30	.dwtag  DW_TAG_variable, DW_AT_name("s")
         ADDS      A2, A1, #1            ; [DPU_3_PIPE] |551| 
         STR       A2, [SP, #12]         ; [DPU_3_PIPE] |551| 
         STRB      A3, [A1, #0]          ; [DPU_3_PIPE] |551| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 550,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 550,column 2,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |550| 
         CMP       A1, #0                ; [DPU_3_PIPE] |550| 
         SUB       A2, A1, #1            ; [DPU_3_PIPE] |550| 
@@ -243,7 +243,7 @@ $C$DW$30	.dwtag  DW_TAG_variable, DW_AT_name("s")
         BNE       ||$C$L1||             ; [DPU_3_PIPE] |550| 
         ; BRANCHCC OCCURS {||$C$L1||}    ; [] |550| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 552,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 552,column 1,is_stmt,isa 1
 ;* --------------------------------------------------------------------------*
 ||$C$L2||:    
         ADD       SP, SP, #24           ; [DPU_3_PIPE] 
@@ -253,7 +253,7 @@ $C$DW$31	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$31, DW_AT_TI_return
         BX        LR                    ; [DPU_3_PIPE] 
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$22, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$22, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$22, DW_AT_TI_end_line(0x228)
 	.dwattr $C$DW$22, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -268,14 +268,14 @@ $C$DW$32	.dwtag  DW_TAG_subprogram, DW_AT_name("mem_set")
 	.dwattr $C$DW$32, DW_AT_low_pc(mem_set)
 	.dwattr $C$DW$32, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$32, DW_AT_TI_symbol_name("mem_set")
-	.dwattr $C$DW$32, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$32, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$32, DW_AT_TI_begin_line(0x22c)
 	.dwattr $C$DW$32, DW_AT_TI_begin_column(0x06)
-	.dwattr $C$DW$32, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$32, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$32, DW_AT_decl_line(0x22c)
 	.dwattr $C$DW$32, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$32, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 556,column 45,is_stmt,address mem_set,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 556,column 45,is_stmt,address mem_set,isa 1
 
 	.dwfde $C$DW$CIE, mem_set
 $C$DW$33	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dst")
@@ -325,13 +325,13 @@ $C$DW$39	.dwtag  DW_TAG_variable, DW_AT_name("d")
         STR       A3, [SP, #8]          ; [DPU_3_PIPE] |556| 
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |556| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |556| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 557,column 10,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 557,column 10,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 557 | BYTE *d = (BYTE*)dst;                                                  
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |557| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |557| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 559,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 559,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 559 | while (cnt--)                                                          
 ;----------------------------------------------------------------------
@@ -350,7 +350,7 @@ $C$DW$39	.dwtag  DW_TAG_variable, DW_AT_name("d")
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L3||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 560,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 560,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 560 | *d++ = (BYTE)val;                                                      
 ;----------------------------------------------------------------------
@@ -359,7 +359,7 @@ $C$DW$39	.dwtag  DW_TAG_variable, DW_AT_name("d")
         STR       A2, [SP, #12]         ; [DPU_3_PIPE] |560| 
         LDRB      A2, [SP, #4]          ; [DPU_3_PIPE] |560| 
         STRB      A2, [A1, #0]          ; [DPU_3_PIPE] |560| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 559,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 559,column 2,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |559| 
         CMP       A1, #0                ; [DPU_3_PIPE] |559| 
         SUB       A2, A1, #1            ; [DPU_3_PIPE] |559| 
@@ -367,7 +367,7 @@ $C$DW$39	.dwtag  DW_TAG_variable, DW_AT_name("d")
         BNE       ||$C$L3||             ; [DPU_3_PIPE] |559| 
         ; BRANCHCC OCCURS {||$C$L3||}    ; [] |559| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 561,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 561,column 1,is_stmt,isa 1
 ;* --------------------------------------------------------------------------*
 ||$C$L4||:    
         ADD       SP, SP, #16           ; [DPU_3_PIPE] 
@@ -377,7 +377,7 @@ $C$DW$40	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$40, DW_AT_TI_return
         BX        LR                    ; [DPU_3_PIPE] 
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$32, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$32, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$32, DW_AT_TI_end_line(0x231)
 	.dwattr $C$DW$32, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -393,14 +393,14 @@ $C$DW$41	.dwtag  DW_TAG_subprogram, DW_AT_name("mem_cmp")
 	.dwattr $C$DW$41, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$41, DW_AT_TI_symbol_name("mem_cmp")
 	.dwattr $C$DW$41, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$41, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$41, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$41, DW_AT_TI_begin_line(0x235)
 	.dwattr $C$DW$41, DW_AT_TI_begin_column(0x05)
-	.dwattr $C$DW$41, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$41, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$41, DW_AT_decl_line(0x235)
 	.dwattr $C$DW$41, DW_AT_decl_column(0x05)
 	.dwattr $C$DW$41, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 565,column 58,is_stmt,address mem_cmp,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 565,column 58,is_stmt,address mem_cmp,isa 1
 
 	.dwfde $C$DW$CIE, mem_cmp
 $C$DW$42	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dst")
@@ -458,22 +458,22 @@ $C$DW$50	.dwtag  DW_TAG_variable, DW_AT_name("r")
         STR       A3, [SP, #8]          ; [DPU_3_PIPE] |565| 
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |565| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |565| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 566,column 16,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 566,column 16,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 566 | const BYTE *d = (const BYTE *)dst, *s = (const BYTE *)src;             
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |566| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |566| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 566,column 40,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 566,column 40,is_stmt,isa 1
         LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |566| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |566| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 567,column 8,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 567,column 8,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 567 | int r = 0;                                                             
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |567| 
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |567| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 569,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 569,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 569 | while (cnt-- && (r = *d++ - *s++) == 0) ;                              
 ;----------------------------------------------------------------------
@@ -487,7 +487,7 @@ $C$DW$50	.dwtag  DW_TAG_variable, DW_AT_name("r")
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L5||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 569,column 9,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 569,column 9,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |569| 
         SUBS      A2, A1, #1            ; [DPU_3_PIPE] |569| 
         STR       A2, [SP, #8]          ; [DPU_3_PIPE] |569| 
@@ -506,12 +506,12 @@ $C$DW$50	.dwtag  DW_TAG_variable, DW_AT_name("r")
         ; BRANCHCC OCCURS {||$C$L5||}    ; [] |569| 
 ;* --------------------------------------------------------------------------*
 ||$C$L6||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 570,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 570,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 570 | return r;                                                              
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |570| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 571,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 571,column 1,is_stmt,isa 1
         ADD       SP, SP, #24           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
 $C$DW$51	.dwtag  DW_TAG_TI_branch
@@ -519,7 +519,7 @@ $C$DW$51	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$51, DW_AT_TI_return
         BX        LR                    ; [DPU_3_PIPE] 
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$41, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$41, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$41, DW_AT_TI_end_line(0x23b)
 	.dwattr $C$DW$41, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -535,14 +535,14 @@ $C$DW$52	.dwtag  DW_TAG_subprogram, DW_AT_name("chk_chr")
 	.dwattr $C$DW$52, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$52, DW_AT_TI_symbol_name("chk_chr")
 	.dwattr $C$DW$52, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$52, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$52, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$52, DW_AT_TI_begin_line(0x23f)
 	.dwattr $C$DW$52, DW_AT_TI_begin_column(0x05)
-	.dwattr $C$DW$52, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$52, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$52, DW_AT_decl_line(0x23f)
 	.dwattr $C$DW$52, DW_AT_decl_column(0x05)
 	.dwattr $C$DW$52, DW_AT_TI_max_frame_size(0x08)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 575,column 40,is_stmt,address chk_chr,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 575,column 40,is_stmt,address chk_chr,isa 1
 
 	.dwfde $C$DW$CIE, chk_chr
 $C$DW$53	.dwtag  DW_TAG_formal_parameter, DW_AT_name("str")
@@ -579,7 +579,7 @@ $C$DW$56	.dwtag  DW_TAG_variable, DW_AT_name("chr")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |575| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |575| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 576,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 576,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 576 | while (*str && *str != chr) str++;                                     
 ;----------------------------------------------------------------------
@@ -587,7 +587,7 @@ $C$DW$56	.dwtag  DW_TAG_variable, DW_AT_name("chr")
         ; BRANCH OCCURS {||$C$L8||}      ; [] |576| 
 ;* --------------------------------------------------------------------------*
 ||$C$L7||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 576,column 30,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 576,column 30,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |576| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |576| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |576| 
@@ -595,7 +595,7 @@ $C$DW$56	.dwtag  DW_TAG_variable, DW_AT_name("chr")
 ;*   BEGIN LOOP ||$C$L8||
 ;* --------------------------------------------------------------------------*
 ||$C$L8||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 576,column 9,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 576,column 9,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |576| 
         LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |576| 
         CBZ       A1, ||$C$L9||         ; [] 
@@ -609,13 +609,13 @@ $C$DW$56	.dwtag  DW_TAG_variable, DW_AT_name("chr")
         ; BRANCHCC OCCURS {||$C$L7||}    ; [] |576| 
 ;* --------------------------------------------------------------------------*
 ||$C$L9||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 577,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 577,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 577 | return *str;                                                           
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |577| 
         LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |577| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 578,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 578,column 1,is_stmt,isa 1
         ADD       SP, SP, #8            ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
 $C$DW$57	.dwtag  DW_TAG_TI_branch
@@ -623,7 +623,7 @@ $C$DW$57	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$57, DW_AT_TI_return
         BX        LR                    ; [DPU_3_PIPE] 
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$52, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$52, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$52, DW_AT_TI_end_line(0x242)
 	.dwattr $C$DW$52, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -639,14 +639,14 @@ $C$DW$58	.dwtag  DW_TAG_subprogram, DW_AT_name("sync_window")
 	.dwattr $C$DW$58, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$58, DW_AT_TI_symbol_name("sync_window")
 	.dwattr $C$DW$58, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$58, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$58, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$58, DW_AT_TI_begin_line(0x2dc)
 	.dwattr $C$DW$58, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$58, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$58, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$58, DW_AT_decl_line(0x2dc)
 	.dwattr $C$DW$58, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$58, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 735,column 1,is_stmt,address sync_window,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 735,column 1,is_stmt,address sync_window,isa 1
 
 	.dwfde $C$DW$CIE, sync_window
 $C$DW$59	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fs")
@@ -696,7 +696,7 @@ $C$DW$62	.dwtag  DW_TAG_variable, DW_AT_name("nf")
 ; 737 | UINT nf;                                                               
 ;----------------------------------------------------------------------
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |735| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 740,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 740,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 740 | if (fs->wflag) {        /* Write back the sector if it is dirty */     
 ;----------------------------------------------------------------------
@@ -706,14 +706,14 @@ $C$DW$62	.dwtag  DW_TAG_variable, DW_AT_name("nf")
         BEQ       ||$C$L12||            ; [DPU_3_PIPE] |740| 
         ; BRANCHCC OCCURS {||$C$L12||}   ; [] |740| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 741,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 741,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 741 | wsect = fs->winsect;    /* Current sector number */                    
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |741| 
         LDR       A1, [A1, #48]         ; [DPU_3_PIPE] |741| 
         STR       A1, [SP, #4]          ; [DPU_3_PIPE] |741| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 742,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 742,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 742 | if (disk_write(fs->drv, fs->win, wsect, 1) != RES_OK)                  
 ;----------------------------------------------------------------------
@@ -732,7 +732,7 @@ $C$DW$63	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L10||        ; [] 
         ; BRANCHCC OCCURS {||$C$L10||}   ; [] |742| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 743,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 743,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 743 | return FR_DISK_ERR;                                                    
 ;----------------------------------------------------------------------
@@ -741,14 +741,14 @@ $C$DW$63	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L13||}     ; [] |743| 
 ;* --------------------------------------------------------------------------*
 ||$C$L10||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 744,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 744,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 744 | fs->wflag = 0;                                                         
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |744| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |744| 
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |744| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 745,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 745,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 745 | if (wsect >= fs->fatbase && wsect < (fs->fatbase + fs->fsize)) {
 ;     |  /* In FAT area? */                                                    
@@ -770,7 +770,7 @@ $C$DW$63	.dwtag  DW_TAG_TI_branch
         BLS       ||$C$L12||            ; [DPU_3_PIPE] |745| 
         ; BRANCHCC OCCURS {||$C$L12||}   ; [] |745| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 746,column 9,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 746,column 9,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 746 | for (nf = fs->n_fats; nf >= 2; nf--) {  /* Reflect the change to all FA
 ;     | T copies */                                                            
@@ -778,7 +778,7 @@ $C$DW$63	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |746| 
         LDRB      A1, [A1, #3]          ; [DPU_3_PIPE] |746| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |746| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 746,column 26,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 746,column 26,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |746| 
         CMP       A1, #2                ; [DPU_3_PIPE] |746| 
         BCC       ||$C$L12||            ; [DPU_3_PIPE] |746| 
@@ -793,7 +793,7 @@ $C$DW$63	.dwtag  DW_TAG_TI_branch
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L11||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 747,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 747,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 747 | wsect += fs->fsize;                                                    
 ;----------------------------------------------------------------------
@@ -802,7 +802,7 @@ $C$DW$63	.dwtag  DW_TAG_TI_branch
         LDR       A1, [A1, #28]         ; [DPU_3_PIPE] |747| 
         ADDS      A1, A1, A2            ; [DPU_3_PIPE] |747| 
         STR       A1, [SP, #4]          ; [DPU_3_PIPE] |747| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 748,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 748,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 748 | disk_write(fs->drv, fs->win, wsect, 1);                                
 ;----------------------------------------------------------------------
@@ -818,32 +818,32 @@ $C$DW$64	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$64, DW_AT_TI_call
         BL        disk_write            ; [DPU_3_PIPE] |748| 
         ; CALL OCCURS {disk_write }      ; [] |748| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 746,column 35,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 746,column 35,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |746| 
         SUBS      A1, A1, #1            ; [DPU_3_PIPE] |746| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |746| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 746,column 26,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 746,column 26,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |746| 
         CMP       A1, #2                ; [DPU_3_PIPE] |746| 
         BCS       ||$C$L11||            ; [DPU_3_PIPE] |746| 
         ; BRANCHCC OCCURS {||$C$L11||}   ; [] |746| 
 ;* --------------------------------------------------------------------------*
 ||$C$L12||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 752,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 752,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 752 | return FR_OK;                                                          
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |752| 
 ;* --------------------------------------------------------------------------*
 ||$C$L13||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 753,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 753,column 1,is_stmt,isa 1
 $C$DW$65	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$65, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$65, DW_AT_TI_return
         POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$58, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$58, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$58, DW_AT_TI_end_line(0x2f1)
 	.dwattr $C$DW$58, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -859,14 +859,14 @@ $C$DW$66	.dwtag  DW_TAG_subprogram, DW_AT_name("move_window")
 	.dwattr $C$DW$66, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$66, DW_AT_TI_symbol_name("move_window")
 	.dwattr $C$DW$66, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$66, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$66, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$66, DW_AT_TI_begin_line(0x2f6)
 	.dwattr $C$DW$66, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$66, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$66, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$66, DW_AT_decl_line(0x2f6)
 	.dwattr $C$DW$66, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$66, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 762,column 1,is_stmt,address move_window,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 762,column 1,is_stmt,address move_window,isa 1
 
 	.dwfde $C$DW$CIE, move_window
 $C$DW$67	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fs")
@@ -914,7 +914,7 @@ $C$DW$70	.dwtag  DW_TAG_variable, DW_AT_name("sector")
 	.dwattr $C$DW$70, DW_AT_location[DW_OP_breg13 4]
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |762| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |762| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 763,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 763,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 763 | if (sector != fs->winsect) {    /* Changed current window */           
 ; 764 | #if !_FS_READONLY                                                      
@@ -926,7 +926,7 @@ $C$DW$70	.dwtag  DW_TAG_variable, DW_AT_name("sector")
         BEQ       ||$C$L16||            ; [DPU_3_PIPE] |763| 
         ; BRANCHCC OCCURS {||$C$L16||}   ; [] |763| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 765,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 765,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 765 | if (sync_window(fs) != FR_OK)                                          
 ;----------------------------------------------------------------------
@@ -940,7 +940,7 @@ $C$DW$71	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L14||        ; [] 
         ; BRANCHCC OCCURS {||$C$L14||}   ; [] |765| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 766,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 766,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 766 | return FR_DISK_ERR;                                                    
 ; 767 | #endif                                                                 
@@ -950,7 +950,7 @@ $C$DW$71	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L17||}     ; [] |766| 
 ;* --------------------------------------------------------------------------*
 ||$C$L14||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 768,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 768,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 768 | if (disk_read(fs->drv, fs->win, sector, 1) != RES_OK)                  
 ;----------------------------------------------------------------------
@@ -969,7 +969,7 @@ $C$DW$72	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L15||        ; [] 
         ; BRANCHCC OCCURS {||$C$L15||}   ; [] |768| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 769,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 769,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 769 | return FR_DISK_ERR;                                                    
 ;----------------------------------------------------------------------
@@ -978,7 +978,7 @@ $C$DW$72	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L17||}     ; [] |769| 
 ;* --------------------------------------------------------------------------*
 ||$C$L15||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 770,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 770,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 770 | fs->winsect = sector;                                                  
 ;----------------------------------------------------------------------
@@ -987,21 +987,21 @@ $C$DW$72	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #48]         ; [DPU_3_PIPE] |770| 
 ;* --------------------------------------------------------------------------*
 ||$C$L16||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 773,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 773,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 773 | return FR_OK;                                                          
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |773| 
 ;* --------------------------------------------------------------------------*
 ||$C$L17||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 774,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 774,column 1,is_stmt,isa 1
 $C$DW$73	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$73, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$73, DW_AT_TI_return
         POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$66, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$66, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$66, DW_AT_TI_end_line(0x306)
 	.dwattr $C$DW$66, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -1017,14 +1017,14 @@ $C$DW$74	.dwtag  DW_TAG_subprogram, DW_AT_name("sync_fs")
 	.dwattr $C$DW$74, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$74, DW_AT_TI_symbol_name("sync_fs")
 	.dwattr $C$DW$74, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$74, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$74, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$74, DW_AT_TI_begin_line(0x310)
 	.dwattr $C$DW$74, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$74, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$74, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$74, DW_AT_decl_line(0x310)
 	.dwattr $C$DW$74, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$74, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 787,column 1,is_stmt,address sync_fs,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 787,column 1,is_stmt,address sync_fs,isa 1
 
 	.dwfde $C$DW$CIE, sync_fs
 $C$DW$75	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fs")
@@ -1069,7 +1069,7 @@ $C$DW$77	.dwtag  DW_TAG_variable, DW_AT_name("res")
 ; 788 | FRESULT res;                                                           
 ;----------------------------------------------------------------------
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |787| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 791,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 791,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 791 | res = sync_window(fs);                                                 
 ;----------------------------------------------------------------------
@@ -1081,7 +1081,7 @@ $C$DW$78	.dwtag  DW_TAG_TI_branch
         BL        sync_window           ; [DPU_3_PIPE] |791| 
         ; CALL OCCURS {sync_window }     ; [] |791| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |791| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 792,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 792,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 792 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -1090,7 +1090,7 @@ $C$DW$78	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L19||            ; [DPU_3_PIPE] |792| 
         ; BRANCHCC OCCURS {||$C$L19||}   ; [] |792| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 794,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 794,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 794 | if (fs->fs_type == FS_FAT32 && fs->fsi_flag) {                         
 ;----------------------------------------------------------------------
@@ -1106,14 +1106,14 @@ $C$DW$78	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L18||            ; [DPU_3_PIPE] |794| 
         ; BRANCHCC OCCURS {||$C$L18||}   ; [] |794| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 795,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 795,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 795 | fs->winsect = 0;                                                       
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |795| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |795| 
         STR       A2, [A1, #48]         ; [DPU_3_PIPE] |795| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 797,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 797,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 797 | mem_set(fs->win, 0, 512);                                              
 ;----------------------------------------------------------------------
@@ -1127,7 +1127,7 @@ $C$DW$79	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$79, DW_AT_TI_call
         BL        mem_set               ; [DPU_3_PIPE] |797| 
         ; CALL OCCURS {mem_set }         ; [] |797| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 798,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 798,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 798 | ST_WORD(fs->win+BS_55AA, 0xAA55);                                      
 ;----------------------------------------------------------------------
@@ -1137,7 +1137,7 @@ $C$DW$79	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |798| 
         MOVS      A1, #170              ; [DPU_3_PIPE] |798| 
         STRB      A1, [A2, #563]        ; [DPU_3_PIPE] |798| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 799,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 799,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 799 | ST_DWORD(fs->win+FSI_LeadSig, 0x41615252);                             
 ;----------------------------------------------------------------------
@@ -1153,7 +1153,7 @@ $C$DW$79	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |799| 
         MOVS      A1, #65               ; [DPU_3_PIPE] |799| 
         STRB      A1, [A2, #55]         ; [DPU_3_PIPE] |799| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 800,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 800,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 800 | ST_DWORD(fs->win+FSI_StrucSig, 0x61417272);                            
 ;----------------------------------------------------------------------
@@ -1169,7 +1169,7 @@ $C$DW$79	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |800| 
         MOVS      A1, #97               ; [DPU_3_PIPE] |800| 
         STRB      A1, [A2, #539]        ; [DPU_3_PIPE] |800| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 801,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 801,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 801 | ST_DWORD(fs->win+FSI_Free_Count, fs->free_clust);                      
 ;----------------------------------------------------------------------
@@ -1190,7 +1190,7 @@ $C$DW$79	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |801| 
         LDRB      A1, [A1, #19]         ; [DPU_3_PIPE] |801| 
         STRB      A1, [A2, #543]        ; [DPU_3_PIPE] |801| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 802,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 802,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 802 | ST_DWORD(fs->win+FSI_Nxt_Free, fs->last_clust);                        
 ;----------------------------------------------------------------------
@@ -1211,7 +1211,7 @@ $C$DW$79	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |802| 
         LDRB      A1, [A1, #15]         ; [DPU_3_PIPE] |802| 
         STRB      A1, [A2, #547]        ; [DPU_3_PIPE] |802| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 804,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 804,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 804 | disk_write(fs->drv, fs->win, fs->fsi_sector, 1);                       
 ;----------------------------------------------------------------------
@@ -1228,7 +1228,7 @@ $C$DW$80	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$80, DW_AT_TI_call
         BL        disk_write            ; [DPU_3_PIPE] |804| 
         ; CALL OCCURS {disk_write }      ; [] |804| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 805,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 805,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 805 | fs->fsi_flag = 0;                                                      
 ;----------------------------------------------------------------------
@@ -1237,7 +1237,7 @@ $C$DW$80	.dwtag  DW_TAG_TI_branch
         STRB      A2, [A1, #5]          ; [DPU_3_PIPE] |805| 
 ;* --------------------------------------------------------------------------*
 ||$C$L18||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 808,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 808,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 808 | if (disk_ioctl(fs->drv, CTRL_SYNC, 0) != RES_OK)                       
 ;----------------------------------------------------------------------
@@ -1254,7 +1254,7 @@ $C$DW$81	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L19||        ; [] 
         ; BRANCHCC OCCURS {||$C$L19||}   ; [] |808| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 809,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 809,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 809 | res = FR_DISK_ERR;                                                     
 ;----------------------------------------------------------------------
@@ -1262,19 +1262,19 @@ $C$DW$81	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |809| 
 ;* --------------------------------------------------------------------------*
 ||$C$L19||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 812,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 812,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 812 | return res;                                                            
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |812| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 813,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 813,column 1,is_stmt,isa 1
 $C$DW$82	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$82, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$82, DW_AT_TI_return
         POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$74, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$74, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$74, DW_AT_TI_end_line(0x32d)
 	.dwattr $C$DW$74, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -1292,14 +1292,14 @@ $C$DW$83	.dwtag  DW_TAG_subprogram, DW_AT_name("clust2sect")
 	.dwattr $C$DW$83, DW_AT_TI_symbol_name("clust2sect")
 	.dwattr $C$DW$83, DW_AT_external
 	.dwattr $C$DW$83, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$83, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$83, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$83, DW_AT_TI_begin_line(0x338)
 	.dwattr $C$DW$83, DW_AT_TI_begin_column(0x07)
-	.dwattr $C$DW$83, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$83, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$83, DW_AT_decl_line(0x338)
 	.dwattr $C$DW$83, DW_AT_decl_column(0x07)
 	.dwattr $C$DW$83, DW_AT_TI_max_frame_size(0x08)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 828,column 1,is_stmt,address clust2sect,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 828,column 1,is_stmt,address clust2sect,isa 1
 
 	.dwfde $C$DW$CIE, clust2sect
 $C$DW$84	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fs")
@@ -1340,14 +1340,14 @@ $C$DW$87	.dwtag  DW_TAG_variable, DW_AT_name("clst")
 	.dwattr $C$DW$87, DW_AT_location[DW_OP_breg13 4]
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |828| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |828| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 829,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 829,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 829 | clst -= 2;                                                             
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |829| 
         SUBS      A1, A1, #2            ; [DPU_3_PIPE] |829| 
         STR       A1, [SP, #4]          ; [DPU_3_PIPE] |829| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 830,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 830,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 830 | if (clst >= (fs->n_fatent - 2)) return 0;               /* Invalid clus
 ;     | ter# */                                                                
@@ -1360,13 +1360,13 @@ $C$DW$87	.dwtag  DW_TAG_variable, DW_AT_name("clst")
         BHI       ||$C$L20||            ; [DPU_3_PIPE] |830| 
         ; BRANCHCC OCCURS {||$C$L20||}   ; [] |830| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 830,column 34,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 830,column 34,is_stmt,isa 1
         MOVS      A1, #0                ; [DPU_3_PIPE] |830| 
         B         ||$C$L21||            ; [DPU_3_PIPE] |830| 
         ; BRANCH OCCURS {||$C$L21||}     ; [] |830| 
 ;* --------------------------------------------------------------------------*
 ||$C$L20||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 831,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 831,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 831 | return clst * fs->csize + fs->database;                                
 ;----------------------------------------------------------------------
@@ -1378,7 +1378,7 @@ $C$DW$87	.dwtag  DW_TAG_variable, DW_AT_name("clst")
         MLA       A1, A2, A3, A1        ; [DPU_3_PIPE] |831| 
 ;* --------------------------------------------------------------------------*
 ||$C$L21||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 832,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 832,column 1,is_stmt,isa 1
         ADD       SP, SP, #8            ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
 $C$DW$88	.dwtag  DW_TAG_TI_branch
@@ -1386,7 +1386,7 @@ $C$DW$88	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$88, DW_AT_TI_return
         BX        LR                    ; [DPU_3_PIPE] 
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$83, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$83, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$83, DW_AT_TI_end_line(0x340)
 	.dwattr $C$DW$83, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -1404,14 +1404,14 @@ $C$DW$89	.dwtag  DW_TAG_subprogram, DW_AT_name("get_fat")
 	.dwattr $C$DW$89, DW_AT_TI_symbol_name("get_fat")
 	.dwattr $C$DW$89, DW_AT_external
 	.dwattr $C$DW$89, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$89, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$89, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$89, DW_AT_TI_begin_line(0x34a)
 	.dwattr $C$DW$89, DW_AT_TI_begin_column(0x07)
-	.dwattr $C$DW$89, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$89, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$89, DW_AT_decl_line(0x34a)
 	.dwattr $C$DW$89, DW_AT_decl_column(0x07)
 	.dwattr $C$DW$89, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 846,column 1,is_stmt,address get_fat,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 846,column 1,is_stmt,address get_fat,isa 1
 
 	.dwfde $C$DW$CIE, get_fat
 $C$DW$90	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fs")
@@ -1475,7 +1475,7 @@ $C$DW$96	.dwtag  DW_TAG_variable, DW_AT_name("p")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |846| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |846| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 851,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 851,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 851 | if (clst < 2 || clst >= fs->n_fatent)   /* Check range */              
 ;----------------------------------------------------------------------
@@ -1492,7 +1492,7 @@ $C$DW$96	.dwtag  DW_TAG_variable, DW_AT_name("p")
         ; BRANCHCC OCCURS {||$C$L27||}   ; [] |851| 
 ;* --------------------------------------------------------------------------*
 ||$C$L22||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 852,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 852,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 852 | return 1;                                                              
 ; 854 | switch (fs->fs_type) {                                                 
@@ -1504,18 +1504,18 @@ $C$DW$96	.dwtag  DW_TAG_variable, DW_AT_name("p")
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L23||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 856,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 856,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 856 | bc = (UINT)clst; bc += bc / 2;                                         
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |856| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |856| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 856,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 856,column 20,is_stmt,isa 1
         LDR       A2, [SP, #12]         ; [DPU_3_PIPE] |856| 
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |856| 
         ADD       A1, A1, A2, LSR #1    ; [DPU_3_PIPE] |856| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |856| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 857,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 857,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 857 | if (move_window(fs, fs->fatbase + (bc / SS(fs)))) break;               
 ;----------------------------------------------------------------------
@@ -1534,8 +1534,8 @@ $C$DW$97	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L28||            ; [DPU_3_PIPE] |857| 
         ; BRANCHCC OCCURS {||$C$L28||}   ; [] |857| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 857,column 53,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 858,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 857,column 53,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 858,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 858 | wc = fs->win[bc % SS(fs)]; bc++;                                       
 ;----------------------------------------------------------------------
@@ -1545,11 +1545,11 @@ $C$DW$97	.dwtag  DW_TAG_TI_branch
         ADDS      A1, A1, A2            ; [DPU_3_PIPE] |858| 
         LDRB      A1, [A1, #52]         ; [DPU_3_PIPE] |858| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |858| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 858,column 30,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 858,column 30,is_stmt,isa 1
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |858| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |858| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |858| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 859,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 859,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 859 | if (move_window(fs, fs->fatbase + (bc / SS(fs)))) break;               
 ;----------------------------------------------------------------------
@@ -1568,8 +1568,8 @@ $C$DW$98	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L28||            ; [DPU_3_PIPE] |859| 
         ; BRANCHCC OCCURS {||$C$L28||}   ; [] |859| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 859,column 53,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 860,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 859,column 53,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 860,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 860 | wc |= fs->win[bc % SS(fs)] << 8;                                       
 ;----------------------------------------------------------------------
@@ -1581,7 +1581,7 @@ $C$DW$98	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [A1, #52]         ; [DPU_3_PIPE] |860| 
         ORR       A2, A2, A1, LSL #8    ; [DPU_3_PIPE] |860| 
         STR       A2, [SP, #8]          ; [DPU_3_PIPE] |860| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 861,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 861,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 861 | return (clst & 1) ? (wc >> 4) : (wc & 0xFFF);                          
 ; 863 | case FS_FAT16 :                                                        
@@ -1603,7 +1603,7 @@ $C$DW$98	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L29||}     ; [] |861| 
 ;* --------------------------------------------------------------------------*
 ||$C$L25||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 864,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 864,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 864 | if (move_window(fs, fs->fatbase + (clst / (SS(fs) / 2)))) break;       
 ;----------------------------------------------------------------------
@@ -1622,8 +1622,8 @@ $C$DW$99	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L28||            ; [DPU_3_PIPE] |864| 
         ; BRANCHCC OCCURS {||$C$L28||}   ; [] |864| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 864,column 61,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 865,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 864,column 61,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 865,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 865 | p = &fs->win[clst * 2 % SS(fs)];                                       
 ;----------------------------------------------------------------------
@@ -1634,7 +1634,7 @@ $C$DW$99	.dwtag  DW_TAG_TI_branch
         ADDS      A1, A1, A2            ; [DPU_3_PIPE] |865| 
         ADDS      A1, A1, #52           ; [DPU_3_PIPE] |865| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |865| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 866,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 866,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 866 | return LD_WORD(p);                                                     
 ; 868 | case FS_FAT32 :                                                        
@@ -1649,7 +1649,7 @@ $C$DW$99	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L29||}     ; [] |866| 
 ;* --------------------------------------------------------------------------*
 ||$C$L26||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 869,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 869,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 869 | if (move_window(fs, fs->fatbase + (clst / (SS(fs) / 4)))) break;       
 ;----------------------------------------------------------------------
@@ -1667,8 +1667,8 @@ $C$DW$100	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L28||        ; [] 
         ; BRANCHCC OCCURS {||$C$L28||}   ; [] |869| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 869,column 61,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 870,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 869,column 61,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 870,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 870 | p = &fs->win[clst * 4 % SS(fs)];                                       
 ;----------------------------------------------------------------------
@@ -1679,7 +1679,7 @@ $C$DW$100	.dwtag  DW_TAG_TI_branch
         ADDS      A1, A1, A2            ; [DPU_3_PIPE] |870| 
         ADDS      A1, A1, #52           ; [DPU_3_PIPE] |870| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |870| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 871,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 871,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 871 | return LD_DWORD(p) & 0x0FFFFFFF;                                       
 ;----------------------------------------------------------------------
@@ -1701,7 +1701,7 @@ $C$DW$100	.dwtag  DW_TAG_TI_branch
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L27||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 854,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 854,column 2,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |854| 
         LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |854| 
         SUBS      A1, A1, #1            ; [DPU_3_PIPE] |854| 
@@ -1717,14 +1717,14 @@ $C$DW$100	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L26||}   ; [] |854| 
 ;* --------------------------------------------------------------------------*
 ||$C$L28||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 874,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 874,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 874 | return 0xFFFFFFFF;      /* An error occurred at the disk I/O layer */  
 ;----------------------------------------------------------------------
         MOV       A1, #-1               ; [DPU_3_PIPE] |874| 
 ;* --------------------------------------------------------------------------*
 ||$C$L29||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 875,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 875,column 1,is_stmt,isa 1
         ADD       SP, SP, #20           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$101	.dwtag  DW_TAG_TI_branch
@@ -1733,7 +1733,7 @@ $C$DW$101	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$89, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$89, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$89, DW_AT_TI_end_line(0x36b)
 	.dwattr $C$DW$89, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -1751,14 +1751,14 @@ $C$DW$102	.dwtag  DW_TAG_subprogram, DW_AT_name("put_fat")
 	.dwattr $C$DW$102, DW_AT_TI_symbol_name("put_fat")
 	.dwattr $C$DW$102, DW_AT_external
 	.dwattr $C$DW$102, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$102, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$102, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$102, DW_AT_TI_begin_line(0x375)
 	.dwattr $C$DW$102, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$102, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$102, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$102, DW_AT_decl_line(0x375)
 	.dwattr $C$DW$102, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$102, DW_AT_TI_max_frame_size(0x20)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 890,column 1,is_stmt,address put_fat,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 890,column 1,is_stmt,address put_fat,isa 1
 
 	.dwfde $C$DW$CIE, put_fat
 $C$DW$103	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fs")
@@ -1834,7 +1834,7 @@ $C$DW$111	.dwtag  DW_TAG_variable, DW_AT_name("res")
         STR       A3, [SP, #8]          ; [DPU_3_PIPE] |890| 
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |890| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |890| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 896,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 896,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 896 | if (clst < 2 || clst >= fs->n_fatent) { /* Check range */              
 ;----------------------------------------------------------------------
@@ -1851,13 +1851,13 @@ $C$DW$111	.dwtag  DW_TAG_variable, DW_AT_name("res")
         ; BRANCHCC OCCURS {||$C$L39||}   ; [] |896| 
 ;* --------------------------------------------------------------------------*
 ||$C$L30||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 897,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 897,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 897 | res = FR_INT_ERR;                                                      
 ;----------------------------------------------------------------------
         MOVS      A1, #2                ; [DPU_3_PIPE] |897| 
         STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |897| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 899,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 899,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 899 | } else {                                                               
 ; 900 |         switch (fs->fs_type) {                                         
@@ -1868,18 +1868,18 @@ $C$DW$111	.dwtag  DW_TAG_variable, DW_AT_name("res")
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L31||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 902,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 902,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 902 | bc = (UINT)clst; bc += bc / 2;                                         
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |902| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |902| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 902,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 902,column 21,is_stmt,isa 1
         LDR       A2, [SP, #12]         ; [DPU_3_PIPE] |902| 
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |902| 
         ADD       A1, A1, A2, LSR #1    ; [DPU_3_PIPE] |902| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |902| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 903,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 903,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 903 | res = move_window(fs, fs->fatbase + (bc / SS(fs)));                    
 ;----------------------------------------------------------------------
@@ -1895,7 +1895,7 @@ $C$DW$112	.dwtag  DW_TAG_TI_branch
         BL        move_window           ; [DPU_3_PIPE] |903| 
         ; CALL OCCURS {move_window }     ; [] |903| 
         STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |903| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 904,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 904,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 904 | if (res != FR_OK) break;                                               
 ;----------------------------------------------------------------------
@@ -1904,8 +1904,8 @@ $C$DW$112	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L40||            ; [DPU_3_PIPE] |904| 
         ; BRANCHCC OCCURS {||$C$L40||}   ; [] |904| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 904,column 22,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 905,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 904,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 905,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 905 | p = &fs->win[bc % SS(fs)];                                             
 ;----------------------------------------------------------------------
@@ -1915,7 +1915,7 @@ $C$DW$112	.dwtag  DW_TAG_TI_branch
         ADDS      A1, A1, A2            ; [DPU_3_PIPE] |905| 
         ADDS      A1, A1, #52           ; [DPU_3_PIPE] |905| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |905| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 906,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 906,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 906 | *p = (clst & 1) ? ((*p & 0x0F) | ((BYTE)val << 4)) : (BYTE)val;        
 ;----------------------------------------------------------------------
@@ -1938,21 +1938,21 @@ $C$DW$112	.dwtag  DW_TAG_TI_branch
 ||$C$L33||:    
         LDR       A2, [SP, #16]         ; [DPU_3_PIPE] |906| 
         STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |906| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 907,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 907,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 907 | bc++;                                                                  
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |907| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |907| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |907| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 908,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 908,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 908 | fs->wflag = 1;                                                         
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |908| 
         MOVS      A2, #1                ; [DPU_3_PIPE] |908| 
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |908| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 909,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 909,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 909 | res = move_window(fs, fs->fatbase + (bc / SS(fs)));                    
 ;----------------------------------------------------------------------
@@ -1968,7 +1968,7 @@ $C$DW$113	.dwtag  DW_TAG_TI_branch
         BL        move_window           ; [DPU_3_PIPE] |909| 
         ; CALL OCCURS {move_window }     ; [] |909| 
         STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |909| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 910,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 910,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 910 | if (res != FR_OK) break;                                               
 ;----------------------------------------------------------------------
@@ -1977,8 +1977,8 @@ $C$DW$113	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L40||            ; [DPU_3_PIPE] |910| 
         ; BRANCHCC OCCURS {||$C$L40||}   ; [] |910| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 910,column 22,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 911,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 910,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 911,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 911 | p = &fs->win[bc % SS(fs)];                                             
 ;----------------------------------------------------------------------
@@ -1988,7 +1988,7 @@ $C$DW$113	.dwtag  DW_TAG_TI_branch
         ADDS      A1, A1, A2            ; [DPU_3_PIPE] |911| 
         ADDS      A1, A1, #52           ; [DPU_3_PIPE] |911| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |911| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 912,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 912,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 912 | *p = (clst & 1) ? (BYTE)(val >> 4) : ((*p & 0xF0) | ((BYTE)(val >> 8) &
 ;     |  0x0F));                                                               
@@ -2015,7 +2015,7 @@ $C$DW$113	.dwtag  DW_TAG_TI_branch
 ||$C$L35||:    
         LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |912| 
         STRB      A2, [A1, #0]          ; [DPU_3_PIPE] |912| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 913,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 913,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 913 | break;                                                                 
 ; 915 | case FS_FAT16 :                                                        
@@ -2024,7 +2024,7 @@ $C$DW$113	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L40||}     ; [] |913| 
 ;* --------------------------------------------------------------------------*
 ||$C$L36||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 916,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 916,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 916 | res = move_window(fs, fs->fatbase + (clst / (SS(fs) / 2)));            
 ;----------------------------------------------------------------------
@@ -2040,7 +2040,7 @@ $C$DW$114	.dwtag  DW_TAG_TI_branch
         BL        move_window           ; [DPU_3_PIPE] |916| 
         ; CALL OCCURS {move_window }     ; [] |916| 
         STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |916| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 917,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 917,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 917 | if (res != FR_OK) break;                                               
 ;----------------------------------------------------------------------
@@ -2049,8 +2049,8 @@ $C$DW$114	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L40||            ; [DPU_3_PIPE] |917| 
         ; BRANCHCC OCCURS {||$C$L40||}   ; [] |917| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 917,column 22,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 918,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 917,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 918,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 918 | p = &fs->win[clst * 2 % SS(fs)];                                       
 ;----------------------------------------------------------------------
@@ -2061,7 +2061,7 @@ $C$DW$114	.dwtag  DW_TAG_TI_branch
         ADDS      A1, A1, A2            ; [DPU_3_PIPE] |918| 
         ADDS      A1, A1, #52           ; [DPU_3_PIPE] |918| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |918| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 919,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 919,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 919 | ST_WORD(p, (WORD)val);                                                 
 ;----------------------------------------------------------------------
@@ -2072,7 +2072,7 @@ $C$DW$114	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #16]         ; [DPU_3_PIPE] |919| 
         ASRS      A1, A1, #8            ; [DPU_3_PIPE] |919| 
         STRB      A1, [A2, #1]          ; [DPU_3_PIPE] |919| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 920,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 920,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 920 | break;                                                                 
 ; 922 | case FS_FAT32 :                                                        
@@ -2081,7 +2081,7 @@ $C$DW$114	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L40||}     ; [] |920| 
 ;* --------------------------------------------------------------------------*
 ||$C$L37||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 923,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 923,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 923 | res = move_window(fs, fs->fatbase + (clst / (SS(fs) / 4)));            
 ;----------------------------------------------------------------------
@@ -2097,7 +2097,7 @@ $C$DW$115	.dwtag  DW_TAG_TI_branch
         BL        move_window           ; [DPU_3_PIPE] |923| 
         ; CALL OCCURS {move_window }     ; [] |923| 
         STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |923| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 924,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 924,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 924 | if (res != FR_OK) break;                                               
 ;----------------------------------------------------------------------
@@ -2106,8 +2106,8 @@ $C$DW$115	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L40||            ; [DPU_3_PIPE] |924| 
         ; BRANCHCC OCCURS {||$C$L40||}   ; [] |924| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 924,column 22,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 925,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 924,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 925,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 925 | p = &fs->win[clst * 4 % SS(fs)];                                       
 ;----------------------------------------------------------------------
@@ -2118,7 +2118,7 @@ $C$DW$115	.dwtag  DW_TAG_TI_branch
         ADDS      A1, A1, A2            ; [DPU_3_PIPE] |925| 
         ADDS      A1, A1, #52           ; [DPU_3_PIPE] |925| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |925| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 926,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 926,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 926 | val |= LD_DWORD(p) & 0xF0000000;                                       
 ;----------------------------------------------------------------------
@@ -2138,7 +2138,7 @@ $C$DW$115	.dwtag  DW_TAG_TI_branch
         AND       A1, A1, #-268435456   ; [DPU_3_PIPE] |926| 
         ORRS      A1, A1, A3            ; [DPU_3_PIPE] |926| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |926| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 927,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 927,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 927 | ST_DWORD(p, val);                                                      
 ;----------------------------------------------------------------------
@@ -2155,7 +2155,7 @@ $C$DW$115	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [SP, #11]         ; [DPU_3_PIPE] |927| 
         LDR       A2, [SP, #16]         ; [DPU_3_PIPE] |927| 
         STRB      A1, [A2, #3]          ; [DPU_3_PIPE] |927| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 928,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 928,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 928 | break;                                                                 
 ; 930 | default :                                                              
@@ -2164,18 +2164,18 @@ $C$DW$115	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L40||}     ; [] |928| 
 ;* --------------------------------------------------------------------------*
 ||$C$L38||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 931,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 931,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 931 | res = FR_INT_ERR;                                                      
 ;----------------------------------------------------------------------
         MOVS      A1, #2                ; [DPU_3_PIPE] |931| 
         STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |931| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 932,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 932,column 3,is_stmt,isa 1
         B         ||$C$L40||            ; [DPU_3_PIPE] |932| 
         ; BRANCH OCCURS {||$C$L40||}     ; [] |932| 
 ;* --------------------------------------------------------------------------*
 ||$C$L39||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 900,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 900,column 3,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |900| 
         LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |900| 
         SUBS      A1, A1, #1            ; [DPU_3_PIPE] |900| 
@@ -2194,7 +2194,7 @@ $C$DW$115	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L38||}     ; [] |900| 
 ;* --------------------------------------------------------------------------*
 ||$C$L40||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 933,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 933,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 933 | fs->wflag = 1;                                                         
 ;----------------------------------------------------------------------
@@ -2203,12 +2203,12 @@ $C$DW$115	.dwtag  DW_TAG_TI_branch
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |933| 
 ;* --------------------------------------------------------------------------*
 ||$C$L41||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 936,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 936,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 936 | return res;                                                            
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #20]         ; [DPU_3_PIPE] |936| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 937,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 937,column 1,is_stmt,isa 1
         ADD       SP, SP, #24           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 8
 $C$DW$116	.dwtag  DW_TAG_TI_branch
@@ -2217,7 +2217,7 @@ $C$DW$116	.dwtag  DW_TAG_TI_branch
         POP       {V1, PC}              ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$102, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$102, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$102, DW_AT_TI_end_line(0x3a9)
 	.dwattr $C$DW$102, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -2233,14 +2233,14 @@ $C$DW$117	.dwtag  DW_TAG_subprogram, DW_AT_name("remove_chain")
 	.dwattr $C$DW$117, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$117, DW_AT_TI_symbol_name("remove_chain")
 	.dwattr $C$DW$117, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$117, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$117, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$117, DW_AT_TI_begin_line(0x3b4)
 	.dwattr $C$DW$117, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$117, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$117, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$117, DW_AT_decl_line(0x3b4)
 	.dwattr $C$DW$117, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$117, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 952,column 1,is_stmt,address remove_chain,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 952,column 1,is_stmt,address remove_chain,isa 1
 
 	.dwfde $C$DW$CIE, remove_chain
 $C$DW$118	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fs")
@@ -2302,7 +2302,7 @@ $C$DW$123	.dwtag  DW_TAG_variable, DW_AT_name("nxt")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |952| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |952| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 959,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 959,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 959 | if (clst < 2 || clst >= fs->n_fatent) { /* Check range */              
 ;----------------------------------------------------------------------
@@ -2319,13 +2319,13 @@ $C$DW$123	.dwtag  DW_TAG_variable, DW_AT_name("nxt")
         ; BRANCHCC OCCURS {||$C$L43||}   ; [] |959| 
 ;* --------------------------------------------------------------------------*
 ||$C$L42||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 960,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 960,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 960 | res = FR_INT_ERR;                                                      
 ;----------------------------------------------------------------------
         MOVS      A1, #2                ; [DPU_3_PIPE] |960| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |960| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 962,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 962,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 962 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -2333,13 +2333,13 @@ $C$DW$123	.dwtag  DW_TAG_variable, DW_AT_name("nxt")
         ; BRANCH OCCURS {||$C$L49||}     ; [] |962| 
 ;* --------------------------------------------------------------------------*
 ||$C$L43||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 963,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 963,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 963 | res = FR_OK;                                                           
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |963| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |963| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 964,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 964,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 964 | while (clst < fs->n_fatent) {                   /* Not a last link? */ 
 ;----------------------------------------------------------------------
@@ -2347,7 +2347,7 @@ $C$DW$123	.dwtag  DW_TAG_variable, DW_AT_name("nxt")
         ; BRANCH OCCURS {||$C$L48||}     ; [] |964| 
 ;* --------------------------------------------------------------------------*
 ||$C$L44||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 965,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 965,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 965 | nxt = get_fat(fs, clst);                        /* Get cluster status *
 ;     | /                                                                      
@@ -2361,7 +2361,7 @@ $C$DW$124	.dwtag  DW_TAG_TI_branch
         BL        get_fat               ; [DPU_3_PIPE] |965| 
         ; CALL OCCURS {get_fat }         ; [] |965| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |965| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 966,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 966,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 966 | if (nxt == 0) break;                            /* Empty cluster? */   
 ;----------------------------------------------------------------------
@@ -2370,8 +2370,8 @@ $C$DW$124	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L49||            ; [DPU_3_PIPE] |966| 
         ; BRANCHCC OCCURS {||$C$L49||}   ; [] |966| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 966,column 18,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 967,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 966,column 18,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 967,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 967 | if (nxt == 1) { res = FR_INT_ERR; break; }      /* Internal error? */  
 ;----------------------------------------------------------------------
@@ -2380,15 +2380,15 @@ $C$DW$124	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L45||            ; [DPU_3_PIPE] |967| 
         ; BRANCHCC OCCURS {||$C$L45||}   ; [] |967| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 967,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 967,column 20,is_stmt,isa 1
         MOVS      A1, #2                ; [DPU_3_PIPE] |967| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |967| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 967,column 38,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 967,column 38,is_stmt,isa 1
         B         ||$C$L49||            ; [DPU_3_PIPE] |967| 
         ; BRANCH OCCURS {||$C$L49||}     ; [] |967| 
 ;* --------------------------------------------------------------------------*
 ||$C$L45||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 968,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 968,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 968 | if (nxt == 0xFFFFFFFF) { res = FR_DISK_ERR; break; }    /* Disk error?
 ;     | */                                                                     
@@ -2398,15 +2398,15 @@ $C$DW$124	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L46||            ; [DPU_3_PIPE] |968| 
         ; BRANCHCC OCCURS {||$C$L46||}   ; [] |968| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 968,column 29,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 968,column 29,is_stmt,isa 1
         MOVS      A1, #1                ; [DPU_3_PIPE] |968| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |968| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 968,column 48,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 968,column 48,is_stmt,isa 1
         B         ||$C$L49||            ; [DPU_3_PIPE] |968| 
         ; BRANCH OCCURS {||$C$L49||}     ; [] |968| 
 ;* --------------------------------------------------------------------------*
 ||$C$L46||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 969,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 969,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 969 | res = put_fat(fs, clst, 0);                     /* Mark the cluster "em
 ;     | pty" */                                                                
@@ -2421,7 +2421,7 @@ $C$DW$125	.dwtag  DW_TAG_TI_branch
         BL        put_fat               ; [DPU_3_PIPE] |969| 
         ; CALL OCCURS {put_fat }         ; [] |969| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |969| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 970,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 970,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 970 | if (res != FR_OK) break;                                               
 ;----------------------------------------------------------------------
@@ -2429,8 +2429,8 @@ $C$DW$125	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L49||        ; [] 
         ; BRANCHCC OCCURS {||$C$L49||}   ; [] |970| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 970,column 22,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 971,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 970,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 971,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 971 | if (fs->free_clust != 0xFFFFFFFF) {     /* Update FSInfo */            
 ;----------------------------------------------------------------------
@@ -2440,7 +2440,7 @@ $C$DW$125	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L47||            ; [DPU_3_PIPE] |971| 
         ; BRANCHCC OCCURS {||$C$L47||}   ; [] |971| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 972,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 972,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 972 | fs->free_clust++;                                                      
 ;----------------------------------------------------------------------
@@ -2448,7 +2448,7 @@ $C$DW$125	.dwtag  DW_TAG_TI_branch
         LDR       A1, [A2, #16]         ; [DPU_3_PIPE] |972| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |972| 
         STR       A1, [A2, #16]         ; [DPU_3_PIPE] |972| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 973,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 973,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 973 | fs->fsi_flag = 1;                                                      
 ; 975 | #if _USE_ERASE                                                         
@@ -2469,7 +2469,7 @@ $C$DW$125	.dwtag  DW_TAG_TI_branch
         STRB      A2, [A1, #5]          ; [DPU_3_PIPE] |973| 
 ;* --------------------------------------------------------------------------*
 ||$C$L47||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 985,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 985,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 985 | clst = nxt;     /* Next cluster */                                     
 ;----------------------------------------------------------------------
@@ -2479,7 +2479,7 @@ $C$DW$125	.dwtag  DW_TAG_TI_branch
 ;*   BEGIN LOOP ||$C$L48||
 ;* --------------------------------------------------------------------------*
 ||$C$L48||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 964,column 10,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 964,column 10,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |964| 
         LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |964| 
         LDR       A1, [A1, #24]         ; [DPU_3_PIPE] |964| 
@@ -2488,12 +2488,12 @@ $C$DW$125	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L44||}   ; [] |964| 
 ;* --------------------------------------------------------------------------*
 ||$C$L49||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 989,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 989,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 989 | return res;                                                            
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |989| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 990,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 990,column 1,is_stmt,isa 1
         ADD       SP, SP, #20           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$126	.dwtag  DW_TAG_TI_branch
@@ -2502,7 +2502,7 @@ $C$DW$126	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$117, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$117, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$117, DW_AT_TI_end_line(0x3de)
 	.dwattr $C$DW$117, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -2518,14 +2518,14 @@ $C$DW$127	.dwtag  DW_TAG_subprogram, DW_AT_name("create_chain")
 	.dwattr $C$DW$127, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$127, DW_AT_TI_symbol_name("create_chain")
 	.dwattr $C$DW$127, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$127, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$127, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$127, DW_AT_TI_begin_line(0x3e9)
 	.dwattr $C$DW$127, DW_AT_TI_begin_column(0x07)
-	.dwattr $C$DW$127, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$127, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$127, DW_AT_decl_line(0x3e9)
 	.dwattr $C$DW$127, DW_AT_decl_column(0x07)
 	.dwattr $C$DW$127, DW_AT_TI_max_frame_size(0x20)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1005,column 1,is_stmt,address create_chain,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1005,column 1,is_stmt,address create_chain,isa 1
 
 	.dwfde $C$DW$CIE, create_chain
 $C$DW$128	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fs")
@@ -2594,7 +2594,7 @@ $C$DW$135	.dwtag  DW_TAG_variable, DW_AT_name("res")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |1005| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1005| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1010,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1010,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1010 | if (clst == 0) {                /* Create a new chain */               
 ;----------------------------------------------------------------------
@@ -2602,14 +2602,14 @@ $C$DW$135	.dwtag  DW_TAG_variable, DW_AT_name("res")
         CBNZ      A1, ||$C$L51||        ; [] 
         ; BRANCHCC OCCURS {||$C$L51||}   ; [] |1010| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1011,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1011,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1011 | scl = fs->last_clust;                   /* Get suggested start point */
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1011| 
         LDR       A1, [A1, #12]         ; [DPU_3_PIPE] |1011| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |1011| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1012,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1012,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1012 | if (!scl || scl >= fs->n_fatent) scl = 1;                              
 ;----------------------------------------------------------------------
@@ -2625,10 +2625,10 @@ $C$DW$135	.dwtag  DW_TAG_variable, DW_AT_name("res")
         ; BRANCHCC OCCURS {||$C$L54||}   ; [] |1012| 
 ;* --------------------------------------------------------------------------*
 ||$C$L50||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1012,column 36,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1012,column 36,is_stmt,isa 1
         MOVS      A1, #1                ; [DPU_3_PIPE] |1012| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |1012| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1013,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1013,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1014 | else {                                  /* Stretch the current chain */
 ;----------------------------------------------------------------------
@@ -2636,7 +2636,7 @@ $C$DW$135	.dwtag  DW_TAG_variable, DW_AT_name("res")
         ; BRANCH OCCURS {||$C$L54||}     ; [] |1013| 
 ;* --------------------------------------------------------------------------*
 ||$C$L51||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1015,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1015,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1015 | cs = get_fat(fs, clst);                 /* Check the cluster status */ 
 ;----------------------------------------------------------------------
@@ -2649,7 +2649,7 @@ $C$DW$136	.dwtag  DW_TAG_TI_branch
         BL        get_fat               ; [DPU_3_PIPE] |1015| 
         ; CALL OCCURS {get_fat }         ; [] |1015| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1015| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1016,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1016,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1016 | if (cs < 2) return 1;                   /* It is an invalid cluster */ 
 ;----------------------------------------------------------------------
@@ -2658,13 +2658,13 @@ $C$DW$136	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L52||            ; [DPU_3_PIPE] |1016| 
         ; BRANCHCC OCCURS {||$C$L52||}   ; [] |1016| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1016,column 15,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1016,column 15,is_stmt,isa 1
         MOVS      A1, #1                ; [DPU_3_PIPE] |1016| 
         B         ||$C$L65||            ; [DPU_3_PIPE] |1016| 
         ; BRANCH OCCURS {||$C$L65||}     ; [] |1016| 
 ;* --------------------------------------------------------------------------*
 ||$C$L52||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1017,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1017,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1017 | if (cs < fs->n_fatent) return cs;       /* It is already followed by ne
 ;     | xt cluster */                                                          
@@ -2676,13 +2676,13 @@ $C$DW$136	.dwtag  DW_TAG_TI_branch
         BLS       ||$C$L53||            ; [DPU_3_PIPE] |1017| 
         ; BRANCHCC OCCURS {||$C$L53||}   ; [] |1017| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1017,column 26,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1017,column 26,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1017| 
         B         ||$C$L65||            ; [DPU_3_PIPE] |1017| 
         ; BRANCH OCCURS {||$C$L65||}     ; [] |1017| 
 ;* --------------------------------------------------------------------------*
 ||$C$L53||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1018,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1018,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1018 | scl = clst;                                                            
 ;----------------------------------------------------------------------
@@ -2690,7 +2690,7 @@ $C$DW$136	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |1018| 
 ;* --------------------------------------------------------------------------*
 ||$C$L54||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1021,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1021,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1021 | ncl = scl;                              /* Start cluster */            
 ; 1022 | for (;;) {                                                             
@@ -2707,7 +2707,7 @@ $C$DW$136	.dwtag  DW_TAG_TI_branch
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L55||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1023,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1023,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1023 | ncl++;                                                  /* Next cluster
 ;     |  */                                                                    
@@ -2715,7 +2715,7 @@ $C$DW$136	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |1023| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |1023| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |1023| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1024,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1024,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1024 | if (ncl >= fs->n_fatent) {              /* Wrap around */              
 ;----------------------------------------------------------------------
@@ -2726,13 +2726,13 @@ $C$DW$136	.dwtag  DW_TAG_TI_branch
         BHI       ||$C$L56||            ; [DPU_3_PIPE] |1024| 
         ; BRANCHCC OCCURS {||$C$L56||}   ; [] |1024| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1025,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1025,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1025 | ncl = 2;                                                               
 ;----------------------------------------------------------------------
         MOVS      A1, #2                ; [DPU_3_PIPE] |1025| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |1025| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1026,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1026,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1026 | if (ncl > scl) return 0;        /* No free cluster */                  
 ;----------------------------------------------------------------------
@@ -2742,13 +2742,13 @@ $C$DW$136	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L56||            ; [DPU_3_PIPE] |1026| 
         ; BRANCHCC OCCURS {||$C$L56||}   ; [] |1026| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1026,column 19,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1026,column 19,is_stmt,isa 1
         MOVS      A1, #0                ; [DPU_3_PIPE] |1026| 
         B         ||$C$L65||            ; [DPU_3_PIPE] |1026| 
         ; BRANCH OCCURS {||$C$L65||}     ; [] |1026| 
 ;* --------------------------------------------------------------------------*
 ||$C$L56||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1028,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1028,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1028 | cs = get_fat(fs, ncl);                  /* Get the cluster status */   
 ;----------------------------------------------------------------------
@@ -2761,7 +2761,7 @@ $C$DW$137	.dwtag  DW_TAG_TI_branch
         BL        get_fat               ; [DPU_3_PIPE] |1028| 
         ; CALL OCCURS {get_fat }         ; [] |1028| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1028| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1029,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1029,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1029 | if (cs == 0) break;                             /* Found a free cluster
 ;     |  */                                                                    
@@ -2770,8 +2770,8 @@ $C$DW$137	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L59||        ; [] 
         ; BRANCHCC OCCURS {||$C$L59||}   ; [] |1029| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1029,column 16,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1030,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1029,column 16,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1030,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1030 | if (cs == 0xFFFFFFFF || cs == 1)/* An error occurred */                
 ;----------------------------------------------------------------------
@@ -2786,7 +2786,7 @@ $C$DW$137	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L58||}   ; [] |1030| 
 ;* --------------------------------------------------------------------------*
 ||$C$L57||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1031,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1031,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1031 | return cs;                                                             
 ;----------------------------------------------------------------------
@@ -2795,7 +2795,7 @@ $C$DW$137	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L65||}     ; [] |1031| 
 ;* --------------------------------------------------------------------------*
 ||$C$L58||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1032,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1032,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1032 | if (ncl == scl) return 0;               /* No free cluster */          
 ;----------------------------------------------------------------------
@@ -2805,14 +2805,14 @@ $C$DW$137	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L55||            ; [DPU_3_PIPE] |1032| 
         ; BRANCHCC OCCURS {||$C$L55||}   ; [] |1032| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1032,column 19,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1032,column 19,is_stmt,isa 1
         MOVS      A1, #0                ; [DPU_3_PIPE] |1032| 
         B         ||$C$L65||            ; [DPU_3_PIPE] |1032| 
         ; BRANCH OCCURS {||$C$L65||}     ; [] |1032| 
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L59||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1035,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1035,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1035 | res = put_fat(fs, ncl, 0x0FFFFFFF);     /* Mark the new cluster "last l
 ;     | ink" */                                                                
@@ -2827,7 +2827,7 @@ $C$DW$138	.dwtag  DW_TAG_TI_branch
         BL        put_fat               ; [DPU_3_PIPE] |1035| 
         ; CALL OCCURS {put_fat }         ; [] |1035| 
         STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |1035| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1036,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1036,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1036 | if (res == FR_OK && clst != 0) {                                       
 ;----------------------------------------------------------------------
@@ -2839,7 +2839,7 @@ $C$DW$138	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L60||        ; [] 
         ; BRANCHCC OCCURS {||$C$L60||}   ; [] |1036| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1037,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1037,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1037 | res = put_fat(fs, clst, ncl);   /* Link it to the previous one if neede
 ;     | d */                                                                   
@@ -2856,7 +2856,7 @@ $C$DW$139	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |1037| 
 ;* --------------------------------------------------------------------------*
 ||$C$L60||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1039,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1039,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1039 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -2864,14 +2864,14 @@ $C$DW$139	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L61||        ; [] 
         ; BRANCHCC OCCURS {||$C$L61||}   ; [] |1039| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1040,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1040,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1040 | fs->last_clust = ncl;                   /* Update FSINFO */            
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |1040| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |1040| 
         STR       A1, [A2, #12]         ; [DPU_3_PIPE] |1040| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1041,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1041,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1041 | if (fs->free_clust != 0xFFFFFFFF) {                                    
 ;----------------------------------------------------------------------
@@ -2881,7 +2881,7 @@ $C$DW$139	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L64||            ; [DPU_3_PIPE] |1041| 
         ; BRANCHCC OCCURS {||$C$L64||}   ; [] |1041| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1042,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1042,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1042 | fs->free_clust--;                                                      
 ;----------------------------------------------------------------------
@@ -2889,14 +2889,14 @@ $C$DW$139	.dwtag  DW_TAG_TI_branch
         LDR       A1, [A2, #16]         ; [DPU_3_PIPE] |1042| 
         SUBS      A1, A1, #1            ; [DPU_3_PIPE] |1042| 
         STR       A1, [A2, #16]         ; [DPU_3_PIPE] |1042| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1043,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1043,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1043 | fs->fsi_flag = 1;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1043| 
         MOVS      A2, #1                ; [DPU_3_PIPE] |1043| 
         STRB      A2, [A1, #5]          ; [DPU_3_PIPE] |1043| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1045,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1045,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1045 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -2904,7 +2904,7 @@ $C$DW$139	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L64||}     ; [] |1045| 
 ;* --------------------------------------------------------------------------*
 ||$C$L61||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1046,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1046,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1046 | ncl = (res == FR_DISK_ERR) ? 0xFFFFFFFF : 1;                           
 ;----------------------------------------------------------------------
@@ -2924,14 +2924,14 @@ $C$DW$139	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |1046| 
 ;* --------------------------------------------------------------------------*
 ||$C$L64||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1049,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1049,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1049 | return ncl;             /* Return new cluster number or error code */  
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |1049| 
 ;* --------------------------------------------------------------------------*
 ||$C$L65||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1050,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1050,column 1,is_stmt,isa 1
         ADD       SP, SP, #28           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$140	.dwtag  DW_TAG_TI_branch
@@ -2940,7 +2940,7 @@ $C$DW$140	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$127, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$127, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$127, DW_AT_TI_end_line(0x41a)
 	.dwattr $C$DW$127, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -2956,14 +2956,14 @@ $C$DW$141	.dwtag  DW_TAG_subprogram, DW_AT_name("dir_sdi")
 	.dwattr $C$DW$141, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$141, DW_AT_TI_symbol_name("dir_sdi")
 	.dwattr $C$DW$141, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$141, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$141, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$141, DW_AT_TI_begin_line(0x440)
 	.dwattr $C$DW$141, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$141, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$141, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$141, DW_AT_decl_line(0x440)
 	.dwattr $C$DW$141, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$141, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1092,column 1,is_stmt,address dir_sdi,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1092,column 1,is_stmt,address dir_sdi,isa 1
 
 	.dwfde $C$DW$CIE, dir_sdi
 $C$DW$142	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dj")
@@ -3022,21 +3022,21 @@ $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("ic")
 ;----------------------------------------------------------------------
         STRH      A2, [SP, #4]          ; [DPU_3_PIPE] |1092| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1092| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1097,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1097,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1097 | dj->index = idx;                                                       
 ;----------------------------------------------------------------------
         LDRH      A1, [SP, #4]          ; [DPU_3_PIPE] |1097| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |1097| 
         STRH      A1, [A2, #6]          ; [DPU_3_PIPE] |1097| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1098,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1098,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1098 | clst = dj->sclust;                                                     
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1098| 
         LDR       A1, [A1, #8]          ; [DPU_3_PIPE] |1098| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1098| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1099,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1099,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1099 | if (clst == 1 || clst >= dj->fs->n_fatent)      /* Check start cluster
 ;     | range */                                                               
@@ -3055,7 +3055,7 @@ $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("ic")
         ; BRANCHCC OCCURS {||$C$L67||}   ; [] |1099| 
 ;* --------------------------------------------------------------------------*
 ||$C$L66||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1100,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1100,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1100 | return FR_INT_ERR;                                                     
 ;----------------------------------------------------------------------
@@ -3064,7 +3064,7 @@ $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("ic")
         ; BRANCH OCCURS {||$C$L77||}     ; [] |1100| 
 ;* --------------------------------------------------------------------------*
 ||$C$L67||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1101,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1101,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1101 | if (!clst && dj->fs->fs_type == FS_FAT32)       /* Replace cluster# 0 w
 ;     | ith root cluster# if in FAT32 */                                       
@@ -3080,7 +3080,7 @@ $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("ic")
         BNE       ||$C$L68||            ; [DPU_3_PIPE] |1101| 
         ; BRANCHCC OCCURS {||$C$L68||}   ; [] |1101| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1102,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1102,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1102 | clst = dj->fs->dirbase;                                                
 ;----------------------------------------------------------------------
@@ -3090,7 +3090,7 @@ $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("ic")
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1102| 
 ;* --------------------------------------------------------------------------*
 ||$C$L68||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1104,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1104,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1104 | if (clst == 0) {        /* Static table (root-dir in FAT12/16) */      
 ;----------------------------------------------------------------------
@@ -3098,14 +3098,14 @@ $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("ic")
         CBNZ      A1, ||$C$L70||        ; [] 
         ; BRANCHCC OCCURS {||$C$L70||}   ; [] |1104| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1105,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1105,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1105 | dj->clust = clst;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1105| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |1105| 
         STR       A1, [A2, #12]         ; [DPU_3_PIPE] |1105| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1106,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1106,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1106 | if (idx >= dj->fs->n_rootdir)           /* Index is out of range */    
 ;----------------------------------------------------------------------
@@ -3117,7 +3117,7 @@ $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("ic")
         BGT       ||$C$L69||            ; [DPU_3_PIPE] |1106| 
         ; BRANCHCC OCCURS {||$C$L69||}   ; [] |1106| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1107,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1107,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1107 | return FR_INT_ERR;                                                     
 ;----------------------------------------------------------------------
@@ -3126,7 +3126,7 @@ $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("ic")
         ; BRANCH OCCURS {||$C$L77||}     ; [] |1107| 
 ;* --------------------------------------------------------------------------*
 ||$C$L69||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1108,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1108,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1108 | dj->sect = dj->fs->dirbase + idx / (SS(dj->fs) / SZ_DIR);       /* Sect
 ;     | or# */                                                                 
@@ -3138,7 +3138,7 @@ $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("ic")
         LDR       A1, [A1, #40]         ; [DPU_3_PIPE] |1108| 
         ADD       A1, A1, A3, LSR #4    ; [DPU_3_PIPE] |1108| 
         STR       A1, [A2, #16]         ; [DPU_3_PIPE] |1108| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1109,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1109,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1110 | else {                          /* Dynamic table (sub-dirs or root-dir
 ;     | in FAT32) */                                                           
@@ -3147,7 +3147,7 @@ $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("ic")
         ; BRANCH OCCURS {||$C$L76||}     ; [] |1109| 
 ;* --------------------------------------------------------------------------*
 ||$C$L70||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1111,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1111,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1111 | ic = SS(dj->fs) / SZ_DIR * dj->fs->csize;       /* Entries per cluster
 ;     | */                                                                     
@@ -3157,7 +3157,7 @@ $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("ic")
         LDRB      A1, [A1, #2]          ; [DPU_3_PIPE] |1111| 
         LSLS      A1, A1, #4            ; [DPU_3_PIPE] |1111| 
         STRH      A1, [SP, #12]         ; [DPU_3_PIPE] |1111| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1112,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1112,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1112 | while (idx >= ic) {     /* Follow cluster chain */                     
 ;----------------------------------------------------------------------
@@ -3165,7 +3165,7 @@ $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("ic")
         ; BRANCH OCCURS {||$C$L75||}     ; [] |1112| 
 ;* --------------------------------------------------------------------------*
 ||$C$L71||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1113,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1113,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1113 | clst = get_fat(dj->fs, clst);                           /* Get next clu
 ;     | ster */                                                                
@@ -3180,7 +3180,7 @@ $C$DW$148	.dwtag  DW_TAG_TI_branch
         BL        get_fat               ; [DPU_3_PIPE] |1113| 
         ; CALL OCCURS {get_fat }         ; [] |1113| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1113| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1114,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1114,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1114 | if (clst == 0xFFFFFFFF) return FR_DISK_ERR;     /* Disk error */       
 ;----------------------------------------------------------------------
@@ -3189,13 +3189,13 @@ $C$DW$148	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L72||            ; [DPU_3_PIPE] |1114| 
         ; BRANCHCC OCCURS {||$C$L72||}   ; [] |1114| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1114,column 28,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1114,column 28,is_stmt,isa 1
         MOVS      A1, #1                ; [DPU_3_PIPE] |1114| 
         B         ||$C$L77||            ; [DPU_3_PIPE] |1114| 
         ; BRANCH OCCURS {||$C$L77||}     ; [] |1114| 
 ;* --------------------------------------------------------------------------*
 ||$C$L72||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1115,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1115,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1115 | if (clst < 2 || clst >= dj->fs->n_fatent)       /* Reached to end of ta
 ;     | ble or int error */                                                    
@@ -3214,7 +3214,7 @@ $C$DW$148	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L74||}   ; [] |1115| 
 ;* --------------------------------------------------------------------------*
 ||$C$L73||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1116,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1116,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1116 | return FR_INT_ERR;                                                     
 ;----------------------------------------------------------------------
@@ -3223,7 +3223,7 @@ $C$DW$148	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L77||}     ; [] |1116| 
 ;* --------------------------------------------------------------------------*
 ||$C$L74||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1117,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1117,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1117 | idx -= ic;                                                             
 ;----------------------------------------------------------------------
@@ -3235,21 +3235,21 @@ $C$DW$148	.dwtag  DW_TAG_TI_branch
 ;*   BEGIN LOOP ||$C$L75||
 ;* --------------------------------------------------------------------------*
 ||$C$L75||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1112,column 10,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1112,column 10,is_stmt,isa 1
         LDRH      A1, [SP, #12]         ; [DPU_3_PIPE] |1112| 
         LDRH      A2, [SP, #4]          ; [DPU_3_PIPE] |1112| 
         CMP       A1, A2                ; [DPU_3_PIPE] |1112| 
         BLE       ||$C$L71||            ; [DPU_3_PIPE] |1112| 
         ; BRANCHCC OCCURS {||$C$L71||}   ; [] |1112| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1119,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1119,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1119 | dj->clust = clst;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1119| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |1119| 
         STR       A1, [A2, #12]         ; [DPU_3_PIPE] |1119| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1120,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1120,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1120 | dj->sect = clust2sect(dj->fs, clst) + idx / (SS(dj->fs) / SZ_DIR);
 ;     |  /* Sector# */                                                         
@@ -3269,7 +3269,7 @@ $C$DW$149	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #16]         ; [DPU_3_PIPE] |1120| 
 ;* --------------------------------------------------------------------------*
 ||$C$L76||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1123,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1123,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1123 | dj->dir = dj->fs->win + (idx % (SS(dj->fs) / SZ_DIR)) * SZ_DIR; /* Ptr
 ;     | to the entry in the sector */                                          
@@ -3282,14 +3282,14 @@ $C$DW$149	.dwtag  DW_TAG_TI_branch
         ADD       A1, A1, A2, LSL #5    ; [DPU_3_PIPE] |1123| 
         ADDS      A1, A1, #52           ; [DPU_3_PIPE] |1123| 
         STR       A1, [A3, #20]         ; [DPU_3_PIPE] |1123| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1125,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1125,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1125 | return FR_OK;   /* Seek succeeded */                                   
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |1125| 
 ;* --------------------------------------------------------------------------*
 ||$C$L77||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1126,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1126,column 1,is_stmt,isa 1
         ADD       SP, SP, #20           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$150	.dwtag  DW_TAG_TI_branch
@@ -3298,7 +3298,7 @@ $C$DW$150	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$141, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$141, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$141, DW_AT_TI_end_line(0x466)
 	.dwattr $C$DW$141, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -3314,14 +3314,14 @@ $C$DW$151	.dwtag  DW_TAG_subprogram, DW_AT_name("dir_next")
 	.dwattr $C$DW$151, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$151, DW_AT_TI_symbol_name("dir_next")
 	.dwattr $C$DW$151, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$151, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$151, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$151, DW_AT_TI_begin_line(0x470)
 	.dwattr $C$DW$151, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$151, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$151, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$151, DW_AT_decl_line(0x470)
 	.dwattr $C$DW$151, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$151, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1140,column 1,is_stmt,address dir_next,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1140,column 1,is_stmt,address dir_next,isa 1
 
 	.dwfde $C$DW$CIE, dir_next
 $C$DW$152	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dj")
@@ -3382,14 +3382,14 @@ $C$DW$157	.dwtag  DW_TAG_variable, DW_AT_name("i")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |1140| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1140| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1145,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1145,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1145 | stretch = stretch;              /* To suppress warning on read-only cfg
 ;     | . */                                                                   
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |1145| 
         STR       A1, [SP, #4]          ; [DPU_3_PIPE] |1145| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1146,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1146,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1146 | i = dj->index + 1;                                                     
 ;----------------------------------------------------------------------
@@ -3397,7 +3397,7 @@ $C$DW$157	.dwtag  DW_TAG_variable, DW_AT_name("i")
         LDRH      A1, [A1, #6]          ; [DPU_3_PIPE] |1146| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |1146| 
         STRH      A1, [SP, #12]         ; [DPU_3_PIPE] |1146| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1147,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1147,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1147 | if (!i || !dj->sect)    /* Report EOT when index has reached 65535 */  
 ;----------------------------------------------------------------------
@@ -3411,7 +3411,7 @@ $C$DW$157	.dwtag  DW_TAG_variable, DW_AT_name("i")
         ; BRANCHCC OCCURS {||$C$L79||}   ; [] |1147| 
 ;* --------------------------------------------------------------------------*
 ||$C$L78||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1148,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1148,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1148 | return FR_NO_FILE;                                                     
 ;----------------------------------------------------------------------
@@ -3420,7 +3420,7 @@ $C$DW$157	.dwtag  DW_TAG_variable, DW_AT_name("i")
         ; BRANCH OCCURS {||$C$L93||}     ; [] |1148| 
 ;* --------------------------------------------------------------------------*
 ||$C$L79||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1150,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1150,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1150 | if (!(i % (SS(dj->fs) / SZ_DIR))) {     /* Sector changed? */          
 ;----------------------------------------------------------------------
@@ -3429,7 +3429,7 @@ $C$DW$157	.dwtag  DW_TAG_variable, DW_AT_name("i")
         BNE       ||$C$L92||            ; [DPU_3_PIPE] |1150| 
         ; BRANCHCC OCCURS {||$C$L92||}   ; [] |1150| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1151,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1151,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1151 | dj->sect++;                                     /* Next sector */      
 ;----------------------------------------------------------------------
@@ -3437,7 +3437,7 @@ $C$DW$157	.dwtag  DW_TAG_variable, DW_AT_name("i")
         LDR       A1, [A2, #16]         ; [DPU_3_PIPE] |1151| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |1151| 
         STR       A1, [A2, #16]         ; [DPU_3_PIPE] |1151| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1153,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1153,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1153 | if (dj->clust == 0) {   /* Static table */                             
 ;----------------------------------------------------------------------
@@ -3446,7 +3446,7 @@ $C$DW$157	.dwtag  DW_TAG_variable, DW_AT_name("i")
         CBNZ      A1, ||$C$L80||        ; [] 
         ; BRANCHCC OCCURS {||$C$L80||}   ; [] |1153| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1154,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1154,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1154 | if (i >= dj->fs->n_rootdir)     /* Report EOT when end of table */     
 ;----------------------------------------------------------------------
@@ -3458,7 +3458,7 @@ $C$DW$157	.dwtag  DW_TAG_variable, DW_AT_name("i")
         BGT       ||$C$L92||            ; [DPU_3_PIPE] |1154| 
         ; BRANCHCC OCCURS {||$C$L92||}   ; [] |1154| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1155,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1155,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1155 | return FR_NO_FILE;                                                     
 ; 1157 | else {                                  /* Dynamic table */            
@@ -3469,7 +3469,7 @@ $C$DW$157	.dwtag  DW_TAG_variable, DW_AT_name("i")
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L80||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1158,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1158,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1158 | if (((i / (SS(dj->fs) / SZ_DIR)) & (dj->fs->csize - 1)) == 0) { /* Clus
 ;     | ter changed? */                                                        
@@ -3483,7 +3483,7 @@ $C$DW$157	.dwtag  DW_TAG_variable, DW_AT_name("i")
         BNE       ||$C$L92||            ; [DPU_3_PIPE] |1158| 
         ; BRANCHCC OCCURS {||$C$L92||}   ; [] |1158| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1159,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1159,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1159 | clst = get_fat(dj->fs, dj->clust);                              /* Get
 ;     | next cluster */                                                        
@@ -3499,7 +3499,7 @@ $C$DW$158	.dwtag  DW_TAG_TI_branch
         BL        get_fat               ; [DPU_3_PIPE] |1159| 
         ; CALL OCCURS {get_fat }         ; [] |1159| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1159| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1160,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1160,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1160 | if (clst <= 1) return FR_INT_ERR;                                      
 ;----------------------------------------------------------------------
@@ -3508,13 +3508,13 @@ $C$DW$158	.dwtag  DW_TAG_TI_branch
         BHI       ||$C$L81||            ; [DPU_3_PIPE] |1160| 
         ; BRANCHCC OCCURS {||$C$L81||}   ; [] |1160| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1160,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1160,column 20,is_stmt,isa 1
         MOVS      A1, #2                ; [DPU_3_PIPE] |1160| 
         B         ||$C$L93||            ; [DPU_3_PIPE] |1160| 
         ; BRANCH OCCURS {||$C$L93||}     ; [] |1160| 
 ;* --------------------------------------------------------------------------*
 ||$C$L81||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1161,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1161,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1161 | if (clst == 0xFFFFFFFF) return FR_DISK_ERR;                            
 ;----------------------------------------------------------------------
@@ -3523,13 +3523,13 @@ $C$DW$158	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L82||            ; [DPU_3_PIPE] |1161| 
         ; BRANCHCC OCCURS {||$C$L82||}   ; [] |1161| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1161,column 29,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1161,column 29,is_stmt,isa 1
         MOVS      A1, #1                ; [DPU_3_PIPE] |1161| 
         B         ||$C$L93||            ; [DPU_3_PIPE] |1161| 
         ; BRANCH OCCURS {||$C$L93||}     ; [] |1161| 
 ;* --------------------------------------------------------------------------*
 ||$C$L82||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1162,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1162,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1162 | if (clst >= dj->fs->n_fatent) {                                 /* When
 ;     |  it reached end of dynamic table */                                    
@@ -3550,7 +3550,7 @@ $C$DW$160	.dwtag  DW_TAG_variable, DW_AT_name("c")
 	.dwattr $C$DW$160, DW_AT_TI_symbol_name("c")
 	.dwattr $C$DW$160, DW_AT_type(*$C$DW$T$19)
 	.dwattr $C$DW$160, DW_AT_location[DW_OP_breg13 16]
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1165,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1165,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1165 | if (!stretch) return FR_NO_FILE;                        /* When do not
 ;     | stretch, report EOT */                                                 
@@ -3559,13 +3559,13 @@ $C$DW$160	.dwtag  DW_TAG_variable, DW_AT_name("c")
         CBNZ      A1, ||$C$L83||        ; [] 
         ; BRANCHCC OCCURS {||$C$L83||}   ; [] |1165| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1165,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1165,column 20,is_stmt,isa 1
         MOVS      A1, #4                ; [DPU_3_PIPE] |1165| 
         B         ||$C$L93||            ; [DPU_3_PIPE] |1165| 
         ; BRANCH OCCURS {||$C$L93||}     ; [] |1165| 
 ;* --------------------------------------------------------------------------*
 ||$C$L83||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1166,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1166,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1166 | clst = create_chain(dj->fs, dj->clust);         /* Stretch cluster chai
 ;     | n */                                                                   
@@ -3581,7 +3581,7 @@ $C$DW$161	.dwtag  DW_TAG_TI_branch
         BL        create_chain          ; [DPU_3_PIPE] |1166| 
         ; CALL OCCURS {create_chain }    ; [] |1166| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1166| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1167,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1167,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1167 | if (clst == 0) return FR_DENIED;                        /* No free clus
 ;     | ter */                                                                 
@@ -3590,13 +3590,13 @@ $C$DW$161	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L84||        ; [] 
         ; BRANCHCC OCCURS {||$C$L84||}   ; [] |1167| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1167,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1167,column 21,is_stmt,isa 1
         MOVS      A1, #7                ; [DPU_3_PIPE] |1167| 
         B         ||$C$L93||            ; [DPU_3_PIPE] |1167| 
         ; BRANCH OCCURS {||$C$L93||}     ; [] |1167| 
 ;* --------------------------------------------------------------------------*
 ||$C$L84||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1168,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1168,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1168 | if (clst == 1) return FR_INT_ERR;                                      
 ;----------------------------------------------------------------------
@@ -3605,13 +3605,13 @@ $C$DW$161	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L85||            ; [DPU_3_PIPE] |1168| 
         ; BRANCHCC OCCURS {||$C$L85||}   ; [] |1168| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1168,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1168,column 21,is_stmt,isa 1
         MOVS      A1, #2                ; [DPU_3_PIPE] |1168| 
         B         ||$C$L93||            ; [DPU_3_PIPE] |1168| 
         ; BRANCH OCCURS {||$C$L93||}     ; [] |1168| 
 ;* --------------------------------------------------------------------------*
 ||$C$L85||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1169,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1169,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1169 | if (clst == 0xFFFFFFFF) return FR_DISK_ERR;                            
 ;----------------------------------------------------------------------
@@ -3620,13 +3620,13 @@ $C$DW$161	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L86||            ; [DPU_3_PIPE] |1169| 
         ; BRANCHCC OCCURS {||$C$L86||}   ; [] |1169| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1169,column 30,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1169,column 30,is_stmt,isa 1
         MOVS      A1, #1                ; [DPU_3_PIPE] |1169| 
         B         ||$C$L93||            ; [DPU_3_PIPE] |1169| 
         ; BRANCH OCCURS {||$C$L93||}     ; [] |1169| 
 ;* --------------------------------------------------------------------------*
 ||$C$L86||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1171,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1171,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1171 | if (sync_window(dj->fs)) return FR_DISK_ERR;    /* Flush active window
 ;     | */                                                                     
@@ -3642,13 +3642,13 @@ $C$DW$162	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L87||        ; [] 
         ; BRANCHCC OCCURS {||$C$L87||}   ; [] |1171| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1171,column 31,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1171,column 31,is_stmt,isa 1
         MOVS      A1, #1                ; [DPU_3_PIPE] |1171| 
         B         ||$C$L93||            ; [DPU_3_PIPE] |1171| 
         ; BRANCH OCCURS {||$C$L93||}     ; [] |1171| 
 ;* --------------------------------------------------------------------------*
 ||$C$L87||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1172,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1172,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1172 | mem_set(dj->fs->win, 0, SS(dj->fs));                    /* Clear window
 ;     |  buffer */                                                             
@@ -3664,7 +3664,7 @@ $C$DW$163	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$163, DW_AT_TI_call
         BL        mem_set               ; [DPU_3_PIPE] |1172| 
         ; CALL OCCURS {mem_set }         ; [] |1172| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1173,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1173,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1173 | dj->fs->winsect = clust2sect(dj->fs, clst);     /* Cluster start sector
 ;     |  */                                                                    
@@ -3681,7 +3681,7 @@ $C$DW$164	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |1173| 
         LDR       A2, [A2, #0]          ; [DPU_3_PIPE] |1173| 
         STR       A1, [A2, #48]         ; [DPU_3_PIPE] |1173| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1174,column 11,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1174,column 11,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1174 | for (c = 0; c < dj->fs->csize; c++) {           /* Fill the new cluster
 ;     |  with 0 */                                                             
@@ -3692,7 +3692,7 @@ $C$DW$164	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L90||}     ; [] |1174| 
 ;* --------------------------------------------------------------------------*
 ||$C$L88||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1175,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1175,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1175 | dj->fs->wflag = 1;                                                     
 ;----------------------------------------------------------------------
@@ -3700,7 +3700,7 @@ $C$DW$164	.dwtag  DW_TAG_TI_branch
         LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |1175| 
         MOVS      A2, #1                ; [DPU_3_PIPE] |1175| 
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |1175| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1176,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1176,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1176 | if (sync_window(dj->fs)) return FR_DISK_ERR;                           
 ;----------------------------------------------------------------------
@@ -3715,13 +3715,13 @@ $C$DW$165	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L89||        ; [] 
         ; BRANCHCC OCCURS {||$C$L89||}   ; [] |1176| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1176,column 32,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1176,column 32,is_stmt,isa 1
         MOVS      A1, #1                ; [DPU_3_PIPE] |1176| 
         B         ||$C$L93||            ; [DPU_3_PIPE] |1176| 
         ; BRANCH OCCURS {||$C$L93||}     ; [] |1176| 
 ;* --------------------------------------------------------------------------*
 ||$C$L89||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1177,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1177,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1177 | dj->fs->winsect++;                                                     
 ;----------------------------------------------------------------------
@@ -3730,7 +3730,7 @@ $C$DW$165	.dwtag  DW_TAG_TI_branch
         LDR       A1, [A2, #48]         ; [DPU_3_PIPE] |1177| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |1177| 
         STR       A1, [A2, #48]         ; [DPU_3_PIPE] |1177| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1174,column 37,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1174,column 37,is_stmt,isa 1
         LDRB      A1, [SP, #16]         ; [DPU_3_PIPE] |1174| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |1174| 
         STRB      A1, [SP, #16]         ; [DPU_3_PIPE] |1174| 
@@ -3738,7 +3738,7 @@ $C$DW$165	.dwtag  DW_TAG_TI_branch
 ;*   BEGIN LOOP ||$C$L90||
 ;* --------------------------------------------------------------------------*
 ||$C$L90||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1174,column 18,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1174,column 18,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1174| 
         LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |1174| 
         LDRB      A2, [SP, #16]         ; [DPU_3_PIPE] |1174| 
@@ -3747,7 +3747,7 @@ $C$DW$165	.dwtag  DW_TAG_TI_branch
         BGT       ||$C$L88||            ; [DPU_3_PIPE] |1174| 
         ; BRANCHCC OCCURS {||$C$L88||}   ; [] |1174| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1179,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1179,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1179 | dj->fs->winsect -= c;                                           /* Rewi
 ;     | nd window address */                                                   
@@ -3765,7 +3765,7 @@ $C$DW$165	.dwtag  DW_TAG_TI_branch
 
 ;* --------------------------------------------------------------------------*
 ||$C$L91||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1184,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1184,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1184 | dj->clust = clst;                               /* Initialize data for
 ;     | new cluster */                                                         
@@ -3773,7 +3773,7 @@ $C$DW$165	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1184| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |1184| 
         STR       A1, [A2, #12]         ; [DPU_3_PIPE] |1184| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1185,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1185,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1185 | dj->sect = clust2sect(dj->fs, clst);                                   
 ;----------------------------------------------------------------------
@@ -3790,14 +3790,14 @@ $C$DW$166	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #16]         ; [DPU_3_PIPE] |1185| 
 ;* --------------------------------------------------------------------------*
 ||$C$L92||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1190,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1190,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1190 | dj->index = i;                                                         
 ;----------------------------------------------------------------------
         LDRH      A1, [SP, #12]         ; [DPU_3_PIPE] |1190| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |1190| 
         STRH      A1, [A2, #6]          ; [DPU_3_PIPE] |1190| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1191,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1191,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1191 | dj->dir = dj->fs->win + (i % (SS(dj->fs) / SZ_DIR)) * SZ_DIR;          
 ;----------------------------------------------------------------------
@@ -3809,14 +3809,14 @@ $C$DW$166	.dwtag  DW_TAG_TI_branch
         ADD       A1, A1, A2, LSL #5    ; [DPU_3_PIPE] |1191| 
         ADDS      A1, A1, #52           ; [DPU_3_PIPE] |1191| 
         STR       A1, [A3, #20]         ; [DPU_3_PIPE] |1191| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1193,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1193,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1193 | return FR_OK;                                                          
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |1193| 
 ;* --------------------------------------------------------------------------*
 ||$C$L93||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1194,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1194,column 1,is_stmt,isa 1
         ADD       SP, SP, #20           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$167	.dwtag  DW_TAG_TI_branch
@@ -3825,7 +3825,7 @@ $C$DW$167	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$151, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$151, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$151, DW_AT_TI_end_line(0x4aa)
 	.dwattr $C$DW$151, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -3841,14 +3841,14 @@ $C$DW$168	.dwtag  DW_TAG_subprogram, DW_AT_name("dir_alloc")
 	.dwattr $C$DW$168, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$168, DW_AT_TI_symbol_name("dir_alloc")
 	.dwattr $C$DW$168, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$168, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$168, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$168, DW_AT_TI_begin_line(0x4b5)
 	.dwattr $C$DW$168, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$168, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$168, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$168, DW_AT_decl_line(0x4b5)
 	.dwattr $C$DW$168, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$168, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1209,column 1,is_stmt,address dir_alloc,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1209,column 1,is_stmt,address dir_alloc,isa 1
 
 	.dwfde $C$DW$CIE, dir_alloc
 $C$DW$169	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dj")
@@ -3907,7 +3907,7 @@ $C$DW$174	.dwtag  DW_TAG_variable, DW_AT_name("n")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |1209| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1209| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1214,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1214,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1214 | res = dir_sdi(dj, 0);                                                  
 ;----------------------------------------------------------------------
@@ -3920,7 +3920,7 @@ $C$DW$175	.dwtag  DW_TAG_TI_branch
         BL        dir_sdi               ; [DPU_3_PIPE] |1214| 
         ; CALL OCCURS {dir_sdi }         ; [] |1214| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1214| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1215,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1215,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1215 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -3929,7 +3929,7 @@ $C$DW$175	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L98||            ; [DPU_3_PIPE] |1215| 
         ; BRANCHCC OCCURS {||$C$L98||}   ; [] |1215| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1216,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1216,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1216 | n = 0;                                                                 
 ; 1217 | do {                                                                   
@@ -3946,7 +3946,7 @@ $C$DW$175	.dwtag  DW_TAG_TI_branch
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L94||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1218,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1218,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1218 | res = move_window(dj->fs, dj->sect);                                   
 ;----------------------------------------------------------------------
@@ -3961,7 +3961,7 @@ $C$DW$176	.dwtag  DW_TAG_TI_branch
         BL        move_window           ; [DPU_3_PIPE] |1218| 
         ; CALL OCCURS {move_window }     ; [] |1218| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1218| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1219,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1219,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1219 | if (res != FR_OK) break;                                               
 ;----------------------------------------------------------------------
@@ -3969,8 +3969,8 @@ $C$DW$176	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L98||        ; [] 
         ; BRANCHCC OCCURS {||$C$L98||}   ; [] |1219| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1219,column 22,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1220,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1219,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1220,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1220 | if (dj->dir[0] == DDE || dj->dir[0] == 0) {     /* Is it a blank entry?
 ;     |  */                                                                    
@@ -3989,7 +3989,7 @@ $C$DW$176	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L96||}   ; [] |1220| 
 ;* --------------------------------------------------------------------------*
 ||$C$L95||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1221,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1221,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1221 | if (++n == nent) break; /* A block of contiguous entry is found */     
 ;----------------------------------------------------------------------
@@ -4001,8 +4001,8 @@ $C$DW$176	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L98||            ; [DPU_3_PIPE] |1221| 
         ; BRANCHCC OCCURS {||$C$L98||}   ; [] |1221| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1221,column 22,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1222,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1221,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1222,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1222 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -4010,7 +4010,7 @@ $C$DW$176	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L97||}     ; [] |1222| 
 ;* --------------------------------------------------------------------------*
 ||$C$L96||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1223,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1223,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1223 | n = 0;                                  /* Not a blank entry. Restart t
 ;     | o search */                                                            
@@ -4019,7 +4019,7 @@ $C$DW$176	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |1223| 
 ;* --------------------------------------------------------------------------*
 ||$C$L97||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1225,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1225,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1225 | res = dir_next(dj, 1);          /* Next entry with table stretch enable
 ;     | d */                                                                   
@@ -4033,7 +4033,7 @@ $C$DW$177	.dwtag  DW_TAG_TI_branch
         BL        dir_next              ; [DPU_3_PIPE] |1225| 
         ; CALL OCCURS {dir_next }        ; [] |1225| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1225| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1226,column 12,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1226,column 12,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1226 | } while (res == FR_OK);                                                
 ;----------------------------------------------------------------------
@@ -4043,12 +4043,12 @@ $C$DW$177	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L94||}   ; [] |1226| 
 ;* --------------------------------------------------------------------------*
 ||$C$L98||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1228,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1228,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1228 | return res;                                                            
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1228| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1229,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1229,column 1,is_stmt,isa 1
         ADD       SP, SP, #20           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$178	.dwtag  DW_TAG_TI_branch
@@ -4057,7 +4057,7 @@ $C$DW$178	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$168, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$168, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$168, DW_AT_TI_end_line(0x4cd)
 	.dwattr $C$DW$168, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -4073,14 +4073,14 @@ $C$DW$179	.dwtag  DW_TAG_subprogram, DW_AT_name("ld_clust")
 	.dwattr $C$DW$179, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$179, DW_AT_TI_symbol_name("ld_clust")
 	.dwattr $C$DW$179, DW_AT_type(*$C$DW$T$21)
-	.dwattr $C$DW$179, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$179, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$179, DW_AT_TI_begin_line(0x4d7)
 	.dwattr $C$DW$179, DW_AT_TI_begin_column(0x07)
-	.dwattr $C$DW$179, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$179, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$179, DW_AT_decl_line(0x4d7)
 	.dwattr $C$DW$179, DW_AT_decl_column(0x07)
 	.dwattr $C$DW$179, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1243,column 1,is_stmt,address ld_clust,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1243,column 1,is_stmt,address ld_clust,isa 1
 
 	.dwfde $C$DW$CIE, ld_clust
 $C$DW$180	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fs")
@@ -4127,7 +4127,7 @@ $C$DW$184	.dwtag  DW_TAG_variable, DW_AT_name("cl")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |1243| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1243| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1246,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1246,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1246 | cl = LD_WORD(dir+DIR_FstClusLO);                                       
 ;----------------------------------------------------------------------
@@ -4138,7 +4138,7 @@ $C$DW$184	.dwtag  DW_TAG_variable, DW_AT_name("cl")
         ORR       A1, A1, A2, LSL #8    ; [DPU_3_PIPE] |1246| 
         UXTH      A1, A1                ; [DPU_3_PIPE] |1246| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1246| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1247,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1247,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1247 | if (fs->fs_type == FS_FAT32)                                           
 ;----------------------------------------------------------------------
@@ -4148,7 +4148,7 @@ $C$DW$184	.dwtag  DW_TAG_variable, DW_AT_name("cl")
         BNE       ||$C$L99||            ; [DPU_3_PIPE] |1247| 
         ; BRANCHCC OCCURS {||$C$L99||}   ; [] |1247| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1248,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1248,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1248 | cl |= (DWORD)LD_WORD(dir+DIR_FstClusHI) << 16;                         
 ;----------------------------------------------------------------------
@@ -4163,12 +4163,12 @@ $C$DW$184	.dwtag  DW_TAG_variable, DW_AT_name("cl")
         STR       A2, [SP, #8]          ; [DPU_3_PIPE] |1248| 
 ;* --------------------------------------------------------------------------*
 ||$C$L99||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1250,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1250,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1250 | return cl;                                                             
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1250| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1251,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1251,column 1,is_stmt,isa 1
         ADD       SP, SP, #16           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
 $C$DW$185	.dwtag  DW_TAG_TI_branch
@@ -4176,7 +4176,7 @@ $C$DW$185	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$185, DW_AT_TI_return
         BX        LR                    ; [DPU_3_PIPE] 
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$179, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$179, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$179, DW_AT_TI_end_line(0x4e3)
 	.dwattr $C$DW$179, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -4191,14 +4191,14 @@ $C$DW$186	.dwtag  DW_TAG_subprogram, DW_AT_name("st_clust")
 	.dwattr $C$DW$186, DW_AT_low_pc(st_clust)
 	.dwattr $C$DW$186, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$186, DW_AT_TI_symbol_name("st_clust")
-	.dwattr $C$DW$186, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$186, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$186, DW_AT_TI_begin_line(0x4e8)
 	.dwattr $C$DW$186, DW_AT_TI_begin_column(0x06)
-	.dwattr $C$DW$186, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$186, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$186, DW_AT_decl_line(0x4e8)
 	.dwattr $C$DW$186, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$186, DW_AT_TI_max_frame_size(0x08)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1260,column 1,is_stmt,address st_clust,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1260,column 1,is_stmt,address st_clust,isa 1
 
 	.dwfde $C$DW$CIE, st_clust
 $C$DW$187	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dir")
@@ -4238,7 +4238,7 @@ $C$DW$190	.dwtag  DW_TAG_variable, DW_AT_name("cl")
 	.dwattr $C$DW$190, DW_AT_location[DW_OP_breg13 4]
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |1260| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1260| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1261,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1261,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1261 | ST_WORD(dir+DIR_FstClusLO, cl);                                        
 ;----------------------------------------------------------------------
@@ -4249,7 +4249,7 @@ $C$DW$190	.dwtag  DW_TAG_variable, DW_AT_name("cl")
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |1261| 
         ASRS      A1, A1, #8            ; [DPU_3_PIPE] |1261| 
         STRB      A1, [A2, #27]         ; [DPU_3_PIPE] |1261| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1262,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1262,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1262 | ST_WORD(dir+DIR_FstClusHI, cl >> 16);                                  
 ;----------------------------------------------------------------------
@@ -4260,7 +4260,7 @@ $C$DW$190	.dwtag  DW_TAG_variable, DW_AT_name("cl")
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |1262| 
         ASRS      A1, A1, #8            ; [DPU_3_PIPE] |1262| 
         STRB      A1, [A2, #21]         ; [DPU_3_PIPE] |1262| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1263,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1263,column 1,is_stmt,isa 1
         ADD       SP, SP, #8            ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
 $C$DW$191	.dwtag  DW_TAG_TI_branch
@@ -4268,7 +4268,7 @@ $C$DW$191	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$191, DW_AT_TI_return
         BX        LR                    ; [DPU_3_PIPE] 
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$186, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$186, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$186, DW_AT_TI_end_line(0x4ef)
 	.dwattr $C$DW$186, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -4284,14 +4284,14 @@ $C$DW$192	.dwtag  DW_TAG_subprogram, DW_AT_name("dir_find")
 	.dwattr $C$DW$192, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$192, DW_AT_TI_symbol_name("dir_find")
 	.dwattr $C$DW$192, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$192, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$192, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$192, DW_AT_TI_begin_line(0x5a5)
 	.dwattr $C$DW$192, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$192, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$192, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$192, DW_AT_decl_line(0x5a5)
 	.dwattr $C$DW$192, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$192, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1448,column 1,is_stmt,address dir_find,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1448,column 1,is_stmt,address dir_find,isa 1
 
 	.dwfde $C$DW$CIE, dir_find
 $C$DW$193	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dj")
@@ -4349,7 +4349,7 @@ $C$DW$197	.dwtag  DW_TAG_variable, DW_AT_name("dir")
 ; 1453 | #endif                                                                 
 ;----------------------------------------------------------------------
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1448| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1455,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1455,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1455 | res = dir_sdi(dj, 0);                   /* Rewind directory object */  
 ;----------------------------------------------------------------------
@@ -4362,7 +4362,7 @@ $C$DW$198	.dwtag  DW_TAG_TI_branch
         BL        dir_sdi               ; [DPU_3_PIPE] |1455| 
         ; CALL OCCURS {dir_sdi }         ; [] |1455| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |1455| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1456,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1456,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1456 | if (res != FR_OK) return res;                                          
 ;----------------------------------------------------------------------
@@ -4370,7 +4370,7 @@ $C$DW$198	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L100||       ; [] 
         ; BRANCHCC OCCURS {||$C$L100||}  ; [] |1456| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1456,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1456,column 20,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1458 | #if _USE_LFN                                                           
 ; 1459 | ord = sum = 0xFF;                                                      
@@ -4390,7 +4390,7 @@ $C$DW$198	.dwtag  DW_TAG_TI_branch
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L100||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1462,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1462,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1462 | res = move_window(dj->fs, dj->sect);                                   
 ;----------------------------------------------------------------------
@@ -4405,7 +4405,7 @@ $C$DW$199	.dwtag  DW_TAG_TI_branch
         BL        move_window           ; [DPU_3_PIPE] |1462| 
         ; CALL OCCURS {move_window }     ; [] |1462| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |1462| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1463,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1463,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1463 | if (res != FR_OK) break;                                               
 ;----------------------------------------------------------------------
@@ -4413,8 +4413,8 @@ $C$DW$199	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L103||       ; [] 
         ; BRANCHCC OCCURS {||$C$L103||}  ; [] |1463| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1463,column 21,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1464,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1463,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1464,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1464 | dir = dj->dir;                                  /* Ptr to the directory
 ;     |  entry of current index */                                             
@@ -4422,14 +4422,14 @@ $C$DW$199	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1464| 
         LDR       A1, [A1, #20]         ; [DPU_3_PIPE] |1464| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1464| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1465,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1465,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1465 | c = dir[DIR_Name];                                                     
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1465| 
         LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |1465| 
         STRB      A1, [SP, #5]          ; [DPU_3_PIPE] |1465| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1466,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1466,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1466 | if (c == 0) { res = FR_NO_FILE; break; }        /* Reached to end of ta
 ;     | ble */                                                                 
@@ -4438,7 +4438,7 @@ $C$DW$199	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L101||       ; [] 
         ; BRANCHCC OCCURS {||$C$L101||}  ; [] |1466| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1466,column 17,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1466,column 17,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1467 | #if _USE_LFN    /* LFN configuration */                                
 ; 1468 | a = dir[DIR_Attr] & AM_MASK;                                           
@@ -4469,12 +4469,12 @@ $C$DW$199	.dwtag  DW_TAG_TI_branch
 ;----------------------------------------------------------------------
         MOVS      A1, #4                ; [DPU_3_PIPE] |1466| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |1466| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1466,column 35,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1466,column 35,is_stmt,isa 1
         B         ||$C$L103||           ; [DPU_3_PIPE] |1466| 
         ; BRANCH OCCURS {||$C$L103||}    ; [] |1466| 
 ;* --------------------------------------------------------------------------*
 ||$C$L101||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1489,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1489,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1489 | if (!(dir[DIR_Attr] & AM_VOL) && !mem_cmp(dir, dj->fn, 11)) /* Is it a
 ;     | valid entry? */                                                        
@@ -4498,14 +4498,14 @@ $C$DW$200	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L103||       ; [] 
         ; BRANCHCC OCCURS {||$C$L103||}  ; [] |1489| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1490,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1490,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1490 | break;                                                                 
 ; 1491 | #endif                                                                 
 ;----------------------------------------------------------------------
 ;* --------------------------------------------------------------------------*
 ||$C$L102||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1492,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1492,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1492 | res = dir_next(dj, 0);          /* Next entry */                       
 ;----------------------------------------------------------------------
@@ -4518,7 +4518,7 @@ $C$DW$201	.dwtag  DW_TAG_TI_branch
         BL        dir_next              ; [DPU_3_PIPE] |1492| 
         ; CALL OCCURS {dir_next }        ; [] |1492| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |1492| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1493,column 11,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1493,column 11,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1493 | } while (res == FR_OK);                                                
 ;----------------------------------------------------------------------
@@ -4528,21 +4528,21 @@ $C$DW$201	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L100||}  ; [] |1493| 
 ;* --------------------------------------------------------------------------*
 ||$C$L103||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1495,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1495,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1495 | return res;                                                            
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |1495| 
 ;* --------------------------------------------------------------------------*
 ||$C$L104||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1496,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1496,column 1,is_stmt,isa 1
 $C$DW$202	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$202, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$202, DW_AT_TI_return
         POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$192, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$192, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$192, DW_AT_TI_end_line(0x5d8)
 	.dwattr $C$DW$192, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -4558,14 +4558,14 @@ $C$DW$203	.dwtag  DW_TAG_subprogram, DW_AT_name("dir_read")
 	.dwattr $C$DW$203, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$203, DW_AT_TI_symbol_name("dir_read")
 	.dwattr $C$DW$203, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$203, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$203, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$203, DW_AT_TI_begin_line(0x5e2)
 	.dwattr $C$DW$203, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$203, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$203, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$203, DW_AT_decl_line(0x5e2)
 	.dwattr $C$DW$203, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$203, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1510,column 1,is_stmt,address dir_read,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1510,column 1,is_stmt,address dir_read,isa 1
 
 	.dwfde $C$DW$CIE, dir_read
 $C$DW$204	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dj")
@@ -4635,13 +4635,13 @@ $C$DW$211	.dwtag  DW_TAG_variable, DW_AT_name("dir")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |1510| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1510| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1517,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1517,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1517 | res = FR_NO_FILE;                                                      
 ;----------------------------------------------------------------------
         MOVS      A1, #4                ; [DPU_3_PIPE] |1517| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1517| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1518,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1518,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1518 | while (dj->sect) {                                                     
 ;----------------------------------------------------------------------
@@ -4649,7 +4649,7 @@ $C$DW$211	.dwtag  DW_TAG_variable, DW_AT_name("dir")
         ; BRANCH OCCURS {||$C$L109||}    ; [] |1518| 
 ;* --------------------------------------------------------------------------*
 ||$C$L105||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1519,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1519,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1519 | res = move_window(dj->fs, dj->sect);                                   
 ;----------------------------------------------------------------------
@@ -4664,7 +4664,7 @@ $C$DW$212	.dwtag  DW_TAG_TI_branch
         BL        move_window           ; [DPU_3_PIPE] |1519| 
         ; CALL OCCURS {move_window }     ; [] |1519| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1519| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1520,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1520,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1520 | if (res != FR_OK) break;                                               
 ;----------------------------------------------------------------------
@@ -4673,8 +4673,8 @@ $C$DW$212	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L110||           ; [DPU_3_PIPE] |1520| 
         ; BRANCHCC OCCURS {||$C$L110||}  ; [] |1520| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1520,column 21,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1521,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1520,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1521,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1521 | dir = dj->dir;                                  /* Ptr to the directory
 ;     |  entry of current index */                                             
@@ -4682,14 +4682,14 @@ $C$DW$212	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1521| 
         LDR       A1, [A1, #20]         ; [DPU_3_PIPE] |1521| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |1521| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1522,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1522,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1522 | c = dir[DIR_Name];                                                     
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |1522| 
         LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |1522| 
         STRB      A1, [SP, #10]         ; [DPU_3_PIPE] |1522| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1523,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1523,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1523 | if (c == 0) { res = FR_NO_FILE; break; }        /* Reached to end of ta
 ;     | ble */                                                                 
@@ -4698,15 +4698,15 @@ $C$DW$212	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L106||       ; [] 
         ; BRANCHCC OCCURS {||$C$L106||}  ; [] |1523| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1523,column 17,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1523,column 17,is_stmt,isa 1
         MOVS      A1, #4                ; [DPU_3_PIPE] |1523| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1523| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1523,column 35,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1523,column 35,is_stmt,isa 1
         B         ||$C$L110||           ; [DPU_3_PIPE] |1523| 
         ; BRANCH OCCURS {||$C$L110||}    ; [] |1523| 
 ;* --------------------------------------------------------------------------*
 ||$C$L106||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1524,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1524,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1524 | a = dir[DIR_Attr] & AM_MASK;                                           
 ; 1525 | #if _USE_LFN    /* LFN configuration */                                
@@ -4736,7 +4736,7 @@ $C$DW$212	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [A1, #11]         ; [DPU_3_PIPE] |1524| 
         AND       A1, A1, #63           ; [DPU_3_PIPE] |1524| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |1524| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1544,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1544,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1544 | if (c != DDE && (_FS_RPATH || c != '.') && a != AM_LFN && (a == AM_VOL)
 ;     |  == vol) /* Is it a valid entry? */                                    
@@ -4770,14 +4770,14 @@ $C$DW$212	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L110||           ; [DPU_3_PIPE] |1544| 
         ; BRANCHCC OCCURS {||$C$L110||}  ; [] |1544| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1545,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1545,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1545 | break;                                                                 
 ; 1546 | #endif                                                                 
 ;----------------------------------------------------------------------
 ;* --------------------------------------------------------------------------*
 ||$C$L108||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1547,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1547,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1547 | res = dir_next(dj, 0);                          /* Next entry */       
 ;----------------------------------------------------------------------
@@ -4790,7 +4790,7 @@ $C$DW$213	.dwtag  DW_TAG_TI_branch
         BL        dir_next              ; [DPU_3_PIPE] |1547| 
         ; CALL OCCURS {dir_next }        ; [] |1547| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1547| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1548,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1548,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1548 | if (res != FR_OK) break;                                               
 ;----------------------------------------------------------------------
@@ -4798,12 +4798,12 @@ $C$DW$213	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L110||       ; [] 
         ; BRANCHCC OCCURS {||$C$L110||}  ; [] |1548| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1548,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1548,column 21,is_stmt,isa 1
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP ||$C$L109||
 ;* --------------------------------------------------------------------------*
 ||$C$L109||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1518,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1518,column 2,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1518| 
         LDR       A1, [A1, #16]         ; [DPU_3_PIPE] |1518| 
         CMP       A1, #0                ; [DPU_3_PIPE] |1518| 
@@ -4811,7 +4811,7 @@ $C$DW$213	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L105||}  ; [] |1518| 
 ;* --------------------------------------------------------------------------*
 ||$C$L110||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1551,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1551,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1551 | if (res != FR_OK) dj->sect = 0;                                        
 ;----------------------------------------------------------------------
@@ -4819,18 +4819,18 @@ $C$DW$213	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L111||       ; [] 
         ; BRANCHCC OCCURS {||$C$L111||}  ; [] |1551| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1551,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1551,column 20,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1551| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |1551| 
         STR       A2, [A1, #16]         ; [DPU_3_PIPE] |1551| 
 ;* --------------------------------------------------------------------------*
 ||$C$L111||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1553,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1553,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1553 | return res;                                                            
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1553| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1554,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1554,column 1,is_stmt,isa 1
         ADD       SP, SP, #20           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$214	.dwtag  DW_TAG_TI_branch
@@ -4839,7 +4839,7 @@ $C$DW$214	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$203, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$203, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$203, DW_AT_TI_end_line(0x612)
 	.dwattr $C$DW$203, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -4855,14 +4855,14 @@ $C$DW$215	.dwtag  DW_TAG_subprogram, DW_AT_name("dir_register")
 	.dwattr $C$DW$215, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$215, DW_AT_TI_symbol_name("dir_register")
 	.dwattr $C$DW$215, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$215, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$215, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$215, DW_AT_TI_begin_line(0x61c)
 	.dwattr $C$DW$215, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$215, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$215, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$215, DW_AT_decl_line(0x61c)
 	.dwattr $C$DW$215, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$215, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1567,column 1,is_stmt,address dir_register,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1567,column 1,is_stmt,address dir_register,isa 1
 
 	.dwfde $C$DW$CIE, dir_register
 $C$DW$216	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dj")
@@ -4955,7 +4955,7 @@ $C$DW$218	.dwtag  DW_TAG_variable, DW_AT_name("res")
 ; 1614 | #else   /* Non LFN configuration */                                    
 ;----------------------------------------------------------------------
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1567| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1615,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1615,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1615 | res = dir_alloc(dj, 1);         /* Allocate an entry for SFN */        
 ; 1616 | #endif                                                                 
@@ -4969,7 +4969,7 @@ $C$DW$219	.dwtag  DW_TAG_TI_branch
         BL        dir_alloc             ; [DPU_3_PIPE] |1615| 
         ; CALL OCCURS {dir_alloc }       ; [] |1615| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |1615| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1618,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1618,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1618 | if (res == FR_OK) {                             /* Set SFN entry */    
 ;----------------------------------------------------------------------
@@ -4977,7 +4977,7 @@ $C$DW$219	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L112||       ; [] 
         ; BRANCHCC OCCURS {||$C$L112||}  ; [] |1618| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1619,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1619,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1619 | res = move_window(dj->fs, dj->sect);                                   
 ;----------------------------------------------------------------------
@@ -4992,7 +4992,7 @@ $C$DW$220	.dwtag  DW_TAG_TI_branch
         BL        move_window           ; [DPU_3_PIPE] |1619| 
         ; CALL OCCURS {move_window }     ; [] |1619| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |1619| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1620,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1620,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1620 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -5000,7 +5000,7 @@ $C$DW$220	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L112||       ; [] 
         ; BRANCHCC OCCURS {||$C$L112||}  ; [] |1620| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1621,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1621,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1621 | mem_set(dj->dir, 0, SZ_DIR);    /* Clean the entry */                  
 ;----------------------------------------------------------------------
@@ -5014,7 +5014,7 @@ $C$DW$221	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$221, DW_AT_TI_call
         BL        mem_set               ; [DPU_3_PIPE] |1621| 
         ; CALL OCCURS {mem_set }         ; [] |1621| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1622,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1622,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1622 | mem_cpy(dj->dir, dj->fn, 11);   /* Put SFN */                          
 ; 1623 | #if _USE_LFN                                                           
@@ -5033,7 +5033,7 @@ $C$DW$222	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$222, DW_AT_TI_call
         BL        mem_cpy               ; [DPU_3_PIPE] |1622| 
         ; CALL OCCURS {mem_cpy }         ; [] |1622| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1626,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1626,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1626 | dj->fs->wflag = 1;                                                     
 ;----------------------------------------------------------------------
@@ -5043,19 +5043,19 @@ $C$DW$222	.dwtag  DW_TAG_TI_branch
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |1626| 
 ;* --------------------------------------------------------------------------*
 ||$C$L112||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1630,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1630,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1630 | return res;                                                            
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |1630| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1631,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1631,column 1,is_stmt,isa 1
 $C$DW$223	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$223, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$223, DW_AT_TI_return
         POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$215, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$215, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$215, DW_AT_TI_end_line(0x65f)
 	.dwattr $C$DW$215, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -5071,14 +5071,14 @@ $C$DW$224	.dwtag  DW_TAG_subprogram, DW_AT_name("dir_remove")
 	.dwattr $C$DW$224, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$224, DW_AT_TI_symbol_name("dir_remove")
 	.dwattr $C$DW$224, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$224, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$224, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$224, DW_AT_TI_begin_line(0x66a)
 	.dwattr $C$DW$224, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$224, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$224, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$224, DW_AT_decl_line(0x66a)
 	.dwattr $C$DW$224, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$224, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1645,column 1,is_stmt,address dir_remove,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1645,column 1,is_stmt,address dir_remove,isa 1
 
 	.dwfde $C$DW$CIE, dir_remove
 $C$DW$225	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dj")
@@ -5143,7 +5143,7 @@ $C$DW$227	.dwtag  DW_TAG_variable, DW_AT_name("res")
 ; 1664 | #else                   /* Non LFN configuration */                    
 ;----------------------------------------------------------------------
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1645| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1665,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1665,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1665 | res = dir_sdi(dj, dj->index);                                          
 ;----------------------------------------------------------------------
@@ -5157,7 +5157,7 @@ $C$DW$228	.dwtag  DW_TAG_TI_branch
         BL        dir_sdi               ; [DPU_3_PIPE] |1665| 
         ; CALL OCCURS {dir_sdi }         ; [] |1665| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |1665| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1666,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1666,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1666 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -5165,7 +5165,7 @@ $C$DW$228	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L113||       ; [] 
         ; BRANCHCC OCCURS {||$C$L113||}  ; [] |1666| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1667,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1667,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1667 | res = move_window(dj->fs, dj->sect);                                   
 ;----------------------------------------------------------------------
@@ -5180,7 +5180,7 @@ $C$DW$229	.dwtag  DW_TAG_TI_branch
         BL        move_window           ; [DPU_3_PIPE] |1667| 
         ; CALL OCCURS {move_window }     ; [] |1667| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |1667| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1668,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1668,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1668 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -5188,7 +5188,7 @@ $C$DW$229	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L113||       ; [] 
         ; BRANCHCC OCCURS {||$C$L113||}  ; [] |1668| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1669,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1669,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1669 | *dj->dir = DDE;                 /* Mark the entry "deleted" */         
 ;----------------------------------------------------------------------
@@ -5196,7 +5196,7 @@ $C$DW$229	.dwtag  DW_TAG_TI_branch
         LDR       A1, [A1, #20]         ; [DPU_3_PIPE] |1669| 
         MOVS      A2, #229              ; [DPU_3_PIPE] |1669| 
         STRB      A2, [A1, #0]          ; [DPU_3_PIPE] |1669| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1670,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1670,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1670 | dj->fs->wflag = 1;                                                     
 ; 1673 | #endif                                                                 
@@ -5207,19 +5207,19 @@ $C$DW$229	.dwtag  DW_TAG_TI_branch
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |1670| 
 ;* --------------------------------------------------------------------------*
 ||$C$L113||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1675,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1675,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1675 | return res;                                                            
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |1675| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1676,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1676,column 1,is_stmt,isa 1
 $C$DW$230	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$230, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$230, DW_AT_TI_return
         POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$224, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$224, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$224, DW_AT_TI_end_line(0x68c)
 	.dwattr $C$DW$224, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -5235,14 +5235,14 @@ $C$DW$231	.dwtag  DW_TAG_subprogram, DW_AT_name("create_name")
 	.dwattr $C$DW$231, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$231, DW_AT_TI_symbol_name("create_name")
 	.dwattr $C$DW$231, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$231, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$231, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$231, DW_AT_TI_begin_line(0x697)
 	.dwattr $C$DW$231, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$231, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$231, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$231, DW_AT_decl_line(0x697)
 	.dwattr $C$DW$231, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$231, DW_AT_TI_max_frame_size(0x28)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1691,column 1,is_stmt,address create_name,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1691,column 1,is_stmt,address create_name,isa 1
 
 	.dwfde $C$DW$CIE, create_name
 $C$DW$232	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dj")
@@ -5457,7 +5457,7 @@ $C$DW$243	.dwtag  DW_TAG_variable, DW_AT_name("p")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |1691| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1691| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1819,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1819,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1819 | for (p = *path; *p == '/' || *p == '\\'; p++) ; /* Strip duplicated sep
 ;     | arator */                                                              
@@ -5469,7 +5469,7 @@ $C$DW$243	.dwtag  DW_TAG_variable, DW_AT_name("p")
         ; BRANCH OCCURS {||$C$L115||}    ; [] |1819| 
 ;* --------------------------------------------------------------------------*
 ||$C$L114||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1819,column 43,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1819,column 43,is_stmt,isa 1
         LDR       A1, [SP, #28]         ; [DPU_3_PIPE] |1819| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |1819| 
         STR       A1, [SP, #28]         ; [DPU_3_PIPE] |1819| 
@@ -5477,7 +5477,7 @@ $C$DW$243	.dwtag  DW_TAG_variable, DW_AT_name("p")
 ;*   BEGIN LOOP ||$C$L115||
 ;* --------------------------------------------------------------------------*
 ||$C$L115||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1819,column 18,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1819,column 18,is_stmt,isa 1
         LDR       A1, [SP, #28]         ; [DPU_3_PIPE] |1819| 
         LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |1819| 
         CMP       A1, #47               ; [DPU_3_PIPE] |1819| 
@@ -5490,14 +5490,14 @@ $C$DW$243	.dwtag  DW_TAG_variable, DW_AT_name("p")
         BEQ       ||$C$L114||           ; [DPU_3_PIPE] |1819| 
         ; BRANCHCC OCCURS {||$C$L114||}  ; [] |1819| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1820,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1820,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1820 | sfn = dj->fn;                                                          
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1820| 
         LDR       A1, [A1, #24]         ; [DPU_3_PIPE] |1820| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |1820| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1821,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1821,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1821 | mem_set(sfn, ' ', 11);                                                 
 ;----------------------------------------------------------------------
@@ -5510,7 +5510,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$244, DW_AT_TI_call
         BL        mem_set               ; [DPU_3_PIPE] |1821| 
         ; CALL OCCURS {mem_set }         ; [] |1821| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1822,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1822,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1822 | si = i = b = 0; ni = 8;                                                
 ;----------------------------------------------------------------------
@@ -5518,7 +5518,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1822| 
         STR       A1, [SP, #24]         ; [DPU_3_PIPE] |1822| 
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |1822| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1822,column 18,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1822,column 18,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1823 | #if _FS_RPATH                                                          
 ; 1824 | if (p[si] == '.') { /* Is this a dot entry? */                         
@@ -5547,7 +5547,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L116||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1837,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1837,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1837 | c = (BYTE)p[si++];                                                     
 ;----------------------------------------------------------------------
@@ -5557,7 +5557,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         STR       A3, [SP, #20]         ; [DPU_3_PIPE] |1837| 
         LDRB      A1, [A1, +A2]         ; [DPU_3_PIPE] |1837| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |1837| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1838,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1838,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1838 | if (c <= ' ' || c == '/' || c == '\\') break;   /* Break on end of segm
 ;     | ent */                                                                 
@@ -5582,7 +5582,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L117||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1839,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1839,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1839 | if (c == '.' || i >= ni) {                                             
 ;----------------------------------------------------------------------
@@ -5598,7 +5598,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L121||}  ; [] |1839| 
 ;* --------------------------------------------------------------------------*
 ||$C$L118||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1840,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1840,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1840 | if (ni != 8 || c != '.') return FR_INVALID_NAME;                       
 ;----------------------------------------------------------------------
@@ -5613,34 +5613,34 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L120||}  ; [] |1840| 
 ;* --------------------------------------------------------------------------*
 ||$C$L119||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1840,column 29,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1840,column 29,is_stmt,isa 1
         MOVS      A1, #6                ; [DPU_3_PIPE] |1840| 
         B         ||$C$L141||           ; [DPU_3_PIPE] |1840| 
         ; BRANCH OCCURS {||$C$L141||}    ; [] |1840| 
 ;* --------------------------------------------------------------------------*
 ||$C$L120||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1841,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1841,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1841 | i = 8; ni = 11;                                                        
 ;----------------------------------------------------------------------
         MOVS      A1, #8                ; [DPU_3_PIPE] |1841| 
         STR       A1, [SP, #24]         ; [DPU_3_PIPE] |1841| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1841,column 11,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1841,column 11,is_stmt,isa 1
         MOVS      A1, #11               ; [DPU_3_PIPE] |1841| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |1841| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1842,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1842,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1842 | b <<= 2; continue;                                                     
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1842| 
         LSLS      A1, A1, #2            ; [DPU_3_PIPE] |1842| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1842| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1842,column 13,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1842,column 13,is_stmt,isa 1
         B         ||$C$L116||           ; [DPU_3_PIPE] |1842| 
         ; BRANCH OCCURS {||$C$L116||}    ; [] |1842| 
 ;* --------------------------------------------------------------------------*
 ||$C$L121||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1844,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1844,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1844 | if (c >= 0x80) {                                /* Extended char? */   
 ;----------------------------------------------------------------------
@@ -5649,7 +5649,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         BLT       ||$C$L122||           ; [DPU_3_PIPE] |1844| 
         ; BRANCHCC OCCURS {||$C$L122||}  ; [] |1844| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1845,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1845,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1845 | b |= 3;                                         /* Eliminate NT flag */
 ; 1846 | #ifdef _EXCVT                                                          
@@ -5666,7 +5666,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1845| 
 ;* --------------------------------------------------------------------------*
 ||$C$L122||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1854,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1854,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1854 | if (IsDBCS1(c)) {                               /* Check if it is a DBC
 ;     |  1st byte (always false on SBCS cfg) */                                
@@ -5693,7 +5693,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L129||}  ; [] |1854| 
 ;* --------------------------------------------------------------------------*
 ||$C$L124||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1855,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1855,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1855 | d = (BYTE)p[si++];                      /* Get 2nd byte */             
 ;----------------------------------------------------------------------
@@ -5703,7 +5703,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         STR       A3, [SP, #20]         ; [DPU_3_PIPE] |1855| 
         LDRB      A1, [A1, +A2]         ; [DPU_3_PIPE] |1855| 
         STRB      A1, [SP, #10]         ; [DPU_3_PIPE] |1855| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1856,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1856,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1856 | if (!IsDBCS2(d) || i >= ni - 1) /* Reject invalid DBC */               
 ;----------------------------------------------------------------------
@@ -5737,7 +5737,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L128||}  ; [] |1856| 
 ;* --------------------------------------------------------------------------*
 ||$C$L127||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1857,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1857,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1857 | return FR_INVALID_NAME;                                                
 ;----------------------------------------------------------------------
@@ -5746,7 +5746,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L141||}    ; [] |1857| 
 ;* --------------------------------------------------------------------------*
 ||$C$L128||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1858,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1858,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1858 | sfn[i++] = c;                                                          
 ;----------------------------------------------------------------------
@@ -5756,7 +5756,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         STR       A2, [SP, #24]         ; [DPU_3_PIPE] |1858| 
         LDRB      A2, [SP, #9]          ; [DPU_3_PIPE] |1858| 
         STRB      A2, [A1, +A3]         ; [DPU_3_PIPE] |1858| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1859,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1859,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1859 | sfn[i++] = d;                                                          
 ;----------------------------------------------------------------------
@@ -5766,7 +5766,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         STR       A2, [SP, #24]         ; [DPU_3_PIPE] |1859| 
         LDRB      A2, [SP, #10]         ; [DPU_3_PIPE] |1859| 
         STRB      A2, [A1, +A3]         ; [DPU_3_PIPE] |1859| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1860,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1860,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1860 | } else {                                                /* Single byte
 ;     | code */                                                                
@@ -5775,7 +5775,7 @@ $C$DW$244	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L116||}    ; [] |1860| 
 ;* --------------------------------------------------------------------------*
 ||$C$L129||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1861,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1861,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1861 | if (chk_chr("\"*+,:;<=>\?[]|\x7F", c))  /* Reject illegal chrs for SFN
 ;     | */                                                                     
@@ -5791,7 +5791,7 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L130||       ; [] 
         ; BRANCHCC OCCURS {||$C$L130||}  ; [] |1861| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1862,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1862,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1862 | return FR_INVALID_NAME;                                                
 ;----------------------------------------------------------------------
@@ -5800,7 +5800,7 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L141||}    ; [] |1862| 
 ;* --------------------------------------------------------------------------*
 ||$C$L130||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1863,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1863,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1863 | if (IsUpper(c)) {                       /* ASCII large capital? */     
 ;----------------------------------------------------------------------
@@ -5814,14 +5814,14 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         BGT       ||$C$L131||           ; [DPU_3_PIPE] |1863| 
         ; BRANCHCC OCCURS {||$C$L131||}  ; [] |1863| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1864,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1864,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1864 | b |= 2;                                                                
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1864| 
         ORR       A1, A1, #2            ; [DPU_3_PIPE] |1864| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1864| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1865,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1865,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1865 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -5829,7 +5829,7 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L132||}    ; [] |1865| 
 ;* --------------------------------------------------------------------------*
 ||$C$L131||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1866,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1866,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1866 | if (IsLower(c)) {               /* ASCII small capital? */             
 ;----------------------------------------------------------------------
@@ -5843,20 +5843,20 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         BGT       ||$C$L132||           ; [DPU_3_PIPE] |1866| 
         ; BRANCHCC OCCURS {||$C$L132||}  ; [] |1866| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1867,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1867,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1867 | b |= 1; c -= 0x20;                                                     
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1867| 
         ORR       A1, A1, #1            ; [DPU_3_PIPE] |1867| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1867| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1867,column 14,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1867,column 14,is_stmt,isa 1
         LDRB      A1, [SP, #9]          ; [DPU_3_PIPE] |1867| 
         SUBS      A1, A1, #32           ; [DPU_3_PIPE] |1867| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |1867| 
 ;* --------------------------------------------------------------------------*
 ||$C$L132||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1870,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1870,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1870 | sfn[i++] = c;                                                          
 ;----------------------------------------------------------------------
@@ -5866,12 +5866,12 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         STR       A2, [SP, #24]         ; [DPU_3_PIPE] |1870| 
         LDRB      A2, [SP, #9]          ; [DPU_3_PIPE] |1870| 
         STRB      A2, [A1, +A3]         ; [DPU_3_PIPE] |1870| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1872,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1872,column 2,is_stmt,isa 1
         B         ||$C$L116||           ; [DPU_3_PIPE] |1872| 
         ; BRANCH OCCURS {||$C$L116||}    ; [] |1872| 
 ;* --------------------------------------------------------------------------*
 ||$C$L133||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1873,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1873,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1873 | *path = &p[si];                                         /* Return point
 ;     | er to the next segment */                                              
@@ -5881,7 +5881,7 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |1873| 
         ADDS      A1, A1, A3            ; [DPU_3_PIPE] |1873| 
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |1873| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1874,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1874,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1874 | c = (c <= ' ') ? NS_LAST : 0;           /* Set last segment flag if end
 ;     |  of path */                                                            
@@ -5900,7 +5900,7 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
 ;* --------------------------------------------------------------------------*
 ||$C$L135||:    
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |1874| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1876,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1876,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1876 | if (!i) return FR_INVALID_NAME;         /* Reject nul string */        
 ;----------------------------------------------------------------------
@@ -5908,13 +5908,13 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L136||       ; [] 
         ; BRANCHCC OCCURS {||$C$L136||}  ; [] |1876| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1876,column 10,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1876,column 10,is_stmt,isa 1
         MOVS      A1, #6                ; [DPU_3_PIPE] |1876| 
         B         ||$C$L141||           ; [DPU_3_PIPE] |1876| 
         ; BRANCH OCCURS {||$C$L141||}    ; [] |1876| 
 ;* --------------------------------------------------------------------------*
 ||$C$L136||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1877,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1877,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1877 | if (sfn[0] == DDE) sfn[0] = NDDE;       /* When first char collides wit
 ;     | h DDE, replace it with 0x05 */                                         
@@ -5925,13 +5925,13 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L137||           ; [DPU_3_PIPE] |1877| 
         ; BRANCHCC OCCURS {||$C$L137||}  ; [] |1877| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1877,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1877,column 21,is_stmt,isa 1
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |1877| 
         MOVS      A2, #5                ; [DPU_3_PIPE] |1877| 
         STRB      A2, [A1, #0]          ; [DPU_3_PIPE] |1877| 
 ;* --------------------------------------------------------------------------*
 ||$C$L137||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1879,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1879,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1879 | if (ni == 8) b <<= 2;                                                  
 ;----------------------------------------------------------------------
@@ -5940,13 +5940,13 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L138||           ; [DPU_3_PIPE] |1879| 
         ; BRANCHCC OCCURS {||$C$L138||}  ; [] |1879| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1879,column 15,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1879,column 15,is_stmt,isa 1
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1879| 
         LSLS      A1, A1, #2            ; [DPU_3_PIPE] |1879| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |1879| 
 ;* --------------------------------------------------------------------------*
 ||$C$L138||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1880,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1880,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1880 | if ((b & 0x03) == 0x01) c |= NS_EXT;    /* NT flag (Name extension has
 ;     | only small capital) */                                                 
@@ -5957,13 +5957,13 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L139||           ; [DPU_3_PIPE] |1880| 
         ; BRANCHCC OCCURS {||$C$L139||}  ; [] |1880| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1880,column 26,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1880,column 26,is_stmt,isa 1
         LDRB      A1, [SP, #9]          ; [DPU_3_PIPE] |1880| 
         ORR       A1, A1, #16           ; [DPU_3_PIPE] |1880| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |1880| 
 ;* --------------------------------------------------------------------------*
 ||$C$L139||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1881,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1881,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1881 | if ((b & 0x0C) == 0x04) c |= NS_BODY;   /* NT flag (Name body has only
 ;     | small capital) */                                                      
@@ -5974,20 +5974,20 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L140||           ; [DPU_3_PIPE] |1881| 
         ; BRANCHCC OCCURS {||$C$L140||}  ; [] |1881| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1881,column 26,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1881,column 26,is_stmt,isa 1
         LDRB      A1, [SP, #9]          ; [DPU_3_PIPE] |1881| 
         ORR       A1, A1, #8            ; [DPU_3_PIPE] |1881| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |1881| 
 ;* --------------------------------------------------------------------------*
 ||$C$L140||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1883,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1883,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1883 | sfn[NS] = c;            /* Store NT flag, File name is created */      
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #9]          ; [DPU_3_PIPE] |1883| 
         LDR       A2, [SP, #12]         ; [DPU_3_PIPE] |1883| 
         STRB      A1, [A2, #11]         ; [DPU_3_PIPE] |1883| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1885,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1885,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1885 | return FR_OK;                                                          
 ; 1886 | #endif                                                                 
@@ -5995,7 +5995,7 @@ $C$DW$245	.dwtag  DW_TAG_TI_branch
         MOVS      A1, #0                ; [DPU_3_PIPE] |1885| 
 ;* --------------------------------------------------------------------------*
 ||$C$L141||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1887,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1887,column 1,is_stmt,isa 1
         ADD       SP, SP, #36           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$246	.dwtag  DW_TAG_TI_branch
@@ -6004,7 +6004,7 @@ $C$DW$246	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$231, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$231, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$231, DW_AT_TI_end_line(0x75f)
 	.dwattr $C$DW$231, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -6019,14 +6019,14 @@ $C$DW$247	.dwtag  DW_TAG_subprogram, DW_AT_name("get_fileinfo")
 	.dwattr $C$DW$247, DW_AT_low_pc(get_fileinfo)
 	.dwattr $C$DW$247, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$247, DW_AT_TI_symbol_name("get_fileinfo")
-	.dwattr $C$DW$247, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$247, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$247, DW_AT_TI_begin_line(0x769)
 	.dwattr $C$DW$247, DW_AT_TI_begin_column(0x06)
-	.dwattr $C$DW$247, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$247, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$247, DW_AT_decl_line(0x769)
 	.dwattr $C$DW$247, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$247, DW_AT_TI_max_frame_size(0x28)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1901,column 1,is_stmt,address get_fileinfo,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1901,column 1,is_stmt,address get_fileinfo,isa 1
 
 	.dwfde $C$DW$CIE, get_fileinfo
 $C$DW$248	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dj")
@@ -6096,14 +6096,14 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |1901| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1901| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1907,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1907,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1907 | p = fno->fname;                                                        
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |1907| 
         ADDS      A1, A1, #9            ; [DPU_3_PIPE] |1907| 
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |1907| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1908,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1908,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1908 | if (dj->sect) {                                                        
 ;----------------------------------------------------------------------
@@ -6113,27 +6113,27 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         BEQ       ||$C$L148||           ; [DPU_3_PIPE] |1908| 
         ; BRANCHCC OCCURS {||$C$L148||}  ; [] |1908| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1909,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1909,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1909 | dir = dj->dir;                                                         
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1909| 
         LDR       A1, [A1, #20]         ; [DPU_3_PIPE] |1909| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |1909| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1910,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1910,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1910 | nt = dir[DIR_NTres];            /* NT flag */                          
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |1910| 
         LDRB      A1, [A1, #12]         ; [DPU_3_PIPE] |1910| 
         STRB      A1, [SP, #12]         ; [DPU_3_PIPE] |1910| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1911,column 8,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1911,column 8,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1911 | for (i = 0; i < 8; i++) {       /* Copy name body */                   
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |1911| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1911| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1911,column 15,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1911,column 15,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1911| 
         CMP       A1, #8                ; [DPU_3_PIPE] |1911| 
         BCS       ||$C$L144||           ; [DPU_3_PIPE] |1911| 
@@ -6148,7 +6148,7 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L142||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1912,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1912,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1912 | c = dir[i];                                                            
 ;----------------------------------------------------------------------
@@ -6156,7 +6156,7 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |1912| 
         LDRB      A1, [A2, +A1]         ; [DPU_3_PIPE] |1912| 
         STRB      A1, [SP, #24]         ; [DPU_3_PIPE] |1912| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1913,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1913,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1913 | if (c == ' ') break;                                                   
 ;----------------------------------------------------------------------
@@ -6165,8 +6165,8 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         BEQ       ||$C$L144||           ; [DPU_3_PIPE] |1913| 
         ; BRANCHCC OCCURS {||$C$L144||}  ; [] |1913| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1913,column 18,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1914,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1913,column 18,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1914,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1914 | if (c == NDDE) c = (TCHAR)DDE;                                         
 ;----------------------------------------------------------------------
@@ -6175,10 +6175,10 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         BNE       ||$C$L143||           ; [DPU_3_PIPE] |1914| 
         ; BRANCHCC OCCURS {||$C$L143||}  ; [] |1914| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1914,column 19,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1914,column 19,is_stmt,isa 1
         MOVS      A1, #229              ; [DPU_3_PIPE] |1914| 
         STRB      A1, [SP, #24]         ; [DPU_3_PIPE] |1914| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1915,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1915,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1915 | if (_USE_LFN && (nt & NS_BODY) && IsUpper(c)) c += 0x20;               
 ; 1916 | #if _LFN_UNICODE                                                       
@@ -6193,7 +6193,7 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L143||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1922,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1922,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1922 | *p++ = c;                                                              
 ;----------------------------------------------------------------------
@@ -6202,18 +6202,18 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         STR       A2, [SP, #20]         ; [DPU_3_PIPE] |1922| 
         LDRB      A2, [SP, #24]         ; [DPU_3_PIPE] |1922| 
         STRB      A2, [A1, #0]          ; [DPU_3_PIPE] |1922| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1911,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1911,column 22,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1911| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |1911| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1911| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1911,column 15,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1911,column 15,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1911| 
         CMP       A1, #8                ; [DPU_3_PIPE] |1911| 
         BCC       ||$C$L142||           ; [DPU_3_PIPE] |1911| 
         ; BRANCHCC OCCURS {||$C$L142||}  ; [] |1911| 
 ;* --------------------------------------------------------------------------*
 ||$C$L144||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1924,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1924,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1924 | if (dir[8] != ' ') {            /* Copy name extension */              
 ;----------------------------------------------------------------------
@@ -6223,7 +6223,7 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         BEQ       ||$C$L147||           ; [DPU_3_PIPE] |1924| 
         ; BRANCHCC OCCURS {||$C$L147||}  ; [] |1924| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1925,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1925,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1925 | *p++ = '.';                                                            
 ;----------------------------------------------------------------------
@@ -6232,13 +6232,13 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         STR       A2, [SP, #20]         ; [DPU_3_PIPE] |1925| 
         MOVS      A2, #46               ; [DPU_3_PIPE] |1925| 
         STRB      A2, [A1, #0]          ; [DPU_3_PIPE] |1925| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1926,column 9,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1926,column 9,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1926 | for (i = 8; i < 11; i++) {                                             
 ;----------------------------------------------------------------------
         MOVS      A1, #8                ; [DPU_3_PIPE] |1926| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1926| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1926,column 16,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1926,column 16,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1926| 
         CMP       A1, #11               ; [DPU_3_PIPE] |1926| 
         BCS       ||$C$L147||           ; [DPU_3_PIPE] |1926| 
@@ -6253,7 +6253,7 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L145||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1927,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1927,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1927 | c = dir[i];                                                            
 ;----------------------------------------------------------------------
@@ -6261,7 +6261,7 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |1927| 
         LDRB      A1, [A2, +A1]         ; [DPU_3_PIPE] |1927| 
         STRB      A1, [SP, #24]         ; [DPU_3_PIPE] |1927| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1928,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1928,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1928 | if (c == ' ') break;                                                   
 ;----------------------------------------------------------------------
@@ -6270,8 +6270,8 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         BEQ       ||$C$L147||           ; [DPU_3_PIPE] |1928| 
         ; BRANCHCC OCCURS {||$C$L147||}  ; [] |1928| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1928,column 19,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1929,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1928,column 19,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1929,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1929 | if (_USE_LFN && (nt & NS_EXT) && IsUpper(c)) c += 0x20;                
 ; 1930 | #if _LFN_UNICODE                                                       
@@ -6286,7 +6286,7 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L146||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1936,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1936,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1936 | *p++ = c;                                                              
 ;----------------------------------------------------------------------
@@ -6295,18 +6295,18 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         STR       A2, [SP, #20]         ; [DPU_3_PIPE] |1936| 
         LDRB      A2, [SP, #24]         ; [DPU_3_PIPE] |1936| 
         STRB      A2, [A1, #0]          ; [DPU_3_PIPE] |1936| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1926,column 24,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1926,column 24,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1926| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |1926| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |1926| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1926,column 16,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1926,column 16,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |1926| 
         CMP       A1, #11               ; [DPU_3_PIPE] |1926| 
         BCC       ||$C$L145||           ; [DPU_3_PIPE] |1926| 
         ; BRANCHCC OCCURS {||$C$L145||}  ; [] |1926| 
 ;* --------------------------------------------------------------------------*
 ||$C$L147||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1939,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1939,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1939 | fno->fattrib = dir[DIR_Attr];                           /* Attribute */
 ;----------------------------------------------------------------------
@@ -6314,7 +6314,7 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |1939| 
         LDRB      A1, [A1, #11]         ; [DPU_3_PIPE] |1939| 
         STRB      A1, [A2, #8]          ; [DPU_3_PIPE] |1939| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1940,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1940,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1940 | fno->fsize = LD_DWORD(dir+DIR_FileSize);        /* Size */             
 ;----------------------------------------------------------------------
@@ -6332,7 +6332,7 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         ORR       A1, A1, A4, LSL #8    ; [DPU_3_PIPE] |1940| 
         ORRS      A2, A2, A1            ; [DPU_3_PIPE] |1940| 
         STR       A2, [A3, #0]          ; [DPU_3_PIPE] |1940| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1941,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1941,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1941 | fno->fdate = LD_WORD(dir+DIR_WrtDate);          /* Date */             
 ;----------------------------------------------------------------------
@@ -6343,7 +6343,7 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |1941| 
         ORR       A1, A1, A3, LSL #8    ; [DPU_3_PIPE] |1941| 
         STRH      A1, [A2, #4]          ; [DPU_3_PIPE] |1941| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1942,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1942,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1942 | fno->ftime = LD_WORD(dir+DIR_WrtTime);          /* Time */             
 ;----------------------------------------------------------------------
@@ -6356,7 +6356,7 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         STRH      A1, [A2, #6]          ; [DPU_3_PIPE] |1942| 
 ;* --------------------------------------------------------------------------*
 ||$C$L148||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1944,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1944,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1944 | *p = 0;         /* Terminate SFN str by a \0 */                        
 ; 1946 | #if _USE_LFN                                                           
@@ -6387,7 +6387,7 @@ $C$DW$256	.dwtag  DW_TAG_variable, DW_AT_name("c")
         LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |1944| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |1944| 
         STRB      A2, [A1, #0]          ; [DPU_3_PIPE] |1944| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1968,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1968,column 1,is_stmt,isa 1
         ADD       SP, SP, #32           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 8
 $C$DW$257	.dwtag  DW_TAG_TI_branch
@@ -6396,7 +6396,7 @@ $C$DW$257	.dwtag  DW_TAG_TI_branch
         POP       {V1, PC}              ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$247, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$247, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$247, DW_AT_TI_end_line(0x7b0)
 	.dwattr $C$DW$247, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -6412,14 +6412,14 @@ $C$DW$258	.dwtag  DW_TAG_subprogram, DW_AT_name("follow_path")
 	.dwattr $C$DW$258, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$258, DW_AT_TI_symbol_name("follow_path")
 	.dwattr $C$DW$258, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$258, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$258, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$258, DW_AT_TI_begin_line(0x7bb)
 	.dwattr $C$DW$258, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$258, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$258, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$258, DW_AT_decl_line(0x7bb)
 	.dwattr $C$DW$258, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$258, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1983,column 1,is_stmt,address follow_path,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1983,column 1,is_stmt,address follow_path,isa 1
 
 	.dwfde $C$DW$CIE, follow_path
 $C$DW$259	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dj")
@@ -6493,7 +6493,7 @@ $C$DW$265	.dwtag  DW_TAG_variable, DW_AT_name("ns")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |1983| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |1983| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1995,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1995,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1995 | if (*path == '/' || *path == '\\')      /* Strip heading separator if e
 ;     | xist */                                                                
@@ -6511,7 +6511,7 @@ $C$DW$265	.dwtag  DW_TAG_variable, DW_AT_name("ns")
         ; BRANCHCC OCCURS {||$C$L150||}  ; [] |1995| 
 ;* --------------------------------------------------------------------------*
 ||$C$L149||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1996,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1996,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1996 | path++;                                                                
 ;----------------------------------------------------------------------
@@ -6520,7 +6520,7 @@ $C$DW$265	.dwtag  DW_TAG_variable, DW_AT_name("ns")
         STR       A1, [SP, #4]          ; [DPU_3_PIPE] |1996| 
 ;* --------------------------------------------------------------------------*
 ||$C$L150||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 1997,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 1997,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 1997 | dj->sclust = 0;                                         /* Start from t
 ;     | he root dir */                                                         
@@ -6529,7 +6529,7 @@ $C$DW$265	.dwtag  DW_TAG_variable, DW_AT_name("ns")
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |1997| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |1997| 
         STR       A2, [A1, #8]          ; [DPU_3_PIPE] |1997| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2000,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2000,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2000 | if ((UINT)*path < ' ') {                        /* Nul path means the s
 ;     | tart directory itself */                                               
@@ -6540,7 +6540,7 @@ $C$DW$265	.dwtag  DW_TAG_variable, DW_AT_name("ns")
         BCS       ||$C$L151||           ; [DPU_3_PIPE] |2000| 
         ; BRANCHCC OCCURS {||$C$L151||}  ; [] |2000| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2001,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2001,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2001 | res = dir_sdi(dj, 0);                                                  
 ;----------------------------------------------------------------------
@@ -6553,14 +6553,14 @@ $C$DW$266	.dwtag  DW_TAG_TI_branch
         BL        dir_sdi               ; [DPU_3_PIPE] |2001| 
         ; CALL OCCURS {dir_sdi }         ; [] |2001| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2001| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2002,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2002,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2002 | dj->dir = 0;                                                           
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2002| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2002| 
         STR       A2, [A1, #20]         ; [DPU_3_PIPE] |2002| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2003,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2003,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2003 | } else {                                                        /* Foll
 ;     | ow path */                                                             
@@ -6578,7 +6578,7 @@ $C$DW$266	.dwtag  DW_TAG_TI_branch
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L151||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2005,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2005,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2005 | res = create_name(dj, &path);   /* Get a segment */                    
 ;----------------------------------------------------------------------
@@ -6591,7 +6591,7 @@ $C$DW$267	.dwtag  DW_TAG_TI_branch
         BL        create_name           ; [DPU_3_PIPE] |2005| 
         ; CALL OCCURS {create_name }     ; [] |2005| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2005| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2006,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2006,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2006 | if (res != FR_OK) break;                                               
 ;----------------------------------------------------------------------
@@ -6600,8 +6600,8 @@ $C$DW$267	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L155||           ; [DPU_3_PIPE] |2006| 
         ; BRANCHCC OCCURS {||$C$L155||}  ; [] |2006| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2006,column 22,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2007,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2006,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2007,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2007 | res = dir_find(dj);                             /* Find it */          
 ;----------------------------------------------------------------------
@@ -6613,7 +6613,7 @@ $C$DW$268	.dwtag  DW_TAG_TI_branch
         BL        dir_find              ; [DPU_3_PIPE] |2007| 
         ; CALL OCCURS {dir_find }        ; [] |2007| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2007| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2008,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2008,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2008 | ns = *(dj->fn+NS);                                                     
 ;----------------------------------------------------------------------
@@ -6621,7 +6621,7 @@ $C$DW$268	.dwtag  DW_TAG_TI_branch
         LDR       A1, [A1, #24]         ; [DPU_3_PIPE] |2008| 
         LDRB      A1, [A1, #11]         ; [DPU_3_PIPE] |2008| 
         STRB      A1, [SP, #16]         ; [DPU_3_PIPE] |2008| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2009,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2009,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2009 | if (res != FR_OK) {                             /* Failed to find the o
 ;     | bject */                                                               
@@ -6630,7 +6630,7 @@ $C$DW$268	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L153||       ; [] 
         ; BRANCHCC OCCURS {||$C$L153||}  ; [] |2009| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2010,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2010,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2010 | if (res != FR_NO_FILE) break;   /* Abort if any hard error occurred */ 
 ;----------------------------------------------------------------------
@@ -6639,8 +6639,8 @@ $C$DW$268	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L155||           ; [DPU_3_PIPE] |2010| 
         ; BRANCHCC OCCURS {||$C$L155||}  ; [] |2010| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2010,column 28,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2012,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2010,column 28,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2012,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2012 | if (_FS_RPATH && (ns & NS_DOT)) {       /* If dot entry is not exit */ 
 ; 2013 |         dj->sclust = 0; dj->dir = 0;    /* It is the root dir */       
@@ -6654,7 +6654,7 @@ $C$DW$268	.dwtag  DW_TAG_TI_branch
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L152||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2017,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2017,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2017 | if (!(ns & NS_LAST)) res = FR_NO_PATH;                                 
 ;----------------------------------------------------------------------
@@ -6663,10 +6663,10 @@ $C$DW$268	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L155||           ; [DPU_3_PIPE] |2017| 
         ; BRANCHCC OCCURS {||$C$L155||}  ; [] |2017| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2017,column 27,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2017,column 27,is_stmt,isa 1
         MOVS      A1, #5                ; [DPU_3_PIPE] |2017| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2017| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2019,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2019,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2019 | break;                                                                 
 ;----------------------------------------------------------------------
@@ -6674,7 +6674,7 @@ $C$DW$268	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L155||}    ; [] |2019| 
 ;* --------------------------------------------------------------------------*
 ||$C$L153||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2021,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2021,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2021 | if (ns & NS_LAST) break;                        /* Last segment match.
 ;     | Function completed. */                                                 
@@ -6684,8 +6684,8 @@ $C$DW$268	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L155||           ; [DPU_3_PIPE] |2021| 
         ; BRANCHCC OCCURS {||$C$L155||}  ; [] |2021| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2021,column 22,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2022,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2021,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2022,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2022 | dir = dj->dir;                                          /* There is nex
 ;     | t segment. Follow the sub directory */                                 
@@ -6693,7 +6693,7 @@ $C$DW$268	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2022| 
         LDR       A1, [A1, #20]         ; [DPU_3_PIPE] |2022| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |2022| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2023,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2023,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2023 | if (!(dir[DIR_Attr] & AM_DIR)) {        /* Cannot follow because it is
 ;     | a file */                                                              
@@ -6704,18 +6704,18 @@ $C$DW$268	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L154||           ; [DPU_3_PIPE] |2023| 
         ; BRANCHCC OCCURS {||$C$L154||}  ; [] |2023| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2024,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2024,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2024 | res = FR_NO_PATH; break;                                               
 ;----------------------------------------------------------------------
         MOVS      A1, #5                ; [DPU_3_PIPE] |2024| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2024| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2024,column 23,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2024,column 23,is_stmt,isa 1
         B         ||$C$L155||           ; [DPU_3_PIPE] |2024| 
         ; BRANCH OCCURS {||$C$L155||}    ; [] |2024| 
 ;* --------------------------------------------------------------------------*
 ||$C$L154||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2026,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2026,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2026 | dj->sclust = ld_clust(dj->fs, dir);                                    
 ;----------------------------------------------------------------------
@@ -6730,17 +6730,17 @@ $C$DW$269	.dwtag  DW_TAG_TI_branch
         ; CALL OCCURS {ld_clust }        ; [] |2026| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |2026| 
         STR       A1, [A2, #8]          ; [DPU_3_PIPE] |2026| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2027,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2027,column 3,is_stmt,isa 1
         B         ||$C$L151||           ; [DPU_3_PIPE] |2027| 
         ; BRANCH OCCURS {||$C$L151||}    ; [] |2027| 
 ;* --------------------------------------------------------------------------*
 ||$C$L155||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2030,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2030,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2030 | return res;                                                            
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2030| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2031,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2031,column 1,is_stmt,isa 1
         ADD       SP, SP, #20           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$270	.dwtag  DW_TAG_TI_branch
@@ -6749,7 +6749,7 @@ $C$DW$270	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$258, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$258, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$258, DW_AT_TI_end_line(0x7ef)
 	.dwattr $C$DW$258, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -6765,14 +6765,14 @@ $C$DW$271	.dwtag  DW_TAG_subprogram, DW_AT_name("check_fs")
 	.dwattr $C$DW$271, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$271, DW_AT_TI_symbol_name("check_fs")
 	.dwattr $C$DW$271, DW_AT_type(*$C$DW$T$19)
-	.dwattr $C$DW$271, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$271, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$271, DW_AT_TI_begin_line(0x7f9)
 	.dwattr $C$DW$271, DW_AT_TI_begin_column(0x06)
-	.dwattr $C$DW$271, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$271, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$271, DW_AT_decl_line(0x7f9)
 	.dwattr $C$DW$271, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$271, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2045,column 1,is_stmt,address check_fs,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2045,column 1,is_stmt,address check_fs,isa 1
 
 	.dwfde $C$DW$CIE, check_fs
 $C$DW$272	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fs")
@@ -6822,7 +6822,7 @@ $C$DW$275	.dwtag  DW_TAG_variable, DW_AT_name("sect")
 	.dwattr $C$DW$275, DW_AT_location[DW_OP_breg13 4]
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |2045| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |2045| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2046,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2046,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2046 | if (disk_read(fs->drv, fs->win, sect, 1) != RES_OK)     /* Load boot re
 ;     | cord */                                                                
@@ -6842,7 +6842,7 @@ $C$DW$276	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L156||       ; [] 
         ; BRANCHCC OCCURS {||$C$L156||}  ; [] |2046| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2047,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2047,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2047 | return 3;                                                              
 ;----------------------------------------------------------------------
@@ -6851,7 +6851,7 @@ $C$DW$276	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L160||}    ; [] |2047| 
 ;* --------------------------------------------------------------------------*
 ||$C$L156||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2048,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2048,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2048 | if (LD_WORD(&fs->win[BS_55AA]) != 0xAA55)               /* Check record
 ;     |  signature (always placed at offset 510 even if the sector size is >512
@@ -6868,7 +6868,7 @@ $C$DW$276	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L157||           ; [DPU_3_PIPE] |2048| 
         ; BRANCHCC OCCURS {||$C$L157||}  ; [] |2048| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2049,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2049,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2049 | return 2;                                                              
 ;----------------------------------------------------------------------
@@ -6877,7 +6877,7 @@ $C$DW$276	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L160||}    ; [] |2049| 
 ;* --------------------------------------------------------------------------*
 ||$C$L157||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2051,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2051,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2051 | if ((LD_DWORD(&fs->win[BS_FilSysType]) & 0xFFFFFF) == 0x544146) /* Chec
 ;     | k "FAT" string */                                                      
@@ -6900,7 +6900,7 @@ $C$DW$276	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L158||           ; [DPU_3_PIPE] |2051| 
         ; BRANCHCC OCCURS {||$C$L158||}  ; [] |2051| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2052,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2052,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2052 | return 0;                                                              
 ;----------------------------------------------------------------------
@@ -6909,7 +6909,7 @@ $C$DW$276	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L160||}    ; [] |2052| 
 ;* --------------------------------------------------------------------------*
 ||$C$L158||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2053,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2053,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2053 | if ((LD_DWORD(&fs->win[BS_FilSysType32]) & 0xFFFFFF) == 0x544146)      
 ;----------------------------------------------------------------------
@@ -6931,7 +6931,7 @@ $C$DW$276	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L159||           ; [DPU_3_PIPE] |2053| 
         ; BRANCHCC OCCURS {||$C$L159||}  ; [] |2053| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2054,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2054,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2054 | return 0;                                                              
 ;----------------------------------------------------------------------
@@ -6940,21 +6940,21 @@ $C$DW$276	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L160||}    ; [] |2054| 
 ;* --------------------------------------------------------------------------*
 ||$C$L159||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2056,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2056,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2056 | return 1;                                                              
 ;----------------------------------------------------------------------
         MOVS      A1, #1                ; [DPU_3_PIPE] |2056| 
 ;* --------------------------------------------------------------------------*
 ||$C$L160||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2057,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2057,column 1,is_stmt,isa 1
 $C$DW$277	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$277, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$277, DW_AT_TI_return
         POP       {A3, A4, V1, PC}      ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$271, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$271, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$271, DW_AT_TI_end_line(0x809)
 	.dwattr $C$DW$271, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -6970,14 +6970,14 @@ $C$DW$278	.dwtag  DW_TAG_subprogram, DW_AT_name("chk_mounted")
 	.dwattr $C$DW$278, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$278, DW_AT_TI_symbol_name("chk_mounted")
 	.dwattr $C$DW$278, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$278, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$278, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$278, DW_AT_TI_begin_line(0x813)
 	.dwattr $C$DW$278, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$278, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$278, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$278, DW_AT_decl_line(0x813)
 	.dwattr $C$DW$278, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$278, DW_AT_TI_max_frame_size(0x48)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2072,column 1,is_stmt,address chk_mounted,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2072,column 1,is_stmt,address chk_mounted,isa 1
 
 	.dwfde $C$DW$CIE, chk_mounted
 $C$DW$279	.dwtag  DW_TAG_formal_parameter, DW_AT_name("path")
@@ -7106,7 +7106,7 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         STRB      A3, [SP, #8]          ; [DPU_3_PIPE] |2072| 
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |2072| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |2072| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2078,column 17,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2078,column 17,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2078 | const TCHAR *p = *path;                                                
 ; 2079 | FATFS *fs;                                                             
@@ -7114,7 +7114,7 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2078| 
         LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |2078| 
         STR       A1, [SP, #52]         ; [DPU_3_PIPE] |2078| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2083,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2083,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2083 | vol = p[0] - '0';                                       /* Is there a d
 ;     | rive number? */                                                        
@@ -7123,7 +7123,7 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |2083| 
         SUBS      A1, A1, #48           ; [DPU_3_PIPE] |2083| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |2083| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2084,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2084,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2084 | if (vol <= 9 && p[1] == ':') {          /* Found a drive number, get an
 ;     | d strip it */                                                          
@@ -7139,7 +7139,7 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         BNE       ||$C$L161||           ; [DPU_3_PIPE] |2084| 
         ; BRANCHCC OCCURS {||$C$L161||}  ; [] |2084| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2085,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2085,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2085 | p += 2; *path = p;                              /* Return pointer to th
 ;     | e path name */                                                         
@@ -7147,11 +7147,11 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         LDR       A1, [SP, #52]         ; [DPU_3_PIPE] |2085| 
         ADDS      A1, A1, #2            ; [DPU_3_PIPE] |2085| 
         STR       A1, [SP, #52]         ; [DPU_3_PIPE] |2085| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2085,column 11,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2085,column 11,is_stmt,isa 1
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |2085| 
         LDR       A1, [SP, #52]         ; [DPU_3_PIPE] |2085| 
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |2085| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2086,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2086,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2086 | } else {                                                        /* No d
 ;     | rive number, use default drive */                                      
@@ -7164,7 +7164,7 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         ; BRANCH OCCURS {||$C$L162||}    ; [] |2086| 
 ;* --------------------------------------------------------------------------*
 ||$C$L161||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2090,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2090,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2090 | vol = 0;                                                /* Use drive 0
 ;     | */                                                                     
@@ -7174,14 +7174,14 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |2090| 
 ;* --------------------------------------------------------------------------*
 ||$C$L162||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2095,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2095,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2095 | *rfs = 0;                                                              
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |2095| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2095| 
         STR       A2, [A1, #0]          ; [DPU_3_PIPE] |2095| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2096,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2096,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2096 | if (vol >= _VOLUMES)                            /* Is the drive number
 ;     | valid? */                                                              
@@ -7190,7 +7190,7 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         CBZ       A1, ||$C$L163||       ; [] 
         ; BRANCHCC OCCURS {||$C$L163||}  ; [] |2096| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2097,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2097,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2097 | return FR_INVALID_DRIVE;                                               
 ;----------------------------------------------------------------------
@@ -7199,7 +7199,7 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2097| 
 ;* --------------------------------------------------------------------------*
 ||$C$L163||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2098,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2098,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2098 | fs = FatFs[vol];                                        /* Get correspo
 ;     | nding file system object */                                            
@@ -7208,7 +7208,7 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         LDR       A2, $C$CON2           ; [DPU_3_PIPE] |2098| 
         LDR       A1, [A2, +A1, LSL #2] ; [DPU_3_PIPE] |2098| 
         STR       A1, [SP, #56]         ; [DPU_3_PIPE] |2098| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2099,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2099,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2099 | if (!fs) return FR_NOT_ENABLED;         /* Is the file system object av
 ;     | ailable? */                                                            
@@ -7217,7 +7217,7 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         CBNZ      A1, ||$C$L164||       ; [] 
         ; BRANCHCC OCCURS {||$C$L164||}  ; [] |2099| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2099,column 11,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2099,column 11,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2101 | ENTER_FF(fs);                                           /* Lock volume
 ;     | */                                                                     
@@ -7227,7 +7227,7 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2099| 
 ;* --------------------------------------------------------------------------*
 ||$C$L164||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2103,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2103,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2103 | *rfs = fs;                                                      /* Retu
 ;     | rn pointer to the corresponding file system object */                  
@@ -7235,7 +7235,7 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         LDR       A1, [SP, #56]         ; [DPU_3_PIPE] |2103| 
         LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |2103| 
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |2103| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2104,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2104,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2104 | if (fs->fs_type) {                                      /* If the volum
 ;     | e has been mounted */                                                  
@@ -7245,7 +7245,7 @@ $C$DW$299	.dwtag  DW_TAG_variable, DW_AT_name("fs")
         CBZ       A1, ||$C$L166||       ; [] 
         ; BRANCHCC OCCURS {||$C$L166||}  ; [] |2104| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2105,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2105,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2105 | stat = disk_status(fs->drv);                                           
 ;----------------------------------------------------------------------
@@ -7258,7 +7258,7 @@ $C$DW$300	.dwtag  DW_TAG_TI_branch
         BL        disk_status           ; [DPU_3_PIPE] |2105| 
         ; CALL OCCURS {disk_status }     ; [] |2105| 
         STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |2105| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2106,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2106,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2106 | if (!(stat & STA_NOINIT)) {             /* and the physical drive is ke
 ;     | pt initialized (has not been changed), */                              
@@ -7268,7 +7268,7 @@ $C$DW$300	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L166||           ; [DPU_3_PIPE] |2106| 
         ; BRANCHCC OCCURS {||$C$L166||}  ; [] |2106| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2107,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2107,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2107 | if (!_FS_READONLY && wmode && (stat & STA_PROTECT))     /* Check write
 ;     | protection if needed */                                                
@@ -7282,7 +7282,7 @@ $C$DW$300	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L165||           ; [DPU_3_PIPE] |2107| 
         ; BRANCHCC OCCURS {||$C$L165||}  ; [] |2107| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2108,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2108,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2108 | return FR_WRITE_PROTECTED;                                             
 ;----------------------------------------------------------------------
@@ -7291,7 +7291,7 @@ $C$DW$300	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2108| 
 ;* --------------------------------------------------------------------------*
 ||$C$L165||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2109,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2109,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2109 | return FR_OK;                           /* The file system object is va
 ;     | lid */                                                                 
@@ -7301,7 +7301,7 @@ $C$DW$300	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2109| 
 ;* --------------------------------------------------------------------------*
 ||$C$L166||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2116,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2116,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2116 | fs->fs_type = 0;                                        /* Clear the fi
 ;     | le system object */                                                    
@@ -7309,7 +7309,7 @@ $C$DW$300	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #56]         ; [DPU_3_PIPE] |2116| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2116| 
         STRB      A2, [A1, #0]          ; [DPU_3_PIPE] |2116| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2117,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2117,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2117 | fs->drv = LD2PD(vol);                           /* Bind the logical dri
 ;     | ve and a physical drive */                                             
@@ -7317,7 +7317,7 @@ $C$DW$300	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #56]         ; [DPU_3_PIPE] |2117| 
         LDRB      A1, [SP, #16]         ; [DPU_3_PIPE] |2117| 
         STRB      A1, [A2, #1]          ; [DPU_3_PIPE] |2117| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2118,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2118,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2118 | stat = disk_initialize(fs->drv);        /* Initialize the physical driv
 ;     | e */                                                                   
@@ -7331,7 +7331,7 @@ $C$DW$301	.dwtag  DW_TAG_TI_branch
         BL        disk_initialize       ; [DPU_3_PIPE] |2118| 
         ; CALL OCCURS {disk_initialize }  ; [] |2118| 
         STRB      A1, [SP, #20]         ; [DPU_3_PIPE] |2118| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2119,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2119,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2119 | if (stat & STA_NOINIT)                          /* Check if the initial
 ;     | ization succeeded */                                                   
@@ -7341,7 +7341,7 @@ $C$DW$301	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L167||           ; [DPU_3_PIPE] |2119| 
         ; BRANCHCC OCCURS {||$C$L167||}  ; [] |2119| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2120,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2120,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2120 | return FR_NOT_READY;                    /* Failed to initialize due to
 ;     | no medium or hard error */                                             
@@ -7351,7 +7351,7 @@ $C$DW$301	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2120| 
 ;* --------------------------------------------------------------------------*
 ||$C$L167||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2121,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2121,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2121 | if (!_FS_READONLY && wmode && (stat & STA_PROTECT))     /* Check disk w
 ;     | rite protection if needed */                                           
@@ -7365,7 +7365,7 @@ $C$DW$301	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L168||           ; [DPU_3_PIPE] |2121| 
         ; BRANCHCC OCCURS {||$C$L168||}  ; [] |2121| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2122,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2122,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2122 | return FR_WRITE_PROTECTED;                                             
 ; 2123 | #if _MAX_SS != 512                                              /* Get
@@ -7379,7 +7379,7 @@ $C$DW$301	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2122| 
 ;* --------------------------------------------------------------------------*
 ||$C$L168||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2128,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2128,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2128 | fmt = check_fs(fs, bsect = 0);          /* Load sector 0 and check if i
 ;     | t is an FAT-VBR (in SFD) */                                            
@@ -7394,7 +7394,7 @@ $C$DW$302	.dwtag  DW_TAG_TI_branch
         BL        check_fs              ; [DPU_3_PIPE] |2128| 
         ; CALL OCCURS {check_fs }        ; [] |2128| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2128| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2129,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2129,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2129 | if (LD2PT(vol) && !fmt) fmt = 1;        /* Force non-SFD if the volume
 ;     | is forced partition */                                                 
@@ -7404,7 +7404,7 @@ $C$DW$302	.dwtag  DW_TAG_TI_branch
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L169||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2130,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2130,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2130 | if (fmt == 1) {                                         /* Not an FAT-V
 ;     | BR, the physical drive can be partitioned */                           
@@ -7414,13 +7414,13 @@ $C$DW$302	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L171||           ; [DPU_3_PIPE] |2130| 
         ; BRANCHCC OCCURS {||$C$L171||}  ; [] |2130| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2132,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2132,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2132 | pi = LD2PT(vol);                                                       
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |2132| 
         STRB      A1, [SP, #11]         ; [DPU_3_PIPE] |2132| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2133,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2133,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2133 | if (pi) pi--;                                                          
 ;----------------------------------------------------------------------
@@ -7428,13 +7428,13 @@ $C$DW$302	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L170||       ; [] 
         ; BRANCHCC OCCURS {||$C$L170||}  ; [] |2133| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2133,column 11,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2133,column 11,is_stmt,isa 1
         LDRB      A1, [SP, #11]         ; [DPU_3_PIPE] |2133| 
         SUBS      A1, A1, #1            ; [DPU_3_PIPE] |2133| 
         STRB      A1, [SP, #11]         ; [DPU_3_PIPE] |2133| 
 ;* --------------------------------------------------------------------------*
 ||$C$L170||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2134,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2134,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2134 | tbl = &fs->win[MBR_Table + pi * SZ_PTE];/* Partition table */          
 ;----------------------------------------------------------------------
@@ -7445,7 +7445,7 @@ $C$DW$302	.dwtag  DW_TAG_TI_branch
         ADDS      A2, A2, A1            ; [DPU_3_PIPE] |2134| 
         ADDS      A2, A2, #52           ; [DPU_3_PIPE] |2134| 
         STR       A2, [SP, #12]         ; [DPU_3_PIPE] |2134| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2135,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2135,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2135 | if (tbl[4]) {                                           /* Is the parti
 ;     | tion existing? */                                                      
@@ -7455,7 +7455,7 @@ $C$DW$302	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L171||       ; [] 
         ; BRANCHCC OCCURS {||$C$L171||}  ; [] |2135| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2136,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2136,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2136 | bsect = LD_DWORD(&tbl[8]);              /* Partition offset in LBA */  
 ;----------------------------------------------------------------------
@@ -7472,7 +7472,7 @@ $C$DW$302	.dwtag  DW_TAG_TI_branch
         ORR       A1, A1, A3, LSL #8    ; [DPU_3_PIPE] |2136| 
         ORRS      A2, A2, A1            ; [DPU_3_PIPE] |2136| 
         STR       A2, [SP, #24]         ; [DPU_3_PIPE] |2136| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2137,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2137,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2137 | fmt = check_fs(fs, bsect);              /* Check the partition */      
 ;----------------------------------------------------------------------
@@ -7487,7 +7487,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2137| 
 ;* --------------------------------------------------------------------------*
 ||$C$L171||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2140,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2140,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2140 | if (fmt == 3) return FR_DISK_ERR;                                      
 ;----------------------------------------------------------------------
@@ -7496,13 +7496,13 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L172||           ; [DPU_3_PIPE] |2140| 
         ; BRANCHCC OCCURS {||$C$L172||}  ; [] |2140| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2140,column 16,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2140,column 16,is_stmt,isa 1
         MOVS      A1, #1                ; [DPU_3_PIPE] |2140| 
         B         ||$C$L194||           ; [DPU_3_PIPE] |2140| 
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2140| 
 ;* --------------------------------------------------------------------------*
 ||$C$L172||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2141,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2141,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2141 | if (fmt) return FR_NO_FILESYSTEM;               /* No FAT volume is fou
 ;     | nd */                                                                  
@@ -7511,13 +7511,13 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L173||       ; [] 
         ; BRANCHCC OCCURS {||$C$L173||}  ; [] |2141| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2141,column 11,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2141,column 11,is_stmt,isa 1
         MOVS      A1, #13               ; [DPU_3_PIPE] |2141| 
         B         ||$C$L194||           ; [DPU_3_PIPE] |2141| 
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2141| 
 ;* --------------------------------------------------------------------------*
 ||$C$L173||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2145,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2145,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2145 | if (LD_WORD(fs->win+BPB_BytsPerSec) != SS(fs))          /* (BPB_BytsPer
 ;     | Sec must be equal to the physical sector size) */                      
@@ -7532,7 +7532,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L174||           ; [DPU_3_PIPE] |2145| 
         ; BRANCHCC OCCURS {||$C$L174||}  ; [] |2145| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2146,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2146,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2146 | return FR_NO_FILESYSTEM;                                               
 ;----------------------------------------------------------------------
@@ -7541,7 +7541,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2146| 
 ;* --------------------------------------------------------------------------*
 ||$C$L174||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2148,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2148,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2148 | fasize = LD_WORD(fs->win+BPB_FATSz16);                          /* Numb
 ;     | er of sectors per FAT */                                               
@@ -7553,7 +7553,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         ORR       A1, A1, A2, LSL #8    ; [DPU_3_PIPE] |2148| 
         UXTH      A1, A1                ; [DPU_3_PIPE] |2148| 
         STR       A1, [SP, #28]         ; [DPU_3_PIPE] |2148| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2149,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2149,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2149 | if (!fasize) fasize = LD_DWORD(fs->win+BPB_FATSz32);                   
 ;----------------------------------------------------------------------
@@ -7561,7 +7561,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L175||       ; [] 
         ; BRANCHCC OCCURS {||$C$L175||}  ; [] |2149| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2149,column 15,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2149,column 15,is_stmt,isa 1
         LDR       A1, [SP, #56]         ; [DPU_3_PIPE] |2149| 
         LDR       A4, [SP, #56]         ; [DPU_3_PIPE] |2149| 
         LDR       A3, [SP, #56]         ; [DPU_3_PIPE] |2149| 
@@ -7577,14 +7577,14 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         STR       A2, [SP, #28]         ; [DPU_3_PIPE] |2149| 
 ;* --------------------------------------------------------------------------*
 ||$C$L175||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2150,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2150,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2150 | fs->fsize = fasize;                                                    
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #28]         ; [DPU_3_PIPE] |2150| 
         LDR       A2, [SP, #56]         ; [DPU_3_PIPE] |2150| 
         STR       A1, [A2, #28]         ; [DPU_3_PIPE] |2150| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2152,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2152,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2152 | fs->n_fats = b = fs->win[BPB_NumFATs];                          /* Numb
 ;     | er of FAT copies */                                                    
@@ -7594,7 +7594,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #10]         ; [DPU_3_PIPE] |2152| 
         LDR       A2, [SP, #56]         ; [DPU_3_PIPE] |2152| 
         STRB      A1, [A2, #3]          ; [DPU_3_PIPE] |2152| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2153,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2153,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2153 | if (b != 1 && b != 2) return FR_NO_FILESYSTEM;          /* (Must be 1 o
 ;     | r 2) */                                                                
@@ -7609,13 +7609,13 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L176||           ; [DPU_3_PIPE] |2153| 
         ; BRANCHCC OCCURS {||$C$L176||}  ; [] |2153| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2153,column 24,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2153,column 24,is_stmt,isa 1
         MOVS      A1, #13               ; [DPU_3_PIPE] |2153| 
         B         ||$C$L194||           ; [DPU_3_PIPE] |2153| 
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2153| 
 ;* --------------------------------------------------------------------------*
 ||$C$L176||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2154,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2154,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2154 | fasize *= b;
 ;     |                  /* Number of sectors for FAT area */                  
@@ -7624,7 +7624,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [SP, #10]         ; [DPU_3_PIPE] |2154| 
         MULS      A1, A1, A2            ; [DPU_3_PIPE] |2154| 
         STR       A1, [SP, #28]         ; [DPU_3_PIPE] |2154| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2156,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2156,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2156 | fs->csize = b = fs->win[BPB_SecPerClus];                        /* Numb
 ;     | er of sectors per cluster */                                           
@@ -7634,7 +7634,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #10]         ; [DPU_3_PIPE] |2156| 
         LDR       A2, [SP, #56]         ; [DPU_3_PIPE] |2156| 
         STRB      A1, [A2, #2]          ; [DPU_3_PIPE] |2156| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2157,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2157,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2157 | if (!b || (b & (b - 1))) return FR_NO_FILESYSTEM;       /* (Must be pow
 ;     | er of 2) */                                                            
@@ -7651,13 +7651,13 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L178||}  ; [] |2157| 
 ;* --------------------------------------------------------------------------*
 ||$C$L177||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2157,column 27,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2157,column 27,is_stmt,isa 1
         MOVS      A1, #13               ; [DPU_3_PIPE] |2157| 
         B         ||$C$L194||           ; [DPU_3_PIPE] |2157| 
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2157| 
 ;* --------------------------------------------------------------------------*
 ||$C$L178||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2159,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2159,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2159 | fs->n_rootdir = LD_WORD(fs->win+BPB_RootEntCnt);        /* Number of ro
 ;     | ot directory entries */                                                
@@ -7669,7 +7669,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #56]         ; [DPU_3_PIPE] |2159| 
         ORR       A1, A1, A3, LSL #8    ; [DPU_3_PIPE] |2159| 
         STRH      A1, [A2, #8]          ; [DPU_3_PIPE] |2159| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2160,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2160,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2160 | if (fs->n_rootdir % (SS(fs) / SZ_DIR)) return FR_NO_FILESYSTEM; /* (BPB
 ;     | _RootEntCnt must be sector aligned) */                                 
@@ -7680,13 +7680,13 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L179||           ; [DPU_3_PIPE] |2160| 
         ; BRANCHCC OCCURS {||$C$L179||}  ; [] |2160| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2160,column 41,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2160,column 41,is_stmt,isa 1
         MOVS      A1, #13               ; [DPU_3_PIPE] |2160| 
         B         ||$C$L194||           ; [DPU_3_PIPE] |2160| 
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2160| 
 ;* --------------------------------------------------------------------------*
 ||$C$L179||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2162,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2162,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2162 | tsect = LD_WORD(fs->win+BPB_TotSec16);                          /* Numb
 ;     | er of sectors on the volume */                                         
@@ -7698,7 +7698,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         ORR       A1, A1, A2, LSL #8    ; [DPU_3_PIPE] |2162| 
         UXTH      A1, A1                ; [DPU_3_PIPE] |2162| 
         STR       A1, [SP, #32]         ; [DPU_3_PIPE] |2162| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2163,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2163,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2163 | if (!tsect) tsect = LD_DWORD(fs->win+BPB_TotSec32);                    
 ;----------------------------------------------------------------------
@@ -7706,7 +7706,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L180||       ; [] 
         ; BRANCHCC OCCURS {||$C$L180||}  ; [] |2163| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2163,column 14,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2163,column 14,is_stmt,isa 1
         LDR       A1, [SP, #56]         ; [DPU_3_PIPE] |2163| 
         LDR       A4, [SP, #56]         ; [DPU_3_PIPE] |2163| 
         LDR       A3, [SP, #56]         ; [DPU_3_PIPE] |2163| 
@@ -7722,7 +7722,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         STR       A2, [SP, #32]         ; [DPU_3_PIPE] |2163| 
 ;* --------------------------------------------------------------------------*
 ||$C$L180||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2165,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2165,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2165 | nrsv = LD_WORD(fs->win+BPB_RsvdSecCnt);                         /* Numb
 ;     | er of reserved sectors */                                              
@@ -7733,7 +7733,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [A1, #66]         ; [DPU_3_PIPE] |2165| 
         ORR       A1, A1, A2, LSL #8    ; [DPU_3_PIPE] |2165| 
         STRH      A1, [SP, #48]         ; [DPU_3_PIPE] |2165| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2166,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2166,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2166 | if (!nrsv) return FR_NO_FILESYSTEM;
 ;     |  /* (BPB_RsvdSecCnt must not be 0) */                                  
@@ -7742,13 +7742,13 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L181||       ; [] 
         ; BRANCHCC OCCURS {||$C$L181||}  ; [] |2166| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2166,column 13,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2166,column 13,is_stmt,isa 1
         MOVS      A1, #13               ; [DPU_3_PIPE] |2166| 
         B         ||$C$L194||           ; [DPU_3_PIPE] |2166| 
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2166| 
 ;* --------------------------------------------------------------------------*
 ||$C$L181||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2169,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2169,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2169 | sysect = nrsv + fasize + fs->n_rootdir / (SS(fs) / SZ_DIR);     /* RSV+
 ;     | FAT+DIR */                                                             
@@ -7760,7 +7760,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         ADDS      A1, A1, A3            ; [DPU_3_PIPE] |2169| 
         ADD       A1, A1, A2, LSR #4    ; [DPU_3_PIPE] |2169| 
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |2169| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2170,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2170,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2170 | if (tsect < sysect) return FR_NO_FILESYSTEM;            /* (Invalid vol
 ;     | ume size) */                                                           
@@ -7771,13 +7771,13 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         BLS       ||$C$L182||           ; [DPU_3_PIPE] |2170| 
         ; BRANCHCC OCCURS {||$C$L182||}  ; [] |2170| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2170,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2170,column 22,is_stmt,isa 1
         MOVS      A1, #13               ; [DPU_3_PIPE] |2170| 
         B         ||$C$L194||           ; [DPU_3_PIPE] |2170| 
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2170| 
 ;* --------------------------------------------------------------------------*
 ||$C$L182||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2171,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2171,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2171 | nclst = (tsect - sysect) / fs->csize;                           /* Numb
 ;     | er of clusters */                                                      
@@ -7789,7 +7789,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         SUBS      A1, A1, A3            ; [DPU_3_PIPE] |2171| 
         UDIV      A1, A1, A2            ; [DPU_3_PIPE] |2171| 
         STR       A1, [SP, #40]         ; [DPU_3_PIPE] |2171| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2172,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2172,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2172 | if (!nclst) return FR_NO_FILESYSTEM;                            /* (Inv
 ;     | alid volume size) */                                                   
@@ -7798,7 +7798,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L183||       ; [] 
         ; BRANCHCC OCCURS {||$C$L183||}  ; [] |2172| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2172,column 14,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2172,column 14,is_stmt,isa 1
         MOVS      A1, #13               ; [DPU_3_PIPE] |2172| 
         B         ||$C$L194||           ; [DPU_3_PIPE] |2172| 
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2172| 
@@ -7810,13 +7810,13 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
 ||$C$CON2||:	.bits	FatFs,32
 ;* --------------------------------------------------------------------------*
 ||$C$L183||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2173,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2173,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2173 | fmt = FS_FAT12;                                                        
 ;----------------------------------------------------------------------
         MOVS      A1, #1                ; [DPU_3_PIPE] |2173| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2173| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2174,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2174,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2174 | if (nclst >= MIN_FAT16) fmt = FS_FAT16;                                
 ;----------------------------------------------------------------------
@@ -7826,12 +7826,12 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         BHI       ||$C$L184||           ; [DPU_3_PIPE] |2174| 
         ; BRANCHCC OCCURS {||$C$L184||}  ; [] |2174| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2174,column 26,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2174,column 26,is_stmt,isa 1
         MOVS      A1, #2                ; [DPU_3_PIPE] |2174| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2174| 
 ;* --------------------------------------------------------------------------*
 ||$C$L184||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2175,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2175,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2175 | if (nclst >= MIN_FAT32) fmt = FS_FAT32;                                
 ;----------------------------------------------------------------------
@@ -7841,12 +7841,12 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         BHI       ||$C$L185||           ; [DPU_3_PIPE] |2175| 
         ; BRANCHCC OCCURS {||$C$L185||}  ; [] |2175| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2175,column 26,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2175,column 26,is_stmt,isa 1
         MOVS      A1, #3                ; [DPU_3_PIPE] |2175| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2175| 
 ;* --------------------------------------------------------------------------*
 ||$C$L185||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2178,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2178,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2178 | fs->n_fatent = nclst + 2;
 ;     |          /* Number of FAT entries */                                   
@@ -7855,7 +7855,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #56]         ; [DPU_3_PIPE] |2178| 
         ADDS      A1, A1, #2            ; [DPU_3_PIPE] |2178| 
         STR       A1, [A2, #24]         ; [DPU_3_PIPE] |2178| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2179,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2179,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2179 | fs->volbase = bsect;
 ;     |          /* Volume start sector */                                     
@@ -7863,7 +7863,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #24]         ; [DPU_3_PIPE] |2179| 
         LDR       A2, [SP, #56]         ; [DPU_3_PIPE] |2179| 
         STR       A1, [A2, #32]         ; [DPU_3_PIPE] |2179| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2180,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2180,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2180 | fs->fatbase = bsect + nrsv;
 ;     |  /* FAT start sector */                                                
@@ -7873,7 +7873,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #56]         ; [DPU_3_PIPE] |2180| 
         ADDS      A1, A1, A3            ; [DPU_3_PIPE] |2180| 
         STR       A1, [A2, #36]         ; [DPU_3_PIPE] |2180| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2181,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2181,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2181 | fs->database = bsect + sysect;
 ;     |  /* Data start sector */                                               
@@ -7883,7 +7883,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #56]         ; [DPU_3_PIPE] |2181| 
         ADDS      A1, A1, A3            ; [DPU_3_PIPE] |2181| 
         STR       A1, [A2, #44]         ; [DPU_3_PIPE] |2181| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2182,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2182,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2182 | if (fmt == FS_FAT32) {                                                 
 ;----------------------------------------------------------------------
@@ -7892,7 +7892,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L187||           ; [DPU_3_PIPE] |2182| 
         ; BRANCHCC OCCURS {||$C$L187||}  ; [] |2182| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2183,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2183,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2183 | if (fs->n_rootdir) return FR_NO_FILESYSTEM;             /* (BPB_RootEnt
 ;     | Cnt must be 0) */                                                      
@@ -7902,13 +7902,13 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L186||       ; [] 
         ; BRANCHCC OCCURS {||$C$L186||}  ; [] |2183| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2183,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2183,column 22,is_stmt,isa 1
         MOVS      A1, #13               ; [DPU_3_PIPE] |2183| 
         B         ||$C$L194||           ; [DPU_3_PIPE] |2183| 
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2183| 
 ;* --------------------------------------------------------------------------*
 ||$C$L186||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2184,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2184,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2184 | fs->dirbase = LD_DWORD(fs->win+BPB_RootClus);   /* Root directory start
 ;     |  cluster */                                                            
@@ -7927,7 +7927,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         ORR       A1, A1, A4, LSL #8    ; [DPU_3_PIPE] |2184| 
         ORRS      A2, A2, A1            ; [DPU_3_PIPE] |2184| 
         STR       A2, [A3, #40]         ; [DPU_3_PIPE] |2184| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2185,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2185,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2185 | szbfat = fs->n_fatent * 4;
 ;     |  /* (Required FAT size) */                                             
@@ -7936,7 +7936,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         LDR       A1, [A1, #24]         ; [DPU_3_PIPE] |2185| 
         LSLS      A1, A1, #2            ; [DPU_3_PIPE] |2185| 
         STR       A1, [SP, #44]         ; [DPU_3_PIPE] |2185| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2186,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2186,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2186 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -7944,7 +7944,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L191||}    ; [] |2186| 
 ;* --------------------------------------------------------------------------*
 ||$C$L187||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2187,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2187,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2187 | if (!fs->n_rootdir)     return FR_NO_FILESYSTEM;        /* (BPB_RootEnt
 ;     | Cnt must not be 0) */                                                  
@@ -7954,13 +7954,13 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L188||       ; [] 
         ; BRANCHCC OCCURS {||$C$L188||}  ; [] |2187| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2187,column 23,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2187,column 23,is_stmt,isa 1
         MOVS      A1, #13               ; [DPU_3_PIPE] |2187| 
         B         ||$C$L194||           ; [DPU_3_PIPE] |2187| 
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2187| 
 ;* --------------------------------------------------------------------------*
 ||$C$L188||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2188,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2188,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2188 | fs->dirbase = fs->fatbase + fasize;                             /* Root
 ;     |  directory start sector */                                             
@@ -7971,7 +7971,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #56]         ; [DPU_3_PIPE] |2188| 
         ADDS      A1, A1, A3            ; [DPU_3_PIPE] |2188| 
         STR       A1, [A2, #40]         ; [DPU_3_PIPE] |2188| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2189,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2189,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2189 | szbfat = (fmt == FS_FAT16) ?                                    /* (Req
 ;     | uired FAT size) */                                                     
@@ -8001,7 +8001,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         STR       A2, [SP, #44]         ; [DPU_3_PIPE] |2189| 
 ;* --------------------------------------------------------------------------*
 ||$C$L191||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2192,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2192,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2192 | if (fs->fsize < (szbfat + (SS(fs) - 1)) / SS(fs))       /* (BPB_FATSz m
 ;     | ust not be less than required) */                                      
@@ -8014,7 +8014,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L192||           ; [DPU_3_PIPE] |2192| 
         ; BRANCHCC OCCURS {||$C$L192||}  ; [] |2192| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2193,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2193,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2193 | return FR_NO_FILESYSTEM;                                               
 ; 2195 | #if !_FS_READONLY                                                      
@@ -8024,21 +8024,21 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L194||}    ; [] |2193| 
 ;* --------------------------------------------------------------------------*
 ||$C$L192||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2197,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2197,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2197 | fs->free_clust = 0xFFFFFFFF;                                           
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #56]         ; [DPU_3_PIPE] |2197| 
         MOV       A2, #-1               ; [DPU_3_PIPE] |2197| 
         STR       A2, [A1, #16]         ; [DPU_3_PIPE] |2197| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2198,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2198,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2198 | fs->last_clust = 0;                                                    
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #56]         ; [DPU_3_PIPE] |2198| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2198| 
         STR       A2, [A1, #12]         ; [DPU_3_PIPE] |2198| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2201,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2201,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2201 | if (fmt == FS_FAT32) {                                                 
 ;----------------------------------------------------------------------
@@ -8047,14 +8047,14 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L193||           ; [DPU_3_PIPE] |2201| 
         ; BRANCHCC OCCURS {||$C$L193||}  ; [] |2201| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2202,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2202,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2202 | fs->fsi_flag = 0;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #56]         ; [DPU_3_PIPE] |2202| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2202| 
         STRB      A2, [A1, #5]          ; [DPU_3_PIPE] |2202| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2203,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2203,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2203 | fs->fsi_sector = bsect + LD_WORD(fs->win+BPB_FSInfo);                  
 ;----------------------------------------------------------------------
@@ -8068,7 +8068,7 @@ $C$DW$303	.dwtag  DW_TAG_TI_branch
         UXTH      A1, A1                ; [DPU_3_PIPE] |2203| 
         ADDS      A1, A1, A3            ; [DPU_3_PIPE] |2203| 
         STR       A1, [A2, #20]         ; [DPU_3_PIPE] |2203| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2204,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2204,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2204 | if (disk_read(fs->drv, fs->win, fs->fsi_sector, 1) == RES_OK &&        
 ; 2205 |         LD_WORD(fs->win+BS_55AA) == 0xAA55 &&                          
@@ -8137,7 +8137,7 @@ $C$DW$304	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L193||           ; [DPU_3_PIPE] |2204| 
         ; BRANCHCC OCCURS {||$C$L193||}  ; [] |2204| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2208,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2208,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2208 | fs->last_clust = LD_DWORD(fs->win+FSI_Nxt_Free);                       
 ;----------------------------------------------------------------------
@@ -8155,7 +8155,7 @@ $C$DW$304	.dwtag  DW_TAG_TI_branch
         ORR       A1, A1, A4, LSL #8    ; [DPU_3_PIPE] |2208| 
         ORRS      A2, A2, A1            ; [DPU_3_PIPE] |2208| 
         STR       A2, [A3, #12]         ; [DPU_3_PIPE] |2208| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2209,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2209,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2209 | fs->free_clust = LD_DWORD(fs->win+FSI_Free_Count);                     
 ; 2212 | #endif                                                                 
@@ -8176,14 +8176,14 @@ $C$DW$304	.dwtag  DW_TAG_TI_branch
         STR       A2, [A3, #16]         ; [DPU_3_PIPE] |2209| 
 ;* --------------------------------------------------------------------------*
 ||$C$L193||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2213,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2213,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2213 | fs->fs_type = fmt;              /* FAT sub-type */                     
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2213| 
         LDR       A2, [SP, #56]         ; [DPU_3_PIPE] |2213| 
         STRB      A1, [A2, #0]          ; [DPU_3_PIPE] |2213| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2214,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2214,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2214 | fs->id = ++Fsid;                /* File system mount ID */             
 ;----------------------------------------------------------------------
@@ -8194,14 +8194,14 @@ $C$DW$304	.dwtag  DW_TAG_TI_branch
         STRH      A1, [A2, #0]          ; [DPU_3_PIPE] |2214| 
         LDR       A2, [SP, #56]         ; [DPU_3_PIPE] |2214| 
         STRH      A1, [A2, #6]          ; [DPU_3_PIPE] |2214| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2215,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2215,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2215 | fs->winsect = 0;                /* Invalidate sector cache */          
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #56]         ; [DPU_3_PIPE] |2215| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2215| 
         STR       A2, [A1, #48]         ; [DPU_3_PIPE] |2215| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2216,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2216,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2216 | fs->wflag = 0;                                                         
 ; 2217 | #if _FS_RPATH                                                          
@@ -8215,14 +8215,14 @@ $C$DW$304	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #56]         ; [DPU_3_PIPE] |2216| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2216| 
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |2216| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2224,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2224,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2224 | return FR_OK;                                                          
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |2224| 
 ;* --------------------------------------------------------------------------*
 ||$C$L194||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2225,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2225,column 1,is_stmt,isa 1
         ADD       SP, SP, #64           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 8
 $C$DW$305	.dwtag  DW_TAG_TI_branch
@@ -8231,7 +8231,7 @@ $C$DW$305	.dwtag  DW_TAG_TI_branch
         POP       {V1, PC}              ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$278, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$278, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$278, DW_AT_TI_end_line(0x8b1)
 	.dwattr $C$DW$278, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -8247,14 +8247,14 @@ $C$DW$306	.dwtag  DW_TAG_subprogram, DW_AT_name("validate")
 	.dwattr $C$DW$306, DW_AT_high_pc(0x00)
 	.dwattr $C$DW$306, DW_AT_TI_symbol_name("validate")
 	.dwattr $C$DW$306, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$306, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$306, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$306, DW_AT_TI_begin_line(0x8bb)
 	.dwattr $C$DW$306, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$306, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$306, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$306, DW_AT_decl_line(0x8bb)
 	.dwattr $C$DW$306, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$306, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2238,column 1,is_stmt,address validate,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2238,column 1,is_stmt,address validate,isa 1
 
 	.dwfde $C$DW$CIE, validate
 $C$DW$307	.dwtag  DW_TAG_formal_parameter, DW_AT_name("obj")
@@ -8298,14 +8298,14 @@ $C$DW$309	.dwtag  DW_TAG_variable, DW_AT_name("fil")
 	.dwattr $C$DW$309, DW_AT_type(*$C$DW$T$76)
 	.dwattr $C$DW$309, DW_AT_location[DW_OP_breg13 4]
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |2238| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2239,column 11,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2239,column 11,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2239 | FIL *fil = (FIL*)obj;   /* Assuming offset of fs and id in the FIL/DIR
 ;     | is identical */                                                        
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2239| 
         STR       A1, [SP, #4]          ; [DPU_3_PIPE] |2239| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2242,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2242,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2242 | if (!fil || !fil->fs || !fil->fs->fs_type || fil->fs->id != fil->id)   
 ;----------------------------------------------------------------------
@@ -8334,7 +8334,7 @@ $C$DW$309	.dwtag  DW_TAG_variable, DW_AT_name("fil")
         ; BRANCHCC OCCURS {||$C$L196||}  ; [] |2242| 
 ;* --------------------------------------------------------------------------*
 ||$C$L195||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2243,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2243,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2243 | return FR_INVALID_OBJECT;                                              
 ; 2245 | ENTER_FF(fil->fs);              /* Lock file system */                 
@@ -8344,7 +8344,7 @@ $C$DW$309	.dwtag  DW_TAG_variable, DW_AT_name("fil")
         ; BRANCH OCCURS {||$C$L198||}    ; [] |2243| 
 ;* --------------------------------------------------------------------------*
 ||$C$L196||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2247,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2247,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2247 | if (disk_status(fil->fs->drv) & STA_NOINIT)                            
 ;----------------------------------------------------------------------
@@ -8361,7 +8361,7 @@ $C$DW$310	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L197||           ; [DPU_3_PIPE] |2247| 
         ; BRANCHCC OCCURS {||$C$L197||}  ; [] |2247| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2248,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2248,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2248 | return FR_NOT_READY;                                                   
 ;----------------------------------------------------------------------
@@ -8370,21 +8370,21 @@ $C$DW$310	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L198||}    ; [] |2248| 
 ;* --------------------------------------------------------------------------*
 ||$C$L197||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2250,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2250,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2250 | return FR_OK;                                                          
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |2250| 
 ;* --------------------------------------------------------------------------*
 ||$C$L198||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2251,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2251,column 1,is_stmt,isa 1
 $C$DW$311	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$311, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$311, DW_AT_TI_return
         POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$306, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$306, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$306, DW_AT_TI_end_line(0x8cb)
 	.dwattr $C$DW$306, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -8402,14 +8402,14 @@ $C$DW$312	.dwtag  DW_TAG_subprogram, DW_AT_name("f_mount")
 	.dwattr $C$DW$312, DW_AT_TI_symbol_name("f_mount")
 	.dwattr $C$DW$312, DW_AT_external
 	.dwattr $C$DW$312, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$312, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$312, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$312, DW_AT_TI_begin_line(0x8dc)
 	.dwattr $C$DW$312, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$312, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$312, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$312, DW_AT_decl_line(0x8dc)
 	.dwattr $C$DW$312, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$312, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2272,column 1,is_stmt,address f_mount,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2272,column 1,is_stmt,address f_mount,isa 1
 
 	.dwfde $C$DW$CIE, f_mount
 $C$DW$313	.dwtag  DW_TAG_formal_parameter, DW_AT_name("vol")
@@ -8458,7 +8458,7 @@ $C$DW$317	.dwtag  DW_TAG_variable, DW_AT_name("rfs")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |2272| 
         STRB      A1, [SP, #0]          ; [DPU_3_PIPE] |2272| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2276,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2276,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2276 | if (vol >= _VOLUMES)            /* Check if the drive number is valid *
 ;     | /                                                                      
@@ -8468,7 +8468,7 @@ $C$DW$317	.dwtag  DW_TAG_variable, DW_AT_name("rfs")
         BLE       ||$C$L199||           ; [DPU_3_PIPE] |2276| 
         ; BRANCHCC OCCURS {||$C$L199||}  ; [] |2276| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2277,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2277,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2277 | return FR_INVALID_DRIVE;                                               
 ;----------------------------------------------------------------------
@@ -8477,7 +8477,7 @@ $C$DW$317	.dwtag  DW_TAG_variable, DW_AT_name("rfs")
         ; BRANCH OCCURS {||$C$L202||}    ; [] |2277| 
 ;* --------------------------------------------------------------------------*
 ||$C$L199||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2278,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2278,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2278 | rfs = FatFs[vol];                       /* Get current fs object */    
 ;----------------------------------------------------------------------
@@ -8485,7 +8485,7 @@ $C$DW$317	.dwtag  DW_TAG_variable, DW_AT_name("rfs")
         LDR       A2, $C$CON6           ; [DPU_3_PIPE] |2278| 
         LDR       A1, [A2, +A1, LSL #2] ; [DPU_3_PIPE] |2278| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |2278| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2280,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2280,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2280 | if (rfs) {                                                             
 ; 2281 | #if _FS_LOCK                                                           
@@ -8500,7 +8500,7 @@ $C$DW$317	.dwtag  DW_TAG_variable, DW_AT_name("rfs")
         CBZ       A1, ||$C$L200||       ; [] 
         ; BRANCHCC OCCURS {||$C$L200||}  ; [] |2280| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2287,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2287,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2287 | rfs->fs_type = 0;               /* Clear old fs object */              
 ;----------------------------------------------------------------------
@@ -8509,7 +8509,7 @@ $C$DW$317	.dwtag  DW_TAG_variable, DW_AT_name("rfs")
         STRB      A2, [A1, #0]          ; [DPU_3_PIPE] |2287| 
 ;* --------------------------------------------------------------------------*
 ||$C$L200||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2290,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2290,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2290 | if (fs) {                                                              
 ;----------------------------------------------------------------------
@@ -8517,7 +8517,7 @@ $C$DW$317	.dwtag  DW_TAG_variable, DW_AT_name("rfs")
         CBZ       A1, ||$C$L201||       ; [] 
         ; BRANCHCC OCCURS {||$C$L201||}  ; [] |2290| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2291,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2291,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2291 | fs->fs_type = 0;                /* Clear new fs object */              
 ; 2292 | #if _FS_REENTRANT                               /* Create sync object f
@@ -8530,7 +8530,7 @@ $C$DW$317	.dwtag  DW_TAG_variable, DW_AT_name("rfs")
         STRB      A2, [A1, #0]          ; [DPU_3_PIPE] |2291| 
 ;* --------------------------------------------------------------------------*
 ||$C$L201||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2296,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2296,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2296 | FatFs[vol] = fs;                        /* Register new fs object */   
 ;----------------------------------------------------------------------
@@ -8538,14 +8538,14 @@ $C$DW$317	.dwtag  DW_TAG_variable, DW_AT_name("rfs")
         LDR       A3, $C$CON6           ; [DPU_3_PIPE] |2296| 
         LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |2296| 
         STR       A1, [A3, +A2, LSL #2] ; [DPU_3_PIPE] |2296| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2298,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2298,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2298 | return FR_OK;                                                          
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |2298| 
 ;* --------------------------------------------------------------------------*
 ||$C$L202||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2299,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2299,column 1,is_stmt,isa 1
         ADD       SP, SP, #16           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
 $C$DW$318	.dwtag  DW_TAG_TI_branch
@@ -8553,7 +8553,7 @@ $C$DW$318	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$318, DW_AT_TI_return
         BX        LR                    ; [DPU_3_PIPE] 
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$312, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$312, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$312, DW_AT_TI_end_line(0x8fb)
 	.dwattr $C$DW$312, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -8571,14 +8571,14 @@ $C$DW$319	.dwtag  DW_TAG_subprogram, DW_AT_name("f_open")
 	.dwattr $C$DW$319, DW_AT_TI_symbol_name("f_open")
 	.dwattr $C$DW$319, DW_AT_external
 	.dwattr $C$DW$319, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$319, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$319, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$319, DW_AT_TI_begin_line(0x904)
 	.dwattr $C$DW$319, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$319, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$319, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$319, DW_AT_decl_line(0x904)
 	.dwattr $C$DW$319, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$319, DW_AT_TI_max_frame_size(0x48)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2313,column 1,is_stmt,address f_open,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2313,column 1,is_stmt,address f_open,isa 1
 
 	.dwfde $C$DW$CIE, f_open
 $C$DW$320	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fp")
@@ -8659,7 +8659,7 @@ $C$DW$329	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
         STRB      A3, [SP, #8]          ; [DPU_3_PIPE] |2313| 
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |2313| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |2313| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2320,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2320,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2320 | if (!fp) return FR_INVALID_OBJECT;                                     
 ;----------------------------------------------------------------------
@@ -8667,13 +8667,13 @@ $C$DW$329	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
         CBNZ      A1, ||$C$L203||       ; [] 
         ; BRANCHCC OCCURS {||$C$L203||}  ; [] |2320| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2320,column 11,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2320,column 11,is_stmt,isa 1
         MOVS      A1, #9                ; [DPU_3_PIPE] |2320| 
         B         ||$C$L215||           ; [DPU_3_PIPE] |2320| 
         ; BRANCH OCCURS {||$C$L215||}    ; [] |2320| 
 ;* --------------------------------------------------------------------------*
 ||$C$L203||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2321,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2321,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2321 | fp->fs = 0;                     /* Clear file object */                
 ; 2323 | #if !_FS_READONLY                                                      
@@ -8681,7 +8681,7 @@ $C$DW$329	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2321| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2321| 
         STR       A2, [A1, #0]          ; [DPU_3_PIPE] |2321| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2324,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2324,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2324 | mode &= FA_READ | FA_WRITE | FA_CREATE_ALWAYS | FA_OPEN_ALWAYS | FA_CRE
 ;     | ATE_NEW;                                                               
@@ -8689,7 +8689,7 @@ $C$DW$329	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2324| 
         AND       A1, A1, #31           ; [DPU_3_PIPE] |2324| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2324| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2325,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2325,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2325 | res = chk_mounted(&path, &dj.fs, (BYTE)(mode & ~FA_READ));             
 ; 2326 | #else                                                                  
@@ -8708,7 +8708,7 @@ $C$DW$330	.dwtag  DW_TAG_TI_branch
         BL        chk_mounted           ; [DPU_3_PIPE] |2325| 
         ; CALL OCCURS {chk_mounted }     ; [] |2325| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2325| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2330,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2330,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2330 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -8717,13 +8717,13 @@ $C$DW$330	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L214||           ; [DPU_3_PIPE] |2330| 
         ; BRANCHCC OCCURS {||$C$L214||}  ; [] |2330| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2331,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2331,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2331 | INIT_BUF(dj);                                                          
 ;----------------------------------------------------------------------
         ADD       A1, SP, #44           ; [DPU_3_PIPE] |2331| 
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |2331| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2332,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2332,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2332 | res = follow_path(&dj, path);   /* Follow the file path */             
 ;----------------------------------------------------------------------
@@ -8736,14 +8736,14 @@ $C$DW$331	.dwtag  DW_TAG_TI_branch
         BL        follow_path           ; [DPU_3_PIPE] |2332| 
         ; CALL OCCURS {follow_path }     ; [] |2332| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2332| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2333,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2333,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2333 | dir = dj.dir;                                                          
 ; 2334 | #if !_FS_READONLY       /* R/W configuration */                        
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #32]         ; [DPU_3_PIPE] |2333| 
         STR       A1, [SP, #40]         ; [DPU_3_PIPE] |2333| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2335,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2335,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2335 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -8751,7 +8751,7 @@ $C$DW$331	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L204||       ; [] 
         ; BRANCHCC OCCURS {||$C$L204||}  ; [] |2335| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2336,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2336,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2336 | if (!dir)       /* Current dir itself */                               
 ;----------------------------------------------------------------------
@@ -8759,7 +8759,7 @@ $C$DW$331	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L204||       ; [] 
         ; BRANCHCC OCCURS {||$C$L204||}  ; [] |2336| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2337,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2337,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2337 | res = FR_INVALID_NAME;                                                 
 ; 2338 | #if _FS_LOCK                                                           
@@ -8771,7 +8771,7 @@ $C$DW$331	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2337| 
 ;* --------------------------------------------------------------------------*
 ||$C$L204||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2344,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2344,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2344 | if (mode & (FA_CREATE_ALWAYS | FA_OPEN_ALWAYS | FA_CREATE_NEW)) {      
 ; 2345 |         DWORD dw, cl;                                                  
@@ -8791,7 +8791,7 @@ $C$DW$334	.dwtag  DW_TAG_variable, DW_AT_name("cl")
 	.dwattr $C$DW$334, DW_AT_TI_symbol_name("cl")
 	.dwattr $C$DW$334, DW_AT_type(*$C$DW$T$21)
 	.dwattr $C$DW$334, DW_AT_location[DW_OP_breg13 60]
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2347,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2347,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2347 | if (res != FR_OK) {                                     /* No file, cre
 ;     | ate new */                                                             
@@ -8800,7 +8800,7 @@ $C$DW$334	.dwtag  DW_TAG_variable, DW_AT_name("cl")
         CBZ       A1, ||$C$L206||       ; [] 
         ; BRANCHCC OCCURS {||$C$L206||}  ; [] |2347| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2348,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2348,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2348 | if (res == FR_NO_FILE)                  /* There is no file to open, cr
 ;     | eate a new entry */                                                    
@@ -8813,7 +8813,7 @@ $C$DW$334	.dwtag  DW_TAG_variable, DW_AT_name("cl")
         BNE       ||$C$L205||           ; [DPU_3_PIPE] |2348| 
         ; BRANCHCC OCCURS {||$C$L205||}  ; [] |2348| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2352,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2352,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2352 | res = dir_register(&dj);                                               
 ; 2353 | #endif                                                                 
@@ -8828,20 +8828,20 @@ $C$DW$335	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2352| 
 ;* --------------------------------------------------------------------------*
 ||$C$L205||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2354,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2354,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2354 | mode |= FA_CREATE_ALWAYS;               /* File is created */          
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2354| 
         ORR       A1, A1, #8            ; [DPU_3_PIPE] |2354| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2354| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2355,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2355,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2355 | dir = dj.dir;                                   /* New entry */        
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #32]         ; [DPU_3_PIPE] |2355| 
         STR       A1, [SP, #40]         ; [DPU_3_PIPE] |2355| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2356,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2356,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2357 | else {                                                          /* Any
 ;     | object is already existing */                                          
@@ -8850,7 +8850,7 @@ $C$DW$335	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L208||}    ; [] |2356| 
 ;* --------------------------------------------------------------------------*
 ||$C$L206||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2358,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2358,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2358 | if (dir[DIR_Attr] & (AM_RDO | AM_DIR)) {        /* Cannot overwrite it
 ;     | (R/O or DIR) */                                                        
@@ -8861,13 +8861,13 @@ $C$DW$335	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L207||           ; [DPU_3_PIPE] |2358| 
         ; BRANCHCC OCCURS {||$C$L207||}  ; [] |2358| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2359,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2359,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2359 | res = FR_DENIED;                                                       
 ;----------------------------------------------------------------------
         MOVS      A1, #7                ; [DPU_3_PIPE] |2359| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2359| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2360,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2360,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2360 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -8875,7 +8875,7 @@ $C$DW$335	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L208||}    ; [] |2360| 
 ;* --------------------------------------------------------------------------*
 ||$C$L207||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2361,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2361,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2361 | if (mode & FA_CREATE_NEW)       /* Cannot create as new file */        
 ;----------------------------------------------------------------------
@@ -8884,7 +8884,7 @@ $C$DW$335	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L208||           ; [DPU_3_PIPE] |2361| 
         ; BRANCHCC OCCURS {||$C$L208||}  ; [] |2361| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2362,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2362,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2362 | res = FR_EXIST;                                                        
 ;----------------------------------------------------------------------
@@ -8892,7 +8892,7 @@ $C$DW$335	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2362| 
 ;* --------------------------------------------------------------------------*
 ||$C$L208||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2365,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2365,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2365 | if (res == FR_OK && (mode & FA_CREATE_ALWAYS)) {        /* Truncate it
 ;     | if overwrite mode */                                                   
@@ -8907,7 +8907,7 @@ $C$DW$335	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L211||           ; [DPU_3_PIPE] |2365| 
         ; BRANCHCC OCCURS {||$C$L211||}  ; [] |2365| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2366,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2366,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2366 | dw = get_fattime();                                     /* Created time
 ;     |  */                                                                    
@@ -8919,7 +8919,7 @@ $C$DW$336	.dwtag  DW_TAG_TI_branch
         BL        get_fattime           ; [DPU_3_PIPE] |2366| 
         ; CALL OCCURS {get_fattime }     ; [] |2366| 
         STR       A1, [SP, #56]         ; [DPU_3_PIPE] |2366| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2367,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2367,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2367 | ST_DWORD(dir+DIR_CrtTime, dw);                                         
 ;----------------------------------------------------------------------
@@ -8936,7 +8936,7 @@ $C$DW$336	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #40]         ; [DPU_3_PIPE] |2367| 
         LDRB      A1, [SP, #59]         ; [DPU_3_PIPE] |2367| 
         STRB      A1, [A2, #17]         ; [DPU_3_PIPE] |2367| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2368,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2368,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2368 | dir[DIR_Attr] = 0;                                      /* Reset attrib
 ;     | ute */                                                                 
@@ -8944,7 +8944,7 @@ $C$DW$336	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #40]         ; [DPU_3_PIPE] |2368| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2368| 
         STRB      A2, [A1, #11]         ; [DPU_3_PIPE] |2368| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2369,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2369,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2369 | ST_DWORD(dir+DIR_FileSize, 0);          /* size = 0 */                 
 ;----------------------------------------------------------------------
@@ -8960,7 +8960,7 @@ $C$DW$336	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #40]         ; [DPU_3_PIPE] |2369| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2369| 
         STRB      A2, [A1, #31]         ; [DPU_3_PIPE] |2369| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2370,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2370,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2370 | cl = ld_clust(dj.fs, dir);                      /* Get start cluster */
 ;----------------------------------------------------------------------
@@ -8973,7 +8973,7 @@ $C$DW$337	.dwtag  DW_TAG_TI_branch
         BL        ld_clust              ; [DPU_3_PIPE] |2370| 
         ; CALL OCCURS {ld_clust }        ; [] |2370| 
         STR       A1, [SP, #60]         ; [DPU_3_PIPE] |2370| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2371,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2371,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2371 | st_clust(dir, 0);                                       /* cluster = 0
 ;     | */                                                                     
@@ -8986,14 +8986,14 @@ $C$DW$338	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$338, DW_AT_TI_call
         BL        st_clust              ; [DPU_3_PIPE] |2371| 
         ; CALL OCCURS {st_clust }        ; [] |2371| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2372,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2372,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2372 | dj.fs->wflag = 1;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |2372| 
         MOVS      A2, #1                ; [DPU_3_PIPE] |2372| 
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |2372| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2373,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2373,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2373 | if (cl) {                                                       /* Remo
 ;     | ve the cluster chain if exist */                                       
@@ -9003,14 +9003,14 @@ $C$DW$338	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L211||           ; [DPU_3_PIPE] |2373| 
         ; BRANCHCC OCCURS {||$C$L211||}  ; [] |2373| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2374,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2374,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2374 | dw = dj.fs->winsect;                                                   
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |2374| 
         LDR       A1, [A1, #48]         ; [DPU_3_PIPE] |2374| 
         STR       A1, [SP, #56]         ; [DPU_3_PIPE] |2374| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2375,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2375,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2375 | res = remove_chain(dj.fs, cl);                                         
 ;----------------------------------------------------------------------
@@ -9023,7 +9023,7 @@ $C$DW$339	.dwtag  DW_TAG_TI_branch
         BL        remove_chain          ; [DPU_3_PIPE] |2375| 
         ; CALL OCCURS {remove_chain }    ; [] |2375| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2375| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2376,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2376,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2376 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -9031,7 +9031,7 @@ $C$DW$339	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L211||       ; [] 
         ; BRANCHCC OCCURS {||$C$L211||}  ; [] |2376| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2377,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2377,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2377 | dj.fs->last_clust = cl - 1;     /* Reuse the cluster hole */           
 ;----------------------------------------------------------------------
@@ -9039,7 +9039,7 @@ $C$DW$339	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #12]         ; [DPU_3_PIPE] |2377| 
         SUBS      A1, A1, #1            ; [DPU_3_PIPE] |2377| 
         STR       A1, [A2, #12]         ; [DPU_3_PIPE] |2377| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2378,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2378,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2378 | res = move_window(dj.fs, dw);                                          
 ;----------------------------------------------------------------------
@@ -9054,7 +9054,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2378| 
 	.dwendtag $C$DW$332
 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2382,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2382,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2383 | else {  /* Open an existing file */                                    
 ;----------------------------------------------------------------------
@@ -9062,7 +9062,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L211||}    ; [] |2382| 
 ;* --------------------------------------------------------------------------*
 ||$C$L209||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2384,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2384,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2384 | if (res == FR_OK) {                                             /* Foll
 ;     | ow succeeded */                                                        
@@ -9071,7 +9071,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L211||       ; [] 
         ; BRANCHCC OCCURS {||$C$L211||}  ; [] |2384| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2385,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2385,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2385 | if (dir[DIR_Attr] & AM_DIR) {           /* It is a directory */        
 ;----------------------------------------------------------------------
@@ -9081,13 +9081,13 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L210||           ; [DPU_3_PIPE] |2385| 
         ; BRANCHCC OCCURS {||$C$L210||}  ; [] |2385| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2386,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2386,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2386 | res = FR_NO_FILE;                                                      
 ;----------------------------------------------------------------------
         MOVS      A1, #4                ; [DPU_3_PIPE] |2386| 
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2386| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2387,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2387,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2387 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -9095,7 +9095,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L211||}    ; [] |2387| 
 ;* --------------------------------------------------------------------------*
 ||$C$L210||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2388,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2388,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2388 | if ((mode & FA_WRITE) && (dir[DIR_Attr] & AM_RDO)) /* R/O violation */ 
 ;----------------------------------------------------------------------
@@ -9110,7 +9110,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L211||           ; [DPU_3_PIPE] |2388| 
         ; BRANCHCC OCCURS {||$C$L211||}  ; [] |2388| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2389,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2389,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2389 | res = FR_DENIED;                                                       
 ;----------------------------------------------------------------------
@@ -9118,7 +9118,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2389| 
 ;* --------------------------------------------------------------------------*
 ||$C$L211||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2393,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2393,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2393 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -9126,7 +9126,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L213||       ; [] 
         ; BRANCHCC OCCURS {||$C$L213||}  ; [] |2393| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2394,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2394,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2394 | if (mode & FA_CREATE_ALWAYS)                    /* Set file change flag
 ;     |  if created or overwritten */                                          
@@ -9136,7 +9136,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L212||           ; [DPU_3_PIPE] |2394| 
         ; BRANCHCC OCCURS {||$C$L212||}  ; [] |2394| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2395,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2395,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2395 | mode |= FA__WRITTEN;                                                   
 ;----------------------------------------------------------------------
@@ -9145,7 +9145,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2395| 
 ;* --------------------------------------------------------------------------*
 ||$C$L212||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2396,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2396,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2396 | fp->dir_sect = dj.fs->winsect;                  /* Pointer to the direc
 ;     | tory entry */                                                          
@@ -9154,7 +9154,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |2396| 
         LDR       A1, [A1, #48]         ; [DPU_3_PIPE] |2396| 
         STR       A1, [A2, #28]         ; [DPU_3_PIPE] |2396| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2397,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2397,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2397 | fp->dir_ptr = dir;                                                     
 ; 2398 | #if _FS_LOCK                                                           
@@ -9179,7 +9179,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #32]         ; [DPU_3_PIPE] |2397| 
 ;* --------------------------------------------------------------------------*
 ||$C$L213||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2417,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2417,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2417 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -9187,7 +9187,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L214||       ; [] 
         ; BRANCHCC OCCURS {||$C$L214||}  ; [] |2417| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2418,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2418,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2418 | fp->flag = mode;                                        /* File access
 ;     | mode */                                                                
@@ -9195,7 +9195,7 @@ $C$DW$340	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2418| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |2418| 
         STRB      A1, [A2, #6]          ; [DPU_3_PIPE] |2418| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2419,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2419,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2419 | fp->sclust = ld_clust(dj.fs, dir);      /* File start cluster */       
 ;----------------------------------------------------------------------
@@ -9209,7 +9209,7 @@ $C$DW$341	.dwtag  DW_TAG_TI_branch
         ; CALL OCCURS {ld_clust }        ; [] |2419| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |2419| 
         STR       A1, [A2, #16]         ; [DPU_3_PIPE] |2419| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2420,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2420,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2420 | fp->fsize = LD_DWORD(dir+DIR_FileSize); /* File size */                
 ;----------------------------------------------------------------------
@@ -9227,7 +9227,7 @@ $C$DW$341	.dwtag  DW_TAG_TI_branch
         ORR       A1, A1, A4, LSL #8    ; [DPU_3_PIPE] |2420| 
         ORRS      A2, A2, A1            ; [DPU_3_PIPE] |2420| 
         STR       A2, [A3, #12]         ; [DPU_3_PIPE] |2420| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2421,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2421,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2421 | fp->fptr = 0;                                           /* File pointer
 ;     |  */                                                                    
@@ -9235,7 +9235,7 @@ $C$DW$341	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2421| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2421| 
         STR       A2, [A1, #8]          ; [DPU_3_PIPE] |2421| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2422,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2422,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2422 | fp->dsect = 0;                                                         
 ; 2423 | #if _USE_FASTSEEK                                                      
@@ -9246,28 +9246,28 @@ $C$DW$341	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2422| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2422| 
         STR       A2, [A1, #24]         ; [DPU_3_PIPE] |2422| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2426,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2426,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2426 | fp->fs = dj.fs; fp->id = dj.fs->id;     /* Validate file object */     
 ;----------------------------------------------------------------------
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |2426| 
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |2426| 
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |2426| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2426,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2426,column 20,is_stmt,isa 1
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |2426| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |2426| 
         LDRH      A1, [A1, #6]          ; [DPU_3_PIPE] |2426| 
         STRH      A1, [A2, #4]          ; [DPU_3_PIPE] |2426| 
 ;* --------------------------------------------------------------------------*
 ||$C$L214||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2430,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2430,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2430 | LEAVE_FF(dj.fs, res);                                                  
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #9]          ; [DPU_3_PIPE] |2430| 
 ;* --------------------------------------------------------------------------*
 ||$C$L215||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2431,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2431,column 1,is_stmt,isa 1
         ADD       SP, SP, #64           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 8
 $C$DW$342	.dwtag  DW_TAG_TI_branch
@@ -9276,7 +9276,7 @@ $C$DW$342	.dwtag  DW_TAG_TI_branch
         POP       {V1, PC}              ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$319, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$319, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$319, DW_AT_TI_end_line(0x97f)
 	.dwattr $C$DW$319, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -9294,14 +9294,14 @@ $C$DW$343	.dwtag  DW_TAG_subprogram, DW_AT_name("f_read")
 	.dwattr $C$DW$343, DW_AT_TI_symbol_name("f_read")
 	.dwattr $C$DW$343, DW_AT_external
 	.dwattr $C$DW$343, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$343, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$343, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$343, DW_AT_TI_begin_line(0x988)
 	.dwattr $C$DW$343, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$343, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$343, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$343, DW_AT_decl_line(0x988)
 	.dwattr $C$DW$343, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$343, DW_AT_TI_max_frame_size(0x38)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2446,column 1,is_stmt,address f_read,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2446,column 1,is_stmt,address f_read,isa 1
 
 	.dwfde $C$DW$CIE, f_read
 $C$DW$344	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fp")
@@ -9405,20 +9405,20 @@ $C$DW$359	.dwtag  DW_TAG_variable, DW_AT_name("rbuff")
         STR       A3, [SP, #8]          ; [DPU_3_PIPE] |2446| 
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |2446| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |2446| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2450,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2450,column 21,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2450 | BYTE csect, *rbuff = (BYTE*)buff;                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |2450| 
         STR       A1, [SP, #44]         ; [DPU_3_PIPE] |2450| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2453,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2453,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2453 | *br = 0;        /* Clear read byte counter */                          
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |2453| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2453| 
         STR       A2, [A1, #0]          ; [DPU_3_PIPE] |2453| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2455,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2455,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2455 | res = validate(fp);
 ;     |  /* Check validity */                                                  
@@ -9431,7 +9431,7 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         BL        validate              ; [DPU_3_PIPE] |2455| 
         ; CALL OCCURS {validate }        ; [] |2455| 
         STRB      A1, [SP, #16]         ; [DPU_3_PIPE] |2455| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2456,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2456,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2456 | if (res != FR_OK) LEAVE_FF(fp->fs, res);                               
 ;----------------------------------------------------------------------
@@ -9439,13 +9439,13 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L216||       ; [] 
         ; BRANCHCC OCCURS {||$C$L216||}  ; [] |2456| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2456,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2456,column 20,is_stmt,isa 1
         LDRB      A1, [SP, #16]         ; [DPU_3_PIPE] |2456| 
         B         ||$C$L238||           ; [DPU_3_PIPE] |2456| 
         ; BRANCH OCCURS {||$C$L238||}    ; [] |2456| 
 ;* --------------------------------------------------------------------------*
 ||$C$L216||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2457,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2457,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2457 | if (fp->flag & FA__ERROR)                                       /* Abor
 ;     | ted file? */                                                           
@@ -9456,7 +9456,7 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L217||           ; [DPU_3_PIPE] |2457| 
         ; BRANCHCC OCCURS {||$C$L217||}  ; [] |2457| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2458,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2458,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2458 | LEAVE_FF(fp->fs, FR_INT_ERR);                                          
 ;----------------------------------------------------------------------
@@ -9465,7 +9465,7 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L238||}    ; [] |2458| 
 ;* --------------------------------------------------------------------------*
 ||$C$L217||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2459,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2459,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2459 | if (!(fp->flag & FA_READ))                                      /* Chec
 ;     | k access mode */                                                       
@@ -9476,7 +9476,7 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L218||           ; [DPU_3_PIPE] |2459| 
         ; BRANCHCC OCCURS {||$C$L218||}  ; [] |2459| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2460,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2460,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2460 | LEAVE_FF(fp->fs, FR_DENIED);                                           
 ;----------------------------------------------------------------------
@@ -9485,7 +9485,7 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L238||}    ; [] |2460| 
 ;* --------------------------------------------------------------------------*
 ||$C$L218||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2461,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2461,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2461 | remain = fp->fsize - fp->fptr;                                         
 ;----------------------------------------------------------------------
@@ -9495,7 +9495,7 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         LDR       A1, [A1, #12]         ; [DPU_3_PIPE] |2461| 
         SUBS      A1, A1, A2            ; [DPU_3_PIPE] |2461| 
         STR       A1, [SP, #28]         ; [DPU_3_PIPE] |2461| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2462,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2462,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2462 | if (btr > remain) btr = (UINT)remain;           /* Truncate btr by rema
 ;     | ining bytes */                                                         
@@ -9506,12 +9506,12 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L219||           ; [DPU_3_PIPE] |2462| 
         ; BRANCHCC OCCURS {||$C$L219||}  ; [] |2462| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2462,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2462,column 20,is_stmt,isa 1
         LDR       A1, [SP, #28]         ; [DPU_3_PIPE] |2462| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |2462| 
 ;* --------------------------------------------------------------------------*
 ||$C$L219||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2464,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2464,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2464 | for ( ;  btr;
 ;     |  /* Repeat until all data read */                                      
@@ -9531,7 +9531,7 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L220||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2466,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2466,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2466 | if ((fp->fptr % SS(fp->fs)) == 0) {             /* On the sector bounda
 ;     | ry? */                                                                 
@@ -9543,7 +9543,7 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L234||           ; [DPU_3_PIPE] |2466| 
         ; BRANCHCC OCCURS {||$C$L234||}  ; [] |2466| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2467,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2467,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2467 | csect = (BYTE)(fp->fptr / SS(fp->fs) & (fp->fs->csize - 1));    /* Sect
 ;     | or offset in the cluster */                                            
@@ -9556,7 +9556,7 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         SUBS      A1, A1, #1            ; [DPU_3_PIPE] |2467| 
         AND       A1, A1, A2, LSR #9    ; [DPU_3_PIPE] |2467| 
         STRB      A1, [SP, #40]         ; [DPU_3_PIPE] |2467| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2468,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2468,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2468 | if (!csect) {                                           /* On the clust
 ;     | er boundary? */                                                        
@@ -9565,7 +9565,7 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L225||       ; [] 
         ; BRANCHCC OCCURS {||$C$L225||}  ; [] |2468| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2469,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2469,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2469 | if (fp->fptr == 0) {                    /* On the top of the file? */  
 ;----------------------------------------------------------------------
@@ -9574,14 +9574,14 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L221||       ; [] 
         ; BRANCHCC OCCURS {||$C$L221||}  ; [] |2469| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2470,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2470,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2470 | clst = fp->sclust;                      /* Follow from the origin */   
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2470| 
         LDR       A1, [A1, #16]         ; [DPU_3_PIPE] |2470| 
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |2470| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2471,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2471,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2471 | } else {                                                /* Middle or en
 ;     | d of the file */                                                       
@@ -9596,7 +9596,7 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L222||}    ; [] |2471| 
 ;* --------------------------------------------------------------------------*
 ||$C$L221||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2477,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2477,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2477 | clst = get_fat(fp->fs, fp->clust);      /* Follow cluster chain on the
 ;     | FAT */                                                                 
@@ -9614,7 +9614,7 @@ $C$DW$361	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |2477| 
 ;* --------------------------------------------------------------------------*
 ||$C$L222||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2479,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2479,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2479 | if (clst < 2) ABORT(fp->fs, FR_INT_ERR);                               
 ;----------------------------------------------------------------------
@@ -9623,7 +9623,7 @@ $C$DW$361	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L223||           ; [DPU_3_PIPE] |2479| 
         ; BRANCHCC OCCURS {||$C$L223||}  ; [] |2479| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2479,column 19,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2479,column 19,is_stmt,isa 1
         LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |2479| 
         LDRB      A2, [A3, #6]          ; [DPU_3_PIPE] |2479| 
         MOVS      A1, #2                ; [DPU_3_PIPE] |2479| 
@@ -9633,7 +9633,7 @@ $C$DW$361	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L238||}    ; [] |2479| 
 ;* --------------------------------------------------------------------------*
 ||$C$L223||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2480,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2480,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2480 | if (clst == 0xFFFFFFFF) ABORT(fp->fs, FR_DISK_ERR);                    
 ;----------------------------------------------------------------------
@@ -9642,7 +9642,7 @@ $C$DW$361	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L224||           ; [DPU_3_PIPE] |2480| 
         ; BRANCHCC OCCURS {||$C$L224||}  ; [] |2480| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2480,column 29,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2480,column 29,is_stmt,isa 1
         LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |2480| 
         LDRB      A2, [A3, #6]          ; [DPU_3_PIPE] |2480| 
         MOVS      A1, #1                ; [DPU_3_PIPE] |2480| 
@@ -9652,7 +9652,7 @@ $C$DW$361	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L238||}    ; [] |2480| 
 ;* --------------------------------------------------------------------------*
 ||$C$L224||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2481,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2481,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2481 | fp->clust = clst;                               /* Update current clust
 ;     | er */                                                                  
@@ -9662,7 +9662,7 @@ $C$DW$361	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #20]         ; [DPU_3_PIPE] |2481| 
 ;* --------------------------------------------------------------------------*
 ||$C$L225||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2483,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2483,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2483 | sect = clust2sect(fp->fs, fp->clust);   /* Get current sector */       
 ;----------------------------------------------------------------------
@@ -9677,7 +9677,7 @@ $C$DW$362	.dwtag  DW_TAG_TI_branch
         BL        clust2sect            ; [DPU_3_PIPE] |2483| 
         ; CALL OCCURS {clust2sect }      ; [] |2483| 
         STR       A1, [SP, #24]         ; [DPU_3_PIPE] |2483| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2484,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2484,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2484 | if (!sect) ABORT(fp->fs, FR_INT_ERR);                                  
 ;----------------------------------------------------------------------
@@ -9685,7 +9685,7 @@ $C$DW$362	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L226||       ; [] 
         ; BRANCHCC OCCURS {||$C$L226||}  ; [] |2484| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2484,column 15,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2484,column 15,is_stmt,isa 1
         LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |2484| 
         LDRB      A2, [A3, #6]          ; [DPU_3_PIPE] |2484| 
         MOVS      A1, #2                ; [DPU_3_PIPE] |2484| 
@@ -9695,7 +9695,7 @@ $C$DW$362	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L238||}    ; [] |2484| 
 ;* --------------------------------------------------------------------------*
 ||$C$L226||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2485,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2485,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2485 | sect += csect;                                                         
 ;----------------------------------------------------------------------
@@ -9703,7 +9703,7 @@ $C$DW$362	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [SP, #40]         ; [DPU_3_PIPE] |2485| 
         ADDS      A1, A1, A2            ; [DPU_3_PIPE] |2485| 
         STR       A1, [SP, #24]         ; [DPU_3_PIPE] |2485| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2486,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2486,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2486 | cc = btr / SS(fp->fs);                          /* When remaining bytes
 ;     |  >= sector size, */                                                    
@@ -9711,7 +9711,7 @@ $C$DW$362	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |2486| 
         LSRS      A1, A1, #9            ; [DPU_3_PIPE] |2486| 
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |2486| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2487,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2487,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2487 | if (cc) {                                                       /* Read
 ;     |  maximum contiguous sectors directly */                                
@@ -9721,7 +9721,7 @@ $C$DW$362	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L230||           ; [DPU_3_PIPE] |2487| 
         ; BRANCHCC OCCURS {||$C$L230||}  ; [] |2487| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2488,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2488,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2488 | if (csect + cc > fp->fs->csize) /* Clip at cluster boundary */         
 ;----------------------------------------------------------------------
@@ -9735,7 +9735,7 @@ $C$DW$362	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L227||           ; [DPU_3_PIPE] |2488| 
         ; BRANCHCC OCCURS {||$C$L227||}  ; [] |2488| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2489,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2489,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2489 | cc = fp->fs->csize - csect;                                            
 ;----------------------------------------------------------------------
@@ -9747,7 +9747,7 @@ $C$DW$362	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |2489| 
 ;* --------------------------------------------------------------------------*
 ||$C$L227||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2490,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2490,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2490 | if (disk_read(fp->fs->drv, rbuff, sect, (BYTE)cc) != RES_OK)           
 ;----------------------------------------------------------------------
@@ -9766,7 +9766,7 @@ $C$DW$363	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L228||       ; [] 
         ; BRANCHCC OCCURS {||$C$L228||}  ; [] |2490| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2491,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2491,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2491 | ABORT(fp->fs, FR_DISK_ERR);                                            
 ; 2492 | #if !_FS_READONLY && _FS_MINIMIZE <= 2                  /* Replace one
@@ -9786,7 +9786,7 @@ $C$DW$363	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L238||}    ; [] |2491| 
 ;* --------------------------------------------------------------------------*
 ||$C$L228||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2497,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2497,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2497 | if ((fp->flag & FA__DIRTY) && fp->dsect - sect < cc)                   
 ;----------------------------------------------------------------------
@@ -9805,7 +9805,7 @@ $C$DW$363	.dwtag  DW_TAG_TI_branch
         BLS       ||$C$L229||           ; [DPU_3_PIPE] |2497| 
         ; BRANCHCC OCCURS {||$C$L229||}  ; [] |2497| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2498,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2498,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2498 | mem_cpy(rbuff + ((fp->dsect - sect) * SS(fp->fs)), fp->buf, SS(fp->fs))
 ;     | ;                                                                      
@@ -9829,7 +9829,7 @@ $C$DW$364	.dwtag  DW_TAG_TI_branch
         ; CALL OCCURS {mem_cpy }         ; [] |2498| 
 ;* --------------------------------------------------------------------------*
 ||$C$L229||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2501,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2501,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2501 | rcnt = SS(fp->fs) * cc;                 /* Number of bytes transferred
 ;     | */                                                                     
@@ -9837,7 +9837,7 @@ $C$DW$364	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #36]         ; [DPU_3_PIPE] |2501| 
         LSLS      A1, A1, #9            ; [DPU_3_PIPE] |2501| 
         STR       A1, [SP, #32]         ; [DPU_3_PIPE] |2501| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2502,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2502,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2502 | continue;                                                              
 ; 2504 | #if !_FS_TINY                                                          
@@ -9846,7 +9846,7 @@ $C$DW$364	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L236||}    ; [] |2502| 
 ;* --------------------------------------------------------------------------*
 ||$C$L230||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2505,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2505,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2505 | if (fp->dsect != sect) {                        /* Load data sector if
 ;     | not in cache */                                                        
@@ -9859,7 +9859,7 @@ $C$DW$364	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L233||           ; [DPU_3_PIPE] |2505| 
         ; BRANCHCC OCCURS {||$C$L233||}  ; [] |2505| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2507,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2507,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2507 | if (fp->flag & FA__DIRTY) {             /* Write-back dirty sector cach
 ;     | e */                                                                   
@@ -9870,7 +9870,7 @@ $C$DW$364	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L232||           ; [DPU_3_PIPE] |2507| 
         ; BRANCHCC OCCURS {||$C$L232||}  ; [] |2507| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2508,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2508,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2508 | if (disk_write(fp->fs->drv, fp->buf, fp->dsect, 1) != RES_OK)          
 ;----------------------------------------------------------------------
@@ -9891,7 +9891,7 @@ $C$DW$365	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L231||       ; [] 
         ; BRANCHCC OCCURS {||$C$L231||}  ; [] |2508| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2509,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2509,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2509 | ABORT(fp->fs, FR_DISK_ERR);                                            
 ;----------------------------------------------------------------------
@@ -9904,7 +9904,7 @@ $C$DW$365	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L238||}    ; [] |2509| 
 ;* --------------------------------------------------------------------------*
 ||$C$L231||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2510,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2510,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2510 | fp->flag &= ~FA__DIRTY;                                                
 ; 2512 | #endif                                                                 
@@ -9915,7 +9915,7 @@ $C$DW$365	.dwtag  DW_TAG_TI_branch
         STRB      A1, [A2, #6]          ; [DPU_3_PIPE] |2510| 
 ;* --------------------------------------------------------------------------*
 ||$C$L232||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2513,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2513,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2513 | if (disk_read(fp->fs->drv, fp->buf, sect, 1) != RES_OK) /* Fill sector
 ;     | cache */                                                               
@@ -9936,7 +9936,7 @@ $C$DW$366	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L233||       ; [] 
         ; BRANCHCC OCCURS {||$C$L233||}  ; [] |2513| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2514,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2514,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2514 | ABORT(fp->fs, FR_DISK_ERR);                                            
 ; 2516 | #endif                                                                 
@@ -9950,7 +9950,7 @@ $C$DW$366	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L238||}    ; [] |2514| 
 ;* --------------------------------------------------------------------------*
 ||$C$L233||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2517,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2517,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2517 | fp->dsect = sect;                                                      
 ;----------------------------------------------------------------------
@@ -9959,7 +9959,7 @@ $C$DW$366	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #24]         ; [DPU_3_PIPE] |2517| 
 ;* --------------------------------------------------------------------------*
 ||$C$L234||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2519,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2519,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2519 | rcnt = SS(fp->fs) - ((UINT)fp->fptr % SS(fp->fs));      /* Get partial
 ;     | sector data from sector buffer */                                      
@@ -9969,7 +9969,7 @@ $C$DW$366	.dwtag  DW_TAG_TI_branch
         BFC       A1, #9, #23           ; [DPU_3_PIPE] |2519| 
         RSB       A1, A1, #512          ; [DPU_3_PIPE] |2519| 
         STR       A1, [SP, #32]         ; [DPU_3_PIPE] |2519| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2520,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2520,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2520 | if (rcnt > btr) rcnt = btr;                                            
 ;----------------------------------------------------------------------
@@ -9979,7 +9979,7 @@ $C$DW$366	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L235||           ; [DPU_3_PIPE] |2520| 
         ; BRANCHCC OCCURS {||$C$L235||}  ; [] |2520| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2520,column 19,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2520,column 19,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2521 | #if _FS_TINY                                                           
 ; 2522 | if (move_window(fp->fs, fp->dsect))             /* Move sector window *
@@ -9993,7 +9993,7 @@ $C$DW$366	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #32]         ; [DPU_3_PIPE] |2520| 
 ;* --------------------------------------------------------------------------*
 ||$C$L235||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2526,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2526,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2526 | mem_cpy(rbuff, &fp->buf[fp->fptr % SS(fp->fs)], rcnt);  /* Pick partial
 ;     |  sector */                                                             
@@ -10015,7 +10015,7 @@ $C$DW$367	.dwtag  DW_TAG_TI_branch
         ; CALL OCCURS {mem_cpy }         ; [] |2526| 
 ;* --------------------------------------------------------------------------*
 ||$C$L236||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2465,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2465,column 3,is_stmt,isa 1
         LDR       A2, [SP, #44]         ; [DPU_3_PIPE] |2465| 
         LDR       A1, [SP, #32]         ; [DPU_3_PIPE] |2465| 
         ADDS      A1, A1, A2            ; [DPU_3_PIPE] |2465| 
@@ -10034,21 +10034,21 @@ $C$DW$367	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #32]         ; [DPU_3_PIPE] |2465| 
         SUBS      A1, A1, A2            ; [DPU_3_PIPE] |2465| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |2465| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2464,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2464,column 2,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |2464| 
         CMP       A1, #0                ; [DPU_3_PIPE] |2464| 
         BNE       ||$C$L220||           ; [DPU_3_PIPE] |2464| 
         ; BRANCHCC OCCURS {||$C$L220||}  ; [] |2464| 
 ;* --------------------------------------------------------------------------*
 ||$C$L237||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2530,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2530,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2530 | LEAVE_FF(fp->fs, FR_OK);                                               
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |2530| 
 ;* --------------------------------------------------------------------------*
 ||$C$L238||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2531,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2531,column 1,is_stmt,isa 1
         ADD       SP, SP, #52           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$368	.dwtag  DW_TAG_TI_branch
@@ -10057,7 +10057,7 @@ $C$DW$368	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$343, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$343, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$343, DW_AT_TI_end_line(0x9e3)
 	.dwattr $C$DW$343, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -10075,14 +10075,14 @@ $C$DW$369	.dwtag  DW_TAG_subprogram, DW_AT_name("f_write")
 	.dwattr $C$DW$369, DW_AT_TI_symbol_name("f_write")
 	.dwattr $C$DW$369, DW_AT_external
 	.dwattr $C$DW$369, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$369, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$369, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$369, DW_AT_TI_begin_line(0x9ed)
 	.dwattr $C$DW$369, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$369, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$369, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$369, DW_AT_decl_line(0x9ed)
 	.dwattr $C$DW$369, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$369, DW_AT_TI_max_frame_size(0x30)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2547,column 1,is_stmt,address f_write,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2547,column 1,is_stmt,address f_write,isa 1
 
 	.dwfde $C$DW$CIE, f_write
 $C$DW$370	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fp")
@@ -10183,21 +10183,21 @@ $C$DW$384	.dwtag  DW_TAG_variable, DW_AT_name("csect")
         STR       A3, [SP, #8]          ; [DPU_3_PIPE] |2547| 
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |2547| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |2547| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2551,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2551,column 20,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2551 | const BYTE *wbuff = (const BYTE*)buff;                                 
 ; 2552 | BYTE csect;                                                            
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #4]          ; [DPU_3_PIPE] |2551| 
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |2551| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2555,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2555,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2555 | *bw = 0;        /* Clear write byte counter */                         
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |2555| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2555| 
         STR       A2, [A1, #0]          ; [DPU_3_PIPE] |2555| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2557,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2557,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2557 | res = validate(fp);                                             /* Chec
 ;     | k validity */                                                          
@@ -10210,7 +10210,7 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
         BL        validate              ; [DPU_3_PIPE] |2557| 
         ; CALL OCCURS {validate }        ; [] |2557| 
         STRB      A1, [SP, #16]         ; [DPU_3_PIPE] |2557| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2558,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2558,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2558 | if (res != FR_OK) LEAVE_FF(fp->fs, res);                               
 ;----------------------------------------------------------------------
@@ -10218,13 +10218,13 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L239||       ; [] 
         ; BRANCHCC OCCURS {||$C$L239||}  ; [] |2558| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2558,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2558,column 20,is_stmt,isa 1
         LDRB      A1, [SP, #16]         ; [DPU_3_PIPE] |2558| 
         B         ||$C$L262||           ; [DPU_3_PIPE] |2558| 
         ; BRANCH OCCURS {||$C$L262||}    ; [] |2558| 
 ;* --------------------------------------------------------------------------*
 ||$C$L239||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2559,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2559,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2559 | if (fp->flag & FA__ERROR)                               /* Aborted file
 ;     | ? */                                                                   
@@ -10235,7 +10235,7 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L240||           ; [DPU_3_PIPE] |2559| 
         ; BRANCHCC OCCURS {||$C$L240||}  ; [] |2559| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2560,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2560,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2560 | LEAVE_FF(fp->fs, FR_INT_ERR);                                          
 ;----------------------------------------------------------------------
@@ -10244,7 +10244,7 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L262||}    ; [] |2560| 
 ;* --------------------------------------------------------------------------*
 ||$C$L240||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2561,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2561,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2561 | if (!(fp->flag & FA_WRITE))                             /* Check access
 ;     |  mode */                                                               
@@ -10255,7 +10255,7 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L241||           ; [DPU_3_PIPE] |2561| 
         ; BRANCHCC OCCURS {||$C$L241||}  ; [] |2561| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2562,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2562,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2562 | LEAVE_FF(fp->fs, FR_DENIED);                                           
 ;----------------------------------------------------------------------
@@ -10264,7 +10264,7 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L262||}    ; [] |2562| 
 ;* --------------------------------------------------------------------------*
 ||$C$L241||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2563,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2563,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2563 | if ((DWORD)(fp->fsize + btw) < fp->fsize) btw = 0;      /* File size ca
 ;     | nnot reach 4GB */                                                      
@@ -10279,12 +10279,12 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
         BLS       ||$C$L242||           ; [DPU_3_PIPE] |2563| 
         ; BRANCHCC OCCURS {||$C$L242||}  ; [] |2563| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2563,column 44,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2563,column 44,is_stmt,isa 1
         MOVS      A1, #0                ; [DPU_3_PIPE] |2563| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |2563| 
 ;* --------------------------------------------------------------------------*
 ||$C$L242||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2565,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2565,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2565 | for ( ;  btw;                                                   /* Repe
 ;     | at until all data written */                                           
@@ -10304,7 +10304,7 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L243||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2567,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2567,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2567 | if ((fp->fptr % SS(fp->fs)) == 0) {     /* On the sector boundary? */  
 ;----------------------------------------------------------------------
@@ -10315,7 +10315,7 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L257||           ; [DPU_3_PIPE] |2567| 
         ; BRANCHCC OCCURS {||$C$L257||}  ; [] |2567| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2568,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2568,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2568 | csect = (BYTE)(fp->fptr / SS(fp->fs) & (fp->fs->csize - 1));    /* Sect
 ;     | or offset in the cluster */                                            
@@ -10328,7 +10328,7 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
         SUBS      A1, A1, #1            ; [DPU_3_PIPE] |2568| 
         AND       A1, A1, A2, LSR #9    ; [DPU_3_PIPE] |2568| 
         STRB      A1, [SP, #40]         ; [DPU_3_PIPE] |2568| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2569,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2569,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2569 | if (!csect) {                                   /* On the cluster bound
 ;     | ary? */                                                                
@@ -10338,7 +10338,7 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L248||           ; [DPU_3_PIPE] |2569| 
         ; BRANCHCC OCCURS {||$C$L248||}  ; [] |2569| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2570,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2570,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2570 | if (fp->fptr == 0) {            /* On the top of the file? */          
 ;----------------------------------------------------------------------
@@ -10347,14 +10347,14 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L244||       ; [] 
         ; BRANCHCC OCCURS {||$C$L244||}  ; [] |2570| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2571,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2571,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2571 | clst = fp->sclust;              /* Follow from the origin */           
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2571| 
         LDR       A1, [A1, #16]         ; [DPU_3_PIPE] |2571| 
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |2571| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2572,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2572,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2572 | if (clst == 0)                  /* When no cluster is allocated, */    
 ;----------------------------------------------------------------------
@@ -10362,7 +10362,7 @@ $C$DW$385	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L245||       ; [] 
         ; BRANCHCC OCCURS {||$C$L245||}  ; [] |2572| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2573,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2573,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2573 | fp->sclust = clst = create_chain(fp->fs, 0);    /* Create a new cluster
 ;     |  chain */                                                              
@@ -10379,7 +10379,7 @@ $C$DW$386	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |2573| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |2573| 
         STR       A1, [A2, #16]         ; [DPU_3_PIPE] |2573| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2574,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2574,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2574 | } else {                                        /* Middle or end of the
 ;     |  file */                                                               
@@ -10394,7 +10394,7 @@ $C$DW$386	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L245||}    ; [] |2574| 
 ;* --------------------------------------------------------------------------*
 ||$C$L244||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2580,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2580,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2580 | clst = create_chain(fp->fs, fp->clust); /* Follow or stretch cluster ch
 ;     | ain on the FAT */                                                      
@@ -10412,7 +10412,7 @@ $C$DW$387	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |2580| 
 ;* --------------------------------------------------------------------------*
 ||$C$L245||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2582,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2582,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2582 | if (clst == 0) break;           /* Could not allocate a new cluster (di
 ;     | sk full) */                                                            
@@ -10422,8 +10422,8 @@ $C$DW$387	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L260||           ; [DPU_3_PIPE] |2582| 
         ; BRANCHCC OCCURS {||$C$L260||}  ; [] |2582| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2582,column 20,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2583,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2582,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2583,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2583 | if (clst == 1) ABORT(fp->fs, FR_INT_ERR);                              
 ;----------------------------------------------------------------------
@@ -10432,7 +10432,7 @@ $C$DW$387	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L246||           ; [DPU_3_PIPE] |2583| 
         ; BRANCHCC OCCURS {||$C$L246||}  ; [] |2583| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2583,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2583,column 20,is_stmt,isa 1
         LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |2583| 
         LDRB      A2, [A3, #6]          ; [DPU_3_PIPE] |2583| 
         MOVS      A1, #2                ; [DPU_3_PIPE] |2583| 
@@ -10442,7 +10442,7 @@ $C$DW$387	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L262||}    ; [] |2583| 
 ;* --------------------------------------------------------------------------*
 ||$C$L246||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2584,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2584,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2584 | if (clst == 0xFFFFFFFF) ABORT(fp->fs, FR_DISK_ERR);                    
 ;----------------------------------------------------------------------
@@ -10451,7 +10451,7 @@ $C$DW$387	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L247||           ; [DPU_3_PIPE] |2584| 
         ; BRANCHCC OCCURS {||$C$L247||}  ; [] |2584| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2584,column 29,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2584,column 29,is_stmt,isa 1
         LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |2584| 
         LDRB      A2, [A3, #6]          ; [DPU_3_PIPE] |2584| 
         MOVS      A1, #1                ; [DPU_3_PIPE] |2584| 
@@ -10461,7 +10461,7 @@ $C$DW$387	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L262||}    ; [] |2584| 
 ;* --------------------------------------------------------------------------*
 ||$C$L247||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2585,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2585,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2585 | fp->clust = clst;                       /* Update current cluster */   
 ; 2587 | #if _FS_TINY                                                           
@@ -10475,7 +10475,7 @@ $C$DW$387	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #20]         ; [DPU_3_PIPE] |2585| 
 ;* --------------------------------------------------------------------------*
 ||$C$L248||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2591,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2591,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2591 | if (fp->flag & FA__DIRTY) {             /* Write-back sector cache */  
 ;----------------------------------------------------------------------
@@ -10485,7 +10485,7 @@ $C$DW$387	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L250||           ; [DPU_3_PIPE] |2591| 
         ; BRANCHCC OCCURS {||$C$L250||}  ; [] |2591| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2592,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2592,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2592 | if (disk_write(fp->fs->drv, fp->buf, fp->dsect, 1) != RES_OK)          
 ;----------------------------------------------------------------------
@@ -10506,7 +10506,7 @@ $C$DW$388	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L249||       ; [] 
         ; BRANCHCC OCCURS {||$C$L249||}  ; [] |2592| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2593,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2593,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2593 | ABORT(fp->fs, FR_DISK_ERR);                                            
 ;----------------------------------------------------------------------
@@ -10519,7 +10519,7 @@ $C$DW$388	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L262||}    ; [] |2593| 
 ;* --------------------------------------------------------------------------*
 ||$C$L249||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2594,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2594,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2594 | fp->flag &= ~FA__DIRTY;                                                
 ; 2596 | #endif                                                                 
@@ -10530,7 +10530,7 @@ $C$DW$388	.dwtag  DW_TAG_TI_branch
         STRB      A1, [A2, #6]          ; [DPU_3_PIPE] |2594| 
 ;* --------------------------------------------------------------------------*
 ||$C$L250||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2597,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2597,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2597 | sect = clust2sect(fp->fs, fp->clust);   /* Get current sector */       
 ;----------------------------------------------------------------------
@@ -10545,7 +10545,7 @@ $C$DW$389	.dwtag  DW_TAG_TI_branch
         BL        clust2sect            ; [DPU_3_PIPE] |2597| 
         ; CALL OCCURS {clust2sect }      ; [] |2597| 
         STR       A1, [SP, #24]         ; [DPU_3_PIPE] |2597| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2598,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2598,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2598 | if (!sect) ABORT(fp->fs, FR_INT_ERR);                                  
 ;----------------------------------------------------------------------
@@ -10553,7 +10553,7 @@ $C$DW$389	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L251||       ; [] 
         ; BRANCHCC OCCURS {||$C$L251||}  ; [] |2598| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2598,column 15,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2598,column 15,is_stmt,isa 1
         LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |2598| 
         LDRB      A2, [A3, #6]          ; [DPU_3_PIPE] |2598| 
         MOVS      A1, #2                ; [DPU_3_PIPE] |2598| 
@@ -10563,7 +10563,7 @@ $C$DW$389	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L262||}    ; [] |2598| 
 ;* --------------------------------------------------------------------------*
 ||$C$L251||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2599,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2599,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2599 | sect += csect;                                                         
 ;----------------------------------------------------------------------
@@ -10571,7 +10571,7 @@ $C$DW$389	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [SP, #40]         ; [DPU_3_PIPE] |2599| 
         ADDS      A1, A1, A2            ; [DPU_3_PIPE] |2599| 
         STR       A1, [SP, #24]         ; [DPU_3_PIPE] |2599| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2600,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2600,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2600 | cc = btw / SS(fp->fs);                  /* When remaining bytes >= sect
 ;     | or size, */                                                            
@@ -10579,7 +10579,7 @@ $C$DW$389	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |2600| 
         LSRS      A1, A1, #9            ; [DPU_3_PIPE] |2600| 
         STR       A1, [SP, #32]         ; [DPU_3_PIPE] |2600| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2601,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2601,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2601 | if (cc) {                                               /* Write maximu
 ;     | m contiguous sectors directly */                                       
@@ -10589,7 +10589,7 @@ $C$DW$389	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L255||           ; [DPU_3_PIPE] |2601| 
         ; BRANCHCC OCCURS {||$C$L255||}  ; [] |2601| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2602,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2602,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2602 | if (csect + cc > fp->fs->csize) /* Clip at cluster boundary */         
 ;----------------------------------------------------------------------
@@ -10603,7 +10603,7 @@ $C$DW$389	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L252||           ; [DPU_3_PIPE] |2602| 
         ; BRANCHCC OCCURS {||$C$L252||}  ; [] |2602| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2603,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2603,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2603 | cc = fp->fs->csize - csect;                                            
 ;----------------------------------------------------------------------
@@ -10615,7 +10615,7 @@ $C$DW$389	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #32]         ; [DPU_3_PIPE] |2603| 
 ;* --------------------------------------------------------------------------*
 ||$C$L252||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2604,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2604,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2604 | if (disk_write(fp->fs->drv, wbuff, sect, (BYTE)cc) != RES_OK)          
 ;----------------------------------------------------------------------
@@ -10634,7 +10634,7 @@ $C$DW$390	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L253||       ; [] 
         ; BRANCHCC OCCURS {||$C$L253||}  ; [] |2604| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2605,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2605,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2605 | ABORT(fp->fs, FR_DISK_ERR);                                            
 ; 2606 | #if _FS_TINY                                                           
@@ -10654,7 +10654,7 @@ $C$DW$390	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L262||}    ; [] |2605| 
 ;* --------------------------------------------------------------------------*
 ||$C$L253||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2612,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2612,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2612 | if (fp->dsect - sect < cc) { /* Refill sector cache if it gets invalida
 ;     | ted by the direct write */                                             
@@ -10668,7 +10668,7 @@ $C$DW$390	.dwtag  DW_TAG_TI_branch
         BLS       ||$C$L254||           ; [DPU_3_PIPE] |2612| 
         ; BRANCHCC OCCURS {||$C$L254||}  ; [] |2612| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2613,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2613,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2613 | mem_cpy(fp->buf, wbuff + ((fp->dsect - sect) * SS(fp->fs)), SS(fp->fs))
 ;     | ;                                                                      
@@ -10688,7 +10688,7 @@ $C$DW$391	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$391, DW_AT_TI_call
         BL        mem_cpy               ; [DPU_3_PIPE] |2613| 
         ; CALL OCCURS {mem_cpy }         ; [] |2613| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2614,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2614,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2614 | fp->flag &= ~FA__DIRTY;                                                
 ; 2616 | #endif                                                                 
@@ -10699,14 +10699,14 @@ $C$DW$391	.dwtag  DW_TAG_TI_branch
         STRB      A1, [A2, #6]          ; [DPU_3_PIPE] |2614| 
 ;* --------------------------------------------------------------------------*
 ||$C$L254||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2617,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2617,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2617 | wcnt = SS(fp->fs) * cc;         /* Number of bytes transferred */      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #32]         ; [DPU_3_PIPE] |2617| 
         LSLS      A1, A1, #9            ; [DPU_3_PIPE] |2617| 
         STR       A1, [SP, #28]         ; [DPU_3_PIPE] |2617| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2618,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2618,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2618 | continue;                                                              
 ; 2620 | #if _FS_TINY                                                           
@@ -10720,7 +10720,7 @@ $C$DW$391	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L259||}    ; [] |2618| 
 ;* --------------------------------------------------------------------------*
 ||$C$L255||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2626,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2626,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2626 | if (fp->dsect != sect) {                /* Fill sector cache with file
 ;     | data */                                                                
@@ -10732,7 +10732,7 @@ $C$DW$391	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L256||           ; [DPU_3_PIPE] |2626| 
         ; BRANCHCC OCCURS {||$C$L256||}  ; [] |2626| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2627,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2627,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2627 | if (fp->fptr < fp->fsize &&                                            
 ; 2628 |         disk_read(fp->fs->drv, fp->buf, sect, 1) != RES_OK)            
@@ -10761,7 +10761,7 @@ $C$DW$392	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L256||       ; [] 
         ; BRANCHCC OCCURS {||$C$L256||}  ; [] |2627| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2629,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2629,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2629 | ABORT(fp->fs, FR_DISK_ERR);                                            
 ; 2631 | #endif                                                                 
@@ -10775,7 +10775,7 @@ $C$DW$392	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L262||}    ; [] |2629| 
 ;* --------------------------------------------------------------------------*
 ||$C$L256||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2632,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2632,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2632 | fp->dsect = sect;                                                      
 ;----------------------------------------------------------------------
@@ -10784,7 +10784,7 @@ $C$DW$392	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #24]         ; [DPU_3_PIPE] |2632| 
 ;* --------------------------------------------------------------------------*
 ||$C$L257||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2634,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2634,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2634 | wcnt = SS(fp->fs) - ((UINT)fp->fptr % SS(fp->fs));/* Put partial sector
 ;     |  into file I/O buffer */                                               
@@ -10794,7 +10794,7 @@ $C$DW$392	.dwtag  DW_TAG_TI_branch
         BFC       A1, #9, #23           ; [DPU_3_PIPE] |2634| 
         RSB       A1, A1, #512          ; [DPU_3_PIPE] |2634| 
         STR       A1, [SP, #28]         ; [DPU_3_PIPE] |2634| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2635,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2635,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2635 | if (wcnt > btw) wcnt = btw;                                            
 ;----------------------------------------------------------------------
@@ -10804,7 +10804,7 @@ $C$DW$392	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L258||           ; [DPU_3_PIPE] |2635| 
         ; BRANCHCC OCCURS {||$C$L258||}  ; [] |2635| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2635,column 19,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2635,column 19,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2636 | #if _FS_TINY                                                           
 ; 2637 | if (move_window(fp->fs, fp->dsect))     /* Move sector window */       
@@ -10818,7 +10818,7 @@ $C$DW$392	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #28]         ; [DPU_3_PIPE] |2635| 
 ;* --------------------------------------------------------------------------*
 ||$C$L258||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2642,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2642,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2642 | mem_cpy(&fp->buf[fp->fptr % SS(fp->fs)], wbuff, wcnt);  /* Fit partial
 ;     | sector */                                                              
@@ -10837,7 +10837,7 @@ $C$DW$393	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$393, DW_AT_TI_call
         BL        mem_cpy               ; [DPU_3_PIPE] |2642| 
         ; CALL OCCURS {mem_cpy }         ; [] |2642| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2643,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2643,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2643 | fp->flag |= FA__DIRTY;                                                 
 ; 2644 | #endif                                                                 
@@ -10848,7 +10848,7 @@ $C$DW$393	.dwtag  DW_TAG_TI_branch
         STRB      A1, [A2, #6]          ; [DPU_3_PIPE] |2643| 
 ;* --------------------------------------------------------------------------*
 ||$C$L259||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2566,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2566,column 3,is_stmt,isa 1
         LDR       A2, [SP, #36]         ; [DPU_3_PIPE] |2566| 
         LDR       A1, [SP, #28]         ; [DPU_3_PIPE] |2566| 
         ADDS      A1, A1, A2            ; [DPU_3_PIPE] |2566| 
@@ -10867,14 +10867,14 @@ $C$DW$393	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #28]         ; [DPU_3_PIPE] |2566| 
         SUBS      A1, A1, A2            ; [DPU_3_PIPE] |2566| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |2566| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2565,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2565,column 2,is_stmt,isa 1
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |2565| 
         CMP       A1, #0                ; [DPU_3_PIPE] |2565| 
         BNE       ||$C$L243||           ; [DPU_3_PIPE] |2565| 
         ; BRANCHCC OCCURS {||$C$L243||}  ; [] |2565| 
 ;* --------------------------------------------------------------------------*
 ||$C$L260||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2647,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2647,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2647 | if (fp->fptr > fp->fsize) fp->fsize = fp->fptr; /* Update file size if
 ;     | needed */                                                              
@@ -10887,14 +10887,14 @@ $C$DW$393	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L261||           ; [DPU_3_PIPE] |2647| 
         ; BRANCHCC OCCURS {||$C$L261||}  ; [] |2647| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2647,column 28,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2647,column 28,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2647| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |2647| 
         LDR       A1, [A1, #8]          ; [DPU_3_PIPE] |2647| 
         STR       A1, [A2, #12]         ; [DPU_3_PIPE] |2647| 
 ;* --------------------------------------------------------------------------*
 ||$C$L261||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2648,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2648,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2648 | fp->flag |= FA__WRITTEN;
 ;     |  /* Set file change flag */                                            
@@ -10903,14 +10903,14 @@ $C$DW$393	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [A2, #6]          ; [DPU_3_PIPE] |2648| 
         ORR       A1, A1, #32           ; [DPU_3_PIPE] |2648| 
         STRB      A1, [A2, #6]          ; [DPU_3_PIPE] |2648| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2650,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2650,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2650 | LEAVE_FF(fp->fs, FR_OK);                                               
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |2650| 
 ;* --------------------------------------------------------------------------*
 ||$C$L262||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2651,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2651,column 1,is_stmt,isa 1
         ADD       SP, SP, #44           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$394	.dwtag  DW_TAG_TI_branch
@@ -10919,7 +10919,7 @@ $C$DW$394	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$369, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$369, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$369, DW_AT_TI_end_line(0xa5b)
 	.dwattr $C$DW$369, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -10937,14 +10937,14 @@ $C$DW$395	.dwtag  DW_TAG_subprogram, DW_AT_name("f_sync")
 	.dwattr $C$DW$395, DW_AT_TI_symbol_name("f_sync")
 	.dwattr $C$DW$395, DW_AT_external
 	.dwattr $C$DW$395, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$395, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$395, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$395, DW_AT_TI_begin_line(0xa64)
 	.dwattr $C$DW$395, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$395, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$395, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$395, DW_AT_decl_line(0xa64)
 	.dwattr $C$DW$395, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$395, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2663,column 1,is_stmt,address f_sync,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2663,column 1,is_stmt,address f_sync,isa 1
 
 	.dwfde $C$DW$CIE, f_sync
 $C$DW$396	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fp")
@@ -10998,7 +10998,7 @@ $C$DW$400	.dwtag  DW_TAG_variable, DW_AT_name("dir")
 ; 2666 | BYTE *dir;                                                             
 ;----------------------------------------------------------------------
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |2663| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2669,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2669,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2669 | res = validate(fp);                                     /* Check validi
 ;     | ty of the object */                                                    
@@ -11011,7 +11011,7 @@ $C$DW$401	.dwtag  DW_TAG_TI_branch
         BL        validate              ; [DPU_3_PIPE] |2669| 
         ; CALL OCCURS {validate }        ; [] |2669| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |2669| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2670,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2670,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2670 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -11020,7 +11020,7 @@ $C$DW$401	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L265||           ; [DPU_3_PIPE] |2670| 
         ; BRANCHCC OCCURS {||$C$L265||}  ; [] |2670| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2671,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2671,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2671 | if (fp->flag & FA__WRITTEN) {   /* Has the file been written? */       
 ; 2672 | #if !_FS_TINY   /* Write-back dirty buffer */                          
@@ -11031,7 +11031,7 @@ $C$DW$401	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L265||           ; [DPU_3_PIPE] |2671| 
         ; BRANCHCC OCCURS {||$C$L265||}  ; [] |2671| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2673,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2673,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2673 | if (fp->flag & FA__DIRTY) {                                            
 ;----------------------------------------------------------------------
@@ -11041,7 +11041,7 @@ $C$DW$401	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L264||           ; [DPU_3_PIPE] |2673| 
         ; BRANCHCC OCCURS {||$C$L264||}  ; [] |2673| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2674,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2674,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2674 | if (disk_write(fp->fs->drv, fp->buf, fp->dsect, 1) != RES_OK)          
 ;----------------------------------------------------------------------
@@ -11062,7 +11062,7 @@ $C$DW$402	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L263||       ; [] 
         ; BRANCHCC OCCURS {||$C$L263||}  ; [] |2674| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2675,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2675,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2675 | LEAVE_FF(fp->fs, FR_DISK_ERR);                                         
 ;----------------------------------------------------------------------
@@ -11071,7 +11071,7 @@ $C$DW$402	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L266||}    ; [] |2675| 
 ;* --------------------------------------------------------------------------*
 ||$C$L263||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2676,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2676,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2676 | fp->flag &= ~FA__DIRTY;                                                
 ; 2678 | #endif                                                                 
@@ -11082,7 +11082,7 @@ $C$DW$402	.dwtag  DW_TAG_TI_branch
         STRB      A1, [A2, #6]          ; [DPU_3_PIPE] |2676| 
 ;* --------------------------------------------------------------------------*
 ||$C$L264||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2680,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2680,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2680 | res = move_window(fp->fs, fp->dir_sect);                               
 ;----------------------------------------------------------------------
@@ -11097,7 +11097,7 @@ $C$DW$403	.dwtag  DW_TAG_TI_branch
         BL        move_window           ; [DPU_3_PIPE] |2680| 
         ; CALL OCCURS {move_window }     ; [] |2680| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |2680| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2681,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2681,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2681 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -11106,14 +11106,14 @@ $C$DW$403	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L265||           ; [DPU_3_PIPE] |2681| 
         ; BRANCHCC OCCURS {||$C$L265||}  ; [] |2681| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2682,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2682,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2682 | dir = fp->dir_ptr;                                                     
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2682| 
         LDR       A1, [A1, #32]         ; [DPU_3_PIPE] |2682| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |2682| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2683,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2683,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2683 | dir[DIR_Attr] |= AM_ARC;                                        /* Set
 ;     | archive bit */                                                         
@@ -11122,7 +11122,7 @@ $C$DW$403	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [A2, #11]         ; [DPU_3_PIPE] |2683| 
         ORR       A1, A1, #32           ; [DPU_3_PIPE] |2683| 
         STRB      A1, [A2, #11]         ; [DPU_3_PIPE] |2683| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2684,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2684,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2684 | ST_DWORD(dir+DIR_FileSize, fp->fsize);          /* Update file size */ 
 ;----------------------------------------------------------------------
@@ -11143,7 +11143,7 @@ $C$DW$403	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #12]         ; [DPU_3_PIPE] |2684| 
         LDRB      A1, [A1, #15]         ; [DPU_3_PIPE] |2684| 
         STRB      A1, [A2, #31]         ; [DPU_3_PIPE] |2684| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2685,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2685,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2685 | st_clust(dir, fp->sclust);                                      /* Upda
 ;     | te start cluster */                                                    
@@ -11157,7 +11157,7 @@ $C$DW$404	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$404, DW_AT_TI_call
         BL        st_clust              ; [DPU_3_PIPE] |2685| 
         ; CALL OCCURS {st_clust }        ; [] |2685| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2686,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2686,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2686 | tm = get_fattime();
 ;     |  /* Update updated time */                                             
@@ -11169,7 +11169,7 @@ $C$DW$405	.dwtag  DW_TAG_TI_branch
         BL        get_fattime           ; [DPU_3_PIPE] |2686| 
         ; CALL OCCURS {get_fattime }     ; [] |2686| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |2686| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2687,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2687,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2687 | ST_DWORD(dir+DIR_WrtTime, tm);                                         
 ;----------------------------------------------------------------------
@@ -11186,7 +11186,7 @@ $C$DW$405	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #12]         ; [DPU_3_PIPE] |2687| 
         LDRB      A1, [SP, #11]         ; [DPU_3_PIPE] |2687| 
         STRB      A1, [A2, #25]         ; [DPU_3_PIPE] |2687| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2688,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2688,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2688 | ST_WORD(dir+DIR_LstAccDate, 0);                                        
 ;----------------------------------------------------------------------
@@ -11196,7 +11196,7 @@ $C$DW$405	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |2688| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2688| 
         STRB      A2, [A1, #19]         ; [DPU_3_PIPE] |2688| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2689,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2689,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2689 | fp->flag &= ~FA__WRITTEN;                                              
 ;----------------------------------------------------------------------
@@ -11204,7 +11204,7 @@ $C$DW$405	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [A2, #6]          ; [DPU_3_PIPE] |2689| 
         BIC       A1, A1, #32           ; [DPU_3_PIPE] |2689| 
         STRB      A1, [A2, #6]          ; [DPU_3_PIPE] |2689| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2690,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2690,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2690 | fp->fs->wflag = 1;                                                     
 ;----------------------------------------------------------------------
@@ -11212,7 +11212,7 @@ $C$DW$405	.dwtag  DW_TAG_TI_branch
         LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |2690| 
         MOVS      A2, #1                ; [DPU_3_PIPE] |2690| 
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |2690| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2691,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2691,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2691 | res = sync_fs(fp->fs);                                                 
 ;----------------------------------------------------------------------
@@ -11227,14 +11227,14 @@ $C$DW$406	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |2691| 
 ;* --------------------------------------------------------------------------*
 ||$C$L265||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2696,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2696,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2696 | LEAVE_FF(fp->fs, res);                                                 
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |2696| 
 ;* --------------------------------------------------------------------------*
 ||$C$L266||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2697,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2697,column 1,is_stmt,isa 1
         ADD       SP, SP, #20           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$407	.dwtag  DW_TAG_TI_branch
@@ -11243,7 +11243,7 @@ $C$DW$407	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$395, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$395, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$395, DW_AT_TI_end_line(0xa89)
 	.dwattr $C$DW$395, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -11261,14 +11261,14 @@ $C$DW$408	.dwtag  DW_TAG_subprogram, DW_AT_name("f_close")
 	.dwattr $C$DW$408, DW_AT_TI_symbol_name("f_close")
 	.dwattr $C$DW$408, DW_AT_external
 	.dwattr $C$DW$408, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$408, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$408, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$408, DW_AT_TI_begin_line(0xa94)
 	.dwattr $C$DW$408, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$408, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$408, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$408, DW_AT_decl_line(0xa94)
 	.dwattr $C$DW$408, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$408, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2711,column 1,is_stmt,address f_close,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2711,column 1,is_stmt,address f_close,isa 1
 
 	.dwfde $C$DW$CIE, f_close
 $C$DW$409	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fp")
@@ -11321,7 +11321,7 @@ $C$DW$411	.dwtag  DW_TAG_variable, DW_AT_name("res")
 ; 2724 | #else                                                                  
 ;----------------------------------------------------------------------
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |2711| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2725,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2725,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2725 | res = f_sync(fp);               /* Flush cached data */                
 ; 2726 | #if _FS_LOCK                                                           
@@ -11345,7 +11345,7 @@ $C$DW$412	.dwtag  DW_TAG_TI_branch
         BL        f_sync                ; [DPU_3_PIPE] |2725| 
         ; CALL OCCURS {f_sync }          ; [] |2725| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |2725| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2740,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2740,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2740 | if (res == FR_OK) fp->fs = 0;   /* Discard file object */              
 ;----------------------------------------------------------------------
@@ -11353,26 +11353,26 @@ $C$DW$412	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L267||       ; [] 
         ; BRANCHCC OCCURS {||$C$L267||}  ; [] |2740| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2740,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2740,column 20,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2740| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |2740| 
         STR       A2, [A1, #0]          ; [DPU_3_PIPE] |2740| 
 ;* --------------------------------------------------------------------------*
 ||$C$L267||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2741,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2741,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2741 | return res;                                                            
 ; 2742 | #endif                                                                 
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |2741| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2743,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2743,column 1,is_stmt,isa 1
 $C$DW$413	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$413, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$413, DW_AT_TI_return
         POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$408, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$408, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$408, DW_AT_TI_end_line(0xab7)
 	.dwattr $C$DW$408, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -11390,14 +11390,14 @@ $C$DW$414	.dwtag  DW_TAG_subprogram, DW_AT_name("f_lseek")
 	.dwattr $C$DW$414, DW_AT_TI_symbol_name("f_lseek")
 	.dwattr $C$DW$414, DW_AT_external
 	.dwattr $C$DW$414, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$414, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$414, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$414, DW_AT_TI_begin_line(0xb3d)
 	.dwattr $C$DW$414, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$414, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$414, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$414, DW_AT_decl_line(0xb3d)
 	.dwattr $C$DW$414, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$414, DW_AT_TI_max_frame_size(0x20)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2881,column 1,is_stmt,address f_lseek,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2881,column 1,is_stmt,address f_lseek,isa 1
 
 	.dwfde $C$DW$CIE, f_lseek
 $C$DW$415	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fp")
@@ -11451,7 +11451,7 @@ $C$DW$419	.dwtag  DW_TAG_variable, DW_AT_name("res")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |2881| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |2881| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2885,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2885,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2885 | res = validate(fp);                                     /* Check validi
 ;     | ty of the object */                                                    
@@ -11464,7 +11464,7 @@ $C$DW$420	.dwtag  DW_TAG_TI_branch
         BL        validate              ; [DPU_3_PIPE] |2885| 
         ; CALL OCCURS {validate }        ; [] |2885| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2885| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2886,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2886,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2886 | if (res != FR_OK) LEAVE_FF(fp->fs, res);                               
 ;----------------------------------------------------------------------
@@ -11472,13 +11472,13 @@ $C$DW$420	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L268||       ; [] 
         ; BRANCHCC OCCURS {||$C$L268||}  ; [] |2886| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2886,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2886,column 20,is_stmt,isa 1
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |2886| 
         B         ||$C$L290||           ; [DPU_3_PIPE] |2886| 
         ; BRANCH OCCURS {||$C$L290||}    ; [] |2886| 
 ;* --------------------------------------------------------------------------*
 ||$C$L268||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2887,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2887,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2887 | if (fp->flag & FA__ERROR)                       /* Check abort flag */ 
 ;----------------------------------------------------------------------
@@ -11488,7 +11488,7 @@ $C$DW$420	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L269||           ; [DPU_3_PIPE] |2887| 
         ; BRANCHCC OCCURS {||$C$L269||}  ; [] |2887| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2888,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2888,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2888 | LEAVE_FF(fp->fs, FR_INT_ERR);                                          
 ; 2890 | #if _USE_FASTSEEK                                                      
@@ -11574,7 +11574,7 @@ $C$DW$425	.dwtag  DW_TAG_variable, DW_AT_name("ifptr")
 	.dwattr $C$DW$425, DW_AT_TI_symbol_name("ifptr")
 	.dwattr $C$DW$425, DW_AT_type(*$C$DW$T$21)
 	.dwattr $C$DW$425, DW_AT_location[DW_OP_breg13 24]
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2951,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2951,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2951 | if (ofs > fp->fsize                                     /* In read-only
 ;     |  mode, clip offset with the file size */                               
@@ -11595,7 +11595,7 @@ $C$DW$425	.dwtag  DW_TAG_variable, DW_AT_name("ifptr")
         BCS       ||$C$L270||           ; [DPU_3_PIPE] |2951| 
         ; BRANCHCC OCCURS {||$C$L270||}  ; [] |2951| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2955,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2955,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2955 | ) ofs = fp->fsize;                                                     
 ;----------------------------------------------------------------------
@@ -11604,14 +11604,14 @@ $C$DW$425	.dwtag  DW_TAG_variable, DW_AT_name("ifptr")
         STR       A1, [SP, #4]          ; [DPU_3_PIPE] |2955| 
 ;* --------------------------------------------------------------------------*
 ||$C$L270||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2957,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2957,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2957 | ifptr = fp->fptr;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2957| 
         LDR       A1, [A1, #8]          ; [DPU_3_PIPE] |2957| 
         STR       A1, [SP, #24]         ; [DPU_3_PIPE] |2957| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2958,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2958,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2958 | fp->fptr = nsect = 0;                                                  
 ;----------------------------------------------------------------------
@@ -11619,7 +11619,7 @@ $C$DW$425	.dwtag  DW_TAG_variable, DW_AT_name("ifptr")
         STR       A2, [SP, #20]         ; [DPU_3_PIPE] |2958| 
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2958| 
         STR       A2, [A1, #8]          ; [DPU_3_PIPE] |2958| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2959,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2959,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2959 | if (ofs) {                                                             
 ;----------------------------------------------------------------------
@@ -11628,7 +11628,7 @@ $C$DW$425	.dwtag  DW_TAG_variable, DW_AT_name("ifptr")
         BEQ       ||$C$L284||           ; [DPU_3_PIPE] |2959| 
         ; BRANCHCC OCCURS {||$C$L284||}  ; [] |2959| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2960,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2960,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2960 | bcs = (DWORD)fp->fs->csize * SS(fp->fs);        /* Cluster size (byte)
 ;     | */                                                                     
@@ -11638,7 +11638,7 @@ $C$DW$425	.dwtag  DW_TAG_variable, DW_AT_name("ifptr")
         LDRB      A1, [A1, #2]          ; [DPU_3_PIPE] |2960| 
         LSLS      A1, A1, #9            ; [DPU_3_PIPE] |2960| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |2960| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2961,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2961,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2961 | if (ifptr > 0 &&                                                       
 ; 2962 |         (ofs - 1) / bcs >= (ifptr - 1) / bcs) { /* When seek to same or
@@ -11660,7 +11660,7 @@ $C$DW$425	.dwtag  DW_TAG_variable, DW_AT_name("ifptr")
         BHI       ||$C$L271||           ; [DPU_3_PIPE] |2961| 
         ; BRANCHCC OCCURS {||$C$L271||}  ; [] |2961| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2963,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2963,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2963 | fp->fptr = (ifptr - 1) & ~(bcs - 1);    /* start from the current clust
 ;     | er */                                                                  
@@ -11672,7 +11672,7 @@ $C$DW$425	.dwtag  DW_TAG_variable, DW_AT_name("ifptr")
         SUBS      A2, A2, #1            ; [DPU_3_PIPE] |2963| 
         BICS      A2, A2, A1            ; [DPU_3_PIPE] |2963| 
         STR       A2, [A3, #8]          ; [DPU_3_PIPE] |2963| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2964,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2964,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2964 | ofs -= fp->fptr;                                                       
 ;----------------------------------------------------------------------
@@ -11681,14 +11681,14 @@ $C$DW$425	.dwtag  DW_TAG_variable, DW_AT_name("ifptr")
         LDR       A2, [A2, #8]          ; [DPU_3_PIPE] |2964| 
         SUBS      A1, A1, A2            ; [DPU_3_PIPE] |2964| 
         STR       A1, [SP, #4]          ; [DPU_3_PIPE] |2964| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2965,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2965,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2965 | clst = fp->clust;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2965| 
         LDR       A1, [A1, #20]         ; [DPU_3_PIPE] |2965| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |2965| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2966,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2966,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2966 | } else {
 ;     |          /* When seek to back cluster, */                              
@@ -11697,7 +11697,7 @@ $C$DW$425	.dwtag  DW_TAG_variable, DW_AT_name("ifptr")
         ; BRANCH OCCURS {||$C$L275||}    ; [] |2966| 
 ;* --------------------------------------------------------------------------*
 ||$C$L271||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2967,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2967,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2967 | clst = fp->sclust;                                              /* star
 ;     | t from the first cluster */                                            
@@ -11706,7 +11706,7 @@ $C$DW$425	.dwtag  DW_TAG_variable, DW_AT_name("ifptr")
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |2967| 
         LDR       A1, [A1, #16]         ; [DPU_3_PIPE] |2967| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |2967| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2969,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2969,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2969 | if (clst == 0) {                                                /* If n
 ;     | o cluster chain, create a new chain */                                 
@@ -11715,7 +11715,7 @@ $C$DW$425	.dwtag  DW_TAG_variable, DW_AT_name("ifptr")
         CBNZ      A1, ||$C$L274||       ; [] 
         ; BRANCHCC OCCURS {||$C$L274||}  ; [] |2969| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2970,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2970,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2970 | clst = create_chain(fp->fs, 0);                                        
 ;----------------------------------------------------------------------
@@ -11729,7 +11729,7 @@ $C$DW$426	.dwtag  DW_TAG_TI_branch
         BL        create_chain          ; [DPU_3_PIPE] |2970| 
         ; CALL OCCURS {create_chain }    ; [] |2970| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |2970| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2971,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2971,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2971 | if (clst == 1) ABORT(fp->fs, FR_INT_ERR);                              
 ;----------------------------------------------------------------------
@@ -11738,7 +11738,7 @@ $C$DW$426	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L272||           ; [DPU_3_PIPE] |2971| 
         ; BRANCHCC OCCURS {||$C$L272||}  ; [] |2971| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2971,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2971,column 21,is_stmt,isa 1
         LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |2971| 
         LDRB      A2, [A3, #6]          ; [DPU_3_PIPE] |2971| 
         MOVS      A1, #2                ; [DPU_3_PIPE] |2971| 
@@ -11748,7 +11748,7 @@ $C$DW$426	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L290||}    ; [] |2971| 
 ;* --------------------------------------------------------------------------*
 ||$C$L272||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2972,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2972,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2972 | if (clst == 0xFFFFFFFF) ABORT(fp->fs, FR_DISK_ERR);                    
 ;----------------------------------------------------------------------
@@ -11757,7 +11757,7 @@ $C$DW$426	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L273||           ; [DPU_3_PIPE] |2972| 
         ; BRANCHCC OCCURS {||$C$L273||}  ; [] |2972| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2972,column 30,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2972,column 30,is_stmt,isa 1
         LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |2972| 
         LDRB      A2, [A3, #6]          ; [DPU_3_PIPE] |2972| 
         MOVS      A1, #1                ; [DPU_3_PIPE] |2972| 
@@ -11767,7 +11767,7 @@ $C$DW$426	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L290||}    ; [] |2972| 
 ;* --------------------------------------------------------------------------*
 ||$C$L273||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2973,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2973,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2973 | fp->sclust = clst;                                                     
 ; 2975 | #endif                                                                 
@@ -11777,7 +11777,7 @@ $C$DW$426	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #16]         ; [DPU_3_PIPE] |2973| 
 ;* --------------------------------------------------------------------------*
 ||$C$L274||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2976,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2976,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2976 | fp->clust = clst;                                                      
 ;----------------------------------------------------------------------
@@ -11786,7 +11786,7 @@ $C$DW$426	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #20]         ; [DPU_3_PIPE] |2976| 
 ;* --------------------------------------------------------------------------*
 ||$C$L275||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2978,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2978,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2978 | if (clst != 0) {                                                       
 ;----------------------------------------------------------------------
@@ -11795,7 +11795,7 @@ $C$DW$426	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L284||           ; [DPU_3_PIPE] |2978| 
         ; BRANCHCC OCCURS {||$C$L284||}  ; [] |2978| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2979,column 12,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2979,column 12,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2979 | while (ofs > bcs) {                                             /* Clus
 ;     | ter following loop */                                                  
@@ -11816,7 +11816,7 @@ $C$DW$426	.dwtag  DW_TAG_TI_branch
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L276||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2981,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2981,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2981 | if (fp->flag & FA_WRITE) {                      /* Check if in write mo
 ;     | de or not */                                                           
@@ -11827,7 +11827,7 @@ $C$DW$426	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L277||           ; [DPU_3_PIPE] |2981| 
         ; BRANCHCC OCCURS {||$C$L277||}  ; [] |2981| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2982,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2982,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2982 | clst = create_chain(fp->fs, clst);      /* Force stretch if in write mo
 ;     | de */                                                                  
@@ -11842,7 +11842,7 @@ $C$DW$427	.dwtag  DW_TAG_TI_branch
         BL        create_chain          ; [DPU_3_PIPE] |2982| 
         ; CALL OCCURS {create_chain }    ; [] |2982| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |2982| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2983,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2983,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2983 | if (clst == 0) {                                /* When disk gets full,
 ;     |  clip file size */                                                     
@@ -11851,13 +11851,13 @@ $C$DW$427	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L278||       ; [] 
         ; BRANCHCC OCCURS {||$C$L278||}  ; [] |2983| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2984,column 8,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2984,column 8,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2984 | ofs = bcs; break;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |2984| 
         STR       A1, [SP, #4]          ; [DPU_3_PIPE] |2984| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2984,column 19,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2984,column 19,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2986 | } else                                                                 
 ; 2987 | #endif                                                                 
@@ -11867,7 +11867,7 @@ $C$DW$427	.dwtag  DW_TAG_TI_branch
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L277||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2988,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2988,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2988 | clst = get_fat(fp->fs, clst);   /* Follow cluster chain if not in write
 ;     |  mode */                                                               
@@ -11884,7 +11884,7 @@ $C$DW$428	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |2988| 
 ;* --------------------------------------------------------------------------*
 ||$C$L278||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2989,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2989,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2989 | if (clst == 0xFFFFFFFF) ABORT(fp->fs, FR_DISK_ERR);                    
 ;----------------------------------------------------------------------
@@ -11893,7 +11893,7 @@ $C$DW$428	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L279||           ; [DPU_3_PIPE] |2989| 
         ; BRANCHCC OCCURS {||$C$L279||}  ; [] |2989| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2989,column 30,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2989,column 30,is_stmt,isa 1
         LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |2989| 
         LDRB      A2, [A3, #6]          ; [DPU_3_PIPE] |2989| 
         MOVS      A1, #1                ; [DPU_3_PIPE] |2989| 
@@ -11903,7 +11903,7 @@ $C$DW$428	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L290||}    ; [] |2989| 
 ;* --------------------------------------------------------------------------*
 ||$C$L279||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2990,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2990,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2990 | if (clst <= 1 || clst >= fp->fs->n_fatent) ABORT(fp->fs, FR_INT_ERR);  
 ;----------------------------------------------------------------------
@@ -11921,7 +11921,7 @@ $C$DW$428	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L281||}  ; [] |2990| 
 ;* --------------------------------------------------------------------------*
 ||$C$L280||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2990,column 49,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2990,column 49,is_stmt,isa 1
         LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |2990| 
         LDRB      A2, [A3, #6]          ; [DPU_3_PIPE] |2990| 
         MOVS      A1, #2                ; [DPU_3_PIPE] |2990| 
@@ -11931,14 +11931,14 @@ $C$DW$428	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L290||}    ; [] |2990| 
 ;* --------------------------------------------------------------------------*
 ||$C$L281||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2991,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2991,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2991 | fp->clust = clst;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |2991| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |2991| 
         STR       A1, [A2, #20]         ; [DPU_3_PIPE] |2991| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2992,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2992,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2992 | fp->fptr += bcs;                                                       
 ;----------------------------------------------------------------------
@@ -11947,7 +11947,7 @@ $C$DW$428	.dwtag  DW_TAG_TI_branch
         LDR       A3, [A2, #8]          ; [DPU_3_PIPE] |2992| 
         ADDS      A1, A1, A3            ; [DPU_3_PIPE] |2992| 
         STR       A1, [A2, #8]          ; [DPU_3_PIPE] |2992| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2993,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2993,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2993 | ofs -= bcs;                                                            
 ;----------------------------------------------------------------------
@@ -11955,7 +11955,7 @@ $C$DW$428	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #16]         ; [DPU_3_PIPE] |2993| 
         SUBS      A1, A1, A2            ; [DPU_3_PIPE] |2993| 
         STR       A1, [SP, #4]          ; [DPU_3_PIPE] |2993| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2979,column 12,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2979,column 12,is_stmt,isa 1
         LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |2979| 
         LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |2979| 
         CMP       A1, A2                ; [DPU_3_PIPE] |2979| 
@@ -11963,7 +11963,7 @@ $C$DW$428	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L276||}  ; [] |2979| 
 ;* --------------------------------------------------------------------------*
 ||$C$L282||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2995,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2995,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2995 | fp->fptr += ofs;                                                       
 ;----------------------------------------------------------------------
@@ -11972,7 +11972,7 @@ $C$DW$428	.dwtag  DW_TAG_TI_branch
         LDR       A3, [A2, #8]          ; [DPU_3_PIPE] |2995| 
         ADDS      A1, A1, A3            ; [DPU_3_PIPE] |2995| 
         STR       A1, [A2, #8]          ; [DPU_3_PIPE] |2995| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2996,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2996,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2996 | if (ofs % SS(fp->fs)) {                                                
 ;----------------------------------------------------------------------
@@ -11981,7 +11981,7 @@ $C$DW$428	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L284||       ; [] 
         ; BRANCHCC OCCURS {||$C$L284||}  ; [] |2996| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2997,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2997,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2997 | nsect = clust2sect(fp->fs, clst);       /* Current sector */           
 ;----------------------------------------------------------------------
@@ -11995,7 +11995,7 @@ $C$DW$429	.dwtag  DW_TAG_TI_branch
         BL        clust2sect            ; [DPU_3_PIPE] |2997| 
         ; CALL OCCURS {clust2sect }      ; [] |2997| 
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |2997| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2998,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2998,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2998 | if (!nsect) ABORT(fp->fs, FR_INT_ERR);                                 
 ;----------------------------------------------------------------------
@@ -12003,7 +12003,7 @@ $C$DW$429	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L283||       ; [] 
         ; BRANCHCC OCCURS {||$C$L283||}  ; [] |2998| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2998,column 18,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2998,column 18,is_stmt,isa 1
         LDR       A3, [SP, #0]          ; [DPU_3_PIPE] |2998| 
         LDRB      A2, [A3, #6]          ; [DPU_3_PIPE] |2998| 
         MOVS      A1, #2                ; [DPU_3_PIPE] |2998| 
@@ -12013,7 +12013,7 @@ $C$DW$429	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L290||}    ; [] |2998| 
 ;* --------------------------------------------------------------------------*
 ||$C$L283||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 2999,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 2999,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 2999 | nsect += ofs / SS(fp->fs);                                             
 ;----------------------------------------------------------------------
@@ -12023,7 +12023,7 @@ $C$DW$429	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |2999| 
 ;* --------------------------------------------------------------------------*
 ||$C$L284||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3003,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3003,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3003 | if (fp->fptr % SS(fp->fs) && nsect != fp->dsect) {      /* Fill sector
 ;     | cache if needed */                                                     
@@ -12044,7 +12044,7 @@ $C$DW$429	.dwtag  DW_TAG_TI_branch
         BEQ       ||$C$L288||           ; [DPU_3_PIPE] |3003| 
         ; BRANCHCC OCCURS {||$C$L288||}  ; [] |3003| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3006,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3006,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3006 | if (fp->flag & FA__DIRTY) {                     /* Write-back dirty sec
 ;     | tor cache */                                                           
@@ -12055,7 +12055,7 @@ $C$DW$429	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L286||           ; [DPU_3_PIPE] |3006| 
         ; BRANCHCC OCCURS {||$C$L286||}  ; [] |3006| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3007,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3007,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3007 | if (disk_write(fp->fs->drv, fp->buf, fp->dsect, 1) != RES_OK)          
 ;----------------------------------------------------------------------
@@ -12076,7 +12076,7 @@ $C$DW$430	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L285||       ; [] 
         ; BRANCHCC OCCURS {||$C$L285||}  ; [] |3007| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3008,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3008,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3008 | ABORT(fp->fs, FR_DISK_ERR);                                            
 ;----------------------------------------------------------------------
@@ -12089,7 +12089,7 @@ $C$DW$430	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L290||}    ; [] |3008| 
 ;* --------------------------------------------------------------------------*
 ||$C$L285||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3009,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3009,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3009 | fp->flag &= ~FA__DIRTY;                                                
 ; 3011 | #endif                                                                 
@@ -12100,7 +12100,7 @@ $C$DW$430	.dwtag  DW_TAG_TI_branch
         STRB      A1, [A2, #6]          ; [DPU_3_PIPE] |3009| 
 ;* --------------------------------------------------------------------------*
 ||$C$L286||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3012,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3012,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3012 | if (disk_read(fp->fs->drv, fp->buf, nsect, 1) != RES_OK)        /* Fill
 ;     |  sector cache */                                                       
@@ -12121,7 +12121,7 @@ $C$DW$431	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L287||       ; [] 
         ; BRANCHCC OCCURS {||$C$L287||}  ; [] |3012| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3013,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3013,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3013 | ABORT(fp->fs, FR_DISK_ERR);                                            
 ; 3014 | #endif                                                                 
@@ -12135,7 +12135,7 @@ $C$DW$431	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L290||}    ; [] |3013| 
 ;* --------------------------------------------------------------------------*
 ||$C$L287||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3015,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3015,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3015 | fp->dsect = nsect;                                                     
 ; 3017 | #if !_FS_READONLY                                                      
@@ -12145,7 +12145,7 @@ $C$DW$431	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #24]         ; [DPU_3_PIPE] |3015| 
 ;* --------------------------------------------------------------------------*
 ||$C$L288||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3018,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3018,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3018 | if (fp->fptr > fp->fsize) {                     /* Set file change flag
 ;     |  if the file size is extended */                                       
@@ -12158,7 +12158,7 @@ $C$DW$431	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L289||           ; [DPU_3_PIPE] |3018| 
         ; BRANCHCC OCCURS {||$C$L289||}  ; [] |3018| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3019,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3019,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3019 | fp->fsize = fp->fptr;                                                  
 ;----------------------------------------------------------------------
@@ -12166,7 +12166,7 @@ $C$DW$431	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |3019| 
         LDR       A1, [A1, #8]          ; [DPU_3_PIPE] |3019| 
         STR       A1, [A2, #12]         ; [DPU_3_PIPE] |3019| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3020,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3020,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3020 | fp->flag |= FA__WRITTEN;                                               
 ; 3022 | #endif                                                                 
@@ -12179,14 +12179,14 @@ $C$DW$431	.dwtag  DW_TAG_TI_branch
 ||$C$L289||:    
 	.dwendtag $C$DW$421
 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3025,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3025,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3025 | LEAVE_FF(fp->fs, res);                                                 
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3025| 
 ;* --------------------------------------------------------------------------*
 ||$C$L290||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3026,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3026,column 1,is_stmt,isa 1
         ADD       SP, SP, #28           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$432	.dwtag  DW_TAG_TI_branch
@@ -12195,7 +12195,7 @@ $C$DW$432	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$414, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$414, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$414, DW_AT_TI_end_line(0xbd2)
 	.dwattr $C$DW$414, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -12213,14 +12213,14 @@ $C$DW$433	.dwtag  DW_TAG_subprogram, DW_AT_name("f_opendir")
 	.dwattr $C$DW$433, DW_AT_TI_symbol_name("f_opendir")
 	.dwattr $C$DW$433, DW_AT_external
 	.dwattr $C$DW$433, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$433, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$433, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$433, DW_AT_TI_begin_line(0xbdb)
 	.dwattr $C$DW$433, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$433, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$433, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$433, DW_AT_decl_line(0xbdb)
 	.dwattr $C$DW$433, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$433, DW_AT_TI_max_frame_size(0x20)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3039,column 1,is_stmt,address f_opendir,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3039,column 1,is_stmt,address f_opendir,isa 1
 
 	.dwfde $C$DW$CIE, f_opendir
 $C$DW$434	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dj")
@@ -12285,7 +12285,7 @@ $C$DW$440	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |3039| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |3039| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3045,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3045,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3045 | if (!dj) return FR_INVALID_OBJECT;                                     
 ;----------------------------------------------------------------------
@@ -12293,13 +12293,13 @@ $C$DW$440	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
         CBNZ      A1, ||$C$L291||       ; [] 
         ; BRANCHCC OCCURS {||$C$L291||}  ; [] |3045| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3045,column 11,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3045,column 11,is_stmt,isa 1
         MOVS      A1, #9                ; [DPU_3_PIPE] |3045| 
         B         ||$C$L298||           ; [DPU_3_PIPE] |3045| 
         ; BRANCH OCCURS {||$C$L298||}    ; [] |3045| 
 ;* --------------------------------------------------------------------------*
 ||$C$L291||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3047,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3047,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3047 | res = chk_mounted(&path, &dj->fs, 0);                                  
 ;----------------------------------------------------------------------
@@ -12313,14 +12313,14 @@ $C$DW$441	.dwtag  DW_TAG_TI_branch
         BL        chk_mounted           ; [DPU_3_PIPE] |3047| 
         ; CALL OCCURS {chk_mounted }     ; [] |3047| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3047| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3048,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3048,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3048 | fs = dj->fs;                                                           
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |3048| 
         LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |3048| 
         STR       A1, [SP, #12]         ; [DPU_3_PIPE] |3048| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3049,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3049,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3049 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -12329,14 +12329,14 @@ $C$DW$441	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L296||           ; [DPU_3_PIPE] |3049| 
         ; BRANCHCC OCCURS {||$C$L296||}  ; [] |3049| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3050,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3050,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3050 | INIT_BUF(*dj);                                                         
 ;----------------------------------------------------------------------
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |3050| 
         ADD       A1, SP, #16           ; [DPU_3_PIPE] |3050| 
         STR       A1, [A2, #24]         ; [DPU_3_PIPE] |3050| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3051,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3051,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3051 | res = follow_path(dj, path);                    /* Follow the path to t
 ;     | he directory */                                                        
@@ -12351,7 +12351,7 @@ $C$DW$442	.dwtag  DW_TAG_TI_branch
         BL        follow_path           ; [DPU_3_PIPE] |3051| 
         ; CALL OCCURS {follow_path }     ; [] |3051| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3051| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3053,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3053,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3053 | if (res == FR_OK) {                                             /* Foll
 ;     | ow completed */                                                        
@@ -12360,7 +12360,7 @@ $C$DW$442	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L294||       ; [] 
         ; BRANCHCC OCCURS {||$C$L294||}  ; [] |3053| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3054,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3054,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3054 | if (dj->dir) {                                          /* It is not th
 ;     | e root dir */                                                          
@@ -12370,7 +12370,7 @@ $C$DW$442	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L293||       ; [] 
         ; BRANCHCC OCCURS {||$C$L293||}  ; [] |3054| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3055,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3055,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3055 | if (dj->dir[DIR_Attr] & AM_DIR) {       /* The object is a directory */
 ;----------------------------------------------------------------------
@@ -12381,7 +12381,7 @@ $C$DW$442	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L292||           ; [DPU_3_PIPE] |3055| 
         ; BRANCHCC OCCURS {||$C$L292||}  ; [] |3055| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3056,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3056,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3056 | dj->sclust = ld_clust(fs, dj->dir);                                    
 ;----------------------------------------------------------------------
@@ -12396,7 +12396,7 @@ $C$DW$443	.dwtag  DW_TAG_TI_branch
         ; CALL OCCURS {ld_clust }        ; [] |3056| 
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |3056| 
         STR       A1, [A2, #8]          ; [DPU_3_PIPE] |3056| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3057,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3057,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3057 | } else {                                                /* The object i
 ;     | s not a directory */                                                   
@@ -12405,7 +12405,7 @@ $C$DW$443	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L293||}    ; [] |3057| 
 ;* --------------------------------------------------------------------------*
 ||$C$L292||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3058,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3058,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3058 | res = FR_NO_PATH;                                                      
 ;----------------------------------------------------------------------
@@ -12413,7 +12413,7 @@ $C$DW$443	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3058| 
 ;* --------------------------------------------------------------------------*
 ||$C$L293||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3061,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3061,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3061 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -12421,7 +12421,7 @@ $C$DW$443	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L294||       ; [] 
         ; BRANCHCC OCCURS {||$C$L294||}  ; [] |3061| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3062,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3062,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3062 | dj->id = fs->id;                                                       
 ;----------------------------------------------------------------------
@@ -12429,7 +12429,7 @@ $C$DW$443	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |3062| 
         LDRH      A1, [A1, #6]          ; [DPU_3_PIPE] |3062| 
         STRH      A1, [A2, #4]          ; [DPU_3_PIPE] |3062| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3063,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3063,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3063 | res = dir_sdi(dj, 0);                   /* Rewind dir */               
 ;----------------------------------------------------------------------
@@ -12444,7 +12444,7 @@ $C$DW$444	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3063| 
 ;* --------------------------------------------------------------------------*
 ||$C$L294||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3066,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3066,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3066 | if (res == FR_NO_FILE) res = FR_NO_PATH;                               
 ;----------------------------------------------------------------------
@@ -12453,12 +12453,12 @@ $C$DW$444	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L295||           ; [DPU_3_PIPE] |3066| 
         ; BRANCHCC OCCURS {||$C$L295||}  ; [] |3066| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3066,column 26,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3066,column 26,is_stmt,isa 1
         MOVS      A1, #5                ; [DPU_3_PIPE] |3066| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3066| 
 ;* --------------------------------------------------------------------------*
 ||$C$L295||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3067,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3067,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3067 | if (res != FR_OK) dj->fs = 0;                   /* Invalidate the dir o
 ;     | bject if function faild */                                             
@@ -12467,11 +12467,11 @@ $C$DW$444	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L297||       ; [] 
         ; BRANCHCC OCCURS {||$C$L297||}  ; [] |3067| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3067,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3067,column 21,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |3067| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |3067| 
         STR       A2, [A1, #0]          ; [DPU_3_PIPE] |3067| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3068,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3068,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3068 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -12479,7 +12479,7 @@ $C$DW$444	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L297||}    ; [] |3068| 
 ;* --------------------------------------------------------------------------*
 ||$C$L296||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3069,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3069,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3069 | dj->fs = 0;                                                            
 ;----------------------------------------------------------------------
@@ -12488,14 +12488,14 @@ $C$DW$444	.dwtag  DW_TAG_TI_branch
         STR       A2, [A1, #0]          ; [DPU_3_PIPE] |3069| 
 ;* --------------------------------------------------------------------------*
 ||$C$L297||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3072,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3072,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3072 | LEAVE_FF(fs, res);                                                     
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3072| 
 ;* --------------------------------------------------------------------------*
 ||$C$L298||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3073,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3073,column 1,is_stmt,isa 1
         ADD       SP, SP, #28           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$445	.dwtag  DW_TAG_TI_branch
@@ -12504,7 +12504,7 @@ $C$DW$445	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$433, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$433, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$433, DW_AT_TI_end_line(0xc01)
 	.dwattr $C$DW$433, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -12522,14 +12522,14 @@ $C$DW$446	.dwtag  DW_TAG_subprogram, DW_AT_name("f_readdir")
 	.dwattr $C$DW$446, DW_AT_TI_symbol_name("f_readdir")
 	.dwattr $C$DW$446, DW_AT_external
 	.dwattr $C$DW$446, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$446, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$446, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$446, DW_AT_TI_begin_line(0xc0a)
 	.dwattr $C$DW$446, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$446, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$446, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$446, DW_AT_decl_line(0xc0a)
 	.dwattr $C$DW$446, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$446, DW_AT_TI_max_frame_size(0x20)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3086,column 1,is_stmt,address f_readdir,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3086,column 1,is_stmt,address f_readdir,isa 1
 
 	.dwfde $C$DW$CIE, f_readdir
 $C$DW$447	.dwtag  DW_TAG_formal_parameter, DW_AT_name("dj")
@@ -12589,7 +12589,7 @@ $C$DW$452	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |3086| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |3086| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3091,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3091,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3091 | res = validate(dj);                                             /* Chec
 ;     | k validity of the object */                                            
@@ -12602,7 +12602,7 @@ $C$DW$453	.dwtag  DW_TAG_TI_branch
         BL        validate              ; [DPU_3_PIPE] |3091| 
         ; CALL OCCURS {validate }        ; [] |3091| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3091| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3092,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3092,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3092 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -12611,7 +12611,7 @@ $C$DW$453	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L301||           ; [DPU_3_PIPE] |3092| 
         ; BRANCHCC OCCURS {||$C$L301||}  ; [] |3092| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3093,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3093,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3093 | if (!fno) {                                                            
 ;----------------------------------------------------------------------
@@ -12619,7 +12619,7 @@ $C$DW$453	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L299||       ; [] 
         ; BRANCHCC OCCURS {||$C$L299||}  ; [] |3093| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3094,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3094,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3094 | res = dir_sdi(dj, 0);                   /* Rewind the directory object
 ;     | */                                                                     
@@ -12633,7 +12633,7 @@ $C$DW$454	.dwtag  DW_TAG_TI_branch
         BL        dir_sdi               ; [DPU_3_PIPE] |3094| 
         ; CALL OCCURS {dir_sdi }         ; [] |3094| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3094| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3095,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3095,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3095 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -12641,14 +12641,14 @@ $C$DW$454	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L301||}    ; [] |3095| 
 ;* --------------------------------------------------------------------------*
 ||$C$L299||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3096,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3096,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3096 | INIT_BUF(*dj);                                                         
 ;----------------------------------------------------------------------
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |3096| 
         ADD       A1, SP, #9            ; [DPU_3_PIPE] |3096| 
         STR       A1, [A2, #24]         ; [DPU_3_PIPE] |3096| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3097,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3097,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3097 | res = dir_read(dj, 0);                  /* Read an item */             
 ;----------------------------------------------------------------------
@@ -12661,7 +12661,7 @@ $C$DW$455	.dwtag  DW_TAG_TI_branch
         BL        dir_read              ; [DPU_3_PIPE] |3097| 
         ; CALL OCCURS {dir_read }        ; [] |3097| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3097| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3098,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3098,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3098 | if (res == FR_NO_FILE) {                /* Reached end of dir */       
 ;----------------------------------------------------------------------
@@ -12670,14 +12670,14 @@ $C$DW$455	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L300||           ; [DPU_3_PIPE] |3098| 
         ; BRANCHCC OCCURS {||$C$L300||}  ; [] |3098| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3099,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3099,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3099 | dj->sect = 0;                                                          
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |3099| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |3099| 
         STR       A2, [A1, #16]         ; [DPU_3_PIPE] |3099| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3100,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3100,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3100 | res = FR_OK;                                                           
 ;----------------------------------------------------------------------
@@ -12685,7 +12685,7 @@ $C$DW$455	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3100| 
 ;* --------------------------------------------------------------------------*
 ||$C$L300||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3102,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3102,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3102 | if (res == FR_OK) {                             /* A valid entry is fou
 ;     | nd */                                                                  
@@ -12694,7 +12694,7 @@ $C$DW$455	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L301||       ; [] 
         ; BRANCHCC OCCURS {||$C$L301||}  ; [] |3102| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3103,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3103,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3103 | get_fileinfo(dj, fno);          /* Get the object information */       
 ;----------------------------------------------------------------------
@@ -12706,7 +12706,7 @@ $C$DW$456	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$456, DW_AT_TI_call
         BL        get_fileinfo          ; [DPU_3_PIPE] |3103| 
         ; CALL OCCURS {get_fileinfo }    ; [] |3103| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3104,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3104,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3104 | res = dir_next(dj, 0);          /* Increment index for next */         
 ;----------------------------------------------------------------------
@@ -12719,7 +12719,7 @@ $C$DW$457	.dwtag  DW_TAG_TI_branch
         BL        dir_next              ; [DPU_3_PIPE] |3104| 
         ; CALL OCCURS {dir_next }        ; [] |3104| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3104| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3105,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3105,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3105 | if (res == FR_NO_FILE) {                                               
 ;----------------------------------------------------------------------
@@ -12728,14 +12728,14 @@ $C$DW$457	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L301||           ; [DPU_3_PIPE] |3105| 
         ; BRANCHCC OCCURS {||$C$L301||}  ; [] |3105| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3106,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3106,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3106 | dj->sect = 0;                                                          
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |3106| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |3106| 
         STR       A2, [A1, #16]         ; [DPU_3_PIPE] |3106| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3107,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3107,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3107 | res = FR_OK;                                                           
 ; 3110 | FREE_BUF();                                                            
@@ -12744,12 +12744,12 @@ $C$DW$457	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3107| 
 ;* --------------------------------------------------------------------------*
 ||$C$L301||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3114,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3114,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3114 | LEAVE_FF(dj->fs, res);                                                 
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3114| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3115,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3115,column 1,is_stmt,isa 1
         ADD       SP, SP, #28           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$458	.dwtag  DW_TAG_TI_branch
@@ -12758,7 +12758,7 @@ $C$DW$458	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$446, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$446, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$446, DW_AT_TI_end_line(0xc2b)
 	.dwattr $C$DW$446, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -12776,14 +12776,14 @@ $C$DW$459	.dwtag  DW_TAG_subprogram, DW_AT_name("f_stat")
 	.dwattr $C$DW$459, DW_AT_TI_symbol_name("f_stat")
 	.dwattr $C$DW$459, DW_AT_external
 	.dwattr $C$DW$459, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$459, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$459, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$459, DW_AT_TI_begin_line(0xc34)
 	.dwattr $C$DW$459, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$459, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$459, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$459, DW_AT_decl_line(0xc34)
 	.dwattr $C$DW$459, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$459, DW_AT_TI_max_frame_size(0x38)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3128,column 1,is_stmt,address f_stat,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3128,column 1,is_stmt,address f_stat,isa 1
 
 	.dwfde $C$DW$CIE, f_stat
 $C$DW$460	.dwtag  DW_TAG_formal_parameter, DW_AT_name("path")
@@ -12847,7 +12847,7 @@ $C$DW$466	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |3128| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |3128| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3134,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3134,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3134 | res = chk_mounted(&path, &dj.fs, 0);                                   
 ;----------------------------------------------------------------------
@@ -12861,7 +12861,7 @@ $C$DW$467	.dwtag  DW_TAG_TI_branch
         BL        chk_mounted           ; [DPU_3_PIPE] |3134| 
         ; CALL OCCURS {chk_mounted }     ; [] |3134| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3134| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3135,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3135,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3135 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -12869,13 +12869,13 @@ $C$DW$467	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L303||       ; [] 
         ; BRANCHCC OCCURS {||$C$L303||}  ; [] |3135| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3136,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3136,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3136 | INIT_BUF(dj);                                                          
 ;----------------------------------------------------------------------
         ADD       A1, SP, #40           ; [DPU_3_PIPE] |3136| 
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |3136| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3137,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3137,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3137 | res = follow_path(&dj, path);   /* Follow the file path */             
 ;----------------------------------------------------------------------
@@ -12888,7 +12888,7 @@ $C$DW$468	.dwtag  DW_TAG_TI_branch
         BL        follow_path           ; [DPU_3_PIPE] |3137| 
         ; CALL OCCURS {follow_path }     ; [] |3137| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3137| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3138,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3138,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3138 | if (res == FR_OK) {                             /* Follow completed */ 
 ;----------------------------------------------------------------------
@@ -12896,7 +12896,7 @@ $C$DW$468	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L303||       ; [] 
         ; BRANCHCC OCCURS {||$C$L303||}  ; [] |3138| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3139,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3139,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3139 | if (dj.dir)             /* Found an object */                          
 ;----------------------------------------------------------------------
@@ -12904,7 +12904,7 @@ $C$DW$468	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L302||       ; [] 
         ; BRANCHCC OCCURS {||$C$L302||}  ; [] |3139| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3140,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3140,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3140 | get_fileinfo(&dj, fno);                                                
 ; 3141 | else                    /* It is root dir */                           
@@ -12921,7 +12921,7 @@ $C$DW$469	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L303||}    ; [] |3140| 
 ;* --------------------------------------------------------------------------*
 ||$C$L302||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3142,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3142,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3142 | res = FR_INVALID_NAME;                                                 
 ; 3144 | FREE_BUF();                                                            
@@ -12930,12 +12930,12 @@ $C$DW$469	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3142| 
 ;* --------------------------------------------------------------------------*
 ||$C$L303||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3147,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3147,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3147 | LEAVE_FF(dj.fs, res);                                                  
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3147| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3148,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3148,column 1,is_stmt,isa 1
         ADD       SP, SP, #52           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$470	.dwtag  DW_TAG_TI_branch
@@ -12944,7 +12944,7 @@ $C$DW$470	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$459, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$459, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$459, DW_AT_TI_end_line(0xc4c)
 	.dwattr $C$DW$459, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -12962,14 +12962,14 @@ $C$DW$471	.dwtag  DW_TAG_subprogram, DW_AT_name("f_getfree")
 	.dwattr $C$DW$471, DW_AT_TI_symbol_name("f_getfree")
 	.dwattr $C$DW$471, DW_AT_external
 	.dwattr $C$DW$471, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$471, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$471, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$471, DW_AT_TI_begin_line(0xc55)
 	.dwattr $C$DW$471, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$471, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$471, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$471, DW_AT_decl_line(0xc55)
 	.dwattr $C$DW$471, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$471, DW_AT_TI_max_frame_size(0x38)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3162,column 1,is_stmt,address f_getfree,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3162,column 1,is_stmt,address f_getfree,isa 1
 
 	.dwfde $C$DW$CIE, f_getfree
 $C$DW$472	.dwtag  DW_TAG_formal_parameter, DW_AT_name("path")
@@ -13071,7 +13071,7 @@ $C$DW$486	.dwtag  DW_TAG_variable, DW_AT_name("p")
         STR       A3, [SP, #8]          ; [DPU_3_PIPE] |3162| 
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |3162| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |3162| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3171,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3171,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3171 | res = chk_mounted(&path, fatfs, 0);                                    
 ;----------------------------------------------------------------------
@@ -13085,14 +13085,14 @@ $C$DW$487	.dwtag  DW_TAG_TI_branch
         BL        chk_mounted           ; [DPU_3_PIPE] |3171| 
         ; CALL OCCURS {chk_mounted }     ; [] |3171| 
         STRB      A1, [SP, #12]         ; [DPU_3_PIPE] |3171| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3172,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3172,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3172 | fs = *fatfs;                                                           
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |3172| 
         LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |3172| 
         STR       A1, [SP, #16]         ; [DPU_3_PIPE] |3172| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3173,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3173,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3173 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -13101,7 +13101,7 @@ $C$DW$487	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L318||           ; [DPU_3_PIPE] |3173| 
         ; BRANCHCC OCCURS {||$C$L318||}  ; [] |3173| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3175,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3175,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3175 | if (fs->free_clust <= fs->n_fatent - 2) {                              
 ;----------------------------------------------------------------------
@@ -13114,7 +13114,7 @@ $C$DW$487	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L304||           ; [DPU_3_PIPE] |3175| 
         ; BRANCHCC OCCURS {||$C$L304||}  ; [] |3175| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3176,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3176,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3176 | *nclst = fs->free_clust;                                               
 ;----------------------------------------------------------------------
@@ -13122,7 +13122,7 @@ $C$DW$487	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #4]          ; [DPU_3_PIPE] |3176| 
         LDR       A1, [A1, #16]         ; [DPU_3_PIPE] |3176| 
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |3176| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3177,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3177,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3177 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -13130,20 +13130,20 @@ $C$DW$487	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L318||}    ; [] |3177| 
 ;* --------------------------------------------------------------------------*
 ||$C$L304||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3179,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3179,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3179 | fat = fs->fs_type;                                                     
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |3179| 
         LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |3179| 
         STRB      A1, [SP, #40]         ; [DPU_3_PIPE] |3179| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3180,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3180,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3180 | n = 0;                                                                 
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |3180| 
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |3180| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3181,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3181,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3181 | if (fat == FS_FAT12) {                                                 
 ;----------------------------------------------------------------------
@@ -13152,7 +13152,7 @@ $C$DW$487	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L309||           ; [DPU_3_PIPE] |3181| 
         ; BRANCHCC OCCURS {||$C$L309||}  ; [] |3181| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3182,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3182,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3182 | clst = 2;                                                              
 ; 3183 | do {                                                                   
@@ -13169,7 +13169,7 @@ $C$DW$487	.dwtag  DW_TAG_TI_branch
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L305||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3184,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3184,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3184 | stat = get_fat(fs, clst);                                              
 ;----------------------------------------------------------------------
@@ -13182,7 +13182,7 @@ $C$DW$488	.dwtag  DW_TAG_TI_branch
         BL        get_fat               ; [DPU_3_PIPE] |3184| 
         ; CALL OCCURS {get_fat }         ; [] |3184| 
         STR       A1, [SP, #32]         ; [DPU_3_PIPE] |3184| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3185,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3185,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3185 | if (stat == 0xFFFFFFFF) { res = FR_DISK_ERR; break; }                  
 ;----------------------------------------------------------------------
@@ -13191,15 +13191,15 @@ $C$DW$488	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L306||           ; [DPU_3_PIPE] |3185| 
         ; BRANCHCC OCCURS {||$C$L306||}  ; [] |3185| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3185,column 32,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3185,column 32,is_stmt,isa 1
         MOVS      A1, #1                ; [DPU_3_PIPE] |3185| 
         STRB      A1, [SP, #12]         ; [DPU_3_PIPE] |3185| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3185,column 51,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3185,column 51,is_stmt,isa 1
         B         ||$C$L316||           ; [DPU_3_PIPE] |3185| 
         ; BRANCH OCCURS {||$C$L316||}    ; [] |3185| 
 ;* --------------------------------------------------------------------------*
 ||$C$L306||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3186,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3186,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3186 | if (stat == 1) { res = FR_INT_ERR; break; }                            
 ;----------------------------------------------------------------------
@@ -13208,15 +13208,15 @@ $C$DW$488	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L307||           ; [DPU_3_PIPE] |3186| 
         ; BRANCHCC OCCURS {||$C$L307||}  ; [] |3186| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3186,column 23,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3186,column 23,is_stmt,isa 1
         MOVS      A1, #2                ; [DPU_3_PIPE] |3186| 
         STRB      A1, [SP, #12]         ; [DPU_3_PIPE] |3186| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3186,column 41,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3186,column 41,is_stmt,isa 1
         B         ||$C$L316||           ; [DPU_3_PIPE] |3186| 
         ; BRANCH OCCURS {||$C$L316||}    ; [] |3186| 
 ;* --------------------------------------------------------------------------*
 ||$C$L307||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3187,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3187,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3187 | if (stat == 0) n++;                                                    
 ;----------------------------------------------------------------------
@@ -13224,13 +13224,13 @@ $C$DW$488	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L308||       ; [] 
         ; BRANCHCC OCCURS {||$C$L308||}  ; [] |3187| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3187,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3187,column 21,is_stmt,isa 1
         LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |3187| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |3187| 
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |3187| 
 ;* --------------------------------------------------------------------------*
 ||$C$L308||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3188,column 14,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3188,column 14,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3188 | } while (++clst < fs->n_fatent);                                       
 ;----------------------------------------------------------------------
@@ -13243,7 +13243,7 @@ $C$DW$488	.dwtag  DW_TAG_TI_branch
         BHI       ||$C$L305||           ; [DPU_3_PIPE] |3188| 
         ; BRANCHCC OCCURS {||$C$L305||}  ; [] |3188| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3189,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3189,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3189 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -13251,27 +13251,27 @@ $C$DW$488	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L316||}    ; [] |3189| 
 ;* --------------------------------------------------------------------------*
 ||$C$L309||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3190,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3190,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3190 | clst = fs->n_fatent;                                                   
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |3190| 
         LDR       A1, [A1, #24]         ; [DPU_3_PIPE] |3190| 
         STR       A1, [SP, #24]         ; [DPU_3_PIPE] |3190| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3191,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3191,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3191 | sect = fs->fatbase;                                                    
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |3191| 
         LDR       A1, [A1, #36]         ; [DPU_3_PIPE] |3191| 
         STR       A1, [SP, #28]         ; [DPU_3_PIPE] |3191| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3192,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3192,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3192 | i = 0; p = 0;                                                          
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |3192| 
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |3192| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3192,column 12,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3192,column 12,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3193 | do {                                                                   
 ;----------------------------------------------------------------------
@@ -13287,7 +13287,7 @@ $C$DW$488	.dwtag  DW_TAG_TI_branch
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L310||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3194,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3194,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3194 | if (!i) {                                                              
 ;----------------------------------------------------------------------
@@ -13295,7 +13295,7 @@ $C$DW$488	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L311||       ; [] 
         ; BRANCHCC OCCURS {||$C$L311||}  ; [] |3194| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3195,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3195,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3195 | res = move_window(fs, sect++);                                         
 ;----------------------------------------------------------------------
@@ -13310,7 +13310,7 @@ $C$DW$489	.dwtag  DW_TAG_TI_branch
         BL        move_window           ; [DPU_3_PIPE] |3195| 
         ; CALL OCCURS {move_window }     ; [] |3195| 
         STRB      A1, [SP, #12]         ; [DPU_3_PIPE] |3195| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3196,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3196,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3196 | if (res != FR_OK) break;                                               
 ;----------------------------------------------------------------------
@@ -13319,15 +13319,15 @@ $C$DW$489	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L316||           ; [DPU_3_PIPE] |3196| 
         ; BRANCHCC OCCURS {||$C$L316||}  ; [] |3196| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3196,column 25,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3197,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3196,column 25,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3197,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3197 | p = fs->win;                                                           
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |3197| 
         ADDS      A1, A1, #52           ; [DPU_3_PIPE] |3197| 
         STR       A1, [SP, #44]         ; [DPU_3_PIPE] |3197| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3198,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3198,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3198 | i = SS(fs);                                                            
 ;----------------------------------------------------------------------
@@ -13335,7 +13335,7 @@ $C$DW$489	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |3198| 
 ;* --------------------------------------------------------------------------*
 ||$C$L311||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3200,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3200,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3200 | if (fat == FS_FAT16) {                                                 
 ;----------------------------------------------------------------------
@@ -13344,7 +13344,7 @@ $C$DW$489	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L313||           ; [DPU_3_PIPE] |3200| 
         ; BRANCHCC OCCURS {||$C$L313||}  ; [] |3200| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3201,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3201,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3201 | if (LD_WORD(p) == 0) n++;                                              
 ;----------------------------------------------------------------------
@@ -13357,24 +13357,24 @@ $C$DW$489	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L312||       ; [] 
         ; BRANCHCC OCCURS {||$C$L312||}  ; [] |3201| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3201,column 28,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3201,column 28,is_stmt,isa 1
         LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |3201| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |3201| 
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |3201| 
 ;* --------------------------------------------------------------------------*
 ||$C$L312||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3202,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3202,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3202 | p += 2; i -= 2;                                                        
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #44]         ; [DPU_3_PIPE] |3202| 
         ADDS      A1, A1, #2            ; [DPU_3_PIPE] |3202| 
         STR       A1, [SP, #44]         ; [DPU_3_PIPE] |3202| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3202,column 15,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3202,column 15,is_stmt,isa 1
         LDR       A1, [SP, #36]         ; [DPU_3_PIPE] |3202| 
         SUBS      A1, A1, #2            ; [DPU_3_PIPE] |3202| 
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |3202| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3203,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3203,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3203 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -13382,7 +13382,7 @@ $C$DW$489	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L315||}    ; [] |3203| 
 ;* --------------------------------------------------------------------------*
 ||$C$L313||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3204,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3204,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3204 | if ((LD_DWORD(p) & 0x0FFFFFFF) == 0) n++;                              
 ;----------------------------------------------------------------------
@@ -13402,20 +13402,20 @@ $C$DW$489	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L314||           ; [DPU_3_PIPE] |3204| 
         ; BRANCHCC OCCURS {||$C$L314||}  ; [] |3204| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3204,column 44,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3204,column 44,is_stmt,isa 1
         LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |3204| 
         ADDS      A1, A1, #1            ; [DPU_3_PIPE] |3204| 
         STR       A1, [SP, #20]         ; [DPU_3_PIPE] |3204| 
 ;* --------------------------------------------------------------------------*
 ||$C$L314||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3205,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3205,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3205 | p += 4; i -= 4;                                                        
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #44]         ; [DPU_3_PIPE] |3205| 
         ADDS      A1, A1, #4            ; [DPU_3_PIPE] |3205| 
         STR       A1, [SP, #44]         ; [DPU_3_PIPE] |3205| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3205,column 15,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3205,column 15,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3207 | } while (--clst);                                                      
 ;----------------------------------------------------------------------
@@ -13424,7 +13424,7 @@ $C$DW$489	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |3205| 
 ;* --------------------------------------------------------------------------*
 ||$C$L315||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3193,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3193,column 5,is_stmt,isa 1
         LDR       A1, [SP, #24]         ; [DPU_3_PIPE] |3193| 
         SUBS      A1, A1, #1            ; [DPU_3_PIPE] |3193| 
         STR       A1, [SP, #24]         ; [DPU_3_PIPE] |3193| 
@@ -13432,14 +13432,14 @@ $C$DW$489	.dwtag  DW_TAG_TI_branch
         ; BRANCHCC OCCURS {||$C$L310||}  ; [] |3193| 
 ;* --------------------------------------------------------------------------*
 ||$C$L316||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3209,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3209,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3209 | fs->free_clust = n;                                                    
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #20]         ; [DPU_3_PIPE] |3209| 
         LDR       A2, [SP, #16]         ; [DPU_3_PIPE] |3209| 
         STR       A1, [A2, #16]         ; [DPU_3_PIPE] |3209| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3210,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3210,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3210 | if (fat == FS_FAT32) fs->fsi_flag = 1;                                 
 ;----------------------------------------------------------------------
@@ -13448,13 +13448,13 @@ $C$DW$489	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L317||           ; [DPU_3_PIPE] |3210| 
         ; BRANCHCC OCCURS {||$C$L317||}  ; [] |3210| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3210,column 25,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3210,column 25,is_stmt,isa 1
         LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |3210| 
         MOVS      A2, #1                ; [DPU_3_PIPE] |3210| 
         STRB      A2, [A1, #5]          ; [DPU_3_PIPE] |3210| 
 ;* --------------------------------------------------------------------------*
 ||$C$L317||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3211,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3211,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3211 | *nclst = n;                                                            
 ;----------------------------------------------------------------------
@@ -13463,12 +13463,12 @@ $C$DW$489	.dwtag  DW_TAG_TI_branch
         STR       A1, [A2, #0]          ; [DPU_3_PIPE] |3211| 
 ;* --------------------------------------------------------------------------*
 ||$C$L318||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3214,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3214,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3214 | LEAVE_FF(fs, res);                                                     
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #12]         ; [DPU_3_PIPE] |3214| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3215,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3215,column 1,is_stmt,isa 1
         ADD       SP, SP, #52           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$490	.dwtag  DW_TAG_TI_branch
@@ -13477,7 +13477,7 @@ $C$DW$490	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$471, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$471, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$471, DW_AT_TI_end_line(0xc8f)
 	.dwattr $C$DW$471, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -13495,14 +13495,14 @@ $C$DW$491	.dwtag  DW_TAG_subprogram, DW_AT_name("f_truncate")
 	.dwattr $C$DW$491, DW_AT_TI_symbol_name("f_truncate")
 	.dwattr $C$DW$491, DW_AT_external
 	.dwattr $C$DW$491, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$491, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$491, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$491, DW_AT_TI_begin_line(0xc98)
 	.dwattr $C$DW$491, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$491, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$491, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$491, DW_AT_decl_line(0xc98)
 	.dwattr $C$DW$491, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$491, DW_AT_TI_max_frame_size(0x10)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3227,column 1,is_stmt,address f_truncate,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3227,column 1,is_stmt,address f_truncate,isa 1
 
 	.dwfde $C$DW$CIE, f_truncate
 $C$DW$492	.dwtag  DW_TAG_formal_parameter, DW_AT_name("fp")
@@ -13552,7 +13552,7 @@ $C$DW$495	.dwtag  DW_TAG_variable, DW_AT_name("ncl")
 ; 3229 | DWORD ncl;                                                             
 ;----------------------------------------------------------------------
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |3227| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3232,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3232,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3232 | res = validate(fp);                                             /* Chec
 ;     | k validity of the object */                                            
@@ -13565,7 +13565,7 @@ $C$DW$496	.dwtag  DW_TAG_TI_branch
         BL        validate              ; [DPU_3_PIPE] |3232| 
         ; CALL OCCURS {validate }        ; [] |3232| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3232| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3233,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3233,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3233 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -13573,7 +13573,7 @@ $C$DW$496	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L320||       ; [] 
         ; BRANCHCC OCCURS {||$C$L320||}  ; [] |3233| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3234,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3234,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3234 | if (fp->flag & FA__ERROR) {                     /* Check abort flag */ 
 ;----------------------------------------------------------------------
@@ -13583,13 +13583,13 @@ $C$DW$496	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L319||           ; [DPU_3_PIPE] |3234| 
         ; BRANCHCC OCCURS {||$C$L319||}  ; [] |3234| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3235,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3235,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3235 | res = FR_INT_ERR;                                                      
 ;----------------------------------------------------------------------
         MOVS      A1, #2                ; [DPU_3_PIPE] |3235| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3235| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3236,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3236,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3236 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -13597,7 +13597,7 @@ $C$DW$496	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L320||}    ; [] |3236| 
 ;* --------------------------------------------------------------------------*
 ||$C$L319||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3237,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3237,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3237 | if (!(fp->flag & FA_WRITE))             /* Check access mode */        
 ;----------------------------------------------------------------------
@@ -13607,7 +13607,7 @@ $C$DW$496	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L320||           ; [DPU_3_PIPE] |3237| 
         ; BRANCHCC OCCURS {||$C$L320||}  ; [] |3237| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3238,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3238,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3238 | res = FR_DENIED;                                                       
 ;----------------------------------------------------------------------
@@ -13615,7 +13615,7 @@ $C$DW$496	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3238| 
 ;* --------------------------------------------------------------------------*
 ||$C$L320||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3241,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3241,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3241 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -13624,7 +13624,7 @@ $C$DW$496	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L325||           ; [DPU_3_PIPE] |3241| 
         ; BRANCHCC OCCURS {||$C$L325||}  ; [] |3241| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3242,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3242,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3242 | if (fp->fsize > fp->fptr) {                                            
 ;----------------------------------------------------------------------
@@ -13636,7 +13636,7 @@ $C$DW$496	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L324||           ; [DPU_3_PIPE] |3242| 
         ; BRANCHCC OCCURS {||$C$L324||}  ; [] |3242| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3243,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3243,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3243 | fp->fsize = fp->fptr;   /* Set file size to current R/W point */       
 ;----------------------------------------------------------------------
@@ -13644,7 +13644,7 @@ $C$DW$496	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |3243| 
         LDR       A1, [A1, #8]          ; [DPU_3_PIPE] |3243| 
         STR       A1, [A2, #12]         ; [DPU_3_PIPE] |3243| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3244,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3244,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3244 | fp->flag |= FA__WRITTEN;                                               
 ;----------------------------------------------------------------------
@@ -13652,7 +13652,7 @@ $C$DW$496	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [A2, #6]          ; [DPU_3_PIPE] |3244| 
         ORR       A1, A1, #32           ; [DPU_3_PIPE] |3244| 
         STRB      A1, [A2, #6]          ; [DPU_3_PIPE] |3244| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3245,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3245,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3245 | if (fp->fptr == 0) {    /* When set file size to zero, remove entire cl
 ;     | uster chain */                                                         
@@ -13662,7 +13662,7 @@ $C$DW$496	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L321||       ; [] 
         ; BRANCHCC OCCURS {||$C$L321||}  ; [] |3245| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3246,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3246,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3246 | res = remove_chain(fp->fs, fp->sclust);                                
 ;----------------------------------------------------------------------
@@ -13677,14 +13677,14 @@ $C$DW$497	.dwtag  DW_TAG_TI_branch
         BL        remove_chain          ; [DPU_3_PIPE] |3246| 
         ; CALL OCCURS {remove_chain }    ; [] |3246| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3246| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3247,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3247,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3247 | fp->sclust = 0;                                                        
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |3247| 
         MOVS      A2, #0                ; [DPU_3_PIPE] |3247| 
         STR       A2, [A1, #16]         ; [DPU_3_PIPE] |3247| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3248,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3248,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3248 | } else {                                /* When truncate a part of the
 ;     | file, remove remaining clusters */                                     
@@ -13693,7 +13693,7 @@ $C$DW$497	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L324||}    ; [] |3248| 
 ;* --------------------------------------------------------------------------*
 ||$C$L321||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3249,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3249,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3249 | ncl = get_fat(fp->fs, fp->clust);                                      
 ;----------------------------------------------------------------------
@@ -13708,13 +13708,13 @@ $C$DW$498	.dwtag  DW_TAG_TI_branch
         BL        get_fat               ; [DPU_3_PIPE] |3249| 
         ; CALL OCCURS {get_fat }         ; [] |3249| 
         STR       A1, [SP, #8]          ; [DPU_3_PIPE] |3249| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3250,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3250,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3250 | res = FR_OK;                                                           
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |3250| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3250| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3251,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3251,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3251 | if (ncl == 0xFFFFFFFF) res = FR_DISK_ERR;                              
 ;----------------------------------------------------------------------
@@ -13723,12 +13723,12 @@ $C$DW$498	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L322||           ; [DPU_3_PIPE] |3251| 
         ; BRANCHCC OCCURS {||$C$L322||}  ; [] |3251| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3251,column 28,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3251,column 28,is_stmt,isa 1
         MOVS      A1, #1                ; [DPU_3_PIPE] |3251| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3251| 
 ;* --------------------------------------------------------------------------*
 ||$C$L322||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3252,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3252,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3252 | if (ncl == 1) res = FR_INT_ERR;                                        
 ;----------------------------------------------------------------------
@@ -13737,12 +13737,12 @@ $C$DW$498	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L323||           ; [DPU_3_PIPE] |3252| 
         ; BRANCHCC OCCURS {||$C$L323||}  ; [] |3252| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3252,column 19,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3252,column 19,is_stmt,isa 1
         MOVS      A1, #2                ; [DPU_3_PIPE] |3252| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3252| 
 ;* --------------------------------------------------------------------------*
 ||$C$L323||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3253,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3253,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3253 | if (res == FR_OK && ncl < fp->fs->n_fatent) {                          
 ;----------------------------------------------------------------------
@@ -13758,7 +13758,7 @@ $C$DW$498	.dwtag  DW_TAG_TI_branch
         BLS       ||$C$L324||           ; [DPU_3_PIPE] |3253| 
         ; BRANCHCC OCCURS {||$C$L324||}  ; [] |3253| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3254,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3254,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3254 | res = put_fat(fp->fs, fp->clust, 0x0FFFFFFF);                          
 ;----------------------------------------------------------------------
@@ -13774,7 +13774,7 @@ $C$DW$499	.dwtag  DW_TAG_TI_branch
         BL        put_fat               ; [DPU_3_PIPE] |3254| 
         ; CALL OCCURS {put_fat }         ; [] |3254| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3254| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3255,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3255,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3255 | if (res == FR_OK) res = remove_chain(fp->fs, ncl);                     
 ;----------------------------------------------------------------------
@@ -13782,7 +13782,7 @@ $C$DW$499	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L324||       ; [] 
         ; BRANCHCC OCCURS {||$C$L324||}  ; [] |3255| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3255,column 24,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3255,column 24,is_stmt,isa 1
         LDR       A1, [SP, #0]          ; [DPU_3_PIPE] |3255| 
         LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |3255| 
         LDR       A1, [A1, #0]          ; [DPU_3_PIPE] |3255| 
@@ -13795,7 +13795,7 @@ $C$DW$500	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3255| 
 ;* --------------------------------------------------------------------------*
 ||$C$L324||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3259,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3259,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3259 | if (res != FR_OK) fp->flag |= FA__ERROR;                               
 ;----------------------------------------------------------------------
@@ -13803,26 +13803,26 @@ $C$DW$500	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L325||       ; [] 
         ; BRANCHCC OCCURS {||$C$L325||}  ; [] |3259| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3259,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3259,column 21,is_stmt,isa 1
         LDR       A2, [SP, #0]          ; [DPU_3_PIPE] |3259| 
         LDRB      A1, [A2, #6]          ; [DPU_3_PIPE] |3259| 
         ORR       A1, A1, #128          ; [DPU_3_PIPE] |3259| 
         STRB      A1, [A2, #6]          ; [DPU_3_PIPE] |3259| 
 ;* --------------------------------------------------------------------------*
 ||$C$L325||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3262,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3262,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3262 | LEAVE_FF(fp->fs, res);                                                 
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3262| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3263,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3263,column 1,is_stmt,isa 1
 $C$DW$501	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$501, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$501, DW_AT_TI_return
         POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$491, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$491, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$491, DW_AT_TI_end_line(0xcbf)
 	.dwattr $C$DW$491, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -13840,14 +13840,14 @@ $C$DW$502	.dwtag  DW_TAG_subprogram, DW_AT_name("f_unlink")
 	.dwattr $C$DW$502, DW_AT_TI_symbol_name("f_unlink")
 	.dwattr $C$DW$502, DW_AT_external
 	.dwattr $C$DW$502, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$502, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$502, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$502, DW_AT_TI_begin_line(0xcc8)
 	.dwattr $C$DW$502, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$502, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$502, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$502, DW_AT_decl_line(0xcc8)
 	.dwattr $C$DW$502, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$502, DW_AT_TI_max_frame_size(0x58)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3275,column 1,is_stmt,address f_unlink,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3275,column 1,is_stmt,address f_unlink,isa 1
 
 	.dwfde $C$DW$CIE, f_unlink
 $C$DW$503	.dwtag  DW_TAG_formal_parameter, DW_AT_name("path")
@@ -13916,7 +13916,7 @@ $C$DW$510	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
 ; 3280 | DEF_NAMEBUF;                                                           
 ;----------------------------------------------------------------------
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |3275| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3283,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3283,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3283 | res = chk_mounted(&path, &dj.fs, 1);                                   
 ;----------------------------------------------------------------------
@@ -13930,7 +13930,7 @@ $C$DW$511	.dwtag  DW_TAG_TI_branch
         BL        chk_mounted           ; [DPU_3_PIPE] |3283| 
         ; CALL OCCURS {chk_mounted }     ; [] |3283| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3283| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3284,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3284,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3284 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -13939,13 +13939,13 @@ $C$DW$511	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L333||           ; [DPU_3_PIPE] |3284| 
         ; BRANCHCC OCCURS {||$C$L333||}  ; [] |3284| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3285,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3285,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3285 | INIT_BUF(dj);                                                          
 ;----------------------------------------------------------------------
         ADD       A1, SP, #72           ; [DPU_3_PIPE] |3285| 
         STR       A1, [SP, #32]         ; [DPU_3_PIPE] |3285| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3286,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3286,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3286 | res = follow_path(&dj, path);           /* Follow the file path */     
 ;----------------------------------------------------------------------
@@ -13958,7 +13958,7 @@ $C$DW$512	.dwtag  DW_TAG_TI_branch
         BL        follow_path           ; [DPU_3_PIPE] |3286| 
         ; CALL OCCURS {follow_path }     ; [] |3286| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3286| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3287,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3287,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3287 | if (_FS_RPATH && res == FR_OK && (dj.fn[NS] & NS_DOT))                 
 ; 3288 |         res = FR_INVALID_NAME;                  /* Cannot remove dot en
@@ -13973,7 +13973,7 @@ $C$DW$512	.dwtag  DW_TAG_TI_branch
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L326||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3292,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3292,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3292 | if (res == FR_OK) {                                     /* The object i
 ;     | s accessible */                                                        
@@ -13983,13 +13983,13 @@ $C$DW$512	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L333||           ; [DPU_3_PIPE] |3292| 
         ; BRANCHCC OCCURS {||$C$L333||}  ; [] |3292| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3293,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3293,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3293 | dir = dj.dir;                                                          
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #28]         ; [DPU_3_PIPE] |3293| 
         STR       A1, [SP, #64]         ; [DPU_3_PIPE] |3293| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3294,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3294,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3294 | if (!dir) {                                                            
 ;----------------------------------------------------------------------
@@ -13997,13 +13997,13 @@ $C$DW$512	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L327||       ; [] 
         ; BRANCHCC OCCURS {||$C$L327||}  ; [] |3294| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3295,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3295,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3295 | res = FR_INVALID_NAME;          /* Cannot remove the start directory */
 ;----------------------------------------------------------------------
         MOVS      A1, #6                ; [DPU_3_PIPE] |3295| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3295| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3296,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3296,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3296 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -14011,7 +14011,7 @@ $C$DW$512	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L328||}    ; [] |3296| 
 ;* --------------------------------------------------------------------------*
 ||$C$L327||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3297,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3297,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3297 | if (dir[DIR_Attr] & AM_RDO)                                            
 ;----------------------------------------------------------------------
@@ -14021,7 +14021,7 @@ $C$DW$512	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L328||           ; [DPU_3_PIPE] |3297| 
         ; BRANCHCC OCCURS {||$C$L328||}  ; [] |3297| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3298,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3298,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3298 | res = FR_DENIED;                /* Cannot remove R/O object */         
 ;----------------------------------------------------------------------
@@ -14029,7 +14029,7 @@ $C$DW$512	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3298| 
 ;* --------------------------------------------------------------------------*
 ||$C$L328||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3300,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3300,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3300 | dclst = ld_clust(dj.fs, dir);                                          
 ;----------------------------------------------------------------------
@@ -14042,7 +14042,7 @@ $C$DW$513	.dwtag  DW_TAG_TI_branch
         BL        ld_clust              ; [DPU_3_PIPE] |3300| 
         ; CALL OCCURS {ld_clust }        ; [] |3300| 
         STR       A1, [SP, #68]         ; [DPU_3_PIPE] |3300| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3301,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3301,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3301 | if (res == FR_OK && (dir[DIR_Attr] & AM_DIR)) { /* Is it a sub-dir? */ 
 ;----------------------------------------------------------------------
@@ -14057,7 +14057,7 @@ $C$DW$513	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L331||           ; [DPU_3_PIPE] |3301| 
         ; BRANCHCC OCCURS {||$C$L331||}  ; [] |3301| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3302,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3302,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3302 | if (dclst < 2) {                                                       
 ;----------------------------------------------------------------------
@@ -14066,13 +14066,13 @@ $C$DW$513	.dwtag  DW_TAG_TI_branch
         BCS       ||$C$L329||           ; [DPU_3_PIPE] |3302| 
         ; BRANCHCC OCCURS {||$C$L329||}  ; [] |3302| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3303,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3303,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3303 | res = FR_INT_ERR;                                                      
 ;----------------------------------------------------------------------
         MOVS      A1, #2                ; [DPU_3_PIPE] |3303| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3303| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3304,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3304,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3304 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -14080,7 +14080,7 @@ $C$DW$513	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L331||}    ; [] |3304| 
 ;* --------------------------------------------------------------------------*
 ||$C$L329||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3305,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3305,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3305 | mem_cpy(&sdj, &dj, sizeof (DIR));       /* Check if the sub-dir is empt
 ;     | y or not */                                                            
@@ -14094,13 +14094,13 @@ $C$DW$514	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$514, DW_AT_TI_call
         BL        mem_cpy               ; [DPU_3_PIPE] |3305| 
         ; CALL OCCURS {mem_cpy }         ; [] |3305| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3306,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3306,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3306 | sdj.sclust = dclst;                                                    
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #68]         ; [DPU_3_PIPE] |3306| 
         STR       A1, [SP, #44]         ; [DPU_3_PIPE] |3306| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3307,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3307,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3307 | res = dir_sdi(&sdj, 2);         /* Exclude dot entries */              
 ;----------------------------------------------------------------------
@@ -14113,7 +14113,7 @@ $C$DW$515	.dwtag  DW_TAG_TI_branch
         BL        dir_sdi               ; [DPU_3_PIPE] |3307| 
         ; CALL OCCURS {dir_sdi }         ; [] |3307| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3307| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3308,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3308,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3308 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -14121,7 +14121,7 @@ $C$DW$515	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L331||       ; [] 
         ; BRANCHCC OCCURS {||$C$L331||}  ; [] |3308| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3309,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3309,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3309 | res = dir_read(&sdj, 0);        /* Read an item */                     
 ;----------------------------------------------------------------------
@@ -14134,7 +14134,7 @@ $C$DW$516	.dwtag  DW_TAG_TI_branch
         BL        dir_read              ; [DPU_3_PIPE] |3309| 
         ; CALL OCCURS {dir_read }        ; [] |3309| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3309| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3310,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3310,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3310 | if (res == FR_OK                /* Not empty dir */                    
 ; 3311 | #if _FS_RPATH                                                          
@@ -14145,7 +14145,7 @@ $C$DW$516	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L330||       ; [] 
         ; BRANCHCC OCCURS {||$C$L330||}  ; [] |3310| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3314,column 9,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3314,column 9,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3314 | ) res = FR_DENIED;                                                     
 ;----------------------------------------------------------------------
@@ -14153,7 +14153,7 @@ $C$DW$516	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3314| 
 ;* --------------------------------------------------------------------------*
 ||$C$L330||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3315,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3315,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3315 | if (res == FR_NO_FILE) res = FR_OK;     /* Empty */                    
 ;----------------------------------------------------------------------
@@ -14162,12 +14162,12 @@ $C$DW$516	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L331||           ; [DPU_3_PIPE] |3315| 
         ; BRANCHCC OCCURS {||$C$L331||}  ; [] |3315| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3315,column 30,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3315,column 30,is_stmt,isa 1
         MOVS      A1, #0                ; [DPU_3_PIPE] |3315| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3315| 
 ;* --------------------------------------------------------------------------*
 ||$C$L331||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3319,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3319,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3319 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -14175,7 +14175,7 @@ $C$DW$516	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L333||       ; [] 
         ; BRANCHCC OCCURS {||$C$L333||}  ; [] |3319| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3320,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3320,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3320 | res = dir_remove(&dj);          /* Remove the directory entry */       
 ;----------------------------------------------------------------------
@@ -14187,7 +14187,7 @@ $C$DW$517	.dwtag  DW_TAG_TI_branch
         BL        dir_remove            ; [DPU_3_PIPE] |3320| 
         ; CALL OCCURS {dir_remove }      ; [] |3320| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3320| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3321,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3321,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3321 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -14195,7 +14195,7 @@ $C$DW$517	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L333||       ; [] 
         ; BRANCHCC OCCURS {||$C$L333||}  ; [] |3321| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3322,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3322,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3322 | if (dclst)                              /* Remove the cluster chain if
 ;     | exist */                                                               
@@ -14204,7 +14204,7 @@ $C$DW$517	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L332||       ; [] 
         ; BRANCHCC OCCURS {||$C$L332||}  ; [] |3322| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3323,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3323,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3323 | res = remove_chain(dj.fs, dclst);                                      
 ;----------------------------------------------------------------------
@@ -14219,7 +14219,7 @@ $C$DW$518	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3323| 
 ;* --------------------------------------------------------------------------*
 ||$C$L332||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3324,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3324,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3324 | if (res == FR_OK) res = sync_fs(dj.fs);                                
 ;----------------------------------------------------------------------
@@ -14227,7 +14227,7 @@ $C$DW$518	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L333||       ; [] 
         ; BRANCHCC OCCURS {||$C$L333||}  ; [] |3324| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3324,column 24,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3324,column 24,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3328 | FREE_BUF();                                                            
 ;----------------------------------------------------------------------
@@ -14241,12 +14241,12 @@ $C$DW$519	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3324| 
 ;* --------------------------------------------------------------------------*
 ||$C$L333||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3331,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3331,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3331 | LEAVE_FF(dj.fs, res);                                                  
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3331| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3332,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3332,column 1,is_stmt,isa 1
         ADD       SP, SP, #84           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$520	.dwtag  DW_TAG_TI_branch
@@ -14255,7 +14255,7 @@ $C$DW$520	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$502, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$502, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$502, DW_AT_TI_end_line(0xd04)
 	.dwattr $C$DW$502, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -14273,14 +14273,14 @@ $C$DW$521	.dwtag  DW_TAG_subprogram, DW_AT_name("f_mkdir")
 	.dwattr $C$DW$521, DW_AT_TI_symbol_name("f_mkdir")
 	.dwattr $C$DW$521, DW_AT_external
 	.dwattr $C$DW$521, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$521, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$521, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$521, DW_AT_TI_begin_line(0xd0d)
 	.dwattr $C$DW$521, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$521, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$521, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$521, DW_AT_decl_line(0xd0d)
 	.dwattr $C$DW$521, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$521, DW_AT_TI_max_frame_size(0x50)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3344,column 1,is_stmt,address f_mkdir,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3344,column 1,is_stmt,address f_mkdir,isa 1
 
 	.dwfde $C$DW$CIE, f_mkdir
 $C$DW$522	.dwtag  DW_TAG_formal_parameter, DW_AT_name("path")
@@ -14358,7 +14358,7 @@ $C$DW$532	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
 ; 3347 | BYTE *dir, n;                                                          
 ;----------------------------------------------------------------------
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |3344| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3348,column 26,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3348,column 26,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3348 | DWORD dsc, dcl, pcl, tm = get_fattime();                               
 ; 3349 | DEF_NAMEBUF;                                                           
@@ -14370,7 +14370,7 @@ $C$DW$533	.dwtag  DW_TAG_TI_branch
         BL        get_fattime           ; [DPU_3_PIPE] |3348| 
         ; CALL OCCURS {get_fattime }     ; [] |3348| 
         STR       A1, [SP, #56]         ; [DPU_3_PIPE] |3348| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3352,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3352,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3352 | res = chk_mounted(&path, &dj.fs, 1);                                   
 ;----------------------------------------------------------------------
@@ -14384,7 +14384,7 @@ $C$DW$534	.dwtag  DW_TAG_TI_branch
         BL        chk_mounted           ; [DPU_3_PIPE] |3352| 
         ; CALL OCCURS {chk_mounted }     ; [] |3352| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3352| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3353,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3353,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3353 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -14393,13 +14393,13 @@ $C$DW$534	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L344||           ; [DPU_3_PIPE] |3353| 
         ; BRANCHCC OCCURS {||$C$L344||}  ; [] |3353| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3354,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3354,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3354 | INIT_BUF(dj);                                                          
 ;----------------------------------------------------------------------
         ADD       A1, SP, #60           ; [DPU_3_PIPE] |3354| 
         STR       A1, [SP, #32]         ; [DPU_3_PIPE] |3354| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3355,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3355,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3355 | res = follow_path(&dj, path);                   /* Follow the file path
 ;     |  */                                                                    
@@ -14413,7 +14413,7 @@ $C$DW$535	.dwtag  DW_TAG_TI_branch
         BL        follow_path           ; [DPU_3_PIPE] |3355| 
         ; CALL OCCURS {follow_path }     ; [] |3355| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3355| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3356,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3356,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3356 | if (res == FR_OK) res = FR_EXIST;               /* Any object with same
 ;     |  name is already existing */                                           
@@ -14422,10 +14422,10 @@ $C$DW$535	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L334||       ; [] 
         ; BRANCHCC OCCURS {||$C$L334||}  ; [] |3356| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3356,column 21,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3356,column 21,is_stmt,isa 1
         MOVS      A1, #8                ; [DPU_3_PIPE] |3356| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3356| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3357,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3357,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3357 | if (_FS_RPATH && res == FR_NO_FILE && (dj.fn[NS] & NS_DOT))            
 ; 3358 |         res = FR_INVALID_NAME;                                         
@@ -14435,7 +14435,7 @@ $C$DW$535	.dwtag  DW_TAG_TI_branch
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L334||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3359,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3359,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3359 | if (res == FR_NO_FILE) {                                /* Can create a
 ;     |  new directory */                                                      
@@ -14445,7 +14445,7 @@ $C$DW$535	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L344||           ; [DPU_3_PIPE] |3359| 
         ; BRANCHCC OCCURS {||$C$L344||}  ; [] |3359| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3360,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3360,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3360 | dcl = create_chain(dj.fs, 0);           /* Allocate a cluster for the n
 ;     | ew directory table */                                                  
@@ -14459,13 +14459,13 @@ $C$DW$536	.dwtag  DW_TAG_TI_branch
         BL        create_chain          ; [DPU_3_PIPE] |3360| 
         ; CALL OCCURS {create_chain }    ; [] |3360| 
         STR       A1, [SP, #48]         ; [DPU_3_PIPE] |3360| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3361,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3361,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3361 | res = FR_OK;                                                           
 ;----------------------------------------------------------------------
         MOVS      A1, #0                ; [DPU_3_PIPE] |3361| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3361| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3362,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3362,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3362 | if (dcl == 0) res = FR_DENIED;          /* No space to allocate a new c
 ;     | luster */                                                              
@@ -14474,12 +14474,12 @@ $C$DW$536	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L335||       ; [] 
         ; BRANCHCC OCCURS {||$C$L335||}  ; [] |3362| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3362,column 18,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3362,column 18,is_stmt,isa 1
         MOVS      A1, #7                ; [DPU_3_PIPE] |3362| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3362| 
 ;* --------------------------------------------------------------------------*
 ||$C$L335||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3363,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3363,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3363 | if (dcl == 1) res = FR_INT_ERR;                                        
 ;----------------------------------------------------------------------
@@ -14488,12 +14488,12 @@ $C$DW$536	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L336||           ; [DPU_3_PIPE] |3363| 
         ; BRANCHCC OCCURS {||$C$L336||}  ; [] |3363| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3363,column 18,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3363,column 18,is_stmt,isa 1
         MOVS      A1, #2                ; [DPU_3_PIPE] |3363| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3363| 
 ;* --------------------------------------------------------------------------*
 ||$C$L336||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3364,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3364,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3364 | if (dcl == 0xFFFFFFFF) res = FR_DISK_ERR;                              
 ;----------------------------------------------------------------------
@@ -14502,12 +14502,12 @@ $C$DW$536	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L337||           ; [DPU_3_PIPE] |3364| 
         ; BRANCHCC OCCURS {||$C$L337||}  ; [] |3364| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3364,column 27,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3364,column 27,is_stmt,isa 1
         MOVS      A1, #1                ; [DPU_3_PIPE] |3364| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3364| 
 ;* --------------------------------------------------------------------------*
 ||$C$L337||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3365,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3365,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3365 | if (res == FR_OK)                                       /* Flush FAT */
 ;----------------------------------------------------------------------
@@ -14515,7 +14515,7 @@ $C$DW$536	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L338||       ; [] 
         ; BRANCHCC OCCURS {||$C$L338||}  ; [] |3365| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3366,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3366,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3366 | res = sync_window(dj.fs);                                              
 ;----------------------------------------------------------------------
@@ -14529,7 +14529,7 @@ $C$DW$537	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3366| 
 ;* --------------------------------------------------------------------------*
 ||$C$L338||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3367,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3367,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3367 | if (res == FR_OK) {                                     /* Initialize t
 ;     | he new directory table */                                              
@@ -14539,7 +14539,7 @@ $C$DW$537	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L341||           ; [DPU_3_PIPE] |3367| 
         ; BRANCHCC OCCURS {||$C$L341||}  ; [] |3367| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3368,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3368,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3368 | dsc = clust2sect(dj.fs, dcl);                                          
 ;----------------------------------------------------------------------
@@ -14552,14 +14552,14 @@ $C$DW$538	.dwtag  DW_TAG_TI_branch
         BL        clust2sect            ; [DPU_3_PIPE] |3368| 
         ; CALL OCCURS {clust2sect }      ; [] |3368| 
         STR       A1, [SP, #44]         ; [DPU_3_PIPE] |3368| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3369,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3369,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3369 | dir = dj.fs->win;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |3369| 
         ADDS      A1, A1, #52           ; [DPU_3_PIPE] |3369| 
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |3369| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3370,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3370,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3370 | mem_set(dir, 0, SS(dj.fs));                                            
 ;----------------------------------------------------------------------
@@ -14572,7 +14572,7 @@ $C$DW$539	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$539, DW_AT_TI_call
         BL        mem_set               ; [DPU_3_PIPE] |3370| 
         ; CALL OCCURS {mem_set }         ; [] |3370| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3371,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3371,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3371 | mem_set(dir+DIR_Name, ' ', 11); /* Create "." entry */                 
 ;----------------------------------------------------------------------
@@ -14585,21 +14585,21 @@ $C$DW$540	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$540, DW_AT_TI_call
         BL        mem_set               ; [DPU_3_PIPE] |3371| 
         ; CALL OCCURS {mem_set }         ; [] |3371| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3372,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3372,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3372 | dir[DIR_Name] = '.';                                                   
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #36]         ; [DPU_3_PIPE] |3372| 
         MOVS      A2, #46               ; [DPU_3_PIPE] |3372| 
         STRB      A2, [A1, #0]          ; [DPU_3_PIPE] |3372| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3373,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3373,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3373 | dir[DIR_Attr] = AM_DIR;                                                
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #36]         ; [DPU_3_PIPE] |3373| 
         MOVS      A2, #16               ; [DPU_3_PIPE] |3373| 
         STRB      A2, [A1, #11]         ; [DPU_3_PIPE] |3373| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3374,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3374,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3374 | ST_DWORD(dir+DIR_WrtTime, tm);                                         
 ;----------------------------------------------------------------------
@@ -14616,7 +14616,7 @@ $C$DW$540	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [SP, #59]         ; [DPU_3_PIPE] |3374| 
         LDR       A2, [SP, #36]         ; [DPU_3_PIPE] |3374| 
         STRB      A1, [A2, #25]         ; [DPU_3_PIPE] |3374| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3375,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3375,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3375 | st_clust(dir, dcl);                                                    
 ;----------------------------------------------------------------------
@@ -14628,7 +14628,7 @@ $C$DW$541	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$541, DW_AT_TI_call
         BL        st_clust              ; [DPU_3_PIPE] |3375| 
         ; CALL OCCURS {st_clust }        ; [] |3375| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3376,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3376,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3376 | mem_cpy(dir+SZ_DIR, dir, SZ_DIR);       /* Create ".." entry */        
 ;----------------------------------------------------------------------
@@ -14642,17 +14642,17 @@ $C$DW$542	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$542, DW_AT_TI_call
         BL        mem_cpy               ; [DPU_3_PIPE] |3376| 
         ; CALL OCCURS {mem_cpy }         ; [] |3376| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3377,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3377,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3377 | dir[33] = '.'; pcl = dj.sclust;                                        
 ;----------------------------------------------------------------------
         LDR       A2, [SP, #36]         ; [DPU_3_PIPE] |3377| 
         MOVS      A1, #46               ; [DPU_3_PIPE] |3377| 
         STRB      A1, [A2, #33]         ; [DPU_3_PIPE] |3377| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3377,column 20,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3377,column 20,is_stmt,isa 1
         LDR       A1, [SP, #16]         ; [DPU_3_PIPE] |3377| 
         STR       A1, [SP, #52]         ; [DPU_3_PIPE] |3377| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3378,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3378,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3378 | if (dj.fs->fs_type == FS_FAT32 && pcl == dj.fs->dirbase)               
 ;----------------------------------------------------------------------
@@ -14669,7 +14669,7 @@ $C$DW$542	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L339||           ; [DPU_3_PIPE] |3378| 
         ; BRANCHCC OCCURS {||$C$L339||}  ; [] |3378| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3379,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3379,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3379 | pcl = 0;                                                               
 ;----------------------------------------------------------------------
@@ -14677,7 +14677,7 @@ $C$DW$542	.dwtag  DW_TAG_TI_branch
         STR       A1, [SP, #52]         ; [DPU_3_PIPE] |3379| 
 ;* --------------------------------------------------------------------------*
 ||$C$L339||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3380,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3380,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3380 | st_clust(dir+SZ_DIR, pcl);                                             
 ;----------------------------------------------------------------------
@@ -14690,7 +14690,7 @@ $C$DW$543	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$543, DW_AT_TI_call
         BL        st_clust              ; [DPU_3_PIPE] |3380| 
         ; CALL OCCURS {st_clust }        ; [] |3380| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3381,column 10,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3381,column 10,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3381 | for (n = dj.fs->csize; n; n--) {        /* Write dot entries and clear
 ;     | following sectors */                                                   
@@ -14698,7 +14698,7 @@ $C$DW$543	.dwtag  DW_TAG_TI_branch
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |3381| 
         LDRB      A1, [A1, #2]          ; [DPU_3_PIPE] |3381| 
         STRB      A1, [SP, #40]         ; [DPU_3_PIPE] |3381| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3381,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3381,column 5,is_stmt,isa 1
         LDRB      A1, [SP, #40]         ; [DPU_3_PIPE] |3381| 
         CBZ       A1, ||$C$L341||       ; [] 
         ; BRANCHCC OCCURS {||$C$L341||}  ; [] |3381| 
@@ -14712,7 +14712,7 @@ $C$DW$543	.dwtag  DW_TAG_TI_branch
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 ||$C$L340||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3382,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3382,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3382 | dj.fs->winsect = dsc++;                                                
 ;----------------------------------------------------------------------
@@ -14721,14 +14721,14 @@ $C$DW$543	.dwtag  DW_TAG_TI_branch
         STR       A2, [SP, #44]         ; [DPU_3_PIPE] |3382| 
         LDR       A2, [SP, #8]          ; [DPU_3_PIPE] |3382| 
         STR       A1, [A2, #48]         ; [DPU_3_PIPE] |3382| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3383,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3383,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3383 | dj.fs->wflag = 1;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |3383| 
         MOVS      A2, #1                ; [DPU_3_PIPE] |3383| 
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |3383| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3384,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3384,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3384 | res = sync_window(dj.fs);                                              
 ;----------------------------------------------------------------------
@@ -14740,7 +14740,7 @@ $C$DW$544	.dwtag  DW_TAG_TI_branch
         BL        sync_window           ; [DPU_3_PIPE] |3384| 
         ; CALL OCCURS {sync_window }     ; [] |3384| 
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3384| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3385,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3385,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3385 | if (res != FR_OK) break;                                               
 ;----------------------------------------------------------------------
@@ -14748,8 +14748,8 @@ $C$DW$544	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L341||       ; [] 
         ; BRANCHCC OCCURS {||$C$L341||}  ; [] |3385| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3385,column 24,is_stmt,isa 1
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3386,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3385,column 24,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3386,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3386 | mem_set(dir, 0, SS(dj.fs));                                            
 ;----------------------------------------------------------------------
@@ -14762,18 +14762,18 @@ $C$DW$545	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$545, DW_AT_TI_call
         BL        mem_set               ; [DPU_3_PIPE] |3386| 
         ; CALL OCCURS {mem_set }         ; [] |3386| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3381,column 31,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3381,column 31,is_stmt,isa 1
         LDRB      A1, [SP, #40]         ; [DPU_3_PIPE] |3381| 
         SUBS      A1, A1, #1            ; [DPU_3_PIPE] |3381| 
         STRB      A1, [SP, #40]         ; [DPU_3_PIPE] |3381| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3381,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3381,column 5,is_stmt,isa 1
         LDRB      A1, [SP, #40]         ; [DPU_3_PIPE] |3381| 
         CMP       A1, #0                ; [DPU_3_PIPE] |3381| 
         BNE       ||$C$L340||           ; [DPU_3_PIPE] |3381| 
         ; BRANCHCC OCCURS {||$C$L340||}  ; [] |3381| 
 ;* --------------------------------------------------------------------------*
 ||$C$L341||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3389,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3389,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3389 | if (res == FR_OK) res = dir_register(&dj);      /* Register the object
 ;     | to the directoy */                                                     
@@ -14782,7 +14782,7 @@ $C$DW$545	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L342||       ; [] 
         ; BRANCHCC OCCURS {||$C$L342||}  ; [] |3389| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3389,column 22,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3389,column 22,is_stmt,isa 1
         ADD       A1, SP, #8            ; [DPU_3_PIPE] |3389| 
 $C$DW$546	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$546, DW_AT_low_pc(0x00)
@@ -14793,7 +14793,7 @@ $C$DW$546	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3389| 
 ;* --------------------------------------------------------------------------*
 ||$C$L342||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3390,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3390,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3390 | if (res != FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -14801,7 +14801,7 @@ $C$DW$546	.dwtag  DW_TAG_TI_branch
         CBZ       A1, ||$C$L343||       ; [] 
         ; BRANCHCC OCCURS {||$C$L343||}  ; [] |3390| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3391,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3391,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3391 | remove_chain(dj.fs, dcl);                       /* Could not register,
 ;     | remove cluster chain */                                                
@@ -14814,7 +14814,7 @@ $C$DW$547	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$547, DW_AT_TI_call
         BL        remove_chain          ; [DPU_3_PIPE] |3391| 
         ; CALL OCCURS {remove_chain }    ; [] |3391| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3392,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3392,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3392 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -14822,20 +14822,20 @@ $C$DW$547	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L344||}    ; [] |3392| 
 ;* --------------------------------------------------------------------------*
 ||$C$L343||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3393,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3393,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3393 | dir = dj.dir;                                                          
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #28]         ; [DPU_3_PIPE] |3393| 
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |3393| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3394,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3394,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3394 | dir[DIR_Attr] = AM_DIR;                         /* Attribute */        
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #36]         ; [DPU_3_PIPE] |3394| 
         MOVS      A2, #16               ; [DPU_3_PIPE] |3394| 
         STRB      A2, [A1, #11]         ; [DPU_3_PIPE] |3394| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3395,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3395,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3395 | ST_DWORD(dir+DIR_WrtTime, tm);          /* Created time */             
 ;----------------------------------------------------------------------
@@ -14852,7 +14852,7 @@ $C$DW$547	.dwtag  DW_TAG_TI_branch
         LDRB      A1, [SP, #59]         ; [DPU_3_PIPE] |3395| 
         LDR       A2, [SP, #36]         ; [DPU_3_PIPE] |3395| 
         STRB      A1, [A2, #25]         ; [DPU_3_PIPE] |3395| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3396,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3396,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3396 | st_clust(dir, dcl);                                     /* Table start
 ;     | cluster */                                                             
@@ -14865,14 +14865,14 @@ $C$DW$548	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$548, DW_AT_TI_call
         BL        st_clust              ; [DPU_3_PIPE] |3396| 
         ; CALL OCCURS {st_clust }        ; [] |3396| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3397,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3397,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3397 | dj.fs->wflag = 1;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |3397| 
         MOVS      A2, #1                ; [DPU_3_PIPE] |3397| 
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |3397| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3398,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3398,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3398 | res = sync_fs(dj.fs);                                                  
 ; 3401 | FREE_BUF();                                                            
@@ -14887,12 +14887,12 @@ $C$DW$549	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3398| 
 ;* --------------------------------------------------------------------------*
 ||$C$L344||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3404,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3404,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3404 | LEAVE_FF(dj.fs, res);                                                  
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #4]          ; [DPU_3_PIPE] |3404| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3405,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3405,column 1,is_stmt,isa 1
         ADD       SP, SP, #76           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$550	.dwtag  DW_TAG_TI_branch
@@ -14901,7 +14901,7 @@ $C$DW$550	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$521, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$521, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$521, DW_AT_TI_end_line(0xd4d)
 	.dwattr $C$DW$521, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -14919,14 +14919,14 @@ $C$DW$551	.dwtag  DW_TAG_subprogram, DW_AT_name("f_chmod")
 	.dwattr $C$DW$551, DW_AT_TI_symbol_name("f_chmod")
 	.dwattr $C$DW$551, DW_AT_external
 	.dwattr $C$DW$551, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$551, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$551, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$551, DW_AT_TI_begin_line(0xd56)
 	.dwattr $C$DW$551, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$551, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$551, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$551, DW_AT_decl_line(0xd56)
 	.dwattr $C$DW$551, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$551, DW_AT_TI_max_frame_size(0x40)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3419,column 1,is_stmt,address f_chmod,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3419,column 1,is_stmt,address f_chmod,isa 1
 
 	.dwfde $C$DW$CIE, f_chmod
 $C$DW$552	.dwtag  DW_TAG_formal_parameter, DW_AT_name("path")
@@ -15006,7 +15006,7 @@ $C$DW$561	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
         STRB      A3, [SP, #5]          ; [DPU_3_PIPE] |3419| 
         STRB      A2, [SP, #4]          ; [DPU_3_PIPE] |3419| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |3419| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3426,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3426,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3426 | res = chk_mounted(&path, &dj.fs, 1);                                   
 ;----------------------------------------------------------------------
@@ -15020,7 +15020,7 @@ $C$DW$562	.dwtag  DW_TAG_TI_branch
         BL        chk_mounted           ; [DPU_3_PIPE] |3426| 
         ; CALL OCCURS {chk_mounted }     ; [] |3426| 
         STRB      A1, [SP, #6]          ; [DPU_3_PIPE] |3426| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3427,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3427,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3427 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -15029,13 +15029,13 @@ $C$DW$562	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L347||           ; [DPU_3_PIPE] |3427| 
         ; BRANCHCC OCCURS {||$C$L347||}  ; [] |3427| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3428,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3428,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3428 | INIT_BUF(dj);                                                          
 ;----------------------------------------------------------------------
         ADD       A1, SP, #40           ; [DPU_3_PIPE] |3428| 
         STR       A1, [SP, #32]         ; [DPU_3_PIPE] |3428| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3429,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3429,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3429 | res = follow_path(&dj, path);           /* Follow the file path */     
 ; 3430 | FREE_BUF();                                                            
@@ -15049,7 +15049,7 @@ $C$DW$563	.dwtag  DW_TAG_TI_branch
         BL        follow_path           ; [DPU_3_PIPE] |3429| 
         ; CALL OCCURS {follow_path }     ; [] |3429| 
         STRB      A1, [SP, #6]          ; [DPU_3_PIPE] |3429| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3431,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3431,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3431 | if (_FS_RPATH && res == FR_OK && (dj.fn[NS] & NS_DOT))                 
 ; 3432 |         res = FR_INVALID_NAME;                                         
@@ -15059,7 +15059,7 @@ $C$DW$563	.dwtag  DW_TAG_TI_branch
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L345||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3433,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3433,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3433 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -15067,13 +15067,13 @@ $C$DW$563	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L347||       ; [] 
         ; BRANCHCC OCCURS {||$C$L347||}  ; [] |3433| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3434,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3434,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3434 | dir = dj.dir;                                                          
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #28]         ; [DPU_3_PIPE] |3434| 
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |3434| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3435,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3435,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3435 | if (!dir) {                                             /* Is it a root
 ;     |  directory? */                                                         
@@ -15082,13 +15082,13 @@ $C$DW$563	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L346||       ; [] 
         ; BRANCHCC OCCURS {||$C$L346||}  ; [] |3435| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3436,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3436,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3436 | res = FR_INVALID_NAME;                                                 
 ;----------------------------------------------------------------------
         MOVS      A1, #6                ; [DPU_3_PIPE] |3436| 
         STRB      A1, [SP, #6]          ; [DPU_3_PIPE] |3436| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3437,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3437,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3437 | } else {                                                /* File or sub
 ;     | directory */                                                           
@@ -15097,14 +15097,14 @@ $C$DW$563	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L347||}    ; [] |3437| 
 ;* --------------------------------------------------------------------------*
 ||$C$L346||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3438,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3438,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3438 | mask &= AM_RDO|AM_HID|AM_SYS|AM_ARC;    /* Valid attribute mask */     
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #5]          ; [DPU_3_PIPE] |3438| 
         AND       A1, A1, #39           ; [DPU_3_PIPE] |3438| 
         STRB      A1, [SP, #5]          ; [DPU_3_PIPE] |3438| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3439,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3439,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3439 | dir[DIR_Attr] = (value & mask) | (dir[DIR_Attr] & (BYTE)~mask); /* Appl
 ;     | y attribute change */                                                  
@@ -15121,14 +15121,14 @@ $C$DW$563	.dwtag  DW_TAG_TI_branch
         ANDS      A2, A2, A4            ; [DPU_3_PIPE] |3439| 
         ORRS      A2, A2, A1            ; [DPU_3_PIPE] |3439| 
         STRB      A2, [A3, #11]         ; [DPU_3_PIPE] |3439| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3440,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3440,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3440 | dj.fs->wflag = 1;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #8]          ; [DPU_3_PIPE] |3440| 
         MOVS      A2, #1                ; [DPU_3_PIPE] |3440| 
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |3440| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3441,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3441,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3441 | res = sync_fs(dj.fs);                                                  
 ;----------------------------------------------------------------------
@@ -15142,12 +15142,12 @@ $C$DW$564	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #6]          ; [DPU_3_PIPE] |3441| 
 ;* --------------------------------------------------------------------------*
 ||$C$L347||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3446,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3446,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3446 | LEAVE_FF(dj.fs, res);                                                  
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #6]          ; [DPU_3_PIPE] |3446| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3447,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3447,column 1,is_stmt,isa 1
         ADD       SP, SP, #56           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 8
 $C$DW$565	.dwtag  DW_TAG_TI_branch
@@ -15156,7 +15156,7 @@ $C$DW$565	.dwtag  DW_TAG_TI_branch
         POP       {V1, PC}              ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$551, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$551, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$551, DW_AT_TI_end_line(0xd77)
 	.dwattr $C$DW$551, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -15174,14 +15174,14 @@ $C$DW$566	.dwtag  DW_TAG_subprogram, DW_AT_name("f_utime")
 	.dwattr $C$DW$566, DW_AT_TI_symbol_name("f_utime")
 	.dwattr $C$DW$566, DW_AT_external
 	.dwattr $C$DW$566, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$566, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$566, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$566, DW_AT_TI_begin_line(0xd80)
 	.dwattr $C$DW$566, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$566, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$566, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$566, DW_AT_decl_line(0xd80)
 	.dwattr $C$DW$566, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$566, DW_AT_TI_max_frame_size(0x40)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3460,column 1,is_stmt,address f_utime,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3460,column 1,is_stmt,address f_utime,isa 1
 
 	.dwfde $C$DW$CIE, f_utime
 $C$DW$567	.dwtag  DW_TAG_formal_parameter, DW_AT_name("path")
@@ -15250,7 +15250,7 @@ $C$DW$574	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |3460| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |3460| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3467,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3467,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3467 | res = chk_mounted(&path, &dj.fs, 1);                                   
 ;----------------------------------------------------------------------
@@ -15264,7 +15264,7 @@ $C$DW$575	.dwtag  DW_TAG_TI_branch
         BL        chk_mounted           ; [DPU_3_PIPE] |3467| 
         ; CALL OCCURS {chk_mounted }     ; [] |3467| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3467| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3468,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3468,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3468 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -15273,13 +15273,13 @@ $C$DW$575	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L350||           ; [DPU_3_PIPE] |3468| 
         ; BRANCHCC OCCURS {||$C$L350||}  ; [] |3468| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3469,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3469,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3469 | INIT_BUF(dj);                                                          
 ;----------------------------------------------------------------------
         ADD       A1, SP, #44           ; [DPU_3_PIPE] |3469| 
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |3469| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3470,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3470,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3470 | res = follow_path(&dj, path);   /* Follow the file path */             
 ; 3471 | FREE_BUF();                                                            
@@ -15293,7 +15293,7 @@ $C$DW$576	.dwtag  DW_TAG_TI_branch
         BL        follow_path           ; [DPU_3_PIPE] |3470| 
         ; CALL OCCURS {follow_path }     ; [] |3470| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3470| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3472,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3472,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3472 | if (_FS_RPATH && res == FR_OK && (dj.fn[NS] & NS_DOT))                 
 ; 3473 |         res = FR_INVALID_NAME;                                         
@@ -15303,7 +15303,7 @@ $C$DW$576	.dwtag  DW_TAG_TI_branch
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L348||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3474,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3474,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3474 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -15311,13 +15311,13 @@ $C$DW$576	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L350||       ; [] 
         ; BRANCHCC OCCURS {||$C$L350||}  ; [] |3474| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3475,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3475,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3475 | dir = dj.dir;                                                          
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #32]         ; [DPU_3_PIPE] |3475| 
         STR       A1, [SP, #40]         ; [DPU_3_PIPE] |3475| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3476,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3476,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3476 | if (!dir) {                                     /* Root directory */   
 ;----------------------------------------------------------------------
@@ -15325,13 +15325,13 @@ $C$DW$576	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L349||       ; [] 
         ; BRANCHCC OCCURS {||$C$L349||}  ; [] |3476| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3477,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3477,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3477 | res = FR_INVALID_NAME;                                                 
 ;----------------------------------------------------------------------
         MOVS      A1, #6                ; [DPU_3_PIPE] |3477| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3477| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3478,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3478,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3478 | } else {                                        /* File or sub-director
 ;     | y */                                                                   
@@ -15340,7 +15340,7 @@ $C$DW$576	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L350||}    ; [] |3478| 
 ;* --------------------------------------------------------------------------*
 ||$C$L349||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3479,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3479,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3479 | ST_WORD(dir+DIR_WrtTime, fno->ftime);                                  
 ;----------------------------------------------------------------------
@@ -15353,7 +15353,7 @@ $C$DW$576	.dwtag  DW_TAG_TI_branch
         LDRH      A1, [A1, #6]          ; [DPU_3_PIPE] |3479| 
         ASRS      A1, A1, #8            ; [DPU_3_PIPE] |3479| 
         STRB      A1, [A2, #23]         ; [DPU_3_PIPE] |3479| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3480,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3480,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3480 | ST_WORD(dir+DIR_WrtDate, fno->fdate);                                  
 ;----------------------------------------------------------------------
@@ -15366,14 +15366,14 @@ $C$DW$576	.dwtag  DW_TAG_TI_branch
         LDRH      A1, [A1, #4]          ; [DPU_3_PIPE] |3480| 
         ASRS      A1, A1, #8            ; [DPU_3_PIPE] |3480| 
         STRB      A1, [A2, #25]         ; [DPU_3_PIPE] |3480| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3481,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3481,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3481 | dj.fs->wflag = 1;                                                      
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |3481| 
         MOVS      A2, #1                ; [DPU_3_PIPE] |3481| 
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |3481| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3482,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3482,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3482 | res = sync_fs(dj.fs);                                                  
 ;----------------------------------------------------------------------
@@ -15387,12 +15387,12 @@ $C$DW$577	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3482| 
 ;* --------------------------------------------------------------------------*
 ||$C$L350||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3487,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3487,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3487 | LEAVE_FF(dj.fs, res);                                                  
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3487| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3488,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3488,column 1,is_stmt,isa 1
         ADD       SP, SP, #60           ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$578	.dwtag  DW_TAG_TI_branch
@@ -15401,7 +15401,7 @@ $C$DW$578	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$566, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$566, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$566, DW_AT_TI_end_line(0xda0)
 	.dwattr $C$DW$566, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -15419,14 +15419,14 @@ $C$DW$579	.dwtag  DW_TAG_subprogram, DW_AT_name("f_rename")
 	.dwattr $C$DW$579, DW_AT_TI_symbol_name("f_rename")
 	.dwattr $C$DW$579, DW_AT_external
 	.dwattr $C$DW$579, DW_AT_type(*$C$DW$T$44)
-	.dwattr $C$DW$579, DW_AT_TI_begin_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$579, DW_AT_TI_begin_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$579, DW_AT_TI_begin_line(0xda9)
 	.dwattr $C$DW$579, DW_AT_TI_begin_column(0x09)
-	.dwattr $C$DW$579, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$579, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$579, DW_AT_decl_line(0xda9)
 	.dwattr $C$DW$579, DW_AT_decl_column(0x09)
 	.dwattr $C$DW$579, DW_AT_TI_max_frame_size(0x78)
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3501,column 1,is_stmt,address f_rename,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3501,column 1,is_stmt,address f_rename,isa 1
 
 	.dwfde $C$DW$CIE, f_rename
 $C$DW$580	.dwtag  DW_TAG_formal_parameter, DW_AT_name("path_old")
@@ -15508,7 +15508,7 @@ $C$DW$590	.dwtag  DW_TAG_variable, DW_AT_name("sfn")
 ;----------------------------------------------------------------------
         STR       A2, [SP, #4]          ; [DPU_3_PIPE] |3501| 
         STR       A1, [SP, #0]          ; [DPU_3_PIPE] |3501| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3509,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3509,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3509 | res = chk_mounted(&path_old, &djo.fs, 1);                              
 ;----------------------------------------------------------------------
@@ -15522,7 +15522,7 @@ $C$DW$591	.dwtag  DW_TAG_TI_branch
         BL        chk_mounted           ; [DPU_3_PIPE] |3509| 
         ; CALL OCCURS {chk_mounted }     ; [] |3509| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3509| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3510,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3510,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3510 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -15531,19 +15531,19 @@ $C$DW$591	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L358||           ; [DPU_3_PIPE] |3510| 
         ; BRANCHCC OCCURS {||$C$L358||}  ; [] |3510| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3511,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3511,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3511 | djn.fs = djo.fs;                                                       
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |3511| 
         STR       A1, [SP, #40]         ; [DPU_3_PIPE] |3511| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3512,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3512,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3512 | INIT_BUF(djo);                                                         
 ;----------------------------------------------------------------------
         ADD       A1, SP, #100          ; [DPU_3_PIPE] |3512| 
         STR       A1, [SP, #36]         ; [DPU_3_PIPE] |3512| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3513,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3513,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3513 | res = follow_path(&djo, path_old);              /* Check old object */ 
 ;----------------------------------------------------------------------
@@ -15556,7 +15556,7 @@ $C$DW$592	.dwtag  DW_TAG_TI_branch
         BL        follow_path           ; [DPU_3_PIPE] |3513| 
         ; CALL OCCURS {follow_path }     ; [] |3513| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3513| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3514,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3514,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3514 | if (_FS_RPATH && res == FR_OK && (djo.fn[NS] & NS_DOT))                
 ; 3515 |         res = FR_INVALID_NAME;                                         
@@ -15569,7 +15569,7 @@ $C$DW$592	.dwtag  DW_TAG_TI_branch
 ;* --------------------------------------------------------------------------*
 ;* --------------------------------------------------------------------------*
 ||$C$L351||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3519,column 3,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3519,column 3,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3519 | if (res == FR_OK) {                                             /* Old
 ;     | object is found */                                                     
@@ -15579,7 +15579,7 @@ $C$DW$592	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L358||           ; [DPU_3_PIPE] |3519| 
         ; BRANCHCC OCCURS {||$C$L358||}  ; [] |3519| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3520,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3520,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3520 | if (!djo.dir) {                                         /* Is root dir?
 ;     |  */                                                                    
@@ -15588,13 +15588,13 @@ $C$DW$592	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L352||       ; [] 
         ; BRANCHCC OCCURS {||$C$L352||}  ; [] |3520| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3521,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3521,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3521 | res = FR_NO_FILE;                                                      
 ;----------------------------------------------------------------------
         MOVS      A1, #4                ; [DPU_3_PIPE] |3521| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3521| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3522,column 4,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3522,column 4,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3522 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -15602,7 +15602,7 @@ $C$DW$592	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L358||}    ; [] |3522| 
 ;* --------------------------------------------------------------------------*
 ||$C$L352||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3523,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3523,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3523 | mem_cpy(buf, djo.dir+DIR_Attr, 21);             /* Save the object info
 ;     | rmation except for name */                                             
@@ -15617,7 +15617,7 @@ $C$DW$593	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$593, DW_AT_TI_call
         BL        mem_cpy               ; [DPU_3_PIPE] |3523| 
         ; CALL OCCURS {mem_cpy }         ; [] |3523| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3524,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3524,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3524 | mem_cpy(&djn, &djo, sizeof (DIR));              /* Check new object */ 
 ;----------------------------------------------------------------------
@@ -15630,7 +15630,7 @@ $C$DW$594	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$594, DW_AT_TI_call
         BL        mem_cpy               ; [DPU_3_PIPE] |3524| 
         ; CALL OCCURS {mem_cpy }         ; [] |3524| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3525,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3525,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3525 | res = follow_path(&djn, path_new);                                     
 ;----------------------------------------------------------------------
@@ -15643,7 +15643,7 @@ $C$DW$595	.dwtag  DW_TAG_TI_branch
         BL        follow_path           ; [DPU_3_PIPE] |3525| 
         ; CALL OCCURS {follow_path }     ; [] |3525| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3525| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3526,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3526,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3526 | if (res == FR_OK) res = FR_EXIST;               /* The new object name
 ;     | is already existing */                                                 
@@ -15652,12 +15652,12 @@ $C$DW$595	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L353||       ; [] 
         ; BRANCHCC OCCURS {||$C$L353||}  ; [] |3526| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3526,column 23,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3526,column 23,is_stmt,isa 1
         MOVS      A1, #8                ; [DPU_3_PIPE] |3526| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3526| 
 ;* --------------------------------------------------------------------------*
 ||$C$L353||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3527,column 5,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3527,column 5,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3527 | if (res == FR_NO_FILE) {                                /* Is it a vali
 ;     | d path and no name collision? */                                       
@@ -15667,7 +15667,7 @@ $C$DW$595	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L358||           ; [DPU_3_PIPE] |3527| 
         ; BRANCHCC OCCURS {||$C$L358||}  ; [] |3527| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3529,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3529,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3529 | res = dir_register(&djn);                       /* Register the new ent
 ;     | ry */                                                                  
@@ -15680,7 +15680,7 @@ $C$DW$596	.dwtag  DW_TAG_TI_branch
         BL        dir_register          ; [DPU_3_PIPE] |3529| 
         ; CALL OCCURS {dir_register }    ; [] |3529| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3529| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3530,column 6,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3530,column 6,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3530 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -15689,14 +15689,14 @@ $C$DW$596	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L358||           ; [DPU_3_PIPE] |3530| 
         ; BRANCHCC OCCURS {||$C$L358||}  ; [] |3530| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3531,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3531,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3531 | dir = djn.dir;                                  /* Copy object informat
 ;     | ion except for name */                                                 
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #60]         ; [DPU_3_PIPE] |3531| 
         STR       A1, [SP, #92]         ; [DPU_3_PIPE] |3531| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3532,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3532,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3532 | mem_cpy(dir+13, buf+2, 19);                                            
 ;----------------------------------------------------------------------
@@ -15710,7 +15710,7 @@ $C$DW$597	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$597, DW_AT_TI_call
         BL        mem_cpy               ; [DPU_3_PIPE] |3532| 
         ; CALL OCCURS {mem_cpy }         ; [] |3532| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3533,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3533,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3533 | dir[DIR_Attr] = buf[0] | AM_ARC;                                       
 ;----------------------------------------------------------------------
@@ -15718,14 +15718,14 @@ $C$DW$597	.dwtag  DW_TAG_TI_branch
         LDR       A2, [SP, #92]         ; [DPU_3_PIPE] |3533| 
         ORR       A1, A1, #32           ; [DPU_3_PIPE] |3533| 
         STRB      A1, [A2, #11]         ; [DPU_3_PIPE] |3533| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3534,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3534,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3534 | djo.fs->wflag = 1;                                                     
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |3534| 
         MOVS      A2, #1                ; [DPU_3_PIPE] |3534| 
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |3534| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3535,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3535,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3535 | if (djo.sclust != djn.sclust && (dir[DIR_Attr] & AM_DIR)) {
 ;     |  /* Update .. entry in the directory if needed */                      
@@ -15742,7 +15742,7 @@ $C$DW$597	.dwtag  DW_TAG_TI_branch
         BCC       ||$C$L357||           ; [DPU_3_PIPE] |3535| 
         ; BRANCHCC OCCURS {||$C$L357||}  ; [] |3535| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3536,column 8,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3536,column 8,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3536 | dw = clust2sect(djo.fs, ld_clust(djo.fs, dir));                        
 ;----------------------------------------------------------------------
@@ -15763,7 +15763,7 @@ $C$DW$599	.dwtag  DW_TAG_TI_branch
         BL        clust2sect            ; [DPU_3_PIPE] |3536| 
         ; CALL OCCURS {clust2sect }      ; [] |3536| 
         STR       A1, [SP, #96]         ; [DPU_3_PIPE] |3536| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3537,column 8,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3537,column 8,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3537 | if (!dw) {                                                             
 ;----------------------------------------------------------------------
@@ -15771,13 +15771,13 @@ $C$DW$599	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L354||       ; [] 
         ; BRANCHCC OCCURS {||$C$L354||}  ; [] |3537| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3538,column 9,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3538,column 9,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3538 | res = FR_INT_ERR;                                                      
 ;----------------------------------------------------------------------
         MOVS      A1, #2                ; [DPU_3_PIPE] |3538| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3538| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3539,column 8,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3539,column 8,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3539 | } else {                                                               
 ;----------------------------------------------------------------------
@@ -15785,7 +15785,7 @@ $C$DW$599	.dwtag  DW_TAG_TI_branch
         ; BRANCH OCCURS {||$C$L357||}    ; [] |3539| 
 ;* --------------------------------------------------------------------------*
 ||$C$L354||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3540,column 9,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3540,column 9,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3540 | res = move_window(djo.fs, dw);                                         
 ;----------------------------------------------------------------------
@@ -15798,14 +15798,14 @@ $C$DW$600	.dwtag  DW_TAG_TI_branch
         BL        move_window           ; [DPU_3_PIPE] |3540| 
         ; CALL OCCURS {move_window }     ; [] |3540| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3540| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3541,column 9,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3541,column 9,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3541 | dir = djo.fs->win+SZ_DIR;       /* .. entry */                         
 ;----------------------------------------------------------------------
         LDR       A1, [SP, #12]         ; [DPU_3_PIPE] |3541| 
         ADDS      A1, A1, #84           ; [DPU_3_PIPE] |3541| 
         STR       A1, [SP, #92]         ; [DPU_3_PIPE] |3541| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3542,column 9,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3542,column 9,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3542 | if (res == FR_OK && dir[1] == '.') {                                   
 ;----------------------------------------------------------------------
@@ -15819,7 +15819,7 @@ $C$DW$600	.dwtag  DW_TAG_TI_branch
         BNE       ||$C$L357||           ; [DPU_3_PIPE] |3542| 
         ; BRANCHCC OCCURS {||$C$L357||}  ; [] |3542| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3543,column 10,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3543,column 10,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3543 | dw = (djo.fs->fs_type == FS_FAT32 && djn.sclust == djo.fs->dirbase) ? 0
 ;     |  : djn.sclust;                                                         
@@ -15846,7 +15846,7 @@ $C$DW$600	.dwtag  DW_TAG_TI_branch
 ;* --------------------------------------------------------------------------*
 ||$C$L356||:    
         STR       A1, [SP, #96]         ; [DPU_3_PIPE] |3543| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3544,column 10,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3544,column 10,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3544 | st_clust(dir, dw);                                                     
 ;----------------------------------------------------------------------
@@ -15858,7 +15858,7 @@ $C$DW$601	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$601, DW_AT_TI_call
         BL        st_clust              ; [DPU_3_PIPE] |3544| 
         ; CALL OCCURS {st_clust }        ; [] |3544| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3545,column 10,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3545,column 10,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3545 | djo.fs->wflag = 1;                                                     
 ;----------------------------------------------------------------------
@@ -15867,7 +15867,7 @@ $C$DW$601	.dwtag  DW_TAG_TI_branch
         STRB      A2, [A1, #4]          ; [DPU_3_PIPE] |3545| 
 ;* --------------------------------------------------------------------------*
 ||$C$L357||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3549,column 7,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3549,column 7,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3549 | if (res == FR_OK) {                                                    
 ;----------------------------------------------------------------------
@@ -15875,7 +15875,7 @@ $C$DW$601	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L358||       ; [] 
         ; BRANCHCC OCCURS {||$C$L358||}  ; [] |3549| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3550,column 8,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3550,column 8,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3550 | res = dir_remove(&djo);         /* Remove old entry */                 
 ;----------------------------------------------------------------------
@@ -15887,7 +15887,7 @@ $C$DW$602	.dwtag  DW_TAG_TI_branch
         BL        dir_remove            ; [DPU_3_PIPE] |3550| 
         ; CALL OCCURS {dir_remove }      ; [] |3550| 
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3550| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3551,column 8,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3551,column 8,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3551 | if (res == FR_OK)                                                      
 ;----------------------------------------------------------------------
@@ -15895,7 +15895,7 @@ $C$DW$602	.dwtag  DW_TAG_TI_branch
         CBNZ      A1, ||$C$L358||       ; [] 
         ; BRANCHCC OCCURS {||$C$L358||}  ; [] |3551| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3552,column 9,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3552,column 9,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3552 | res = sync_fs(djo.fs);                                                 
 ; 3559 | FREE_BUF();                                                            
@@ -15910,12 +15910,12 @@ $C$DW$603	.dwtag  DW_TAG_TI_branch
         STRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3552| 
 ;* --------------------------------------------------------------------------*
 ||$C$L358||:    
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3562,column 2,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3562,column 2,is_stmt,isa 1
 ;----------------------------------------------------------------------
 ; 3562 | LEAVE_FF(djo.fs, res);                                                 
 ;----------------------------------------------------------------------
         LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |3562| 
-	.dwpsn	file "E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c",line 3563,column 1,is_stmt,isa 1
+	.dwpsn	file "C:/ti/TivaWare/third_party/fatfs/src/ff.c",line 3563,column 1,is_stmt,isa 1
         ADD       SP, SP, #116          ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 4
 $C$DW$604	.dwtag  DW_TAG_TI_branch
@@ -15924,7 +15924,7 @@ $C$DW$604	.dwtag  DW_TAG_TI_branch
         POP       {PC}                  ; [DPU_3_PIPE] 
 	.dwcfi	cfa_offset, 0
         ; BRANCH OCCURS                  ; [] 
-	.dwattr $C$DW$579, DW_AT_TI_end_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$579, DW_AT_TI_end_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$579, DW_AT_TI_end_line(0xdeb)
 	.dwattr $C$DW$579, DW_AT_TI_end_column(0x01)
 	.dwendentry
@@ -15989,150 +15989,150 @@ $C$DW$604	.dwtag  DW_TAG_TI_branch
 $C$DW$T$33	.dwtag  DW_TAG_enumeration_type
 	.dwattr $C$DW$T$33, DW_AT_byte_size(0x01)
 $C$DW$605	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_OK"), DW_AT_const_value(0x00)
-	.dwattr $C$DW$605, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$605, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$605, DW_AT_decl_line(0x17)
 	.dwattr $C$DW$605, DW_AT_decl_column(0x02)
 $C$DW$606	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_ERROR"), DW_AT_const_value(0x01)
-	.dwattr $C$DW$606, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$606, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$606, DW_AT_decl_line(0x18)
 	.dwattr $C$DW$606, DW_AT_decl_column(0x02)
 $C$DW$607	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_WRPRT"), DW_AT_const_value(0x02)
-	.dwattr $C$DW$607, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$607, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$607, DW_AT_decl_line(0x19)
 	.dwattr $C$DW$607, DW_AT_decl_column(0x02)
 $C$DW$608	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_NOTRDY"), DW_AT_const_value(0x03)
-	.dwattr $C$DW$608, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$608, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$608, DW_AT_decl_line(0x1a)
 	.dwattr $C$DW$608, DW_AT_decl_column(0x02)
 $C$DW$609	.dwtag  DW_TAG_enumerator, DW_AT_name("RES_PARERR"), DW_AT_const_value(0x04)
-	.dwattr $C$DW$609, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$609, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$609, DW_AT_decl_line(0x1b)
 	.dwattr $C$DW$609, DW_AT_decl_column(0x02)
 	.dwendtag $C$DW$T$33
 
-	.dwattr $C$DW$T$33, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$T$33, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$T$33, DW_AT_decl_line(0x16)
 	.dwattr $C$DW$T$33, DW_AT_decl_column(0x0e)
 $C$DW$T$34	.dwtag  DW_TAG_typedef, DW_AT_name("DRESULT")
 	.dwattr $C$DW$T$34, DW_AT_type(*$C$DW$T$33)
 	.dwattr $C$DW$T$34, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$34, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$T$34, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$T$34, DW_AT_decl_line(0x1c)
 	.dwattr $C$DW$T$34, DW_AT_decl_column(0x03)
 
 $C$DW$T$43	.dwtag  DW_TAG_enumeration_type
 	.dwattr $C$DW$T$43, DW_AT_byte_size(0x01)
 $C$DW$610	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_OK"), DW_AT_const_value(0x00)
-	.dwattr $C$DW$610, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$610, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$610, DW_AT_decl_line(0xb3)
 	.dwattr $C$DW$610, DW_AT_decl_column(0x02)
 $C$DW$611	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_DISK_ERR"), DW_AT_const_value(0x01)
-	.dwattr $C$DW$611, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$611, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$611, DW_AT_decl_line(0xb4)
 	.dwattr $C$DW$611, DW_AT_decl_column(0x02)
 $C$DW$612	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INT_ERR"), DW_AT_const_value(0x02)
-	.dwattr $C$DW$612, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$612, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$612, DW_AT_decl_line(0xb5)
 	.dwattr $C$DW$612, DW_AT_decl_column(0x02)
 $C$DW$613	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NOT_READY"), DW_AT_const_value(0x03)
-	.dwattr $C$DW$613, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$613, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$613, DW_AT_decl_line(0xb6)
 	.dwattr $C$DW$613, DW_AT_decl_column(0x02)
 $C$DW$614	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NO_FILE"), DW_AT_const_value(0x04)
-	.dwattr $C$DW$614, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$614, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$614, DW_AT_decl_line(0xb7)
 	.dwattr $C$DW$614, DW_AT_decl_column(0x02)
 $C$DW$615	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NO_PATH"), DW_AT_const_value(0x05)
-	.dwattr $C$DW$615, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$615, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$615, DW_AT_decl_line(0xb8)
 	.dwattr $C$DW$615, DW_AT_decl_column(0x02)
 $C$DW$616	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_NAME"), DW_AT_const_value(0x06)
-	.dwattr $C$DW$616, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$616, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$616, DW_AT_decl_line(0xb9)
 	.dwattr $C$DW$616, DW_AT_decl_column(0x02)
 $C$DW$617	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_DENIED"), DW_AT_const_value(0x07)
-	.dwattr $C$DW$617, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$617, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$617, DW_AT_decl_line(0xba)
 	.dwattr $C$DW$617, DW_AT_decl_column(0x02)
 $C$DW$618	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_EXIST"), DW_AT_const_value(0x08)
-	.dwattr $C$DW$618, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$618, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$618, DW_AT_decl_line(0xbb)
 	.dwattr $C$DW$618, DW_AT_decl_column(0x02)
 $C$DW$619	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_OBJECT"), DW_AT_const_value(0x09)
-	.dwattr $C$DW$619, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$619, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$619, DW_AT_decl_line(0xbc)
 	.dwattr $C$DW$619, DW_AT_decl_column(0x02)
 $C$DW$620	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_WRITE_PROTECTED"), DW_AT_const_value(0x0a)
-	.dwattr $C$DW$620, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$620, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$620, DW_AT_decl_line(0xbd)
 	.dwattr $C$DW$620, DW_AT_decl_column(0x02)
 $C$DW$621	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_DRIVE"), DW_AT_const_value(0x0b)
-	.dwattr $C$DW$621, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$621, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$621, DW_AT_decl_line(0xbe)
 	.dwattr $C$DW$621, DW_AT_decl_column(0x02)
 $C$DW$622	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NOT_ENABLED"), DW_AT_const_value(0x0c)
-	.dwattr $C$DW$622, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$622, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$622, DW_AT_decl_line(0xbf)
 	.dwattr $C$DW$622, DW_AT_decl_column(0x02)
 $C$DW$623	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NO_FILESYSTEM"), DW_AT_const_value(0x0d)
-	.dwattr $C$DW$623, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$623, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$623, DW_AT_decl_line(0xc0)
 	.dwattr $C$DW$623, DW_AT_decl_column(0x02)
 $C$DW$624	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_MKFS_ABORTED"), DW_AT_const_value(0x0e)
-	.dwattr $C$DW$624, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$624, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$624, DW_AT_decl_line(0xc1)
 	.dwattr $C$DW$624, DW_AT_decl_column(0x02)
 $C$DW$625	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_TIMEOUT"), DW_AT_const_value(0x0f)
-	.dwattr $C$DW$625, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$625, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$625, DW_AT_decl_line(0xc2)
 	.dwattr $C$DW$625, DW_AT_decl_column(0x02)
 $C$DW$626	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_LOCKED"), DW_AT_const_value(0x10)
-	.dwattr $C$DW$626, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$626, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$626, DW_AT_decl_line(0xc3)
 	.dwattr $C$DW$626, DW_AT_decl_column(0x02)
 $C$DW$627	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_NOT_ENOUGH_CORE"), DW_AT_const_value(0x11)
-	.dwattr $C$DW$627, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$627, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$627, DW_AT_decl_line(0xc4)
 	.dwattr $C$DW$627, DW_AT_decl_column(0x02)
 $C$DW$628	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_TOO_MANY_OPEN_FILES"), DW_AT_const_value(0x12)
-	.dwattr $C$DW$628, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$628, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$628, DW_AT_decl_line(0xc5)
 	.dwattr $C$DW$628, DW_AT_decl_column(0x02)
 $C$DW$629	.dwtag  DW_TAG_enumerator, DW_AT_name("FR_INVALID_PARAMETER"), DW_AT_const_value(0x13)
-	.dwattr $C$DW$629, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$629, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$629, DW_AT_decl_line(0xc6)
 	.dwattr $C$DW$629, DW_AT_decl_column(0x02)
 	.dwendtag $C$DW$T$43
 
-	.dwattr $C$DW$T$43, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$T$43, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$T$43, DW_AT_decl_line(0xb2)
 	.dwattr $C$DW$T$43, DW_AT_decl_column(0x0e)
 $C$DW$T$44	.dwtag  DW_TAG_typedef, DW_AT_name("FRESULT")
 	.dwattr $C$DW$T$44, DW_AT_type(*$C$DW$T$43)
 	.dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$44, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$T$44, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$T$44, DW_AT_decl_line(0xc7)
 	.dwattr $C$DW$T$44, DW_AT_decl_column(0x03)
 
 $C$DW$T$98	.dwtag  DW_TAG_enumeration_type
 	.dwattr $C$DW$T$98, DW_AT_byte_size(0x01)
 $C$DW$630	.dwtag  DW_TAG_enumerator, DW_AT_name("FALSE"), DW_AT_const_value(0x00)
-	.dwattr $C$DW$630, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$630, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$630, DW_AT_decl_line(0x24)
 	.dwattr $C$DW$630, DW_AT_decl_column(0x10)
 $C$DW$631	.dwtag  DW_TAG_enumerator, DW_AT_name("TRUE"), DW_AT_const_value(0x01)
-	.dwattr $C$DW$631, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$631, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$631, DW_AT_decl_line(0x24)
 	.dwattr $C$DW$631, DW_AT_decl_column(0x1b)
 	.dwendtag $C$DW$T$98
 
-	.dwattr $C$DW$T$98, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$98, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$98, DW_AT_decl_line(0x24)
 	.dwattr $C$DW$T$98, DW_AT_decl_column(0x0e)
 $C$DW$T$99	.dwtag  DW_TAG_typedef, DW_AT_name("BOOL")
 	.dwattr $C$DW$T$99, DW_AT_type(*$C$DW$T$98)
 	.dwattr $C$DW$T$99, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$99, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$99, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$99, DW_AT_decl_line(0x24)
 	.dwattr $C$DW$T$99, DW_AT_decl_column(0x22)
 
@@ -16144,7 +16144,7 @@ $C$DW$632	.dwtag  DW_TAG_member
 	.dwattr $C$DW$632, DW_AT_TI_symbol_name("fs_type")
 	.dwattr $C$DW$632, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$632, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$632, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$632, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$632, DW_AT_decl_line(0x4e)
 	.dwattr $C$DW$632, DW_AT_decl_column(0x07)
 $C$DW$633	.dwtag  DW_TAG_member
@@ -16153,7 +16153,7 @@ $C$DW$633	.dwtag  DW_TAG_member
 	.dwattr $C$DW$633, DW_AT_TI_symbol_name("drv")
 	.dwattr $C$DW$633, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
 	.dwattr $C$DW$633, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$633, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$633, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$633, DW_AT_decl_line(0x4f)
 	.dwattr $C$DW$633, DW_AT_decl_column(0x07)
 $C$DW$634	.dwtag  DW_TAG_member
@@ -16162,7 +16162,7 @@ $C$DW$634	.dwtag  DW_TAG_member
 	.dwattr $C$DW$634, DW_AT_TI_symbol_name("csize")
 	.dwattr $C$DW$634, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
 	.dwattr $C$DW$634, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$634, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$634, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$634, DW_AT_decl_line(0x50)
 	.dwattr $C$DW$634, DW_AT_decl_column(0x07)
 $C$DW$635	.dwtag  DW_TAG_member
@@ -16171,7 +16171,7 @@ $C$DW$635	.dwtag  DW_TAG_member
 	.dwattr $C$DW$635, DW_AT_TI_symbol_name("n_fats")
 	.dwattr $C$DW$635, DW_AT_data_member_location[DW_OP_plus_uconst 0x3]
 	.dwattr $C$DW$635, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$635, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$635, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$635, DW_AT_decl_line(0x51)
 	.dwattr $C$DW$635, DW_AT_decl_column(0x07)
 $C$DW$636	.dwtag  DW_TAG_member
@@ -16180,7 +16180,7 @@ $C$DW$636	.dwtag  DW_TAG_member
 	.dwattr $C$DW$636, DW_AT_TI_symbol_name("wflag")
 	.dwattr $C$DW$636, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$636, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$636, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$636, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$636, DW_AT_decl_line(0x52)
 	.dwattr $C$DW$636, DW_AT_decl_column(0x07)
 $C$DW$637	.dwtag  DW_TAG_member
@@ -16189,7 +16189,7 @@ $C$DW$637	.dwtag  DW_TAG_member
 	.dwattr $C$DW$637, DW_AT_TI_symbol_name("fsi_flag")
 	.dwattr $C$DW$637, DW_AT_data_member_location[DW_OP_plus_uconst 0x5]
 	.dwattr $C$DW$637, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$637, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$637, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$637, DW_AT_decl_line(0x53)
 	.dwattr $C$DW$637, DW_AT_decl_column(0x07)
 $C$DW$638	.dwtag  DW_TAG_member
@@ -16198,7 +16198,7 @@ $C$DW$638	.dwtag  DW_TAG_member
 	.dwattr $C$DW$638, DW_AT_TI_symbol_name("id")
 	.dwattr $C$DW$638, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$638, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$638, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$638, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$638, DW_AT_decl_line(0x54)
 	.dwattr $C$DW$638, DW_AT_decl_column(0x07)
 $C$DW$639	.dwtag  DW_TAG_member
@@ -16207,7 +16207,7 @@ $C$DW$639	.dwtag  DW_TAG_member
 	.dwattr $C$DW$639, DW_AT_TI_symbol_name("n_rootdir")
 	.dwattr $C$DW$639, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$639, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$639, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$639, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$639, DW_AT_decl_line(0x55)
 	.dwattr $C$DW$639, DW_AT_decl_column(0x07)
 $C$DW$640	.dwtag  DW_TAG_member
@@ -16216,7 +16216,7 @@ $C$DW$640	.dwtag  DW_TAG_member
 	.dwattr $C$DW$640, DW_AT_TI_symbol_name("last_clust")
 	.dwattr $C$DW$640, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
 	.dwattr $C$DW$640, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$640, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$640, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$640, DW_AT_decl_line(0x5d)
 	.dwattr $C$DW$640, DW_AT_decl_column(0x08)
 $C$DW$641	.dwtag  DW_TAG_member
@@ -16225,7 +16225,7 @@ $C$DW$641	.dwtag  DW_TAG_member
 	.dwattr $C$DW$641, DW_AT_TI_symbol_name("free_clust")
 	.dwattr $C$DW$641, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
 	.dwattr $C$DW$641, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$641, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$641, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$641, DW_AT_decl_line(0x5e)
 	.dwattr $C$DW$641, DW_AT_decl_column(0x08)
 $C$DW$642	.dwtag  DW_TAG_member
@@ -16234,7 +16234,7 @@ $C$DW$642	.dwtag  DW_TAG_member
 	.dwattr $C$DW$642, DW_AT_TI_symbol_name("fsi_sector")
 	.dwattr $C$DW$642, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
 	.dwattr $C$DW$642, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$642, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$642, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$642, DW_AT_decl_line(0x5f)
 	.dwattr $C$DW$642, DW_AT_decl_column(0x08)
 $C$DW$643	.dwtag  DW_TAG_member
@@ -16243,7 +16243,7 @@ $C$DW$643	.dwtag  DW_TAG_member
 	.dwattr $C$DW$643, DW_AT_TI_symbol_name("n_fatent")
 	.dwattr $C$DW$643, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
 	.dwattr $C$DW$643, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$643, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$643, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$643, DW_AT_decl_line(0x64)
 	.dwattr $C$DW$643, DW_AT_decl_column(0x08)
 $C$DW$644	.dwtag  DW_TAG_member
@@ -16252,7 +16252,7 @@ $C$DW$644	.dwtag  DW_TAG_member
 	.dwattr $C$DW$644, DW_AT_TI_symbol_name("fsize")
 	.dwattr $C$DW$644, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
 	.dwattr $C$DW$644, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$644, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$644, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$644, DW_AT_decl_line(0x65)
 	.dwattr $C$DW$644, DW_AT_decl_column(0x08)
 $C$DW$645	.dwtag  DW_TAG_member
@@ -16261,7 +16261,7 @@ $C$DW$645	.dwtag  DW_TAG_member
 	.dwattr $C$DW$645, DW_AT_TI_symbol_name("volbase")
 	.dwattr $C$DW$645, DW_AT_data_member_location[DW_OP_plus_uconst 0x20]
 	.dwattr $C$DW$645, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$645, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$645, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$645, DW_AT_decl_line(0x66)
 	.dwattr $C$DW$645, DW_AT_decl_column(0x08)
 $C$DW$646	.dwtag  DW_TAG_member
@@ -16270,7 +16270,7 @@ $C$DW$646	.dwtag  DW_TAG_member
 	.dwattr $C$DW$646, DW_AT_TI_symbol_name("fatbase")
 	.dwattr $C$DW$646, DW_AT_data_member_location[DW_OP_plus_uconst 0x24]
 	.dwattr $C$DW$646, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$646, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$646, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$646, DW_AT_decl_line(0x67)
 	.dwattr $C$DW$646, DW_AT_decl_column(0x08)
 $C$DW$647	.dwtag  DW_TAG_member
@@ -16279,7 +16279,7 @@ $C$DW$647	.dwtag  DW_TAG_member
 	.dwattr $C$DW$647, DW_AT_TI_symbol_name("dirbase")
 	.dwattr $C$DW$647, DW_AT_data_member_location[DW_OP_plus_uconst 0x28]
 	.dwattr $C$DW$647, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$647, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$647, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$647, DW_AT_decl_line(0x68)
 	.dwattr $C$DW$647, DW_AT_decl_column(0x08)
 $C$DW$648	.dwtag  DW_TAG_member
@@ -16288,7 +16288,7 @@ $C$DW$648	.dwtag  DW_TAG_member
 	.dwattr $C$DW$648, DW_AT_TI_symbol_name("database")
 	.dwattr $C$DW$648, DW_AT_data_member_location[DW_OP_plus_uconst 0x2c]
 	.dwattr $C$DW$648, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$648, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$648, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$648, DW_AT_decl_line(0x69)
 	.dwattr $C$DW$648, DW_AT_decl_column(0x08)
 $C$DW$649	.dwtag  DW_TAG_member
@@ -16297,7 +16297,7 @@ $C$DW$649	.dwtag  DW_TAG_member
 	.dwattr $C$DW$649, DW_AT_TI_symbol_name("winsect")
 	.dwattr $C$DW$649, DW_AT_data_member_location[DW_OP_plus_uconst 0x30]
 	.dwattr $C$DW$649, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$649, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$649, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$649, DW_AT_decl_line(0x6a)
 	.dwattr $C$DW$649, DW_AT_decl_column(0x08)
 $C$DW$650	.dwtag  DW_TAG_member
@@ -16306,18 +16306,18 @@ $C$DW$650	.dwtag  DW_TAG_member
 	.dwattr $C$DW$650, DW_AT_TI_symbol_name("win")
 	.dwattr $C$DW$650, DW_AT_data_member_location[DW_OP_plus_uconst 0x34]
 	.dwattr $C$DW$650, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$650, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$650, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$650, DW_AT_decl_line(0x6b)
 	.dwattr $C$DW$650, DW_AT_decl_column(0x07)
 	.dwendtag $C$DW$T$23
 
-	.dwattr $C$DW$T$23, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$T$23, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$T$23, DW_AT_decl_line(0x4d)
 	.dwattr $C$DW$T$23, DW_AT_decl_column(0x10)
 $C$DW$T$24	.dwtag  DW_TAG_typedef, DW_AT_name("FATFS")
 	.dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$23)
 	.dwattr $C$DW$T$24, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$24, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$T$24, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$T$24, DW_AT_decl_line(0x6c)
 	.dwattr $C$DW$T$24, DW_AT_decl_column(0x03)
 $C$DW$T$25	.dwtag  DW_TAG_pointer_type
@@ -16344,7 +16344,7 @@ $C$DW$652	.dwtag  DW_TAG_member
 	.dwattr $C$DW$652, DW_AT_TI_symbol_name("fs")
 	.dwattr $C$DW$652, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$652, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$652, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$652, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$652, DW_AT_decl_line(0x90)
 	.dwattr $C$DW$652, DW_AT_decl_column(0x09)
 $C$DW$653	.dwtag  DW_TAG_member
@@ -16353,7 +16353,7 @@ $C$DW$653	.dwtag  DW_TAG_member
 	.dwattr $C$DW$653, DW_AT_TI_symbol_name("id")
 	.dwattr $C$DW$653, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$653, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$653, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$653, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$653, DW_AT_decl_line(0x91)
 	.dwattr $C$DW$653, DW_AT_decl_column(0x07)
 $C$DW$654	.dwtag  DW_TAG_member
@@ -16362,7 +16362,7 @@ $C$DW$654	.dwtag  DW_TAG_member
 	.dwattr $C$DW$654, DW_AT_TI_symbol_name("index")
 	.dwattr $C$DW$654, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$654, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$654, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$654, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$654, DW_AT_decl_line(0x92)
 	.dwattr $C$DW$654, DW_AT_decl_column(0x07)
 $C$DW$655	.dwtag  DW_TAG_member
@@ -16371,7 +16371,7 @@ $C$DW$655	.dwtag  DW_TAG_member
 	.dwattr $C$DW$655, DW_AT_TI_symbol_name("sclust")
 	.dwattr $C$DW$655, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$655, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$655, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$655, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$655, DW_AT_decl_line(0x93)
 	.dwattr $C$DW$655, DW_AT_decl_column(0x08)
 $C$DW$656	.dwtag  DW_TAG_member
@@ -16380,7 +16380,7 @@ $C$DW$656	.dwtag  DW_TAG_member
 	.dwattr $C$DW$656, DW_AT_TI_symbol_name("clust")
 	.dwattr $C$DW$656, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
 	.dwattr $C$DW$656, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$656, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$656, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$656, DW_AT_decl_line(0x94)
 	.dwattr $C$DW$656, DW_AT_decl_column(0x08)
 $C$DW$657	.dwtag  DW_TAG_member
@@ -16389,7 +16389,7 @@ $C$DW$657	.dwtag  DW_TAG_member
 	.dwattr $C$DW$657, DW_AT_TI_symbol_name("sect")
 	.dwattr $C$DW$657, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
 	.dwattr $C$DW$657, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$657, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$657, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$657, DW_AT_decl_line(0x95)
 	.dwattr $C$DW$657, DW_AT_decl_column(0x08)
 $C$DW$658	.dwtag  DW_TAG_member
@@ -16398,7 +16398,7 @@ $C$DW$658	.dwtag  DW_TAG_member
 	.dwattr $C$DW$658, DW_AT_TI_symbol_name("dir")
 	.dwattr $C$DW$658, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
 	.dwattr $C$DW$658, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$658, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$658, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$658, DW_AT_decl_line(0x96)
 	.dwattr $C$DW$658, DW_AT_decl_column(0x08)
 $C$DW$659	.dwtag  DW_TAG_member
@@ -16407,18 +16407,18 @@ $C$DW$659	.dwtag  DW_TAG_member
 	.dwattr $C$DW$659, DW_AT_TI_symbol_name("fn")
 	.dwattr $C$DW$659, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
 	.dwattr $C$DW$659, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$659, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$659, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$659, DW_AT_decl_line(0x97)
 	.dwattr $C$DW$659, DW_AT_decl_column(0x08)
 	.dwendtag $C$DW$T$27
 
-	.dwattr $C$DW$T$27, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$T$27, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$T$27, DW_AT_decl_line(0x8f)
 	.dwattr $C$DW$T$27, DW_AT_decl_column(0x10)
 $C$DW$T$51	.dwtag  DW_TAG_typedef, DW_AT_name("DIR")
 	.dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$27)
 	.dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$51, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$T$51, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$T$51, DW_AT_decl_line(0x9c)
 	.dwattr $C$DW$T$51, DW_AT_decl_column(0x03)
 $C$DW$T$52	.dwtag  DW_TAG_pointer_type
@@ -16433,7 +16433,7 @@ $C$DW$660	.dwtag  DW_TAG_member
 	.dwattr $C$DW$660, DW_AT_TI_symbol_name("fsize")
 	.dwattr $C$DW$660, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$660, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$660, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$660, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$660, DW_AT_decl_line(0xa3)
 	.dwattr $C$DW$660, DW_AT_decl_column(0x08)
 $C$DW$661	.dwtag  DW_TAG_member
@@ -16442,7 +16442,7 @@ $C$DW$661	.dwtag  DW_TAG_member
 	.dwattr $C$DW$661, DW_AT_TI_symbol_name("fdate")
 	.dwattr $C$DW$661, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$661, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$661, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$661, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$661, DW_AT_decl_line(0xa4)
 	.dwattr $C$DW$661, DW_AT_decl_column(0x07)
 $C$DW$662	.dwtag  DW_TAG_member
@@ -16451,7 +16451,7 @@ $C$DW$662	.dwtag  DW_TAG_member
 	.dwattr $C$DW$662, DW_AT_TI_symbol_name("ftime")
 	.dwattr $C$DW$662, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$662, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$662, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$662, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$662, DW_AT_decl_line(0xa5)
 	.dwattr $C$DW$662, DW_AT_decl_column(0x07)
 $C$DW$663	.dwtag  DW_TAG_member
@@ -16460,7 +16460,7 @@ $C$DW$663	.dwtag  DW_TAG_member
 	.dwattr $C$DW$663, DW_AT_TI_symbol_name("fattrib")
 	.dwattr $C$DW$663, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$663, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$663, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$663, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$663, DW_AT_decl_line(0xa6)
 	.dwattr $C$DW$663, DW_AT_decl_column(0x07)
 $C$DW$664	.dwtag  DW_TAG_member
@@ -16469,18 +16469,18 @@ $C$DW$664	.dwtag  DW_TAG_member
 	.dwattr $C$DW$664, DW_AT_TI_symbol_name("fname")
 	.dwattr $C$DW$664, DW_AT_data_member_location[DW_OP_plus_uconst 0x9]
 	.dwattr $C$DW$664, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$664, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$664, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$664, DW_AT_decl_line(0xa7)
 	.dwattr $C$DW$664, DW_AT_decl_column(0x08)
 	.dwendtag $C$DW$T$31
 
-	.dwattr $C$DW$T$31, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$T$31, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$T$31, DW_AT_decl_line(0xa2)
 	.dwattr $C$DW$T$31, DW_AT_decl_column(0x10)
 $C$DW$T$86	.dwtag  DW_TAG_typedef, DW_AT_name("FILINFO")
 	.dwattr $C$DW$T$86, DW_AT_type(*$C$DW$T$31)
 	.dwattr $C$DW$T$86, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$86, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$T$86, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$T$86, DW_AT_decl_line(0xac)
 	.dwattr $C$DW$T$86, DW_AT_decl_column(0x03)
 $C$DW$T$94	.dwtag  DW_TAG_const_type
@@ -16500,7 +16500,7 @@ $C$DW$665	.dwtag  DW_TAG_member
 	.dwattr $C$DW$665, DW_AT_TI_symbol_name("fs")
 	.dwattr $C$DW$665, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$665, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$665, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$665, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$665, DW_AT_decl_line(0x73)
 	.dwattr $C$DW$665, DW_AT_decl_column(0x09)
 $C$DW$666	.dwtag  DW_TAG_member
@@ -16509,7 +16509,7 @@ $C$DW$666	.dwtag  DW_TAG_member
 	.dwattr $C$DW$666, DW_AT_TI_symbol_name("id")
 	.dwattr $C$DW$666, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$666, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$666, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$666, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$666, DW_AT_decl_line(0x74)
 	.dwattr $C$DW$666, DW_AT_decl_column(0x07)
 $C$DW$667	.dwtag  DW_TAG_member
@@ -16518,7 +16518,7 @@ $C$DW$667	.dwtag  DW_TAG_member
 	.dwattr $C$DW$667, DW_AT_TI_symbol_name("flag")
 	.dwattr $C$DW$667, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$667, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$667, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$667, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$667, DW_AT_decl_line(0x75)
 	.dwattr $C$DW$667, DW_AT_decl_column(0x07)
 $C$DW$668	.dwtag  DW_TAG_member
@@ -16527,7 +16527,7 @@ $C$DW$668	.dwtag  DW_TAG_member
 	.dwattr $C$DW$668, DW_AT_TI_symbol_name("pad1")
 	.dwattr $C$DW$668, DW_AT_data_member_location[DW_OP_plus_uconst 0x7]
 	.dwattr $C$DW$668, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$668, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$668, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$668, DW_AT_decl_line(0x76)
 	.dwattr $C$DW$668, DW_AT_decl_column(0x07)
 $C$DW$669	.dwtag  DW_TAG_member
@@ -16536,7 +16536,7 @@ $C$DW$669	.dwtag  DW_TAG_member
 	.dwattr $C$DW$669, DW_AT_TI_symbol_name("fptr")
 	.dwattr $C$DW$669, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$669, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$669, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$669, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$669, DW_AT_decl_line(0x77)
 	.dwattr $C$DW$669, DW_AT_decl_column(0x08)
 $C$DW$670	.dwtag  DW_TAG_member
@@ -16545,7 +16545,7 @@ $C$DW$670	.dwtag  DW_TAG_member
 	.dwattr $C$DW$670, DW_AT_TI_symbol_name("fsize")
 	.dwattr $C$DW$670, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
 	.dwattr $C$DW$670, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$670, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$670, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$670, DW_AT_decl_line(0x78)
 	.dwattr $C$DW$670, DW_AT_decl_column(0x08)
 $C$DW$671	.dwtag  DW_TAG_member
@@ -16554,7 +16554,7 @@ $C$DW$671	.dwtag  DW_TAG_member
 	.dwattr $C$DW$671, DW_AT_TI_symbol_name("sclust")
 	.dwattr $C$DW$671, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
 	.dwattr $C$DW$671, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$671, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$671, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$671, DW_AT_decl_line(0x79)
 	.dwattr $C$DW$671, DW_AT_decl_column(0x08)
 $C$DW$672	.dwtag  DW_TAG_member
@@ -16563,7 +16563,7 @@ $C$DW$672	.dwtag  DW_TAG_member
 	.dwattr $C$DW$672, DW_AT_TI_symbol_name("clust")
 	.dwattr $C$DW$672, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
 	.dwattr $C$DW$672, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$672, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$672, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$672, DW_AT_decl_line(0x7a)
 	.dwattr $C$DW$672, DW_AT_decl_column(0x08)
 $C$DW$673	.dwtag  DW_TAG_member
@@ -16572,7 +16572,7 @@ $C$DW$673	.dwtag  DW_TAG_member
 	.dwattr $C$DW$673, DW_AT_TI_symbol_name("dsect")
 	.dwattr $C$DW$673, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
 	.dwattr $C$DW$673, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$673, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$673, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$673, DW_AT_decl_line(0x7b)
 	.dwattr $C$DW$673, DW_AT_decl_column(0x08)
 $C$DW$674	.dwtag  DW_TAG_member
@@ -16581,7 +16581,7 @@ $C$DW$674	.dwtag  DW_TAG_member
 	.dwattr $C$DW$674, DW_AT_TI_symbol_name("dir_sect")
 	.dwattr $C$DW$674, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
 	.dwattr $C$DW$674, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$674, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$674, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$674, DW_AT_decl_line(0x7d)
 	.dwattr $C$DW$674, DW_AT_decl_column(0x08)
 $C$DW$675	.dwtag  DW_TAG_member
@@ -16590,7 +16590,7 @@ $C$DW$675	.dwtag  DW_TAG_member
 	.dwattr $C$DW$675, DW_AT_TI_symbol_name("dir_ptr")
 	.dwattr $C$DW$675, DW_AT_data_member_location[DW_OP_plus_uconst 0x20]
 	.dwattr $C$DW$675, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$675, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$675, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$675, DW_AT_decl_line(0x7e)
 	.dwattr $C$DW$675, DW_AT_decl_column(0x08)
 $C$DW$676	.dwtag  DW_TAG_member
@@ -16599,18 +16599,18 @@ $C$DW$676	.dwtag  DW_TAG_member
 	.dwattr $C$DW$676, DW_AT_TI_symbol_name("buf")
 	.dwattr $C$DW$676, DW_AT_data_member_location[DW_OP_plus_uconst 0x24]
 	.dwattr $C$DW$676, DW_AT_accessibility(DW_ACCESS_public)
-	.dwattr $C$DW$676, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$676, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$676, DW_AT_decl_line(0x87)
 	.dwattr $C$DW$676, DW_AT_decl_column(0x07)
 	.dwendtag $C$DW$T$32
 
-	.dwattr $C$DW$T$32, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$T$32, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$T$32, DW_AT_decl_line(0x72)
 	.dwattr $C$DW$T$32, DW_AT_decl_column(0x10)
 $C$DW$T$75	.dwtag  DW_TAG_typedef, DW_AT_name("FIL")
 	.dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$32)
 	.dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$75, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$T$75, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$T$75, DW_AT_decl_line(0x89)
 	.dwattr $C$DW$T$75, DW_AT_decl_column(0x03)
 $C$DW$T$76	.dwtag  DW_TAG_pointer_type
@@ -16641,7 +16641,7 @@ $C$DW$T$6	.dwtag  DW_TAG_base_type
 $C$DW$T$19	.dwtag  DW_TAG_typedef, DW_AT_name("BYTE")
 	.dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$6)
 	.dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$19, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$19, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$19, DW_AT_decl_line(0x16)
 	.dwattr $C$DW$T$19, DW_AT_decl_column(0x17)
 $C$DW$T$37	.dwtag  DW_TAG_const_type
@@ -16652,7 +16652,7 @@ $C$DW$T$38	.dwtag  DW_TAG_pointer_type
 $C$DW$T$109	.dwtag  DW_TAG_typedef, DW_AT_name("DSTATUS")
 	.dwattr $C$DW$T$109, DW_AT_type(*$C$DW$T$19)
 	.dwattr $C$DW$T$109, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$109, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\diskio.h")
+	.dwattr $C$DW$T$109, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\diskio.h")
 	.dwattr $C$DW$T$109, DW_AT_decl_line(0x13)
 	.dwattr $C$DW$T$109, DW_AT_decl_column(0x0e)
 
@@ -16688,7 +16688,7 @@ $C$DW$679	.dwtag  DW_TAG_subrange_type
 $C$DW$T$116	.dwtag  DW_TAG_typedef, DW_AT_name("UCHAR")
 	.dwattr $C$DW$T$116, DW_AT_type(*$C$DW$T$6)
 	.dwattr $C$DW$T$116, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$116, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$116, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$116, DW_AT_decl_line(0x15)
 	.dwattr $C$DW$T$116, DW_AT_decl_column(0x17)
 $C$DW$T$7	.dwtag  DW_TAG_base_type
@@ -16702,7 +16702,7 @@ $C$DW$T$8	.dwtag  DW_TAG_base_type
 $C$DW$T$117	.dwtag  DW_TAG_typedef, DW_AT_name("SHORT")
 	.dwattr $C$DW$T$117, DW_AT_type(*$C$DW$T$8)
 	.dwattr $C$DW$T$117, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$117, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$117, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$117, DW_AT_decl_line(0x19)
 	.dwattr $C$DW$T$117, DW_AT_decl_column(0x11)
 $C$DW$T$9	.dwtag  DW_TAG_base_type
@@ -16712,19 +16712,19 @@ $C$DW$T$9	.dwtag  DW_TAG_base_type
 $C$DW$T$118	.dwtag  DW_TAG_typedef, DW_AT_name("USHORT")
 	.dwattr $C$DW$T$118, DW_AT_type(*$C$DW$T$9)
 	.dwattr $C$DW$T$118, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$118, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$118, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$118, DW_AT_decl_line(0x1a)
 	.dwattr $C$DW$T$118, DW_AT_decl_column(0x18)
 $C$DW$T$119	.dwtag  DW_TAG_typedef, DW_AT_name("WCHAR")
 	.dwattr $C$DW$T$119, DW_AT_type(*$C$DW$T$9)
 	.dwattr $C$DW$T$119, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$119, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$119, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$119, DW_AT_decl_line(0x1c)
 	.dwattr $C$DW$T$119, DW_AT_decl_column(0x18)
 $C$DW$T$20	.dwtag  DW_TAG_typedef, DW_AT_name("WORD")
 	.dwattr $C$DW$T$20, DW_AT_type(*$C$DW$T$9)
 	.dwattr $C$DW$T$20, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$20, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$20, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$20, DW_AT_decl_line(0x1b)
 	.dwattr $C$DW$T$20, DW_AT_decl_column(0x18)
 $C$DW$T$10	.dwtag  DW_TAG_base_type
@@ -16734,7 +16734,7 @@ $C$DW$T$10	.dwtag  DW_TAG_base_type
 $C$DW$T$121	.dwtag  DW_TAG_typedef, DW_AT_name("INT")
 	.dwattr $C$DW$T$121, DW_AT_type(*$C$DW$T$10)
 	.dwattr $C$DW$T$121, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$121, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$121, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$121, DW_AT_decl_line(0x10)
 	.dwattr $C$DW$T$121, DW_AT_decl_column(0x10)
 $C$DW$T$11	.dwtag  DW_TAG_base_type
@@ -16744,7 +16744,7 @@ $C$DW$T$11	.dwtag  DW_TAG_base_type
 $C$DW$T$57	.dwtag  DW_TAG_typedef, DW_AT_name("UINT")
 	.dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$11)
 	.dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$57, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$57, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$57, DW_AT_decl_line(0x11)
 	.dwattr $C$DW$T$57, DW_AT_decl_column(0x16)
 $C$DW$T$78	.dwtag  DW_TAG_pointer_type
@@ -16757,7 +16757,7 @@ $C$DW$T$12	.dwtag  DW_TAG_base_type
 $C$DW$T$128	.dwtag  DW_TAG_typedef, DW_AT_name("LONG")
 	.dwattr $C$DW$T$128, DW_AT_type(*$C$DW$T$12)
 	.dwattr $C$DW$T$128, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$128, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$128, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$128, DW_AT_decl_line(0x1f)
 	.dwattr $C$DW$T$128, DW_AT_decl_column(0x10)
 $C$DW$T$13	.dwtag  DW_TAG_base_type
@@ -16767,7 +16767,7 @@ $C$DW$T$13	.dwtag  DW_TAG_base_type
 $C$DW$T$21	.dwtag  DW_TAG_typedef, DW_AT_name("DWORD")
 	.dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$13)
 	.dwattr $C$DW$T$21, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$21, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$21, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$21, DW_AT_decl_line(0x21)
 	.dwattr $C$DW$T$21, DW_AT_decl_column(0x17)
 $C$DW$T$90	.dwtag  DW_TAG_pointer_type
@@ -16776,7 +16776,7 @@ $C$DW$T$90	.dwtag  DW_TAG_pointer_type
 $C$DW$T$135	.dwtag  DW_TAG_typedef, DW_AT_name("ULONG")
 	.dwattr $C$DW$T$135, DW_AT_type(*$C$DW$T$13)
 	.dwattr $C$DW$T$135, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$135, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$135, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$135, DW_AT_decl_line(0x20)
 	.dwattr $C$DW$T$135, DW_AT_decl_column(0x17)
 $C$DW$T$14	.dwtag  DW_TAG_base_type
@@ -16802,13 +16802,13 @@ $C$DW$T$18	.dwtag  DW_TAG_base_type
 $C$DW$T$136	.dwtag  DW_TAG_typedef, DW_AT_name("CHAR")
 	.dwattr $C$DW$T$136, DW_AT_type(*$C$DW$T$6)
 	.dwattr $C$DW$T$136, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$136, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\integer.h")
+	.dwattr $C$DW$T$136, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\integer.h")
 	.dwattr $C$DW$T$136, DW_AT_decl_line(0x14)
 	.dwattr $C$DW$T$136, DW_AT_decl_column(0x10)
 $C$DW$T$29	.dwtag  DW_TAG_typedef, DW_AT_name("TCHAR")
 	.dwattr $C$DW$T$29, DW_AT_type(*$C$DW$T$6)
 	.dwattr $C$DW$T$29, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$29, DW_AT_decl_file("E:\Dev\Ti\TivaWare\third_party\fatfs\src\ff.h")
+	.dwattr $C$DW$T$29, DW_AT_decl_file("C:\ti\TivaWare\third_party\fatfs\src\ff.h")
 	.dwattr $C$DW$T$29, DW_AT_decl_line(0x42)
 	.dwattr $C$DW$T$29, DW_AT_decl_column(0x0e)
 $C$DW$T$62	.dwtag  DW_TAG_const_type
@@ -16842,7 +16842,7 @@ $C$DW$T$140	.dwtag  DW_TAG_pointer_type
 $C$DW$T$141	.dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
 	.dwattr $C$DW$T$141, DW_AT_type(*$C$DW$T$140)
 	.dwattr $C$DW$T$141, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$141, DW_AT_decl_file("E:/Dev/Ti/TivaWare/third_party/fatfs/src/ff.c")
+	.dwattr $C$DW$T$141, DW_AT_decl_file("C:/ti/TivaWare/third_party/fatfs/src/ff.c")
 	.dwattr $C$DW$T$141, DW_AT_decl_line(0xdeb)
 	.dwattr $C$DW$T$141, DW_AT_decl_column(0x01)
 	.dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)

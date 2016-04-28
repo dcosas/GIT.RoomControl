@@ -1,34 +1,34 @@
 ******************************************************************************
                   TI ARM Linker PC v5.2.6                      
 ******************************************************************************
->> Linked Tue Jan 26 13:56:46 2016
+>> Linked Thu Apr 28 12:50:05 2016
 
 OUTPUT FILE NAME:   <TivaControlBoard.out>
-ENTRY POINT SYMBOL: "_c_int00"  address: 00002691
+ENTRY POINT SYMBOL: "_c_int00"  address: 00002e55
 
 
 MEMORY CONFIGURATION
 
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
-  FLASH                 00000000   00040000  00003a5e  0003c5a2  R  X
-  SRAM                  20000000   00008000  00000788  00007878  RW X
+  FLASH                 00000000   00040000  000046a0  0003b960  R  X
+  SRAM                  20000000   00008000  00000efa  00007106  RW X
 
 
 SEGMENT ALLOCATION MAP
 
 run origin  load origin   length   init length attrs members
 ----------  ----------- ---------- ----------- ----- -------
-00000000    00000000    00003a60   00003a60    r-x
+00000000    00000000    000046a8   000046a8    r-x
   00000000    00000000    0000026c   0000026c    r-- .intvecs
-  0000026c    0000026c    00003248   00003248    r-x .text
-  000034b4    000034b4    000004fa   000004fa    r-- .const
-  000039b0    000039b0    000000b0   000000b0    r-- .cinit
-20000000    20000000    00000788   00000000    rw-
+  0000026c    0000026c    00003bea   00003bea    r-x .text
+  00003e58    00003e58    00000752   00000752    r-- .const
+  000045b0    000045b0    000000f8   000000f8    r-- .cinit
+20000000    20000000    00000efc   00000000    rw-
   20000000    20000000    0000026c   00000000    rw- .vtable
-  2000026c    2000026c    00000254   00000000    rw- .bss
-  200004c0    200004c0    00000200   00000000    rw- .stack
-  200006c0    200006c0    000000c8   00000000    rw- .data
+  2000026c    2000026c    00000800   00000000    rw- .stack
+  20000a6c    20000a6c    0000035a   00000000    rw- .bss
+  20000dc8    20000dc8    00000134   00000000    rw- .data
 
 
 SECTION ALLOCATION MAP
@@ -39,196 +39,219 @@ section   page    origin      length       input sections
 .intvecs   0    00000000    0000026c     
                   00000000    0000026c     startup_ccs.obj (.intvecs)
 
-.text      0    0000026c    00003248     
-                  0000026c    00000323     esp8266.obj (.text:send_esp8266)
-                  0000058f    00000001     --HOLE-- [fill = 0]
-                  00000590    0000030c     uartstdio.obj (.text:UARTvprintf)
-                  0000089c    000002d4     rtsv7M4_T_le_v4SPD16_eabi.lib : trgdrv.obj (.text)
-                  00000b70    0000018a     rtc.obj (.text:getRtc)
-                  00000cfa    00000002     startup_ccs.obj (.text:FaultISR)
-                  00000cfc    00000150     dht22.obj (.text:PortEIntHandler)
-                  00000e4c    00000134     timers.obj (.text:main)
-                  00000f80    00000132     driverlib.lib : gpio.obj (.text:GPIOPadConfigSet)
-                  000010b2    00000002     startup_ccs.obj (.text:IntDefaultHandler)
-                  000010b4    00000110     driverlib.lib : sysctl.obj (.text:SysCtlClockGet)
-                  000011c4    000000f4                   : sysctl.obj (.text:SysCtlClockSet)
-                  000012b8    000000e0     lcd_nokia5510.obj (.text:nokiaLCDinit)
-                  00001398    000000dc     esp8266.obj (.text:esp8266_send)
-                  00001474    000000d0     sensors.obj (.text:check_sensor1)
-                  00001544    000000cc     rtc.obj (.text:compare_rtc)
-                  00001610    000000bc     sensors.obj (.text:change_mode)
-                  000016cc    000000b0     sensors.obj (.text:check_fan_timer)
-                  0000177c    000000a8     ds1820.obj (.text:read_scratchpad)
-                  00001824    000000a4     esp8266.obj (.text:init_esp8266)
-                  000018c8    000000a0     co2sensor.obj (.text:get_co2level)
-                  00001968    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
-                  00001a04    00000094     utils.obj (.text:uitoa)
-                  00001a98    00000090     tiva_ssi.obj (.text:SSI_init)
-                  00001b28    0000008c     dht22.obj (.text:init_dht22)
-                  00001bb4    00000084     rtc.obj (.text:init_limits_rtc)
-                  00001c38    00000080     utils.obj (.text:atoui)
-                  00001cb8    0000007c     sensors.obj (.text:check_sensor5)
-                  00001d34    0000007a     rtsv7M4_T_le_v4SPD16_eabi.lib : memset_t2.obj (.text)
-                  00001dae    00000002     startup_ccs.obj (.text:NmiSR)
-                  00001db0    00000078     sensors.obj (.text:init_sensors)
-                  00001e28    00000078     ds1820.obj (.text:read_ds1820)
-                  00001ea0    00000074     uartstdio.obj (.text:UARTStdioConfig)
-                  00001f14    00000070     dht22.obj (.text:startDHT)
-                  00001f84    0000006c     timers.obj (.text:check_sensors)
-                  00001ff0    0000006c     rtsv7M4_T_le_v4SPD16_eabi.lib : autoinit.obj (.text)
-                  0000205c    0000006a                                   : copy_decompress_rle.obj (.text)
-                  000020c6    00000002                                   : i_div0.obj (.text)
-                  000020c8    00000068     driverlib.lib : interrupt.obj (.text:IntEnable)
-                  00002130    00000068     sensors.obj (.text:check_sensor2)
-                  00002198    00000068     tiva_i2c.obj (.text:initI2C0)
-                  00002200    00000068     lcd_nokia5510.obj (.text:lcd_puts)
-                  00002268    00000068     rtsv7M4_T_le_v4SPD16_eabi.lib : trgmsg.obj (.text)
-                  000022d0    00000060     driverlib.lib : timer.obj (.text:TimerConfigure)
-                  00002330    00000060     tiva_i2c.obj (.text:readI2C0)
-                  00002390    0000005c     uartstdio.obj (.text:UARTwrite)
-                  000023ec    00000058     utils.obj (.text:ConfigureUART0)
-                  00002444    00000058     lcd_nokia5510.obj (.text:nokiaLCDtext)
-                  0000249c    00000058     ds1820.obj (.text:writeslot)
-                  000024f4    00000056     driverlib.lib : gpio.obj (.text:GPIOIntTypeSet)
-                  0000254a    00000052     ds1820.obj (.text:reset_ds1820)
-                  0000259c    00000051     timers.obj (.text:init_system)
-                  000025ed    00000003     --HOLE-- [fill = 0]
-                  000025f0    00000050     driverlib.lib : sysctl.obj (.text:SysCtlPeripheralReset)
-                  00002640    00000050     co2sensor.obj (.text:init_co2sensor)
-                  00002690    00000050     rtsv7M4_T_le_v4SPD16_eabi.lib : boot.obj (.text)
-                  000026e0    0000004e     ds1820.obj (.text:readslot)
-                  0000272e    00000002     --HOLE-- [fill = 0]
-                  00002730    0000004c     driverlib.lib : i2c.obj (.text:I2CMasterInitExpClk)
-                  0000277c    0000004c     sensors.obj (.text:PortFIntHandler)
-                  000027c8    0000004c     rtc.obj (.text:isTimeToActuate)
-                  00002814    0000004c     lcd_nokia5510.obj (.text:nokiaLCDwrite)
-                  00002860    0000004c     rtsv7M4_T_le_v4SPD16_eabi.lib : cpy_tbl.obj (.text)
-                  000028ac    0000004c                                   : rand.obj (.text)
-                  000028f8    00000048     driverlib.lib : gpio.obj (.text:GPIOPinConfigure)
-                  00002940    00000048     sensors.obj (.text:check_sensor3)
-                  00002988    00000048     sensors.obj (.text:check_sensor4)
-                  000029d0    00000048     sensors.obj (.text:update_thingspeak)
-                  00002a18    00000046     driverlib.lib : uart.obj (.text:UARTConfigSetExpClk)
-                  00002a5e    00000002     --HOLE-- [fill = 0]
-                  00002a60    00000046     esp8266.obj (.text:esp8266_reset)
-                  00002aa6    00000046     ds1820.obj (.text:write_ds1820)
-                  00002aec    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : exit.obj (.text)
-                  00002b30    00000040     driverlib.lib : gpio.obj (.text:_GPIOIntNumberGet)
-                  00002b70    00000040     lcd_nokia5510.obj (.text:nokiaLCDclear)
-                  00002bb0    00000040     utils.obj (.text:power)
-                  00002bf0    00000040     dht22.obj (.text:read_dht22)
-                  00002c30    00000040     rtsv7M4_T_le_v4SPD16_eabi.lib : u_divt2.obj (.text)
-                  00002c70    0000003c     driverlib.lib : ssi.obj (.text:SSIConfigSetExpClk)
-                  00002cac    0000003c     timers.obj (.text:WatchdogIntHandler)
-                  00002ce8    00000038     timers.obj (.text:SysTickIntHandler)
-                  00002d20    00000038     actuators.obj (.text:init_actuators)
-                  00002d58    00000038     ds1820.obj (.text:set_line)
-                  00002d90    00000034     driverlib.lib : interrupt.obj (.text:IntRegister)
-                  00002dc4    00000034                   : sysctl.obj (.text:SysCtlPeripheralEnable)
-                  00002df8    00000034     dht22.obj (.text:dht22_readhumidity)
-                  00002e2c    00000034     dht22.obj (.text:dht22_readtemp)
-                  00002e60    00000034     rtsv7M4_T_le_v4SPD16_eabi.lib : strstr.obj (.text)
-                  00002e94    00000034     esp8266.obj (.text:uart_send)
-                  00002ec8    00000034     sensors.obj (.text:update_lcd)
-                  00002efc    00000030     tiva_ssi.obj (.text:SSI_write)
-                  00002f2c    00000030     sensors.obj (.text:check_rtcTimer)
-                  00002f5c    00000030     dht22.obj (.text:setDHTinput)
-                  00002f8c    0000002e     timers.obj (.text:delay_us)
-                  00002fba    0000002a     driverlib.lib : gpio.obj (.text:GPIODirModeSet)
-                  00002fe4    0000002a     lcd_nokia5510.obj (.text:nokiaLCDsetXY)
-                  0000300e    00000028     rtsv7M4_T_le_v4SPD16_eabi.lib : strncat.obj (.text)
-                  00003036    00000002     --HOLE-- [fill = 0]
-                  00003038    00000028     actuators.obj (.text:set_actuator1)
-                  00003060    00000028     actuators.obj (.text:set_actuator2)
-                  00003088    00000024     utils.obj (.text:LOGprintf)
-                  000030ac    00000022     rtc.obj (.text:init_limit)
-                  000030ce    00000022     lcd_nokia5510.obj (.text:validate_char)
-                  000030f0    00000020     driverlib.lib : uart.obj (.text:UARTDisable)
-                  00003110    0000001e     rtsv7M4_T_le_v4SPD16_eabi.lib : strcat.obj (.text)
-                  0000312e    00000002     --HOLE-- [fill = 0]
-                  00003130    0000001c     dht22.obj (.text:Timer0IntHandler)
-                  0000314c    0000001c     ds1820.obj (.text:get_line)
-                  00003168    0000001c     ds1820.obj (.text:set_mode_input)
-                  00003184    0000001c     ds1820.obj (.text:set_mode_output)
-                  000031a0    00000018     driverlib.lib : gpio.obj (.text:GPIOIntRegister)
-                  000031b8    00000018                   : gpio.obj (.text:GPIOPinTypeGPIOOutput)
-                  000031d0    00000018     ds1820.obj (.text:read_ds1820_1)
-                  000031e8    00000018     ds1820.obj (.text:read_ds1820_2)
-                  00003200    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : args_main.obj (.text)
-                  00003218    00000014     driverlib.lib : systick.obj (.text:SysTickEnable)
-                  0000322c    00000014                   : systick.obj (.text:SysTickIntEnable)
-                  00003240    00000014                   : uart.obj (.text:UARTEnable)
-                  00003254    00000014     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.text)
-                  00003268    00000014                                   : strcpy.obj (.text)
-                  0000327c    00000014                                   : strlen.obj (.text)
-                  00003290    00000012     driverlib.lib : gpio.obj (.text:GPIOPinTypeGPIOInput)
-                  000032a2    00000012                   : gpio.obj (.text:GPIOPinTypeI2C)
-                  000032b4    00000012                   : gpio.obj (.text:GPIOPinTypeI2CSCL)
-                  000032c6    00000012                   : gpio.obj (.text:GPIOPinTypeSSI)
-                  000032d8    00000012                   : gpio.obj (.text:GPIOPinTypeUART)
-                  000032ea    00000012                   : ssi.obj (.text:SSIDataGetNonBlocking)
-                  000032fc    00000012                   : timer.obj (.text:TimerLoadSet)
-                  0000330e    00000012     rtc.obj (.text:read_i2c)
-                  00003320    00000010     driverlib.lib : interrupt.obj (.text:IntMasterDisable)
-                  00003330    00000010                   : interrupt.obj (.text:IntMasterEnable)
-                  00003340    00000010                   : systick.obj (.text:SysTickPeriodSet)
-                  00003350    00000010     ds1820.obj (.text:init_ds1820)
-                  00003360    0000000e     driverlib.lib : gpio.obj (.text:GPIOIntStatus)
-                  0000336e    0000000e                   : timer.obj (.text:TimerEnable)
-                  0000337c    0000000e                   : uart.obj (.text:UARTCharGetNonBlocking)
-                  0000338a    0000000e                   : uart.obj (.text:UARTCharsAvail)
-                  00003398    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
-                  000033a6    0000000e                                   : time.obj (.text)
-                  000033b4    0000000c     driverlib.lib : cpu.obj (.text:CPUcpsid)
-                  000033c0    0000000c                   : cpu.obj (.text:CPUcpsie)
-                  000033cc    0000000c                   : gpio.obj (.text:GPIOIntEnable)
-                  000033d8    0000000c                   : ssi.obj (.text:SSIDataGet)
-                  000033e4    0000000c     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.obj (.text:decompress:ZI)
-                  000033f0    0000000c     dht22.obj (.text:getTimer0ChAvalue)
-                  000033fc    0000000c     rtc.obj (.text:init_RTC)
-                  00003408    0000000c     timers.obj (.text:kick_watchdog)
-                  00003414    0000000a     driverlib.lib : i2c.obj (.text:I2CMasterEnable)
-                  0000341e    0000000a                   : ssi.obj (.text:SSIDataPut)
-                  00003428    0000000a                   : ssi.obj (.text:SSIDisable)
-                  00003432    0000000a                   : ssi.obj (.text:SSIEnable)
-                  0000343c    0000000a                   : uart.obj (.text:UARTCharGet)
-                  00003446    0000000a                   : uart.obj (.text:UARTCharPut)
-                  00003450    00000008                   : i2c.obj (.text:I2CMasterBusy)
-                  00003458    00000008                   : i2c.obj (.text:I2CMasterSlaveAddrSet)
-                  00003460    00000008                   : ssi.obj (.text:SSIBusy)
-                  00003468    00000008                   : timer.obj (.text:TimerIntEnable)
-                  00003470    00000006                   : gpio.obj (.text:GPIOIntClear)
-                  00003476    00000006                   : gpio.obj (.text:GPIOPinRead)
-                  0000347c    00000006                   : gpio.obj (.text:GPIOPinWrite)
-                  00003482    00000006     startup_ccs.obj (.text:ResetISR)
-                  00003488    00000006     driverlib.lib : ssi.obj (.text:SSIClockSourceSet)
-                  0000348e    00000006                   : sysctl.obj (.text:SysCtlDelay)
-                  00003494    00000006                   : uart.obj (.text:UARTClockSourceSet)
-                  0000349a    00000006     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24)
-                  000034a0    00000004     driverlib.lib : i2c.obj (.text:I2CMasterControl)
-                  000034a4    00000004                   : i2c.obj (.text:I2CMasterDataGet)
-                  000034a8    00000004                   : i2c.obj (.text:I2CMasterDataPut)
-                  000034ac    00000004                   : timer.obj (.text:TimerIntClear)
-                  000034b0    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.obj (.text)
+.text      0    0000026c    00003bea     
+                  0000026c    0000032f     esp8266.obj (.text:send_esp8266)
+                  0000059b    00000001     --HOLE-- [fill = 0]
+                  0000059c    0000030c     uartstdio.obj (.text:UARTvprintf)
+                  000008a8    000002d4     rtsv7M4_T_le_v4SPD16_eabi.lib : trgdrv.obj (.text)
+                  00000b7c    000002a8                                   : mktime.obj (.text)
+                  00000e24    00000184     rtc.obj (.text:getSecsSinceEpoch)
+                  00000fa8    00000150     dht22.obj (.text:PortEIntHandler)
+                  000010f8    00000134     timers.obj (.text:main)
+                  0000122c    00000132     driverlib.lib : gpio.obj (.text:GPIOPadConfigSet)
+                  0000135e    00000002     startup_ccs.obj (.text:FaultISR)
+                  00001360    0000012c     esp8266.obj (.text:esp8266_executeTalkBack)
+                  0000148c    00000110     driverlib.lib : sysctl.obj (.text:SysCtlClockGet)
+                  0000159c    0000010e     rtc.obj (.text:timeGMTParse)
+                  000016aa    00000002     startup_ccs.obj (.text:IntDefaultHandler)
+                  000016ac    00000100     esp8266.obj (.text:esp8266_sendAndReturnResponse)
+                  000017ac    000000f4     driverlib.lib : sysctl.obj (.text:SysCtlClockSet)
+                  000018a0    000000f4     esp8266.obj (.text:esp8266_send)
+                  00001994    000000e8     esp8266.obj (.text:esp8266_getTime)
+                  00001a7c    000000e0     lcd_nokia5510.obj (.text:nokiaLCDinit)
+                  00001b5c    000000d0     sensors.obj (.text:check_sensor1)
+                  00001c2c    000000c8     rtc.obj (.text:compare_rtc)
+                  00001cf4    000000bc     sensors.obj (.text:change_mode)
+                  00001db0    000000b0     sensors.obj (.text:check_fan_timer)
+                  00001e60    000000a8     esp8266.obj (.text:init_esp8266)
+                  00001f08    000000a8     ds1820.obj (.text:read_scratchpad)
+                  00001fb0    000000a0     co2sensor.obj (.text:get_co2level)
+                  00002050    0000009e     esp8266.obj (.text:parseIPD)
+                  000020ee    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
+                  0000218a    00000094     utils.obj (.text:uitoa)
+                  0000221e    00000002     startup_ccs.obj (.text:NmiSR)
+                  00002220    00000090     tiva_ssi.obj (.text:SSI_init)
+                  000022b0    0000008c     dht22.obj (.text:init_dht22)
+                  0000233c    00000088     rtc.obj (.text:init_limits_rtc)
+                  000023c4    00000080     utils.obj (.text:atoui)
+                  00002444    00000080     timers.obj (.text:check_sensors)
+                  000024c4    0000007c     sensors.obj (.text:check_sensor5)
+                  00002540    0000007c     rtc.obj (.text:getRtc)
+                  000025bc    0000007a     rtsv7M4_T_le_v4SPD16_eabi.lib : memset_t2.obj (.text)
+                  00002636    00000002                                   : i_div0.obj (.text)
+                  00002638    00000078     sensors.obj (.text:init_sensors)
+                  000026b0    00000078     ds1820.obj (.text:read_ds1820)
+                  00002728    00000074     uartstdio.obj (.text:UARTStdioConfig)
+                  0000279c    00000070     dht22.obj (.text:startDHT)
+                  0000280c    0000006e     esp8266.obj (.text:esp8266_reset)
+                  0000287a    00000002     --HOLE-- [fill = 0]
+                  0000287c    0000006c     rtsv7M4_T_le_v4SPD16_eabi.lib : autoinit.obj (.text)
+                  000028e8    0000006a                                   : copy_decompress_rle.obj (.text)
+                  00002952    00000002     --HOLE-- [fill = 0]
+                  00002954    00000068     driverlib.lib : interrupt.obj (.text:IntEnable)
+                  000029bc    00000068     sensors.obj (.text:check_sensor2)
+                  00002a24    00000068     lcd_nokia5510.obj (.text:lcd_puts)
+                  00002a8c    00000068     rtsv7M4_T_le_v4SPD16_eabi.lib : trgmsg.obj (.text)
+                  00002af4    00000060     driverlib.lib : timer.obj (.text:TimerConfigure)
+                  00002b54    0000005c     uartstdio.obj (.text:UARTwrite)
+                  00002bb0    00000058     utils.obj (.text:ConfigureUART0)
+                  00002c08    00000058     lcd_nokia5510.obj (.text:nokiaLCDtext)
+                  00002c60    00000058     ds1820.obj (.text:writeslot)
+                  00002cb8    00000056     driverlib.lib : gpio.obj (.text:GPIOIntTypeSet)
+                  00002d0e    00000052     ds1820.obj (.text:reset_ds1820)
+                  00002d60    00000051     timers.obj (.text:init_system)
+                  00002db1    00000003     --HOLE-- [fill = 0]
+                  00002db4    00000050     driverlib.lib : sysctl.obj (.text:SysCtlPeripheralReset)
+                  00002e04    00000050     co2sensor.obj (.text:init_co2sensor)
+                  00002e54    00000050     rtsv7M4_T_le_v4SPD16_eabi.lib : boot.obj (.text)
+                  00002ea4    0000004e     ds1820.obj (.text:readslot)
+                  00002ef2    00000002     --HOLE-- [fill = 0]
+                  00002ef4    0000004c     sensors.obj (.text:PortFIntHandler)
+                  00002f40    0000004c     lcd_nokia5510.obj (.text:nokiaLCDwrite)
+                  00002f8c    0000004c     rtsv7M4_T_le_v4SPD16_eabi.lib : atoi.obj (.text)
+                  00002fd8    0000004c                                   : cpy_tbl.obj (.text)
+                  00003024    0000004c                                   : localtim.obj (.text)
+                  00003070    0000004c                                   : rand.obj (.text)
+                  000030bc    00000048     driverlib.lib : gpio.obj (.text:GPIOPinConfigure)
+                  00003104    00000048                   : hibernate.obj (.text:HibernateClockConfig)
+                  0000314c    00000048     sensors.obj (.text:check_sensor3)
+                  00003194    00000048     sensors.obj (.text:check_sensor4)
+                  000031dc    00000048     sensors.obj (.text:update_thingspeak)
+                  00003224    00000046     driverlib.lib : uart.obj (.text:UARTConfigSetExpClk)
+                  0000326a    00000046     ds1820.obj (.text:write_ds1820)
+                  000032b0    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : exit.obj (.text)
+                  000032f4    00000040     driverlib.lib : gpio.obj (.text:_GPIOIntNumberGet)
+                  00003334    00000040     lcd_nokia5510.obj (.text:nokiaLCDclear)
+                  00003374    00000040     utils.obj (.text:power)
+                  000033b4    00000040     dht22.obj (.text:read_dht22)
+                  000033f4    00000040     rtsv7M4_T_le_v4SPD16_eabi.lib : strtok.obj (.text)
+                  00003434    00000040                                   : u_divt2.obj (.text)
+                  00003474    0000003c     driverlib.lib : ssi.obj (.text:SSIConfigSetExpClk)
+                  000034b0    0000003c     timers.obj (.text:WatchdogIntHandler)
+                  000034ec    00000038     timers.obj (.text:SysTickIntHandler)
+                  00003524    00000038     rtc.obj (.text:init_RTC)
+                  0000355c    00000038     actuators.obj (.text:init_actuators)
+                  00003594    00000038     ds1820.obj (.text:set_line)
+                  000035cc    00000036     rtc.obj (.text:updateTime)
+                  00003602    00000002     --HOLE-- [fill = 0]
+                  00003604    00000034     driverlib.lib : interrupt.obj (.text:IntRegister)
+                  00003638    00000034                   : sysctl.obj (.text:SysCtlPeripheralEnable)
+                  0000366c    00000034     dht22.obj (.text:dht22_readhumidity)
+                  000036a0    00000034     dht22.obj (.text:dht22_readtemp)
+                  000036d4    00000034     rtsv7M4_T_le_v4SPD16_eabi.lib : strstr.obj (.text)
+                  00003708    00000034     esp8266.obj (.text:uart_send)
+                  0000373c    00000034     sensors.obj (.text:update_lcd)
+                  00003770    00000030     tiva_ssi.obj (.text:SSI_write)
+                  000037a0    00000030     sensors.obj (.text:check_rtcTimer)
+                  000037d0    00000030     dht22.obj (.text:setDHTinput)
+                  00003800    0000002e     timers.obj (.text:delay_us)
+                  0000382e    00000002     --HOLE-- [fill = 0]
+                  00003830    0000002c     driverlib.lib : hibernate.obj (.text:HibernateRTCSet)
+                  0000385c    0000002a                   : gpio.obj (.text:GPIODirModeSet)
+                  00003886    0000002a     rtc.obj (.text:isTimeToActuate)
+                  000038b0    0000002a     lcd_nokia5510.obj (.text:nokiaLCDsetXY)
+                  000038da    0000002a     rtsv7M4_T_le_v4SPD16_eabi.lib : strspn.obj (.text)
+                  00003904    00000028     rtc.obj (.text:getMonthFromStr)
+                  0000392c    00000028     rtsv7M4_T_le_v4SPD16_eabi.lib : strncat.obj (.text)
+                  00003954    00000028     esp8266.obj (.text:setResetPinState)
+                  0000397c    00000028     actuators.obj (.text:set_actuator1)
+                  000039a4    00000028     actuators.obj (.text:set_actuator2)
+                  000039cc    00000026     rtsv7M4_T_le_v4SPD16_eabi.lib : strncmp.obj (.text)
+                  000039f2    00000024     utils.obj (.text:LOGprintf)
+                  00003a16    00000024     rtsv7M4_T_le_v4SPD16_eabi.lib : strcspn.obj (.text)
+                  00003a3a    00000002     --HOLE-- [fill = 0]
+                  00003a3c    00000024     esp8266.obj (.text:setESP8266ResetPin)
+                  00003a60    00000022     rtc.obj (.text:init_limit)
+                  00003a82    00000022     lcd_nokia5510.obj (.text:validate_char)
+                  00003aa4    00000020     driverlib.lib : uart.obj (.text:UARTDisable)
+                  00003ac4    0000001e     rtsv7M4_T_le_v4SPD16_eabi.lib : strcat.obj (.text)
+                  00003ae2    00000002     --HOLE-- [fill = 0]
+                  00003ae4    0000001c     dht22.obj (.text:Timer0IntHandler)
+                  00003b00    0000001c     ds1820.obj (.text:get_line)
+                  00003b1c    0000001c     ds1820.obj (.text:set_mode_input)
+                  00003b38    0000001c     ds1820.obj (.text:set_mode_output)
+                  00003b54    00000018     driverlib.lib : gpio.obj (.text:GPIOIntRegister)
+                  00003b6c    00000018                   : gpio.obj (.text:GPIOPinTypeGPIOOutput)
+                  00003b84    00000018     ds1820.obj (.text:read_ds1820_1)
+                  00003b9c    00000018     ds1820.obj (.text:read_ds1820_2)
+                  00003bb4    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : args_main.obj (.text)
+                  00003bcc    00000014     driverlib.lib : hibernate.obj (.text:HibernateEnableExpClk)
+                  00003be0    00000014                   : hibernate.obj (.text:HibernateRTCEnable)
+                  00003bf4    00000014                   : systick.obj (.text:SysTickEnable)
+                  00003c08    00000014                   : systick.obj (.text:SysTickIntEnable)
+                  00003c1c    00000014                   : uart.obj (.text:UARTEnable)
+                  00003c30    00000014     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.text)
+                  00003c44    00000014                                   : strcpy.obj (.text)
+                  00003c58    00000014                                   : strlen.obj (.text)
+                  00003c6c    00000012     driverlib.lib : gpio.obj (.text:GPIOPinTypeGPIOInput)
+                  00003c7e    00000012                   : gpio.obj (.text:GPIOPinTypeSSI)
+                  00003c90    00000012                   : gpio.obj (.text:GPIOPinTypeUART)
+                  00003ca2    00000012                   : ssi.obj (.text:SSIDataGetNonBlocking)
+                  00003cb4    00000012                   : timer.obj (.text:TimerLoadSet)
+                  00003cc6    00000010                   : interrupt.obj (.text:IntMasterDisable)
+                  00003cd6    00000010                   : interrupt.obj (.text:IntMasterEnable)
+                  00003ce6    00000002     --HOLE-- [fill = 0]
+                  00003ce8    00000010                   : systick.obj (.text:SysTickPeriodSet)
+                  00003cf8    00000010                   : hibernate.obj (.text:_HibernateWriteComplete)
+                  00003d08    00000010     ds1820.obj (.text:init_ds1820)
+                  00003d18    00000010     rtsv7M4_T_le_v4SPD16_eabi.lib : isdigit.obj (.text)
+                  00003d28    0000000e     driverlib.lib : gpio.obj (.text:GPIOIntStatus)
+                  00003d36    0000000e                   : timer.obj (.text:TimerEnable)
+                  00003d44    0000000e                   : uart.obj (.text:UARTCharGetNonBlocking)
+                  00003d52    0000000e                   : uart.obj (.text:UARTCharsAvail)
+                  00003d60    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
+                  00003d6e    0000000e                                   : time.obj (.text)
+                  00003d7c    0000000c     driverlib.lib : cpu.obj (.text:CPUcpsid)
+                  00003d88    0000000c                   : cpu.obj (.text:CPUcpsie)
+                  00003d94    0000000c                   : gpio.obj (.text:GPIOIntEnable)
+                  00003da0    0000000c                   : hibernate.obj (.text:HibernateRTCGet)
+                  00003dac    0000000c                   : ssi.obj (.text:SSIDataGet)
+                  00003db8    0000000c     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.obj (.text:decompress:ZI)
+                  00003dc4    0000000c     dht22.obj (.text:getTimer0ChAvalue)
+                  00003dd0    0000000c     timers.obj (.text:kick_watchdog)
+                  00003ddc    0000000a     driverlib.lib : ssi.obj (.text:SSIDataPut)
+                  00003de6    0000000a                   : ssi.obj (.text:SSIDisable)
+                  00003df0    0000000a                   : ssi.obj (.text:SSIEnable)
+                  00003dfa    0000000a                   : uart.obj (.text:UARTCharGet)
+                  00003e04    0000000a                   : uart.obj (.text:UARTCharPut)
+                  00003e0e    00000008                   : ssi.obj (.text:SSIBusy)
+                  00003e16    00000008                   : timer.obj (.text:TimerIntEnable)
+                  00003e1e    00000006                   : gpio.obj (.text:GPIOIntClear)
+                  00003e24    00000006                   : gpio.obj (.text:GPIOPinRead)
+                  00003e2a    00000006                   : gpio.obj (.text:GPIOPinWrite)
+                  00003e30    00000006     startup_ccs.obj (.text:ResetISR)
+                  00003e36    00000006     driverlib.lib : ssi.obj (.text:SSIClockSourceSet)
+                  00003e3c    00000006                   : sysctl.obj (.text:SysCtlDelay)
+                  00003e42    00000006                   : uart.obj (.text:UARTClockSourceSet)
+                  00003e48    00000006     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24)
+                  00003e4e    00000004     driverlib.lib : timer.obj (.text:TimerIntClear)
+                  00003e52    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.obj (.text)
 
-.const     0    000034b4    000004fa     
-                  000034b4    000001e0     lcd_nokia5510.obj (.const:ASCII)
-                  00003694    000000c0     driverlib.lib : gpio.obj (.const:g_ppui32GPIOIntMapBlizzard)
-                  00003754    000000c0                   : gpio.obj (.const:g_ppui32GPIOIntMapSnowflake)
-                  00003814    00000090                   : gpio.obj (.const:g_pui32GPIOBaseAddrs)
-                  000038a4    00000070                   : interrupt.obj (.const)
-                  00003914    0000006c                   : sysctl.obj (.const:g_pui32Xtals)
-                  00003980    0000001c     uartstdio.obj (.const)
-                  0000399c    00000012     uartstdio.obj (.const:.string)
+.const     0    00003e58    00000752     
+                  00003e58    000001e0     lcd_nokia5510.obj (.const:ASCII)
+                  00004038    00000101     rtsv7M4_T_le_v4SPD16_eabi.lib : ctype.obj (.const:.string:_ctypes_)
+                  00004139    00000003     --HOLE-- [fill = 0]
+                  0000413c    000000c0     driverlib.lib : gpio.obj (.const:g_ppui32GPIOIntMapBlizzard)
+                  000041fc    000000c0                   : gpio.obj (.const:g_ppui32GPIOIntMapSnowflake)
+                  000042bc    00000090                   : gpio.obj (.const:g_pui32GPIOBaseAddrs)
+                  0000434c    00000070                   : interrupt.obj (.const)
+                  000043bc    0000006c                   : sysctl.obj (.const:g_pui32Xtals)
+                  00004428    00000060     rtc.obj (.const:_ytab)
+                  00004488    00000060     rtsv7M4_T_le_v4SPD16_eabi.lib : mktime.obj (.const)
+                  000044e8    0000003d     esp8266.obj (.const:.string)
+                  00004525    00000003     --HOLE-- [fill = 0]
+                  00004528    00000030     rtc.obj (.const:.string)
+                  00004558    00000022     esp8266.obj (.const:.string:$P$T2$5)
+                  0000457a    00000002     --HOLE-- [fill = 0]
+                  0000457c    0000001c     uartstdio.obj (.const)
+                  00004598    00000012     uartstdio.obj (.const:.string)
 
-.cinit     0    000039b0    000000b0     
-                  000039b0    00000076     (.cinit..data.load) [load image, compression = rle]
-                  00003a26    00000002     --HOLE-- [fill = 0]
-                  00003a28    0000000c     (__TI_handler_table)
-                  00003a34    00000004     --HOLE-- [fill = 0]
-                  00003a38    00000008     (.cinit..bss.load) [load image, compression = zero_init]
-                  00003a40    00000008     (.cinit..vtable.load) [load image, compression = zero_init]
-                  00003a48    00000018     (__TI_cinit_table)
+.cinit     0    000045b0    000000f8     
+                  000045b0    000000c4     (.cinit..data.load) [load image, compression = rle]
+                  00004674    0000000c     (__TI_handler_table)
+                  00004680    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00004688    00000008     (.cinit..vtable.load) [load image, compression = zero_init]
+                  00004690    00000018     (__TI_cinit_table)
 
 .init_array 
 *          0    00000000    00000000     UNINITIALIZED
@@ -236,63 +259,68 @@ section   page    origin      length       input sections
 .vtable    0    20000000    0000026c     UNINITIALIZED
                   20000000    0000026c     driverlib.lib : interrupt.obj (.vtable)
 
-.bss       0    2000026c    00000254     UNINITIALIZED
-                  2000026c    00000120     rtsv7M4_T_le_v4SPD16_eabi.lib : trgmsg.obj (.bss:__CIOBUF_)
-                  2000038c    000000c8     dht22.obj (.bss:receivedBits)
-                  20000454    0000001c     (.common:rtcLimitStart)
-                  20000470    0000001c     (.common:rtcLimitStop)
-                  2000048c    00000008     (.common:parmbuf)
-                  20000494    00000007     (.common:rtcCurrent)
-                  2000049b    00000001     (.common:dhtBit)
-                  2000049c    00000004     (.common:checksum)
-                  200004a0    00000004     (.common:dhtBitCount)
-                  200004a4    00000004     (.common:g_ui32SecondsCounter)
-                  200004a8    00000004     (.common:g_ui32SysTickCounter)
-                  200004ac    00000004     (.common:humidity)
-                  200004b0    00000004     (.common:temperature)
-                  200004b4    00000004     (.common:timerACounter)
-                  200004b8    00000002     (.common:temp_ds1820)
-                  200004ba    00000001     (.common:ds1820_data_bit)
-                  200004bb    00000001     (.common:dummy$1)
-                  200004bc    00000001     (.common:fanControlledByTimer)
-                  200004bd    00000001     (.common:operating_mode)
-                  200004be    00000001     (.common:readDHT)
-                  200004bf    00000001     (.common:waterControlledByTimer)
+.stack     0    2000026c    00000800     UNINITIALIZED
+                  2000026c    00000800     --HOLE--
+
+.bss       0    20000a6c    0000035a     UNINITIALIZED
+                  20000a6c    00000120     rtsv7M4_T_le_v4SPD16_eabi.lib : trgmsg.obj (.bss:__CIOBUF_)
+                  20000b8c    000000c8     dht22.obj (.bss:receivedBits)
+                  20000c54    00000090     rtc.obj (.bss:rtcLimitStart)
+                  20000ce4    00000090     rtc.obj (.bss:rtcLimitStop)
+                  20000d74    00000024     rtc.obj (.bss:rtcCurrent)
+                  20000d98    00000008     (.common:parmbuf)
+                  20000da0    00000004     (.common:checksum)
+                  20000da4    00000004     (.common:dhtBitCount)
+                  20000da8    00000004     (.common:g_ui32SecondsCounter)
+                  20000dac    00000004     (.common:g_ui32SysTickCounter)
+                  20000db0    00000004     (.common:humidity)
+                  20000db4    00000004     (.common:temperature)
+                  20000db8    00000004     (.common:timerACounter)
+                  20000dbc    00000002     (.common:temp_ds1820)
+                  20000dbe    00000001     (.common:dhtBit)
+                  20000dbf    00000001     (.common:ds1820_data_bit)
+                  20000dc0    00000001     (.common:dummy$1)
+                  20000dc1    00000001     (.common:dummy$2)
+                  20000dc2    00000001     (.common:fanControlledByTimer)
+                  20000dc3    00000001     (.common:operating_mode)
+                  20000dc4    00000001     (.common:readDHT)
+                  20000dc5    00000001     (.common:waterControlledByTimer)
 
 .TI.noinit 
-*          0    2000026c    00000000     UNINITIALIZED
+*          0    20000a6c    00000000     UNINITIALIZED
 
-.stack     0    200004c0    00000200     UNINITIALIZED
-                  200004c0    00000200     --HOLE--
-
-.data      0    200006c0    000000c8     UNINITIALIZED
-                  200006c0    00000079     sensors.obj (.data)
-                  20000739    00000010     rtc.obj (.data)
-                  20000749    00000003     --HOLE--
-                  2000074c    00000010     timers.obj (.data)
-                  2000075c    0000000c     dht22.obj (.data)
-                  20000768    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.data)
-                  20000770    00000008                                   : exit.obj (.data)
-                  20000778    00000005     uartstdio.obj (.data)
-                  2000077d    00000003     --HOLE--
-                  20000780    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : rand.obj (.data)
-                  20000784    00000004                                   : stkdepth_vars.obj (.data)
+.data      0    20000dc8    00000134     UNINITIALIZED
+                  20000dc8    00000079     sensors.obj (.data)
+                  20000e41    00000003     --HOLE--
+                  20000e44    00000030     rtc.obj (.data:months$1)
+                  20000e74    00000024     rtsv7M4_T_le_v4SPD16_eabi.lib : localtim.obj (.data:local_tm)
+                  20000e98    00000014     rtc.obj (.data)
+                  20000eac    00000010     rtsv7M4_T_le_v4SPD16_eabi.lib : tmzone.obj (.data)
+                  20000ebc    00000010     timers.obj (.data)
+                  20000ecc    0000000c     dht22.obj (.data)
+                  20000ed8    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.data)
+                  20000ee0    00000008                                   : exit.obj (.data)
+                  20000ee8    00000005     uartstdio.obj (.data)
+                  20000eed    00000003     --HOLE--
+                  20000ef0    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : rand.obj (.data)
+                  20000ef4    00000004                                   : stkdepth_vars.obj (.data)
+                  20000ef8    00000004                                   : strtok.obj (.data)
 
 .TI.persistent 
-*          0    200006c0    00000000     UNINITIALIZED
+*          0    20000dc8    00000000     UNINITIALIZED
 
 
 LINKER GENERATED COPY TABLES
 
-__TI_cinit_table @ 00003a48 records: 3, size/record: 8, table size: 24
-	.data: load addr=000039b0, load size=00000076 bytes, run addr=200006c0, run size=000000c8 bytes, compression=rle
-	.bss: load addr=00003a38, load size=00000008 bytes, run addr=2000026c, run size=00000254 bytes, compression=zero_init
-	.vtable: load addr=00003a40, load size=00000008 bytes, run addr=20000000, run size=0000026c bytes, compression=zero_init
+__TI_cinit_table @ 00004690 records: 3, size/record: 8, table size: 24
+	.data: load addr=000045b0, load size=000000c4 bytes, run addr=20000dc8, run size=00000134 bytes, compression=rle
+	.bss: load addr=00004680, load size=00000008 bytes, run addr=20000a6c, run size=0000035a bytes, compression=zero_init
+	.vtable: load addr=00004688, load size=00000008 bytes, run addr=20000000, run size=0000026c bytes, compression=zero_init
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 00003a28 records: 3, size/record: 4, table size: 12
+__TI_handler_table @ 00004674 records: 3, size/record: 4, table size: 12
 	index: 0, handler: __TI_zero_init
 	index: 1, handler: __TI_decompress_rle24
 	index: 2, handler: __TI_decompress_none
@@ -300,483 +328,511 @@ __TI_handler_table @ 00003a28 records: 3, size/record: 4, table size: 12
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
 
-address   name                     
--------   ----                     
-00002aed  C$$EXIT                  
-00002297  C$$IO$$                  
-000033b5  CPUcpsid                 
-000033c1  CPUcpsie                 
-000023ed  ConfigureUART0           
-00002fbb  GPIODirModeSet           
-00003471  GPIOIntClear             
-000033cd  GPIOIntEnable            
-000031a1  GPIOIntRegister          
-00003361  GPIOIntStatus            
-000024f5  GPIOIntTypeSet           
-00000f81  GPIOPadConfigSet         
-000028f9  GPIOPinConfigure         
-00003477  GPIOPinRead              
-00003291  GPIOPinTypeGPIOInput     
-000031b9  GPIOPinTypeGPIOOutput    
-000032a3  GPIOPinTypeI2C           
-000032b5  GPIOPinTypeI2CSCL        
-000032c7  GPIOPinTypeSSI           
-000032d9  GPIOPinTypeUART          
-0000347d  GPIOPinWrite             
-00000b29  HOSTclock                
-00000af1  HOSTclose                
-00000ab3  HOSTgetenv               
-00000a57  HOSTlseek                
-00000a05  HOSTopen                 
-000009b9  HOSTread                 
-0000095b  HOSTrename               
-00000921  HOSTtime                 
-000008e9  HOSTunlink               
-0000089d  HOSTwrite                
-00003451  I2CMasterBusy            
-000034a1  I2CMasterControl         
-000034a5  I2CMasterDataGet         
-000034a9  I2CMasterDataPut         
-00003415  I2CMasterEnable          
-00002731  I2CMasterInitExpClk      
-00003459  I2CMasterSlaveAddrSet    
-000020c9  IntEnable                
-00003321  IntMasterDisable         
-00003331  IntMasterEnable          
-00002d91  IntRegister              
-00003089  LOGprintf                
-00000cfd  PortEIntHandler          
-0000277d  PortFIntHandler          
-00003483  ResetISR                 
-UNDEFED   SHT$$INIT_ARRAY$$Base    
-UNDEFED   SHT$$INIT_ARRAY$$Limit   
-00003461  SSIBusy                  
-00003489  SSIClockSourceSet        
-00002c71  SSIConfigSetExpClk       
-000033d9  SSIDataGet               
-000032eb  SSIDataGetNonBlocking    
-0000341f  SSIDataPut               
-00003429  SSIDisable               
-00003433  SSIEnable                
-00001a99  SSI_init                 
-00002efd  SSI_write                
-000010b5  SysCtlClockGet           
-000011c5  SysCtlClockSet           
-0000348f  SysCtlDelay              
-00002dc5  SysCtlPeripheralEnable   
-000025f1  SysCtlPeripheralReset    
-00003219  SysTickEnable            
-0000322d  SysTickIntEnable         
-00002ce9  SysTickIntHandler        
-00003341  SysTickPeriodSet         
-00003131  Timer0IntHandler         
-000022d1  TimerConfigure           
-0000336f  TimerEnable              
-000034ad  TimerIntClear            
-00003469  TimerIntEnable           
-000032fd  TimerLoadSet             
-0000343d  UARTCharGet              
-0000337d  UARTCharGetNonBlocking   
-00003447  UARTCharPut              
-0000338b  UARTCharsAvail           
-00003495  UARTClockSourceSet       
-00002a19  UARTConfigSetExpClk      
-000030f1  UARTDisable              
-00003241  UARTEnable               
-00001ea1  UARTStdioConfig          
-00000591  UARTvprintf              
-00002391  UARTwrite                
-00002cad  WatchdogIntHandler       
-2000026c  __CIOBUF_                
-200006c0  __STACK_END              
-00000200  __STACK_SIZE             
-200005c0  __STACK_TOP              
-00003a48  __TI_CINIT_Base          
-00003a60  __TI_CINIT_Limit         
-00003a28  __TI_Handler_Table_Base  
-00003a34  __TI_Handler_Table_Limit 
-00001ff1  __TI_auto_init           
-20000770  __TI_cleanup_ptr         
-00003399  __TI_decompress_none     
-0000349b  __TI_decompress_rle24    
-20000774  __TI_dtors_ptr           
-0000229b  __TI_readmsg             
-00000000  __TI_static_base__       
-00002269  __TI_writemsg            
-000033e5  __TI_zero_init           
-000020c7  __aeabi_idiv0            
-00001d35  __aeabi_memclr           
-00001d35  __aeabi_memclr4          
-00001d35  __aeabi_memclr8          
-00001969  __aeabi_memcpy           
-00001969  __aeabi_memcpy4          
-00001969  __aeabi_memcpy8          
-00001d37  __aeabi_memset           
-00001d37  __aeabi_memset4          
-00001d37  __aeabi_memset8          
-00002c31  __aeabi_uidiv            
-00002c31  __aeabi_uidivmod         
-ffffffff  __binit__                
-ffffffff  __c_args__               
-200004c0  __stack                  
-00003201  _args_main               
-00002691  _c_int00                 
-20000768  _lock                    
-00003263  _nop                     
-0000325b  _register_lock           
-00003255  _register_unlock         
-000034b1  _system_pre_init         
-2000076c  _unlock                  
-00002af1  abort                    
-00001c39  atoui                    
-ffffffff  binit                    
-00001611  change_mode              
-000016cd  check_fan_timer          
-00002f2d  check_rtcTimer           
-00001475  check_sensor1            
-00002131  check_sensor2            
-00002941  check_sensor3            
-00002989  check_sensor4            
-00001cb9  check_sensor5            
-00001f85  check_sensors            
-2000049c  checksum                 
-00001545  compare_rtc              
-00002861  copy_in                  
-00002f8d  delay_us                 
-00002df9  dht22_readhumidity       
-00002e2d  dht22_readtemp           
-2000049b  dhtBit                   
-200004a0  dhtBitCount              
-200004ba  ds1820_data_bit          
-20000714  esp8266_data             
-00002a61  esp8266_reset            
-00001399  esp8266_send             
-00002af9  exit                     
-200004bc  fanControlledByTimer     
-2000074c  g_bFeedWatchdog          
-2000074d  g_bWatchdogTimeoutMsgSent
-20000000  g_pfnRAMVectors          
-00000000  g_pfnVectors             
-200004a4  g_ui32SecondsCounter     
-200004a8  g_ui32SysTickCounter     
-00000b71  getRtc                   
-000033f1  getTimer0ChAvalue        
-000018c9  get_co2level             
-0000314d  get_line                 
-200004ac  humidity                 
-00002199  initI2C0                 
-000033fd  init_RTC                 
-00002d21  init_actuators           
-00002641  init_co2sensor           
-00001b29  init_dht22               
-00003351  init_ds1820              
-00001825  init_esp8266             
-000030ad  init_limit               
-00001bb5  init_limits_rtc          
-00001db1  init_sensors             
-0000259d  init_system              
-000027c9  isTimeToActuate          
-00003409  kick_watchdog            
-00002201  lcd_puts                 
-00000e4d  main                     
-20000784  main_func_sp             
-00001969  memcpy                   
-00001d3d  memset                   
-00002b71  nokiaLCDclear            
-000012b9  nokiaLCDinit             
-00002fe5  nokiaLCDsetXY            
-00002445  nokiaLCDtext             
-00002815  nokiaLCDwrite            
-200004bd  operating_mode           
-00002bb1  power                    
-000028c3  rand                     
-200004be  readDHT                  
-00002331  readI2C0                 
-00002bf1  read_dht22               
-00001e29  read_ds1820              
-000031d1  read_ds1820_1            
-000031e9  read_ds1820_2            
-0000330f  read_i2c                 
-0000177d  read_scratchpad          
-000026e1  readslot                 
-2000038c  receivedBits             
-0000254b  reset_ds1820             
-20000494  rtcCurrent               
-20000739  rtcLimitHourStart        
-2000073d  rtcLimitHourStop         
-20000741  rtcLimitMinuteStart      
-20000745  rtcLimitMinuteStop       
-20000454  rtcLimitStart            
-20000470  rtcLimitStop             
-0000026d  send_esp8266             
-00002f5d  setDHTinput              
-00003039  set_actuator1            
-00003061  set_actuator2            
-00002d59  set_line                 
-00003169  set_mode_input           
-00003185  set_mode_output          
-000028ad  srand                    
-00001f15  startDHT                 
-00003111  strcat                   
-00003269  strcpy                   
-0000327d  strlen                   
-0000300f  strncat                  
-00002e61  strstr                   
-200004b8  temp_ds1820              
-200004b0  temperature              
-20000708  threshold_co2            
-200006f0  threshold_humidity       
-200006fc  threshold_temperature    
-000033a7  time                     
-200004b4  timerACounter            
-00002e95  uart_send                
-00001a05  uitoa                    
-00002ec9  update_lcd               
-000029d1  update_thingspeak        
-000030cf  validate_char            
-200004bf  waterControlledByTimer   
-00002aa7  write_ds1820             
-0000249d  writeslot                
+address   name                         
+-------   ----                         
+000032b1  C$$EXIT                      
+00002abb  C$$IO$$                      
+00003d7d  CPUcpsid                     
+00003d89  CPUcpsie                     
+00002bb1  ConfigureUART0               
+0000385d  GPIODirModeSet               
+00003e1f  GPIOIntClear                 
+00003d95  GPIOIntEnable                
+00003b55  GPIOIntRegister              
+00003d29  GPIOIntStatus                
+00002cb9  GPIOIntTypeSet               
+0000122d  GPIOPadConfigSet             
+000030bd  GPIOPinConfigure             
+00003e25  GPIOPinRead                  
+00003c6d  GPIOPinTypeGPIOInput         
+00003b6d  GPIOPinTypeGPIOOutput        
+00003c7f  GPIOPinTypeSSI               
+00003c91  GPIOPinTypeUART              
+00003e2b  GPIOPinWrite                 
+00000b35  HOSTclock                    
+00000afd  HOSTclose                    
+00000abf  HOSTgetenv                   
+00000a63  HOSTlseek                    
+00000a11  HOSTopen                     
+000009c5  HOSTread                     
+00000967  HOSTrename                   
+0000092d  HOSTtime                     
+000008f5  HOSTunlink                   
+000008a9  HOSTwrite                    
+00003105  HibernateClockConfig         
+00003bcd  HibernateEnableExpClk        
+00003be1  HibernateRTCEnable           
+00003da1  HibernateRTCGet              
+00003831  HibernateRTCSet              
+00002955  IntEnable                    
+00003cc7  IntMasterDisable             
+00003cd7  IntMasterEnable              
+00003605  IntRegister                  
+000039f3  LOGprintf                    
+00000fa9  PortEIntHandler              
+00002ef5  PortFIntHandler              
+00003e31  ResetISR                     
+UNDEFED   SHT$$INIT_ARRAY$$Base        
+UNDEFED   SHT$$INIT_ARRAY$$Limit       
+00003e0f  SSIBusy                      
+00003e37  SSIClockSourceSet            
+00003475  SSIConfigSetExpClk           
+00003dad  SSIDataGet                   
+00003ca3  SSIDataGetNonBlocking        
+00003ddd  SSIDataPut                   
+00003de7  SSIDisable                   
+00003df1  SSIEnable                    
+00002221  SSI_init                     
+00003771  SSI_write                    
+0000148d  SysCtlClockGet               
+000017ad  SysCtlClockSet               
+00003e3d  SysCtlDelay                  
+00003639  SysCtlPeripheralEnable       
+00002db5  SysCtlPeripheralReset        
+00003bf5  SysTickEnable                
+00003c09  SysTickIntEnable             
+000034ed  SysTickIntHandler            
+00003ce9  SysTickPeriodSet             
+00003ae5  Timer0IntHandler             
+00002af5  TimerConfigure               
+00003d37  TimerEnable                  
+00003e4f  TimerIntClear                
+00003e17  TimerIntEnable               
+00003cb5  TimerLoadSet                 
+00003dfb  UARTCharGet                  
+00003d45  UARTCharGetNonBlocking       
+00003e05  UARTCharPut                  
+00003d53  UARTCharsAvail               
+00003e43  UARTClockSourceSet           
+00003225  UARTConfigSetExpClk          
+00003aa5  UARTDisable                  
+00003c1d  UARTEnable                   
+00002729  UARTStdioConfig              
+0000059d  UARTvprintf                  
+00002b55  UARTwrite                    
+000034b1  WatchdogIntHandler           
+20000a6c  __CIOBUF_                    
+20000a6c  __STACK_END                  
+00000800  __STACK_SIZE                 
+2000036c  __STACK_TOP                  
+00004690  __TI_CINIT_Base              
+000046a8  __TI_CINIT_Limit             
+00004674  __TI_Handler_Table_Base      
+00004680  __TI_Handler_Table_Limit     
+0000287d  __TI_auto_init               
+20000ee0  __TI_cleanup_ptr             
+00003d61  __TI_decompress_none         
+00003e49  __TI_decompress_rle24        
+20000ee4  __TI_dtors_ptr               
+00002abf  __TI_readmsg                 
+00000000  __TI_static_base__           
+00002a8d  __TI_writemsg                
+00003db9  __TI_zero_init               
+00002637  __aeabi_idiv0                
+000025bd  __aeabi_memclr               
+000025bd  __aeabi_memclr4              
+000025bd  __aeabi_memclr8              
+000020ef  __aeabi_memcpy               
+000020ef  __aeabi_memcpy4              
+000020ef  __aeabi_memcpy8              
+000025bf  __aeabi_memset               
+000025bf  __aeabi_memset4              
+000025bf  __aeabi_memset8              
+00003435  __aeabi_uidiv                
+00003435  __aeabi_uidivmod             
+ffffffff  __binit__                    
+ffffffff  __c_args__                   
+2000026c  __stack                      
+00003bb5  _args_main                   
+00002e55  _c_int00                     
+00004038  _ctypes_                     
+20000ed8  _lock                        
+00003c3f  _nop                         
+00003c37  _register_lock               
+00003c31  _register_unlock             
+00003e53  _system_pre_init             
+20000eac  _tz                          
+20000edc  _unlock                      
+00004428  _ytab                        
+000032b5  abort                        
+00002f8d  atoi                         
+000023c5  atoui                        
+ffffffff  binit                        
+00001cf5  change_mode                  
+00001db1  check_fan_timer              
+000037a1  check_rtcTimer               
+00001b5d  check_sensor1                
+000029bd  check_sensor2                
+0000314d  check_sensor3                
+00003195  check_sensor4                
+000024c5  check_sensor5                
+00002445  check_sensors                
+20000da0  checksum                     
+00001c2d  compare_rtc                  
+00002fd9  copy_in                      
+00003801  delay_us                     
+0000366d  dht22_readhumidity           
+000036a1  dht22_readtemp               
+20000dbe  dhtBit                       
+20000da4  dhtBitCount                  
+20000dbf  ds1820_data_bit              
+20000e1c  esp8266_data                 
+00001361  esp8266_executeTalkBack      
+00001995  esp8266_getTime              
+0000280d  esp8266_reset                
+000018a1  esp8266_send                 
+000016ad  esp8266_sendAndReturnResponse
+000032bd  exit                         
+20000dc2  fanControlledByTimer         
+20000ebc  g_bFeedWatchdog              
+20000ebd  g_bWatchdogTimeoutMsgSent    
+20000000  g_pfnRAMVectors              
+00000000  g_pfnVectors                 
+20000da8  g_ui32SecondsCounter         
+20000dac  g_ui32SysTickCounter         
+00003905  getMonthFromStr              
+00002541  getRtc                       
+00000e25  getSecsSinceEpoch            
+00003dc5  getTimer0ChAvalue            
+00001fb1  get_co2level                 
+00003b01  get_line                     
+20000db0  humidity                     
+00003525  init_RTC                     
+0000355d  init_actuators               
+00002e05  init_co2sensor               
+000022b1  init_dht22                   
+00003d09  init_ds1820                  
+00001e61  init_esp8266                 
+00003a61  init_limit                   
+0000233d  init_limits_rtc              
+00002639  init_sensors                 
+00002d61  init_system                  
+00003887  isTimeToActuate              
+00003d19  isdigit                      
+00003dd1  kick_watchdog                
+00002a25  lcd_puts                     
+00003025  localtime                    
+000010f9  main                         
+20000ef4  main_func_sp                 
+000020ef  memcpy                       
+000025c5  memset                       
+00000b7d  mktime                       
+00003335  nokiaLCDclear                
+00001a7d  nokiaLCDinit                 
+000038b1  nokiaLCDsetXY                
+00002c09  nokiaLCDtext                 
+00002f41  nokiaLCDwrite                
+20000dc3  operating_mode               
+00002051  parseIPD                     
+00003375  power                        
+00003087  rand                         
+20000dc4  readDHT                      
+000033b5  read_dht22                   
+000026b1  read_ds1820                  
+00003b85  read_ds1820_1                
+00003b9d  read_ds1820_2                
+00001f09  read_scratchpad              
+00002ea5  readslot                     
+20000b8c  receivedBits                 
+00002d0f  reset_ds1820                 
+20000d74  rtcCurrent                   
+20000e98  rtcLimitHourStart            
+20000e9c  rtcLimitHourStop             
+20000ea0  rtcLimitMinuteStart          
+20000ea4  rtcLimitMinuteStop           
+20000c54  rtcLimitStart                
+20000ce4  rtcLimitStop                 
+0000026d  send_esp8266                 
+000037d1  setDHTinput                  
+00003a3d  setESP8266ResetPin           
+00003955  setResetPinState             
+0000397d  set_actuator1                
+000039a5  set_actuator2                
+00003595  set_line                     
+00003b1d  set_mode_input               
+00003b39  set_mode_output              
+00003071  srand                        
+0000279d  startDHT                     
+00003ac5  strcat                       
+00003c45  strcpy                       
+00003a17  strcspn                      
+00003c59  strlen                       
+0000392d  strncat                      
+000039cd  strncmp                      
+000038db  strspn                       
+000036d5  strstr                       
+000033f5  strtok                       
+20000dbc  temp_ds1820                  
+20000db4  temperature                  
+20000e10  threshold_co2                
+20000df8  threshold_humidity           
+20000e04  threshold_temperature        
+00003d6f  time                         
+0000159d  timeGMTParse                 
+20000db8  timerACounter                
+00003709  uart_send                    
+0000218b  uitoa                        
+000035cd  updateTime                   
+0000373d  update_lcd                   
+000031dd  update_thingspeak            
+00003a83  validate_char                
+20000dc5  waterControlledByTimer       
+0000326b  write_ds1820                 
+00002c61  writeslot                    
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
 
-address   name                     
--------   ----                     
-00000000  __TI_static_base__       
-00000000  g_pfnVectors             
-00000200  __STACK_SIZE             
-0000026d  send_esp8266             
-00000591  UARTvprintf              
-0000089d  HOSTwrite                
-000008e9  HOSTunlink               
-00000921  HOSTtime                 
-0000095b  HOSTrename               
-000009b9  HOSTread                 
-00000a05  HOSTopen                 
-00000a57  HOSTlseek                
-00000ab3  HOSTgetenv               
-00000af1  HOSTclose                
-00000b29  HOSTclock                
-00000b71  getRtc                   
-00000cfd  PortEIntHandler          
-00000e4d  main                     
-00000f81  GPIOPadConfigSet         
-000010b5  SysCtlClockGet           
-000011c5  SysCtlClockSet           
-000012b9  nokiaLCDinit             
-00001399  esp8266_send             
-00001475  check_sensor1            
-00001545  compare_rtc              
-00001611  change_mode              
-000016cd  check_fan_timer          
-0000177d  read_scratchpad          
-00001825  init_esp8266             
-000018c9  get_co2level             
-00001969  __aeabi_memcpy           
-00001969  __aeabi_memcpy4          
-00001969  __aeabi_memcpy8          
-00001969  memcpy                   
-00001a05  uitoa                    
-00001a99  SSI_init                 
-00001b29  init_dht22               
-00001bb5  init_limits_rtc          
-00001c39  atoui                    
-00001cb9  check_sensor5            
-00001d35  __aeabi_memclr           
-00001d35  __aeabi_memclr4          
-00001d35  __aeabi_memclr8          
-00001d37  __aeabi_memset           
-00001d37  __aeabi_memset4          
-00001d37  __aeabi_memset8          
-00001d3d  memset                   
-00001db1  init_sensors             
-00001e29  read_ds1820              
-00001ea1  UARTStdioConfig          
-00001f15  startDHT                 
-00001f85  check_sensors            
-00001ff1  __TI_auto_init           
-000020c7  __aeabi_idiv0            
-000020c9  IntEnable                
-00002131  check_sensor2            
-00002199  initI2C0                 
-00002201  lcd_puts                 
-00002269  __TI_writemsg            
-00002297  C$$IO$$                  
-0000229b  __TI_readmsg             
-000022d1  TimerConfigure           
-00002331  readI2C0                 
-00002391  UARTwrite                
-000023ed  ConfigureUART0           
-00002445  nokiaLCDtext             
-0000249d  writeslot                
-000024f5  GPIOIntTypeSet           
-0000254b  reset_ds1820             
-0000259d  init_system              
-000025f1  SysCtlPeripheralReset    
-00002641  init_co2sensor           
-00002691  _c_int00                 
-000026e1  readslot                 
-00002731  I2CMasterInitExpClk      
-0000277d  PortFIntHandler          
-000027c9  isTimeToActuate          
-00002815  nokiaLCDwrite            
-00002861  copy_in                  
-000028ad  srand                    
-000028c3  rand                     
-000028f9  GPIOPinConfigure         
-00002941  check_sensor3            
-00002989  check_sensor4            
-000029d1  update_thingspeak        
-00002a19  UARTConfigSetExpClk      
-00002a61  esp8266_reset            
-00002aa7  write_ds1820             
-00002aed  C$$EXIT                  
-00002af1  abort                    
-00002af9  exit                     
-00002b71  nokiaLCDclear            
-00002bb1  power                    
-00002bf1  read_dht22               
-00002c31  __aeabi_uidiv            
-00002c31  __aeabi_uidivmod         
-00002c71  SSIConfigSetExpClk       
-00002cad  WatchdogIntHandler       
-00002ce9  SysTickIntHandler        
-00002d21  init_actuators           
-00002d59  set_line                 
-00002d91  IntRegister              
-00002dc5  SysCtlPeripheralEnable   
-00002df9  dht22_readhumidity       
-00002e2d  dht22_readtemp           
-00002e61  strstr                   
-00002e95  uart_send                
-00002ec9  update_lcd               
-00002efd  SSI_write                
-00002f2d  check_rtcTimer           
-00002f5d  setDHTinput              
-00002f8d  delay_us                 
-00002fbb  GPIODirModeSet           
-00002fe5  nokiaLCDsetXY            
-0000300f  strncat                  
-00003039  set_actuator1            
-00003061  set_actuator2            
-00003089  LOGprintf                
-000030ad  init_limit               
-000030cf  validate_char            
-000030f1  UARTDisable              
-00003111  strcat                   
-00003131  Timer0IntHandler         
-0000314d  get_line                 
-00003169  set_mode_input           
-00003185  set_mode_output          
-000031a1  GPIOIntRegister          
-000031b9  GPIOPinTypeGPIOOutput    
-000031d1  read_ds1820_1            
-000031e9  read_ds1820_2            
-00003201  _args_main               
-00003219  SysTickEnable            
-0000322d  SysTickIntEnable         
-00003241  UARTEnable               
-00003255  _register_unlock         
-0000325b  _register_lock           
-00003263  _nop                     
-00003269  strcpy                   
-0000327d  strlen                   
-00003291  GPIOPinTypeGPIOInput     
-000032a3  GPIOPinTypeI2C           
-000032b5  GPIOPinTypeI2CSCL        
-000032c7  GPIOPinTypeSSI           
-000032d9  GPIOPinTypeUART          
-000032eb  SSIDataGetNonBlocking    
-000032fd  TimerLoadSet             
-0000330f  read_i2c                 
-00003321  IntMasterDisable         
-00003331  IntMasterEnable          
-00003341  SysTickPeriodSet         
-00003351  init_ds1820              
-00003361  GPIOIntStatus            
-0000336f  TimerEnable              
-0000337d  UARTCharGetNonBlocking   
-0000338b  UARTCharsAvail           
-00003399  __TI_decompress_none     
-000033a7  time                     
-000033b5  CPUcpsid                 
-000033c1  CPUcpsie                 
-000033cd  GPIOIntEnable            
-000033d9  SSIDataGet               
-000033e5  __TI_zero_init           
-000033f1  getTimer0ChAvalue        
-000033fd  init_RTC                 
-00003409  kick_watchdog            
-00003415  I2CMasterEnable          
-0000341f  SSIDataPut               
-00003429  SSIDisable               
-00003433  SSIEnable                
-0000343d  UARTCharGet              
-00003447  UARTCharPut              
-00003451  I2CMasterBusy            
-00003459  I2CMasterSlaveAddrSet    
-00003461  SSIBusy                  
-00003469  TimerIntEnable           
-00003471  GPIOIntClear             
-00003477  GPIOPinRead              
-0000347d  GPIOPinWrite             
-00003483  ResetISR                 
-00003489  SSIClockSourceSet        
-0000348f  SysCtlDelay              
-00003495  UARTClockSourceSet       
-0000349b  __TI_decompress_rle24    
-000034a1  I2CMasterControl         
-000034a5  I2CMasterDataGet         
-000034a9  I2CMasterDataPut         
-000034ad  TimerIntClear            
-000034b1  _system_pre_init         
-00003a28  __TI_Handler_Table_Base  
-00003a34  __TI_Handler_Table_Limit 
-00003a48  __TI_CINIT_Base          
-00003a60  __TI_CINIT_Limit         
-20000000  g_pfnRAMVectors          
-2000026c  __CIOBUF_                
-2000038c  receivedBits             
-20000454  rtcLimitStart            
-20000470  rtcLimitStop             
-20000494  rtcCurrent               
-2000049b  dhtBit                   
-2000049c  checksum                 
-200004a0  dhtBitCount              
-200004a4  g_ui32SecondsCounter     
-200004a8  g_ui32SysTickCounter     
-200004ac  humidity                 
-200004b0  temperature              
-200004b4  timerACounter            
-200004b8  temp_ds1820              
-200004ba  ds1820_data_bit          
-200004bc  fanControlledByTimer     
-200004bd  operating_mode           
-200004be  readDHT                  
-200004bf  waterControlledByTimer   
-200004c0  __stack                  
-200005c0  __STACK_TOP              
-200006c0  __STACK_END              
-200006f0  threshold_humidity       
-200006fc  threshold_temperature    
-20000708  threshold_co2            
-20000714  esp8266_data             
-20000739  rtcLimitHourStart        
-2000073d  rtcLimitHourStop         
-20000741  rtcLimitMinuteStart      
-20000745  rtcLimitMinuteStop       
-2000074c  g_bFeedWatchdog          
-2000074d  g_bWatchdogTimeoutMsgSent
-20000768  _lock                    
-2000076c  _unlock                  
-20000770  __TI_cleanup_ptr         
-20000774  __TI_dtors_ptr           
-20000784  main_func_sp             
-ffffffff  __binit__                
-ffffffff  __c_args__               
-ffffffff  binit                    
-UNDEFED   SHT$$INIT_ARRAY$$Base    
-UNDEFED   SHT$$INIT_ARRAY$$Limit   
+address   name                         
+-------   ----                         
+00000000  __TI_static_base__           
+00000000  g_pfnVectors                 
+0000026d  send_esp8266                 
+0000059d  UARTvprintf                  
+00000800  __STACK_SIZE                 
+000008a9  HOSTwrite                    
+000008f5  HOSTunlink                   
+0000092d  HOSTtime                     
+00000967  HOSTrename                   
+000009c5  HOSTread                     
+00000a11  HOSTopen                     
+00000a63  HOSTlseek                    
+00000abf  HOSTgetenv                   
+00000afd  HOSTclose                    
+00000b35  HOSTclock                    
+00000b7d  mktime                       
+00000e25  getSecsSinceEpoch            
+00000fa9  PortEIntHandler              
+000010f9  main                         
+0000122d  GPIOPadConfigSet             
+00001361  esp8266_executeTalkBack      
+0000148d  SysCtlClockGet               
+0000159d  timeGMTParse                 
+000016ad  esp8266_sendAndReturnResponse
+000017ad  SysCtlClockSet               
+000018a1  esp8266_send                 
+00001995  esp8266_getTime              
+00001a7d  nokiaLCDinit                 
+00001b5d  check_sensor1                
+00001c2d  compare_rtc                  
+00001cf5  change_mode                  
+00001db1  check_fan_timer              
+00001e61  init_esp8266                 
+00001f09  read_scratchpad              
+00001fb1  get_co2level                 
+00002051  parseIPD                     
+000020ef  __aeabi_memcpy               
+000020ef  __aeabi_memcpy4              
+000020ef  __aeabi_memcpy8              
+000020ef  memcpy                       
+0000218b  uitoa                        
+00002221  SSI_init                     
+000022b1  init_dht22                   
+0000233d  init_limits_rtc              
+000023c5  atoui                        
+00002445  check_sensors                
+000024c5  check_sensor5                
+00002541  getRtc                       
+000025bd  __aeabi_memclr               
+000025bd  __aeabi_memclr4              
+000025bd  __aeabi_memclr8              
+000025bf  __aeabi_memset               
+000025bf  __aeabi_memset4              
+000025bf  __aeabi_memset8              
+000025c5  memset                       
+00002637  __aeabi_idiv0                
+00002639  init_sensors                 
+000026b1  read_ds1820                  
+00002729  UARTStdioConfig              
+0000279d  startDHT                     
+0000280d  esp8266_reset                
+0000287d  __TI_auto_init               
+00002955  IntEnable                    
+000029bd  check_sensor2                
+00002a25  lcd_puts                     
+00002a8d  __TI_writemsg                
+00002abb  C$$IO$$                      
+00002abf  __TI_readmsg                 
+00002af5  TimerConfigure               
+00002b55  UARTwrite                    
+00002bb1  ConfigureUART0               
+00002c09  nokiaLCDtext                 
+00002c61  writeslot                    
+00002cb9  GPIOIntTypeSet               
+00002d0f  reset_ds1820                 
+00002d61  init_system                  
+00002db5  SysCtlPeripheralReset        
+00002e05  init_co2sensor               
+00002e55  _c_int00                     
+00002ea5  readslot                     
+00002ef5  PortFIntHandler              
+00002f41  nokiaLCDwrite                
+00002f8d  atoi                         
+00002fd9  copy_in                      
+00003025  localtime                    
+00003071  srand                        
+00003087  rand                         
+000030bd  GPIOPinConfigure             
+00003105  HibernateClockConfig         
+0000314d  check_sensor3                
+00003195  check_sensor4                
+000031dd  update_thingspeak            
+00003225  UARTConfigSetExpClk          
+0000326b  write_ds1820                 
+000032b1  C$$EXIT                      
+000032b5  abort                        
+000032bd  exit                         
+00003335  nokiaLCDclear                
+00003375  power                        
+000033b5  read_dht22                   
+000033f5  strtok                       
+00003435  __aeabi_uidiv                
+00003435  __aeabi_uidivmod             
+00003475  SSIConfigSetExpClk           
+000034b1  WatchdogIntHandler           
+000034ed  SysTickIntHandler            
+00003525  init_RTC                     
+0000355d  init_actuators               
+00003595  set_line                     
+000035cd  updateTime                   
+00003605  IntRegister                  
+00003639  SysCtlPeripheralEnable       
+0000366d  dht22_readhumidity           
+000036a1  dht22_readtemp               
+000036d5  strstr                       
+00003709  uart_send                    
+0000373d  update_lcd                   
+00003771  SSI_write                    
+000037a1  check_rtcTimer               
+000037d1  setDHTinput                  
+00003801  delay_us                     
+00003831  HibernateRTCSet              
+0000385d  GPIODirModeSet               
+00003887  isTimeToActuate              
+000038b1  nokiaLCDsetXY                
+000038db  strspn                       
+00003905  getMonthFromStr              
+0000392d  strncat                      
+00003955  setResetPinState             
+0000397d  set_actuator1                
+000039a5  set_actuator2                
+000039cd  strncmp                      
+000039f3  LOGprintf                    
+00003a17  strcspn                      
+00003a3d  setESP8266ResetPin           
+00003a61  init_limit                   
+00003a83  validate_char                
+00003aa5  UARTDisable                  
+00003ac5  strcat                       
+00003ae5  Timer0IntHandler             
+00003b01  get_line                     
+00003b1d  set_mode_input               
+00003b39  set_mode_output              
+00003b55  GPIOIntRegister              
+00003b6d  GPIOPinTypeGPIOOutput        
+00003b85  read_ds1820_1                
+00003b9d  read_ds1820_2                
+00003bb5  _args_main                   
+00003bcd  HibernateEnableExpClk        
+00003be1  HibernateRTCEnable           
+00003bf5  SysTickEnable                
+00003c09  SysTickIntEnable             
+00003c1d  UARTEnable                   
+00003c31  _register_unlock             
+00003c37  _register_lock               
+00003c3f  _nop                         
+00003c45  strcpy                       
+00003c59  strlen                       
+00003c6d  GPIOPinTypeGPIOInput         
+00003c7f  GPIOPinTypeSSI               
+00003c91  GPIOPinTypeUART              
+00003ca3  SSIDataGetNonBlocking        
+00003cb5  TimerLoadSet                 
+00003cc7  IntMasterDisable             
+00003cd7  IntMasterEnable              
+00003ce9  SysTickPeriodSet             
+00003d09  init_ds1820                  
+00003d19  isdigit                      
+00003d29  GPIOIntStatus                
+00003d37  TimerEnable                  
+00003d45  UARTCharGetNonBlocking       
+00003d53  UARTCharsAvail               
+00003d61  __TI_decompress_none         
+00003d6f  time                         
+00003d7d  CPUcpsid                     
+00003d89  CPUcpsie                     
+00003d95  GPIOIntEnable                
+00003da1  HibernateRTCGet              
+00003dad  SSIDataGet                   
+00003db9  __TI_zero_init               
+00003dc5  getTimer0ChAvalue            
+00003dd1  kick_watchdog                
+00003ddd  SSIDataPut                   
+00003de7  SSIDisable                   
+00003df1  SSIEnable                    
+00003dfb  UARTCharGet                  
+00003e05  UARTCharPut                  
+00003e0f  SSIBusy                      
+00003e17  TimerIntEnable               
+00003e1f  GPIOIntClear                 
+00003e25  GPIOPinRead                  
+00003e2b  GPIOPinWrite                 
+00003e31  ResetISR                     
+00003e37  SSIClockSourceSet            
+00003e3d  SysCtlDelay                  
+00003e43  UARTClockSourceSet           
+00003e49  __TI_decompress_rle24        
+00003e4f  TimerIntClear                
+00003e53  _system_pre_init             
+00004038  _ctypes_                     
+00004428  _ytab                        
+00004674  __TI_Handler_Table_Base      
+00004680  __TI_Handler_Table_Limit     
+00004690  __TI_CINIT_Base              
+000046a8  __TI_CINIT_Limit             
+20000000  g_pfnRAMVectors              
+2000026c  __stack                      
+2000036c  __STACK_TOP                  
+20000a6c  __CIOBUF_                    
+20000a6c  __STACK_END                  
+20000b8c  receivedBits                 
+20000c54  rtcLimitStart                
+20000ce4  rtcLimitStop                 
+20000d74  rtcCurrent                   
+20000da0  checksum                     
+20000da4  dhtBitCount                  
+20000da8  g_ui32SecondsCounter         
+20000dac  g_ui32SysTickCounter         
+20000db0  humidity                     
+20000db4  temperature                  
+20000db8  timerACounter                
+20000dbc  temp_ds1820                  
+20000dbe  dhtBit                       
+20000dbf  ds1820_data_bit              
+20000dc2  fanControlledByTimer         
+20000dc3  operating_mode               
+20000dc4  readDHT                      
+20000dc5  waterControlledByTimer       
+20000df8  threshold_humidity           
+20000e04  threshold_temperature        
+20000e10  threshold_co2                
+20000e1c  esp8266_data                 
+20000e98  rtcLimitHourStart            
+20000e9c  rtcLimitHourStop             
+20000ea0  rtcLimitMinuteStart          
+20000ea4  rtcLimitMinuteStop           
+20000eac  _tz                          
+20000ebc  g_bFeedWatchdog              
+20000ebd  g_bWatchdogTimeoutMsgSent    
+20000ed8  _lock                        
+20000edc  _unlock                      
+20000ee0  __TI_cleanup_ptr             
+20000ee4  __TI_dtors_ptr               
+20000ef4  main_func_sp                 
+ffffffff  __binit__                    
+ffffffff  __c_args__                   
+ffffffff  binit                        
+UNDEFED   SHT$$INIT_ARRAY$$Base        
+UNDEFED   SHT$$INIT_ARRAY$$Limit       
 
-[235 symbols]
+[249 symbols]

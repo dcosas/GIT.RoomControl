@@ -10,5 +10,5 @@
 
 void init_RTC();
 uint8_t isTimeToActuate(uint8_t sensor_id);
-
+int64_t timeGMTParse(char* date);
 #endif /* TIVACONTROLBOARD_RTC_H_ */

@@ -1,9 +1,14 @@
 #include <stdint.h>
 #include <stdbool.h>
-#include<math.h>
+#include <string.h>
+#include <math.h>
+#include <time.h>
+
+
 #include "inc/hw_ints.h"
 #include "inc/hw_memmap.h"
 #include "inc/hw_types.h"
+#include "inc/hw_hibernate.h"
 #include "driverlib/debug.h"
 #include "driverlib/fpu.h"
 #include "driverlib/gpio.h"
@@ -15,6 +20,7 @@
 #include "driverlib/timer.h"
 #include "driverlib/uart.h"
 #include "driverlib/watchdog.h"
+#include "driverlib/hibernate.h"
 //#include "utils/uartstdio.h"
 #include "fatfs/src/ff.h"
 #include "fatfs/src/diskio.h"
@@ -26,6 +32,7 @@
 #include "esp8266.h"
 #include "dht22.h"
 #include "ds1820.h"
+#include "eeprom.h"
 //#include "sdcard.h"
 #include "utils.h"
 volatile uint32_t g_ui32SysTickCounter;
@@ -60,9 +67,14 @@ __error__(char *pcFilename, uint32_t ui32Line)
 void check_sensors()
 {
 	static uint32_t lastUpdateCounter = 0, temp_secondsCounter = 0;
+	char parsedData[20];
+	memset(parsedData, 0, 20);
 	ROM_IntMasterDisable();
 	temp_secondsCounter = g_ui32SecondsCounter;
 	ROM_IntMasterEnable();
+
+
+
 	check_sensor1();//humidity 			- fructification dht22
 	check_sensor2();//temperature 1 	- fructification dht22
 	check_sensor3();//temperature 2 	- incubation ds1820
@@ -75,6 +87,7 @@ void check_sensors()
 
 	if((temp_secondsCounter - lastUpdateCounter) > THINGSPEAK_UPDATE_RATE)
 	{
+		esp8266_executeTalkBack(parsedData);
 		update_thingspeak();//Update ESP8266 at every minute
 		lastUpdateCounter = temp_secondsCounter;
 	}
@@ -130,12 +143,64 @@ void init_system()
 	init_esp8266();
 	init_sensors();
 	init_RTC();
+
 }
 
 void kick_watchdog()
 {
 	g_bFeedWatchdog = true;
 }
+
+void testRTC()
+{
+	init_esp8266();
+	while(1)
+	{
+		init_RTC();
+		isTimeToActuate(0);
+	}
+
+}
+
+void testEEPROM()
+{
+	init_EEPROM();
+}
+
+//void testRTC2()
+//{
+//	uint32_t now=0;
+//	time_t rawtime;
+//	struct tm * timeinfo;
+//	struct tm  tm = {0};
+//	char date[80];
+//
+//	ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_HIBERNATE);
+//    HibernateEnableExpClk(ROM_SysCtlClockGet());
+//    HibernateClockConfig(HIBERNATE_OSC_LOWDRIVE);
+//    HibernateRTCEnable();
+//    init_esp8266();
+//    esp8266_getTime(date);
+//    now = timeGMTParse(date);
+//    rawtime = now;
+//    timeinfo = localtime (&rawtime);
+//    HibernateRTCSet(now);
+//	while(1)
+//	{
+//		now = HibernateRTCGet(); //get the current value in seconds
+//		LOGprintf("Time:%d\n", now);
+//		timeinfo = localtime (&now);
+//		//timeinfo = gmtime ( &now );
+//		LOGprintf("%d:%d:%d",timeinfo->tm_hour,timeinfo->tm_min, timeinfo->tm_sec);
+//
+//		//time ( &rawtime );
+//		//ptm = gmtime ( &rawtime );
+//
+//
+//		SysCtlDelay(SysCtlClockGet());
+//
+//	}
+//}
 
 int main(void)
 {	//
@@ -168,12 +233,16 @@ int main(void)
 
     ROM_IntMasterEnable();
 
+    //testEEPROM();
+    //testRTC();
+
     init_system();
 
     while(1)
     {
     	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, GPIO_PIN_1);
     	check_sensors();
+    	//testRTC();
     	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0);
     	for(mainLoopDelay=0; mainLoopDelay<2; mainLoopDelay++)
     	{

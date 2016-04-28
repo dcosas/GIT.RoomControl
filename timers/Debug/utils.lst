@@ -1,11 +1,11 @@
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.6 *
-       3                    ;* Date/Time created: Tue Jan 26 13:54:20 2016                                *
+       3                    ;* Date/Time created: Wed Apr 27 18:16:53 2016                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -14,7 +14,7 @@ utils.asm                                                            PAGE    1
        9                            .dwattr $C$DW$CU, DW_AT_name("../utils.c")
       10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.6 Copyright (c) 1996-2015 Te
       11                            .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("D:\Deian\Dev\TI\temp\LaunchpadRoomControl\timers\Debug")
+      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("D:\Deian\Dev\TI\workspace6\LaunchpadRoomControl\timers\Debug
       13                    
       14                    $C$DW$1 .dwtag  DW_TAG_subprogram, DW_AT_name("UARTStdioConfig")
       15                            .dwattr $C$DW$1, DW_AT_TI_symbol_name("UARTStdioConfig")
@@ -58,7 +58,7 @@ utils.asm                                                            PAGE    1
       53                    $C$DW$10        .dwtag  DW_TAG_formal_parameter
       54                            .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$20)
       55                            .dwendtag $C$DW$8
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE    2
@@ -118,7 +118,7 @@ utils.asm                                                            PAGE    2
      108                            .dwcfi  save_reg_to_mem, 4, -8
      109 00000002 0D18F1AD          SUB       SP, SP, #24           ; [DPU_3_PIPE]  ; [KEEP 32-BIT INS]
      110                            .dwcfi  cfa_offset, 32
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE    3
@@ -178,7 +178,7 @@ utils.asm                                                            PAGE    3
      163                    ;* --------------------------------------------------------------------------*
      164                    ;*   BEGIN LOOP ||$C$L1||
      165                    ;*
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE    4
@@ -238,7 +238,7 @@ utils.asm                                                            PAGE    4
      218                    ;*   Known Maximum Trip Count        : 4294967295
      219                    ;*   Known Max Trip Count Factor     : 1
      220                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE    5
@@ -298,7 +298,7 @@ utils.asm                                                            PAGE    5
      273                            .dwattr $C$DW$20, DW_AT_low_pc(0x00)
      274                            .dwattr $C$DW$20, DW_AT_TI_return
      275 00000092 BD10              POP       {V1, PC}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE    6
@@ -358,7 +358,7 @@ utils.asm                                                            PAGE    6
      328 00000000 0D10F1AD          SUB       SP, SP, #16           ; [DPU_3_PIPE]  ; [KEEP 32-BIT INS]
      329                            .dwcfi  cfa_offset, 16
      330                    $C$DW$24        .dwtag  DW_TAG_variable, DW_AT_name("base")
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE    7
@@ -418,7 +418,7 @@ utils.asm                                                            PAGE    7
      383 00000020 4288              CMP       A1, A2                ; [DPU_3_PIPE] |52|  ; [ORIG 16-BIT INS]
      384 00000022 D90A              BLS       ||$C$L6||             ; [DPU_3_PIPE] |52|  ; [ORIG 16-BIT INS]
      385                            ; BRANCHCC OCCURS {||$C$L6||}    ; [] |52| 
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE    8
@@ -478,7 +478,7 @@ utils.asm                                                            PAGE    8
      438                            .clink
      439                            .thumbfunc atoui
      440 00000000                   .thumb
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE    9
@@ -538,7 +538,7 @@ utils.asm                                                            PAGE    9
      493                            .dwattr $C$DW$33, DW_AT_location[DW_OP_breg13 4]
      494                    $C$DW$34        .dwtag  DW_TAG_variable, DW_AT_name("counter")
      495                            .dwattr $C$DW$34, DW_AT_TI_symbol_name("counter")
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   10
@@ -598,7 +598,7 @@ utils.asm                                                            PAGE   10
      548                    ;----------------------------------------------------------------------
      549                    ;  68 | asciiValue -= tableSize+1;                                             
      550                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   11
@@ -658,7 +658,7 @@ utils.asm                                                            PAGE   11
      603                            .dwpsn  file "../utils.c",line 69,column 41,is_stmt,isa 1
      604 0000006c 0008F89D          LDRB      A1, [SP, #8]          ; [DPU_3_PIPE] |69|  ; [KEEP 32-BIT INS]
      605 00000070 1E40              SUBS      A1, A1, #1            ; [DPU_3_PIPE] |69|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   12
@@ -718,7 +718,7 @@ utils.asm                                                            PAGE   12
      658                    ;*                           FPEXC,FPSCR                                     *
      659                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
      660                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   13
@@ -778,7 +778,7 @@ utils.asm                                                            PAGE   13
      713                            .dwattr $C$DW$41, DW_AT_TI_call
      714                            .dwattr $C$DW$41, DW_AT_TI_indirect
      715 00000028 4790              BLX       A3                    ; [DPU_3_PIPE] |81|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   14
@@ -838,7 +838,7 @@ utils.asm                                                            PAGE   14
      768                            .dwattr $C$DW$45, DW_AT_TI_begin_column(0x06)
      769                            .dwattr $C$DW$45, DW_AT_decl_file("../utils.c")
      770                            .dwattr $C$DW$45, DW_AT_decl_line(0x56)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   15
@@ -898,7 +898,7 @@ utils.asm                                                            PAGE   15
      823                    ;----------------------------------------------------------------------
      824 0000000a 0003F027          BIC       A1, V4, #3            ; [DPU_3_PIPE] |93|  ; [KEEP 32-BIT INS]
      825 0000000e 1D00              ADDS      A1, A1, #4            ; [DPU_3_PIPE] |93|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   16
@@ -958,7 +958,7 @@ utils.asm                                                            PAGE   16
      878                            .align  4
      879 00000050 4000C000  ||$C$CON5||:    .bits   1073790976,32
      880                            .align  4
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   17
@@ -1018,7 +1018,7 @@ utils.asm                                                            PAGE   17
      933                            .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
      934                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
      935                    $C$DW$T$39      .dwtag  DW_TAG_typedef, DW_AT_name("uint8_t")
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   18
@@ -1078,7 +1078,7 @@ utils.asm                                                            PAGE   18
      988                            .dwattr $C$DW$T$49, DW_AT_decl_column(0x1c)
      989                    $C$DW$T$50      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least16_t")
      990                            .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$49)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   19
@@ -1138,7 +1138,7 @@ utils.asm                                                            PAGE   19
     1043                            .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
     1044                            .dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
     1045                    $C$DW$T$58      .dwtag  DW_TAG_typedef, DW_AT_name("_Sizet")
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   20
@@ -1198,7 +1198,7 @@ utils.asm                                                            PAGE   20
     1098                            .dwattr $C$DW$T$66, DW_AT_decl_line(0xa6)
     1099                            .dwattr $C$DW$T$66, DW_AT_decl_column(0x0e)
     1100                    $C$DW$T$13      .dwtag  DW_TAG_base_type
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   21
@@ -1258,7 +1258,7 @@ utils.asm                                                            PAGE   21
     1153                            .dwattr $C$DW$T$73, DW_AT_decl_column(0x14)
     1154                    $C$DW$T$74      .dwtag  DW_TAG_typedef, DW_AT_name("uint64_t")
     1155                            .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$15)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   22
@@ -1318,7 +1318,7 @@ utils.asm                                                            PAGE   22
     1208                            .dwattr $C$DW$T$80, DW_AT_decl_line(0x65)
     1209                            .dwattr $C$DW$T$80, DW_AT_decl_column(0x01)
     1210                    
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   23
@@ -1378,7 +1378,7 @@ utils.asm                                                            PAGE   23
     1263                            .dwcfi  undefined, 14
     1264                            .dwcfi  undefined, 14
     1265                            .dwcfi  undefined, 7
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:16:53 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 utils.asm                                                            PAGE   24

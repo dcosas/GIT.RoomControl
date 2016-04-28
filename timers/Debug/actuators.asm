@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TI ARM C/C++ Codegen                                             PC v5.2.6 *
-;* Date/Time created: Tue Jan 26 13:54:18 2016                                *
+;* Date/Time created: Wed Apr 27 18:16:53 2016                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disable_dual_state --embedded_constants=on --endian=little --float_support=FPv4SPD16 --hll_source=on --object_format=elf --silicon_version=7M4 --symdebug:dwarf --symdebug:dwarf_version=3 --unaligned_access=on 
 	.thumb
@@ -9,7 +9,7 @@ $C$DW$CU	.dwtag  DW_TAG_compile_unit
 	.dwattr $C$DW$CU, DW_AT_name("../actuators.c")
 	.dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.6 Copyright (c) 1996-2015 Texas Instruments Incorporated")
 	.dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-	.dwattr $C$DW$CU, DW_AT_comp_dir("D:\Deian\Dev\TI\temp\LaunchpadRoomControl\timers\Debug")
+	.dwattr $C$DW$CU, DW_AT_comp_dir("D:\Deian\Dev\TI\workspace6\LaunchpadRoomControl\timers\Debug")
 
 $C$DW$1	.dwtag  DW_TAG_subprogram, DW_AT_name("GPIOPinWrite")
 	.dwattr $C$DW$1, DW_AT_TI_symbol_name("GPIOPinWrite")
@@ -52,7 +52,7 @@ $C$DW$9	.dwtag  DW_TAG_formal_parameter
 	.dwattr $C$DW$9, DW_AT_type(*$C$DW$T$23)
 	.dwendtag $C$DW$8
 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.6\bin\armacpia.exe -@C:\\Users\\dcosas\\AppData\\Local\\Temp\\1766812 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-arm_5.2.6\bin\armacpia.exe -@C:\\Users\\dcosas\\AppData\\Local\\Temp\\1042412 
 	.sect	".text:init_actuators"
 	.clink
 	.thumbfunc init_actuators

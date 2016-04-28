@@ -35,5 +35,6 @@ uint8_t send_esp8266(	uint32_t humidity_data,//field1
 						uint32_t temperature_data_4,  //field5
 						uint32_t water_relay, //field6
 						uint32_t fan_relay);//field7
-
+uint8_t esp8266_executeTalkBack(char* command);
+uint8_t esp8266_getTime(char* resp);
 #endif /* TIVACONTROLBOARD_ESP8266_H_ */

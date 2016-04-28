@@ -1,11 +1,11 @@
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                             PC v5.2.6 *
-       3                    ;* Date/Time created: Tue Jan 26 13:54:20 2016                                *
+       3                    ;* Date/Time created: Wed Apr 27 18:22:23 2016                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=16 --diag_wrap=off --disab
        6 00000000                   .thumb
@@ -14,7 +14,7 @@ sensors.asm                                                          PAGE    1
        9                            .dwattr $C$DW$CU, DW_AT_name("../sensors.c")
       10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v5.2.6 Copyright (c) 1996-2015 Te
       11                            .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("D:\Deian\Dev\TI\temp\LaunchpadRoomControl\timers\Debug")
+      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("D:\Deian\Dev\TI\workspace6\LaunchpadRoomControl\timers\Debug
       13                    
       14                    $C$DW$1 .dwtag  DW_TAG_subprogram, DW_AT_name("memset")
       15                            .dwattr $C$DW$1, DW_AT_TI_symbol_name("memset")
@@ -58,7 +58,7 @@ sensors.asm                                                          PAGE    1
       53                            .dwendtag $C$DW$7
       54                    
       55                    
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    2
@@ -118,7 +118,7 @@ sensors.asm                                                          PAGE    2
      108                            .dwattr $C$DW$21, DW_AT_external
      109                            .dwattr $C$DW$21, DW_AT_decl_file("C:/ti/TivaWare/driverlib/gpio.h")
      110                            .dwattr $C$DW$21, DW_AT_decl_line(0x99)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    3
@@ -178,7 +178,7 @@ sensors.asm                                                          PAGE    3
      163                            .dwattr $C$DW$33, DW_AT_TI_symbol_name("GPIOPinWrite")
      164                            .dwattr $C$DW$33, DW_AT_declaration
      165                            .dwattr $C$DW$33, DW_AT_external
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    4
@@ -238,7 +238,7 @@ sensors.asm                                                          PAGE    4
      218                            .dwattr $C$DW$43, DW_AT_decl_line(0x12)
      219                            .dwattr $C$DW$43, DW_AT_decl_column(0x07)
      220                    
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    5
@@ -298,7 +298,7 @@ sensors.asm                                                          PAGE    5
      273                            .dwendtag $C$DW$50
      274                    
      275                    
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    6
@@ -358,7 +358,7 @@ sensors.asm                                                          PAGE    6
      328                            .dwattr $C$DW$64, DW_AT_TI_symbol_name("init_co2sensor")
      329                            .dwattr $C$DW$64, DW_AT_declaration
      330                            .dwattr $C$DW$64, DW_AT_external
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    7
@@ -381,7 +381,7 @@ sensors.asm                                                          PAGE    7
      346                            .dwattr $C$DW$66, DW_AT_declaration
      347                            .dwattr $C$DW$66, DW_AT_external
      348                            .dwattr $C$DW$66, DW_AT_decl_file("..\utils.h")
-     349                            .dwattr $C$DW$66, DW_AT_decl_line(0x0c)
+     349                            .dwattr $C$DW$66, DW_AT_decl_line(0x10)
      350                            .dwattr $C$DW$66, DW_AT_decl_column(0x06)
      351                    $C$DW$67        .dwtag  DW_TAG_formal_parameter
      352                            .dwattr $C$DW$67, DW_AT_type(*$C$DW$T$39)
@@ -418,7 +418,7 @@ sensors.asm                                                          PAGE    7
      383 00000004 2078783A          .bits   32,8                    ; str_line1[7] @ 56
      384 00000008 00000054          .bits   84,8                    ; str_line1[8] @ 64
      385 00000008 00003A54          .bits   58,8                    ; str_line1[9] @ 72
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    8
@@ -478,7 +478,7 @@ sensors.asm                                                          PAGE    8
      438                            .dwattr $C$DW$74, DW_AT_TI_symbol_name("str_line3")
      439                            .dwattr $C$DW$74, DW_AT_type(*$C$DW$T$135)
      440                            .dwattr $C$DW$74, DW_AT_location[DW_OP_addr str_line3]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE    9
@@ -538,7 +538,7 @@ sensors.asm                                                          PAGE    9
      493                    
      494                    $C$DW$77        .dwtag  DW_TAG_variable, DW_AT_name("threshold_temperature")
      495                            .dwattr $C$DW$77, DW_AT_TI_symbol_name("threshold_temperature")
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   10
@@ -598,7 +598,7 @@ sensors.asm                                                          PAGE   10
      548                            .dwattr $C$DW$80, DW_AT_decl_line(0x37)
      549                            .dwattr $C$DW$80, DW_AT_decl_column(0x0a)
      550                            .global fanControlledByTimer
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   11
@@ -658,7 +658,7 @@ sensors.asm                                                          PAGE   11
      603                            .dwattr $C$DW$83, DW_AT_TI_begin_column(0x09)
      604                            .dwattr $C$DW$83, DW_AT_decl_file("../sensors.c")
      605                            .dwattr $C$DW$83, DW_AT_decl_line(0x3b)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   12
@@ -718,7 +718,7 @@ sensors.asm                                                          PAGE   12
      658                            .dwattr $C$DW$85, DW_AT_decl_line(0x40)
      659                            .dwattr $C$DW$85, DW_AT_decl_column(0x06)
      660                            .dwattr $C$DW$85, DW_AT_TI_max_frame_size(0x08)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   13
@@ -778,7 +778,7 @@ sensors.asm                                                          PAGE   13
      713                    ;----------------------------------------------------------------------
      714                    ;  69 | operating_mode = umode;                                                
      715                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   14
@@ -838,7 +838,7 @@ sensors.asm                                                          PAGE   14
      768 00000064 4911              LDR       A2, $C$CON7           ; [DPU_3_PIPE] |73|  ; [ORIG 16-BIT INS]
      769 00000066 200A              MOVS      A1, #10               ; [DPU_3_PIPE] |73|  ; [ORIG 16-BIT INS]
      770 00000068 F0F0FB92          SDIV      A1, A3, A1            ; [DPU_3_PIPE] |73|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   15
@@ -898,7 +898,7 @@ sensors.asm                                                          PAGE   15
      823                            .dwattr $C$DW$90, DW_AT_low_pc(PortFIntHandler)
      824                            .dwattr $C$DW$90, DW_AT_high_pc(0x00)
      825                            .dwattr $C$DW$90, DW_AT_TI_symbol_name("PortFIntHandler")
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   16
@@ -958,7 +958,7 @@ sensors.asm                                                          PAGE   16
      878                    ;----------------------------------------------------------------------
      879 00000006 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |81|  ; [ORIG 16-BIT INS]
      880 00000008 0004F88D          STRB      A1, [SP, #4]          ; [DPU_3_PIPE] |81|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   17
@@ -1018,7 +1018,7 @@ sensors.asm                                                          PAGE   17
      933 00000034 B928              CBNZ      A1, ||$C$L2||         ; []  ; [ORIG 16-BIT INS]
      934                            ; BRANCHCC OCCURS {||$C$L2||}    ; [] |86| 
      935                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   18
@@ -1078,7 +1078,7 @@ sensors.asm                                                          PAGE   18
      988                    ;----------------------------------------------------------------------
      989                    
      990                    ;*****************************************************************************
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   19
@@ -1138,7 +1138,7 @@ sensors.asm                                                          PAGE   19
     1043                            .dwattr $C$DW$101, DW_AT_TI_call
     1044 00000018 FFFEF7FF!         BL        GPIOPadConfigSet      ; [DPU_3_PIPE] |95|  ; [KEEP 32-BIT INS]
     1045                            ; CALL OCCURS {GPIOPadConfigSet }  ; [] |95| 
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   20
@@ -1198,7 +1198,7 @@ sensors.asm                                                          PAGE   20
     1098                            .dwattr $C$DW$106, DW_AT_low_pc(0x00)
     1099                            .dwattr $C$DW$106, DW_AT_name("init_actuators")
     1100                            .dwattr $C$DW$106, DW_AT_TI_call
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   21
@@ -1258,7 +1258,7 @@ sensors.asm                                                          PAGE   21
     1153                    ; 110 | #endif                                                                 
     1154                    ;----------------------------------------------------------------------
     1155 00000058 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |109|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   22
@@ -1318,7 +1318,7 @@ sensors.asm                                                          PAGE   22
     1208                    ;*****************************************************************************
     1209                    ;* FUNCTION NAME: check_sensor1                                              *
     1210                    ;*                                                                           *
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   23
@@ -1378,7 +1378,7 @@ sensors.asm                                                          PAGE   23
     1263                    ;----------------------------------------------------------------------
     1264 00000018 4828              LDR       A1, $C$CON20          ; [DPU_3_PIPE] |119|  ; [ORIG 16-BIT INS]
     1265 0000001a 4927              LDR       A2, $C$CON19          ; [DPU_3_PIPE] |119|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   24
@@ -1438,7 +1438,7 @@ sensors.asm                                                          PAGE   24
     1318                    ; 128 | set_actuator1(OFF);                                                    
     1319                    ;----------------------------------------------------------------------
     1320 00000052 2000              MOVS      A1, #0                ; [DPU_3_PIPE] |128|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   25
@@ -1498,7 +1498,7 @@ sensors.asm                                                          PAGE   25
     1373                            .dwpsn  file "../sensors.c",line 135,column 2,is_stmt,isa 1
     1374                    ;----------------------------------------------------------------------
     1375                    ; 135 | return f_data;                                                         
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   26
@@ -1558,7 +1558,7 @@ sensors.asm                                                          PAGE   26
     1428                    ;*   Local Frame Size  : 0 Args + 4 Auto + 4 Save = 8 byte                   *
     1429                    ;*****************************************************************************
     1430 00000000           check_sensor2:
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   27
@@ -1618,7 +1618,7 @@ sensors.asm                                                          PAGE   27
     1483                    ;----------------------------------------------------------------------
     1484 00000044 0A00ED9D          VLDR.32   S0, [SP, #0]          ; [DPU_LIN_PIPE] |143|  ; [KEEP 32-BIT INS]
     1485 00000048 0AC0EEBC          VCVT.U32.F32 S0, S0             ; [DPU_LIN_PIPE] |143|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   28
@@ -1678,7 +1678,7 @@ sensors.asm                                                          PAGE   28
     1538                    ;*   Regs Used         : A1,A2,A3,A4,V9,SP,LR,SR,D0,D0_hi,D1,D1_hi,D2,D2_hi, *
     1539                    ;*                           D3,D3_hi,D4,D4_hi,D5,D5_hi,D6,D6_hi,D7,D7_hi,   *
     1540                    ;*                           FPEXC,FPSCR                                     *
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   29
@@ -1738,7 +1738,7 @@ sensors.asm                                                          PAGE   29
     1593 00000032 4904              LDR       A2, $C$CON30          ; [DPU_3_PIPE] |152|  ; [ORIG 16-BIT INS]
     1594 00000034 0000F89D          LDRB      A1, [SP, #0]          ; [DPU_3_PIPE] |152|  ; [KEEP 32-BIT INS]
     1595 00000038 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |152|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   30
@@ -1798,7 +1798,7 @@ sensors.asm                                                          PAGE   30
     1648 00000000 B508              PUSH      {A4, LR}              ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
     1649                            .dwcfi  cfa_offset, 8
     1650                            .dwcfi  save_reg_to_mem, 14, -4
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   31
@@ -1858,7 +1858,7 @@ sensors.asm                                                          PAGE   31
     1703                            .dwcfi  cfa_offset, 0
     1704                            ; BRANCH OCCURS                  ; [] 
     1705                            .dwattr $C$DW$127, DW_AT_TI_end_file("../sensors.c")
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   32
@@ -1918,7 +1918,7 @@ sensors.asm                                                          PAGE   32
     1758                            .dwattr $C$DW$132, DW_AT_location[DW_OP_breg13 0]
     1759                            .dwpsn  file "../sensors.c",line 166,column 2,is_stmt,isa 1
     1760                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   33
@@ -1978,7 +1978,7 @@ sensors.asm                                                          PAGE   33
     1813 00000038 D209              BCS       ||$C$L7||             ; [DPU_3_PIPE] |170|  ; [ORIG 16-BIT INS]
     1814                            ; BRANCHCC OCCURS {||$C$L7||}    ; [] |170| 
     1815                    ;* --------------------------------------------------------------------------*
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   34
@@ -2038,7 +2038,7 @@ sensors.asm                                                          PAGE   34
     1868                    ;----------------------------------------------------------------------
     1869                    ; 180 | fanControlledByTimer = 1;                                              
     1870                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   35
@@ -2098,7 +2098,7 @@ sensors.asm                                                          PAGE   35
     1923                    ;*   Local Frame Size  : 0 Args + 0 Auto + 4 Save = 4 byte                   *
     1924                    ;*****************************************************************************
     1925 00000000           check_rtcTimer:
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   36
@@ -2158,7 +2158,7 @@ sensors.asm                                                          PAGE   36
     1978 0000001e           ||$C$L9||:    
     1979                            .dwpsn  file "../sensors.c",line 194,column 3,is_stmt,isa 1
     1980                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   37
@@ -2218,7 +2218,7 @@ sensors.asm                                                          PAGE   37
     2033                            .dwattr $C$DW$146, DW_AT_location[DW_OP_addr fanState$3]
     2034                    $C$DW$147       .dwtag  DW_TAG_formal_parameter, DW_AT_name("current_seconds")
     2035                            .dwattr $C$DW$147, DW_AT_TI_symbol_name("current_seconds")
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   38
@@ -2278,7 +2278,7 @@ sensors.asm                                                          PAGE   38
     2088 0000000c 4823              LDR       A1, $C$CON43          ; [DPU_3_PIPE] |206|  ; [ORIG 16-BIT INS]
     2089 0000000e 7800              LDRB      A1, [A1, #0]          ; [DPU_3_PIPE] |206|  ; [ORIG 16-BIT INS]
     2090 00000010 B930              CBNZ      A1, ||$C$L11||        ; []  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   39
@@ -2338,7 +2338,7 @@ sensors.asm                                                          PAGE   39
     2143                    ;----------------------------------------------------------------------
     2144 0000002c 4A1D              LDR       A3, $C$CON45          ; [DPU_3_PIPE] |216|  ; [ORIG 16-BIT INS]
     2145 0000002e 491E              LDR       A2, $C$CON46          ; [DPU_3_PIPE] |216|  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   40
@@ -2398,7 +2398,7 @@ sensors.asm                                                          PAGE   40
     2198                    ;----------------------------------------------------------------------
     2199 0000005a 4913              LDR       A2, $C$CON46          ; [DPU_3_PIPE] |223|  ; [ORIG 16-BIT INS]
     2200 0000005c 20B0F649          MOV       A1, #39600            ; [DPU_3_PIPE] |223|  ; [KEEP 32-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   41
@@ -2458,7 +2458,7 @@ sensors.asm                                                          PAGE   41
     2253 00000082 60E1F44F          MOV       A1, #1800             ; [DPU_3_PIPE] |231|  ; [KEEP 32-BIT INS]
     2254 00000086 6008              STR       A1, [A2, #0]          ; [DPU_3_PIPE] |231|  ; [ORIG 16-BIT INS]
     2255                            .dwpsn  file "../sensors.c",line 232,column 4,is_stmt,isa 1
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   42
@@ -2518,7 +2518,7 @@ sensors.asm                                                          PAGE   42
     2308                    ;----------------------------------------------------------------------
     2309                    ; 237 | void update_lcd()                                                      
     2310                    ;----------------------------------------------------------------------
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   43
@@ -2578,7 +2578,7 @@ sensors.asm                                                          PAGE   43
     2363                            .dwattr $C$DW$159, DW_AT_TI_call
     2364 00000016 FFFEF7FF!         BL        lcd_puts              ; [DPU_3_PIPE] |241|  ; [KEEP 32-BIT INS]
     2365                            ; CALL OCCURS {lcd_puts }        ; [] |241| 
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   44
@@ -2638,7 +2638,7 @@ sensors.asm                                                          PAGE   44
     2418                    ;*****************************************************************************
     2419                    ;* FUNCTION NAME: update_thingspeak                                          *
     2420                    ;*                                                                           *
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   45
@@ -2698,7 +2698,7 @@ sensors.asm                                                          PAGE   45
     2473                            .dwattr $C$DW$164, DW_AT_low_pc(0x00)
     2474                            .dwattr $C$DW$164, DW_AT_TI_return
     2475 00000028 BD0E              POP       {A2, A3, A4, PC}      ; [DPU_3_PIPE]  ; [ORIG 16-BIT INS]
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   46
@@ -2758,7 +2758,7 @@ sensors.asm                                                          PAGE   46
     2527 00000068 40025000  ||$C$CON14||:   .bits   1073893376,32
     2528                            .align  4
     2529 0000006c 00000000! ||$C$CON15||:   .bits   PortFIntHandler,32
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   47
@@ -2818,7 +2818,7 @@ sensors.asm                                                          PAGE   47
     2572                            .align  4
     2573 0000003c 00000003! ||$C$CON28||:   .bits   str_line3+3,32
     2574                            .align  4
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   48
@@ -2878,7 +2878,7 @@ sensors.asm                                                          PAGE   48
     2618                            .align  4
     2619 0000009a 00000000! ||$C$CON43||:   .bits   fanState$3,32
          0000009e 00000000 
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   49
@@ -2938,7 +2938,7 @@ sensors.asm                                                          PAGE   49
     2661                            .global memset
     2662                            .global srand
     2663                            .global time
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   50
@@ -2998,7 +2998,7 @@ sensors.asm                                                          PAGE   50
     2716                            .dwattr $C$DW$165, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio.
     2717                            .dwattr $C$DW$165, DW_AT_decl_line(0x5c)
     2718                            .dwattr $C$DW$165, DW_AT_decl_column(0x0b)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   51
@@ -3058,7 +3058,7 @@ sensors.asm                                                          PAGE   51
     2771                            .dwattr $C$DW$T$29, DW_AT_language(DW_LANG_C)
     2772                            .dwattr $C$DW$T$29, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdio
     2773                            .dwattr $C$DW$T$29, DW_AT_decl_line(0x62)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   52
@@ -3118,7 +3118,7 @@ sensors.asm                                                          PAGE   52
     2826                            .dwattr $C$DW$174, DW_AT_decl_line(0x5b)
     2827                            .dwattr $C$DW$174, DW_AT_decl_column(0x1c)
     2828                            .dwendtag $C$DW$T$22
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   53
@@ -3178,7 +3178,7 @@ sensors.asm                                                          PAGE   53
     2881                            .dwattr $C$DW$177, DW_AT_decl_line(0x6d)
     2882                            .dwattr $C$DW$177, DW_AT_decl_column(0x0b)
     2883                    $C$DW$178       .dwtag  DW_TAG_member
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   54
@@ -3238,7 +3238,7 @@ sensors.asm                                                          PAGE   54
     2936                            .dwattr $C$DW$T$49, DW_AT_decl_line(0xb3)
     2937                            .dwattr $C$DW$T$49, DW_AT_decl_column(0x14)
     2938                    $C$DW$T$67      .dwtag  DW_TAG_const_type
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   55
@@ -3298,7 +3298,7 @@ sensors.asm                                                          PAGE   55
     2991                            .dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$8)
     2992                            .dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
     2993                            .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   56
@@ -3358,7 +3358,7 @@ sensors.asm                                                          PAGE   56
     3046                    
     3047                    $C$DW$T$88      .dwtag  DW_TAG_subroutine_type
     3048                            .dwattr $C$DW$T$88, DW_AT_type(*$C$DW$T$10)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   57
@@ -3418,7 +3418,7 @@ sensors.asm                                                          PAGE   57
     3101                            .dwattr $C$DW$T$99, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdin
     3102                            .dwattr $C$DW$T$99, DW_AT_decl_line(0x3c)
     3103                            .dwattr $C$DW$T$99, DW_AT_decl_column(0x17)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   58
@@ -3478,7 +3478,7 @@ sensors.asm                                                          PAGE   58
     3156                    
     3157                    $C$DW$T$111     .dwtag  DW_TAG_array_type
     3158                            .dwattr $C$DW$T$111, DW_AT_type(*$C$DW$T$39)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   59
@@ -3538,7 +3538,7 @@ sensors.asm                                                          PAGE   59
     3211                    $C$DW$T$13      .dwtag  DW_TAG_base_type
     3212                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
     3213                            .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   60
@@ -3598,7 +3598,7 @@ sensors.asm                                                          PAGE   60
     3266                            .dwattr $C$DW$T$127, DW_AT_type(*$C$DW$T$15)
     3267                            .dwattr $C$DW$T$127, DW_AT_language(DW_LANG_C)
     3268                            .dwattr $C$DW$T$127, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdi
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   61
@@ -3658,7 +3658,7 @@ sensors.asm                                                          PAGE   61
     3321                            .dwattr $C$DW$T$134, DW_AT_language(DW_LANG_C)
     3322                            .dwattr $C$DW$T$134, DW_AT_decl_file("../sensors.c")
     3323                            .dwattr $C$DW$T$134, DW_AT_decl_line(0x10a)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   62
@@ -3718,7 +3718,7 @@ sensors.asm                                                          PAGE   62
     3376                            .dwattr $C$DW$189, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     3377                            .dwattr $C$DW$189, DW_AT_accessibility(DW_ACCESS_public)
     3378                            .dwattr $C$DW$189, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   63
@@ -3778,7 +3778,7 @@ sensors.asm                                                          PAGE   63
     3431                            .dwattr $C$DW$195, DW_AT_accessibility(DW_ACCESS_public)
     3432                            .dwattr $C$DW$195, DW_AT_decl_file("C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/time.h
     3433                            .dwattr $C$DW$195, DW_AT_decl_line(0x5f)
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   64
@@ -3838,7 +3838,7 @@ sensors.asm                                                          PAGE   64
     3486                            .dwcfi  undefined, 66
     3487                            .dwcfi  undefined, 67
     3488                            .dwcfi  undefined, 68
-TI ARM Assembler PC v5.2.6 Tue Jan 26 13:54:20 2016
+TI ARM Assembler PC v5.2.6 Wed Apr 27 18:22:23 2016
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 sensors.asm                                                          PAGE   65
@@ -3880,7 +3880,7 @@ Thumb2 Statistics
 Number of Thumb2 ins converted to Thumb = 0 (0%)
 Number of Thumb ins in input = 358 (76%)
 Number of Thumb2 ins encoded as Thumb2 = 111 (100%)
-Number of Thumb2 ins converted to 2 OPND Thumb = 19
+Number of Thumb2 ins converted to 2 OPND Thumb = 20
 
 
 No Assembly Errors, No Assembly Warnings
